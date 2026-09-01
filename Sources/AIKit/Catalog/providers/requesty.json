@@ -1310,24 +1310,8 @@
       "family": "deepseek-flash",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        },
-        {
-          "type": "budget_tokens"
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -1345,12 +1329,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 384000
       },
       "cost": {
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.07
+        "input": 0.076,
+        "output": 0.153,
+        "cache_read": 0.014
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -2749,9 +2733,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.2,
-        "output": 4.2,
-        "cache_read": 0.26
+        "input": 0.8,
+        "output": 2.55,
+        "cache_read": 0.16
       },
       "display_name": "GLM-5.2",
       "type": "chat"
@@ -2883,7 +2867,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-14",
       "last_updated": "2026-08-14",
@@ -2897,12 +2881,12 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "output": 128000
+        "context": 1048576,
+        "output": 1048576
       },
       "cost": {
-        "input": 1.4,
-        "output": 4.4,
+        "input": 1.2,
+        "output": 4.2,
         "cache_read": 0.26
       },
       "display_name": "GLM-5.3",
@@ -2934,7 +2918,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
@@ -2951,13 +2935,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "output": 128000
+        "context": 131072,
+        "output": 131072
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.5,
-        "cache_read": 0.03
+        "input": 0.075,
+        "output": 0.25,
+        "cache_read": 0.015
       },
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
@@ -2988,7 +2972,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-14",
       "last_updated": "2026-08-14",
@@ -3006,9 +2990,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 1.75,
-        "output": 4.5,
-        "cache_read": 0.44
+        "input": 1.2,
+        "output": 4.2,
+        "cache_read": 0.26
       },
       "display_name": "GLM-5.3 (EU)",
       "type": "chat"

@@ -8,7 +8,7 @@
       "name": "Qwen3.8 27B",
       "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -33,7 +33,8 @@
       "last_updated": "2026-08-14",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
