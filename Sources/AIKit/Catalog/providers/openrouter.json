@@ -1324,7 +1324,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-04-01",
       "last_updated": "2026-05-28",
@@ -2368,9 +2368,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.0784,
-        "output": 0.1568,
-        "cache_read": 0.01568
+        "input": 0.08092,
+        "output": 0.16184,
+        "cache_read": 0.016184
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -2520,9 +2520,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.417252,
-        "output": 0.834504,
-        "cache_read": 0.034771
+        "input": 0.87,
+        "output": 1.74,
+        "cache_read": 0.0725
       },
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -4204,6 +4204,52 @@
       "type": "chat"
     },
     {
+      "id": "ibm-granite/granite-4.2-8b",
+      "name": "Granite 4.2 8B",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "granite",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-31",
+      "last_updated": "2026-08-31",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 117964
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.15,
+        "cache_read": 0.05
+      },
+      "display_name": "Granite 4.2 8B",
+      "type": "chat"
+    },
+    {
       "id": "inception/mercury-2",
       "name": "Mercury 2",
       "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
@@ -4332,41 +4378,6 @@
       "type": "chat"
     },
     {
-      "id": "kwaipilot/kat-coder-air-v2.5",
-      "name": "KAT-Coder-Air V2.5",
-      "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
-      "family": "kat-coder",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-07-10",
-      "last_updated": "2026-07-10",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 256000,
-        "output": 80000
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.03
-      },
-      "display_name": "KAT-Coder-Air V2.5",
-      "type": "chat"
-    },
-    {
       "id": "kwaipilot/kat-coder-pro-v2",
       "name": "KAT-Coder-Pro V2",
       "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
@@ -4391,7 +4402,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 80000
+        "output": 144000
       },
       "cost": {
         "input": 0.3,
@@ -4426,7 +4437,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 80000
+        "output": 235929
       },
       "cost": {
         "input": 0.74,
@@ -4755,11 +4766,11 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 16384
+        "output": 115200
       },
       "cost": {
         "input": 0.2,
-        "output": 0.8
+        "output": 0.696
       },
       "display_name": "Llama 4 Maverick",
       "type": "chat"
@@ -6366,9 +6377,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.6,
-        "output": 3,
-        "cache_read": 0.1
+        "input": 0.45,
+        "output": 2.25,
+        "cache_read": 0.07
       },
       "display_name": "Kimi K2.5",
       "type": "chat"
@@ -11498,11 +11509,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 235929
       },
       "cost": {
-        "input": 0.09,
-        "output": 1.1
+        "input": 0.1,
+        "output": 1.1,
+        "cache_read": 0.07
       },
       "display_name": "Qwen3-Next 80B-A3B Instruct",
       "type": "chat"
@@ -15358,7 +15370,7 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.03,
+        "input": 0.05,
         "output": 0.16,
         "cache_read": 0.013
       },
@@ -15761,12 +15773,12 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 1.1875,
-        "output": 4.18,
-        "cache_read": 0.247
+        "input": 1.17,
+        "output": 3.96,
+        "cache_read": 0.234
       },
       "display_name": "GLM Latest",
       "type": "chat"

@@ -3197,8 +3197,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.08,
-        "output": 0.18
+        "input": 0.03,
+        "output": 0.1
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -4342,8 +4342,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.756795,
-        "output": 0.756795
+        "input": 0.75374,
+        "output": 0.75374
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
@@ -4387,8 +4387,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.174645,
-        "output": 0.756795
+        "input": 0.17394,
+        "output": 0.75374
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -5134,6 +5134,44 @@
         "cache_read": 0.19
       },
       "display_name": "Kimi K2.7 Code",
+      "type": "chat"
+    },
+    {
+      "id": "moonshot/kimi-k2.7-code-highspeed",
+      "name": "Kimi K2.7 Code Highspeed",
+      "description": "Lower-latency Kimi Code variant for interactive edits and coding-agent loops",
+      "family": "kimi-k2",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "knowledge": "2025-01",
+      "release_date": "2026-06-12",
+      "last_updated": "2026-06-12",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 1.9,
+        "output": 8,
+        "cache_read": 0.38
+      },
+      "display_name": "Kimi K2.7 Code Highspeed",
       "type": "chat"
     },
     {
@@ -8460,8 +8498,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.46572,
-        "output": 0.93144
+        "input": 0.46384,
+        "output": 0.92768
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -8505,8 +8543,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.174645,
-        "output": 0.69858
+        "input": 0.17394,
+        "output": 0.69576
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -8540,8 +8578,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.04787,
-        "output": 1.04787
+        "input": 1.04364,
+        "output": 1.04364
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
