@@ -380,7 +380,7 @@
         "output": 4096
       },
       "cost": {
-        "input": 3,
+        "input": 2.5,
         "output": 5
       },
       "display_name": "Magnum v4 72B",
@@ -474,6 +474,58 @@
         "cache_write": 12.5
       },
       "display_name": "Claude Fable 5",
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Claude Fable 5.1",
+      "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual...",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
+      },
+      "display_name": "Claude Fable 5.1",
       "type": "chat"
     },
     {
@@ -777,59 +829,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4.7-fast",
-      "name": "Claude Opus 4.7",
-      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-01-31",
-      "release_date": "2026-04-16",
-      "last_updated": "2026-04-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 30,
-        "output": 150,
-        "cache_read": 3,
-        "cache_write": 37.5
-      },
-      "display_name": "Claude Opus 4.7",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-4.8",
       "name": "Claude Opus 4.8",
       "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
@@ -883,59 +882,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4.8-fast",
-      "name": "Claude Opus 4.8",
-      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-01",
-      "release_date": "2026-05-28",
-      "last_updated": "2026-05-28",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 10,
-        "output": 50,
-        "cache_read": 1,
-        "cache_write": 12.5
-      },
-      "display_name": "Claude Opus 4.8",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-5",
       "name": "Claude Opus 5",
       "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
@@ -984,59 +930,6 @@
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "display_name": "Claude Opus 5",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-5-fast",
-      "name": "Claude Opus 5",
-      "description": "Fast-mode variant of [Opus 5](/anthropic/claude-opus-5) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 5. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-05",
-      "release_date": "2026-07-24",
-      "last_updated": "2026-07-24",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 10,
-        "output": 50,
-        "cache_read": 1,
-        "cache_write": 12.5
       },
       "display_name": "Claude Opus 5",
       "type": "chat"
@@ -1971,8 +1864,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 161000,
-        "output": 144900
+        "context": 163840,
+        "output": 32768
       },
       "cost": {
         "input": 0.27,
@@ -2366,7 +2259,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-21",
       "last_updated": "2026-08-21",
@@ -2475,7 +2368,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
+        "context": 1024000,
         "output": 384000
       },
       "cost": {
@@ -4057,6 +3950,53 @@
       "type": "chat"
     },
     {
+      "id": "inception/mercury-2.5-preview",
+      "name": "Inception: Mercury 2.5 Preview",
+      "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
+      "family": "mercury",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-31",
+      "last_updated": "2026-08-31",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 260000,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.75,
+        "cache_read": 0.02
+      },
+      "display_name": "Inception: Mercury 2.5 Preview",
+      "type": "chat"
+    },
+    {
       "id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
@@ -4485,7 +4425,7 @@
         "output": 6000
       },
       "cost": {
-        "input": 0.5,
+        "input": 0.4,
         "output": 0.75
       },
       "display_name": "Mancer: Weaver (alpha)",
@@ -4814,8 +4754,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 8192
+        "context": 327680,
+        "output": 16384
       },
       "cost": {
         "input": 0.1,
@@ -5455,13 +5395,11 @@
       "open_weights": true,
       "limit": {
         "context": 196608,
-        "output": 196608
+        "output": 176947
       },
       "cost": {
         "input": 0,
-        "output": 0,
-        "reasoning": 0,
-        "cache_read": 0
+        "output": 0
       },
       "display_name": "MiniMax: MiniMax M2.7 (free)",
       "type": "chat"
@@ -5540,7 +5478,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -5549,13 +5488,11 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 1048576
+        "output": 943718
       },
       "cost": {
         "input": 0,
-        "output": 0,
-        "reasoning": 0,
-        "cache_read": 0
+        "output": 0
       },
       "display_name": "MiniMax: MiniMax M3 (free)",
       "type": "chat"
@@ -6637,7 +6574,7 @@
     },
     {
       "id": "nex-agi/nex-n2-mini",
-      "name": "Nex AGI: Nex-N2-Mini",
+      "name": "Nex AGI: Nex-N2-Mini (retires Sep 8)",
       "description": "Nex-N2-Mini is an open-source agentic mixture-of-experts model from Nex AGI, the smaller sibling in the Nex-N2 series. It accepts text and image input and is built for coding, tool use,...",
       "family": "agi",
       "attachment": true,
@@ -6678,12 +6615,12 @@
         "output": 0.1,
         "cache_read": 0.0025
       },
-      "display_name": "Nex AGI: Nex-N2-Mini",
+      "display_name": "Nex AGI: Nex-N2-Mini (retires Sep 8)",
       "type": "chat"
     },
     {
       "id": "nex-agi/nex-n2-pro",
-      "name": "Nex AGI: Nex-N2-Pro",
+      "name": "Nex AGI: Nex-N2-Pro (retires Sep 8)",
       "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
       "family": "agi",
       "attachment": true,
@@ -6724,7 +6661,7 @@
         "output": 1,
         "cache_read": 0.025
       },
-      "display_name": "Nex AGI: Nex-N2-Pro",
+      "display_name": "Nex AGI: Nex-N2-Pro (retires Sep 8)",
       "type": "chat"
     },
     {
@@ -7100,8 +7037,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 16384
+        "context": 256000,
+        "output": 32768
       },
       "cost": {
         "input": 0.5,
@@ -12516,8 +12453,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "output": 262144
+        "context": 262144,
+        "output": 131072
       },
       "cost": {
         "input": 2,
@@ -13606,9 +13543,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.14,
+        "output": 0.58,
+        "cache_read": 0.035
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -14035,7 +13972,7 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.45,
+        "input": 0.35,
         "output": 0.65
       },
       "display_name": "ReMM SLERP 13B",
@@ -15083,7 +15020,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 262144
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -15279,7 +15216,7 @@
       "cost": {
         "input": 10,
         "output": 50,
-        "cache_read": 1,
+        "cache_read": 0.25,
         "cache_write": 12.5
       },
       "display_name": "Anthropic: Claude Fable Latest ($$$$)",
