@@ -360,7 +360,7 @@
         "output": 4096
       },
       "cost": {
-        "input": 3,
+        "input": 2.5,
         "output": 5
       },
       "display_name": "Magnum v4 72B",
@@ -454,6 +454,58 @@
         "cache_write": 12.5
       },
       "display_name": "Claude Fable 5",
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Claude Fable 5.1",
+      "description": "Claude model for creative writing, analysis, and controlled agent workflows",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
+      },
+      "display_name": "Claude Fable 5.1",
       "type": "chat"
     },
     {
@@ -785,61 +837,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4.7-fast",
-      "name": "Claude Opus 4.7 (Fast)",
-      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-01-31",
-      "release_date": "2026-04-16",
-      "last_updated": "2026-04-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 30,
-        "output": 150,
-        "cache_read": 3,
-        "cache_write": 37.5
-      },
-      "display_name": "Claude Opus 4.7 (Fast)",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-4.8",
       "name": "Claude Opus 4.8",
       "description": "Top Claude Opus tier for the hardest reasoning, coding, and long-horizon agents",
@@ -895,61 +892,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4.8-fast",
-      "name": "Claude Opus 4.8 (Fast)",
-      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-01",
-      "release_date": "2026-05-28",
-      "last_updated": "2026-05-28",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 10,
-        "output": 50,
-        "cache_read": 1,
-        "cache_write": 12.5
-      },
-      "display_name": "Claude Opus 4.8 (Fast)",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-5",
       "name": "Claude Opus 5",
       "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
@@ -1002,61 +944,6 @@
         "cache_write": 6.25
       },
       "display_name": "Claude Opus 5",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-5-fast",
-      "name": "Claude Opus 5 (Fast)",
-      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2026-05",
-      "release_date": "2026-07-24",
-      "last_updated": "2026-07-24",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 10,
-        "output": 50,
-        "cache_read": 1,
-        "cache_write": 12.5
-      },
-      "display_name": "Claude Opus 5 (Fast)",
       "type": "chat"
     },
     {
@@ -2072,12 +1959,12 @@
       "open_weights": true,
       "limit": {
         "context": 163840,
-        "output": 144900
+        "output": 32768
       },
       "cost": {
-        "input": 0.55,
-        "output": 1.65,
-        "cache_read": 0.55
+        "input": 0.25,
+        "output": 0.95,
+        "cache_read": 0.13
       },
       "display_name": "DeepSeek V3.1",
       "type": "chat"
@@ -2368,9 +2255,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.08092,
-        "output": 0.16184,
-        "cache_read": 0.016184
+        "input": 0.088606,
+        "output": 0.177212,
+        "cache_read": 0.017721
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -2449,7 +2336,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-21",
       "last_updated": "2026-08-21",
@@ -2520,9 +2407,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.87,
-        "output": 1.74,
-        "cache_read": 0.0725
+        "input": 1.04226,
+        "output": 2.08452,
+        "cache_read": 0.086855
       },
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -2569,9 +2456,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.66,
-        "output": 1.98,
-        "cache_read": 0.022
+        "input": 1.1154,
+        "output": 3.3462,
+        "cache_read": 0.03718
       },
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -4297,6 +4184,53 @@
       "type": "chat"
     },
     {
+      "id": "inception/mercury-2.5-preview",
+      "name": "Mercury 2.5 Preview",
+      "description": "Preview model for early access evaluation, prototyping, and compatibility testing",
+      "family": "mercury",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-31",
+      "last_updated": "2026-08-31",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 260000,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.04,
+        "output": 0.15,
+        "cache_read": 0.004
+      },
+      "display_name": "Mercury 2.5 Preview",
+      "type": "chat"
+    },
+    {
       "id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "description": "Efficient model for low-latency assistance, extraction, and routine automation",
@@ -4512,7 +4446,7 @@
         "output": 6000
       },
       "cost": {
-        "input": 0.5,
+        "input": 0.4,
         "output": 0.75
       },
       "display_name": "Weaver (alpha)",
@@ -4802,12 +4736,11 @@
       "open_weights": true,
       "limit": {
         "context": 1310720,
-        "output": 8192
+        "output": 16384
       },
       "cost": {
-        "input": 0.11,
-        "output": 0.34,
-        "cache_read": 0.055
+        "input": 0.1,
+        "output": 0.3
       },
       "display_name": "Llama 4 Scout",
       "type": "chat"
@@ -7052,12 +6985,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 32768
       },
       "cost": {
-        "input": 0.5,
-        "output": 2.2,
-        "cache_read": 0.1
+        "input": 0.625,
+        "output": 3.125,
+        "cache_read": 0.1875
       },
       "display_name": "Nemotron 3 Ultra 550B A55B",
       "type": "chat"
@@ -12649,12 +12582,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 262144
+        "output": 131072
       },
       "cost": {
         "input": 2,
         "output": 6,
-        "cache_read": 0.25
+        "cache_read": 0.2
       },
       "display_name": "Qwen3.8 2.4T A95B",
       "type": "chat"
@@ -13430,9 +13363,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -14930,12 +14863,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 262144
+        "output": 131072
       },
       "cost": {
-        "input": 1.19,
-        "output": 3.74,
-        "cache_read": 0.221
+        "input": 0.966,
+        "output": 3.036,
+        "cache_read": 0.1932
       },
       "display_name": "GLM-5.2",
       "type": "chat"
@@ -15169,7 +15102,7 @@
       "cost": {
         "input": 10,
         "output": 50,
-        "cache_read": 1,
+        "cache_read": 0.25,
         "cache_write": 12.5
       },
       "display_name": "Claude Fable Latest",
