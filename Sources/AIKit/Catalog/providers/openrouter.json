@@ -2255,9 +2255,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.088606,
-        "output": 0.177212,
-        "cache_read": 0.017721
+        "input": 0.07784,
+        "output": 0.15568,
+        "cache_read": 0.015568
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -2407,9 +2407,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 1.04226,
-        "output": 2.08452,
-        "cache_read": 0.086855
+        "input": 0.87,
+        "output": 1.74,
+        "cache_read": 0.0725
       },
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -2456,9 +2456,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 1.1154,
-        "output": 3.3462,
-        "cache_read": 0.03718
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -3600,6 +3600,58 @@
         "cache_write": 0.041667
       },
       "display_name": "Gemini 3.7 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667
+      },
+      "display_name": "Gemini 3.8 Flash",
       "type": "chat"
     },
     {
@@ -4984,6 +5036,110 @@
         "cache_read": 0.002
       },
       "display_name": "Muse Spark 1.2 Contributor",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "description": "Open Llama multimodal model for image understanding and text reasoning",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "display_name": "Muse Spark 1.3",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-spark-1.3-contributor",
+      "name": "Muse Spark 1.3 Contributor",
+      "description": "Open Llama multimodal model for image understanding and text reasoning",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.2,
+        "cache_read": 0.002
+      },
+      "display_name": "Muse Spark 1.3 Contributor",
       "type": "chat"
     },
     {
@@ -6985,12 +7141,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 182520
       },
       "cost": {
-        "input": 0.625,
-        "output": 3.125,
-        "cache_read": 0.1875
+        "input": 0.6,
+        "output": 2.4,
+        "cache_read": 0.12
       },
       "display_name": "Nemotron 3 Ultra 550B A55B",
       "type": "chat"
@@ -13360,12 +13516,13 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
+        "input": 192000,
         "output": 128000
       },
       "cost": {
-        "input": 0.132,
-        "output": 0.528,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -15671,6 +15828,54 @@
       "type": "chat"
     },
     {
+      "id": "~z-ai/glm-flash-latest",
+      "name": "GLM Flash Latest",
+      "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
+      "family": "glm-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-27",
+      "last_updated": "2026-08-27",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1310720,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.075,
+        "output": 0.25,
+        "cache_read": 0.015
+      },
+      "display_name": "GLM Flash Latest",
+      "type": "chat"
+    },
+    {
       "id": "~z-ai/glm-latest",
       "name": "GLM Latest",
       "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
@@ -15706,12 +15911,12 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 943718
+        "output": 235929
       },
       "cost": {
-        "input": 1.17,
-        "output": 3.96,
-        "cache_read": 0.234
+        "input": 1.15,
+        "output": 3.5,
+        "cache_read": 0.1
       },
       "display_name": "GLM Latest",
       "type": "chat"
