@@ -4,6 +4,51 @@
   "adapter": "openai",
   "models": [
     {
+      "id": "Qwen3.8-27B",
+      "name": "Qwen3.8 27B",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 32768,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.41,
+        "output": 2.5,
+        "cache_read": 0.08
+      },
+      "display_name": "Qwen3.8 27B",
+      "type": "chat"
+    },
+    {
       "id": "auto",
       "name": "Auto Route",
       "description": "Automatic model router for matching prompts to suitable backends and budgets",
@@ -1718,6 +1763,56 @@
       "type": "chat"
     },
     {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.08333
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
       "id": "gemini-pro-latest",
       "name": "Gemini Pro Latest",
       "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
@@ -2575,9 +2670,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.3,
+        "input": 1.2,
         "output": 4,
-        "cache_read": 0.25
+        "cache_read": 0.2
       },
       "display_name": "GLM-5.3",
       "type": "chat"
@@ -4128,8 +4223,9 @@
         "output": 32766
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.2
+        "input": 0.04,
+        "output": 0.19,
+        "cache_read": 0.01
       },
       "display_name": "GPT OSS 20B",
       "type": "chat"
@@ -4748,7 +4844,8 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 64000
+        "input": 192000,
+        "output": 128000
       },
       "cost": {
         "input": 0.14,
@@ -6254,7 +6351,7 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 32000
+        "output": 131072
       },
       "cost": {
         "input": 1.25,
@@ -6314,6 +6411,107 @@
         "cache_read": 0.15
       },
       "display_name": "Muse Spark 1.2",
+      "type": "chat"
+    },
+    {
+      "id": "muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "display_name": "Muse Spark 1.3",
+      "type": "chat"
+    },
+    {
+      "id": "muse-spark-1.3-contributor",
+      "name": "Muse Spark 1.3 Contributor",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.2,
+        "cache_read": 0.002
+      },
+      "display_name": "Muse Spark 1.3 Contributor",
       "type": "chat"
     },
     {
@@ -7785,45 +7983,6 @@
         "cache_write": 0.5
       },
       "display_name": "Qwen3.7 Plus",
-      "type": "chat"
-    },
-    {
-      "id": "qwen3.8-27b",
-      "name": "Qwen3.8 27B",
-      "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-14",
-      "last_updated": "2026-08-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.42,
-        "output": 3,
-        "cache_read": 0.085
-      },
-      "display_name": "Qwen3.8 27B",
       "type": "chat"
     },
     {
