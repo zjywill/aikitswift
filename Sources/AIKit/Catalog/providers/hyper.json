@@ -220,9 +220,9 @@
         "output": 25600
       },
       "cost": {
-        "input": 0.12,
-        "output": 0.42,
-        "cache_write": 0.06
+        "input": 0.106,
+        "output": 0.368,
+        "cache_write": 0.053
       },
       "display_name": "Gemma 4 26B A4B IT",
       "type": "chat"
@@ -256,9 +256,9 @@
         "output": 20275
       },
       "cost": {
-        "input": 0.91,
-        "output": 2.934,
-        "cache_write": 0.455
+        "input": 0.86,
+        "output": 2.784,
+        "cache_write": 0.43
       },
       "display_name": "GLM-5",
       "type": "chat"
@@ -293,9 +293,9 @@
         "output": 3276
       },
       "cost": {
-        "input": 1.332,
-        "output": 4.312,
-        "cache_write": 0.666
+        "input": 1.262,
+        "output": 4.132,
+        "cache_write": 0.631
       },
       "display_name": "GLM-5.1",
       "type": "chat"
@@ -481,11 +481,48 @@
         "output": 13107
       },
       "cost": {
-        "input": 0.19,
-        "output": 0.63,
-        "cache_write": 0.095
+        "input": 0.188,
+        "output": 0.7,
+        "cache_write": 0.094
       },
       "display_name": "GPT OSS 120B",
+      "type": "chat"
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
+      "family": "kimi-thinking",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "temperature": true,
+      "knowledge": "2024-08",
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 26214
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 2.5,
+        "cache_write": 0.3
+      },
+      "display_name": "Kimi K2 Thinking",
       "type": "chat"
     },
     {
@@ -519,9 +556,9 @@
         "output": 26214
       },
       "cost": {
-        "input": 0.5504,
-        "output": 2.885,
-        "cache_write": 0.2752
+        "input": 0.5144,
+        "output": 2.755,
+        "cache_write": 0.2572
       },
       "display_name": "Kimi K2.5",
       "type": "chat"
@@ -759,9 +796,9 @@
         "output": 6553
       },
       "cost": {
-        "input": 0.404,
-        "output": 1.496,
-        "cache_write": 0.202
+        "input": 0.484,
+        "output": 1.852,
+        "cache_write": 0.242
       },
       "display_name": "MiniMax-M2.7",
       "type": "chat"

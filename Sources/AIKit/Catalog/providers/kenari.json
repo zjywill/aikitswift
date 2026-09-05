@@ -1623,7 +1623,8 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 64000
+        "input": 192000,
+        "output": 128000
       },
       "cost": {
         "input": 0,
@@ -1667,7 +1668,8 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 64000
+        "input": 192000,
+        "output": 128000
       },
       "cost": {
         "input": 0,
