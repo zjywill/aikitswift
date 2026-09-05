@@ -1672,7 +1672,7 @@
       "cost": {
         "input": 0.15001,
         "output": 0.59997,
-        "cache_read": 0.15001,
+        "cache_read": 0.015001,
         "cache_write": 0.15001
       },
       "display_name": "GPT OSS 120B",
@@ -1719,7 +1719,7 @@
       "cost": {
         "input": 0.15001,
         "output": 0.59997,
-        "cache_read": 0.15001,
+        "cache_read": 0.015001,
         "cache_write": 0.15001
       },
       "display_name": "GPT OSS 120B (EU)",
@@ -1766,7 +1766,7 @@
       "cost": {
         "input": 0.07,
         "output": 0.30002,
-        "cache_read": 0.07,
+        "cache_read": 0.007,
         "cache_write": 0.07
       },
       "display_name": "GPT OSS 20B",
@@ -1813,7 +1813,7 @@
       "cost": {
         "input": 0.07,
         "output": 0.30002,
-        "cache_read": 0.07,
+        "cache_read": 0.007,
         "cache_write": 0.07
       },
       "display_name": "GPT OSS 20B (EU)",
@@ -2583,7 +2583,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2026-03-01",
       "release_date": "2026-05-29",
@@ -2647,7 +2647,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 64000
+        "output": 128000
       },
       "cost": {
         "input": 0.14,
@@ -3072,11 +3072,11 @@
       "type": "chat"
     },
     {
-      "id": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
-      "name": "GPT OSS 120B",
-      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
-      "family": "gpt-oss",
-      "attachment": false,
+      "id": "fireworks_ai/accounts/fireworks/models/inkling",
+      "name": "Inkling",
+      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
+      "family": "ling",
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -3085,20 +3085,24 @@
         {
           "type": "effort",
           "values": [
+            "none",
+            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
+      "release_date": "2026-07-15",
+      "last_updated": "2026-07-15",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -3106,15 +3110,15 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 1048576,
+        "output": 1048576
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.015
+        "input": 1,
+        "output": 4.05,
+        "cache_read": 0.17
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "Inkling",
       "type": "chat"
     },
     {
@@ -4293,6 +4297,59 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-flash-latest",
       "name": "Gemini 3.7 Flash",
       "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
@@ -4537,8 +4594,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.75335,
-        "output": 0.75335
+        "input": 0.75543,
+        "output": 0.75543
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
@@ -4582,8 +4639,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17385,
-        "output": 0.75335
+        "input": 0.17433,
+        "output": 0.75543
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -8557,7 +8614,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.16,
+        "input": 0.15,
         "output": 0.47,
         "cache_read": 0.016,
         "cache_write": 0.2
@@ -8693,8 +8750,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.4636,
-        "output": 0.9272
+        "input": 0.46488,
+        "output": 0.92976
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -8738,8 +8795,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17385,
-        "output": 0.6954
+        "input": 0.17433,
+        "output": 0.69732
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -8773,8 +8830,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.0431,
-        "output": 1.0431
+        "input": 1.04598,
+        "output": 1.04598
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
@@ -10384,6 +10441,165 @@
         "input_audio": 0.75
       },
       "display_name": "Gemini 3.7 Flash (US)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash@eu",
+      "name": "Gemini 3.8 Flash (EU)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash (EU)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash@us",
+      "name": "Gemini 3.8 Flash (US)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash (US)",
       "type": "chat"
     },
     {

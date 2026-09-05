@@ -55,6 +55,56 @@
       "type": "chat"
     },
     {
+      "id": "anthropic/claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
+      },
+      "display_name": "Claude Fable 5.1",
+      "type": "chat"
+    },
+    {
       "id": "anthropic/claude-haiku-4-5",
       "name": "Claude Haiku 4.5 (latest)",
       "description": "Fast Claude lane for lightweight agents, office tasks, and responsive chat",
@@ -992,10 +1042,10 @@
         "output": 65536
       },
       "cost": {
-        "input": 1.5,
-        "output": 7.5,
-        "cache_read": 0.15,
-        "cache_write": 1.5
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.75
       },
       "display_name": "Gemini 3.6 Flash",
       "type": "chat"
@@ -1049,6 +1099,56 @@
         "cache_write": 0.75
       },
       "display_name": "Gemini 3.7 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "gemini/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash",
       "type": "chat"
     },
     {
@@ -2327,6 +2427,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
+        "input": 192000,
         "output": 131072
       },
       "cost": {
