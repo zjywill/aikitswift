@@ -143,6 +143,60 @@
       "type": "chat"
     },
     {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "provider": {
+        "npm": "@ai-sdk/anthropic"
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
+      },
+      "display_name": "Claude Fable 5.1",
+      "type": "chat"
+    },
+    {
       "id": "claude-haiku-4-5",
       "name": "Claude Haiku 4.5",
       "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",
@@ -864,6 +918,59 @@
       "type": "chat"
     },
     {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek V4 Flash Vision Exp",
+      "description": "Experimental multimodal DeepSeek V4 Flash model for image understanding, coding, and agentic work",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-21",
+      "last_updated": "2026-08-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.028
+      },
+      "display_name": "DeepSeek V4 Flash Vision Exp",
+      "type": "chat"
+    },
+    {
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
@@ -1333,6 +1440,60 @@
       "type": "chat"
     },
     {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "provider": {
+        "npm": "@ai-sdk/google"
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.15,
+        "input_audio": 1.5
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
       "id": "glm-4.6",
       "name": "GLM-4.6",
       "description": "Legacy model retained for compatibility with older integrations",
@@ -1643,6 +1804,107 @@
         "cache_read": 0.26
       },
       "display_name": "GLM-5.2",
+      "type": "chat"
+    },
+    {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
+      },
+      "display_name": "GLM-5.3",
+      "type": "chat"
+    },
+    {
+      "id": "glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03
+      },
+      "display_name": "GLM-5.3-Flash",
       "type": "chat"
     },
     {
@@ -2812,6 +3074,79 @@
       "type": "chat"
     },
     {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+      "family": "gpt-astra",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 922000,
+        "output": 128000
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5,
+        "tiers": [
+          {
+            "input": 20,
+            "output": 75,
+            "cache_read": 2,
+            "cache_write": 25,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 20,
+          "output": 75,
+          "cache_read": 2,
+          "cache_write": 25
+        }
+      },
+      "display_name": "GPT-6 Astra",
+      "type": "chat"
+    },
+    {
       "id": "grok-4.5",
       "name": "Grok 4.5",
       "description": "xAI's Grok model for chat, coding, agentic tools, and lower hallucination risk",
@@ -3067,6 +3402,7 @@
       "open_weights": true,
       "limit": {
         "context": 190000,
+        "input": 192000,
         "output": 64000
       },
       "status": "deprecated",
@@ -4243,6 +4579,117 @@
         "cache_read": 0
       },
       "display_name": "Muse Spark 1.2 Free",
+      "type": "chat"
+    },
+    {
+      "id": "muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "display_name": "Muse Spark 1.3",
+      "type": "chat"
+    },
+    {
+      "id": "muse-spark-1.3-contributor-free",
+      "name": "Muse Spark 1.3 Free",
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for coding and agentic workflows.",
+      "family": "muse-free",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
+      },
+      "display_name": "Muse Spark 1.3 Free",
       "type": "chat"
     },
     {
