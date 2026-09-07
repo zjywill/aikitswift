@@ -59,6 +59,116 @@
       "type": "chat"
     },
     {
+      "id": "claude-fable-5.1",
+      "name": "Claude Fable 5.1",
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
+      },
+      "display_name": "Claude Fable 5.1",
+      "type": "chat"
+    },
+    {
+      "id": "claude-fable-5.1@eu",
+      "name": "Claude Fable 5.1 (EU)",
+      "description": "Claude model for demanding reasoning and long-horizon agentic work",
+      "family": "claude-fable",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 11,
+        "output": 55,
+        "cache_read": 0.275,
+        "cache_write": 13.75
+      },
+      "display_name": "Claude Fable 5.1 (EU)",
+      "type": "chat"
+    },
+    {
       "id": "claude-fable-5@eu",
       "name": "Claude Fable 5 (EU)",
       "description": "Claude model for creative writing, analysis, and controlled agent workflows",
@@ -1274,10 +1384,26 @@
       "family": "deepseek-flash",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2026-04-24",
@@ -1292,13 +1418,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "output": 384000
+        "context": 1048576,
+        "output": 131072
       },
       "cost": {
-        "input": 0.44,
-        "output": 1.32,
-        "cache_read": 0.014
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.07
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -1310,8 +1436,24 @@
       "family": "deepseek-flash",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -1329,12 +1471,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 384000
+        "output": 131072
       },
       "cost": {
-        "input": 0.076,
-        "output": 0.153,
-        "cache_read": 0.014
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.07
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -1433,7 +1575,7 @@
       "open_weights": true,
       "limit": {
         "context": 1000000,
-        "output": 384000
+        "output": 131072
       },
       "cost": {
         "input": 1.32,
@@ -1492,6 +1634,57 @@
         "cache_read": 0.044
       },
       "display_name": "DeepSeek V4 Pro 0813",
+      "type": "chat"
+    },
+    {
+      "id": "deepseek-v4-pro-0813@eu",
+      "name": "DeepSeek V4 Pro 0813 (EU)",
+      "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
+      "family": "deepseek-thinking",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-12",
+      "last_updated": "2026-08-22",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 1.75,
+        "output": 3.5,
+        "cache_read": 0.44
+      },
+      "display_name": "DeepSeek V4 Pro 0813 (EU)",
       "type": "chat"
     },
     {
@@ -1621,8 +1814,24 @@
       "family": "fugu",
       "attachment": true,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": false,
@@ -2549,6 +2758,116 @@
       "type": "chat"
     },
     {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65535
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
+      },
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "gemini-3.8-flash@eu",
+      "name": "Gemini 3.8 Flash (EU)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65535
+      },
+      "cost": {
+        "input": 0.825,
+        "output": 4.125,
+        "cache_read": 0.0825
+      },
+      "display_name": "Gemini 3.8 Flash (EU)",
+      "type": "chat"
+    },
+    {
       "id": "gemma-4-26b-a4b-it",
       "name": "Gemma 4 26B A4B IT",
       "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
@@ -2999,15 +3318,69 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 131072
+        "context": 1000000,
+        "output": 262144
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.25,
-        "cache_read": 0.015
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.07
       },
       "display_name": "GLM-5.3-Flash",
+      "type": "chat"
+    },
+    {
+      "id": "glm-5.3-flash@eu",
+      "name": "GLM-5.3-Flash (EU)",
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.07
+      },
+      "display_name": "GLM-5.3-Flash (EU)",
       "type": "chat"
     },
     {
@@ -4973,7 +5346,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": false,
       "knowledge": "2025-01",
       "release_date": "2026-06-12",
@@ -5447,8 +5820,24 @@
       "family": "mimo",
       "attachment": true,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
@@ -5486,8 +5875,24 @@
       "family": "mimo",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
@@ -7029,6 +7434,216 @@
         "cache_read": 0.2
       },
       "display_name": "Qwen3.8 2.4T A95B",
+      "type": "chat"
+    },
+    {
+      "id": "qwen3.8-2.4T-A95B@eu",
+      "name": "Qwen3.8 2.4T A95B (EU)",
+      "description": "Open-weight sparse MoE (2.4T total, 95B active), the open-weight twin of Qwen3.8 Max for coding, research, complex reasoning, and agentic workflows",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-12",
+      "last_updated": "2026-08-12",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 262144
+      },
+      "cost": {
+        "input": 2.5,
+        "output": 6,
+        "cache_read": 0.63
+      },
+      "display_name": "Qwen3.8 2.4T A95B (EU)",
+      "type": "chat"
+    },
+    {
+      "id": "qwen3.8-flash",
+      "name": "Qwen3.8 Flash",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.16,
+        "output": 0.47,
+        "cache_read": 0.016,
+        "cache_write": 0.2
+      },
+      "display_name": "Qwen3.8 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "qwen3.8-flash-next",
+      "name": "Qwen3.8 Flash Next",
+      "description": "Open-weight experimental preview of the Qwen4 architecture: hybrid-attention MoE (125B total, 6B active) with vision encoder for coding, agent tasks, and image and video understanding",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-27",
+      "last_updated": "2026-08-27",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen3.8 Flash Next",
+      "type": "chat"
+    },
+    {
+      "id": "qwen3.8-flash-next@eu",
+      "name": "Qwen3.8 Flash Next (EU)",
+      "description": "Open-weight experimental preview of the Qwen4 architecture: hybrid-attention MoE (125B total, 6B active) with vision encoder for coding, agent tasks, and image and video understanding",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-27",
+      "last_updated": "2026-08-27",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen3.8 Flash Next (EU)",
       "type": "chat"
     },
     {

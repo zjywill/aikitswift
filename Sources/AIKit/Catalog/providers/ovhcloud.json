@@ -468,6 +468,54 @@
       "type": "chat"
     },
     {
+      "id": "qwen3.8-27b",
+      "name": "Qwen3.8-27B",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Qwen3.8-27B",
+      "type": "chat"
+    },
+    {
       "id": "qwen3guard-gen-0.6b",
       "name": "Qwen3Guard-Gen-0.6B",
       "description": "Open-weight instruction model for adaptable chat and self-hosted production workloads",
@@ -491,6 +539,10 @@
       "limit": {
         "context": 32768,
         "output": 16384
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Qwen3Guard-Gen-0.6B",
       "type": "chat"
@@ -519,6 +571,10 @@
       "limit": {
         "context": 32768,
         "output": 16384
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Qwen3Guard-Gen-8B",
       "type": "chat"

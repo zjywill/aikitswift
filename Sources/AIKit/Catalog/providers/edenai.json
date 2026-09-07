@@ -1672,7 +1672,7 @@
       "cost": {
         "input": 0.15001,
         "output": 0.59997,
-        "cache_read": 0.15001,
+        "cache_read": 0.015001,
         "cache_write": 0.15001
       },
       "display_name": "GPT OSS 120B",
@@ -1719,7 +1719,7 @@
       "cost": {
         "input": 0.15001,
         "output": 0.59997,
-        "cache_read": 0.15001,
+        "cache_read": 0.015001,
         "cache_write": 0.15001
       },
       "display_name": "GPT OSS 120B (EU)",
@@ -1766,7 +1766,7 @@
       "cost": {
         "input": 0.07,
         "output": 0.30002,
-        "cache_read": 0.07,
+        "cache_read": 0.007,
         "cache_write": 0.07
       },
       "display_name": "GPT OSS 20B",
@@ -1813,7 +1813,7 @@
       "cost": {
         "input": 0.07,
         "output": 0.30002,
-        "cache_read": 0.07,
+        "cache_read": 0.007,
         "cache_write": 0.07
       },
       "display_name": "GPT OSS 20B (EU)",
@@ -2647,7 +2647,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 64000
+        "output": 128000
       },
       "cost": {
         "input": 0.14,
@@ -4537,8 +4537,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.75335,
-        "output": 0.75335
+        "input": 0.75257,
+        "output": 0.75257
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
@@ -4582,8 +4582,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17385,
-        "output": 0.75335
+        "input": 0.17367,
+        "output": 0.75257
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -8693,8 +8693,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.4636,
-        "output": 0.9272
+        "input": 0.46312,
+        "output": 0.92624
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -8738,8 +8738,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17385,
-        "output": 0.6954
+        "input": 0.17367,
+        "output": 0.69468
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -8773,8 +8773,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.0431,
-        "output": 1.0431
+        "input": 1.04202,
+        "output": 1.04202
       },
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
