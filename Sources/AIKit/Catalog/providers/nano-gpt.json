@@ -26,8 +26,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 32768
       },
       "cost": {
@@ -61,8 +61,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -96,8 +96,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -733,9 +733,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 4000,
-        "input": 4000,
-        "output": 4096
+        "context": 4096,
+        "input": 4096,
+        "output": 3686
       },
       "cost": {
         "input": 0.1003,
@@ -803,8 +803,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1029,41 +1029,6 @@
       "type": "chat"
     },
     {
-      "id": "NousResearch/Hermes-4-70B:thinking",
-      "name": "Hermes 4 (Thinking)",
-      "description": "General-purpose chat model for instruction following, writing, and analysis",
-      "family": "nousresearch",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": false,
-      "release_date": "2025-09-17",
-      "last_updated": "2025-09-17",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.2006,
-        "output": 0.3995,
-        "cache_read": 0.1003
-      },
-      "display_name": "Hermes 4 (Thinking)",
-      "type": "chat"
-    },
-    {
       "id": "NousResearch/hermes-3-llama-3.1-70b",
       "name": "Hermes 3 70B",
       "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
@@ -1166,41 +1131,6 @@
         "cache_read": 0.15
       },
       "display_name": "Hermes 4 Large (Thinking)",
-      "type": "chat"
-    },
-    {
-      "id": "NousResearch/hermes-4-70b",
-      "name": "Hermes 4 Medium",
-      "description": "General-purpose chat model for instruction following, writing, and analysis",
-      "family": "nousresearch",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": false,
-      "release_date": "2025-07-03",
-      "last_updated": "2025-07-03",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.2006,
-        "output": 0.3995,
-        "cache_read": 0.1003
-      },
-      "display_name": "Hermes 4 Medium",
       "type": "chat"
     },
     {
@@ -1318,8 +1248,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 32768
       },
       "cost": {
@@ -1458,8 +1388,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1528,8 +1458,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1563,8 +1493,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1573,41 +1503,6 @@
         "cache_read": 0.349945
       },
       "display_name": "Steelskull Electra R1 70b",
-      "type": "chat"
-    },
-    {
-      "id": "Steelskull/L3.3-MS-Evayale-70B",
-      "name": "Evayale 70b ",
-      "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
-      "family": "llama",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": false,
-      "release_date": "2024-01-01",
-      "last_updated": "2024-12-06",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 16384,
-        "input": 16384,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.493,
-        "output": 0.493,
-        "cache_read": 0.2465
-      },
-      "display_name": "Evayale 70b ",
       "type": "chat"
     },
     {
@@ -1633,8 +1528,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1668,8 +1563,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -1746,7 +1641,7 @@
       "limit": {
         "context": 1048576,
         "input": 1048576,
-        "output": 1048576
+        "output": 393216
       },
       "cost": {
         "input": 0.2,
@@ -2369,7 +2264,7 @@
       "limit": {
         "context": 1048576,
         "input": 1048576,
-        "output": 1048576
+        "output": 65535
       },
       "cost": {
         "input": 3,
@@ -2499,6 +2394,52 @@
         "cache_read": 0.35
       },
       "display_name": "Qwen2.5 VL 72B TEE",
+      "type": "chat"
+    },
+    {
+      "id": "TEE/qwen3-8b",
+      "name": "Qwen3 8B TEE",
+      "description": "Qwen3 8B is an open-weight dense language model from Alibaba's Qwen team for efficient dialogue, reasoning, mathematics, coding, and tool use. Running inside a TEE (Trusted Execution Environment), with provider attestation support.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 40960,
+        "input": 40960,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.11,
+        "output": 0.45,
+        "cache_read": 0.11
+      },
+      "display_name": "Qwen3 8B TEE",
       "type": "chat"
     },
     {
@@ -2898,8 +2839,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "input": 131072,
+        "context": 32000,
+        "input": 32000,
         "output": 16384
       },
       "cost": {
@@ -2908,6 +2849,43 @@
         "cache_read": 0.155
       },
       "display_name": "Anubis 70B v1.1",
+      "type": "chat"
+    },
+    {
+      "id": "TheDrummer/Artemis-v1.1",
+      "name": "TheDrummer/Artemis v1.1",
+      "description": "TheDrummer's Artemis v1.1 is a Gemma 4 31B fine-tune for creative writing, expressive dialogue, and roleplay, with optional thinking and a 262K context window.",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-06",
+      "last_updated": "2026-09-06",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "TheDrummer/Artemis v1.1",
       "type": "chat"
     },
     {
@@ -2932,8 +2910,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 32768
       },
       "cost": {
@@ -2966,8 +2944,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 32768
       },
       "cost": {
@@ -3002,7 +2980,7 @@
       "limit": {
         "context": 131072,
         "input": 131072,
-        "output": 131072
+        "output": 117964
       },
       "cost": {
         "input": 0.35,
@@ -3139,7 +3117,7 @@
       "limit": {
         "context": 8192,
         "input": 8192,
-        "output": 8192
+        "output": 26214
       },
       "cost": {
         "input": 0.493,
@@ -3172,9 +3150,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 32000,
-        "input": 32000,
-        "output": 32768
+        "context": 32768,
+        "input": 32768,
+        "output": 29491
       },
       "cost": {
         "input": 0.55,
@@ -3372,7 +3350,7 @@
           ]
         }
       ],
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": true,
       "release_date": "2026-08-31",
       "last_updated": "2026-08-31",
@@ -3713,8 +3691,8 @@
     {
       "id": "alibaba/qwen3.8-max-0902",
       "name": "Qwen3.8 Max 0902",
-      "description": "Qwen3.8 Max 0902 is Alibaba's September 2 checkpoint of its flagship Qwen3.8 Max model for coding, knowledge work, data analysis, and long-running agent workflows. It supports text, image, video, PDF input, selectable thinking, tool calling, structured output, and a near-million-token context window.",
-      "family": "qwen3.8-max",
+      "description": "2026-09-02 upgraded snapshot of Qwen3.8 Max with stronger coding, collaborative agents, and multimodal document understanding",
+      "family": "qwen",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -3725,12 +3703,16 @@
           "type": "effort",
           "values": [
             "none",
-            "high"
+            "low",
+            "medium",
+            "high",
+            "max"
           ]
         }
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-02",
       "last_updated": "2026-09-02",
       "modalities": {
@@ -4086,7 +4068,7 @@
       "cost": {
         "input": 10,
         "output": 50,
-        "cache_read": 1,
+        "cache_read": 0.25,
         "cache_write": 12.5
       },
       "display_name": "Claude Fable Latest",
@@ -5338,8 +5320,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "input": 128000,
+        "context": 131072,
+        "input": 131072,
         "output": 131072
       },
       "cost": {
@@ -5478,7 +5460,7 @@
       "limit": {
         "context": 262144,
         "input": 262144,
-        "output": 262144
+        "output": 235929
       },
       "cost": {
         "input": 0.5,
@@ -5750,7 +5732,7 @@
       "limit": {
         "context": 128000,
         "input": 128000,
-        "output": 131072
+        "output": 16384
       },
       "cost": {
         "input": 0.2,
@@ -6124,7 +6106,7 @@
       "limit": {
         "context": 200000,
         "input": 200000,
-        "output": 32000
+        "output": 64000
       },
       "cost": {
         "input": 5,
@@ -6176,7 +6158,7 @@
       "limit": {
         "context": 200000,
         "input": 200000,
-        "output": 32000
+        "output": 64000
       },
       "cost": {
         "input": 5,
@@ -7071,9 +7053,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 163840
+        "context": 163840,
+        "input": 163840,
+        "output": 32768
       },
       "cost": {
         "input": 0.4,
@@ -7912,9 +7894,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
+        "input": 0.44,
+        "output": 1.32,
+        "cache_read": 0.014
       },
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
@@ -8157,55 +8139,6 @@
         "cache_read": 0.11
       },
       "display_name": "DeepSeek V4 Pro (Thinking)",
-      "type": "chat"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview",
-      "name": "Dots3-Note Preview",
-      "description": "Dots Studio's open-weight multimodal Mixture-of-Experts model activates 16B of 280B parameters for long-context reasoning, coding, visual and document understanding, tool use, and long-horizon agent workflows. Prompts and completions of this model may be logged.",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-08-15",
-      "last_updated": "2026-08-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 393216,
-        "input": 393216,
-        "output": 393216
-      },
-      "cost": {
-        "input": 0.1,
-        "output": 0.2,
-        "cache_read": 0.05
-      },
-      "display_name": "Dots3-Note Preview",
       "type": "chat"
     },
     {
@@ -8915,8 +8848,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -8965,8 +8898,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9013,8 +8946,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9062,8 +8995,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9111,8 +9044,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9149,8 +9082,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9197,8 +9130,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9245,8 +9178,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9377,8 +9310,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9426,8 +9359,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9476,8 +9409,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9525,8 +9458,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9573,8 +9506,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9621,8 +9554,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9669,8 +9602,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -9707,9 +9640,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
-        "output": 65536
+        "context": 65536,
+        "input": 65536,
+        "output": 32768
       },
       "cost": {
         "input": 2,
@@ -10656,41 +10589,6 @@
       "type": "chat"
     },
     {
-      "id": "glm-z1-air",
-      "name": "GLM Z1 Air",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "glm",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-04-15",
-      "last_updated": "2025-04-15",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 32000,
-        "input": 32000,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.07,
-        "output": 0.07,
-        "cache_read": 0.035
-      },
-      "display_name": "GLM Z1 Air",
-      "type": "chat"
-    },
-    {
       "id": "glm-z1-airx",
       "name": "GLM Z1 AirX",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
@@ -10764,8 +10662,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -10815,8 +10713,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -10919,8 +10817,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -10970,8 +10868,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -11010,8 +10908,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -11050,8 +10948,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -11526,8 +11424,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
+        "context": 1048576,
+        "input": 1048576,
         "output": 65536
       },
       "cost": {
@@ -11873,7 +11771,7 @@
       "limit": {
         "context": 65536,
         "input": 65536,
-        "output": 65536
+        "output": 8192
       },
       "cost": {
         "input": 0.25,
@@ -11910,7 +11808,7 @@
       "limit": {
         "context": 65536,
         "input": 65536,
-        "output": 65536
+        "output": 8192
       },
       "cost": {
         "input": 0.25,
@@ -12017,8 +11915,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -12062,41 +11960,6 @@
         "cache_read": 0.35
       },
       "display_name": "Qwen 2.5 32B Abliterated",
-      "type": "chat"
-    },
-    {
-      "id": "ibm-granite/granite-4.1-8b",
-      "name": "Granite 4.1 8B",
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
-      "family": "granite",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-04-29",
-      "last_updated": "2026-04-29",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "input": 131072,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.05,
-        "output": 0.1,
-        "cache_read": 0.05
-      },
-      "display_name": "Granite 4.1 8B",
       "type": "chat"
     },
     {
@@ -12562,8 +12425,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 32768,
-        "input": 32768,
+        "context": 65536,
+        "input": 65536,
         "output": 32768
       },
       "cost": {
@@ -12869,7 +12732,7 @@
       "limit": {
         "context": 131072,
         "input": 131072,
-        "output": 131072
+        "output": 117964
       },
       "cost": {
         "input": 0.35,
@@ -13037,7 +12900,7 @@
     {
       "id": "meta/muse-spark-1.3",
       "name": "Muse Spark 1.3",
-      "description": "Meta's Muse Spark 1.3 is a frontier multimodal reasoning model for long-horizon coding and agentic workflows, with strong gains in computer use, browsing, professional tool use, codebase understanding, instruction following, and million-token retrieval. It accepts text, images, audio, video, and files, supports tool calling and structured output, and always reasons before answering.",
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2.",
       "family": "muse",
       "attachment": true,
       "reasoning": {
@@ -13058,6 +12921,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-02",
       "last_updated": "2026-09-02",
       "modalities": {
@@ -13065,8 +12929,8 @@
           "text",
           "image",
           "video",
-          "audio",
-          "pdf"
+          "pdf",
+          "audio"
         ],
         "output": [
           "text"
@@ -13611,7 +13475,7 @@
       "limit": {
         "context": 128000,
         "input": 128000,
-        "output": 131072
+        "output": 102400
       },
       "cost": {
         "input": 0.1,
@@ -14019,7 +13883,7 @@
       "limit": {
         "context": 128000,
         "input": 128000,
-        "output": 256000
+        "output": 102400
       },
       "cost": {
         "input": 2.006,
@@ -14159,9 +14023,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 32000,
-        "input": 32000,
-        "output": 32768
+        "context": 32768,
+        "input": 32768,
+        "output": 26214
       },
       "cost": {
         "input": 0.1989,
@@ -14284,7 +14148,7 @@
       "limit": {
         "context": 65536,
         "input": 65536,
-        "output": 65536
+        "output": 52428
       },
       "cost": {
         "input": 2,
@@ -14352,9 +14216,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 262144
+        "context": 262144,
+        "input": 262144,
+        "output": 100352
       },
       "cost": {
         "input": 0.4,
@@ -14748,7 +14612,7 @@
       "limit": {
         "context": 1048576,
         "input": 1048576,
-        "output": 1048576
+        "output": 943718
       },
       "cost": {
         "input": 2,
@@ -14796,7 +14660,7 @@
       "limit": {
         "context": 1048576,
         "input": 1048576,
-        "output": 1048576
+        "output": 943718
       },
       "cost": {
         "input": 2,
@@ -15060,7 +14924,7 @@
       "limit": {
         "context": 262144,
         "input": 262144,
-        "output": 262144
+        "output": 235929
       },
       "cost": {
         "input": 0.025,
@@ -15110,7 +14974,7 @@
       "limit": {
         "context": 262144,
         "input": 262144,
-        "output": 262144
+        "output": 235929
       },
       "cost": {
         "input": 0.5,
@@ -15143,8 +15007,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 16384
       },
       "cost": {
@@ -15251,9 +15115,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 262144
+        "context": 262144,
+        "input": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.17,
@@ -16175,9 +16039,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
-        "output": 32768
+        "context": 400000,
+        "input": 400000,
+        "output": 128000
       },
       "cost": {
         "input": 1.25,
@@ -16532,8 +16396,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 922000,
-        "input": 922000,
+        "context": 1050000,
+        "input": 1050000,
         "output": 128000
       },
       "cost": {
@@ -16688,8 +16552,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
+        "context": 1050000,
+        "input": 1050000,
         "output": 128000
       },
       "cost": {
@@ -17025,6 +16889,110 @@
       "type": "chat"
     },
     {
+      "id": "openai/gpt-6-astra",
+      "name": "GPT 6 Astra",
+      "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+      "family": "gpt-astra",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-04-30",
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
+      },
+      "display_name": "GPT 6 Astra",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6-astra-pro",
+      "name": "GPT 6 Astra Pro",
+      "description": "GPT 6 Astra in Pro reasoning mode. Uses additional model work for difficult tasks, with higher latency and token usage at the same per-token rates. Reasoning effort remains independently configurable.",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
+      },
+      "display_name": "GPT 6 Astra Pro",
+      "type": "chat"
+    },
+    {
       "id": "openai/gpt-chat-latest",
       "name": "GPT Chat Latest",
       "description": "Chat-tuned GPT model for conversational assistance, writing, and tool workflows",
@@ -17090,7 +17058,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -17120,10 +17087,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.2,
-        "cache_write": 2.5
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
       },
       "display_name": "GPT Latest",
       "type": "chat"
@@ -17757,6 +17724,82 @@
       "type": "chat"
     },
     {
+      "id": "ornith-ai/ornith-1.5-9b",
+      "name": "Ornith 1.5 9B",
+      "description": "Ornith 1.5 9B is an FP8 dense open-weight model built for agentic coding, tool use, visual understanding, and efficient long-context work. This variant disables thinking for faster direct responses.",
+      "family": "ornith",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-07-29",
+      "last_updated": "2026-07-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.2,
+        "cache_read": 0.05
+      },
+      "display_name": "Ornith 1.5 9B",
+      "type": "chat"
+    },
+    {
+      "id": "ornith-ai/ornith-1.5-9b:thinking",
+      "name": "Ornith 1.5 9B Thinking",
+      "description": "Ornith 1.5 9B with thinking enabled for more deliberate agentic coding, tool use, visual understanding, and long-context work.",
+      "family": "ornith",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-07-29",
+      "last_updated": "2026-07-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.2,
+        "cache_read": 0.05
+      },
+      "display_name": "Ornith 1.5 9B Thinking",
+      "type": "chat"
+    },
+    {
       "id": "pamanseau/OpenReasoning-Nemotron-32B",
       "name": "OpenReasoning Nemotron 32B",
       "description": "Nemotron model for efficient reasoning, coding, and specialized AI agents",
@@ -17855,9 +17898,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 127000,
-        "input": 127000,
-        "output": 128000
+        "context": 128000,
+        "input": 128000,
+        "output": 115200
       },
       "cost": {
         "input": 2,
@@ -18341,9 +18384,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 262144
+        "context": 262144,
+        "input": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.13,
@@ -18376,9 +18419,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 262144
+        "context": 131072,
+        "input": 131072,
+        "output": 117964
       },
       "cost": {
         "input": 0.3,
@@ -18448,9 +18491,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 262144
+        "context": 262144,
+        "input": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.15,
@@ -18486,9 +18529,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 262144
+        "context": 131072,
+        "input": 131072,
+        "output": 32768
       },
       "cost": {
         "input": 0.3,
@@ -18672,9 +18715,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 41000,
-        "input": 41000,
-        "output": 32768
+        "context": 262144,
+        "input": 262144,
+        "output": 16384
       },
       "cost": {
         "input": 0.3,
@@ -19197,6 +19240,82 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.6-35b-a3b-uncensored",
+      "name": "Qwen 3.6 35B A3B Uncensored",
+      "description": "Qwen 3.6 35B A3B Uncensored is an NVFP4 open-weight mixture-of-experts model LoRA-tuned for fewer refusals across chat, coding, tool use, and multimodal tasks.",
+      "family": "qwen3.6",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-07-29",
+      "last_updated": "2026-07-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.95,
+        "cache_read": 0.075
+      },
+      "display_name": "Qwen 3.6 35B A3B Uncensored",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.6-35b-a3b-uncensored:thinking",
+      "name": "Qwen 3.6 35B A3B Uncensored Thinking",
+      "description": "Qwen 3.6 35B A3B Uncensored with thinking enabled for more deliberate coding, multimodal analysis, tool use, and complex chat tasks.",
+      "family": "qwen3.6",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-07-29",
+      "last_updated": "2026-07-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.95,
+        "cache_read": 0.075
+      },
+      "display_name": "Qwen 3.6 35B A3B Uncensored Thinking",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-2.4t-a95b",
       "name": "Qwen3.8 2.4T A95B (Max)",
       "description": "Open-weight sparse MoE (2.4T total, 95B active), the open-weight twin of Qwen3.8 Max for coding, research, complex reasoning, and agentic workflows",
@@ -19451,7 +19570,7 @@
       "limit": {
         "context": 32000,
         "input": 32000,
-        "output": 32768
+        "output": 115200
       },
       "cost": {
         "input": 0.69989,
@@ -20903,9 +21022,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 127000,
-        "input": 127000,
-        "output": 128000
+        "context": 127072,
+        "input": 127072,
+        "output": 114364
       },
       "cost": {
         "input": 1,
@@ -20940,9 +21059,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 60000,
-        "input": 60000,
-        "output": 128000
+        "context": 128000,
+        "input": 128000,
+        "output": 115200
       },
       "cost": {
         "input": 3.4,
@@ -21016,9 +21135,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 127000,
-        "input": 127000,
-        "output": 128000
+        "context": 128000,
+        "input": 128000,
+        "output": 115200
       },
       "cost": {
         "input": 2,
@@ -21051,8 +21170,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 16384,
-        "input": 16384,
+        "context": 32768,
+        "input": 32768,
         "output": 32768
       },
       "cost": {
@@ -21168,9 +21287,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 256000
+        "context": 262144,
+        "input": 262144,
+        "output": 65536
       },
       "cost": {
         "input": 0.1,
@@ -21215,9 +21334,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
-        "output": 256000
+        "context": 262144,
+        "input": 262144,
+        "output": 65536
       },
       "cost": {
         "input": 0.1,
@@ -21314,7 +21433,7 @@
       "limit": {
         "context": 262144,
         "input": 262144,
-        "output": 262144
+        "output": 128000
       },
       "cost": {
         "input": 0.066,
@@ -21640,9 +21759,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 131072
+        "context": 131072,
+        "input": 131072,
+        "output": 16384
       },
       "cost": {
         "input": 0.272,
@@ -21747,9 +21866,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 128000,
-        "input": 128000,
-        "output": 128000
+        "context": 131072,
+        "input": 131072,
+        "output": 117964
       },
       "cost": {
         "input": 0.15,
@@ -22013,7 +22132,7 @@
       "limit": {
         "context": 1000000,
         "input": 1000000,
-        "output": 1000000
+        "output": 900000
       },
       "cost": {
         "input": 1.25,
@@ -22061,7 +22180,7 @@
       "limit": {
         "context": 500000,
         "input": 500000,
-        "output": 500000
+        "output": 450000
       },
       "cost": {
         "input": 2,
@@ -22111,7 +22230,7 @@
       "limit": {
         "context": 500000,
         "input": 500000,
-        "output": 500000
+        "output": 450000
       },
       "cost": {
         "input": 2,
@@ -22159,7 +22278,7 @@
       "limit": {
         "context": 256000,
         "input": 256000,
-        "output": 256000
+        "output": 230400
       },
       "cost": {
         "input": 1,
@@ -22207,7 +22326,7 @@
       "limit": {
         "context": 500000,
         "input": 500000,
-        "output": 500000
+        "output": 450000
       },
       "cost": {
         "input": 2,
@@ -22715,9 +22834,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 204800
+        "context": 204800,
+        "input": 204800,
+        "output": 131072
       },
       "cost": {
         "input": 1,
@@ -22752,9 +22871,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 204800
+        "context": 204800,
+        "input": 204800,
+        "output": 131072
       },
       "cost": {
         "input": 1,
@@ -22833,9 +22952,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 64000,
-        "input": 64000,
-        "output": 96000
+        "context": 65536,
+        "input": 65536,
+        "output": 16384
       },
       "cost": {
         "input": 0.6,
@@ -22873,9 +22992,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 64000,
-        "input": 64000,
-        "output": 96000
+        "context": 65536,
+        "input": 65536,
+        "output": 16384
       },
       "cost": {
         "input": 0.6,

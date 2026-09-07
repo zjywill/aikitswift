@@ -452,11 +452,11 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 8000,
+        "context": 16000,
         "output": 0
       },
       "display_name": "Grok Imagine Image",
-      "type": "chat"
+      "type": "image-generation"
     },
     {
       "id": "grok-imagine-image-2.0",
@@ -484,11 +484,11 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 8000,
+        "context": 64000,
         "output": 0
       },
       "display_name": "Grok Imagine Image 2.0",
-      "type": "chat"
+      "type": "image-generation"
     },
     {
       "id": "grok-imagine-image-quality",
@@ -516,11 +516,11 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 8000,
+        "context": 16000,
         "output": 0
       },
       "display_name": "Grok Imagine Image Quality",
-      "type": "chat"
+      "type": "image-generation"
     },
     {
       "id": "grok-imagine-video",

@@ -5,7 +5,7 @@
   "models": [
     {
       "id": "amazon/moonshot.kimi-k2-thinking",
-      "name": "Kimi K2 Thinking",
+      "name": "Kimi K2 Thinking (Amazon Bedrock)",
       "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
       "family": "kimi-thinking",
       "attachment": false,
@@ -37,12 +37,12 @@
         "input": 0.6,
         "output": 2.5
       },
-      "display_name": "Kimi K2 Thinking",
+      "display_name": "Kimi K2 Thinking (Amazon Bedrock)",
       "type": "chat"
     },
     {
       "id": "amazon/moonshotai.kimi-k2.5",
-      "name": "Kimi K2.5",
+      "name": "Kimi K2.5 (Amazon Bedrock)",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
       "family": "kimi-k2",
       "attachment": true,
@@ -75,12 +75,12 @@
         "input": 0.6,
         "output": 3
       },
-      "display_name": "Kimi K2.5",
+      "display_name": "Kimi K2.5 (Amazon Bedrock)",
       "type": "chat"
     },
     {
       "id": "amazon/zai.glm-4.7-flash",
-      "name": "GLM-4.7-Flash",
+      "name": "GLM-4.7-Flash (Amazon Bedrock)",
       "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
       "family": "glm-flash",
       "attachment": false,
@@ -112,12 +112,12 @@
         "input": 0.07,
         "output": 0.4
       },
-      "display_name": "GLM-4.7-Flash",
+      "display_name": "GLM-4.7-Flash (Amazon Bedrock)",
       "type": "chat"
     },
     {
       "id": "amazon/zai.glm-4.7-flash@us",
-      "name": "GLM-4.7-Flash (US)",
+      "name": "GLM-4.7-Flash (Amazon Bedrock, US)",
       "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
       "family": "glm-flash",
       "attachment": false,
@@ -149,7 +149,7 @@
         "input": 0.07,
         "output": 0.4
       },
-      "display_name": "GLM-4.7-Flash (US)",
+      "display_name": "GLM-4.7-Flash (Amazon Bedrock, US)",
       "type": "chat"
     },
     {
@@ -258,7 +258,7 @@
     },
     {
       "id": "anthropic/claude-fable-latest",
-      "name": "Claude Fable 5.1",
+      "name": "Claude Fable Latest (Claude Fable 5.1)",
       "description": "Claude model for demanding reasoning and long-horizon agentic work",
       "family": "claude-fable",
       "attachment": true,
@@ -305,7 +305,7 @@
         "cache_read": 0.25,
         "cache_write": 12.5
       },
-      "display_name": "Claude Fable 5.1",
+      "display_name": "Claude Fable Latest (Claude Fable 5.1)",
       "type": "chat"
     },
     {
@@ -617,7 +617,7 @@
     },
     {
       "id": "anthropic/claude-opus-latest",
-      "name": "Claude Opus 5",
+      "name": "Claude Opus Latest (Claude Opus 5)",
       "description": "Strongest Claude Opus model for coding, agents, and professional work",
       "family": "claude-opus",
       "attachment": true,
@@ -664,7 +664,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
-      "display_name": "Claude Opus 5",
+      "display_name": "Claude Opus Latest (Claude Opus 5)",
       "type": "chat"
     },
     {
@@ -773,7 +773,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-latest",
-      "name": "Claude Sonnet 5",
+      "name": "Claude Sonnet Latest (Claude Sonnet 5)",
       "description": "Everyday Claude agent model for coding, planning, browsing, and general work",
       "family": "claude-sonnet",
       "attachment": true,
@@ -821,12 +821,12 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
-      "display_name": "Claude Sonnet 5",
+      "display_name": "Claude Sonnet Latest (Claude Sonnet 5)",
       "type": "chat"
     },
     {
       "id": "azure/gpt-5.1-codex",
-      "name": "GPT-5.1 Codex",
+      "name": "GPT-5.1 Codex (Azure)",
       "description": "Codex GPT for repository edits, code review, and practical software agents",
       "family": "gpt-codex",
       "attachment": true,
@@ -870,12 +870,12 @@
         "output": 10,
         "cache_read": 0.125
       },
-      "display_name": "GPT-5.1 Codex",
+      "display_name": "GPT-5.1 Codex (Azure)",
       "type": "chat"
     },
     {
       "id": "azure/gpt-5.1-codex-max",
-      "name": "GPT-5.1 Codex Max",
+      "name": "GPT-5.1 Codex Max (Azure)",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
       "family": "gpt-codex",
       "attachment": true,
@@ -920,12 +920,12 @@
         "output": 10,
         "cache_read": 0.125
       },
-      "display_name": "GPT-5.1 Codex Max",
+      "display_name": "GPT-5.1 Codex Max (Azure)",
       "type": "chat"
     },
     {
       "id": "azure/gpt-5.1-codex-mini",
-      "name": "GPT-5.1 Codex mini",
+      "name": "GPT-5.1 Codex mini (Azure)",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
       "family": "gpt-codex",
       "attachment": true,
@@ -970,12 +970,12 @@
         "output": 2,
         "cache_read": 0.025
       },
-      "display_name": "GPT-5.1 Codex mini",
+      "display_name": "GPT-5.1 Codex mini (Azure)",
       "type": "chat"
     },
     {
       "id": "azure/gpt-5.2-codex",
-      "name": "GPT-5.2 Codex",
+      "name": "GPT-5.2 Codex (Azure)",
       "description": "Code-specialist GPT for repository edits, reviews, and long-running software agents",
       "family": "gpt-codex",
       "attachment": true,
@@ -1020,12 +1020,12 @@
         "output": 14,
         "cache_read": 0.175
       },
-      "display_name": "GPT-5.2 Codex",
+      "display_name": "GPT-5.2 Codex (Azure)",
       "type": "chat"
     },
     {
       "id": "cerebras/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Cerebras)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1066,12 +1066,12 @@
         "output": 0.75,
         "cache_read": 0.35
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Cerebras)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/aisingapore/gemma-sea-lion-v4-27b-it",
-      "name": "Gemma-SEA-LION-v4-27B-IT",
+      "name": "Gemma-SEA-LION-v4-27B-IT (Cloudflare)",
       "description": "Gemma 3 27B tuned by AI Singapore for Southeast Asian languages and instruction following",
       "family": "gemma",
       "attachment": false,
@@ -1100,12 +1100,12 @@
         "input": 0.351,
         "output": 0.555
       },
-      "display_name": "Gemma-SEA-LION-v4-27B-IT",
+      "display_name": "Gemma-SEA-LION-v4-27B-IT (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/deepseek-ai/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Cloudflare)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -1148,12 +1148,12 @@
         "output": 1.32,
         "cache_read": 0.014
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/deepseek-ai/deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Cloudflare)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -1195,12 +1195,12 @@
         "output": 3.96,
         "cache_read": 0.044
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/meta/llama-guard-3-8b",
-      "name": "Llama-Guard-3-8B",
+      "name": "Llama-Guard-3-8B (Cloudflare)",
       "description": "Llama 3.1-based safety classifier for moderating prompts and model responses",
       "family": "llama",
       "attachment": false,
@@ -1230,12 +1230,12 @@
         "input": 0.484,
         "output": 0.03
       },
-      "display_name": "Llama-Guard-3-8B",
+      "display_name": "Llama-Guard-3-8B (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Cloudflare)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1275,12 +1275,12 @@
         "input": 0.35,
         "output": 0.75
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (Cloudflare)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1320,12 +1320,12 @@
         "input": 0.2,
         "output": 0.3
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/qwen/qwen2.5-coder-32b-instruct",
-      "name": "Qwen2.5-Coder-32B-Instruct",
+      "name": "Qwen2.5-Coder-32B-Instruct (Cloudflare)",
       "description": "Open coding-focused Qwen model for code generation, repair, and repository reasoning",
       "family": "qwen",
       "attachment": false,
@@ -1354,12 +1354,12 @@
         "input": 0.66,
         "output": 1
       },
-      "display_name": "Qwen2.5-Coder-32B-Instruct",
+      "display_name": "Qwen2.5-Coder-32B-Instruct (Cloudflare)",
       "type": "chat"
     },
     {
       "id": "cloudflare/@cf/zai-org/glm-4.7-flash",
-      "name": "GLM-4.7-Flash",
+      "name": "GLM-4.7-Flash (Cloudflare)",
       "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
       "family": "glm-flash",
       "attachment": false,
@@ -1391,7 +1391,7 @@
         "input": 0.0605,
         "output": 0.4
       },
-      "display_name": "GLM-4.7-Flash",
+      "display_name": "GLM-4.7-Flash (Cloudflare)",
       "type": "chat"
     },
     {
@@ -1536,7 +1536,7 @@
     },
     {
       "id": "databricks/databricks-deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Databricks)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -1580,12 +1580,12 @@
         "cache_read": 0.028,
         "cache_write": 0.14
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Databricks)",
       "type": "chat"
     },
     {
       "id": "databricks/databricks-deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Databricks)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -1628,12 +1628,12 @@
         "cache_read": 0.13202,
         "cache_write": 1.31999
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Databricks)",
       "type": "chat"
     },
     {
       "id": "databricks/databricks-gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Databricks)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1675,12 +1675,12 @@
         "cache_read": 0.015001,
         "cache_write": 0.15001
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Databricks)",
       "type": "chat"
     },
     {
       "id": "databricks/databricks-gpt-oss-120b@eu",
-      "name": "GPT OSS 120B (EU)",
+      "name": "GPT OSS 120B (Databricks, EU)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1722,12 +1722,12 @@
         "cache_read": 0.015001,
         "cache_write": 0.15001
       },
-      "display_name": "GPT OSS 120B (EU)",
+      "display_name": "GPT OSS 120B (Databricks, EU)",
       "type": "chat"
     },
     {
       "id": "databricks/databricks-gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (Databricks)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1769,12 +1769,12 @@
         "cache_read": 0.007,
         "cache_write": 0.07
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (Databricks)",
       "type": "chat"
     },
     {
       "id": "databricks/databricks-gpt-oss-20b@eu",
-      "name": "GPT OSS 20B (EU)",
+      "name": "GPT OSS 20B (Databricks, EU)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -1816,12 +1816,63 @@
         "cache_read": 0.007,
         "cache_write": 0.07
       },
-      "display_name": "GPT OSS 20B (EU)",
+      "display_name": "GPT OSS 20B (Databricks, EU)",
+      "type": "chat"
+    },
+    {
+      "id": "databricks/databricks-inkling",
+      "name": "Inkling (Databricks)",
+      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
+      "family": "ling",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-07-15",
+      "last_updated": "2026-07-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 1.00002,
+        "output": 4.04999,
+        "cache_read": 0.17003,
+        "cache_write": 1.00002
+      },
+      "display_name": "Inkling (Databricks)",
       "type": "chat"
     },
     {
       "id": "deepinfra/ByteDance/Seed-2.0-code",
-      "name": "Seed 2.0 Code",
+      "name": "Seed 2.0 Code (Deep Infra)",
       "description": "ByteDance Seed coding model for multimodal software engineering and long-running agents",
       "family": "seed",
       "attachment": true,
@@ -1864,12 +1915,12 @@
         "output": 3,
         "cache_read": 0.1
       },
-      "display_name": "Seed 2.0 Code",
+      "display_name": "Seed 2.0 Code (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/ByteDance/Seed-2.0-mini",
-      "name": "Seed 2.0 Mini",
+      "name": "Seed 2.0 Mini (Deep Infra)",
       "description": "Lightweight ByteDance Seed 2.0 model for low-latency multimodal reasoning and high-volume tasks",
       "family": "seed",
       "attachment": true,
@@ -1913,12 +1964,12 @@
         "output": 0.4,
         "cache_read": 0.02
       },
-      "display_name": "Seed 2.0 Mini",
+      "display_name": "Seed 2.0 Mini (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/deepseek-ai/DeepSeek-R1",
-      "name": "DeepSeek-R1",
+      "name": "DeepSeek-R1 (Deep Infra)",
       "description": "Classic open reasoning model for transparent math, coding, and deliberate problem solving",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -1950,12 +2001,12 @@
         "input": 0.7,
         "output": 2.4
       },
-      "display_name": "DeepSeek-R1",
+      "display_name": "DeepSeek-R1 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/deepseek-ai/DeepSeek-V3",
-      "name": "DeepSeek-V3",
+      "name": "DeepSeek-V3 (Deep Infra)",
       "description": "Open DeepSeek MoE chat model for coding, math, and general reasoning",
       "family": "deepseek",
       "attachment": false,
@@ -1984,12 +2035,12 @@
         "input": 0.32,
         "output": 0.89
       },
-      "display_name": "DeepSeek-V3",
+      "display_name": "DeepSeek-V3 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/deepseek-ai/DeepSeek-V3-0324",
-      "name": "DeepSeek V3 0324",
+      "name": "DeepSeek V3 0324 (Deep Infra)",
       "description": "March 2025 checkpoint of DeepSeek-V3 with improved reasoning and coding",
       "family": "deepseek",
       "attachment": false,
@@ -2019,12 +2070,12 @@
         "output": 0.9,
         "cache_read": 0.135
       },
-      "display_name": "DeepSeek V3 0324",
+      "display_name": "DeepSeek V3 0324 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Deep Infra)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -2063,16 +2114,16 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.08,
+        "input": 0.06,
         "output": 0.18,
-        "cache_read": 0.016
+        "cache_read": 0.015
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Deep Infra)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -2114,12 +2165,12 @@
         "output": 2.6,
         "cache_read": 0.1
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "name": "Llama-3.2-11B-Vision-Instruct",
+      "name": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
       "description": "Open multimodal Llama model for image understanding, captioning, and visual QA",
       "family": "llama",
       "attachment": true,
@@ -2150,12 +2201,12 @@
         "input": 0.345,
         "output": 0.345
       },
-      "display_name": "Llama-3.2-11B-Vision-Instruct",
+      "display_name": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/meta-llama/Llama-3.3-70B-Instruct",
-      "name": "Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct (Deep Infra)",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
       "family": "llama",
       "attachment": false,
@@ -2185,12 +2236,12 @@
         "input": 0.1,
         "output": 0.32
       },
-      "display_name": "Llama-3.3-70B-Instruct",
+      "display_name": "Llama-3.3-70B-Instruct (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/meta-llama/Llama-Guard-3-8B",
-      "name": "Llama-Guard-3-8B",
+      "name": "Llama-Guard-3-8B (Deep Infra)",
       "description": "Llama 3.1-based safety classifier for moderating prompts and model responses",
       "family": "llama",
       "attachment": false,
@@ -2220,12 +2271,12 @@
         "input": 0.055,
         "output": 0.055
       },
-      "display_name": "Llama-Guard-3-8B",
+      "display_name": "Llama-Guard-3-8B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/meta-models/Muse-Glimmer-30B",
-      "name": "Muse Glimmer 30B",
+      "name": "Muse Glimmer 30B (Deep Infra)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
       "family": "muse",
       "attachment": true,
@@ -2269,12 +2320,12 @@
         "output": 1.2,
         "cache_read": 0.04
       },
-      "display_name": "Muse Glimmer 30B",
+      "display_name": "Muse Glimmer 30B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/moonshotai/Kimi-K2.5",
-      "name": "Kimi K2.5",
+      "name": "Kimi K2.5 (Deep Infra)",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
       "family": "kimi-k2",
       "attachment": true,
@@ -2308,12 +2359,12 @@
         "output": 2.25,
         "cache_read": 0.07
       },
-      "display_name": "Kimi K2.5",
+      "display_name": "Kimi K2.5 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/nemotron-3-ultra-550b-a55b",
-      "name": "Nemotron 3 Ultra 550B A55B",
+      "name": "Nemotron 3 Ultra 550B A55B (Deep Infra)",
       "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
       "family": "nemotron",
       "attachment": false,
@@ -2354,12 +2405,12 @@
         "output": 2.2,
         "cache_read": 0.1
       },
-      "display_name": "Nemotron 3 Ultra 550B A55B",
+      "display_name": "Nemotron 3 Ultra 550B A55B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct",
-      "name": "Llama 3.1 Nemotron 70B Instruct",
+      "name": "Llama 3.1 Nemotron 70B Instruct (Deep Infra)",
       "description": "Nemotron model for efficient reasoning, coding, and specialized AI agents",
       "family": "nemotron",
       "attachment": false,
@@ -2388,12 +2439,12 @@
         "input": 0.6,
         "output": 0.6
       },
-      "display_name": "Llama 3.1 Nemotron 70B Instruct",
+      "display_name": "Llama 3.1 Nemotron 70B Instruct (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/nvidia/Nemotron-3-Nano-30B-A3B",
-      "name": "Nemotron 3 Nano 30B A3B",
+      "name": "Nemotron 3 Nano 30B A3B (Deep Infra)",
       "description": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
       "family": "nemotron",
       "attachment": false,
@@ -2425,12 +2476,12 @@
         "output": 0.2,
         "cache_read": 0.025
       },
-      "display_name": "Nemotron 3 Nano 30B A3B",
+      "display_name": "Nemotron 3 Nano 30B A3B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Deep Infra)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -2470,12 +2521,12 @@
         "input": 0.037,
         "output": 0.17
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (Deep Infra)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -2515,12 +2566,12 @@
         "input": 0.03,
         "output": 0.14
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/stepfun-ai/Step-3.5-Flash",
-      "name": "Step 3.5 Flash",
+      "name": "Step 3.5 Flash (Deep Infra)",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
       "attachment": false,
       "reasoning": {
@@ -2560,12 +2611,12 @@
         "output": 0.3,
         "cache_read": 0.02
       },
-      "display_name": "Step 3.5 Flash",
+      "display_name": "Step 3.5 Flash (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/stepfun-ai/Step-3.7-Flash",
-      "name": "Step 3.7 Flash",
+      "name": "Step 3.7 Flash (Deep Infra)",
       "description": "Newer StepFun flash model for faster agents, coding, and multimodal prompts",
       "attachment": true,
       "reasoning": {
@@ -2583,7 +2634,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2026-03-01",
       "release_date": "2026-05-29",
@@ -2608,12 +2659,12 @@
         "output": 1.15,
         "cache_read": 0.04
       },
-      "display_name": "Step 3.7 Flash",
+      "display_name": "Step 3.7 Flash (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/tencent/Hy3",
-      "name": "Hy3",
+      "name": "Hy3 (Deep Infra)",
       "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
       "family": "Hy",
       "attachment": false,
@@ -2654,12 +2705,12 @@
         "output": 0.58,
         "cache_read": 0.035
       },
-      "display_name": "Hy3",
+      "display_name": "Hy3 (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/thinkingmachines/Inkling",
-      "name": "Inkling",
+      "name": "Inkling (Deep Infra)",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
       "family": "ling",
       "attachment": true,
@@ -2705,12 +2756,12 @@
         "output": 4.05,
         "cache_read": 0.16
       },
-      "display_name": "Inkling",
+      "display_name": "Inkling (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/thinkingmachines/Inkling-Small",
-      "name": "Inkling Small",
+      "name": "Inkling Small (Deep Infra)",
       "description": "Multimodal MoE reasoning model (276B total, 12B active) for text, image, and audio",
       "family": "ling",
       "attachment": true,
@@ -2756,12 +2807,12 @@
         "output": 1.2,
         "cache_read": 0.1
       },
-      "display_name": "Inkling Small",
+      "display_name": "Inkling Small (Deep Infra)",
       "type": "chat"
     },
     {
       "id": "deepinfra/zai-org/GLM-4.7-Flash",
-      "name": "GLM-4.7-Flash",
+      "name": "GLM-4.7-Flash (Deep Infra)",
       "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
       "family": "glm-flash",
       "attachment": false,
@@ -2794,7 +2845,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
-      "display_name": "GLM-4.7-Flash",
+      "display_name": "GLM-4.7-Flash (Deep Infra)",
       "type": "chat"
     },
     {
@@ -2978,7 +3029,7 @@
     },
     {
       "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Fireworks AI)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -3021,12 +3072,12 @@
         "output": 0.66,
         "cache_read": 0.007
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Fireworks AI)",
       "type": "chat"
     },
     {
       "id": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Fireworks AI)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -3068,15 +3119,15 @@
         "output": 3.96,
         "cache_read": 0.044
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Fireworks AI)",
       "type": "chat"
     },
     {
-      "id": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
-      "name": "GPT OSS 120B",
-      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
-      "family": "gpt-oss",
-      "attachment": false,
+      "id": "fireworks_ai/accounts/fireworks/models/inkling",
+      "name": "Inkling (Fireworks AI)",
+      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
+      "family": "ling",
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -3085,20 +3136,24 @@
         {
           "type": "effort",
           "values": [
+            "none",
+            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
+      "release_date": "2026-07-15",
+      "last_updated": "2026-07-15",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -3106,20 +3161,20 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 1048576,
+        "output": 1048576
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.015
+        "input": 1,
+        "output": 4.05,
+        "cache_read": 0.17
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "Inkling (Fireworks AI)",
       "type": "chat"
     },
     {
       "id": "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b",
-      "name": "Muse Glimmer 30B",
+      "name": "Muse Glimmer 30B (Fireworks AI)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
       "family": "muse",
       "attachment": true,
@@ -3163,12 +3218,12 @@
         "output": 1.5,
         "cache_read": 0.04
       },
-      "display_name": "Muse Glimmer 30B",
+      "display_name": "Muse Glimmer 30B (Fireworks AI)",
       "type": "chat"
     },
     {
       "id": "fireworks_ai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Fireworks AI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -3209,12 +3264,12 @@
         "output": 0.6,
         "cache_read": 0.014
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Fireworks AI)",
       "type": "chat"
     },
     {
       "id": "flexai/Muse-Glimmer-30B",
-      "name": "Muse Glimmer 30B",
+      "name": "Muse Glimmer 30B (FlexAI)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
       "family": "muse",
       "attachment": true,
@@ -3257,12 +3312,12 @@
         "input": 0.3,
         "output": 1.1
       },
-      "display_name": "Muse Glimmer 30B",
+      "display_name": "Muse Glimmer 30B (FlexAI)",
       "type": "chat"
     },
     {
       "id": "flexai/Nemotron-3-Super-120B-A12B",
-      "name": "Nemotron 3 Super 120B A12B",
+      "name": "Nemotron 3 Super 120B A12B (FlexAI)",
       "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
       "family": "nemotron",
       "attachment": false,
@@ -3302,12 +3357,12 @@
         "input": 0.085,
         "output": 0.4
       },
-      "display_name": "Nemotron 3 Super 120B A12B",
+      "display_name": "Nemotron 3 Super 120B A12B (FlexAI)",
       "type": "chat"
     },
     {
       "id": "flexai/Step-3.7-Flash",
-      "name": "Step 3.7 Flash",
+      "name": "Step 3.7 Flash (FlexAI)",
       "description": "Newer StepFun flash model for faster agents, coding, and multimodal prompts",
       "attachment": true,
       "reasoning": {
@@ -3348,12 +3403,12 @@
         "input": 0.2,
         "output": 1.15
       },
-      "display_name": "Step 3.7 Flash",
+      "display_name": "Step 3.7 Flash (FlexAI)",
       "type": "chat"
     },
     {
       "id": "flexai/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (FlexAI)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -3395,12 +3450,12 @@
         "input": 0.03,
         "output": 0.1
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (FlexAI)",
       "type": "chat"
     },
     {
       "id": "flexai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (FlexAI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -3440,12 +3495,12 @@
         "input": 0.039,
         "output": 0.1
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (FlexAI)",
       "type": "chat"
     },
     {
       "id": "flexai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (FlexAI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -3485,7 +3540,7 @@
         "input": 0.02,
         "output": 0.1
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (FlexAI)",
       "type": "chat"
     },
     {
@@ -3641,7 +3696,7 @@
     },
     {
       "id": "google/gemini-3-pro-image-preview",
-      "name": "Nano Banana Pro",
+      "name": "Nano Banana Pro Preview",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
       "attachment": true,
@@ -3679,7 +3734,7 @@
         "cache_write": 0.375,
         "input_audio": 2
       },
-      "display_name": "Nano Banana Pro",
+      "display_name": "Nano Banana Pro Preview",
       "type": "image-generation"
     },
     {
@@ -3731,7 +3786,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-image-preview",
-      "name": "Nano Banana 2",
+      "name": "Nano Banana 2 Preview",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
       "attachment": true,
@@ -3773,7 +3828,7 @@
         "input": 0.5,
         "output": 3
       },
-      "display_name": "Nano Banana 2",
+      "display_name": "Nano Banana 2 Preview",
       "type": "image-generation"
     },
     {
@@ -4293,9 +4348,9 @@
       "type": "chat"
     },
     {
-      "id": "google/gemini-flash-latest",
-      "name": "Gemini 3.7 Flash",
-      "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "id": "google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
@@ -4315,9 +4370,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-03",
-      "release_date": "2026-08-13",
-      "last_updated": "2026-08-13",
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
       "modalities": {
         "input": [
           "text",
@@ -4343,12 +4397,65 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.7 Flash",
+      "display_name": "Gemini 3.8 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-flash-latest",
+      "name": "Gemini Flash Latest (Gemini 3.8 Flash)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini Flash Latest (Gemini 3.8 Flash)",
       "type": "chat"
     },
     {
       "id": "google/gemini-pro-latest",
-      "name": "Gemini 3.1 Pro Preview",
+      "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
       "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
       "family": "gemini-pro",
       "attachment": true,
@@ -4413,12 +4520,12 @@
           "cache_read": 0.4
         }
       },
-      "display_name": "Gemini 3.1 Pro Preview",
+      "display_name": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
       "type": "chat"
     },
     {
       "id": "groq/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Groq)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -4459,12 +4566,12 @@
         "output": 0.6,
         "cache_read": 0.075
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Groq)",
       "type": "chat"
     },
     {
       "id": "groq/openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (Groq)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -4505,12 +4612,12 @@
         "output": 0.3,
         "cache_read": 0.0375
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (Groq)",
       "type": "chat"
     },
     {
       "id": "ionos/meta-llama/Llama-3.3-70B-Instruct",
-      "name": "Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct (IONOS)",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
       "family": "llama",
       "attachment": false,
@@ -4537,15 +4644,15 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.75257,
-        "output": 0.75257
+        "input": 0.75543,
+        "output": 0.75543
       },
-      "display_name": "Llama-3.3-70B-Instruct",
+      "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
     },
     {
       "id": "ionos/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (IONOS)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -4582,10 +4689,10 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17367,
-        "output": 0.75257
+        "input": 0.17433,
+        "output": 0.75543
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
     },
     {
@@ -5420,7 +5527,7 @@
     },
     {
       "id": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Nebius)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -5463,12 +5570,12 @@
         "output": 0.28,
         "cache_read": 0.14
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Nebius)",
       "type": "chat"
     },
     {
       "id": "nebius/meta-llama/Llama-3.3-70B-Instruct",
-      "name": "Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct (Nebius)",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
       "family": "llama",
       "attachment": false,
@@ -5499,12 +5606,12 @@
         "output": 0.4,
         "cache_read": 0.13
       },
-      "display_name": "Llama-3.3-70B-Instruct",
+      "display_name": "Llama-3.3-70B-Instruct (Nebius)",
       "type": "chat"
     },
     {
       "id": "nebius/nvidia/Nemotron-3-Ultra-550b-a55b",
-      "name": "Nemotron 3 Ultra 550B A55B",
+      "name": "Nemotron 3 Ultra 550B A55B (Nebius)",
       "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
       "family": "nemotron",
       "attachment": false,
@@ -5545,12 +5652,12 @@
         "output": 3,
         "cache_read": 1
       },
-      "display_name": "Nemotron 3 Ultra 550B A55B",
+      "display_name": "Nemotron 3 Ultra 550B A55B (Nebius)",
       "type": "chat"
     },
     {
       "id": "nebius/nvidia/nemotron-3-super-120b-a12b",
-      "name": "Nemotron 3 Super 120B A12B",
+      "name": "Nemotron 3 Super 120B A12B (Nebius)",
       "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
       "family": "nemotron",
       "attachment": false,
@@ -5591,12 +5698,12 @@
         "output": 0.9,
         "cache_read": 0.3
       },
-      "display_name": "Nemotron 3 Super 120B A12B",
+      "display_name": "Nemotron 3 Super 120B A12B (Nebius)",
       "type": "chat"
     },
     {
       "id": "nebius/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Nebius)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -5637,7 +5744,7 @@
         "output": 0.6,
         "cache_read": 0.15
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Nebius)",
       "type": "chat"
     },
     {
@@ -7006,10 +7113,10 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-latest",
-      "name": "GPT-5.6 Sol",
-      "description": "Frontier GPT-5.6 model for complex professional work, coding, and agentic workflows",
-      "family": "gpt-sol",
+      "id": "openai/gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+      "family": "gpt-astra",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -7019,7 +7126,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -7031,9 +7137,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": false,
-      "knowledge": "2026-02-16",
-      "release_date": "2026-07-09",
-      "last_updated": "2026-07-09",
+      "knowledge": "2026-04-30",
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
       "modalities": {
         "input": [
           "text",
@@ -7051,16 +7157,16 @@
         "output": 128000
       },
       "cost": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.4,
-        "cache_write": 5,
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5,
         "tiers": [
           {
-            "input": 8,
-            "output": 30,
-            "cache_read": 0.8,
-            "cache_write": 10,
+            "input": 20,
+            "output": 75,
+            "cache_read": 2,
+            "cache_write": 25,
             "tier": {
               "type": "context",
               "size": 272000
@@ -7068,18 +7174,89 @@
           }
         ],
         "context_over_200k": {
-          "input": 8,
-          "output": 30,
-          "cache_read": 0.8,
-          "cache_write": 10
+          "input": 20,
+          "output": 75,
+          "cache_read": 2,
+          "cache_write": 25
         }
       },
-      "display_name": "GPT-5.6 Sol",
+      "display_name": "GPT-6 Astra",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-latest",
+      "name": "GPT Latest (GPT-6 Astra)",
+      "description": "GPT-6 Astra is OpenAI's most capable model for complex reasoning, coding, computer use, research, and document creation.",
+      "family": "gpt-astra",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-04-30",
+      "release_date": "2026-09-04",
+      "last_updated": "2026-09-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 922000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5,
+        "tiers": [
+          {
+            "input": 20,
+            "output": 75,
+            "cache_read": 2,
+            "cache_write": 25,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 20,
+          "output": 75,
+          "cache_read": 2,
+          "cache_write": 25
+        }
+      },
+      "display_name": "GPT Latest (GPT-6 Astra)",
       "type": "chat"
     },
     {
       "id": "openai/gpt-mini-latest",
-      "name": "GPT-5.4 mini",
+      "name": "GPT Mini Latest (GPT-5.4 mini)",
       "description": "Strong small GPT for coding subagents, quick tool use, and high-volume work",
       "family": "gpt-mini",
       "attachment": true,
@@ -7126,12 +7303,12 @@
         "output": 4.5,
         "cache_read": 0.075
       },
-      "display_name": "GPT-5.4 mini",
+      "display_name": "GPT Mini Latest (GPT-5.4 mini)",
       "type": "chat"
     },
     {
       "id": "openai/gpt-pro-latest",
-      "name": "GPT-5.5 Pro",
+      "name": "GPT Pro Latest (GPT-5.5 Pro)",
       "description": "Highest-accuracy GPT-5.5 tier for slower, precision-heavy reasoning and coding",
       "family": "gpt-pro",
       "attachment": true,
@@ -7192,7 +7369,7 @@
           "cache_read": 6
         }
       },
-      "display_name": "GPT-5.5 Pro",
+      "display_name": "GPT Pro Latest (GPT-5.5 Pro)",
       "type": "chat"
     },
     {
@@ -7488,7 +7665,7 @@
     },
     {
       "id": "ovhcloud/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (OVHcloud)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -7528,12 +7705,12 @@
         "input": 0.09,
         "output": 0.47
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (OVHcloud)",
       "type": "chat"
     },
     {
       "id": "ovhcloud/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (OVHcloud)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -7573,7 +7750,7 @@
         "input": 0.05,
         "output": 0.18
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (OVHcloud)",
       "type": "chat"
     },
     {
@@ -7746,7 +7923,7 @@
     },
     {
       "id": "qwen/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Alibaba)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -7788,12 +7965,12 @@
         "input": 0.176,
         "output": 0.528
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Alibaba)",
       "type": "chat"
     },
     {
       "id": "qwen/deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Alibaba)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -7834,7 +8011,7 @@
         "input": 0.5808,
         "output": 1.7424
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Alibaba)",
       "type": "chat"
     },
     {
@@ -8557,7 +8734,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.16,
+        "input": 0.15,
         "output": 0.47,
         "cache_read": 0.016,
         "cache_write": 0.2
@@ -8616,6 +8793,57 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen3.8 Max 0902",
+      "description": "2026-09-02 upgraded snapshot of Qwen3.8 Max with stronger coding, collaborative agents, and multimodal document understanding",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25,
+        "cache_write": 2.5
+      },
+      "display_name": "Qwen3.8 Max 0902",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwq-plus",
       "name": "QwQ Plus",
       "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
@@ -8654,7 +8882,7 @@
     },
     {
       "id": "scaleway/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -8693,15 +8921,15 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.46312,
-        "output": 0.92624
+        "input": 0.46488,
+        "output": 0.92976
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
     },
     {
       "id": "scaleway/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Scaleway)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -8738,15 +8966,15 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17367,
-        "output": 0.69468
+        "input": 0.17433,
+        "output": 0.69732
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
     },
     {
       "id": "scaleway/llama-3.3-70b-instruct",
-      "name": "Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct (Scaleway)",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
       "family": "llama",
       "attachment": false,
@@ -8773,15 +9001,15 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.04202,
-        "output": 1.04202
+        "input": 1.04598,
+        "output": 1.04598
       },
-      "display_name": "Llama-3.3-70B-Instruct",
+      "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
     },
     {
       "id": "tensorx/deepseek/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (TensorX)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -8824,12 +9052,12 @@
         "output": 0.3,
         "cache_read": 0.0625
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (TensorX)",
       "type": "chat"
     },
     {
       "id": "tensorx/deepseek/deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (TensorX)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -8871,12 +9099,12 @@
         "output": 4,
         "cache_read": 0.5
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (TensorX)",
       "type": "chat"
     },
     {
       "id": "tensorx/moonshotai/kimi-k2.5",
-      "name": "Kimi K2.5",
+      "name": "Kimi K2.5 (TensorX)",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
       "family": "kimi-k2",
       "attachment": true,
@@ -8910,12 +9138,12 @@
         "output": 2.8,
         "cache_read": 0.125
       },
-      "display_name": "Kimi K2.5",
+      "display_name": "Kimi K2.5 (TensorX)",
       "type": "chat"
     },
     {
       "id": "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
+      "name": "DeepSeek V4 Flash 0731 (Together AI)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "family": "deepseek-flash",
       "attachment": false,
@@ -8958,12 +9186,12 @@
         "output": 0.28,
         "cache_read": 0.03
       },
-      "display_name": "DeepSeek V4 Flash 0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "name": "DeepSeek V4 Pro 0813",
+      "name": "DeepSeek V4 Pro 0813 (Together AI)",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
       "family": "deepseek-thinking",
       "attachment": false,
@@ -9005,12 +9233,12 @@
         "output": 3.96,
         "cache_read": 0.13
       },
-      "display_name": "DeepSeek V4 Pro 0813",
+      "display_name": "DeepSeek V4 Pro 0813 (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/meta-models/Muse-Glimmer-30B",
-      "name": "Muse Glimmer 30B",
+      "name": "Muse Glimmer 30B (Together AI)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
       "family": "muse",
       "attachment": true,
@@ -9054,12 +9282,12 @@
         "output": 1.5,
         "cache_read": 0.04
       },
-      "display_name": "Muse Glimmer 30B",
+      "display_name": "Muse Glimmer 30B (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/openai/gpt-oss-120b",
-      "name": "GPT OSS 120B",
+      "name": "GPT OSS 120B (Together AI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -9099,12 +9327,12 @@
         "input": 0.15,
         "output": 0.6
       },
-      "display_name": "GPT OSS 120B",
+      "display_name": "GPT OSS 120B (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/openai/gpt-oss-20b",
-      "name": "GPT OSS 20B",
+      "name": "GPT OSS 20B (Together AI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
@@ -9144,12 +9372,12 @@
         "input": 0.05,
         "output": 0.2
       },
-      "display_name": "GPT OSS 20B",
+      "display_name": "GPT OSS 20B (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/thinkingmachines/Inkling",
-      "name": "Inkling",
+      "name": "Inkling (Together AI)",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
       "family": "ling",
       "attachment": true,
@@ -9195,12 +9423,12 @@
         "output": 4.05,
         "cache_read": 0.17
       },
-      "display_name": "Inkling",
+      "display_name": "Inkling (Together AI)",
       "type": "chat"
     },
     {
       "id": "together_ai/thinkingmachines/Inkling-Small",
-      "name": "Inkling Small",
+      "name": "Inkling Small (Together AI)",
       "description": "Multimodal MoE reasoning model (276B total, 12B active) for text, image, and audio",
       "family": "ling",
       "attachment": true,
@@ -9246,12 +9474,12 @@
         "output": 1.2,
         "cache_read": 0.1
       },
-      "display_name": "Inkling Small",
+      "display_name": "Inkling Small (Together AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-2.5-flash-image",
-      "name": "Nano Banana",
+      "name": "Nano Banana (Vertex AI)",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
       "family": "gemini-flash",
       "attachment": true,
@@ -9289,12 +9517,12 @@
         "cache_write": 0.083333,
         "input_audio": 1
       },
-      "display_name": "Nano Banana",
+      "display_name": "Nano Banana (Vertex AI)",
       "type": "image-generation"
     },
     {
       "id": "vertex/gemini-3-flash-preview",
-      "name": "Gemini 3 Flash Preview",
+      "name": "Gemini 3 Flash Preview (Vertex AI)",
       "description": "New Gemini flash lane bringing frontier-style multimodal reasoning to cheaper runs",
       "family": "gemini-flash",
       "attachment": true,
@@ -9344,12 +9572,12 @@
         "cache_write": 0.083333,
         "input_audio": 1
       },
-      "display_name": "Gemini 3 Flash Preview",
+      "display_name": "Gemini 3 Flash Preview (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3-pro-image",
-      "name": "Nano Banana Pro",
+      "name": "Nano Banana Pro (Vertex AI)",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
       "attachment": true,
@@ -9395,12 +9623,12 @@
         "cache_write": 0.375,
         "input_audio": 2
       },
-      "display_name": "Nano Banana Pro",
+      "display_name": "Nano Banana Pro (Vertex AI)",
       "type": "image-generation"
     },
     {
       "id": "vertex/gemini-3.1-flash-image",
-      "name": "Nano Banana 2",
+      "name": "Nano Banana 2 (Vertex AI)",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
       "attachment": true,
@@ -9442,12 +9670,12 @@
         "input": 0.5,
         "output": 3
       },
-      "display_name": "Nano Banana 2",
+      "display_name": "Nano Banana 2 (Vertex AI)",
       "type": "image-generation"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite",
-      "name": "Gemini 3.1 Flash Lite",
+      "name": "Gemini 3.1 Flash Lite (Vertex AI)",
       "description": "Low-latency Gemini model for high-volume multimodal and agent workloads",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9497,12 +9725,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.5
       },
-      "display_name": "Gemini 3.1 Flash Lite",
+      "display_name": "Gemini 3.1 Flash Lite (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite-image",
-      "name": "Nano Banana 2 Lite",
+      "name": "Nano Banana 2 Lite (Vertex AI)",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9544,12 +9772,12 @@
         "input": 0.25,
         "output": 1.5
       },
-      "display_name": "Nano Banana 2 Lite",
+      "display_name": "Nano Banana 2 Lite (Vertex AI)",
       "type": "image-generation"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite@eu",
-      "name": "Gemini 3.1 Flash Lite (EU)",
+      "name": "Gemini 3.1 Flash Lite (Vertex AI, EU)",
       "description": "Low-latency Gemini model for high-volume multimodal and agent workloads",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9599,12 +9827,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.5
       },
-      "display_name": "Gemini 3.1 Flash Lite (EU)",
+      "display_name": "Gemini 3.1 Flash Lite (Vertex AI, EU)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite@us",
-      "name": "Gemini 3.1 Flash Lite (US)",
+      "name": "Gemini 3.1 Flash Lite (Vertex AI, US)",
       "description": "Low-latency Gemini model for high-volume multimodal and agent workloads",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9654,12 +9882,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.5
       },
-      "display_name": "Gemini 3.1 Flash Lite (US)",
+      "display_name": "Gemini 3.1 Flash Lite (Vertex AI, US)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.1-pro-preview",
-      "name": "Gemini 3.1 Pro Preview",
+      "name": "Gemini 3.1 Pro Preview (Vertex AI)",
       "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
       "family": "gemini-pro",
       "attachment": true,
@@ -9726,12 +9954,12 @@
           "cache_write": 0.25
         }
       },
-      "display_name": "Gemini 3.1 Pro Preview",
+      "display_name": "Gemini 3.1 Pro Preview (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash",
-      "name": "Gemini 3.5 Flash",
+      "name": "Gemini 3.5 Flash (Vertex AI)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -9781,12 +10009,12 @@
         "cache_write": 0.083333,
         "input_audio": 3
       },
-      "display_name": "Gemini 3.5 Flash",
+      "display_name": "Gemini 3.5 Flash (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash-lite",
-      "name": "Gemini 3.5 Flash Lite",
+      "name": "Gemini 3.5 Flash Lite (Vertex AI)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9836,12 +10064,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.3
       },
-      "display_name": "Gemini 3.5 Flash Lite",
+      "display_name": "Gemini 3.5 Flash Lite (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash-lite@eu",
-      "name": "Gemini 3.5 Flash Lite (EU)",
+      "name": "Gemini 3.5 Flash Lite (Vertex AI, EU)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9891,12 +10119,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.3
       },
-      "display_name": "Gemini 3.5 Flash Lite (EU)",
+      "display_name": "Gemini 3.5 Flash Lite (Vertex AI, EU)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash-lite@us",
-      "name": "Gemini 3.5 Flash Lite (US)",
+      "name": "Gemini 3.5 Flash Lite (Vertex AI, US)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash-lite",
       "attachment": true,
@@ -9946,12 +10174,12 @@
         "cache_write": 0.083333,
         "input_audio": 0.3
       },
-      "display_name": "Gemini 3.5 Flash Lite (US)",
+      "display_name": "Gemini 3.5 Flash Lite (Vertex AI, US)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash@eu",
-      "name": "Gemini 3.5 Flash (EU)",
+      "name": "Gemini 3.5 Flash (Vertex AI, EU)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -10001,12 +10229,12 @@
         "cache_write": 0.083333,
         "input_audio": 3
       },
-      "display_name": "Gemini 3.5 Flash (EU)",
+      "display_name": "Gemini 3.5 Flash (Vertex AI, EU)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.5-flash@us",
-      "name": "Gemini 3.5 Flash (US)",
+      "name": "Gemini 3.5 Flash (Vertex AI, US)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -10056,12 +10284,12 @@
         "cache_write": 0.083333,
         "input_audio": 3
       },
-      "display_name": "Gemini 3.5 Flash (US)",
+      "display_name": "Gemini 3.5 Flash (Vertex AI, US)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.6-flash",
-      "name": "Gemini 3.6 Flash",
+      "name": "Gemini 3.6 Flash (Vertex AI)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -10111,12 +10339,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.6 Flash",
+      "display_name": "Gemini 3.6 Flash (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.6-flash@eu",
-      "name": "Gemini 3.6 Flash (EU)",
+      "name": "Gemini 3.6 Flash (Vertex AI, EU)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -10166,12 +10394,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.6 Flash (EU)",
+      "display_name": "Gemini 3.6 Flash (Vertex AI, EU)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.6-flash@us",
-      "name": "Gemini 3.6 Flash (US)",
+      "name": "Gemini 3.6 Flash (Vertex AI, US)",
       "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
       "family": "gemini-flash",
       "attachment": true,
@@ -10221,12 +10449,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.6 Flash (US)",
+      "display_name": "Gemini 3.6 Flash (Vertex AI, US)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.7-flash",
-      "name": "Gemini 3.7 Flash",
+      "name": "Gemini 3.7 Flash (Vertex AI)",
       "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
       "family": "gemini-flash",
       "attachment": true,
@@ -10275,12 +10503,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.7 Flash",
+      "display_name": "Gemini 3.7 Flash (Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.7-flash@eu",
-      "name": "Gemini 3.7 Flash (EU)",
+      "name": "Gemini 3.7 Flash (Vertex AI, EU)",
       "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
       "family": "gemini-flash",
       "attachment": true,
@@ -10329,12 +10557,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.7 Flash (EU)",
+      "display_name": "Gemini 3.7 Flash (Vertex AI, EU)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-3.7-flash@us",
-      "name": "Gemini 3.7 Flash (US)",
+      "name": "Gemini 3.7 Flash (Vertex AI, US)",
       "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
       "family": "gemini-flash",
       "attachment": true,
@@ -10383,13 +10611,172 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.7 Flash (US)",
+      "display_name": "Gemini 3.7 Flash (Vertex AI, US)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash (Vertex AI)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash (Vertex AI)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash@eu",
+      "name": "Gemini 3.8 Flash (Vertex AI, EU)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash (Vertex AI, EU)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-3.8-flash@us",
+      "name": "Gemini 3.8 Flash (Vertex AI, US)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 3.75,
+        "reasoning": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.041667,
+        "input_audio": 0.75
+      },
+      "display_name": "Gemini 3.8 Flash (Vertex AI, US)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-flash-latest",
-      "name": "Gemini 3.7 Flash",
-      "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "name": "Gemini Flash Latest (Gemini 3.8 Flash, Vertex AI)",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
@@ -10409,9 +10796,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-03",
-      "release_date": "2026-08-13",
-      "last_updated": "2026-08-13",
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
       "modalities": {
         "input": [
           "text",
@@ -10437,12 +10823,12 @@
         "cache_write": 0.041667,
         "input_audio": 0.75
       },
-      "display_name": "Gemini 3.7 Flash",
+      "display_name": "Gemini Flash Latest (Gemini 3.8 Flash, Vertex AI)",
       "type": "chat"
     },
     {
       "id": "vertex/gemini-pro-latest",
-      "name": "Gemini 3.1 Pro Preview",
+      "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview, Vertex AI)",
       "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
       "family": "gemini-pro",
       "attachment": true,
@@ -10509,7 +10895,7 @@
           "cache_write": 0.25
         }
       },
-      "display_name": "Gemini 3.1 Pro Preview",
+      "display_name": "Gemini Pro Latest (Gemini 3.1 Pro Preview, Vertex AI)",
       "type": "chat"
     },
     {
@@ -10870,7 +11256,7 @@
     },
     {
       "id": "xai/grok-latest",
-      "name": "Grok 4.6",
+      "name": "Grok Latest (Grok 4.6)",
       "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
       "family": "grok",
       "attachment": true,
@@ -10931,7 +11317,7 @@
           "cache_read": 1
         }
       },
-      "display_name": "Grok 4.6",
+      "display_name": "Grok Latest (Grok 4.6)",
       "type": "chat"
     },
     {
