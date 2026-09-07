@@ -78,7 +78,7 @@
         "output": 0
       },
       "display_name": "MiMo-V2-TTS",
-      "type": "chat"
+      "type": "speech-synthesis"
     },
     {
       "id": "mimo-v2.5",
@@ -201,7 +201,7 @@
         "output": 0
       },
       "display_name": "MiMo-V2.5-TTS",
-      "type": "chat"
+      "type": "speech-synthesis"
     },
     {
       "id": "mimo-v2.5-tts-voiceclone",
@@ -233,7 +233,7 @@
         "output": 0
       },
       "display_name": "MiMo-V2.5-TTS-VoiceClone",
-      "type": "chat"
+      "type": "speech-synthesis"
     },
     {
       "id": "mimo-v2.5-tts-voicedesign",
@@ -265,7 +265,7 @@
         "output": 0
       },
       "display_name": "MiMo-V2.5-TTS-VoiceDesign",
-      "type": "chat"
+      "type": "speech-synthesis"
     }
   ],
   "api": "https://token-plan-sgp.xiaomimimo.com/v1",

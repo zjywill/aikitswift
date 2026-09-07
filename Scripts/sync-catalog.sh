@@ -158,7 +158,14 @@ def transform_model(model, previous=None):
     name = out.get("name")
     if name:
         out.setdefault("display_name", name)
-    out.setdefault("type", previous.get("type") or infer_type(out))
+    # Prefer a confident non-chat inference over a stale previous "chat"
+    # label (e.g. gpt-realtime-* previously kept as chat).
+    if "type" not in out:
+        inferred = infer_type(out)
+        if inferred != "chat":
+            out["type"] = inferred
+        else:
+            out["type"] = previous.get("type") or inferred
     return out
 
 
