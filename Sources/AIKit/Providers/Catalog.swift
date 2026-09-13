@@ -55,6 +55,23 @@ public struct ModelInfo: Sendable, Hashable, Codable {
             self.min = min
             self.max = max
         }
+
+        private enum CodingKeys: String, CodingKey {
+            case type, values, min, max
+        }
+
+        public init(from decoder: any Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            type = try container.decodeIfPresent(String.self, forKey: .type)
+            // Upstream spells an unnamed effort level as a null in the list.
+            // It drops out; a nameless level is nothing an encoder can send,
+            // and failing here would take the whole provider file down.
+            values = try container
+                .decodeIfPresent([String?].self, forKey: .values)?
+                .compactMap { $0 }
+            min = try container.decodeIfPresent(Int.self, forKey: .min)
+            max = try container.decodeIfPresent(Int.self, forKey: .max)
+        }
     }
 
     /// How a model's thinking must be carried back across a tool-calling turn.
@@ -68,11 +85,48 @@ public struct ModelInfo: Sendable, Hashable, Codable {
     /// that dies on its second request.
     ///
     /// `field` names the request field the text goes back in.
+    ///
+    /// Upstream writes this two ways: an object naming the field, or a bare
+    /// boolean that says whether the replay is demanded without saying where
+    /// it goes. Both decode — the bare `true` leans on the dialect's default
+    /// field — because a model shape this library has not seen should cost one
+    /// model's detail, not the whole provider file.
     public struct Interleaved: Sendable, Hashable, Codable {
+        /// Whether the replay is demanded at all. Upstream's bare `false`
+        /// says it is not.
+        public var required: Bool
         public var field: String?
 
-        public init(field: String? = nil) {
+        public init(field: String? = nil, required: Bool = true) {
             self.field = field
+            self.required = required
+        }
+
+        private enum CodingKeys: String, CodingKey {
+            case field
+        }
+
+        public init(from decoder: any Decoder) throws {
+            if let flag = try? decoder.singleValueContainer().decode(Bool.self) {
+                required = flag
+                field = nil
+                return
+            }
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            required = true
+            field = try container.decodeIfPresent(String.self, forKey: .field)
+        }
+
+        public func encode(to encoder: any Encoder) throws {
+            // Written back in whichever form carries the whole value: the
+            // object once there is a field to name, the bare flag otherwise.
+            guard required, let field else {
+                var container = encoder.singleValueContainer()
+                try container.encode(required)
+                return
+            }
+            var container = encoder.container(keyedBy: CodingKeys.self)
+            try container.encode(field, forKey: .field)
         }
     }
 
@@ -170,7 +224,8 @@ public struct ModelInfo: Sendable, Hashable, Codable {
     /// The request field this model's own thinking must be replayed in, if it
     /// demands that at all. Nil for the overwhelming majority.
     public var interleavedReasoningField: String? {
-        guard let field = interleaved?.field, !field.isEmpty else { return nil }
+        guard let interleaved, interleaved.required else { return nil }
+        guard let field = interleaved.field, !field.isEmpty else { return nil }
         return field
     }
     /// Newer models reject `temperature`; absence of the flag means unknown, so
@@ -412,7 +467,17 @@ public struct ProviderInfo: Sendable, Hashable, Codable {
 public enum ProviderCatalog {
 
     /// Every provider in the catalog, sorted by id.
-    public static let all: [ProviderInfo] = load()
+    public static var all: [ProviderInfo] { loaded.providers }
+
+    /// Catalog files that were found but could not be decoded, with the reason.
+    ///
+    /// Empty in every shipped build — a non-empty list means upstream's schema
+    /// moved and those providers are missing from ``all``. Surfaced here
+    /// because the loader skips them quietly, which is the right behaviour at
+    /// runtime and an invisible one in a test.
+    public static var skipped: [String] { loaded.skipped }
+
+    private static let loaded: (providers: [ProviderInfo], skipped: [String]) = load()
 
     private static let byId: [String: ProviderInfo] = Dictionary(
         all.map { ($0.id, $0) },
@@ -457,7 +522,9 @@ public enum ProviderCatalog {
     /// Where the loader looked, for when it found nothing.
     public static var diagnostics: String {
         if let directory = catalogDirectory {
-            return "Catalog loaded from \(directory.path) (\(all.count) providers)."
+            let base = "Catalog loaded from \(directory.path) (\(all.count) providers)."
+            guard !skipped.isEmpty else { return base }
+            return base + " Skipped \(skipped.count):\n  " + skipped.joined(separator: "\n  ")
         }
         let searched = searchRoots.map(\.path).joined(separator: "\n  ")
         return """
@@ -467,27 +534,37 @@ public enum ProviderCatalog {
             """
     }
 
-    private static func load() -> [ProviderInfo] {
+    private static func load() -> (providers: [ProviderInfo], skipped: [String]) {
         guard let directory = catalogDirectory,
               let files = try? FileManager.default.contentsOfDirectory(
                   at: directory, includingPropertiesForKeys: nil
               )
         else {
-            return []
+            return ([], [])
         }
 
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
-        return files
-            .filter { $0.pathExtension == "json" }
-            .compactMap { url in
-                guard let data = try? Data(contentsOf: url) else { return nil }
-                // A provider whose schema drifted is skipped rather than
-                // taking the whole catalog down with it.
-                return try? decoder.decode(ProviderInfo.self, from: data)
+        var providers: [ProviderInfo] = []
+        var skipped: [String] = []
+
+        for url in files.filter({ $0.pathExtension == "json" }).sorted(by: { $0.path < $1.path }) {
+            guard let data = try? Data(contentsOf: url) else {
+                skipped.append("\(url.lastPathComponent): unreadable")
+                continue
             }
-            .sorted { $0.id < $1.id }
+            do {
+                // A provider whose schema drifted is skipped rather than
+                // taking the whole catalog down with it — but it is named in
+                // ``skipped`` rather than vanishing without a trace.
+                providers.append(try decoder.decode(ProviderInfo.self, from: data))
+            } catch {
+                skipped.append("\(url.lastPathComponent): \(error)")
+            }
+        }
+
+        return (providers.sorted { $0.id < $1.id }, skipped)
     }
 
     // MARK: - Locating the resources
