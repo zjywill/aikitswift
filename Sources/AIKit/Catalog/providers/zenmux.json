@@ -2383,6 +2383,7 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"

@@ -4,47 +4,6 @@
   "adapter": "openai",
   "models": [
     {
-      "id": "DeepSeek-V3.2",
-      "name": "DeepSeek V3.2",
-      "description": "Hybrid-reasoning DeepSeek model with thinking and non-thinking modes, sparse attention, and tool-use",
-      "family": "deepseek",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-07",
-      "release_date": "2025-12-01",
-      "last_updated": "2025-12-01",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "output": 64000
-      },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
-      "display_name": "DeepSeek V3.2",
-      "type": "chat"
-    },
-    {
       "id": "DeepSeek-V4-Flash",
       "name": "DeepSeek V4 Flash",
       "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
@@ -440,7 +399,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1000000,
         "output": 131072
@@ -616,46 +575,6 @@
         "cache_read": 0
       },
       "display_name": "Kimi K3",
-      "type": "chat"
-    },
-    {
-      "id": "MiMo-V2.5-Pro",
-      "name": "MiMo-V2.5-Pro",
-      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
-      "display_name": "MiMo-V2.5-Pro",
       "type": "chat"
     },
     {
