@@ -106,4 +106,104 @@ struct CatalogResourceTests {
         #expect(ProviderCatalog.diagnostics.contains("providers"))
         #expect(ProviderCatalog.bundleName == "AIKitSwift_AIKit.bundle")
     }
+
+    @Test("every bundled provider decodes")
+    func nothingIsSilentlyDropped() {
+        // The loader skips a file it cannot decode, so a schema drift upstream
+        // costs a whole provider — every model it sells — without raising a
+        // sound. This is the test that makes that noise.
+        #expect(ProviderCatalog.skipped.isEmpty, "\(ProviderCatalog.skipped)")
+    }
+
+    @Test("a model keeps the effort levels upstream named")
+    func effortValuesSurviveAnUnnamedLevel() {
+        // sarvam-105b lists a null level alongside the named ones.
+        let named = ProviderCatalog.all
+            .flatMap { $0.models ?? [] }
+            .flatMap { $0.reasoningOptions ?? [] }
+            .flatMap { $0.values ?? [] }
+        #expect(!named.isEmpty)
+        #expect(!named.contains(""))
+    }
+}
+
+@Suite("Catalog decoding")
+struct CatalogDecodingTests {
+
+    private func decode<T: Decodable>(_ type: T.Type, _ json: String) throws -> T {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode(type, from: Data(json.utf8))
+    }
+
+    @Test("interleaved reads upstream's object form")
+    func interleavedObject() throws {
+        let model = try decode(
+            ModelInfo.self,
+            #"{"id": "m", "interleaved": {"field": "reasoning_content"}}"#
+        )
+        #expect(model.interleavedReasoningField == "reasoning_content")
+    }
+
+    @Test("interleaved reads upstream's bare boolean")
+    func interleavedBoolean() throws {
+        // `true` demands the replay without naming the field, which leaves the
+        // dialect's default to supply it — not a decoding failure that would
+        // cost the reader every other model in the file.
+        let on = try decode(ModelInfo.self, #"{"id": "m", "interleaved": true}"#)
+        #expect(on.interleaved?.required == true)
+        #expect(on.interleavedReasoningField == nil)
+
+        let off = try decode(ModelInfo.self, #"{"id": "m", "interleaved": false}"#)
+        #expect(off.interleaved?.required == false)
+        #expect(off.interleavedReasoningField == nil)
+    }
+
+    @Test("an explicit false outranks a field")
+    func interleavedFalseWins() {
+        let model = ModelInfo(id: "m", interleaved: .init(field: "thought", required: false))
+        #expect(model.interleavedReasoningField == nil)
+    }
+
+    @Test("an unnamed effort level drops out of the list")
+    func nullEffortValue() throws {
+        let model = try decode(
+            ModelInfo.self,
+            #"{"id": "m", "reasoning_options": [{"type": "effort", "values": [null, "low", "high"]}]}"#
+        )
+        #expect(model.reasoningOptions?.first?.values == ["low", "high"])
+    }
+
+    @Test("interleaved round-trips through both forms")
+    func interleavedRoundTrip() throws {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        for value in [
+            ModelInfo.Interleaved(field: "reasoning_content"),
+            ModelInfo.Interleaved(field: nil),
+            ModelInfo.Interleaved(field: nil, required: false),
+        ] {
+            let data = try JSONEncoder().encode(value)
+            #expect(try decoder.decode(ModelInfo.Interleaved.self, from: data) == value)
+        }
+    }
+
+    @Test("a provider file survives one model's unknown shape")
+    func providerStillDecodes() throws {
+        let provider = try decode(
+            ProviderInfo.self,
+            #"""
+            {
+              "id": "p",
+              "adapter": "openai",
+              "models": [
+                {"id": "a", "interleaved": true},
+                {"id": "b", "interleaved": {"field": "reasoning_content"}}
+              ]
+            }
+            """#
+        )
+        #expect(provider.models?.count == 2)
+        #expect(provider.model("b")?.interleavedReasoningField == "reasoning_content")
+    }
 }
