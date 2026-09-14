@@ -1894,7 +1894,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2024-07",
       "release_date": "2025-01-20",
@@ -3729,8 +3729,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.042,
@@ -4364,7 +4364,8 @@
       },
       "cost": {
         "input": 0.05,
-        "output": 0.23
+        "output": 0.23,
+        "cache_read": 0.05
       },
       "display_name": "Inference.net: Schematron V2 Small",
       "type": "chat"
@@ -4397,7 +4398,8 @@
       },
       "cost": {
         "input": 0.03,
-        "output": 0.15
+        "output": 0.15,
+        "cache_read": 0.03
       },
       "display_name": "Inference.net: Schematron V2 Turbo",
       "type": "chat"
@@ -6517,7 +6519,7 @@
       "open_weights": false,
       "limit": {
         "context": 131072,
-        "output": 100352
+        "output": 98304
       },
       "cost": {
         "input": 0.57,
@@ -6551,7 +6553,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 100352
+        "output": 98304
       },
       "cost": {
         "input": 0.6,
@@ -6595,7 +6597,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 100352
+        "output": 98304
       },
       "cost": {
         "input": 0.6,
@@ -11312,8 +11314,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 128000,
+        "output": 32000
       },
       "cost": {
         "input": 0.13,
@@ -15506,7 +15508,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -15852,12 +15854,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 131072
       },
       "cost": {
-        "input": 0.03,
-        "output": 0.07,
-        "cache_read": 0.003
+        "input": 0.0352,
+        "output": 0.1056,
+        "cache_read": 0.00112
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16008,9 +16010,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2.375,
-        "output": 13.3,
-        "cache_read": 0.2755
+        "input": 2.1,
+        "output": 10.95,
+        "cache_read": 0.23
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16404,13 +16406,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
-        "input": 0.8727,
-        "output": 3.36,
-        "cache_read": 0.1639
+        "input": 0.936,
+        "output": 3.168,
+        "cache_read": 0.1872
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
