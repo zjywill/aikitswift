@@ -5578,8 +5578,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.34776,
-        "output": 0.46368
+        "input": 0.34653,
+        "output": 0.46204
       },
       "display_name": "Ministral 3 14B (Infomaniak)",
       "type": "chat"
@@ -5613,8 +5613,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.75348,
-        "output": 0.75348
+        "input": 0.750815,
+        "output": 0.750815
       },
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
@@ -5658,8 +5658,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17388,
-        "output": 0.75348
+        "input": 0.173265,
+        "output": 0.750815
       },
       "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
@@ -9007,8 +9007,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.176,
-        "output": 0.528
+        "input": 0.22,
+        "output": 0.66,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek V4 Flash 0731 (Alibaba)",
       "type": "chat"
@@ -9053,10 +9054,60 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.5808,
-        "output": 1.7424
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.066
       },
       "display_name": "DeepSeek V4 Pro 0813 (Alibaba)",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (Alibaba)",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.015
+      },
+      "display_name": "DeepSeek V4.1 Flash (Alibaba)",
       "type": "chat"
     },
     {
@@ -9966,8 +10017,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.46368,
-        "output": 0.92736
+        "input": 0.46204,
+        "output": 0.92408
       },
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
@@ -10047,8 +10098,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.17388,
-        "output": 0.69552
+        "input": 0.173265,
+        "output": 0.69306
       },
       "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
@@ -10082,8 +10133,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.04328,
-        "output": 1.04328
+        "input": 1.03959,
+        "output": 1.03959
       },
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
@@ -10181,6 +10232,55 @@
         "cache_read": 0.5
       },
       "display_name": "DeepSeek V4 Pro 0813 (TensorX)",
+      "type": "chat"
+    },
+    {
+      "id": "tensorx/deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (TensorX)",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.125
+      },
+      "display_name": "DeepSeek V4.1 Flash (TensorX)",
       "type": "chat"
     },
     {

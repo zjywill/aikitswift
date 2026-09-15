@@ -97,6 +97,52 @@
       "type": "chat"
     },
     {
+      "id": "glm5.3-754b",
+      "name": "GLM-5.3",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 524288,
+        "output": 81920
+      },
+      "cost": {
+        "input": 1,
+        "output": 3.5,
+        "cache_read": 0.25
+      },
+      "display_name": "GLM-5.3",
+      "type": "chat"
+    },
+    {
       "id": "gpt-oss-120b",
       "name": "GPT OSS 120B",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
@@ -139,45 +185,6 @@
         "output": 0.55
       },
       "display_name": "GPT OSS 120B",
-      "type": "chat"
-    },
-    {
-      "id": "kimi-k2.7-code-1100b",
-      "name": "Kimi K2.7 Code",
-      "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2025-01",
-      "release_date": "2026-06-12",
-      "last_updated": "2026-06-12",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 81920
-      },
-      "cost": {
-        "input": 0.86,
-        "output": 3,
-        "cache_read": 0.18
-      },
-      "display_name": "Kimi K2.7 Code",
       "type": "chat"
     },
     {
