@@ -2368,8 +2368,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1024000,
-        "output": 384000
+        "context": 1048576,
+        "output": 393216
       },
       "cost": {
         "input": 1.32,
@@ -13951,9 +13951,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.14,
-        "output": 0.58,
-        "cache_read": 0.035
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -15388,6 +15388,51 @@
       "type": "chat"
     },
     {
+      "id": "z-ai/glm-5.2:free",
+      "name": "Z.ai: GLM 5.2 (free)",
+      "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-06-13",
+      "last_updated": "2026-06-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 32768,
+        "output": 29491
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Z.ai: GLM 5.2 (free)",
+      "type": "chat"
+    },
+    {
       "id": "z-ai/glm-5.3",
       "name": "GLM-5.3",
       "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
@@ -15769,8 +15814,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 1000000,
+        "output": 393216
       },
       "cost": {
         "input": 0.15,
@@ -15817,12 +15862,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 384000
+        "output": 393216
       },
       "cost": {
-        "input": 0.66,
-        "output": 1.98,
-        "cache_read": 0.022
+        "input": 0.57948,
+        "output": 1.73844,
+        "cache_read": 0.018438
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16416,13 +16461,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
-        "input": 0.9,
-        "output": 3,
-        "cache_read": 0.09
+        "input": 0.8775,
+        "output": 2.97,
+        "cache_read": 0.1755
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

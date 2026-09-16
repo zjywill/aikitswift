@@ -3766,9 +3766,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.28,
-        "output": 0.42,
-        "cache_read": 0.028
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
       },
       "display_name": "DeepSeek Chat",
       "type": "chat"
@@ -3778,7 +3778,7 @@
       "name": "DeepSeek V4 Flash",
       "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
       "family": "deepseek-flash",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -3802,7 +3802,8 @@
       "last_updated": "2026-04-24",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -3814,9 +3815,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.44,
-        "output": 1.32,
-        "cache_read": 0.014
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -3858,13 +3859,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
+        "context": 1000000,
         "output": 384000
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
       },
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
@@ -3909,9 +3910,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 1.32,
-        "output": 3.96,
-        "cache_read": 0.044
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -5578,8 +5579,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.34653,
-        "output": 0.46204
+        "input": 0.34617,
+        "output": 0.46156
       },
       "display_name": "Ministral 3 14B (Infomaniak)",
       "type": "chat"
@@ -5613,8 +5614,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.750815,
-        "output": 0.750815
+        "input": 0.750035,
+        "output": 0.750035
       },
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
@@ -5658,8 +5659,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.173265,
-        "output": 0.750815
+        "input": 0.173085,
+        "output": 0.750035
       },
       "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
@@ -10017,8 +10018,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.46204,
-        "output": 0.92408
+        "input": 0.46156,
+        "output": 0.92312
       },
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
@@ -10098,8 +10099,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.173265,
-        "output": 0.69306
+        "input": 0.173085,
+        "output": 0.69234
       },
       "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
@@ -10133,8 +10134,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.03959,
-        "output": 1.03959
+        "input": 1.03851,
+        "output": 1.03851
       },
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
