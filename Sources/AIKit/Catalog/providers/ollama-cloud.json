@@ -41,6 +41,11 @@
         "context": 1048576,
         "output": 1048576
       },
+      "cost": {
+        "input": 0.22,
+        "output": 0.66,
+        "cache_read": 0.007
+      },
       "display_name": "deepseek-v4-flash",
       "type": "chat"
     },
@@ -85,6 +90,11 @@
         "context": 1048576,
         "output": 1048576
       },
+      "cost": {
+        "input": 0.22,
+        "output": 0.66,
+        "cache_read": 0.007
+      },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
     },
@@ -125,6 +135,11 @@
       "limit": {
         "context": 1048576,
         "output": 1048576
+      },
+      "cost": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "deepseek-v4-pro",
       "type": "chat"
@@ -168,6 +183,11 @@
       "limit": {
         "context": 1048576,
         "output": 1048576
+      },
+      "cost": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -218,6 +238,11 @@
         "context": 1048576,
         "output": 384000
       },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
+      },
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -253,6 +278,11 @@
       "limit": {
         "context": 262144,
         "output": 262144
+      },
+      "cost": {
+        "input": 0.14,
+        "output": 0.4,
+        "cache_read": 0.05
       },
       "display_name": "gemma4:31b",
       "type": "chat"
@@ -290,6 +320,11 @@
       "limit": {
         "context": 202752,
         "output": 131072
+      },
+      "cost": {
+        "input": 1,
+        "output": 3.2,
+        "cache_read": 0.2
       },
       "display_name": "glm-5.1",
       "type": "chat"
@@ -334,6 +369,11 @@
         "context": 976000,
         "output": 131072
       },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
+      },
       "display_name": "GLM-5.2",
       "type": "chat"
     },
@@ -377,6 +417,11 @@
       "limit": {
         "context": 1048576,
         "output": 131072
+      },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
       },
       "display_name": "GLM-5.3",
       "type": "chat"
@@ -425,6 +470,11 @@
         "context": 1000000,
         "output": 131072
       },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03
+      },
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
     },
@@ -464,6 +514,11 @@
         "context": 131072,
         "output": 32768
       },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.014
+      },
       "display_name": "gpt-oss:120b",
       "type": "chat"
     },
@@ -502,6 +557,11 @@
       "limit": {
         "context": 131072,
         "output": 32768
+      },
+      "cost": {
+        "input": 0.07,
+        "output": 0.3,
+        "cache_read": 0.035
       },
       "display_name": "gpt-oss:20b",
       "type": "chat"
@@ -573,6 +633,11 @@
         "context": 262144,
         "output": 262144
       },
+      "cost": {
+        "input": 0.95,
+        "output": 4,
+        "cache_read": 0.16
+      },
       "display_name": "kimi-k2.6",
       "type": "chat"
     },
@@ -610,6 +675,11 @@
       "limit": {
         "context": 262144,
         "output": 262144
+      },
+      "cost": {
+        "input": 0.95,
+        "output": 4,
+        "cache_read": 0.19
       },
       "display_name": "kimi-k2.7-code",
       "type": "chat"
@@ -655,6 +725,11 @@
       "limit": {
         "context": 1048576,
         "output": 131072
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
       },
       "display_name": "kimi-k3",
       "type": "chat"
@@ -721,6 +796,11 @@
         "context": 196608,
         "output": 196608
       },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.06
+      },
       "display_name": "minimax-m2.7",
       "type": "chat"
     },
@@ -768,6 +848,11 @@
         "context": 512000,
         "output": 131072
       },
+      "cost": {
+        "input": 0.6,
+        "output": 2.4,
+        "cache_read": 0.12
+      },
       "display_name": "minimax-m3",
       "type": "chat"
     },
@@ -796,6 +881,10 @@
       "limit": {
         "context": 262144,
         "output": 262144
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5
       },
       "display_name": "mistral-large-3:675b",
       "type": "chat"
@@ -832,6 +921,10 @@
         "context": 1048576,
         "output": 131072
       },
+      "cost": {
+        "input": 0.06,
+        "output": 0.24
+      },
       "display_name": "nemotron-3-nano:30b",
       "type": "chat"
     },
@@ -867,6 +960,11 @@
         "context": 262144,
         "output": 65536
       },
+      "cost": {
+        "input": 0.015,
+        "output": 0.6,
+        "cache_read": 0.015
+      },
       "display_name": "nemotron-3-super",
       "type": "chat"
     },
@@ -901,6 +999,11 @@
       "limit": {
         "context": 262144,
         "output": 128000
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 3,
+        "cache_read": 0.1
       },
       "display_name": "nemotron-3-ultra",
       "type": "chat"
@@ -939,6 +1042,10 @@
       "limit": {
         "context": 262144,
         "output": 65536
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 3.6
       },
       "display_name": "qwen3.5:397b",
       "type": "chat"
