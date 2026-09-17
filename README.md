@@ -27,7 +27,7 @@ for try await part in try client.stream(CallOptions(model: "deepseek-v4-flash", 
 }
 ```
 
-Change `"deepseek"` to `"anthropic"`, `"google"` or any of the other 46 providers.
+Change `"deepseek"` to `"anthropic"`, `"google"` or any other bundled provider id.
 Nothing else in that loop changes.
 
 When the events don't matter and only the outcome does, skip the loop:
@@ -63,16 +63,15 @@ the next request when they are.
 ## The idea: protocols, not providers
 
 The mistake to avoid is writing one implementation per vendor. The bundled catalog
-holds **191 providers and 6233 models — but only 5 wire protocols**, because most
+holds **197 providers and 6452 models — but only 5 wire protocols**, because most
 providers speak someone else's:
 
 | Protocol | Providers |
 |---|---|
-| OpenAI Chat Completions | 38 |
-| Anthropic Messages | 7 |
-| OpenAI Responses | 2 |
-| OpenAI Codex | 1 |
-| Google Generative AI | 1 |
+| OpenAI Chat Completions | 184 |
+| Anthropic Messages | 10 |
+| OpenAI Responses | 1 |
+| Google Generative AI | 2 |
 
 AIKit splits along that seam:
 
@@ -80,7 +79,7 @@ AIKit splits along that seam:
 Sources/AIKit/
   Spec/        the normalized vocabulary — one enum every provider maps onto
   Wire/        one implementation per protocol   (5, the real work)
-  Providers/   the catalog                       (191 JSON configs, pure data)
+  Providers/   the catalog                       (197 JSON configs, pure data)
   Tokens/      context attribution
   Client/      the plumbing between them
 ```
@@ -248,7 +247,7 @@ guard ProviderCatalog.isLoaded else { fatalError(ProviderCatalog.diagnostics) }
 ## Status
 
 Early, and the API will change. Streaming responses and request encoding work across
-all five protocols; the catalog covers 191 providers.
+all five protocols; the catalog covers 197 providers.
 
 | | |
 |---|---|
@@ -258,7 +257,7 @@ all five protocols; the catalog covers 191 providers.
 | OpenAI Chat Completions | ✅ stream + request |
 | OpenAI Responses | ✅ stream + request |
 | Google Generative AI | ✅ stream + request |
-| Provider catalog | ✅ 191 providers, 6233 models |
+| Provider catalog | ✅ 197 providers, 6452 models |
 | Thinking on / off / level | ✅ all protocols |
 | Live model listing (`GET /models`) | ✅ all protocols |
 | Context attribution | ✅ |

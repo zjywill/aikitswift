@@ -2255,9 +2255,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.07476,
-        "output": 0.14952,
-        "cache_read": 0.014952
+        "input": 0.088606,
+        "output": 0.177212,
+        "cache_read": 0.017721
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -2305,9 +2305,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.055,
-        "output": 0.11,
-        "cache_read": 0.011
+        "input": 0.06,
+        "output": 0.12,
+        "cache_read": 0.012
       },
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -2453,12 +2453,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
-        "input": 0.57948,
-        "output": 1.73844,
-        "cache_read": 0.018438
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -4053,8 +4053,8 @@
         "output": 3686
       },
       "cost": {
-        "input": 0.06,
-        "output": 0.06
+        "input": 0.08,
+        "output": 0.11
       },
       "display_name": "MythoMax 13B",
       "type": "chat"
@@ -5468,7 +5468,7 @@
         "output": 40000
       },
       "cost": {
-        "input": 0.55,
+        "input": 0.4,
         "output": 2.2
       },
       "display_name": "MiniMax M1",
@@ -6344,8 +6344,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.2
+        "input": 0.09375,
+        "output": 0.25
       },
       "display_name": "Mistral Small 3.2 24B",
       "type": "chat"
@@ -6659,9 +6659,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.71,
-        "output": 3.5,
-        "cache_read": 0.15
+        "input": 0.7062,
+        "output": 3.21,
+        "cache_read": 0.18
       },
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
@@ -6710,9 +6710,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2.648138,
-        "output": 13.282724,
-        "cache_read": 0.302644
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
       },
       "display_name": "Kimi K3",
       "type": "chat"
@@ -7022,9 +7022,8 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.2,
-        "cache_read": 0.03
+        "input": 0.06,
+        "output": 0.24
       },
       "display_name": "Nemotron 3 Nano 30B A3B",
       "type": "chat"
@@ -7216,12 +7215,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 182520
+        "output": 32768
       },
       "cost": {
-        "input": 0.6,
-        "output": 2.4,
-        "cache_read": 0.12
+        "input": 0.625,
+        "output": 3.125,
+        "cache_read": 0.1875
       },
       "display_name": "Nemotron 3 Ultra 550B A55B",
       "type": "chat"
@@ -11968,11 +11967,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 32768
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6
+        "input": 0.13,
+        "output": 0.52
       },
       "display_name": "Qwen3 VL 30B A3B Instruct",
       "type": "chat"
@@ -13586,6 +13585,41 @@
       "type": "chat"
     },
     {
+      "id": "stealth/union-alpha",
+      "name": "Union Alpha",
+      "description": "Multimodal model for analyzing text, images, documents, and rich media",
+      "family": "alpha",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Union Alpha",
+      "type": "chat"
+    },
+    {
       "id": "stepfun/step-3.5-flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
@@ -13853,9 +13887,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -14030,7 +14064,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04-30",
@@ -15352,7 +15386,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 128000
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -15459,7 +15493,7 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "GLM-5.3-Flash",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -15496,9 +15530,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.25,
-        "cache_read": 0.015
+        "input": 0.09,
+        "output": 0.3,
+        "cache_read": 0.018
       },
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
@@ -15790,7 +15824,7 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
         "input": 0.15,
@@ -15839,12 +15873,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
-        "input": 0.57948,
-        "output": 1.73844,
-        "cache_read": 0.018438
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -16064,9 +16098,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2.1,
-        "output": 10.95,
-        "cache_read": 0.23
+        "input": 2,
+        "output": 11.2,
+        "cache_read": 0.232
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -16553,12 +16587,12 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 235929
+        "output": 943718
       },
       "cost": {
-        "input": 0.8775,
-        "output": 2.97,
-        "cache_read": 0.1755
+        "input": 0.833,
+        "output": 2.618,
+        "cache_read": 0.13685
       },
       "display_name": "GLM Latest",
       "type": "chat"

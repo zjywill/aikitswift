@@ -2045,7 +2045,7 @@
       "id": "TEE/glm-5.3-flash",
       "name": "GLM 5.3 Flash TEE",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -9181,8 +9181,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 262144,
+        "context": 131072,
+        "input": 131072,
         "output": 32768
       },
       "cost": {
@@ -9876,84 +9876,6 @@
       "type": "chat"
     },
     {
-      "id": "gemma-4-e2b-it",
-      "name": "Gemma 4 E2B Instruct",
-      "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
-      "family": "gemma",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-04-02",
-      "last_updated": "2026-04-02",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "input": 131072,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.02,
-        "output": 0.1,
-        "cache_read": 0.01
-      },
-      "display_name": "Gemma 4 E2B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "gemma-4-e4b-it",
-      "name": "Gemma 4 E4B Instruct",
-      "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
-      "family": "gemma",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-04-02",
-      "last_updated": "2026-04-02",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "input": 131072,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.04,
-        "output": 0.2,
-        "cache_read": 0.02
-      },
-      "display_name": "Gemma 4 E4B Instruct",
-      "type": "chat"
-    },
-    {
       "id": "glm-4-air-0111",
       "name": "GLM 4 Air 0111",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
@@ -10062,7 +9984,7 @@
       "id": "glm-4.1v-thinking-flash",
       "name": "GLM 4.1V Thinking Flash",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -10098,7 +10020,7 @@
       "id": "glm-4.1v-thinking-flashx",
       "name": "GLM 4.1V Thinking FlashX",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -18813,44 +18735,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen3.5-0.8b",
-      "name": "Qwen3.5 0.8B",
-      "description": "Qwen3.5 0.8B is a lightweight open-weight multimodal model from Alibaba for fast reasoning, visual understanding, tool use, and JSON output.",
-      "family": "qwen3.5",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-08-16",
-      "last_updated": "2026-08-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.06,
-        "output": 0.12,
-        "cache_read": 0.03
-      },
-      "display_name": "Qwen3.5 0.8B",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen3.5 122B A10B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -19000,44 +18884,6 @@
         "cache_read": 0.135
       },
       "display_name": "Qwen3.5 27B Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3.5-2b",
-      "name": "Qwen3.5 2B",
-      "description": "Qwen3.5 2B is a small open-weight multimodal model from Alibaba for efficient reasoning, coding, visual understanding, tool use, and JSON output.",
-      "family": "qwen3.5",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-08-16",
-      "last_updated": "2026-08-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.08,
-        "output": 0.16,
-        "cache_read": 0.04
-      },
-      "display_name": "Qwen3.5 2B",
       "type": "chat"
     },
     {
@@ -19194,44 +19040,6 @@
         "cache_read": 0.3
       },
       "display_name": "Qwen3.5 397B A17B Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3.5-4b",
-      "name": "Qwen3.5 4B",
-      "description": "Qwen3.5 4B is a compact open-weight multimodal model from Alibaba for reasoning, coding, visual understanding, tool use, and structured output.",
-      "family": "qwen3.5",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-08-16",
-      "last_updated": "2026-08-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.1,
-        "output": 0.2,
-        "cache_read": 0.05
-      },
-      "display_name": "Qwen3.5 4B",
       "type": "chat"
     },
     {
@@ -22854,7 +22662,7 @@
       "id": "z-ai/glm-4.7-flash-original",
       "name": "GLM 4.7 Flash Original",
       "description": "GLM-4.7-Flash is a lightweight 30B model optimized for coding and agentic tasks. Balances high performance with efficiency, perfect for local deployment.",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -22891,7 +22699,7 @@
       "id": "z-ai/glm-4.7-flash-original:thinking",
       "name": "GLM 4.7 Flash Original Thinking",
       "description": "GLM-4.7-Flash with extended thinking capabilities for complex reasoning. Lightweight 30B model optimized for coding and agentic tasks.",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -23460,7 +23268,7 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "GLM 5.3 Flash",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -23509,7 +23317,7 @@
       "id": "z-ai/glm-5.3-flash-uncensored",
       "name": "GLM 5.3 Flash Uncensored",
       "description": "GLM 5.3 Flash Uncensored is an uncensored fine-tune of the efficient 320B mixture-of-experts reasoning model, built for unrestricted chat, creative writing, coding, agentic work, tool use, and long-context tasks.",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
