@@ -2692,7 +2692,7 @@
       "id": "zai-org/GLM-4.6V-Flash",
       "name": "GLM-4.6V-Flash",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2772,7 +2772,7 @@
       "id": "zai-org/GLM-4.7-Flash",
       "name": "GLM-4.7-Flash",
       "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2970,7 +2970,7 @@
       "id": "zai-org/GLM-5.3-Flash",
       "name": "GLM-5.3-Flash",
       "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,

@@ -1470,7 +1470,7 @@
       "name": "DeepSeek V4.1 Flash",
       "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
       "family": "deepseek-flash",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -1494,7 +1494,8 @@
       "last_updated": "2026-09-10",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -1896,7 +1897,7 @@
       "id": "glm-5.3-flash",
       "name": "GLM5.3 Flash",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,

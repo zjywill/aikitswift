@@ -5557,7 +5557,7 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "GLM-5.3-Flash",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -5608,7 +5608,7 @@
       "id": "z-ai/glm-5.3-flash-free",
       "name": "GLM-5.3-Flash (free)",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,

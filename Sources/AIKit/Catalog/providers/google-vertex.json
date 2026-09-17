@@ -2633,6 +2633,55 @@
       },
       "display_name": "GLM-5",
       "type": "chat"
+    },
+    {
+      "id": "zai-org/glm-5.2-maas",
+      "name": "GLM-5.2",
+      "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-06-13",
+      "last_updated": "2026-06-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 64000
+      },
+      "status": "beta",
+      "provider": {
+        "npm": "@ai-sdk/openai-compatible",
+        "api": "https://${GOOGLE_VERTEX_ENDPOINT}/v1/projects/${GOOGLE_VERTEX_PROJECT}/locations/${GOOGLE_VERTEX_LOCATION}/endpoints/openapi"
+      },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.14
+      },
+      "display_name": "GLM-5.2",
+      "type": "chat"
     }
   ],
   "doc": "https://cloud.google.com/vertex-ai/generative-ai/docs/models",

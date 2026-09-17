@@ -1859,7 +1859,7 @@
       "id": "glm-5.3-flash",
       "name": "GLM-5.3-Flash",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -5124,6 +5124,44 @@
         "output": 0
       },
       "display_name": "Trinity Large Preview",
+      "type": "chat"
+    },
+    {
+      "id": "union-alpha",
+      "name": "Union Alpha Free",
+      "description": "Stealth model built for agentic coding",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "provider": {
+        "npm": "@ai-sdk/anthropic"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
+      },
+      "display_name": "Union Alpha Free",
       "type": "chat"
     },
     {

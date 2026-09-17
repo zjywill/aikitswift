@@ -2369,7 +2369,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
         "input": 1.32,
@@ -3835,8 +3835,8 @@
         "output": 3686
       },
       "cost": {
-        "input": 0.06,
-        "output": 0.06
+        "input": 0.08,
+        "output": 0.11
       },
       "display_name": "MythoMax 13B",
       "type": "chat"
@@ -6361,12 +6361,12 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 128000,
+        "context": 256000,
         "output": 16384
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.2
+        "input": 0.09375,
+        "output": 0.25
       },
       "display_name": "Mistral: Mistral Small 3.2 24B",
       "type": "chat"
@@ -7234,8 +7234,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 202800,
-        "output": 182520
+        "context": 256000,
+        "output": 32768
       },
       "cost": {
         "input": 0.5,
@@ -11815,8 +11815,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
-        "output": 16384
+        "context": 131072,
+        "output": 32768
       },
       "cost": {
         "input": 0.13,
@@ -12673,10 +12673,10 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.25,
-        "output": 3.75,
-        "cache_read": 0.125,
-        "cache_write": 1.5625
+        "input": 1.475,
+        "output": 4.425,
+        "cache_read": 0.295,
+        "cache_write": 1.84375
       },
       "display_name": "Qwen3.7 Max",
       "type": "chat"
@@ -12723,7 +12723,7 @@
       "cost": {
         "input": 0.32,
         "output": 1.28,
-        "cache_read": 0.032,
+        "cache_read": 0.064,
         "cache_write": 0.4
       },
       "display_name": "Qwen3.7 Plus",
@@ -13626,6 +13626,41 @@
       "type": "chat"
     },
     {
+      "id": "stealth/union-alpha",
+      "name": "Union Alpha",
+      "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. Union Alpha is a stealth model....",
+      "family": "alpha",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Union Alpha",
+      "type": "chat"
+    },
+    {
       "id": "stepfun/step-3.5-flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
@@ -13951,9 +13986,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.14,
+        "output": 0.58,
+        "cache_read": 0.035
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -14126,7 +14161,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "release_date": "2024-11-08",
@@ -15377,7 +15412,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 128000
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -15482,7 +15517,7 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "GLM-5.3-Flash",
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
-      "family": "glm",
+      "family": "glm-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -15814,8 +15849,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "output": 393216
+        "context": 1048576,
+        "output": 943718
       },
       "cost": {
         "input": 0.15,
@@ -15862,12 +15897,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
-        "input": 0.57948,
-        "output": 1.73844,
-        "cache_read": 0.018438
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16065,9 +16100,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2.1,
-        "output": 10.95,
-        "cache_read": 0.23
+        "input": 2,
+        "output": 11.2,
+        "cache_read": 0.232
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16461,13 +16496,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 1048576,
+        "output": 943718
       },
       "cost": {
-        "input": 0.8775,
-        "output": 2.97,
-        "cache_read": 0.1755
+        "input": 0.833,
+        "output": 2.618,
+        "cache_read": 0.13685
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

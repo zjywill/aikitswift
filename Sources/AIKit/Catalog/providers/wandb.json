@@ -1,6 +1,6 @@
 {
   "id": "wandb",
-  "name": "Weights & Biases",
+  "name": "CoreWeave",
   "adapter": "openai",
   "models": [
     {

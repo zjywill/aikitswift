@@ -717,6 +717,56 @@
       "type": "chat"
     },
     {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.1,
+        "output": 3.851,
+        "cache_read": 0.275,
+        "cache_write": 0
+      },
+      "display_name": "GLM-5.3",
+      "type": "chat"
+    },
+    {
       "id": "kimi-k2-thinking",
       "name": "Moonshot Kimi K2 Thinking",
       "description": "Kimi reasoning model for long-horizon research, planning, and tool use",
@@ -857,6 +907,56 @@
         "output": 3.858
       },
       "display_name": "Moonshot Kimi K2.6",
+      "type": "chat"
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-07-16",
+      "last_updated": "2026-07-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 2.827,
+        "output": 14.133,
+        "cache_read": 0.283
+      },
+      "display_name": "Kimi K3",
       "type": "chat"
     },
     {
@@ -1546,7 +1646,7 @@
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2024-10-28",
-      "last_updated": "2025-04-13",
+      "last_updated": "2026-09-11",
       "modalities": {
         "input": [
           "text",
@@ -1562,8 +1662,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.717,
-        "output": 0.717
+        "input": 0.043,
+        "output": 0.072
       },
       "display_name": "Qwen-VL OCR",
       "type": "chat"
@@ -2349,7 +2449,7 @@
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-23",
-      "last_updated": "2025-07-23",
+      "last_updated": "2026-09-11",
       "modalities": {
         "input": [
           "text"
@@ -2364,8 +2464,34 @@
         "output": 65536
       },
       "cost": {
-        "input": 1,
-        "output": 5
+        "input": 0.574,
+        "output": 2.296,
+        "tiers": [
+          {
+            "input": 0.861,
+            "output": 3.444,
+            "tier": {
+              "type": "context",
+              "size": 32000
+            }
+          },
+          {
+            "input": 1.435,
+            "output": 5.74,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          },
+          {
+            "input": 2.87,
+            "output": 28.7,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ]
       },
       "display_name": "Qwen3 Coder Plus",
       "type": "chat"
@@ -2383,7 +2509,7 @@
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
+      "last_updated": "2026-09-11",
       "modalities": {
         "input": [
           "text"
@@ -2398,8 +2524,18 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.861,
-        "output": 3.441
+        "input": 1.291,
+        "output": 7.749,
+        "tiers": [
+          {
+            "input": 2.153,
+            "output": 12.915,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          }
+        ]
       },
       "display_name": "Qwen3 Max",
       "type": "chat"
@@ -2767,7 +2903,7 @@
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-02-23",
-      "last_updated": "2026-02-23",
+      "last_updated": "2026-09-11",
       "modalities": {
         "input": [
           "text",
@@ -2785,8 +2921,24 @@
       },
       "cost": {
         "input": 0.172,
-        "output": 1.72,
-        "reasoning": 1.72
+        "output": 1.033,
+        "reasoning": 1.033,
+        "tiers": [
+          {
+            "input": 0.689,
+            "output": 4.133,
+            "reasoning": 4.133,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.689,
+          "output": 4.133,
+          "reasoning": 4.133
+        }
       },
       "display_name": "Qwen3.5 Flash",
       "type": "chat"
@@ -2814,7 +2966,7 @@
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-02-16",
-      "last_updated": "2026-02-16",
+      "last_updated": "2026-09-11",
       "modalities": {
         "input": [
           "text",
@@ -2831,9 +2983,25 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.573,
-        "output": 3.44,
-        "reasoning": 3.44
+        "input": 0.287,
+        "output": 1.722,
+        "reasoning": 1.722,
+        "tiers": [
+          {
+            "input": 1.148,
+            "output": 6.888,
+            "reasoning": 6.888,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 1.148,
+          "output": 6.888,
+          "reasoning": 6.888
+        }
       },
       "display_name": "Qwen3.5 Plus",
       "type": "chat"
