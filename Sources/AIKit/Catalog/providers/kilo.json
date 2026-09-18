@@ -1786,12 +1786,12 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "output": 16000
+        "context": 163840,
+        "output": 16384
       },
       "cost": {
-        "input": 0.2574,
-        "output": 1.0287
+        "input": 0.32,
+        "output": 0.89
       },
       "display_name": "DeepSeek Chat",
       "type": "chat"
@@ -2275,7 +2275,7 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 262144
       },
       "cost": {
         "input": 0.44,
@@ -9745,7 +9745,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 65536
       },
       "cost": {
         "input": 0.03,
@@ -12827,6 +12827,54 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b:free",
+      "name": "Qwen: Qwen3.8 27B (free)",
+      "description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Qwen: Qwen3.8 27B (free)",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-flash",
       "name": "Qwen3.8 Flash",
       "description": "Qwen3.8 Flash is a multimodal reasoning model from Alibaba. It is suited for coding assistance, agentic workflows, visual understanding, document and codebase analysis, desktop interaction, chart analysis, and long-video analysis.",
@@ -13626,41 +13674,6 @@
       "type": "chat"
     },
     {
-      "id": "stealth/union-alpha",
-      "name": "Union Alpha",
-      "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. Union Alpha is a stealth model....",
-      "family": "alpha",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-16",
-      "last_updated": "2026-09-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Union Alpha",
-      "type": "chat"
-    },
-    {
       "id": "stepfun/step-3.5-flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
@@ -14336,6 +14349,41 @@
         "output": 0
       },
       "display_name": "Thinking Machines: Inkling Small (free)",
+      "type": "chat"
+    },
+    {
+      "id": "unbiased/pareto",
+      "name": "Pareto",
+      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-17",
+      "last_updated": "2026-09-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.5,
+        "output": 7.5,
+        "cache_read": 0.25
+      },
+      "display_name": "Pareto",
       "type": "chat"
     },
     {
@@ -15091,13 +15139,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 198000,
-        "output": 16384
+        "context": 202752,
+        "output": 131072
       },
       "cost": {
-        "input": 0.43,
-        "output": 1.75,
-        "cache_read": 0.08
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.1
       },
       "display_name": "GLM-4.6",
       "type": "chat"
@@ -15944,12 +15992,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.1,
-        "cache_read": 0.01
+        "input": 0.0549,
+        "output": 0.1734,
+        "cache_read": 0.0087
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16100,9 +16148,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2,
-        "output": 11.2,
-        "cache_read": 0.232
+        "input": 2.1,
+        "output": 10.95,
+        "cache_read": 0.23
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16496,13 +16544,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
-        "input": 0.833,
-        "output": 2.618,
-        "cache_read": 0.13685
+        "input": 0.8775,
+        "output": 2.97,
+        "cache_read": 0.1755
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

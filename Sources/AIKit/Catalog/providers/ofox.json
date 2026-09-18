@@ -1538,6 +1538,52 @@
       "type": "chat"
     },
     {
+      "id": "bailian/qwen3.8-flash",
+      "name": "Qwen3.8 Flash",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016,
+        "cache_write": 0.2
+      },
+      "display_name": "Qwen3.8 Flash",
+      "type": "chat"
+    },
+    {
       "id": "bailian/qwen3.8-max",
       "name": "Qwen3.8 Max",
       "description": "2.4-trillion-parameter MoE flagship for coding, professional work, multimodal understanding, and long-horizon agentic workflows",
