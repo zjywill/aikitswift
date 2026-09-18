@@ -1883,11 +1883,11 @@
       "open_weights": true,
       "limit": {
         "context": 163840,
-        "output": 16000
+        "output": 16384
       },
       "cost": {
-        "input": 0.2574,
-        "output": 1.0287
+        "input": 0.32,
+        "output": 0.89
       },
       "display_name": "DeepSeek Chat",
       "type": "chat"
@@ -2352,12 +2352,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 262144
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
+        "input": 0.2156,
+        "output": 0.6468,
+        "cache_read": 0.00686
       },
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
@@ -5059,8 +5059,8 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.35,
-        "output": 1.5,
+        "input": 0.3,
+        "output": 1.1,
         "cache_read": 0.04
       },
       "display_name": "Muse Glimmer 30B",
@@ -6710,9 +6710,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 3,
-        "output": 15,
-        "cache_read": 0.3
+        "input": 2.1,
+        "output": 10.95,
+        "cache_read": 0.23
       },
       "display_name": "Kimi K3",
       "type": "chat"
@@ -9848,11 +9848,12 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 65536
       },
       "cost": {
-        "input": 0.037,
-        "output": 0.17
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.075
       },
       "display_name": "GPT OSS 120B",
       "type": "chat"
@@ -13020,6 +13021,56 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b:free",
+      "name": "Qwen3.8 27B (free)",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Qwen3.8 27B (free)",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-flash",
       "name": "Qwen3.8 Flash",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -13582,41 +13633,6 @@
         "output": 0.75
       },
       "display_name": "Llama 3.3 Euryale 70B",
-      "type": "chat"
-    },
-    {
-      "id": "stealth/union-alpha",
-      "name": "Union Alpha",
-      "description": "Multimodal model for analyzing text, images, documents, and rich media",
-      "family": "alpha",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-16",
-      "last_updated": "2026-09-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Union Alpha",
       "type": "chat"
     },
     {
@@ -14290,6 +14306,41 @@
         "output": 0
       },
       "display_name": "Inkling (free)",
+      "type": "chat"
+    },
+    {
+      "id": "unbiased/pareto",
+      "name": "Pareto",
+      "description": "Multimodal model for analyzing text, images, documents, and rich media",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-17",
+      "last_updated": "2026-09-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.5,
+        "output": 7.5,
+        "cache_read": 0.25
+      },
+      "display_name": "Pareto",
       "type": "chat"
     },
     {
@@ -15070,12 +15121,12 @@
       "open_weights": true,
       "limit": {
         "context": 204800,
-        "output": 16384
+        "output": 131072
       },
       "cost": {
-        "input": 0.43,
-        "output": 1.75,
-        "cache_read": 0.08
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.1
       },
       "display_name": "GLM-4.6",
       "type": "chat"
@@ -15922,12 +15973,12 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.1,
-        "cache_read": 0.01
+        "input": 0.0549,
+        "output": 0.1734,
+        "cache_read": 0.0087
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16098,9 +16149,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2,
-        "output": 11.2,
-        "cache_read": 0.232
+        "input": 2.1,
+        "output": 10.95,
+        "cache_read": 0.23
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -16587,12 +16638,12 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 943718
+        "output": 235929
       },
       "cost": {
-        "input": 0.833,
-        "output": 2.618,
-        "cache_read": 0.13685
+        "input": 0.8775,
+        "output": 2.97,
+        "cache_read": 0.1755
       },
       "display_name": "GLM Latest",
       "type": "chat"
