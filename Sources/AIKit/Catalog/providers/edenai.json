@@ -3853,7 +3853,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-21",
-      "last_updated": "2026-08-21",
+      "last_updated": "2026-09-01",
       "modalities": {
         "input": [
           "text",
@@ -3863,7 +3863,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1000000,
         "output": 384000
@@ -4200,7 +4200,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 786432,
+        "context": 1048576,
         "output": 384000
       },
       "cost": {
@@ -5540,8 +5540,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.34443,
-        "output": 0.45924
+        "input": 0.3438,
+        "output": 0.4584
       },
       "display_name": "Ministral 3 14B (Infomaniak)",
       "type": "chat"
@@ -5575,8 +5575,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.746265,
-        "output": 0.746265
+        "input": 0.7449,
+        "output": 0.7449
       },
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
@@ -5620,8 +5620,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.172215,
-        "output": 0.746265
+        "input": 0.1719,
+        "output": 0.7449
       },
       "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
@@ -6287,7 +6287,8 @@
       },
       "cost": {
         "input": 0.1,
-        "output": 0.4
+        "output": 0.4,
+        "cache_read": 0.01
       },
       "display_name": "Voxtral Small (latest)",
       "type": "chat"
@@ -9992,8 +9993,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.45924,
-        "output": 0.91848
+        "input": 0.4584,
+        "output": 0.9168
       },
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
@@ -10073,8 +10074,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.172215,
-        "output": 0.68886
+        "input": 0.1719,
+        "output": 0.6876
       },
       "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
@@ -10108,8 +10109,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.03329,
-        "output": 1.03329
+        "input": 1.0314,
+        "output": 1.0314
       },
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
@@ -10270,7 +10271,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
       "release_date": "2026-01",
