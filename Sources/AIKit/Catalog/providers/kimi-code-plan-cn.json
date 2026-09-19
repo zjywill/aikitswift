@@ -1,7 +1,7 @@
 {
-  "id": "kimi-for-coding",
-  "name": "Kimi For Coding",
-  "adapter": "anthropic",
+  "id": "kimi-code-plan-cn",
+  "name": "Kimi For Coding (kimi.com)",
+  "adapter": "openai",
   "models": [
     {
       "id": "k3",
@@ -11,7 +11,7 @@
       "attachment": true,
       "reasoning": {
         "supported": true,
-        "default": true
+        "default": false
       },
       "reasoning_options": [
         {
@@ -27,6 +27,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-07-16",
@@ -76,6 +79,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-07-16",
@@ -111,7 +117,7 @@
       "attachment": true,
       "reasoning": {
         "supported": true,
-        "default": true
+        "default": false
       },
       "reasoning_options": [
         {
@@ -127,6 +133,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "release_date": "2026-09-11",
       "last_updated": "2026-09-11",
       "modalities": {
@@ -161,10 +170,13 @@
       "attachment": true,
       "reasoning": {
         "supported": true,
-        "default": true
+        "default": false
       },
       "reasoning_options": [],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
@@ -196,6 +208,5 @@
     }
   ],
   "api": "https://api.kimi.com/coding/v1",
-  "doc": "https://www.kimi.com/code/docs/en/kimi-code/models.html",
-  "display_name": "Kimi For Coding"
+  "doc": "https://www.kimi.com/code/docs/en/kimi-code/models.html"
 }
