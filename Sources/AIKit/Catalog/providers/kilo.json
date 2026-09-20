@@ -6747,9 +6747,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.95,
-        "output": 10.92,
-        "cache_read": 0.2262
+        "input": 1.7,
+        "output": 8.5,
+        "cache_read": 0.17
       },
       "display_name": "Kimi K3",
       "type": "chat"
@@ -7427,7 +7427,7 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.065,
+        "input": 0.04,
         "output": 0.18
       },
       "display_name": "Nemotron 3.5 Lightning 30B A3B",
@@ -9289,59 +9289,6 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-5.6-sol-discounted",
-      "name": "OpenAI: GPT-5.6 Sol (50% off)",
-      "description": "GPT-5.6 Sol served by OpenAI through Vercel AI Gateway at 50% lower cost than other available inference providers. This promotion runs through September 18, 2026.",
-      "family": "gpt",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2025-08-26",
-      "last_updated": "2025-08-26",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1050000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 2,
-        "output": 10,
-        "reasoning": 0,
-        "cache_read": 0.2,
-        "cache_write": 2.5
-      },
-      "display_name": "OpenAI: GPT-5.6 Sol (50% off)",
-      "type": "chat"
-    },
-    {
       "id": "openai/gpt-5.6-sol-pro",
       "name": "GPT-5.6 Sol",
       "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. Learn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
@@ -9803,8 +9750,8 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.02,
-        "output": 0.1
+        "input": 0.018,
+        "output": 0.09
       },
       "display_name": "GPT OSS 20B",
       "type": "chat"
@@ -12165,8 +12112,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 65536
+        "context": 256000,
+        "output": 16384
       },
       "cost": {
         "input": 0.1625,
@@ -12257,8 +12204,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 256000,
+        "output": 32768
       },
       "cost": {
         "input": 0.1,
@@ -12868,7 +12815,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
+        "context": 1000000,
         "output": 131072
       },
       "cost": {
@@ -15672,6 +15619,54 @@
       "type": "chat"
     },
     {
+      "id": "z-ai/glm-5.3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention architecture...",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-18",
+      "last_updated": "2026-09-18",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.37,
+        "output": 1.25,
+        "cache_read": 0.075
+      },
+      "display_name": "Z.ai: GLM 5.3 FlashX",
+      "type": "chat"
+    },
+    {
       "id": "z-ai/glm-5v-turbo",
       "name": "GLM-5V-Turbo",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
@@ -15963,9 +15958,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.135,
-        "output": 0.54,
-        "cache_read": 0.00405
+        "input": 0.13,
+        "output": 0.52,
+        "cache_read": 0.0026
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16054,12 +16049,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.05104,
-        "output": 0.15312,
-        "cache_read": 0.001624
+        "input": 0.04,
+        "output": 0.08,
+        "cache_read": 0.016
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16210,9 +16205,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.95,
-        "output": 10.92,
-        "cache_read": 0.2262
+        "input": 1.7,
+        "output": 8.5,
+        "cache_read": 0.17
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16610,9 +16605,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.8918,
-        "output": 2.8028,
-        "cache_read": 0.16562
+        "input": 0.8442,
+        "output": 2.6532,
+        "cache_read": 0.15678
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

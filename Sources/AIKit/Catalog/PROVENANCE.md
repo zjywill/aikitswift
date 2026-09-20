@@ -3,12 +3,12 @@
 Vendored provider definitions. Each file names a provider's base URL, its
 models, and the `adapter` identifying which wire protocol it speaks.
 
-- Upstream commit: `dff014f`
+- Upstream commit: `198dec3`
 - Providers: 200
-- Models: 6459
-- Updated from upstream: 198
-- Added from upstream: 2
-- Removed from previous catalog: 1
+- Models: 6473
+- Updated from upstream: 200
+- Added from upstream: 0
+- Removed from previous catalog: 0
 - Unsupported upstream providers omitted: 22
 
 ## Adapters in use
