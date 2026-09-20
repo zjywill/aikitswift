@@ -1,6 +1,6 @@
 {
   "id": "minimax-cn-coding-plan",
-  "name": "MiniMax Token Plan (minimaxi.com)",
+  "name": "MiniMax Token Plan (minimax.cn)",
   "adapter": "anthropic",
   "models": [
     {
@@ -267,6 +267,6 @@
       "type": "chat"
     }
   ],
-  "api": "https://api.minimaxi.com/anthropic/v1",
+  "api": "https://api.minimax.cn/anthropic/v1",
   "doc": "https://platform.minimaxi.com/docs/token-plan/intro"
 }

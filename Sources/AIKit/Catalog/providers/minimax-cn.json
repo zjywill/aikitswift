@@ -1,6 +1,6 @@
 {
   "id": "minimax-cn",
-  "name": "MiniMax (minimaxi.com)",
+  "name": "MiniMax (minimax.cn)",
   "adapter": "anthropic",
   "models": [
     {
@@ -282,6 +282,6 @@
       "type": "chat"
     }
   ],
-  "api": "https://api.minimaxi.com/anthropic/v1",
+  "api": "https://api.minimax.cn/anthropic/v1",
   "doc": "https://platform.minimaxi.com/docs/guides/quickstart"
 }

@@ -9929,6 +9929,50 @@
       "type": "chat"
     },
     {
+      "id": "google/diffusiongemma",
+      "name": "DiffusionGemma",
+      "description": "DiffusionGemma is a high-speed diffusion-based version of Gemma 4 26B A4B. It supports optional reasoning and a 262,144-token context window.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-09-19",
+      "last_updated": "2026-09-19",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.05,
+        "output": 0.15,
+        "cache_read": 0.025
+      },
+      "display_name": "DiffusionGemma",
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-3-flash-preview",
       "name": "Gemini 3 Flash (Preview)",
       "description": "New Gemini flash lane bringing frontier-style multimodal reasoning to cheaper runs",
@@ -10795,6 +10839,44 @@
       "type": "chat"
     },
     {
+      "id": "google/gemma-4-26b-a4b-it-cybersecurity",
+      "name": "Gemma 4 26B A4B Cybersecurity",
+      "description": "Gemma 4 26B A4B Cybersecurity is a cybersecurity-focused variant based on the uncensored model, with provider moderation for illegal activities. It supports optional reasoning, image understanding, tool calling, and a 262,144-token context window.",
+      "family": "gemma",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-19",
+      "last_updated": "2026-09-19",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1056,
+        "output": 0.3344,
+        "cache_read": 0.0528
+      },
+      "display_name": "Gemma 4 26B A4B Cybersecurity",
+      "type": "chat"
+    },
+    {
       "id": "google/gemma-4-26b-a4b-it:thinking",
       "name": "Gemma 4 26B A4B Thinking",
       "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
@@ -10916,6 +10998,41 @@
         "cache_read": 0.05
       },
       "display_name": "Gemma 4 31B Thinking",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemma4-31b-splituntied",
+      "name": "Gemma 4 31B Split-Untied",
+      "description": "Blazed-Forge's Split-Untied is a text-only Gemma 4 31B community finetune with an untied BF16 output head, built for creative writing, roleplay, expressive dialogue, and tool use.",
+      "family": "gemma",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-17",
+      "last_updated": "2026-09-17",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.3,
+        "cache_read": 0.05
+      },
+      "display_name": "Gemma 4 31B Split-Untied",
       "type": "chat"
     },
     {
@@ -14722,6 +14839,44 @@
         "cache_read": 0.25
       },
       "display_name": "Nvidia Nemotron 3 Ultra 550B Thinking",
+      "type": "chat"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "name": "Nemotron 3.5 Content Safety",
+      "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
+      "family": "nemotron",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "input": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.05,
+        "output": 0.15,
+        "cache_read": 0.025
+      },
+      "display_name": "Nemotron 3.5 Content Safety",
       "type": "chat"
     },
     {
@@ -19736,6 +19891,44 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b-cybersecurity",
+      "name": "Qwen 3.8 27B Cybersecurity",
+      "description": "Qwen 3.8 27B Cybersecurity is a cybersecurity-focused variant based on the uncensored model, with provider moderation for illegal activities. It supports optional reasoning, image understanding, tool calling, and a 262,144-token context window.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-19",
+      "last_updated": "2026-09-19",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Cybersecurity",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-27b-fable",
       "name": "Qwen 3.8 27B Fable",
       "description": "Qwen 3.8 27B Fable is an open-weight multimodal creative finetune for expressive dialogue, long-form storytelling, character work, and roleplay.",
@@ -19918,9 +20111,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.125
+        "input": 0.2,
+        "output": 1.7,
+        "cache_read": 0.18
       },
       "display_name": "Qwen 3.8 27B Uncensored",
       "type": "chat"
@@ -19956,9 +20149,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.125
+        "input": 0.2,
+        "output": 1.7,
+        "cache_read": 0.18
       },
       "display_name": "Qwen 3.8 27B Uncensored Thinking",
       "type": "chat"
@@ -20537,41 +20730,6 @@
         "cache_read": 0.25
       },
       "display_name": "Shisa V2.1 Llama 3.3 70B",
-      "type": "chat"
-    },
-    {
-      "id": "slowburn/gemma4-31b-splituntied",
-      "name": "Gemma 4 31B Split-Untied",
-      "description": "Slowburn's Split-Untied is a text-only Gemma 4 31B community finetune with an untied BF16 output head, built for creative writing, roleplay, expressive dialogue, and tool use.",
-      "family": "gemma",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "release_date": "2026-09-17",
-      "last_updated": "2026-09-17",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.1,
-        "output": 0.3,
-        "cache_read": 0.05
-      },
-      "display_name": "Gemma 4 31B Split-Untied",
       "type": "chat"
     },
     {
@@ -23246,6 +23404,53 @@
         "cache_read": 0.015
       },
       "display_name": "GLM 5.3 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "z-ai/glm-5.3-flash-cybersecurity",
+      "name": "GLM 5.3 Flash Cybersecurity",
+      "description": "GLM 5.3 Flash Cybersecurity is a cybersecurity-focused variant based on the uncensored model, with provider moderation for illegal activities. It supports always-on reasoning, image understanding, tool calling, and a 1,048,576-token context window.",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-19",
+      "last_updated": "2026-09-19",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.075
+      },
+      "display_name": "GLM 5.3 Flash Cybersecurity",
       "type": "chat"
     },
     {
