@@ -2255,9 +2255,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.03724,
-        "output": 0.07448,
-        "cache_read": 0.007448
+        "input": 0.03556,
+        "output": 0.07112,
+        "cache_read": 0.007112
       },
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -2306,59 +2306,10 @@
       },
       "cost": {
         "input": 0.04,
-        "output": 0.08,
+        "output": 0.16,
         "cache_read": 0.016
       },
       "display_name": "DeepSeek V4 Flash 0731",
-      "type": "chat"
-    },
-    {
-      "id": "deepseek/deepseek-v4-flash-0731:free",
-      "name": "DeepSeek V4 Flash 0731 (free)",
-      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-07-31",
-      "last_updated": "2026-07-31",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 393216
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "DeepSeek V4 Flash 0731 (free)",
       "type": "chat"
     },
     {
@@ -2401,12 +2352,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 262144
+        "output": 943718
       },
       "cost": {
-        "input": 0.2156,
-        "output": 0.6468,
-        "cache_read": 0.00686
+        "input": 0.22,
+        "output": 0.66,
+        "cache_read": 0.007
       },
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
@@ -2505,9 +2456,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.57816,
-        "output": 1.73448,
-        "cache_read": 0.018396
+        "input": 0.52272,
+        "output": 1.56816,
+        "cache_read": 0.016632
       },
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -5105,11 +5056,11 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 16384
       },
       "cost": {
-        "input": 0.35,
-        "output": 1.5,
+        "input": 0.3,
+        "output": 1.2,
         "cache_read": 0.04
       },
       "display_name": "Muse Glimmer 30B",
@@ -6298,7 +6249,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": false,
       "temperature": true,
       "knowledge": "2023-10-31",
@@ -12629,8 +12580,8 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.9,
+        "input": 0.15,
+        "output": 1,
         "cache_read": 0.05
       },
       "display_name": "Qwen3.6 35B-A3B",
@@ -13072,8 +13023,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.42,
-        "output": 3,
+        "input": 0.2,
+        "output": 2.55,
         "cache_read": 0.085
       },
       "display_name": "Qwen3.8 27B",
@@ -13962,9 +13913,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.132,
-        "output": 0.528,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -15515,9 +15466,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.5544,
-        "output": 1.7424,
-        "cache_read": 0.10296
+        "input": 0.6496,
+        "output": 2.0416,
+        "cache_read": 0.12064
       },
       "display_name": "GLM-5.2",
       "type": "chat"
@@ -15608,9 +15559,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.896,
-        "output": 2.816,
-        "cache_read": 0.1664
+        "input": 0.91,
+        "output": 2.86,
+        "cache_read": 0.169
       },
       "display_name": "GLM-5.3",
       "type": "chat"
@@ -16050,9 +16001,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.57816,
-        "output": 1.73448,
-        "cache_read": 0.018396
+        "input": 0.52272,
+        "output": 1.56816,
+        "cache_read": 0.016632
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -16100,7 +16051,7 @@
       },
       "cost": {
         "input": 0.04,
-        "output": 0.08,
+        "output": 0.16,
         "cache_read": 0.016
       },
       "display_name": "DeepSeek V4 Flash Latest",
@@ -16715,7 +16666,7 @@
       "open_weights": false,
       "limit": {
         "context": 1310720,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
         "input": 0.075,
@@ -16764,9 +16715,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.8442,
-        "output": 2.6532,
-        "cache_read": 0.15678
+        "input": 0.7728,
+        "output": 2.4288,
+        "cache_read": 0.14352
       },
       "display_name": "GLM Latest",
       "type": "chat"
