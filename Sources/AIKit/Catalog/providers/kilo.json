@@ -1182,7 +1182,7 @@
     },
     {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "name": "Baidu: ERNIE 4.5 VL 424B A47B  (retires Oct 8)",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
       "family": "ernie",
       "attachment": true,
@@ -1222,7 +1222,7 @@
         "input": 0.42,
         "output": 1.25
       },
-      "display_name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "display_name": "Baidu: ERNIE 4.5 VL 424B A47B  (retires Oct 8)",
       "type": "chat"
     },
     {
@@ -1965,7 +1965,7 @@
     },
     {
       "id": "deepseek/deepseek-r1-distill-llama-70b",
-      "name": "DeepSeek: R1 Distill Llama 70B",
+      "name": "DeepSeek: R1 Distill Llama 70B (retires Sep 28)",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
       "family": "deepseek",
       "attachment": false,
@@ -2004,12 +2004,12 @@
         "input": 0.8,
         "output": 0.8
       },
-      "display_name": "DeepSeek: R1 Distill Llama 70B",
+      "display_name": "DeepSeek: R1 Distill Llama 70B (retires Sep 28)",
       "type": "chat"
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
-      "name": "DeepSeek: DeepSeek V3.1 Terminus",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus (retires Sep 28)",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
       "family": "deepseek",
       "attachment": false,
@@ -2049,7 +2049,7 @@
         "output": 1,
         "cache_read": 0.135
       },
-      "display_name": "DeepSeek: DeepSeek V3.1 Terminus",
+      "display_name": "DeepSeek: DeepSeek V3.1 Terminus (retires Sep 28)",
       "type": "chat"
     },
     {
@@ -2100,7 +2100,7 @@
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
-      "name": "DeepSeek: DeepSeek V3.2 Exp",
+      "name": "DeepSeek: DeepSeek V3.2 Exp (retires Sep 28)",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
       "family": "deepseek",
       "attachment": false,
@@ -2139,7 +2139,7 @@
         "input": 0.27,
         "output": 0.41
       },
-      "display_name": "DeepSeek: DeepSeek V3.2 Exp",
+      "display_name": "DeepSeek: DeepSeek V3.2 Exp (retires Sep 28)",
       "type": "chat"
     },
     {
@@ -2238,53 +2238,6 @@
       "type": "chat"
     },
     {
-      "id": "deepseek/deepseek-v4-flash-0731:free",
-      "name": "DeepSeek: DeepSeek V4 Flash 0731 (free)",
-      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-07-31",
-      "last_updated": "2026-07-31",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 393216
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "DeepSeek: DeepSeek V4 Flash 0731 (free)",
-      "type": "chat"
-    },
-    {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek V4 Flash Vision Exp",
       "description": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding image understanding while matching the base model on text capabilities including agents,...",
@@ -2322,7 +2275,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 262144
+        "output": 943718
       },
       "cost": {
         "input": 0.44,
@@ -5110,7 +5063,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 16384
       },
       "cost": {
         "input": 0.3,
@@ -6319,7 +6272,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": false,
       "temperature": true,
       "release_date": "2025-03-17",
@@ -7427,7 +7380,7 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.04,
+        "input": 0.065,
         "output": 0.18
       },
       "display_name": "Nemotron 3.5 Lightning 30B A3B",
@@ -12439,8 +12392,8 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.9,
+        "input": 0.15,
+        "output": 1,
         "cache_read": 0.05
       },
       "display_name": "Qwen3.6 35B-A3B",
@@ -12815,7 +12768,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
+        "context": 262144,
         "output": 131072
       },
       "cost": {
@@ -14000,9 +13953,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.132,
-        "output": 0.528,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -16005,9 +15958,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.57816,
-        "output": 1.73448,
-        "cache_read": 0.018396
+        "input": 0.52272,
+        "output": 1.56816,
+        "cache_read": 0.016632
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16053,7 +16006,7 @@
       },
       "cost": {
         "input": 0.04,
-        "output": 0.08,
+        "output": 0.16,
         "cache_read": 0.016
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
@@ -16556,7 +16509,7 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
         "input": 0.075,
@@ -16605,9 +16558,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.8442,
-        "output": 2.6532,
-        "cache_read": 0.15678
+        "input": 0.7728,
+        "output": 2.4288,
+        "cache_read": 0.14352
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

@@ -1176,7 +1176,8 @@
       "cost": {
         "input": 0.3,
         "output": 1.2,
-        "cache_read": 0.03
+        "cache_read": 0.06,
+        "cache_write": 0.375
       },
       "display_name": "MiniMax-M2.5",
       "type": "chat"
@@ -1216,7 +1217,8 @@
       "cost": {
         "input": 0.3,
         "output": 1.2,
-        "cache_read": 0.06
+        "cache_read": 0.06,
+        "cache_write": 0.375
       },
       "display_name": "MiniMax-M2.7",
       "type": "chat"
