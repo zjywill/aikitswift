@@ -9036,7 +9036,7 @@
     {
       "id": "gemma-4-12b-it",
       "name": "Gemma 4 12B Instruct",
-      "description": "Google's Gemma 4 12B Instruct is an open-weight multimodal model for text, image, audio, and video understanding, with tool calling and structured output support.",
+      "description": "Compact Gemma 4 instruction model for open, self-hosted chat and reasoning",
       "family": "gemma",
       "attachment": true,
       "reasoning": {
@@ -9044,8 +9044,9 @@
       },
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-08-01",
-      "last_updated": "2026-08-01",
+      "temperature": true,
+      "release_date": "2026-06-09",
+      "last_updated": "2026-06-09",
       "modalities": {
         "input": [
           "text",
@@ -18125,7 +18126,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": false,
       "temperature": true,
       "release_date": "2025-04-28",
@@ -18621,7 +18622,7 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 1.2,
+        "output": 1.9,
         "cache_read": 0.15
       },
       "display_name": "Qwen3 VL 235B A22B Instruct",
@@ -19928,6 +19929,44 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b-hemmingway",
+      "name": "Qwen 3.8 27B Hemingway",
+      "description": "Qwen 3.8 27B Hemingway is an open-weight NVFP4 multimodal creative finetune for long-form prose, character dialogue, storytelling, and roleplay.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-21",
+      "last_updated": "2026-09-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.25,
+        "output": 1.5,
+        "cache_read": 0.125
+      },
+      "display_name": "Qwen 3.8 27B Hemingway",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-27b-obliterated",
       "name": "Qwen 3.8 27B Obliterated",
       "description": "Qwen 3.8 27B Obliterated is an open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work.",
@@ -20426,9 +20465,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.5,
-        "output": 1.2,
-        "cache_read": 0.25
+        "input": 0.3,
+        "output": 1.9,
+        "cache_read": 0.15
       },
       "display_name": "Qwen3 VL 235B A22B Instruct Original",
       "type": "chat"
@@ -20945,8 +20984,7 @@
     {
       "id": "stepfun/step-5-preview",
       "name": "Step 5 Preview",
-      "description": "Step 5 Preview is StepFun's 600B sparse MoE frontier model for production-scale agents, activating 27B parameters per token. It is built for software engineering, long-horizon tool use, research, professional knowledge work, and finance, with native text, image, and video understanding and a 1M-token context window. ⚠️ Note: This model routes through StepFun, so privacy and logging guarantees may be limited.",
-      "family": "step",
+      "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -20964,7 +21002,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-09-20",
+      "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {
         "input": [
@@ -21870,6 +21908,56 @@
         "cache_read": 0.5
       },
       "display_name": "Grok 4.6",
+      "type": "chat"
+    },
+    {
+      "id": "x-ai/grok-4.7",
+      "name": "Grok 4.7",
+      "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
+      "family": "grok",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-05",
+      "release_date": "2026-09-21",
+      "last_updated": "2026-09-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 500000,
+        "input": 500000,
+        "output": 500000
+      },
+      "cost": {
+        "input": 1.6,
+        "output": 4.8,
+        "cache_read": 0.4
+      },
+      "display_name": "Grok 4.7",
       "type": "chat"
     },
     {

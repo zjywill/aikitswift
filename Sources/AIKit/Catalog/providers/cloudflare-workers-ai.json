@@ -6,7 +6,7 @@
     {
       "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
       "name": "Gemma Sea Lion V4 27B It",
-      "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+      "description": "Gemma 3 27B tuned by AI Singapore for Southeast Asian languages and instruction following",
       "family": "gemma",
       "attachment": false,
       "reasoning": {
@@ -86,11 +86,10 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
+            "none",
+            "low",
             "high",
             "max"
           ]
@@ -135,11 +134,10 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
+            "none",
+            "low",
             "high",
             "max"
           ]
@@ -183,13 +181,9 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -233,8 +227,8 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2025-10-07",
-      "last_updated": "2025-10-07",
+      "release_date": "2025-10-02",
+      "last_updated": "2025-10-02",
       "modalities": {
         "input": [
           "text"
@@ -514,8 +508,9 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2025-03-18",
-      "last_updated": "2025-03-18",
+      "knowledge": "2024-06",
+      "release_date": "2025-03-17",
+      "last_updated": "2025-03-17",
       "modalities": {
         "input": [
           "text"
@@ -548,13 +543,9 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -600,19 +591,7 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
+      "reasoning_options": [],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -941,14 +920,6 @@
       "reasoning_options": [
         {
           "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
         }
       ],
       "tool_call": true,
@@ -992,14 +963,11 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
-            "high"
+            "none",
+            "high",
+            "max"
           ]
         }
       ],
@@ -1044,8 +1012,8 @@
           "type": "effort",
           "values": [
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -1065,7 +1033,7 @@
       "open_weights": true,
       "limit": {
         "context": 1310720,
-        "output": 1310720
+        "output": 1048576
       },
       "cost": {
         "input": 1.4,
@@ -1085,7 +1053,16 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,

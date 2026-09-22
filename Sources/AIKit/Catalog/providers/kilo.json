@@ -578,54 +578,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4",
-      "name": "Anthropic: Claude Opus 4 ($$$$)",
-      "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2025-05-22",
-      "last_updated": "2025-05-22",
-      "modalities": {
-        "input": [
-          "image",
-          "text",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5,
-        "cache_write": 18.75
-      },
-      "display_name": "Anthropic: Claude Opus 4 ($$$$)",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-4.1",
       "name": "Claude Opus 4.1 (latest)",
       "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
@@ -2369,7 +2321,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
         "input": 1.32,
@@ -6700,9 +6652,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.7,
-        "output": 8.5,
-        "cache_read": 0.17
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
       },
       "display_name": "Kimi K3",
       "type": "chat"
@@ -12768,7 +12720,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
+        "context": 1000000,
         "output": 131072
       },
       "cost": {
@@ -13953,9 +13905,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.13,
+        "output": 0.53,
+        "cache_read": 0.033
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -14749,6 +14701,56 @@
       "type": "chat"
     },
     {
+      "id": "x-ai/grok-4.7",
+      "name": "Grok 4.7",
+      "description": "Grok 4.7 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+      "family": "grok",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-05",
+      "release_date": "2026-09-21",
+      "last_updated": "2026-09-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 500000,
+        "output": 450000
+      },
+      "cost": {
+        "input": 1.6,
+        "output": 4.8,
+        "cache_read": 0.4
+      },
+      "display_name": "Grok 4.7",
+      "type": "chat"
+    },
+    {
       "id": "x-ai/grok-build-0.1",
       "name": "Grok Build 0.1",
       "description": "Grok coding model for agentic engineering, edits, and codebase workflows",
@@ -14925,6 +14927,152 @@
         }
       },
       "display_name": "MiMo-V2.5-Pro",
+      "type": "chat"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention mechanism for...",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-09-22",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.0028
+      },
+      "display_name": "MiMo-V2.6-Flash",
+      "type": "chat"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding...",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-09-22",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.435,
+        "output": 0.87,
+        "cache_read": 0.0036
+      },
+      "display_name": "MiMo-V2.6-Pro",
+      "type": "chat"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-21",
+      "last_updated": "2026-09-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 4.35,
+        "output": 8.7,
+        "cache_read": 0.036
+      },
+      "display_name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "type": "chat"
     },
     {
@@ -15561,7 +15709,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
         "input": 0.15,
@@ -15911,9 +16059,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.52,
-        "cache_read": 0.0026
+        "input": 0.12,
+        "output": 0.48,
+        "cache_read": 0.0036
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -15954,13 +16102,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 393216
+        "context": 1024000,
+        "output": 384000
       },
       "cost": {
-        "input": 0.52272,
-        "output": 1.56816,
-        "cache_read": 0.016632
+        "input": 0.558624,
+        "output": 1.675872,
+        "cache_read": 0.018621
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16005,9 +16153,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.16,
-        "cache_read": 0.016
+        "input": 0.03,
+        "output": 1,
+        "cache_read": 0.012
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16158,9 +16306,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.7,
-        "output": 8.5,
-        "cache_read": 0.17
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.15
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16464,9 +16612,9 @@
         "output": 450000
       },
       "cost": {
-        "input": 2,
-        "output": 6,
-        "cache_read": 0.5
+        "input": 1.6,
+        "output": 4.8,
+        "cache_read": 0.4
       },
       "display_name": "xAI: Grok Latest",
       "type": "chat"
@@ -16509,12 +16657,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 102400
       },
       "cost": {
         "input": 0.075,
         "output": 0.25,
-        "cache_read": 0.015
+        "cache_read": 0.02
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -16554,13 +16702,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
-        "input": 0.7728,
-        "output": 2.4288,
-        "cache_read": 0.14352
+        "input": 0.7839,
+        "output": 2.6532,
+        "cache_read": 0.15678
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

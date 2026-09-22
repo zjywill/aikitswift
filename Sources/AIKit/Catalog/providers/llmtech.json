@@ -4,7 +4,7 @@
   "adapter": "openai",
   "models": [
     {
-      "id": "unsloth/Qwen3.8-27B-NVFP4",
+      "id": "nvidia/Qwen3.8-27B-NVFP4",
       "name": "Qwen3.8 27B",
       "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
       "family": "qwen",
