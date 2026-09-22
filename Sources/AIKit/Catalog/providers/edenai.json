@@ -2071,7 +2071,7 @@
         "supported": false
       },
       "tool_call": false,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2024-11-12",
       "last_updated": "2024-11-12",
@@ -3891,6 +3891,7 @@
           "type": "effort",
           "values": [
             "none",
+            "low",
             "high",
             "max"
           ]
@@ -5540,8 +5541,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.3438,
-        "output": 0.4584
+        "input": 0.3447,
+        "output": 0.4596
       },
       "display_name": "Ministral 3 14B (Infomaniak)",
       "type": "chat"
@@ -5575,8 +5576,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.7449,
-        "output": 0.7449
+        "input": 0.74685,
+        "output": 0.74685
       },
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
@@ -5620,8 +5621,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.1719,
-        "output": 0.7449
+        "input": 0.17235,
+        "output": 0.74685
       },
       "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
@@ -9993,8 +9994,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.4584,
-        "output": 0.9168
+        "input": 0.4596,
+        "output": 0.9192
       },
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
@@ -10074,8 +10075,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.1719,
-        "output": 0.6876
+        "input": 0.17235,
+        "output": 0.6894
       },
       "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
@@ -10109,8 +10110,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.0314,
-        "output": 1.0314
+        "input": 1.0341,
+        "output": 1.0341
       },
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
