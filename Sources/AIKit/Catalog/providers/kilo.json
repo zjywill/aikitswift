@@ -887,6 +887,58 @@
       "type": "chat"
     },
     {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Claude Opus 5.5",
+      "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebases, code...",
+      "family": "claude-opus",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
+      },
+      "display_name": "Claude Opus 5.5",
+      "type": "chat"
+    },
+    {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
@@ -1562,6 +1614,52 @@
         "output": 10
       },
       "display_name": "Cohere: Command A",
+      "type": "chat"
+    },
+    {
+      "id": "cohere/command-a-plus",
+      "name": "Cohere: Command A+",
+      "description": "Command A+ is Cohere's flagship model for enterprise agentic workflows. It accepts text and image inputs with a 192K context window, supports native tool calling with strict tool schemas, structured...",
+      "family": "command-a",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 192000,
+        "output": 64000
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.5,
+        "cache_read": 0.15
+      },
+      "display_name": "Cohere: Command A+",
       "type": "chat"
     },
     {
@@ -2370,7 +2468,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 384000
+        "output": 943718
       },
       "cost": {
         "input": 0.3,
@@ -4503,41 +4601,6 @@
         "cache_read": 0.005
       },
       "display_name": "Auto Small",
-      "type": "chat"
-    },
-    {
-      "id": "kwaipilot/kat-coder-pro-v2",
-      "name": "Kwaipilot: KAT-Coder-Pro V2",
-      "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
-      "family": "kat-coder",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-03-27",
-      "last_updated": "2026-03-27",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 144000
-      },
-      "cost": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.06
-      },
-      "display_name": "Kwaipilot: KAT-Coder-Pro V2",
       "type": "chat"
     },
     {
@@ -6728,6 +6791,53 @@
       "type": "chat"
     },
     {
+      "id": "nex-agi/nex-n2.5-mini",
+      "name": "Nex AGI: Nex-N2.5-Mini",
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "family": "agi",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-08",
+      "last_updated": "2026-09-08",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0.025,
+        "output": 0.1,
+        "cache_read": 0.0025
+      },
+      "display_name": "Nex AGI: Nex-N2.5-Mini",
+      "type": "chat"
+    },
+    {
       "id": "nex-agi/nex-n2.5-mini:free",
       "name": "Nex AGI: Nex-N2.5-Mini (free)",
       "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
@@ -6771,6 +6881,53 @@
         "output": 0
       },
       "display_name": "Nex AGI: Nex-N2.5-Mini (free)",
+      "type": "chat"
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro",
+      "name": "Nex AGI: Nex-N2.5-Pro",
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "family": "agi",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-08",
+      "last_updated": "2026-09-08",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0.075,
+        "output": 0.25,
+        "cache_read": 0.015
+      },
+      "display_name": "Nex AGI: Nex-N2.5-Pro",
       "type": "chat"
     },
     {
@@ -9460,6 +9617,218 @@
       "type": "chat"
     },
     {
+      "id": "openai/gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "description": "GPT-6 Luna is the fast, cost-efficient model in OpenAI's GPT-6 series, positioned below GPT-6 Sol. It is suited for high-volume and latency-sensitive workloads such as chat, classification, and lightweight agentic...",
+      "family": "gpt-luna",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-05-18",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 922000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
+      },
+      "display_name": "GPT-6 Luna",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6-luna-pro",
+      "name": "OpenAI: GPT-6 Luna Pro",
+      "description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. Learn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "pdf",
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
+      },
+      "display_name": "OpenAI: GPT-6 Luna Pro",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "description": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding professional...",
+      "family": "gpt-sol",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-04-20",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 922000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "display_name": "GPT-6 Sol",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6-sol-pro",
+      "name": "OpenAI: GPT-6 Sol Pro",
+      "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. Learn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "pdf",
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "display_name": "OpenAI: GPT-6 Sol Pro",
+      "type": "chat"
+    },
+    {
       "id": "openai/gpt-audio",
       "name": "OpenAI: GPT Audio",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
@@ -9652,7 +10021,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 32768
       },
       "cost": {
         "input": 0.018,
@@ -11605,8 +11974,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.15,
@@ -12295,7 +12664,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 262140
       },
       "cost": {
         "input": 0.45,
@@ -12877,6 +13246,54 @@
         "cache_write": 2.5
       },
       "display_name": "Qwen3.8 Max 0902",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-omni-flash",
+      "name": "Qwen3.8 Omni Flash",
+      "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for audio-video analysis and summarization,...",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-17",
+      "last_updated": "2026-09-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016
+      },
+      "display_name": "Qwen3.8 Omni Flash",
       "type": "chat"
     },
     {
@@ -15029,7 +15446,7 @@
     },
     {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
-      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "name": "MiMo-V2.6-Pro-UltraSpeed",
       "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
       "family": "mimo",
       "attachment": true,
@@ -15072,7 +15489,7 @@
         "output": 8.7,
         "cache_read": 0.036
       },
-      "display_name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "display_name": "MiMo-V2.6-Pro-UltraSpeed",
       "type": "chat"
     },
     {
@@ -15927,7 +16344,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -15957,10 +16373,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
       },
       "display_name": "Anthropic: Claude Opus Latest",
       "type": "chat"
@@ -16059,9 +16475,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.12,
-        "output": 0.48,
-        "cache_read": 0.0036
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16102,13 +16518,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1024000,
+        "context": 1048576,
         "output": 384000
       },
       "cost": {
-        "input": 0.558624,
-        "output": 1.675872,
-        "cache_read": 0.018621
+        "input": 0.4,
+        "output": 4.3,
+        "cache_read": 0.033
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16154,8 +16570,8 @@
       },
       "cost": {
         "input": 0.03,
-        "output": 1,
-        "cache_read": 0.012
+        "output": 0.8,
+        "cache_read": 0.008
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16306,9 +16722,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.5,
-        "output": 7.5,
-        "cache_read": 0.15
+        "input": 1.35,
+        "output": 14.33,
+        "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -16408,10 +16824,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.2,
-        "output": 1.2,
-        "cache_read": 0.02,
-        "cache_write": 0.25
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
       },
       "display_name": "OpenAI: GPT Luna Latest",
       "type": "chat"
@@ -16657,12 +17073,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 102400
+        "output": 131072
       },
       "cost": {
         "input": 0.075,
         "output": 0.25,
-        "cache_read": 0.02
+        "cache_read": 0.015
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -16702,13 +17118,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 1048576,
+        "output": 131072
       },
       "cost": {
-        "input": 0.7839,
-        "output": 2.6532,
-        "cache_read": 0.15678
+        "input": 0.5625,
+        "output": 2.5,
+        "cache_read": 0.125
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

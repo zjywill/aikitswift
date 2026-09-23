@@ -1723,9 +1723,23 @@
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2026-04-30",
       "last_updated": "2026-04-30",
@@ -1740,7 +1754,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
@@ -1757,9 +1771,23 @@
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -1774,7 +1802,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
@@ -1791,9 +1819,23 @@
       "description": "Flagship model for demanding analysis, coding, and production agent workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -1808,7 +1850,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
@@ -1825,9 +1867,23 @@
       "description": "Flagship model for demanding analysis, coding, and production agent workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2025-11-30",
       "last_updated": "2025-11-30",
@@ -1842,7 +1898,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
@@ -1859,9 +1915,23 @@
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2025-11-30",
       "last_updated": "2025-11-30",
@@ -1876,7 +1946,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
@@ -1893,9 +1963,23 @@
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2026-04-30",
       "last_updated": "2026-04-30",
@@ -1910,7 +1994,7 @@
       "open_weights": false,
       "limit": {
         "context": 8192,
-        "output": 4096
+        "output": 8192
       },
       "cost": {
         "input": 0.15,
