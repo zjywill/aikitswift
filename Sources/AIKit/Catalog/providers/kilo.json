@@ -133,6 +133,96 @@
       "type": "chat"
     },
     {
+      "id": "aion-labs/aion-3.5",
+      "name": "AionLabs: Aion 3.5",
+      "description": "Aion 3.5 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each...",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 3,
+        "output": 6,
+        "cache_read": 0.75
+      },
+      "display_name": "AionLabs: Aion 3.5",
+      "type": "chat"
+    },
+    {
+      "id": "aion-labs/aion-3.5-mini",
+      "name": "AionLabs: Aion 3.5 Mini",
+      "description": "Aion 3.5 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It is the smaller, lower-cost sibling of Aion 3.5 and uses...",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.7,
+        "output": 1.4,
+        "cache_read": 0.18
+      },
+      "display_name": "AionLabs: Aion 3.5 Mini",
+      "type": "chat"
+    },
+    {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
       "name": "AionLabs: Aion-RP 1.0 (8B)",
       "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
@@ -2418,7 +2508,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
+        "context": 1024000,
         "output": 384000
       },
       "cost": {
@@ -2468,7 +2558,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
         "input": 0.3,
@@ -4283,57 +4373,11 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.06,
-        "output": 0.18,
-        "cache_read": 0.012
+        "input": 0.075,
+        "output": 0.22,
+        "cache_read": 0.015
       },
       "display_name": "inclusionAI: Ling 3.0 Flash VL",
-      "type": "chat"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-vl:free",
-      "name": "inclusionAI: Ling 3.0 Flash VL (free)",
-      "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
-      "family": "ling",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-10",
-      "last_updated": "2026-09-10",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "inclusionAI: Ling 3.0 Flash VL (free)",
       "type": "chat"
     },
     {
@@ -4511,7 +4555,7 @@
       "open_weights": false,
       "limit": {
         "context": 256000,
-        "output": 10000
+        "output": 32768
       },
       "cost": {
         "input": 0,
@@ -5529,8 +5573,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 204800,
-        "output": 131072
+        "context": 196608,
+        "output": 176947
       },
       "cost": {
         "input": 0.3,
@@ -5787,43 +5831,6 @@
         "cache_read": 0.03
       },
       "display_name": "Mistral: Codestral 2508",
-      "type": "chat"
-    },
-    {
-      "id": "mistralai/devstral-2512",
-      "name": "Devstral 2",
-      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring...",
-      "family": "devstral",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-12",
-      "release_date": "2025-12-09",
-      "last_updated": "2025-12-09",
-      "modalities": {
-        "input": [
-          "text",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 209715
-      },
-      "cost": {
-        "input": 0.4,
-        "output": 2,
-        "cache_read": 0.04
-      },
-      "display_name": "Devstral 2",
       "type": "chat"
     },
     {
@@ -6575,8 +6582,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 3,
-        "cache_read": 0.1
+        "output": 3
       },
       "display_name": "Kimi K2.5",
       "type": "chat"
@@ -6621,8 +6627,8 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.8,
-        "output": 3.4,
+        "input": 0.95,
+        "output": 4,
         "cache_read": 0.16
       },
       "display_name": "Kimi K2.6",
@@ -6667,9 +6673,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.95,
-        "output": 4,
-        "cache_read": 0.19
+        "input": 0.7062,
+        "output": 3.3,
+        "cache_read": 0.18
       },
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
@@ -7486,7 +7492,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 131072
       },
       "cost": {
         "input": 0.065,
@@ -11931,7 +11937,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 235929
       },
       "cost": {
         "input": 0.0975,
@@ -13249,6 +13255,56 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-max-prime",
+      "name": "Qwen: Qwen3.8 Max Prime",
+      "description": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video...",
+      "family": "qwen3.8-max",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 4,
+        "output": 12,
+        "cache_read": 0.5
+      },
+      "display_name": "Qwen: Qwen3.8 Max Prime",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-omni-flash",
       "name": "Qwen3.8 Omni Flash",
       "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for audio-video analysis and summarization,...",
@@ -13994,6 +14050,55 @@
         "cache_write": 0.3125
       },
       "display_name": "Stealth: Qwen3.6 Plus (50% off)",
+      "type": "chat"
+    },
+    {
+      "id": "stealth/space-bunny-alpha",
+      "name": "Space Bunny Alpha",
+      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
+      "family": "alpha",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 524288
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Space Bunny Alpha",
       "type": "chat"
     },
     {
@@ -14743,6 +14848,56 @@
       "type": "chat"
     },
     {
+      "id": "upstage/solar-mini4",
+      "name": "Upstage: Solar Mini 4",
+      "description": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic use cases where response...",
+      "family": "solar",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 524288,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.01
+      },
+      "display_name": "Upstage: Solar Mini 4",
+      "type": "chat"
+    },
+    {
       "id": "upstage/solar-pro-3",
       "name": "Upstage: Solar Pro 3",
       "description": "Flagship model for demanding analysis, coding, and production agent workflows",
@@ -15368,21 +15523,20 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-09-22",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "audio",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 131072
@@ -15417,21 +15571,20 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-09-22",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "audio",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 131072
@@ -15472,14 +15625,14 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "audio",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 131072
@@ -16179,9 +16332,55 @@
       "cost": {
         "input": 0.37,
         "output": 1.25,
-        "cache_read": 0.075
+        "cache_read": 0.09
       },
       "display_name": "Z.ai: GLM 5.3 FlashX",
+      "type": "chat"
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "description": "GLM-5.3-Prime is the high-speed variant of Z.ai's GLM-5.3, inheriting its full capabilities while delivering 1.5–2× the output throughput through inference acceleration. It supports text input and output with a 1M-token...",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-23",
+      "last_updated": "2026-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.8,
+        "output": 8.8,
+        "cache_read": 0.56
+      },
+      "display_name": "Z.ai: GLM 5.3 Prime",
       "type": "chat"
     },
     {
@@ -16475,9 +16674,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.5,
-        "cache_read": 0.01
+        "input": 0.099,
+        "output": 0.6,
+        "cache_read": 0.06
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16519,12 +16718,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 384000
+        "output": 943718
       },
       "cost": {
-        "input": 0.4,
-        "output": 4.3,
-        "cache_read": 0.033
+        "input": 0.3865,
+        "output": 2.9,
+        "cache_read": 0.25
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16569,9 +16768,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.03,
-        "output": 0.8,
-        "cache_read": 0.008
+        "input": 0.038,
+        "output": 0.55,
+        "cache_read": 0.0228
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16722,9 +16921,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.35,
-        "output": 14.33,
-        "cache_read": 0.3
+        "input": 0.91,
+        "output": 6.9875,
+        "cache_read": 0.195
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"

@@ -2137,7 +2137,7 @@
     {
       "id": "openai/gpt-oss-120b-maas",
       "name": "GPT OSS 120B",
-      "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
@@ -2155,6 +2155,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
@@ -2169,7 +2170,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 131072
       },
       "provider": {
         "npm": "@ai-sdk/openai-compatible",
@@ -2644,7 +2645,7 @@
     {
       "id": "zai-org/glm-5-maas",
       "name": "GLM-5",
-      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
+      "description": "General GLM flagship for coding, analysis, and tool-heavy engineering workflows",
       "family": "glm",
       "attachment": false,
       "reasoning": {
@@ -2661,8 +2662,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-02-11",
-      "last_updated": "2026-02-11",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-02-12",
       "modalities": {
         "input": [
           "text"
@@ -2673,8 +2674,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 202752,
-        "output": 131072
+        "context": 200000,
+        "output": 128000
       },
       "status": "deprecated",
       "provider": {

@@ -258,9 +258,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
-        "output": 1000000
+        "context": 1024000,
+        "input": 1024000,
+        "output": 65536
       },
       "cost": {
         "input": 1,

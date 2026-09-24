@@ -511,8 +511,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1047576,
-        "output": 32768
+        "context": 128000,
+        "output": 32000
       },
       "display_name": "GPT-4.1",
       "type": "chat"
@@ -556,9 +556,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 400000,
+        "context": 272000,
         "input": 272000,
-        "output": 128000
+        "output": 8192
       },
       "status": "beta",
       "display_name": "GPT-5",
@@ -650,9 +650,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 400000,
+        "context": 272000,
         "input": 272000,
-        "output": 128000
+        "output": 8192
       },
       "status": "beta",
       "display_name": "GPT-5 Nano",
@@ -697,9 +697,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 400000,
+        "context": 272000,
         "input": 272000,
-        "output": 128000
+        "output": 8192
       },
       "display_name": "GPT-5.1",
       "type": "chat"
