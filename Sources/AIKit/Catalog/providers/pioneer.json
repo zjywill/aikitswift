@@ -1766,6 +1766,54 @@
       "type": "chat"
     },
     {
+      "id": "fastino/gliguard-PII-multi",
+      "name": "GLiNER2-Guardrails-PII-Multi",
+      "description": "A 300M-parameter multilingual model that runs LLM safety moderation and PII detection in a single forward pass.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "release_date": "2026-07-08",
+      "last_updated": "2026-07-08",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 8192,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.15,
+        "cache_read": 0.15,
+        "cache_write": 0.15
+      },
+      "display_name": "GLiNER2-Guardrails-PII-Multi",
+      "type": "chat"
+    },
+    {
       "id": "fastino/gliner2-base-v1",
       "name": "GLiNER2 Base",
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
@@ -2003,6 +2051,54 @@
         "cache_write": 0.15
       },
       "display_name": "GLiNER2 Privacy Filter PII (Multi)",
+      "type": "chat"
+    },
+    {
+      "id": "fastino/gliner2.5-multi-v1",
+      "name": "GLiNER 2.5 Multi",
+      "description": "Multilingual boundary NER and span extraction; non-trainable encoder.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "release_date": "2026-08-24",
+      "last_updated": "2026-08-24",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 4096,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.15,
+        "cache_read": 0.15,
+        "cache_write": 0.15
+      },
+      "display_name": "GLiNER 2.5 Multi",
       "type": "chat"
     },
     {

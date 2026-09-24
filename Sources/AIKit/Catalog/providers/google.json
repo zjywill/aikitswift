@@ -146,8 +146,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 65536
+        "context": 128000,
+        "output": 64000
       },
       "cost": {
         "input": 1.25,
@@ -549,7 +549,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
+        "context": 65536,
         "output": 32768
       },
       "cost": {
@@ -635,8 +635,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 65536,
-        "output": 65536
+        "context": 131072,
+        "output": 32768
       },
       "cost": {
         "input": 0.5,
@@ -783,7 +783,7 @@
       "open_weights": false,
       "limit": {
         "context": 65536,
-        "output": 65536
+        "output": 4096
       },
       "cost": {
         "input": 0.25,

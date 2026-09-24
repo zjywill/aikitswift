@@ -3025,7 +3025,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
-        "input": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
