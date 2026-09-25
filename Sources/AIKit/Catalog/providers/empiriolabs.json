@@ -1249,9 +1249,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.7,
-        "output": 1.4,
-        "cache_read": 0.7
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.14
       },
       "display_name": "MiMo V2.6 Flash",
       "type": "chat"
@@ -1293,9 +1293,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 2.175,
-        "output": 4.35,
-        "cache_read": 2.175
+        "input": 0.435,
+        "output": 0.87,
+        "cache_read": 0.435
       },
       "display_name": "MiMo V2.6 Pro",
       "type": "chat"
@@ -1337,9 +1337,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 21.75,
-        "output": 43.5,
-        "cache_read": 21.75
+        "input": 4.35,
+        "output": 8.7,
+        "cache_read": 4.35
       },
       "display_name": "MiMo V2.6 Pro UltraSpeed",
       "type": "chat"
