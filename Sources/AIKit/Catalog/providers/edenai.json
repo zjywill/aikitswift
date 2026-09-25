@@ -1407,8 +1407,8 @@
     },
     {
       "id": "anthropic/claude-opus-latest",
-      "name": "Claude Opus Latest (Claude Opus 5)",
-      "description": "Strongest Claude Opus model for coding, agents, and professional work",
+      "name": "Claude Opus Latest (Claude Opus 5.5)",
+      "description": "Claude model for long-running agentic coding and knowledge work",
       "family": "claude-opus",
       "attachment": true,
       "reasoning": {
@@ -1430,9 +1430,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": false,
-      "knowledge": "2026-05",
-      "release_date": "2026-07-24",
-      "last_updated": "2026-07-24",
+      "knowledge": "2026-06",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text",
@@ -1449,12 +1449,12 @@
         "output": 128000
       },
       "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
       },
-      "display_name": "Claude Opus Latest (Claude Opus 5)",
+      "display_name": "Claude Opus Latest (Claude Opus 5.5)",
       "type": "chat"
     },
     {
@@ -4257,9 +4257,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.065,
+        "input": 0.06,
         "output": 0.18,
-        "cache_read": 0.0097
+        "cache_read": 0.009
       },
       "display_name": "DeepSeek V4 Flash 0731 (FlexAI)",
       "type": "chat"
@@ -4307,7 +4307,7 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 1.1,
+        "output": 1.2,
         "cache_read": 0.045
       },
       "display_name": "Muse Glimmer 30B (FlexAI)",
@@ -4399,9 +4399,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.037,
+        "input": 0.03,
         "output": 0.17,
-        "cache_read": 0.0055
+        "cache_read": 0.0045
       },
       "display_name": "GPT OSS 120B (FlexAI)",
       "type": "chat"
@@ -4445,11 +4445,87 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.018,
-        "output": 0.09,
-        "cache_read": 0.0027
+        "input": 0.02,
+        "output": 0.1,
+        "cache_read": 0.003
       },
       "display_name": "GPT OSS 20B (FlexAI)",
+      "type": "chat"
+    },
+    {
+      "id": "google/deep-research-max-preview-04-2026",
+      "name": "Deep Research Max Preview",
+      "description": "Maximum-comprehensiveness agentic researcher for multi-step investigation, synthesis, and cited reports",
+      "family": "gemini-pro",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "knowledge": "2025-01",
+      "release_date": "2026-04-21",
+      "last_updated": "2026-04-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 65536
+      },
+      "cost": {
+        "input": 2,
+        "output": 12
+      },
+      "display_name": "Deep Research Max Preview",
+      "type": "chat"
+    },
+    {
+      "id": "google/deep-research-preview-04-2026",
+      "name": "Gemini Deep Research Preview",
+      "description": "Agentic model for autonomous multi-step research, synthesis, and cited reports",
+      "family": "gemini-pro",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "knowledge": "2025-01",
+      "release_date": "2026-04-21",
+      "last_updated": "2026-04-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 65536
+      },
+      "cost": {
+        "input": 2,
+        "output": 12
+      },
+      "display_name": "Gemini Deep Research Preview",
       "type": "chat"
     },
     {
@@ -5598,8 +5674,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.34233,
-        "output": 0.45644
+        "input": 0.34101,
+        "output": 0.45468
       },
       "display_name": "Ministral 3 14B (Infomaniak)",
       "type": "chat"
@@ -5633,8 +5709,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.741715,
-        "output": 0.741715
+        "input": 0.738855,
+        "output": 0.738855
       },
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
       "type": "chat"
@@ -5678,8 +5754,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.171165,
-        "output": 0.741715
+        "input": 0.170505,
+        "output": 0.738855
       },
       "display_name": "GPT OSS 120B (IONOS)",
       "type": "chat"
@@ -10195,9 +10271,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.45644,
-        "output": 0.91288,
-        "cache_read": 0.091288
+        "input": 0.45468,
+        "output": 0.90936,
+        "cache_read": 0.090936
       },
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "type": "chat"
@@ -10277,8 +10353,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.171165,
-        "output": 0.68466
+        "input": 0.170505,
+        "output": 0.68202
       },
       "display_name": "GPT OSS 120B (Scaleway)",
       "type": "chat"
@@ -10312,8 +10388,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.02699,
-        "output": 1.02699
+        "input": 1.02303,
+        "output": 1.02303
       },
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
       "type": "chat"
@@ -12635,7 +12711,7 @@
     },
     {
       "id": "xai/grok-latest",
-      "name": "Grok Latest (Grok 4.6)",
+      "name": "Grok Latest (Grok 4.7)",
       "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
       "family": "grok",
       "attachment": true,
@@ -12657,9 +12733,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-02-01",
-      "release_date": "2026-08-12",
-      "last_updated": "2026-08-12",
+      "knowledge": "2026-05",
+      "release_date": "2026-09-21",
+      "last_updated": "2026-09-21",
       "modalities": {
         "input": [
           "text",
@@ -12681,9 +12757,9 @@
         "cache_read": 0.5,
         "tiers": [
           {
-            "input": 4,
-            "output": 12,
-            "cache_read": 1,
+            "input": 3.2,
+            "output": 9.6,
+            "cache_read": 0.8,
             "tier": {
               "type": "context",
               "size": 200000
@@ -12691,12 +12767,12 @@
           }
         ],
         "context_over_200k": {
-          "input": 4,
-          "output": 12,
-          "cache_read": 1
+          "input": 3.2,
+          "output": 9.6,
+          "cache_read": 0.8
         }
       },
-      "display_name": "Grok Latest (Grok 4.6)",
+      "display_name": "Grok Latest (Grok 4.7)",
       "type": "chat"
     },
     {

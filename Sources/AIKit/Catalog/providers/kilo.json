@@ -2558,7 +2558,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 393216
       },
       "cost": {
         "input": 0.3,
@@ -2610,6 +2610,53 @@
         "output": 0
       },
       "display_name": "Dots Studio: Dots3-Note Preview (free)",
+      "type": "chat"
+    },
+    {
+      "id": "fireworks/ember-1",
+      "name": "Fireworks: Ember-1",
+      "description": "Ember-1 is a specialized reasoning model from Fireworks Research, built on [Kimi K3](https://openrouter.ai/moonshotai/kimi-k3). It is designed to make every token go further: it produces shorter reasoning traces, using roughly 40%...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-24",
+      "last_updated": "2026-09-24",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
+      },
+      "display_name": "Fireworks: Ember-1",
       "type": "chat"
     },
     {
@@ -5834,6 +5881,43 @@
       "type": "chat"
     },
     {
+      "id": "mistralai/devstral-2512",
+      "name": "Devstral 2",
+      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring...",
+      "family": "devstral",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-12",
+      "release_date": "2025-12-09",
+      "last_updated": "2025-12-09",
+      "modalities": {
+        "input": [
+          "text",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 209715
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 2,
+        "cache_read": 0.04
+      },
+      "display_name": "Devstral 2",
+      "type": "chat"
+    },
+    {
       "id": "mistralai/ministral-14b-2512",
       "name": "Mistral: Ministral 3 14B 2512",
       "description": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
@@ -6014,6 +6098,44 @@
       "type": "chat"
     },
     {
+      "id": "mistralai/mistral-large-2512",
+      "name": "Mistral Large 3",
+      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license.",
+      "family": "mistral-large",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2024-11",
+      "release_date": "2025-12-02",
+      "last_updated": "2025-12-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 209715
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.05
+      },
+      "display_name": "Mistral Large 3",
+      "type": "chat"
+    },
+    {
       "id": "mistralai/mistral-medium-3",
       "name": "Mistral: Mistral Medium 3",
       "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
@@ -6162,8 +6284,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.019,
-        "output": 0.03
+        "input": 0.15,
+        "output": 0.15,
+        "cache_read": 0.015
       },
       "display_name": "Mistral Nemo",
       "type": "chat"
@@ -6349,8 +6472,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.09375,
-        "output": 0.25
+        "input": 0.1,
+        "output": 0.3,
+        "cache_read": 0.01
       },
       "display_name": "Mistral: Mistral Small 3.2 24B",
       "type": "chat"
@@ -6673,7 +6797,7 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.7062,
+        "input": 0.6562,
         "output": 3.3,
         "cache_read": 0.18
       },
@@ -6721,8 +6845,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 3,
-        "output": 15,
+        "input": 0.8845,
+        "output": 10.5346,
         "cache_read": 0.3
       },
       "display_name": "Kimi K3",
@@ -6797,53 +6921,6 @@
       "type": "chat"
     },
     {
-      "id": "nex-agi/nex-n2.5-mini",
-      "name": "Nex AGI: Nex-N2.5-Mini",
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "family": "agi",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-09-08",
-      "last_updated": "2026-09-08",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 235929
-      },
-      "cost": {
-        "input": 0.025,
-        "output": 0.1,
-        "cache_read": 0.0025
-      },
-      "display_name": "Nex AGI: Nex-N2.5-Mini",
-      "type": "chat"
-    },
-    {
       "id": "nex-agi/nex-n2.5-mini:free",
       "name": "Nex AGI: Nex-N2.5-Mini (free)",
       "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
@@ -6887,53 +6964,6 @@
         "output": 0
       },
       "display_name": "Nex AGI: Nex-N2.5-Mini (free)",
-      "type": "chat"
-    },
-    {
-      "id": "nex-agi/nex-n2.5-pro",
-      "name": "Nex AGI: Nex-N2.5-Pro",
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "family": "agi",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-09-08",
-      "last_updated": "2026-09-08",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 235929
-      },
-      "cost": {
-        "input": 0.075,
-        "output": 0.25,
-        "cache_read": 0.015
-      },
-      "display_name": "Nex AGI: Nex-N2.5-Pro",
       "type": "chat"
     },
     {
@@ -11510,8 +11540,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 128000,
-        "output": 32000
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.13,
@@ -12096,8 +12126,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 262144,
+        "output": 16384
       },
       "cost": {
         "input": 0.13,
@@ -13256,7 +13286,7 @@
     },
     {
       "id": "qwen/qwen3.8-max-prime",
-      "name": "Qwen: Qwen3.8 Max Prime",
+      "name": "Qwen 3.8 Max Prime",
       "description": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video...",
       "family": "qwen3.8-max",
       "attachment": true,
@@ -13301,7 +13331,7 @@
         "output": 12,
         "cache_read": 0.5
       },
-      "display_name": "Qwen: Qwen3.8 Max Prime",
+      "display_name": "Qwen 3.8 Max Prime",
       "type": "chat"
     },
     {
@@ -16230,8 +16260,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 1048575,
+        "output": 943717
       },
       "cost": {
         "input": 1.4,
@@ -16279,7 +16309,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
         "input": 0.15,
@@ -16674,9 +16704,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.099,
-        "output": 0.6,
-        "cache_read": 0.06
+        "input": 0.04,
+        "output": 1,
+        "cache_read": 0.01
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16718,12 +16748,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
-        "input": 0.3865,
-        "output": 2.9,
-        "cache_read": 0.25
+        "input": 0.3894,
+        "output": 1.1682,
+        "cache_read": 0.01239
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16768,9 +16798,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.038,
-        "output": 0.55,
-        "cache_read": 0.0228
+        "input": 0.03,
+        "output": 0.32,
+        "cache_read": 0.016
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16921,9 +16951,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.91,
-        "output": 6.9875,
-        "cache_read": 0.195
+        "input": 0.8845,
+        "output": 10.5346,
+        "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17272,12 +17302,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 128000
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.25,
-        "cache_read": 0.015
+        "input": 0.045,
+        "output": 0.14,
+        "cache_read": 0.01
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17321,9 +17351,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.5625,
-        "output": 2.5,
-        "cache_read": 0.125
+        "input": 0.5614,
+        "output": 1.7644,
+        "cache_read": 0.10426
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

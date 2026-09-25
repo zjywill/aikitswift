@@ -63,12 +63,12 @@ the next request when they are.
 ## The idea: protocols, not providers
 
 The mistake to avoid is writing one implementation per vendor. The bundled catalog
-holds **200 providers and 6473 models — but only 5 wire protocols**, because most
+holds **201 providers and 6707 models — but only 5 wire protocols**, because most
 providers speak someone else's:
 
 | Protocol | Providers |
 |---|---|
-| OpenAI Chat Completions | 188 |
+| OpenAI Chat Completions | 189 |
 | Anthropic Messages | 9 |
 | OpenAI Responses | 1 |
 | Google Generative AI | 2 |
@@ -247,7 +247,7 @@ guard ProviderCatalog.isLoaded else { fatalError(ProviderCatalog.diagnostics) }
 ## Status
 
 Early, and the API will change. Streaming responses and request encoding work across
-all five protocols; the catalog covers 200 providers.
+all five protocols; the catalog covers 201 providers.
 
 | | |
 |---|---|
@@ -257,7 +257,7 @@ all five protocols; the catalog covers 200 providers.
 | OpenAI Chat Completions | ✅ stream + request |
 | OpenAI Responses | ✅ stream + request |
 | Google Generative AI | ✅ stream + request |
-| Provider catalog | ✅ 200 providers, 6473 models |
+| Provider catalog | ✅ 201 providers, 6707 models |
 | Thinking on / off / level | ✅ all protocols |
 | Live model listing (`GET /models`) | ✅ all protocols |
 | Context attribution | ✅ |
