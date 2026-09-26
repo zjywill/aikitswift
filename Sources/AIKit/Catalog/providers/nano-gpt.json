@@ -2572,6 +2572,51 @@
       "type": "chat"
     },
     {
+      "id": "TEE/qwen3.8-27b-uncensored",
+      "name": "Qwen3.8 27B Uncensored TEE",
+      "description": "HauhauCS's Aggressive finetune of Qwen3.8 27B reduces refusal behavior for creative writing, coding, and image analysis. It supports reasoning, tool calling, and structured output with a 262K-token context. Runs inside a TEE (Trusted Execution Environment), with provider attestation support.",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.5
+      },
+      "display_name": "Qwen3.8 27B Uncensored TEE",
+      "type": "chat"
+    },
+    {
       "id": "THUDM/GLM-4-32B-0414",
       "name": "GLM 4 32B 0414",
       "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
@@ -17899,6 +17944,55 @@
       "type": "chat"
     },
     {
+      "id": "perceptron/perceptron-mk1.5",
+      "name": "Perceptron Mk1.5",
+      "description": "Perceptron Mk1.5 is a multimodal reasoning model for visual analysis and physical agents. It accepts text, images, video, and audio, supports tool calling and structured output, and can return spatial annotations such as points, boxes, polygons, and tracks.",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 36864,
+        "input": 36864,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 1.5
+      },
+      "display_name": "Perceptron Mk1.5",
+      "type": "chat"
+    },
+    {
       "id": "phi-4-mini-instruct",
       "name": "Phi 4 Mini",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
@@ -22857,6 +22951,51 @@
         "cache_write": 0
       },
       "display_name": "MiMo V2.6 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash-uncensored",
+      "name": "MiMo V2.6 Flash Uncensored",
+      "description": "A text-only, lower-refusal MiMo V2.6 Flash finetune served by Heabsy with a 1M-token context window, separate reasoning output, and tool calling.",
+      "family": "mimo",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.275
+      },
+      "display_name": "MiMo V2.6 Flash Uncensored",
       "type": "chat"
     },
     {

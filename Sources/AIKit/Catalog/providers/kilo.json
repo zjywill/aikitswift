@@ -2558,7 +2558,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 131072
       },
       "cost": {
         "input": 0.3,
@@ -4416,7 +4416,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
+        "context": 262144,
         "output": 32768
       },
       "cost": {
@@ -6845,8 +6845,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.8845,
-        "output": 10.5346,
+        "input": 3,
+        "output": 15,
         "cache_read": 0.3
       },
       "display_name": "Kimi K3",
@@ -6918,98 +6918,6 @@
         "output": 1.9
       },
       "display_name": "Morph: Morph V3 Large",
-      "type": "chat"
-    },
-    {
-      "id": "nex-agi/nex-n2.5-mini:free",
-      "name": "Nex AGI: Nex-N2.5-Mini (free)",
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "family": "agi",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-09-08",
-      "last_updated": "2026-09-08",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 235929
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Nex AGI: Nex-N2.5-Mini (free)",
-      "type": "chat"
-    },
-    {
-      "id": "nex-agi/nex-n2.5-pro:free",
-      "name": "Nex AGI: Nex-N2.5-Pro (free)",
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "family": "agi",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-09-08",
-      "last_updated": "2026-09-08",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 235929
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Nex AGI: Nex-N2.5-Pro (free)",
       "type": "chat"
     },
     {
@@ -10671,6 +10579,55 @@
       "type": "chat"
     },
     {
+      "id": "perceptron/perceptron-mk1.5",
+      "name": "Perceptron: Perceptron Mk1.5",
+      "description": "Perceptron Mk1.5 is Perceptron's embodied reasoning model for physical agents. It accepts text, image, video, and audio input, and answers with text plus optional structured annotations: points, boxes, polygons, tracks,...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 36864,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 1.5
+      },
+      "display_name": "Perceptron: Perceptron Mk1.5",
+      "type": "chat"
+    },
+    {
       "id": "perplexity/sonar",
       "name": "Perplexity: Sonar",
       "description": "Sonar search model for current answers, retrieval, and citation-backed chat",
@@ -11238,7 +11195,7 @@
     },
     {
       "id": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen: Qwen Plus 0728",
+      "name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "family": "qwen",
       "attachment": false,
@@ -11267,7 +11224,7 @@
         "input": 0.26,
         "output": 0.78
       },
-      "display_name": "Qwen: Qwen Plus 0728",
+      "display_name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -11431,7 +11388,7 @@
     },
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
-      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507 (retires Oct 9)",
       "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
       "family": "qwen",
       "attachment": false,
@@ -11469,7 +11426,7 @@
         "input": 0.23,
         "output": 2.3
       },
-      "display_name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "display_name": "Qwen: Qwen3 235B A22B Thinking 2507 (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -11552,7 +11509,7 @@
     },
     {
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
-      "name": "Qwen: Qwen3 30B A3B Thinking 2507",
+      "name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
       "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
       "family": "qwen",
       "attachment": false,
@@ -11590,7 +11547,7 @@
         "input": 0.2,
         "output": 2.4
       },
-      "display_name": "Qwen: Qwen3 30B A3B Thinking 2507",
+      "display_name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -11640,7 +11597,7 @@
     },
     {
       "id": "qwen/qwen3-8b",
-      "name": "Qwen: Qwen3 8B",
+      "name": "Qwen: Qwen3 8B (retires Oct 9)",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "family": "qwen",
       "attachment": false,
@@ -11679,7 +11636,7 @@
         "input": 0.117,
         "output": 0.455
       },
-      "display_name": "Qwen: Qwen3 8B",
+      "display_name": "Qwen: Qwen3 8B (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -11899,7 +11856,7 @@
     },
     {
       "id": "qwen/qwen3-max-thinking",
-      "name": "Qwen: Qwen3 Max Thinking",
+      "name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
       "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
       "family": "qwen",
       "attachment": false,
@@ -11938,7 +11895,7 @@
         "input": 0.78,
         "output": 3.9
       },
-      "display_name": "Qwen: Qwen3 Max Thinking",
+      "display_name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -12138,7 +12095,7 @@
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
+      "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Oct 9)",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
       "attachment": true,
@@ -12177,12 +12134,12 @@
         "input": 0.2,
         "output": 2.4
       },
-      "display_name": "Qwen: Qwen3 VL 30B A3B Thinking",
+      "display_name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Oct 9)",
       "type": "chat"
     },
     {
       "id": "qwen/qwen3-vl-32b-instruct",
-      "name": "Qwen: Qwen3 VL 32B Instruct",
+      "name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
       "attachment": true,
@@ -12212,12 +12169,12 @@
         "input": 0.104,
         "output": 0.416
       },
-      "display_name": "Qwen: Qwen3 VL 32B Instruct",
+      "display_name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
       "type": "chat"
     },
     {
       "id": "qwen/qwen3-vl-8b-instruct",
-      "name": "Qwen: Qwen3 VL 8B Instruct",
+      "name": "Qwen: Qwen3 VL 8B Instruct (retires Oct 9)",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
       "attachment": true,
@@ -12247,12 +12204,12 @@
         "input": 0.117,
         "output": 0.455
       },
-      "display_name": "Qwen: Qwen3 VL 8B Instruct",
+      "display_name": "Qwen: Qwen3 VL 8B Instruct (retires Oct 9)",
       "type": "chat"
     },
     {
       "id": "qwen/qwen3-vl-8b-thinking",
-      "name": "Qwen: Qwen3 VL 8B Thinking",
+      "name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
       "attachment": true,
@@ -12291,7 +12248,7 @@
         "input": 0.18,
         "output": 2.1
       },
-      "display_name": "Qwen: Qwen3 VL 8B Thinking",
+      "display_name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
       "type": "chat"
     },
     {
@@ -12700,7 +12657,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262140
+        "output": 81920
       },
       "cost": {
         "input": 0.45,
@@ -14084,7 +14041,7 @@
     },
     {
       "id": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha",
+      "name": "Space Bunny Alpha (new)",
       "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
       "family": "alpha",
       "attachment": true,
@@ -14128,7 +14085,7 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Space Bunny Alpha",
+      "display_name": "Space Bunny Alpha (new)",
       "type": "chat"
     },
     {
@@ -15622,7 +15579,7 @@
       "cost": {
         "input": 0.435,
         "output": 0.87,
-        "cache_read": 0.0036
+        "cache_read": 0.004
       },
       "display_name": "MiMo-V2.6-Pro",
       "type": "chat"
@@ -15947,9 +15904,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.4,
-        "output": 1.75,
-        "cache_read": 0.08
+        "input": 0.6,
+        "output": 2.2,
+        "cache_read": 0.11
       },
       "display_name": "GLM-4.7",
       "type": "chat"
@@ -16123,8 +16080,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 200000,
-        "output": 128000
+        "context": 202752,
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -16178,51 +16135,6 @@
         "cache_read": 0.26
       },
       "display_name": "GLM-5.2",
-      "type": "chat"
-    },
-    {
-      "id": "z-ai/glm-5.2:free",
-      "name": "Z.ai: GLM 5.2 (free)",
-      "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-      "family": "glm",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-06-13",
-      "last_updated": "2026-06-13",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 32768,
-        "output": 29491
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Z.ai: GLM 5.2 (free)",
       "type": "chat"
     },
     {
@@ -16309,7 +16221,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 128000
       },
       "cost": {
         "input": 0.15,
@@ -16700,13 +16612,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 1040000,
+        "output": 384000
       },
       "cost": {
-        "input": 0.04,
-        "output": 1,
-        "cache_read": 0.01
+        "input": 0.035,
+        "output": 0.29,
+        "cache_read": 0.001
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16748,12 +16660,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
-        "input": 0.3894,
-        "output": 1.1682,
-        "cache_read": 0.01239
+        "input": 0.25,
+        "output": 3.5,
+        "cache_read": 0.249
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16798,7 +16710,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.03,
+        "input": 0.022,
         "output": 0.32,
         "cache_read": 0.016
       },
@@ -16951,8 +16863,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.8845,
-        "output": 10.5346,
+        "input": 1.0301,
+        "output": 9.043,
         "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
@@ -17351,9 +17263,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.5614,
-        "output": 1.7644,
-        "cache_read": 0.10426
+        "input": 0.5586,
+        "output": 1.7556,
+        "cache_read": 0.10374
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
