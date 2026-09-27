@@ -477,44 +477,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-3-haiku",
-      "name": "Anthropic: Claude 3 Haiku",
-      "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",
-      "family": "claude",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2024-03-13",
-      "last_updated": "2024-03-13",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 4096
-      },
-      "cost": {
-        "input": 0.25,
-        "output": 1.25,
-        "cache_read": 0.03,
-        "cache_write": 0.3
-      },
-      "display_name": "Anthropic: Claude 3 Haiku",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-fable-5",
       "name": "Claude Fable 5",
       "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
@@ -2557,8 +2519,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 1040000,
+        "output": 384000
       },
       "cost": {
         "input": 0.3,
@@ -3916,8 +3878,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.09,
-        "output": 0.34,
+        "input": 0.08,
+        "output": 0.3,
         "cache_read": 0.05
       },
       "display_name": "Gemma 4 31B IT",
@@ -12288,7 +12250,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 235929
       },
       "cost": {
         "input": 0.26,
@@ -14414,9 +14376,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.53,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "display_name": "Hy3",
       "type": "chat"
@@ -16221,7 +16183,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 128000
+        "output": 131072
       },
       "cost": {
         "input": 0.15,
@@ -16660,12 +16622,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
-        "input": 0.25,
-        "output": 3.5,
-        "cache_read": 0.249
+        "input": 0.24816,
+        "output": 0.74448,
+        "cache_read": 0.007896
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16710,7 +16672,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.022,
+        "input": 0.021,
         "output": 0.32,
         "cache_read": 0.016
       },
@@ -16863,8 +16825,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 1.0301,
-        "output": 9.043,
+        "input": 1,
+        "output": 9,
         "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
@@ -17214,12 +17176,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 128000
+        "output": 131072
       },
       "cost": {
-        "input": 0.045,
-        "output": 0.14,
-        "cache_read": 0.01
+        "input": 0.04,
+        "output": 0.5,
+        "cache_read": 0.015
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17263,9 +17225,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.5586,
-        "output": 1.7556,
-        "cache_read": 0.10374
+        "input": 0.3794,
+        "output": 1.1924,
+        "cache_read": 0.07046
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
