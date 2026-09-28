@@ -1888,12 +1888,12 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 163840,
-        "output": 16384
+        "context": 128000,
+        "output": 16000
       },
       "cost": {
-        "input": 0.32,
-        "output": 0.89
+        "input": 0.2574,
+        "output": 1.0287
       },
       "display_name": "DeepSeek Chat",
       "type": "chat"
@@ -2280,8 +2280,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1024000,
-        "output": 384000
+        "context": 1048576,
+        "output": 131072
       },
       "cost": {
         "input": 0.14,
@@ -2377,7 +2377,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 262144
       },
       "cost": {
         "input": 0.44,
@@ -2470,8 +2470,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1024000,
-        "output": 384000
+        "context": 1048576,
+        "output": 943718
       },
       "cost": {
         "input": 1.32,
@@ -2519,8 +2519,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1040000,
-        "output": 384000
+        "context": 1048576,
+        "output": 943718
       },
       "cost": {
         "input": 0.3,
@@ -5748,8 +5748,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 204800,
-        "output": 131072
+        "context": 196608,
+        "output": 176947
       },
       "cost": {
         "input": 0.3,
@@ -7395,7 +7395,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.065,
+        "input": 0.039,
         "output": 0.18
       },
       "display_name": "Nemotron 3.5 Lightning 30B A3B",
@@ -16183,7 +16183,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 128000
       },
       "cost": {
         "input": 0.15,
@@ -16574,13 +16574,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1040000,
-        "output": 384000
+        "context": 1048576,
+        "output": 943718
       },
       "cost": {
-        "input": 0.035,
-        "output": 0.29,
-        "cache_read": 0.001
+        "input": 0.03483,
+        "output": 0.6,
+        "cache_read": 0.03135
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16625,9 +16625,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.24816,
-        "output": 0.74448,
-        "cache_read": 0.007896
+        "input": 0.24288,
+        "output": 0.72864,
+        "cache_read": 0.007728
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16825,7 +16825,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 1,
+        "input": 0.995,
         "output": 9,
         "cache_read": 0.3
       },
@@ -17176,12 +17176,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 128000
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.5,
-        "cache_read": 0.015
+        "input": 0.045,
+        "output": 0.14,
+        "cache_read": 0.01
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17225,9 +17225,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.3794,
-        "output": 1.1924,
-        "cache_read": 0.07046
+        "input": 0.3556,
+        "output": 1.1176,
+        "cache_read": 0.06604
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
