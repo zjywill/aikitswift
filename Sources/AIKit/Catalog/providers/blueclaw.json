@@ -33,6 +33,7 @@
         "output": 65536
       },
       "status": "beta",
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B FP8",
       "type": "chat"
     },
@@ -66,6 +67,7 @@
         "output": 65536
       },
       "status": "beta",
+      "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B",
       "type": "chat"
     }

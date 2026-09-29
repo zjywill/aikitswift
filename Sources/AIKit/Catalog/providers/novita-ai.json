@@ -839,6 +839,7 @@
         "output": 0.28,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -893,6 +894,7 @@
         "output": 3.2,
         "cache_read": 0.135
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
     },
@@ -1716,6 +1718,7 @@
         "cache_read": 0.06,
         "cache_write": 0.375
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7-highspeed",
       "display_name": "MiniMax-M2.7-highspeed",
       "type": "chat"
     },
@@ -1986,6 +1989,7 @@
         "output": 3.4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "type": "chat"
     },
@@ -2030,6 +2034,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
     },
@@ -2081,6 +2086,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -3510,6 +3516,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2-pro",
       "display_name": "MiMo-V2-Pro",
       "type": "chat"
     },
@@ -3567,6 +3574,7 @@
           "cache_read": 0.0043
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo-V2.5-Pro",
       "type": "chat"
     },
@@ -4039,6 +4047,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"
     }

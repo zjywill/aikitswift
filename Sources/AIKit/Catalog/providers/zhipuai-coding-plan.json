@@ -92,6 +92,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
       "type": "chat"
     },
@@ -145,6 +146,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
     },
@@ -195,6 +197,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 Highspeed",
       "type": "chat"
     }

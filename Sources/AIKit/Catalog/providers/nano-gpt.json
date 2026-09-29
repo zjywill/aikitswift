@@ -1571,6 +1571,7 @@
         "output": 1,
         "cache_read": 0.25
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 TEE",
       "type": "chat"
     },
@@ -1622,6 +1623,7 @@
         "output": 1.45,
         "cache_read": 0.13
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash TEE",
       "type": "chat"
     },
@@ -1699,6 +1701,7 @@
         "output": 0.46,
         "cache_read": 0.075
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT TEE",
       "type": "chat"
     },
@@ -1819,6 +1822,7 @@
         "output": 5.25,
         "cache_read": 0.3
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1 TEE",
       "type": "chat"
     },
@@ -1865,6 +1869,7 @@
         "output": 5.25,
         "cache_read": 0.3
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1 Thinking TEE",
       "type": "chat"
     },
@@ -1903,6 +1908,7 @@
         "output": 4.4,
         "cache_read": 0.7
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 TEE",
       "type": "chat"
     },
@@ -1952,6 +1958,7 @@
         "output": 4.4,
         "cache_read": 0.7
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Thinking TEE",
       "type": "chat"
     },
@@ -1999,6 +2006,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3 TEE",
       "type": "chat"
     },
@@ -2047,6 +2055,7 @@
         "output": 0.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM 5.3 Flash TEE",
       "type": "chat"
     },
@@ -2083,6 +2092,7 @@
         "output": 2,
         "cache_read": 2
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT-OSS 120B TEE",
       "type": "chat"
     },
@@ -2121,6 +2131,7 @@
         "output": 5.25,
         "cache_read": 0.375
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 TEE",
       "type": "chat"
     },
@@ -2161,6 +2172,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code TEE",
       "type": "chat"
     },
@@ -2209,6 +2221,7 @@
         "output": 15,
         "cache_read": 1.5
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 TEE",
       "type": "chat"
     },
@@ -2295,6 +2308,7 @@
         "output": 1.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B TEE",
       "type": "chat"
     },
@@ -2343,6 +2357,7 @@
         "output": 0.2,
         "cache_read": 0.04
       },
+      "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nvidia Nemotron 3.5 Lightning TEE",
       "type": "chat"
     },
@@ -2417,6 +2432,7 @@
         "output": 2.4,
         "cache_read": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3.5-27b",
       "display_name": "Qwen3.5 27B TEE",
       "type": "chat"
     },
@@ -2453,6 +2469,7 @@
         "output": 3.5,
         "cache_read": 0.275
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B A17B TEE",
       "type": "chat"
     },
@@ -2492,6 +2509,7 @@
         "output": 2.7,
         "cache_read": 0.16
       },
+      "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B TEE",
       "type": "chat"
     },
@@ -2528,6 +2546,7 @@
         "output": 1.27,
         "cache_read": 0.1
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B TEE",
       "type": "chat"
     },
@@ -2568,6 +2587,7 @@
         "output": 3,
         "cache_read": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B TEE",
       "type": "chat"
     },
@@ -3790,6 +3810,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
       "type": "chat"
     },
@@ -3843,6 +3864,7 @@
         "cache_read": 0.25,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1",
       "type": "chat"
     },
@@ -3933,6 +3955,7 @@
         "output": 5,
         "cache_read": 0.1
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5",
       "type": "chat"
     },
@@ -3974,6 +3997,7 @@
         "output": 5,
         "cache_read": 0.1
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 Thinking",
       "type": "chat"
     },
@@ -4098,6 +4122,7 @@
         "output": 75,
         "cache_read": 1.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude 4.1 Opus",
       "type": "chat"
     },
@@ -4139,6 +4164,7 @@
         "output": 75,
         "cache_read": 1.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude 4.1 Opus Thinking",
       "type": "chat"
     },
@@ -4180,6 +4206,7 @@
         "output": 75,
         "cache_read": 1.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude 4.1 Opus Thinking (1K)",
       "type": "chat"
     },
@@ -4221,6 +4248,7 @@
         "output": 75,
         "cache_read": 1.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude 4.1 Opus Thinking (32K)",
       "type": "chat"
     },
@@ -4262,6 +4290,7 @@
         "output": 75,
         "cache_read": 1.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude 4.1 Opus Thinking (8K)",
       "type": "chat"
     },
@@ -4314,6 +4343,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Claude 4.5 Opus",
       "type": "chat"
     },
@@ -4366,6 +4396,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Claude 4.5 Opus Thinking",
       "type": "chat"
     },
@@ -4418,6 +4449,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude 4.6 Opus",
       "type": "chat"
     },
@@ -4470,6 +4502,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude 4.6 Opus Thinking",
       "type": "chat"
     },
@@ -4511,6 +4544,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude 4.6 Opus Thinking Low",
       "type": "chat"
     },
@@ -4552,6 +4586,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude 4.6 Opus Thinking Max",
       "type": "chat"
     },
@@ -4593,6 +4628,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude 4.6 Opus Thinking Medium",
       "type": "chat"
     },
@@ -4645,6 +4681,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude 4.7 Opus",
       "type": "chat"
     },
@@ -4697,6 +4734,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude 4.7 Opus Thinking",
       "type": "chat"
     },
@@ -4749,6 +4787,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8",
       "type": "chat"
     },
@@ -4801,6 +4840,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8 Thinking",
       "type": "chat"
     },
@@ -5010,6 +5050,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
       "type": "chat"
     },
@@ -5063,6 +5104,7 @@
         "cache_read": 0.2,
         "cache_write": 5
       },
+      "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",
       "type": "chat"
     },
@@ -5203,6 +5245,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5",
       "type": "chat"
     },
@@ -5255,6 +5298,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 Thinking",
       "type": "chat"
     },
@@ -5307,6 +5351,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6",
       "type": "chat"
     },
@@ -5359,6 +5404,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6 Thinking",
       "type": "chat"
     },
@@ -5594,7 +5640,114 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Claude Sonnet 5.5",
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "family": "claude-sonnet",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "canonical_model_id": "anthropic/claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5",
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-sonnet-5.5:thinking",
+      "name": "Claude Sonnet 5.5 Thinking",
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "family": "claude-sonnet",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "canonical_model_id": "anthropic/claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5 Thinking",
       "type": "chat"
     },
     {
@@ -5647,6 +5800,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 Thinking",
       "type": "chat"
     },
@@ -5736,6 +5890,7 @@
         "output": 0.9,
         "cache_read": 0.125
       },
+      "canonical_model_id": "arcee-ai/trinity-large-thinking",
       "display_name": "Trinity Large Thinking",
       "type": "chat"
     },
@@ -6034,6 +6189,7 @@
         "output": 3,
         "cache_read": 0.25
       },
+      "canonical_model_id": "bytedance-seed/seed-2.0-code",
       "display_name": "ByteDance Seed 2.0 Code",
       "type": "chat"
     },
@@ -6072,6 +6228,7 @@
         "output": 2,
         "cache_read": 0.125
       },
+      "canonical_model_id": "bytedance-seed/seed-2.0-lite",
       "display_name": "ByteDance Seed 2.0 Lite",
       "type": "chat"
     },
@@ -6396,6 +6553,7 @@
         "output": 14.246,
         "cache_read": 1.428
       },
+      "canonical_model_id": "cohere/command-r-plus-08-2024",
       "display_name": "Cohere: Command R+",
       "type": "chat"
     },
@@ -6433,6 +6591,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "cohere/command-a-reasoning-08-2025",
       "display_name": "Cohere Command A (08/2025)",
       "type": "chat"
     },
@@ -6756,6 +6915,7 @@
         "output": 0.425,
         "cache_read": 0.05
       },
+      "canonical_model_id": "deepseek/deepseek-chat",
       "display_name": "DeepSeek V3/Deepseek Chat",
       "type": "chat"
     },
@@ -6831,6 +6991,7 @@
         "output": 1.7,
         "cache_read": 0.2
       },
+      "canonical_model_id": "deepseek/deepseek-r1",
       "display_name": "DeepSeek R1",
       "type": "chat"
     },
@@ -6903,6 +7064,7 @@
         "output": 1.7,
         "cache_read": 0.2
       },
+      "canonical_model_id": "deepseek/deepseek-reasoner",
       "display_name": "DeepSeek Reasoner",
       "type": "chat"
     },
@@ -6974,6 +7136,7 @@
         "output": 0.77,
         "cache_read": 0.135
       },
+      "canonical_model_id": "deepseek/deepseek-v3-0324",
       "display_name": "DeepSeek Chat 0324",
       "type": "chat"
     },
@@ -7059,6 +7222,7 @@
         "output": 0.42,
         "cache_read": 0.14
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
       "type": "chat"
     },
@@ -7099,6 +7263,7 @@
         "output": 0.42,
         "cache_read": 0.14
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 Thinking",
       "type": "chat"
     },
@@ -7147,6 +7312,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -7196,6 +7362,7 @@
         "output": 0.16,
         "cache_read": 0.013
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
     },
@@ -7245,6 +7412,7 @@
         "output": 0.16,
         "cache_read": 0.013
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Thinking)",
       "type": "chat"
     },
@@ -7341,6 +7509,7 @@
         "output": 0.66,
         "cache_read": 0.007
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
     },
@@ -7389,6 +7558,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Thinking)",
       "type": "chat"
     },
@@ -7437,6 +7607,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
     },
@@ -7485,6 +7656,7 @@
         "output": 2.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
     },
@@ -7533,6 +7705,7 @@
         "output": 2.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813 Thinking",
       "type": "chat"
     },
@@ -7581,6 +7754,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Thinking)",
       "type": "chat"
     },
@@ -7631,6 +7805,7 @@
         "output": 0.52,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -7681,6 +7856,7 @@
         "output": 0.52,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash Thinking",
       "type": "chat"
     },
@@ -7890,6 +8066,7 @@
         "output": 3.893,
         "cache_read": 0.391
       },
+      "canonical_model_id": "bytedance-seed/seed-2.0-code",
       "display_name": "Doubao Seed 2.0 Code Preview",
       "type": "chat"
     },
@@ -8368,6 +8545,7 @@
         "output": 2.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "google/gemini-2.5-flash",
       "display_name": "Gemini 2.5 Flash",
       "type": "chat"
     },
@@ -8419,6 +8597,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite",
       "display_name": "Gemini 2.5 Flash Lite",
       "type": "chat"
     },
@@ -8933,6 +9112,7 @@
         "cache_read": 0.125,
         "cache_write": 0.375
       },
+      "canonical_model_id": "google/gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro",
       "type": "chat"
     },
@@ -9163,6 +9343,7 @@
         "output": 12,
         "cache_read": 0.2
       },
+      "canonical_model_id": "google/gemini-3-pro-image-preview",
       "display_name": "Gemini 3 Pro Image",
       "type": "chat"
     },
@@ -9239,6 +9420,7 @@
         "output": 0.25,
         "cache_read": 0.025
       },
+      "canonical_model_id": "google/gemma-4-12b-it",
       "display_name": "Gemma 4 12B Instruct",
       "type": "chat"
     },
@@ -10153,6 +10335,7 @@
         "output": 3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash (Preview)",
       "type": "chat"
     },
@@ -10205,6 +10388,7 @@
         "output": 3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash Thinking",
       "type": "chat"
     },
@@ -10259,6 +10443,7 @@
         "cache_read": 0.025,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite",
       "display_name": "Gemini 3.1 Flash Lite",
       "type": "chat"
     },
@@ -10311,6 +10496,7 @@
         "cache_read": 0.2,
         "cache_write": 0.375
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro (Preview)",
       "type": "chat"
     },
@@ -10363,6 +10549,7 @@
         "cache_read": 0.2,
         "cache_write": 0.375
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview-customtools",
       "display_name": "Gemini 3.1 Pro (Preview Custom Tools)",
       "type": "chat"
     },
@@ -10497,6 +10684,7 @@
         "cache_read": 0.15,
         "cache_write": 0.083333
       },
+      "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini 3.5 Flash",
       "type": "chat"
     },
@@ -10551,6 +10739,7 @@
         "cache_read": 0.03,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.5-flash-lite",
       "display_name": "Gemini 3.5 Flash Lite",
       "type": "chat"
     },
@@ -10604,6 +10793,7 @@
         "cache_read": 0.15,
         "cache_write": 0.083333
       },
+      "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini 3.5 Flash Thinking",
       "type": "chat"
     },
@@ -10658,6 +10848,7 @@
         "cache_read": 0.075,
         "cache_write": 0.041667
       },
+      "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash",
       "type": "chat"
     },
@@ -10712,6 +10903,7 @@
         "cache_read": 0.075,
         "cache_write": 0.041667
       },
+      "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash",
       "type": "chat"
     },
@@ -10765,6 +10957,7 @@
         "cache_read": 0.075,
         "cache_write": 0.041667
       },
+      "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
       "type": "chat"
     },
@@ -10819,6 +11012,7 @@
         "cache_read": 0.075,
         "cache_write": 0.041667
       },
+      "canonical_model_id": "google/gemini-flash-latest",
       "display_name": "Gemini Flash Latest",
       "type": "chat"
     },
@@ -10873,6 +11067,7 @@
         "cache_read": 0.03,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-flash-lite-latest",
       "display_name": "Gemini Flash Lite Latest",
       "type": "chat"
     },
@@ -10967,6 +11162,7 @@
         "output": 0.38,
         "cache_read": 0.06
       },
+      "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B",
       "type": "chat"
     },
@@ -11045,6 +11241,7 @@
         "output": 0.4,
         "cache_read": 0.065
       },
+      "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B Thinking",
       "type": "chat"
     },
@@ -11089,6 +11286,7 @@
         "output": 0.45,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B",
       "type": "chat"
     },
@@ -11129,6 +11327,7 @@
         "output": 0.35,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B Thinking",
       "type": "chat"
     },
@@ -11165,6 +11364,52 @@
         "cache_read": 0.05
       },
       "display_name": "Gemma 4 31B Split-Untied",
+      "type": "chat"
+    },
+    {
+      "id": "heabsy/cyberheabsy",
+      "name": "CyberHeabsy",
+      "description": "A low-refusal text model for authorized security research, roleplay, and creative writing. It preserves tool calling after refusal removal, supports optional reasoning, and has a 1M-token context window.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-27",
+      "last_updated": "2026-09-27",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 4.5,
+        "cache_read": 0.275
+      },
+      "display_name": "CyberHeabsy",
       "type": "chat"
     },
     {
@@ -12044,6 +12289,7 @@
         "output": 3,
         "cache_read": 0.015
       },
+      "canonical_model_id": "meituan/longcat-2.0",
       "display_name": "LongCat 2.0",
       "type": "chat"
     },
@@ -12082,6 +12328,7 @@
         "output": 3,
         "cache_read": 0.015
       },
+      "canonical_model_id": "meituan/longcat-2.0",
       "display_name": "LongCat 2.0 Thinking",
       "type": "chat"
     },
@@ -12121,6 +12368,7 @@
         "output": 2.95,
         "cache_read": 0.015
       },
+      "canonical_model_id": "meituan/longcat-2.5-preview",
       "display_name": "LongCat 2.5 Preview",
       "type": "chat"
     },
@@ -12335,6 +12583,7 @@
         "output": 0.085,
         "cache_read": 0.0272
       },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
       "display_name": "Llama 3.1 8b Instruct",
       "type": "chat"
     },
@@ -12408,6 +12657,7 @@
         "output": 0.23,
         "cache_read": 0.025
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70b Instruct",
       "type": "chat"
     },
@@ -12531,6 +12781,7 @@
         "output": 1.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B",
       "type": "chat"
     },
@@ -12583,6 +12834,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.1",
       "display_name": "Muse Spark 1.1",
       "type": "chat"
     },
@@ -12636,6 +12888,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2",
       "type": "chat"
     },
@@ -12741,6 +12994,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3",
       "type": "chat"
     },
@@ -12945,6 +13199,7 @@
         "output": 1.53,
         "cache_read": 0.085
       },
+      "canonical_model_id": "minimax/MiniMax-M2",
       "display_name": "MiniMax M2",
       "type": "chat"
     },
@@ -12981,6 +13236,7 @@
         "output": 1.207,
         "cache_read": 0.151
       },
+      "canonical_model_id": "minimax/MiniMax-M2-Her",
       "display_name": "MiniMax M2-her",
       "type": "chat"
     },
@@ -13019,6 +13275,7 @@
         "output": 1.32,
         "cache_read": 0.165
       },
+      "canonical_model_id": "minimax/MiniMax-M2.1",
       "display_name": "MiniMax M2.1",
       "type": "chat"
     },
@@ -13057,6 +13314,7 @@
         "output": 1.2,
         "cache_read": 0.15
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax M2.5",
       "type": "chat"
     },
@@ -13095,6 +13353,7 @@
         "output": 1.26,
         "cache_read": 0.1575
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7",
       "type": "chat"
     },
@@ -13169,6 +13428,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3",
       "type": "chat"
     },
@@ -13208,6 +13468,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3 Thinking",
       "type": "chat"
     },
@@ -14199,6 +14460,7 @@
         "output": 2.5,
         "cache_read": 0.15
       },
+      "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking",
       "type": "chat"
     },
@@ -14237,6 +14499,7 @@
         "output": 1.9,
         "cache_read": 0.15
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5",
       "type": "chat"
     },
@@ -14277,6 +14540,7 @@
         "output": 1.9,
         "cache_read": 0.15
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5 Thinking",
       "type": "chat"
     },
@@ -14315,6 +14579,7 @@
         "output": 2.6,
         "cache_read": 0.125
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "type": "chat"
     },
@@ -14355,6 +14620,7 @@
         "output": 2.6,
         "cache_read": 0.125
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 Thinking",
       "type": "chat"
     },
@@ -14395,6 +14661,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
     },
@@ -14435,6 +14702,7 @@
         "output": 8,
         "cache_read": 0.32
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code-highspeed",
       "display_name": "Kimi K2.7 Code High-Speed",
       "type": "chat"
     },
@@ -14484,6 +14752,7 @@
         "output": 10,
         "cache_read": 0.2
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -14817,6 +15086,7 @@
         "output": 0.408,
         "cache_read": 0.1785
       },
+      "canonical_model_id": "nvidia/llama-3.1-nemotron-70b-instruct",
       "display_name": "Nvidia Nemotron 70b",
       "type": "chat"
     },
@@ -14853,6 +15123,7 @@
         "output": 0.15,
         "cache_read": 0.075
       },
+      "canonical_model_id": "nvidia/llama-3.3-nemotron-super-49b-v1",
       "display_name": "Nvidia Nemotron Super 49B",
       "type": "chat"
     },
@@ -14889,6 +15160,7 @@
         "output": 0.68,
         "cache_read": 0.085
       },
+      "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b",
       "display_name": "Nvidia Nemotron 3 Nano 30B",
       "type": "chat"
     },
@@ -14931,6 +15203,7 @@
         "output": 0.25,
         "cache_read": 0.025
       },
+      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
       "display_name": "Nvidia Nemotron 3 Super 120B",
       "type": "chat"
     },
@@ -14969,6 +15242,7 @@
         "output": 0.25,
         "cache_read": 0.025
       },
+      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
       "display_name": "Nvidia Nemotron 3 Super 120B Thinking",
       "type": "chat"
     },
@@ -15007,6 +15281,7 @@
         "output": 2.5,
         "cache_read": 0.25
       },
+      "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nvidia Nemotron 3 Ultra 550B",
       "type": "chat"
     },
@@ -15045,6 +15320,7 @@
         "output": 2.5,
         "cache_read": 0.25
       },
+      "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nvidia Nemotron 3 Ultra 550B Thinking",
       "type": "chat"
     },
@@ -15083,6 +15359,7 @@
         "output": 0.15,
         "cache_read": 0.025
       },
+      "canonical_model_id": "nvidia/nemotron-3.5-content-safety",
       "display_name": "Nemotron 3.5 Content Safety",
       "type": "chat"
     },
@@ -15129,6 +15406,7 @@
         "output": 0.2,
         "cache_read": 0.01
       },
+      "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nvidia Nemotron 3.5 Lightning",
       "type": "chat"
     },
@@ -15175,6 +15453,7 @@
         "output": 0.2,
         "cache_read": 0.01
       },
+      "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nvidia Nemotron 3.5 Lightning Thinking",
       "type": "chat"
     },
@@ -15211,6 +15490,7 @@
         "input": 0.5,
         "output": 1.5
       },
+      "canonical_model_id": "openai/gpt-3.5-turbo",
       "display_name": "GPT-3.5 Turbo",
       "type": "chat"
     },
@@ -15248,6 +15528,7 @@
         "input": 10,
         "output": 30
       },
+      "canonical_model_id": "openai/gpt-4-turbo",
       "display_name": "GPT-4 Turbo",
       "type": "chat"
     },
@@ -15287,6 +15568,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/gpt-4.1",
       "display_name": "GPT 4.1",
       "type": "chat"
     },
@@ -15325,6 +15607,7 @@
         "output": 1.6,
         "cache_read": 0.1
       },
+      "canonical_model_id": "openai/gpt-4.1-mini",
       "display_name": "GPT 4.1 Mini",
       "type": "chat"
     },
@@ -15364,6 +15647,7 @@
         "output": 0.4,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-4.1-nano",
       "display_name": "GPT 4.1 Nano",
       "type": "chat"
     },
@@ -15402,6 +15686,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o",
       "display_name": "GPT-4o",
       "type": "chat"
     },
@@ -15440,6 +15725,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o-2024-08-06",
       "display_name": "GPT-4o (2024-08-06)",
       "type": "chat"
     },
@@ -15478,6 +15764,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o-2024-11-20",
       "display_name": "GPT-4o (2024-11-20)",
       "type": "chat"
     },
@@ -15516,6 +15803,7 @@
         "output": 0.6,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-4o-mini",
       "display_name": "GPT-4o mini",
       "type": "chat"
     },
@@ -15567,6 +15855,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT 5",
       "type": "chat"
     },
@@ -15617,6 +15906,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT 5 Mini",
       "type": "chat"
     },
@@ -15667,6 +15957,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT 5 Nano",
       "type": "chat"
     },
@@ -15714,6 +16005,7 @@
         "output": 120,
         "cache_read": 1.5
       },
+      "canonical_model_id": "openai/gpt-5-pro",
       "display_name": "GPT 5 Pro",
       "type": "chat"
     },
@@ -15765,6 +16057,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT 5.1",
       "type": "chat"
     },
@@ -15861,6 +16154,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1-codex",
       "display_name": "GPT 5.1 Codex",
       "type": "chat"
     },
@@ -15914,6 +16208,7 @@
         "output": 20,
         "cache_read": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.1-codex-max",
       "display_name": "GPT 5.1 Codex Max",
       "type": "chat"
     },
@@ -15963,6 +16258,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5.1-codex-mini",
       "display_name": "GPT 5.1 Codex Mini",
       "type": "chat"
     },
@@ -16015,6 +16311,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT 5.2",
       "type": "chat"
     },
@@ -16066,6 +16363,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2-codex",
       "display_name": "GPT 5.2 Codex",
       "type": "chat"
     },
@@ -16117,6 +16415,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT 5.3 Codex",
       "type": "chat"
     },
@@ -16169,6 +16468,7 @@
         "output": 15,
         "cache_read": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT 5.4",
       "type": "chat"
     },
@@ -16221,6 +16521,7 @@
         "output": 4.5,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT 5.4 Mini",
       "type": "chat"
     },
@@ -16273,6 +16574,7 @@
         "output": 1.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT 5.4 Nano",
       "type": "chat"
     },
@@ -16325,6 +16627,7 @@
         "output": 30,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT 5.5",
       "type": "chat"
     },
@@ -16379,6 +16682,7 @@
         "cache_read": 0.02,
         "cache_write": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT 5.6 Luna",
       "type": "chat"
     },
@@ -16433,6 +16737,7 @@
         "cache_read": 0.02,
         "cache_write": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT 5.6 Luna Pro",
       "type": "chat"
     },
@@ -16487,6 +16792,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT 5.6 Sol",
       "type": "chat"
     },
@@ -16541,6 +16847,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT 5.6 Sol Pro",
       "type": "chat"
     },
@@ -16595,6 +16902,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT 5.6 Terra",
       "type": "chat"
     },
@@ -16649,6 +16957,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT 5.6 Terra Pro",
       "type": "chat"
     },
@@ -16702,6 +17011,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT 6 Astra",
       "type": "chat"
     },
@@ -16807,6 +17117,7 @@
         "cache_read": 0.01,
         "cache_write": 0.125
       },
+      "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT 6 Luna",
       "type": "chat"
     },
@@ -16913,6 +17224,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT 6 Sol",
       "type": "chat"
     },
@@ -17217,6 +17529,7 @@
         "input": 0.35,
         "output": 0.75
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
       "type": "chat"
     },
@@ -17263,6 +17576,7 @@
         "input": 0.2,
         "output": 0.3
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B",
       "type": "chat"
     },
@@ -17309,6 +17623,7 @@
         "input": 0.075,
         "output": 0.3
       },
+      "canonical_model_id": "openai/gpt-oss-safeguard-20b",
       "display_name": "GPT OSS Safeguard 20B",
       "type": "chat"
     },
@@ -17461,6 +17776,7 @@
         "output": 60,
         "cache_read": 7.5
       },
+      "canonical_model_id": "openai/o1",
       "display_name": "OpenAI o1",
       "type": "chat"
     },
@@ -17500,6 +17816,7 @@
         "output": 600,
         "cache_read": 75
       },
+      "canonical_model_id": "openai/o1-pro",
       "display_name": "OpenAI o1 Pro",
       "type": "chat"
     },
@@ -17548,6 +17865,7 @@
         "output": 8,
         "cache_read": 1
       },
+      "canonical_model_id": "openai/o3",
       "display_name": "OpenAI o3",
       "type": "chat"
     },
@@ -17596,6 +17914,7 @@
         "output": 4.4,
         "cache_read": 0.55
       },
+      "canonical_model_id": "openai/o3-mini",
       "display_name": "OpenAI o3-mini",
       "type": "chat"
     },
@@ -17782,6 +18101,7 @@
         "output": 4.4,
         "cache_read": 0.55
       },
+      "canonical_model_id": "openai/o4-mini",
       "display_name": "OpenAI o4-mini",
       "type": "chat"
     },
@@ -18172,6 +18492,7 @@
         "output": 0.2,
         "cache_read": 0.01
       },
+      "canonical_model_id": "poolside/laguna-s-2.1",
       "display_name": "Laguna S 2.1",
       "type": "chat"
     },
@@ -18210,6 +18531,7 @@
         "output": 0.2,
         "cache_read": 0.01
       },
+      "canonical_model_id": "poolside/laguna-s-2.1",
       "display_name": "Laguna S 2.1 Thinking",
       "type": "chat"
     },
@@ -18399,6 +18721,7 @@
         "output": 6.392,
         "cache_read": 0.79985
       },
+      "canonical_model_id": "alibaba/qwen-max",
       "display_name": "Qwen 2.5 Max",
       "type": "chat"
     },
@@ -18438,6 +18761,7 @@
         "output": 1.2002,
         "cache_read": 0.19975
       },
+      "canonical_model_id": "alibaba/qwen-plus",
       "display_name": "Qwen Plus",
       "type": "chat"
     },
@@ -18475,6 +18799,7 @@
         "output": 0.2006,
         "cache_read": 0.02499
       },
+      "canonical_model_id": "alibaba/qwen-turbo",
       "display_name": "Qwen Turbo",
       "type": "chat"
     },
@@ -18511,6 +18836,7 @@
         "output": 0.2006,
         "cache_read": 0.1003
       },
+      "canonical_model_id": "alibaba/qwen2.5-coder-32b-instruct",
       "display_name": "Qwen 2.5 Coder 32b",
       "type": "chat"
     },
@@ -18584,6 +18910,7 @@
         "output": 0.5,
         "cache_read": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b",
       "display_name": "Qwen 3 235b A22B",
       "type": "chat"
     },
@@ -18620,6 +18947,7 @@
         "output": 0.5,
         "cache_read": 0.065
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen 3 235b A22B 2507",
       "type": "chat"
     },
@@ -18656,6 +18984,7 @@
         "output": 0.3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "alibaba/qwen3-30b-a3b",
       "display_name": "Qwen3 30B A3B",
       "type": "chat"
     },
@@ -18729,6 +19058,7 @@
         "output": 0.3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "alibaba/qwen3-32b",
       "display_name": "Qwen 3 32b",
       "type": "chat"
     },
@@ -18836,6 +19166,7 @@
         "output": 0.4,
         "cache_read": 0.05
       },
+      "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen3 Coder 30B A3B Instruct",
       "type": "chat"
     },
@@ -18873,6 +19204,7 @@
         "output": 1.5,
         "cache_read": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3-coder-flash",
       "display_name": "Qwen3 Coder Flash",
       "type": "chat"
     },
@@ -18910,6 +19242,7 @@
         "output": 1.5,
         "cache_read": 0.1
       },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next",
       "type": "chat"
     },
@@ -18947,6 +19280,7 @@
         "output": 5,
         "cache_read": 0.5
       },
+      "canonical_model_id": "alibaba/qwen3-coder-plus",
       "display_name": "Qwen3 Coder Plus",
       "type": "chat"
     },
@@ -18984,6 +19318,7 @@
         "output": 6.001,
         "cache_read": 0.6001
       },
+      "canonical_model_id": "alibaba/qwen3-max",
       "display_name": "Qwen3 Max",
       "type": "chat"
     },
@@ -19056,6 +19391,7 @@
         "output": 0.65,
         "cache_read": 0.075
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3 Next 80B A3B (Instruct)",
       "type": "chat"
     },
@@ -19093,6 +19429,7 @@
         "output": 0.65,
         "cache_read": 0.075
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-thinking",
       "display_name": "Qwen3 Next 80B A3B (Thinking)",
       "type": "chat"
     },
@@ -19131,6 +19468,7 @@
         "output": 1.9,
         "cache_read": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-instruct",
       "display_name": "Qwen3 VL 235B A22B Instruct",
       "type": "chat"
     },
@@ -19170,6 +19508,7 @@
         "output": 6,
         "cache_read": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-thinking",
       "display_name": "Qwen3 VL 235B A22B Thinking",
       "type": "chat"
     },
@@ -19206,6 +19545,7 @@
         "output": 3.496,
         "cache_read": 0.103788
       },
+      "canonical_model_id": "alibaba/qwen3.5-122b-a10b",
       "display_name": "Qwen3.5 122B A10B",
       "type": "chat"
     },
@@ -19244,6 +19584,7 @@
         "output": 3.496,
         "cache_read": 0.103788
       },
+      "canonical_model_id": "alibaba/qwen3.5-122b-a10b",
       "display_name": "Qwen3.5 122B A10B Thinking",
       "type": "chat"
     },
@@ -19282,6 +19623,7 @@
         "output": 2.16,
         "cache_read": 0.135
       },
+      "canonical_model_id": "alibaba/qwen3.5-27b",
       "display_name": "Qwen3.5 27B",
       "type": "chat"
     },
@@ -19322,6 +19664,7 @@
         "output": 2.16,
         "cache_read": 0.135
       },
+      "canonical_model_id": "alibaba/qwen3.5-27b",
       "display_name": "Qwen3.5 27B Thinking",
       "type": "chat"
     },
@@ -19360,6 +19703,7 @@
         "output": 1.8,
         "cache_read": 0.1125
       },
+      "canonical_model_id": "alibaba/qwen3.5-35b-a3b",
       "display_name": "Qwen3.5 35B A3B",
       "type": "chat"
     },
@@ -19400,6 +19744,7 @@
         "output": 1.8,
         "cache_read": 0.1125
       },
+      "canonical_model_id": "alibaba/qwen3.5-35b-a3b",
       "display_name": "Qwen3.5 35B A3B Thinking",
       "type": "chat"
     },
@@ -19438,6 +19783,7 @@
         "output": 3.6,
         "cache_read": 0.3
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B A17B",
       "type": "chat"
     },
@@ -19478,6 +19824,7 @@
         "output": 3.6,
         "cache_read": 0.3
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B A17B Thinking",
       "type": "chat"
     },
@@ -19527,6 +19874,7 @@
         "output": 0.15,
         "cache_read": 0.025
       },
+      "canonical_model_id": "alibaba/qwen3.5-9b",
       "display_name": "Qwen3.5 9B",
       "type": "chat"
     },
@@ -19565,6 +19913,7 @@
         "output": 0.4,
         "cache_read": 0.05
       },
+      "canonical_model_id": "alibaba/qwen3.5-flash",
       "display_name": "Qwen3.5 Flash",
       "type": "chat"
     },
@@ -19605,6 +19954,7 @@
         "output": 0.4,
         "cache_read": 0.05
       },
+      "canonical_model_id": "alibaba/qwen3.5-flash",
       "display_name": "Qwen3.5 Flash Thinking",
       "type": "chat"
     },
@@ -19710,6 +20060,7 @@
         "output": 2.4,
         "cache_read": 0.04
       },
+      "canonical_model_id": "alibaba/qwen3.5-plus",
       "display_name": "Qwen3.5 Plus",
       "type": "chat"
     },
@@ -19751,6 +20102,7 @@
         "output": 2.4,
         "cache_read": 0.04
       },
+      "canonical_model_id": "alibaba/qwen3.5-plus",
       "display_name": "Qwen3.5 Plus Thinking",
       "type": "chat"
     },
@@ -19789,6 +20141,7 @@
         "output": 2.24,
         "cache_read": 0.1015
       },
+      "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B",
       "type": "chat"
     },
@@ -19829,6 +20182,7 @@
         "output": 2.24,
         "cache_read": 0.1015
       },
+      "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B Thinking",
       "type": "chat"
     },
@@ -19867,6 +20221,7 @@
         "output": 0.8,
         "cache_read": 0.056
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B",
       "type": "chat"
     },
@@ -19907,6 +20262,7 @@
         "output": 0.8,
         "cache_read": 0.056
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B Thinking",
       "type": "chat"
     },
@@ -19946,6 +20302,7 @@
         "cache_read": 0.02,
         "cache_write": 0.24
       },
+      "canonical_model_id": "alibaba/qwen3.6-flash",
       "display_name": "Qwen3.6 Flash",
       "type": "chat"
     },
@@ -19983,6 +20340,7 @@
         "output": 6.24,
         "cache_read": 0.52
       },
+      "canonical_model_id": "alibaba/qwen3.6-max-preview",
       "display_name": "Qwen3.6 Max Preview",
       "type": "chat"
     },
@@ -20023,6 +20381,7 @@
         "cache_read": 0.0325,
         "cache_write": 0.40625
       },
+      "canonical_model_id": "alibaba/qwen3.6-plus",
       "display_name": "Qwen 3.6 Plus",
       "type": "chat"
     },
@@ -20072,6 +20431,7 @@
         "cache_read": 0.006,
         "cache_write": 0.038
       },
+      "canonical_model_id": "alibaba/qwen3.7-flash",
       "display_name": "Qwen3.7 Flash",
       "type": "chat"
     },
@@ -20121,6 +20481,7 @@
         "cache_read": 0.006,
         "cache_write": 0.038
       },
+      "canonical_model_id": "alibaba/qwen3.7-flash",
       "display_name": "Qwen3.7 Flash Thinking",
       "type": "chat"
     },
@@ -20168,6 +20529,7 @@
         "cache_read": 0.5,
         "cache_write": 3.125
       },
+      "canonical_model_id": "alibaba/qwen3.7-max",
       "display_name": "Qwen3.7 Max",
       "type": "chat"
     },
@@ -20215,6 +20577,7 @@
         "cache_read": 0.5,
         "cache_write": 3.125
       },
+      "canonical_model_id": "alibaba/qwen3.7-max",
       "display_name": "Qwen3.7 Max Thinking",
       "type": "chat"
     },
@@ -20265,6 +20628,7 @@
         "cache_read": 0.08,
         "cache_write": 0.5
       },
+      "canonical_model_id": "alibaba/qwen3.7-plus",
       "display_name": "Qwen3.7 Plus",
       "type": "chat"
     },
@@ -20315,6 +20679,7 @@
         "cache_read": 0.08,
         "cache_write": 0.5
       },
+      "canonical_model_id": "alibaba/qwen3.7-plus",
       "display_name": "Qwen3.7 Plus Thinking",
       "type": "chat"
     },
@@ -20355,6 +20720,7 @@
         "output": 0.7,
         "cache_read": 0.04
       },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
       "type": "chat"
     },
@@ -20699,6 +21065,7 @@
         "output": 0.7,
         "cache_read": 0.04
       },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B Thinking",
       "type": "chat"
     },
@@ -20747,6 +21114,7 @@
         "cache_read": 0.016,
         "cache_write": 0.2
       },
+      "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash",
       "type": "chat"
     },
@@ -20787,6 +21155,7 @@
         "cache_read": 0.25,
         "cache_write": 2.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max",
       "type": "chat"
     },
@@ -20840,6 +21209,7 @@
         "cache_read": 0.17,
         "cache_write": 2.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max-0902",
       "display_name": "Qwen3.8 Max 0902",
       "type": "chat"
     },
@@ -20891,6 +21261,7 @@
         "output": 12,
         "cache_read": 0.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max-prime",
       "display_name": "Qwen3.8 Max Prime",
       "type": "chat"
     },
@@ -20943,6 +21314,7 @@
         "cache_read": 0.25,
         "cache_write": 2.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max Thinking",
       "type": "chat"
     },
@@ -20991,6 +21363,7 @@
         "output": 0.47,
         "cache_read": 0.016
       },
+      "canonical_model_id": "alibaba/qwen3.8-omni-flash",
       "display_name": "Qwen3.8 Omni Flash",
       "type": "chat"
     },
@@ -21122,6 +21495,7 @@
         "output": 30,
         "cache_read": 0.5
       },
+      "canonical_model_id": "sakana/fugu-ultra",
       "display_name": "Fugu Ultra",
       "type": "chat"
     },
@@ -21216,6 +21590,7 @@
         "output": 0.2124,
         "cache_read": 0.0336
       },
+      "canonical_model_id": "sarvam/sarvam-105b",
       "display_name": "Sarvam 105B",
       "type": "chat"
     },
@@ -21487,6 +21862,7 @@
         "output": 0.3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "stepfun/step-3.5-flash",
       "display_name": "Step 3.5 Flash",
       "type": "chat"
     },
@@ -21534,6 +21910,7 @@
         "output": 0.3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "stepfun/step-3.5-flash-2603",
       "display_name": "Step 3.5 Flash 2603",
       "type": "chat"
     },
@@ -21584,6 +21961,7 @@
         "output": 1.15,
         "cache_read": 0.04
       },
+      "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash Thinking",
       "type": "chat"
     },
@@ -21631,6 +22009,7 @@
         "output": 2.7,
         "cache_read": 0.05
       },
+      "canonical_model_id": "stepfun/step-5-preview",
       "display_name": "Step 5 Preview",
       "type": "chat"
     },
@@ -21678,6 +22057,7 @@
         "output": 0.26,
         "cache_read": 0.029
       },
+      "canonical_model_id": "tencent/hy3",
       "display_name": "Tencent Hy3",
       "type": "chat"
     },
@@ -21725,6 +22105,7 @@
         "output": 2.501,
         "cache_read": 0.042
       },
+      "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Tencent Hy4 Preview",
       "type": "chat"
     },
@@ -21763,6 +22144,7 @@
         "output": 1.2,
         "cache_read": 0.1
       },
+      "canonical_model_id": "thinkingmachines/inkling-small",
       "display_name": "Inkling Small",
       "type": "chat"
     },
@@ -21814,6 +22196,7 @@
         "output": 1.2,
         "cache_read": 0.1
       },
+      "canonical_model_id": "thinkingmachines/inkling-small",
       "display_name": "Inkling Small Thinking",
       "type": "chat"
     },
@@ -21852,6 +22235,7 @@
         "output": 4.05,
         "cache_read": 0.17
       },
+      "canonical_model_id": "thinkingmachines/inkling",
       "display_name": "Inkling",
       "type": "chat"
     },
@@ -21903,6 +22287,7 @@
         "output": 4.05,
         "cache_read": 0.17
       },
+      "canonical_model_id": "thinkingmachines/inkling",
       "display_name": "Inkling Thinking",
       "type": "chat"
     },
@@ -21939,6 +22324,7 @@
         "output": 7.5,
         "cache_read": 0.25
       },
+      "canonical_model_id": "unbiased/pareto",
       "display_name": "Pareto",
       "type": "chat"
     },
@@ -22270,6 +22656,7 @@
         "output": 0.12,
         "cache_read": 0.006
       },
+      "canonical_model_id": "upstage/solar-pro4",
       "display_name": "Solar Pro 4",
       "type": "chat"
     },
@@ -22319,6 +22706,7 @@
         "output": 0.12,
         "cache_read": 0.006
       },
+      "canonical_model_id": "upstage/solar-pro4",
       "display_name": "Solar Pro 4 Thinking",
       "type": "chat"
     },
@@ -22497,6 +22885,7 @@
         "output": 2.5,
         "cache_read": 0.2
       },
+      "canonical_model_id": "xai/grok-4.3",
       "display_name": "Grok 4.3",
       "type": "chat"
     },
@@ -22545,6 +22934,7 @@
         "output": 6,
         "cache_read": 0.5
       },
+      "canonical_model_id": "xai/grok-4.5",
       "display_name": "Grok 4.5",
       "type": "chat"
     },
@@ -22595,6 +22985,7 @@
         "output": 6,
         "cache_read": 0.5
       },
+      "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6",
       "type": "chat"
     },
@@ -22645,6 +23036,7 @@
         "output": 4.8,
         "cache_read": 0.4
       },
+      "canonical_model_id": "xai/grok-4.7",
       "display_name": "Grok 4.7",
       "type": "chat"
     },
@@ -22693,6 +23085,7 @@
         "output": 2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "xai/grok-build-0.1",
       "display_name": "Grok Build 0.1",
       "type": "chat"
     },
@@ -22792,6 +23185,7 @@
         "cache_read": 0.0028,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5",
       "type": "chat"
     },
@@ -22840,6 +23234,7 @@
         "cache_read": 0.0036,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro",
       "type": "chat"
     },
@@ -22888,6 +23283,7 @@
         "cache_read": 0.0036,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro Thinking",
       "type": "chat"
     },
@@ -22939,6 +23335,7 @@
         "cache_read": 0.0028,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5 Thinking",
       "type": "chat"
     },
@@ -22989,7 +23386,54 @@
         "cache_read": 0.0028,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.6-flash",
       "display_name": "MiMo V2.6 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash-abliterated",
+      "name": "MiMo V2.6 Flash Abliterated",
+      "description": "A MiMo V2.6 Flash finetune with refusal-direction ablation, image input, a 1M-token context window, separate reasoning output, and tool calling.",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.275
+      },
+      "display_name": "MiMo V2.6 Flash Abliterated",
       "type": "chat"
     },
     {
@@ -22997,7 +23441,7 @@
       "name": "MiMo V2.6 Flash Uncensored",
       "description": "A text-only, lower-refusal MiMo V2.6 Flash finetune served by Heabsy with a 1M-token context window, separate reasoning output, and tool calling.",
       "family": "mimo",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -23019,7 +23463,8 @@
       "last_updated": "2026-09-25",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -23044,7 +23489,7 @@
       "name": "MiMo V2.6 Flash Uncensored Thinking",
       "description": "MiMo V2.6 Flash Uncensored with maximum thinking enabled. Supports a 1M-token context window and tool calling.",
       "family": "mimo",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -23063,7 +23508,8 @@
       "last_updated": "2026-09-26",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -23130,6 +23576,7 @@
         "cache_read": 0.0036,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro",
       "display_name": "MiMo V2.6 Pro",
       "type": "chat"
     },
@@ -23180,6 +23627,7 @@
         "cache_read": 0.036,
         "cache_write": 0
       },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "display_name": "MiMo V2.6 Pro UltraSpeed",
       "type": "chat"
     },
@@ -23217,6 +23665,7 @@
         "output": 0.8,
         "cache_read": 0.06
       },
+      "canonical_model_id": "zhipuai/glm-4.5-air",
       "display_name": "GLM 4.5 Air",
       "type": "chat"
     },
@@ -23256,6 +23705,7 @@
         "output": 0.8,
         "cache_read": 0.06
       },
+      "canonical_model_id": "zhipuai/glm-4.5-air",
       "display_name": "GLM 4.5 Air (Thinking)",
       "type": "chat"
     },
@@ -23295,6 +23745,7 @@
         "output": 1.3,
         "cache_read": 0.15
       },
+      "canonical_model_id": "zhipuai/glm-4.5",
       "display_name": "GLM 4.5 (Thinking)",
       "type": "chat"
     },
@@ -23404,6 +23855,7 @@
         "output": 1.3,
         "cache_read": 0.15
       },
+      "canonical_model_id": "zhipuai/glm-4.5",
       "display_name": "GLM 4.5",
       "type": "chat"
     },
@@ -23448,6 +23900,7 @@
         "output": 1.8,
         "cache_read": 0.3
       },
+      "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM 4.5V",
       "type": "chat"
     },
@@ -23488,6 +23941,7 @@
         "output": 1.8,
         "cache_read": 0.3
       },
+      "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM 4.5V Thinking",
       "type": "chat"
     },
@@ -23536,6 +23990,7 @@
         "output": 1.4,
         "cache_read": 0.175
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM 4.6",
       "type": "chat"
     },
@@ -23621,6 +24076,7 @@
         "output": 1.4,
         "cache_read": 0.175
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM 4.6 Thinking",
       "type": "chat"
     },
@@ -23660,6 +24116,7 @@
         "output": 0.9,
         "cache_read": 0.15
       },
+      "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM 4.6V",
       "type": "chat"
     },
@@ -23735,6 +24192,7 @@
         "output": 0.8,
         "cache_read": 0.1
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM 4.7",
       "type": "chat"
     },
@@ -23774,6 +24232,7 @@
         "output": 0.4,
         "cache_read": 0.035
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM 4.7 Flash",
       "type": "chat"
     },
@@ -23813,6 +24272,7 @@
         "output": 0.4,
         "cache_read": 0.035
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM 4.7 Flash Thinking",
       "type": "chat"
     },
@@ -23926,6 +24386,7 @@
         "output": 0.8,
         "cache_read": 0.1
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM 4.7 Thinking",
       "type": "chat"
     },
@@ -23964,6 +24425,7 @@
         "output": 2.55,
         "cache_read": 0.13
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM 5",
       "type": "chat"
     },
@@ -24074,6 +24536,7 @@
         "output": 4,
         "cache_read": 0.24
       },
+      "canonical_model_id": "zhipuai/glm-5-turbo",
       "display_name": "GLM 5 Turbo",
       "type": "chat"
     },
@@ -24120,6 +24583,7 @@
         "output": 2.6,
         "cache_read": 0.15
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1",
       "type": "chat"
     },
@@ -24166,6 +24630,7 @@
         "output": 2.6,
         "cache_read": 0.15
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1 Thinking",
       "type": "chat"
     },
@@ -24213,6 +24678,7 @@
         "output": 1.32,
         "cache_read": 0.078
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2",
       "type": "chat"
     },
@@ -24259,6 +24725,7 @@
         "output": 1.32,
         "cache_read": 0.078
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Thinking",
       "type": "chat"
     },
@@ -24306,6 +24773,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3",
       "type": "chat"
     },
@@ -24355,6 +24823,7 @@
         "output": 0.25,
         "cache_read": 0.015
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM 5.3 Flash",
       "type": "chat"
     },
@@ -24540,6 +25009,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3 Thinking",
       "type": "chat"
     },
@@ -24578,6 +25048,7 @@
         "output": 2.55,
         "cache_read": 0.13
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM 5 Thinking",
       "type": "chat"
     },
@@ -24616,6 +25087,7 @@
         "output": 4,
         "cache_read": 0.24
       },
+      "canonical_model_id": "zhipuai/glm-5v-turbo",
       "display_name": "GLM 5V Turbo",
       "type": "chat"
     },
@@ -24656,6 +25128,7 @@
         "output": 4,
         "cache_read": 0.24
       },
+      "canonical_model_id": "zhipuai/glm-5v-turbo",
       "display_name": "GLM 5V Turbo Thinking",
       "type": "chat"
     },

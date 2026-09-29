@@ -74,6 +74,6 @@
       "type": "chat"
     }
   ],
-  "api": "https://api.tbox.cn/api/llm/v1/chat/completions",
+  "api": "https://api.tbox.cn/api/llm/v1",
   "doc": "https://alipaytbox.yuque.com/sxs0ba/ling/intro"
 }

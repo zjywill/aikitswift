@@ -55,6 +55,7 @@
         "cache_read": 1.25,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
       "type": "chat"
     },
@@ -110,6 +111,7 @@
         "cache_read": 0.5,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1",
       "type": "chat"
     },
@@ -165,6 +167,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
       "type": "chat"
     },
@@ -220,6 +223,7 @@
         "cache_read": 0.2,
         "cache_write": 5
       },
+      "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",
       "type": "chat"
     },
@@ -278,6 +282,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
       "type": "chat"
     },
@@ -381,6 +386,7 @@
         "reasoning": 0.3,
         "cache_read": 0.03
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -435,6 +441,7 @@
         "output": 0.87,
         "cache_read": 0.003625
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
     },
@@ -487,6 +494,7 @@
         "reasoning": 3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
     },
@@ -541,6 +549,7 @@
         "output": 1.23,
         "cache_read": 0.01
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -722,6 +731,7 @@
         "output": 3.75,
         "cache_read": 0.075
       },
+      "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash",
       "type": "chat"
     },
@@ -775,6 +785,7 @@
         "output": 3.75,
         "cache_read": 0.15
       },
+      "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
       "type": "chat"
     },
@@ -823,6 +834,7 @@
         "output": 4.2,
         "cache_read": 0.3
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"
     },
@@ -872,6 +884,7 @@
         "output": 4.2,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
       "type": "chat"
     },
@@ -924,6 +937,7 @@
         "output": 0.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
     },
@@ -1362,6 +1376,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
       "type": "chat"
     },
@@ -1416,6 +1431,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT 5.6 Luna",
       "type": "chat"
     },
@@ -1470,6 +1486,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT 5.6 Sol",
       "type": "chat"
     },
@@ -1524,6 +1541,7 @@
         "cache_read": 0.25,
         "cache_write": 3.125
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT 5.6 Terra",
       "type": "chat"
     },
@@ -1595,6 +1613,7 @@
           "cache_write": 25
         }
       },
+      "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra",
       "type": "chat"
     },
@@ -1667,6 +1686,7 @@
           "cache_write": 0.25
         }
       },
+      "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna",
       "type": "chat"
     },
@@ -1739,6 +1759,7 @@
           "cache_write": 5
         }
       },
+      "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol",
       "type": "chat"
     },
@@ -1778,6 +1799,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -1825,6 +1847,7 @@
         "output": 0.4,
         "cache_read": 0.05
       },
+      "canonical_model_id": "vivgrid/viv-fast",
       "display_name": "Viv Fast",
       "type": "chat"
     }

@@ -347,6 +347,7 @@
         "output": 0.26,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
     },
@@ -646,6 +647,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
     },
@@ -700,6 +702,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -747,6 +750,7 @@
         "input": 0.25,
         "output": 2.5
       },
+      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
       "display_name": "Nemotron 3 Super 120B",
       "type": "chat"
     },
@@ -1134,6 +1138,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6",
       "type": "chat"
     }

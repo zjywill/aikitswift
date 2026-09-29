@@ -40,6 +40,7 @@
         "output": 0.71,
         "cache_read": 0.06
       },
+      "canonical_model_id": "deepseek/deepseek-v3.1",
       "display_name": "DeepSeek-V3.1",
       "type": "chat"
     },
@@ -82,6 +83,7 @@
         "output": 0.326,
         "cache_read": 0.06
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
       "type": "chat"
     },
@@ -132,6 +134,7 @@
         "output": 0.196,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -180,6 +183,7 @@
         "input": 0.435,
         "output": 0.87
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
     },
@@ -216,6 +220,7 @@
         "output": 1.2,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax-M2.5",
       "type": "chat"
     },
@@ -260,6 +265,7 @@
         "output": 4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "type": "chat"
     },
@@ -311,6 +317,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -355,6 +362,7 @@
         "output": 2.65,
         "cache_read": 0.2
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B-A17B",
       "type": "chat"
     },
@@ -395,6 +403,7 @@
         "output": 3.2647,
         "cache_read": 0.2226
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5",
       "type": "chat"
     },
@@ -436,6 +445,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1",
       "type": "chat"
     },
@@ -481,6 +491,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"
     },
@@ -527,6 +538,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
       "type": "chat"
     },
@@ -576,6 +588,7 @@
         "output": 0.025,
         "cache_read": 0.015
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
     }
