@@ -54,6 +54,7 @@
         "output": 0.4,
         "cache_read": 0.04
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -108,6 +109,7 @@
         "output": 4.8,
         "cache_read": 0.2
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Alibaba Cloud)",
       "type": "chat"
     },
@@ -160,6 +162,7 @@
         "output": 1.2,
         "cache_read": 0.03
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -211,6 +214,7 @@
         "input": 0.573,
         "output": 2.58
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (Alibaba Cloud)",
       "type": "chat"
     },
@@ -264,6 +268,7 @@
         "output": 4.4,
         "cache_read": 0.28
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (Alibaba Cloud)",
       "type": "chat"
     },
@@ -310,6 +315,7 @@
         "output": 4.4,
         "cache_read": 0.28
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (Alibaba Cloud)",
       "type": "chat"
     },
@@ -365,6 +371,7 @@
         "input": 0.574,
         "output": 3.011
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5 (Alibaba Cloud)",
       "type": "chat"
     },
@@ -417,6 +424,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Alibaba Cloud)",
       "type": "chat"
     },
@@ -488,6 +496,7 @@
         "cache_read": 0.01,
         "cache_write": 0.0625
       },
+      "canonical_model_id": "alibaba/qwen-flash",
       "display_name": "Qwen Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -523,6 +532,7 @@
         "input": 1.6,
         "output": 6.4
       },
+      "canonical_model_id": "alibaba/qwen-max",
       "display_name": "Qwen Max (Alibaba Cloud)",
       "type": "chat"
     },
@@ -562,6 +572,7 @@
         "input": 0.2,
         "output": 0.8
       },
+      "canonical_model_id": "alibaba/qwen-omni-turbo",
       "display_name": "Qwen Omni Turbo (Alibaba Cloud)",
       "type": "chat"
     },
@@ -599,6 +610,7 @@
         "cache_read": 0.08,
         "cache_write": 0.5
       },
+      "canonical_model_id": "alibaba/qwen-plus",
       "display_name": "Qwen Plus (Alibaba Cloud)",
       "type": "chat"
     },
@@ -672,6 +684,7 @@
         "cache_read": 0.06,
         "cache_write": 0.375
       },
+      "canonical_model_id": "alibaba/qwen3-coder-flash",
       "display_name": "Qwen3 Coder Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -709,6 +722,7 @@
         "cache_read": 0.2,
         "cache_write": 1.25
       },
+      "canonical_model_id": "alibaba/qwen3-coder-plus",
       "display_name": "Qwen3 Coder Plus (Alibaba Cloud)",
       "type": "chat"
     },
@@ -748,6 +762,7 @@
         "cache_read": 0.24,
         "cache_write": 1.5
       },
+      "canonical_model_id": "alibaba/qwen3-max",
       "display_name": "Qwen3 Max (Alibaba Cloud)",
       "type": "chat"
     },
@@ -821,7 +836,167 @@
         "cache_read": 0.04,
         "cache_write": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3-vl-plus",
       "display_name": "Qwen3 VL Plus (Alibaba Cloud)",
+      "type": "chat"
+    },
+    {
+      "id": "alibaba/qwen3.5-122b-a10b",
+      "name": "Qwen3.5 122B A10B (Alibaba Cloud)",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 3.2
+      },
+      "canonical_model_id": "alibaba/qwen3.5-122b-a10b",
+      "display_name": "Qwen3.5 122B A10B (Alibaba Cloud)",
+      "type": "chat"
+    },
+    {
+      "id": "alibaba/qwen3.5-27b",
+      "name": "Qwen3.5 27B (Alibaba Cloud)",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 2.4
+      },
+      "canonical_model_id": "alibaba/qwen3.5-27b",
+      "display_name": "Qwen3.5 27B (Alibaba Cloud)",
+      "type": "chat"
+    },
+    {
+      "id": "alibaba/qwen3.5-35b-a3b",
+      "name": "Qwen3.5 35B A3B (Alibaba Cloud)",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.25,
+        "output": 2
+      },
+      "canonical_model_id": "alibaba/qwen3.5-35b-a3b",
+      "display_name": "Qwen3.5 35B A3B (Alibaba Cloud)",
       "type": "chat"
     },
     {
@@ -873,6 +1048,7 @@
         "input": 0.375,
         "output": 2.25
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B (Alibaba Cloud)",
       "type": "chat"
     },
@@ -926,6 +1102,7 @@
         "cache_read": 0.05,
         "cache_write": 0.3125
       },
+      "canonical_model_id": "alibaba/qwen3.6-flash",
       "display_name": "Qwen3.6 Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -964,6 +1141,7 @@
         "output": 7.8,
         "cache_read": 0.13
       },
+      "canonical_model_id": "alibaba/qwen3.6-max-preview",
       "display_name": "Qwen3.6 Max Preview (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1036,6 +1214,7 @@
           "cache_write": 2.5
         }
       },
+      "canonical_model_id": "alibaba/qwen3.6-plus",
       "display_name": "Qwen3.6 Plus (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1081,7 +1260,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "input": 991000,
+        "input": 991808,
         "output": 65536
       },
       "cost": {
@@ -1090,6 +1269,7 @@
         "cache_read": 0.006,
         "cache_write": 0.0375
       },
+      "canonical_model_id": "alibaba/qwen3.7-flash",
       "display_name": "Qwen3.7 Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1141,6 +1321,7 @@
         "cache_read": 0.5,
         "cache_write": 3.125
       },
+      "canonical_model_id": "alibaba/qwen3.7-max",
       "display_name": "Qwen3.7 Max (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1195,6 +1376,7 @@
         "cache_read": 0.08,
         "cache_write": 0.5
       },
+      "canonical_model_id": "alibaba/qwen3.7-plus",
       "display_name": "Qwen3.7 Plus (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1247,6 +1429,7 @@
         "cache_read": 0.016,
         "cache_write": 0.2
       },
+      "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1300,6 +1483,7 @@
         "cache_read": 0.25,
         "cache_write": 2.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max (Alibaba Cloud)",
       "type": "chat"
     },
@@ -1402,6 +1586,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5 (Anthropic)",
       "type": "chat"
     },
@@ -1454,6 +1639,7 @@
         "cache_read": 0.25,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1 (Anthropic)",
       "type": "chat"
     },
@@ -1506,6 +1692,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 (Anthropic)",
       "type": "chat"
     },
@@ -1558,6 +1745,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
       "display_name": "Claude Haiku 4.5 (2025-10-01) (Anthropic)",
       "type": "chat"
     },
@@ -1615,6 +1803,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5-20251101",
       "display_name": "Claude Opus 4.5 (Anthropic)",
       "type": "chat"
     },
@@ -1667,6 +1856,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6 (Anthropic)",
       "type": "chat"
     },
@@ -1719,6 +1909,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7 (Anthropic)",
       "type": "chat"
     },
@@ -1771,6 +1962,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8 (Anthropic)",
       "type": "chat"
     },
@@ -1823,6 +2015,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5 (Anthropic)",
       "type": "chat"
     },
@@ -1875,6 +2068,7 @@
         "cache_read": 0.2,
         "cache_write": 5
       },
+      "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5 (Anthropic)",
       "type": "chat"
     },
@@ -1932,6 +2126,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 (Anthropic)",
       "type": "chat"
     },
@@ -1989,6 +2184,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5-20250929",
       "display_name": "Claude Sonnet 4.5 (2025-09-29) (Anthropic)",
       "type": "chat"
     },
@@ -2046,6 +2242,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6 (Anthropic)",
       "type": "chat"
     },
@@ -2098,7 +2295,61 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 (Anthropic)",
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5 (Anthropic)",
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "family": "claude-sonnet",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "canonical_model_id": "anthropic/claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5 (Anthropic)",
       "type": "chat"
     },
     {
@@ -2198,6 +2449,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2250,6 +2502,7 @@
         "cache_read": 0.25,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2302,6 +2555,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2354,6 +2608,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5-20251001",
       "display_name": "Claude Haiku 4.5 (2025-10-01) (AWS Bedrock)",
       "type": "chat"
     },
@@ -2411,6 +2666,7 @@
         "cache_read": 1.5,
         "cache_write": 18.75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1-20250805",
       "display_name": "Claude Opus 4.1 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2468,6 +2724,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5-20251101",
       "display_name": "Claude Opus 4.5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2520,6 +2777,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2572,6 +2830,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2624,6 +2883,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2676,6 +2936,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2733,6 +2994,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2790,6 +3052,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5-20250929",
       "display_name": "Claude Sonnet 4.5 (2025-09-29) (AWS Bedrock)",
       "type": "chat"
     },
@@ -2847,6 +3110,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6 (AWS Bedrock)",
       "type": "chat"
     },
@@ -2899,6 +3163,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 (AWS Bedrock)",
       "type": "chat"
     },
@@ -3012,6 +3277,7 @@
         "output": 6,
         "cache_read": 0.5
       },
+      "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6 (AWS Bedrock)",
       "type": "chat"
     },
@@ -3082,6 +3348,7 @@
         "input": 0.24,
         "output": 0.97
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama 4 Maverick 17B Instruct (AWS Bedrock)",
       "type": "chat"
     },
@@ -3118,6 +3385,7 @@
         "input": 0.17,
         "output": 0.66
       },
+      "canonical_model_id": "meta/llama-4-scout-17b-instruct",
       "display_name": "Llama 4 Scout 17B Instruct (AWS Bedrock)",
       "type": "chat"
     },
@@ -3171,6 +3439,7 @@
         "cache_read": 0.022,
         "cache_write": 0.275
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna (AWS Mantle)",
       "type": "chat"
     },
@@ -3224,6 +3493,7 @@
         "cache_read": 0.44,
         "cache_write": 5.5
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol (AWS Mantle)",
       "type": "chat"
     },
@@ -3277,6 +3547,7 @@
         "cache_read": 0.22,
         "cache_write": 2.75
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra (AWS Mantle)",
       "type": "chat"
     },
@@ -3330,6 +3601,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra (AWS Mantle)",
       "type": "chat"
     },
@@ -3526,6 +3798,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3577,6 +3850,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3629,6 +3903,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3681,6 +3956,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3733,6 +4009,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3785,6 +4062,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 (Azure Anthropic)",
       "type": "chat"
     },
@@ -3820,6 +4098,7 @@
         "input": 0.5,
         "output": 1.5
       },
+      "canonical_model_id": "openai/gpt-3.5-turbo",
       "display_name": "GPT-3.5 Turbo (Azure)",
       "type": "chat"
     },
@@ -3855,6 +4134,7 @@
         "input": 30,
         "output": 60
       },
+      "canonical_model_id": "openai/gpt-4",
       "display_name": "GPT-4 (Azure)",
       "type": "chat"
     },
@@ -3891,6 +4171,7 @@
         "input": 10,
         "output": 30
       },
+      "canonical_model_id": "openai/gpt-4-turbo",
       "display_name": "GPT-4 Turbo (Azure)",
       "type": "chat"
     },
@@ -3929,6 +4210,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/gpt-4.1",
       "display_name": "GPT-4.1 (Azure)",
       "type": "chat"
     },
@@ -3967,6 +4249,7 @@
         "output": 1.6,
         "cache_read": 0.1
       },
+      "canonical_model_id": "openai/gpt-4.1-mini",
       "display_name": "GPT-4.1 Mini (Azure)",
       "type": "chat"
     },
@@ -4004,6 +4287,7 @@
         "output": 0.4,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-4.1-nano",
       "display_name": "GPT-4.1 Nano (Azure)",
       "type": "chat"
     },
@@ -4042,6 +4326,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o",
       "display_name": "GPT-4o (Azure)",
       "type": "chat"
     },
@@ -4092,6 +4377,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5 (Azure)",
       "type": "chat"
     },
@@ -4142,6 +4428,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini (Azure)",
       "type": "chat"
     },
@@ -4191,6 +4478,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano (Azure)",
       "type": "chat"
     },
@@ -4243,6 +4531,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1 (Azure)",
       "type": "chat"
     },
@@ -4291,6 +4580,7 @@
         "input": 1.25,
         "output": 10
       },
+      "canonical_model_id": "openai/gpt-5.1-codex",
       "display_name": "GPT-5.1 Codex (Azure)",
       "type": "chat"
     },
@@ -4340,6 +4630,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5.1-codex-mini",
       "display_name": "GPT-5.1 Codex mini (Azure)",
       "type": "chat"
     },
@@ -4391,6 +4682,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2 (Azure)",
       "type": "chat"
     },
@@ -4442,6 +4734,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2-codex",
       "display_name": "GPT-5.2 Codex (Azure)",
       "type": "chat"
     },
@@ -4490,6 +4783,7 @@
         "input": 21,
         "output": 168
       },
+      "canonical_model_id": "openai/gpt-5.2-pro",
       "display_name": "GPT-5.2 Pro (Azure)",
       "type": "chat"
     },
@@ -4541,6 +4835,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex (Azure)",
       "type": "chat"
     },
@@ -4593,6 +4888,7 @@
         "output": 15,
         "cache_read": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4 (Azure)",
       "type": "chat"
     },
@@ -4644,6 +4940,7 @@
         "output": 4.5,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 Mini (Azure)",
       "type": "chat"
     },
@@ -4695,6 +4992,7 @@
         "output": 1.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 Nano (Azure)",
       "type": "chat"
     },
@@ -4743,6 +5041,7 @@
         "input": 30,
         "output": 180
       },
+      "canonical_model_id": "openai/gpt-5.4-pro",
       "display_name": "GPT-5.4 Pro (Azure)",
       "type": "chat"
     },
@@ -4811,6 +5110,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5 (Azure)",
       "type": "chat"
     },
@@ -4865,6 +5165,7 @@
         "cache_read": 0.02,
         "cache_write": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna (Azure)",
       "type": "chat"
     },
@@ -4919,6 +5220,7 @@
         "cache_read": 0.4,
         "cache_write": 5
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol (Azure)",
       "type": "chat"
     },
@@ -4973,6 +5275,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra (Azure)",
       "type": "chat"
     },
@@ -5026,6 +5329,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra (Azure)",
       "type": "chat"
     },
@@ -5080,6 +5384,7 @@
         "cache_read": 0.01,
         "cache_write": 0.125
       },
+      "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna (Azure)",
       "type": "chat"
     },
@@ -5134,6 +5439,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol (Azure)",
       "type": "chat"
     },
@@ -5179,6 +5485,7 @@
         "input": 0.15,
         "output": 0.6
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Azure)",
       "type": "chat"
     },
@@ -5228,6 +5535,7 @@
         "output": 60,
         "cache_read": 7.5
       },
+      "canonical_model_id": "openai/o1",
       "display_name": "o1 (Azure)",
       "type": "chat"
     },
@@ -5266,6 +5574,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/o3",
       "display_name": "o3 (Azure)",
       "type": "chat"
     },
@@ -5302,6 +5611,7 @@
         "output": 4.4,
         "cache_read": 0.55
       },
+      "canonical_model_id": "openai/o3-mini",
       "display_name": "o3 Mini (Azure)",
       "type": "chat"
     },
@@ -5350,6 +5660,7 @@
         "output": 4.4,
         "cache_read": 0.275
       },
+      "canonical_model_id": "openai/o4-mini",
       "display_name": "o4 Mini (Azure)",
       "type": "chat"
     },
@@ -5404,6 +5715,7 @@
         "output": 1.32,
         "cache_read": 0.014
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Baidu)",
       "type": "chat"
     },
@@ -5458,6 +5770,7 @@
         "output": 3.96,
         "cache_read": 0.042
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Baidu)",
       "type": "chat"
     },
@@ -5510,6 +5823,7 @@
         "output": 1.2,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Baidu)",
       "type": "chat"
     },
@@ -5563,6 +5877,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (Baidu)",
       "type": "chat"
     },
@@ -5616,6 +5931,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (Baidu)",
       "type": "chat"
     },
@@ -5669,6 +5985,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (Baidu)",
       "type": "chat"
     },
@@ -5715,6 +6032,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (Baidu)",
       "type": "chat"
     },
@@ -5771,6 +6089,7 @@
         "output": 4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (Baidu)",
       "type": "chat"
     },
@@ -5813,6 +6132,7 @@
         "output": 0.42,
         "cache_read": 0.056
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 (ByteDance)",
       "type": "chat"
     },
@@ -5867,6 +6187,7 @@
         "output": 1.32,
         "cache_read": 0.014
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (ByteDance)",
       "type": "chat"
     },
@@ -5921,6 +6242,7 @@
         "output": 3.96,
         "cache_read": 0.044
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (ByteDance)",
       "type": "chat"
     },
@@ -5966,6 +6288,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (ByteDance)",
       "type": "chat"
     },
@@ -6019,6 +6342,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (ByteDance)",
       "type": "chat"
     },
@@ -6065,6 +6389,7 @@
         "output": 0.5,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (ByteDance)",
       "type": "chat"
     },
@@ -6261,6 +6586,198 @@
       "type": "chat"
     },
     {
+      "id": "bytedance/seed-2-0-code-preview-260328",
+      "name": "Seed 2.0 Code Preview (260328) (ByteDance)",
+      "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
+      "family": "seed",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-03-28",
+      "last_updated": "2026-03-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 3,
+        "cache_read": 0.1
+      },
+      "display_name": "Seed 2.0 Code Preview (260328) (ByteDance)",
+      "type": "chat"
+    },
+    {
+      "id": "bytedance/seed-2-0-lite-260428",
+      "name": "Seed 2.0 Lite (260428) (ByteDance)",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "seed",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-04-28",
+      "last_updated": "2026-04-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.05
+      },
+      "display_name": "Seed 2.0 Lite (260428) (ByteDance)",
+      "type": "chat"
+    },
+    {
+      "id": "bytedance/seed-2-0-mini-260428",
+      "name": "Seed 2.0 Mini (260428) (ByteDance)",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "seed",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-04-28",
+      "last_updated": "2026-04-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.02
+      },
+      "display_name": "Seed 2.0 Mini (260428) (ByteDance)",
+      "type": "chat"
+    },
+    {
+      "id": "bytedance/seed-2-0-pro-260328",
+      "name": "Seed 2.0 Pro (260328) (ByteDance)",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "seed",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-03-28",
+      "last_updated": "2026-03-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 3,
+        "cache_read": 0.1
+      },
+      "display_name": "Seed 2.0 Pro (260328) (ByteDance)",
+      "type": "chat"
+    },
+    {
       "id": "canopywave/deepseek-v4-flash",
       "name": "DeepSeek V4 Flash (CanopyWave)",
       "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
@@ -6311,6 +6828,7 @@
         "output": 0.28,
         "cache_read": 0.03
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (CanopyWave)",
       "type": "chat"
     },
@@ -6365,6 +6883,7 @@
         "output": 3.48,
         "cache_read": 0.01
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (CanopyWave)",
       "type": "chat"
     },
@@ -6418,6 +6937,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (CanopyWave)",
       "type": "chat"
     },
@@ -6474,6 +6994,7 @@
         "output": 4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (CanopyWave)",
       "type": "chat"
     },
@@ -6526,6 +7047,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (CanopyWave)",
       "type": "chat"
     },
@@ -6576,6 +7098,7 @@
         "input": 0.99,
         "output": 1.49
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (Cerebras)",
       "type": "chat"
     },
@@ -6620,6 +7143,7 @@
         "input": 2.25,
         "output": 2.75
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (Cerebras)",
       "type": "chat"
     },
@@ -6665,6 +7189,7 @@
         "input": 0.35,
         "output": 0.75
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Cerebras)",
       "type": "chat"
     },
@@ -6700,6 +7225,7 @@
         "input": 0.85,
         "output": 1.2
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70B Instruct (Cerebras)",
       "type": "chat"
     },
@@ -6734,6 +7260,7 @@
         "input": 0.6,
         "output": 1.2
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B A22B Instruct 2507 (Cerebras)",
       "type": "chat"
     },
@@ -6823,14 +7350,15 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1050000,
+        "context": 524288,
         "output": 393216
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.1,
-        "cache_read": 0.01
+        "input": 0.13,
+        "output": 0.27,
+        "cache_read": 0.02
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Consensus Protocol)",
       "type": "chat"
     },
@@ -6880,6 +7408,7 @@
         "output": 0.6,
         "cache_read": 0.005
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Consensus Protocol)",
       "type": "chat"
     },
@@ -6927,6 +7456,7 @@
         "output": 0.25,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (Consensus Protocol)",
       "type": "chat"
     },
@@ -6976,6 +7506,7 @@
         "output": 0.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Consensus Protocol)",
       "type": "chat"
     },
@@ -7022,6 +7553,7 @@
         "output": 0.19,
         "cache_read": 0.01
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B (Consensus Protocol)",
       "type": "chat"
     },
@@ -7058,6 +7590,7 @@
         "output": 0.38,
         "cache_read": 0.13
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 (DeepInfra)",
       "type": "chat"
     },
@@ -7109,6 +7642,7 @@
         "output": 0.18,
         "cache_read": 0.016
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (DeepInfra)",
       "type": "chat"
     },
@@ -7159,6 +7693,7 @@
         "output": 2.6,
         "cache_read": 0.1
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (DeepInfra)",
       "type": "chat"
     },
@@ -7211,6 +7746,7 @@
         "output": 0.6,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (DeepInfra)",
       "type": "chat"
     },
@@ -7247,6 +7783,7 @@
         "input": 0.07,
         "output": 0.34
       },
+      "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT (DeepInfra)",
       "type": "chat"
     },
@@ -7293,9 +7830,10 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.38
+        "input": 0.15,
+        "output": 0.4
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (DeepInfra)",
       "type": "chat"
     },
@@ -7349,14 +7887,15 @@
         "output": 3.5,
         "cache_read": 0.205
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (DeepInfra)",
       "type": "chat"
     },
     {
-      "id": "deepinfra/glm-5.3",
-      "name": "GLM-5.3 (DeepInfra)",
-      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
-      "family": "glm",
+      "id": "deepinfra/granite-4.2-8b",
+      "name": "Granite 4.2 8B (DeepInfra)",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "granite",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -7368,16 +7907,16 @@
           "values": [
             "none",
             "low",
-            "high",
-            "max"
+            "medium",
+            "high"
           ]
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
-      "release_date": "2026-08-14",
-      "last_updated": "2026-08-14",
+      "release_date": "2026-09-01",
+      "last_updated": "2026-09-01",
       "modalities": {
         "input": [
           "text"
@@ -7386,17 +7925,17 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 131072,
+        "output": 117964
       },
       "cost": {
-        "input": 1.2,
-        "output": 4,
-        "cache_read": 0.2
+        "input": 0.06,
+        "output": 0.25,
+        "cache_read": 0.015
       },
-      "display_name": "GLM-5.3 (DeepInfra)",
+      "display_name": "Granite 4.2 8B (DeepInfra)",
       "type": "chat"
     },
     {
@@ -7443,6 +7982,7 @@
         "output": 0.58,
         "cache_read": 0.035
       },
+      "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3 (DeepInfra)",
       "type": "chat"
     },
@@ -7495,59 +8035,8 @@
         "output": 4.05,
         "cache_read": 0.16
       },
+      "canonical_model_id": "thinkingmachines/inkling",
       "display_name": "Inkling (DeepInfra)",
-      "type": "chat"
-    },
-    {
-      "id": "deepinfra/inkling-small",
-      "name": "Inkling Small (DeepInfra)",
-      "description": "Multimodal MoE reasoning model (276B total, 12B active) for text, image, and audio",
-      "family": "ling",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-07-30",
-      "last_updated": "2026-07-30",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 262144
-      },
-      "cost": {
-        "input": 0.45,
-        "output": 1.2,
-        "cache_read": 0.1
-      },
-      "display_name": "Inkling Small (DeepInfra)",
       "type": "chat"
     },
     {
@@ -7589,6 +8078,54 @@
         "cache_read": 0.012
       },
       "display_name": "InclusionAI Ling 3.0 Flash (DeepInfra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/ling-3.0-flash-vl",
+      "name": "Ling 3.0 Flash VL (DeepInfra)",
+      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
+      "family": "ling",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.06,
+        "output": 0.18,
+        "cache_read": 0.012
+      },
+      "display_name": "Ling 3.0 Flash VL (DeepInfra)",
       "type": "chat"
     },
     {
@@ -7661,6 +8198,7 @@
           "cache_read": 0.16
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5 (DeepInfra)",
       "type": "chat"
     },
@@ -7731,7 +8269,116 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro (DeepInfra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/mimo-v2.6-flash",
+      "name": "MiMo V2.6 Flash (DeepInfra)",
+      "description": "MiMo Flash model for multimodal coding agents and long-context automation",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.14,
+        "output": 0.28,
+        "cache_read": 0.0028
+      },
+      "canonical_model_id": "xiaomi/mimo-v2.6-flash",
+      "display_name": "MiMo V2.6 Flash (DeepInfra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/mimo-v2.6-pro",
+      "name": "MiMo V2.6 Pro (DeepInfra)",
+      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.435,
+        "output": 0.87,
+        "cache_read": 0.0036
+      },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro",
+      "display_name": "MiMo V2.6 Pro (DeepInfra)",
       "type": "chat"
     },
     {
@@ -7782,6 +8429,7 @@
         "output": 1.2,
         "cache_read": 0.04
       },
+      "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B (DeepInfra)",
       "type": "chat"
     },
@@ -7822,52 +8470,6 @@
       "type": "chat"
     },
     {
-      "id": "deepinfra/nemotron-3.5-lightning",
-      "name": "Nemotron 3.5 Lightning (DeepInfra)",
-      "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
-      "family": "nemotron",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-11",
-      "last_updated": "2026-08-11",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.08,
-        "output": 0.2
-      },
-      "display_name": "Nemotron 3.5 Lightning (DeepInfra)",
-      "type": "chat"
-    },
-    {
       "id": "deepinfra/qwen3-vl-235b-a22b-instruct",
       "name": "Qwen3 VL 235B A22B Instruct (DeepInfra)",
       "description": "Qwen vision-language instruct model for visual reasoning, documents, and agent tasks",
@@ -7901,6 +8503,7 @@
         "output": 0.88,
         "cache_read": 0.11
       },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-instruct",
       "display_name": "Qwen3 VL 235B A22B Instruct (DeepInfra)",
       "type": "chat"
     },
@@ -7971,6 +8574,7 @@
         "input": 0.1,
         "output": 0.15
       },
+      "canonical_model_id": "alibaba/qwen3.5-9b",
       "display_name": "Qwen3.5 9B (DeepInfra)",
       "type": "chat"
     },
@@ -8020,56 +8624,8 @@
         "output": 6,
         "cache_read": 0.2
       },
+      "canonical_model_id": "alibaba/qwen3.8-2.4t-a95b",
       "display_name": "Qwen3.8 2.4T A95B (DeepInfra)",
-      "type": "chat"
-    },
-    {
-      "id": "deepinfra/qwen3.8-27b",
-      "name": "Qwen3.8 27B (DeepInfra)",
-      "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-14",
-      "last_updated": "2026-08-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 235929
-      },
-      "cost": {
-        "input": 0.2,
-        "output": 2.5,
-        "cache_read": 0.05
-      },
-      "display_name": "Qwen3.8 27B (DeepInfra)",
       "type": "chat"
     },
     {
@@ -8120,6 +8676,7 @@
         "output": 1.15,
         "cache_read": 0.04
       },
+      "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash (DeepInfra)",
       "type": "chat"
     },
@@ -8170,6 +8727,7 @@
         "output": 0.87,
         "cache_read": 0.003625
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (DeepSeek)",
       "type": "chat"
     },
@@ -8219,6 +8777,7 @@
         "output": 0.6,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (DeepSeek)",
       "type": "chat"
     },
@@ -8255,6 +8814,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.5",
       "display_name": "GLM-4.5 (EmberCloud)",
       "type": "chat"
     },
@@ -8291,6 +8851,7 @@
         "output": 0.85,
         "cache_read": 0.025
       },
+      "canonical_model_id": "zhipuai/glm-4.5-air",
       "display_name": "GLM-4.5 Air (EmberCloud)",
       "type": "chat"
     },
@@ -8336,6 +8897,7 @@
         "output": 1.98,
         "cache_read": 0.19
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (EmberCloud)",
       "type": "chat"
     },
@@ -8372,6 +8934,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM-4.7 Flash (EmberCloud)",
       "type": "chat"
     },
@@ -8425,6 +8988,7 @@
         "output": 2.3,
         "cache_read": 0.144
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (EmberCloud)",
       "type": "chat"
     },
@@ -8469,6 +9033,7 @@
         "output": 2.93,
         "cache_read": 0.173
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (EmberCloud)",
       "type": "chat"
     },
@@ -8522,6 +9087,7 @@
         "output": 3.96,
         "cache_read": 0.234
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (EmberCloud)",
       "type": "chat"
     },
@@ -8558,6 +9124,7 @@
         "output": 1.98,
         "cache_read": 0.225
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5 (EmberCloud)",
       "type": "chat"
     },
@@ -8594,6 +9161,7 @@
         "output": 0.675,
         "cache_read": 0.06
       },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (EmberCloud)",
       "type": "chat"
     },
@@ -8647,6 +9215,7 @@
         "output": 0.66,
         "cache_read": 0.007
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Fireworks AI)",
       "type": "chat"
     },
@@ -8700,6 +9269,7 @@
         "output": 3.96,
         "cache_read": 0.044
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Fireworks AI)",
       "type": "chat"
     },
@@ -8751,7 +9321,103 @@
         "output": 0.66,
         "cache_read": 0.007
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Fireworks AI)",
+      "type": "chat"
+    },
+    {
+      "id": "fireworks/glm-5.3",
+      "name": "GLM-5.3 (Fireworks AI)",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
+      },
+      "canonical_model_id": "zhipuai/glm-5.3",
+      "display_name": "GLM-5.3 (Fireworks AI)",
+      "type": "chat"
+    },
+    {
+      "id": "fireworks/glm-5.3-flash",
+      "name": "GLM-5.3 Flash (Fireworks AI)",
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "family": "glm-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03
+      },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
+      "display_name": "GLM-5.3 Flash (Fireworks AI)",
       "type": "chat"
     },
     {
@@ -8802,6 +9468,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Fireworks AI)",
       "type": "chat"
     },
@@ -8853,6 +9520,7 @@
         "output": 22.5,
         "cache_read": 0.45
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 Fast (Fireworks AI)",
       "type": "chat"
     },
@@ -8904,6 +9572,7 @@
         "output": 0.116,
         "cache_read": 0.012
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Gonka24)",
       "type": "chat"
     },
@@ -8954,6 +9623,7 @@
         "output": 0.3,
         "cache_read": 0.035
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Gonka24)",
       "type": "chat"
     },
@@ -9002,6 +9672,7 @@
         "output": 0.32,
         "cache_read": 0.017
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7 (Gonka24)",
       "type": "chat"
     },
@@ -9058,6 +9729,7 @@
         "output": 2.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "google/gemini-2.5-flash",
       "display_name": "Gemini 2.5 Flash (Google AI Studio)",
       "type": "chat"
     },
@@ -9098,6 +9770,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite",
       "display_name": "Gemini 2.5 Flash Lite (Google AI Studio)",
       "type": "chat"
     },
@@ -9171,6 +9844,7 @@
           "cache_read": 0.25
         }
       },
+      "canonical_model_id": "google/gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro (Google AI Studio)",
       "type": "chat"
     },
@@ -9223,6 +9897,7 @@
         "output": 3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash (Preview) (Google AI Studio)",
       "type": "chat"
     },
@@ -9276,6 +9951,7 @@
         "cache_read": 0.025,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite",
       "display_name": "Gemini 3.1 Flash Lite (Google AI Studio)",
       "type": "chat"
     },
@@ -9343,6 +10019,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro (Preview) (Google AI Studio)",
       "type": "chat"
     },
@@ -9396,6 +10073,7 @@
         "cache_read": 0.15,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini 3.5 Flash (Google AI Studio)",
       "type": "chat"
     },
@@ -9449,6 +10127,7 @@
         "cache_read": 0.03,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.5-flash-lite",
       "display_name": "Gemini 3.5 Flash Lite (Google AI Studio)",
       "type": "chat"
     },
@@ -9502,6 +10181,7 @@
         "cache_read": 0.075,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash (Google AI Studio)",
       "type": "chat"
     },
@@ -9555,6 +10235,7 @@
         "cache_read": 0.075,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash (Google AI Studio)",
       "type": "chat"
     },
@@ -9606,6 +10287,7 @@
         "cache_read": 0.075,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash (Google AI Studio)",
       "type": "chat"
     },
@@ -9710,6 +10392,7 @@
         "output": 2.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "google/gemini-2.5-flash",
       "display_name": "Gemini 2.5 Flash (Google Vertex AI)",
       "type": "chat"
     },
@@ -9750,6 +10433,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite",
       "display_name": "Gemini 2.5 Flash Lite (Google Vertex AI)",
       "type": "chat"
     },
@@ -9823,6 +10507,7 @@
           "cache_read": 0.25
         }
       },
+      "canonical_model_id": "google/gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro (Google Vertex AI)",
       "type": "chat"
     },
@@ -9875,6 +10560,7 @@
         "output": 3,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash (Preview) (Google Vertex AI)",
       "type": "chat"
     },
@@ -9928,6 +10614,7 @@
         "cache_read": 0.025,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite",
       "display_name": "Gemini 3.1 Flash Lite (Google Vertex AI)",
       "type": "chat"
     },
@@ -9995,6 +10682,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro (Preview) (Google Vertex AI)",
       "type": "chat"
     },
@@ -10048,6 +10736,7 @@
         "cache_read": 0.15,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini 3.5 Flash (Google Vertex AI)",
       "type": "chat"
     },
@@ -10101,6 +10790,7 @@
         "cache_read": 0.03,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.5-flash-lite",
       "display_name": "Gemini 3.5 Flash Lite (Google Vertex AI)",
       "type": "chat"
     },
@@ -10154,6 +10844,7 @@
         "cache_read": 0.075,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash (Google Vertex AI)",
       "type": "chat"
     },
@@ -10207,6 +10898,7 @@
         "cache_read": 0.075,
         "cache_write": 0.08333
       },
+      "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash (Google Vertex AI)",
       "type": "chat"
     },
@@ -10301,6 +10993,7 @@
         "input": 0.15,
         "output": 0.75
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Groq)",
       "type": "chat"
     },
@@ -10346,7 +11039,105 @@
         "input": 0.1,
         "output": 0.5
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B (Groq)",
+      "type": "chat"
+    },
+    {
+      "id": "inference.net/glm-5.3",
+      "name": "GLM-5.3 (Inference.net)",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.9,
+        "output": 3,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "zhipuai/glm-5.3",
+      "display_name": "GLM-5.3 (Inference.net)",
+      "type": "chat"
+    },
+    {
+      "id": "inference.net/glm-5.3-flash",
+      "name": "GLM-5.3 Flash (Inference.net)",
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "family": "glm-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 128000
+      },
+      "cost": {
+        "input": 0.09,
+        "output": 0.28,
+        "cache_read": 0.02
+      },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
+      "display_name": "GLM-5.3 Flash (Inference.net)",
       "type": "chat"
     },
     {
@@ -10529,6 +11320,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.1",
       "display_name": "Muse Spark 1.1 (Meta)",
       "type": "chat"
     },
@@ -10581,6 +11373,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2 (Meta)",
       "type": "chat"
     },
@@ -10633,6 +11426,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3 (Meta)",
       "type": "chat"
     },
@@ -10681,6 +11475,7 @@
         "output": 1,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2",
       "display_name": "MiniMax M2 (MiniMax)",
       "type": "chat"
     },
@@ -10728,6 +11523,7 @@
         "input": 0.27,
         "output": 1.1
       },
+      "canonical_model_id": "minimax/MiniMax-M2.1",
       "display_name": "MiniMax M2.1 (MiniMax)",
       "type": "chat"
     },
@@ -10823,6 +11619,7 @@
         "output": 1.2,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax M2.5 (MiniMax)",
       "type": "chat"
     },
@@ -10871,6 +11668,7 @@
         "output": 2.4,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5-highspeed",
       "display_name": "MiniMax M2.5 Highspeed (MiniMax)",
       "type": "chat"
     },
@@ -10919,6 +11717,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7 (MiniMax)",
       "type": "chat"
     },
@@ -10967,6 +11766,7 @@
         "output": 2.4,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7-highspeed",
       "display_name": "MiniMax M2.7 Highspeed (MiniMax)",
       "type": "chat"
     },
@@ -11019,6 +11819,7 @@
         "output": 2.4,
         "cache_read": 0.12
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3 (MiniMax)",
       "type": "chat"
     },
@@ -11124,7 +11925,55 @@
         "input": 0.4,
         "output": 2
       },
+      "canonical_model_id": "mistral/devstral-2512",
       "display_name": "Devstral 2 (Mistral AI)",
+      "type": "chat"
+    },
+    {
+      "id": "mistral/glm-5.3",
+      "name": "GLM-5.3 (Mistral AI)",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.14
+      },
+      "canonical_model_id": "zhipuai/glm-5.3",
+      "display_name": "GLM-5.3 (Mistral AI)",
       "type": "chat"
     },
     {
@@ -11265,6 +12114,7 @@
         "input": 0.5,
         "output": 1.5
       },
+      "canonical_model_id": "mistral/mistral-large-2512",
       "display_name": "Mistral Large 3 (Mistral AI)",
       "type": "chat"
     },
@@ -11300,7 +12150,43 @@
         "input": 4,
         "output": 12
       },
+      "canonical_model_id": "mistral/mistral-large-latest",
       "display_name": "Mistral Large Latest (Mistral AI)",
+      "type": "chat"
+    },
+    {
+      "id": "mistral/mistral-medium-3-5",
+      "name": "Mistral Medium 3.5 (Mistral AI)",
+      "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
+      "family": "mistral-medium",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-05-01",
+      "last_updated": "2026-05-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "display_name": "Mistral Medium 3.5 (Mistral AI)",
       "type": "chat"
     },
     {
@@ -11336,7 +12222,45 @@
         "input": 0.1,
         "output": 0.3
       },
+      "canonical_model_id": "mistral/mistral-small-2506",
       "display_name": "Mistral Small 3.2 (Mistral AI)",
+      "type": "chat"
+    },
+    {
+      "id": "mistral/mistral-small-2603",
+      "name": "Mistral Small 4 (Mistral AI)",
+      "description": "Fast Mistral production model for chat, extraction, and cost-sensitive agents",
+      "family": "mistral-small",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-06",
+      "release_date": "2026-03-16",
+      "last_updated": "2026-03-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 256000
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "canonical_model_id": "mistral/mistral-small-2603",
+      "display_name": "Mistral Small 4 (Mistral AI)",
       "type": "chat"
     },
     {
@@ -11392,6 +12316,7 @@
         "output": 3,
         "cache_read": 0.1
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5 (Moonshot AI)",
       "type": "chat"
     },
@@ -11448,6 +12373,7 @@
         "output": 4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (Moonshot AI)",
       "type": "chat"
     },
@@ -11502,6 +12428,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code (Moonshot AI)",
       "type": "chat"
     },
@@ -11556,6 +12483,7 @@
         "output": 8,
         "cache_read": 0.38
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code-highspeed",
       "display_name": "Kimi K2.7 Code Highspeed (Moonshot AI)",
       "type": "chat"
     },
@@ -11604,6 +12532,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Moonshot AI)",
       "type": "chat"
     },
@@ -11646,6 +12575,7 @@
         "output": 0.4,
         "cache_read": 0.1345
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 (NovitaAI)",
       "type": "chat"
     },
@@ -11700,6 +12630,7 @@
         "output": 0.28,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (NovitaAI)",
       "type": "chat"
     },
@@ -11752,6 +12683,7 @@
         "output": 1.2,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (NovitaAI)",
       "type": "chat"
     },
@@ -11823,6 +12755,7 @@
         "input": 0.13,
         "output": 0.4
       },
+      "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT (NovitaAI)",
       "type": "chat"
     },
@@ -11857,6 +12790,7 @@
         "input": 0.14,
         "output": 0.4
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (NovitaAI)",
       "type": "chat"
     },
@@ -11901,6 +12835,7 @@
         "output": 1.8,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM-4.5V (NovitaAI)",
       "type": "chat"
     },
@@ -11943,6 +12878,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM-4.6 (NovitaAI)",
       "type": "chat"
     },
@@ -11987,6 +12923,7 @@
         "output": 0.9,
         "cache_read": 0.055
       },
+      "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V (NovitaAI)",
       "type": "chat"
     },
@@ -12032,6 +12969,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (NovitaAI)",
       "type": "chat"
     },
@@ -12085,6 +13023,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (NovitaAI)",
       "type": "chat"
     },
@@ -12138,6 +13077,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (NovitaAI)",
       "type": "chat"
     },
@@ -12191,6 +13131,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (NovitaAI)",
       "type": "chat"
     },
@@ -12237,6 +13178,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (NovitaAI)",
       "type": "chat"
     },
@@ -12286,6 +13228,7 @@
         "output": 0.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (NovitaAI)",
       "type": "chat"
     },
@@ -12333,6 +13276,7 @@
         "output": 0.58,
         "cache_read": 0.035
       },
+      "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3 (NovitaAI)",
       "type": "chat"
     },
@@ -12423,6 +13367,7 @@
         "output": 3.4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (NovitaAI)",
       "type": "chat"
     },
@@ -12477,6 +13422,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code (NovitaAI)",
       "type": "chat"
     },
@@ -12529,6 +13475,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (NovitaAI)",
       "type": "chat"
     },
@@ -12676,6 +13623,7 @@
         "input": 0.135,
         "output": 0.4
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -12712,6 +13660,7 @@
         "input": 0.27,
         "output": 0.85
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama 4 Maverick 17B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -12748,6 +13697,7 @@
         "input": 0.18,
         "output": 0.59
       },
+      "canonical_model_id": "meta/llama-4-scout-17b-instruct",
       "display_name": "Llama 4 Scout 17B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -12818,6 +13768,7 @@
           "cache_read": 0.16
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5 (NovitaAI)",
       "type": "chat"
     },
@@ -12886,6 +13837,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro (NovitaAI)",
       "type": "chat"
     },
@@ -12934,6 +13886,7 @@
         "output": 1.2,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2.1",
       "display_name": "MiniMax M2.1 (NovitaAI)",
       "type": "chat"
     },
@@ -12982,6 +13935,7 @@
         "output": 1.2,
         "cache_read": 0.03
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax M2.5 (NovitaAI)",
       "type": "chat"
     },
@@ -13030,6 +13984,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7 (NovitaAI)",
       "type": "chat"
     },
@@ -13097,6 +14052,7 @@
         "input": 0.09,
         "output": 0.58
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B A22B Instruct 2507 (NovitaAI)",
       "type": "chat"
     },
@@ -13165,6 +14121,7 @@
         "input": 0.07,
         "output": 0.27
       },
+      "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen3 Coder 30B A3B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -13200,6 +14157,7 @@
         "input": 0.38,
         "output": 1.55
       },
+      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen3 Coder 480B A35B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -13235,6 +14193,7 @@
         "input": 0.845,
         "output": 3.38
       },
+      "canonical_model_id": "alibaba/qwen3-max",
       "display_name": "Qwen3 Max (NovitaAI)",
       "type": "chat"
     },
@@ -13270,6 +14229,7 @@
         "input": 0.15,
         "output": 1.5
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3 Next 80B A3B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -13306,6 +14266,7 @@
         "input": 0.3,
         "output": 1.5
       },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-instruct",
       "display_name": "Qwen3 VL 235B A22B Instruct (NovitaAI)",
       "type": "chat"
     },
@@ -13344,6 +14305,7 @@
         "input": 0.98,
         "output": 3.95
       },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-thinking",
       "display_name": "Qwen3 VL 235B A22B Thinking (NovitaAI)",
       "type": "chat"
     },
@@ -13379,6 +14341,59 @@
         "output": 0.7
       },
       "display_name": "Qwen3 VL 30B A3B Instruct (NovitaAI)",
+      "type": "chat"
+    },
+    {
+      "id": "novita/qwen3.5-122b-a10b",
+      "name": "Qwen3.5 122B A10B (NovitaAI)",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 3.2
+      },
+      "canonical_model_id": "alibaba/qwen3.5-122b-a10b",
+      "display_name": "Qwen3.5 122B A10B (NovitaAI)",
       "type": "chat"
     },
     {
@@ -13430,6 +14445,7 @@
         "input": 0.248,
         "output": 1.485
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B (NovitaAI)",
       "type": "chat"
     },
@@ -13480,6 +14496,7 @@
         "output": 3.75,
         "cache_read": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3.7-max",
       "display_name": "Qwen3.7 Max (NovitaAI)",
       "type": "chat"
     },
@@ -13530,6 +14547,7 @@
         "output": 6,
         "cache_read": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3.8-2.4t-a95b",
       "display_name": "Qwen3.8 2.4T A95B (NovitaAI)",
       "type": "chat"
     },
@@ -13567,6 +14585,7 @@
         "output": 3,
         "cache_read": 0.085
       },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B (NovitaAI)",
       "type": "chat"
     },
@@ -13616,6 +14635,7 @@
         "output": 0.47,
         "cache_read": 0.016
       },
+      "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash (NovitaAI)",
       "type": "chat"
     },
@@ -13668,6 +14688,7 @@
         "output": 6,
         "cache_read": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max (NovitaAI)",
       "type": "chat"
     },
@@ -13769,6 +14790,7 @@
         "output": 1.15,
         "cache_read": 0.04
       },
+      "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash (NovitaAI)",
       "type": "chat"
     },
@@ -13804,6 +14826,7 @@
         "input": 0.5,
         "output": 1.5
       },
+      "canonical_model_id": "openai/gpt-3.5-turbo",
       "display_name": "GPT-3.5 Turbo (OpenAI)",
       "type": "chat"
     },
@@ -13839,6 +14862,7 @@
         "input": 30,
         "output": 60
       },
+      "canonical_model_id": "openai/gpt-4",
       "display_name": "GPT-4 (OpenAI)",
       "type": "chat"
     },
@@ -13875,6 +14899,7 @@
         "input": 10,
         "output": 30
       },
+      "canonical_model_id": "openai/gpt-4-turbo",
       "display_name": "GPT-4 Turbo (OpenAI)",
       "type": "chat"
     },
@@ -13913,6 +14938,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/gpt-4.1",
       "display_name": "GPT-4.1 (OpenAI)",
       "type": "chat"
     },
@@ -13951,6 +14977,7 @@
         "output": 1.6,
         "cache_read": 0.1
       },
+      "canonical_model_id": "openai/gpt-4.1-mini",
       "display_name": "GPT-4.1 Mini (OpenAI)",
       "type": "chat"
     },
@@ -13988,6 +15015,7 @@
         "output": 0.4,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-4.1-nano",
       "display_name": "GPT-4.1 Nano (OpenAI)",
       "type": "chat"
     },
@@ -14026,6 +15054,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o",
       "display_name": "GPT-4o (OpenAI)",
       "type": "chat"
     },
@@ -14064,6 +15093,7 @@
         "output": 0.6,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-4o-mini",
       "display_name": "GPT-4o Mini (OpenAI)",
       "type": "chat"
     },
@@ -14184,6 +15214,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5 (OpenAI)",
       "type": "chat"
     },
@@ -14234,6 +15265,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini (OpenAI)",
       "type": "chat"
     },
@@ -14283,6 +15315,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano (OpenAI)",
       "type": "chat"
     },
@@ -14329,6 +15362,7 @@
         "input": 15,
         "output": 120
       },
+      "canonical_model_id": "openai/gpt-5-pro",
       "display_name": "GPT-5 Pro (OpenAI)",
       "type": "chat"
     },
@@ -14381,6 +15415,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1 (OpenAI)",
       "type": "chat"
     },
@@ -14432,6 +15467,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2 (OpenAI)",
       "type": "chat"
     },
@@ -14480,6 +15516,7 @@
         "input": 21,
         "output": 168
       },
+      "canonical_model_id": "openai/gpt-5.2-pro",
       "display_name": "GPT-5.2 Pro (OpenAI)",
       "type": "chat"
     },
@@ -14531,6 +15568,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex (OpenAI)",
       "type": "chat"
     },
@@ -14583,6 +15621,7 @@
         "output": 15,
         "cache_read": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4 (OpenAI)",
       "type": "chat"
     },
@@ -14634,6 +15673,7 @@
         "output": 4.5,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 Mini (OpenAI)",
       "type": "chat"
     },
@@ -14685,6 +15725,7 @@
         "output": 1.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 Nano (OpenAI)",
       "type": "chat"
     },
@@ -14733,6 +15774,7 @@
         "input": 30,
         "output": 180
       },
+      "canonical_model_id": "openai/gpt-5.4-pro",
       "display_name": "GPT-5.4 Pro (OpenAI)",
       "type": "chat"
     },
@@ -14801,6 +15843,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5 (OpenAI)",
       "type": "chat"
     },
@@ -14864,6 +15907,7 @@
           "output": 270
         }
       },
+      "canonical_model_id": "openai/gpt-5.5-pro",
       "display_name": "GPT-5.5 Pro (OpenAI)",
       "type": "chat"
     },
@@ -14918,6 +15962,7 @@
         "cache_read": 0.02,
         "cache_write": 0.25
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna (OpenAI)",
       "type": "chat"
     },
@@ -14972,6 +16017,7 @@
         "cache_read": 0.4,
         "cache_write": 5
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol (OpenAI)",
       "type": "chat"
     },
@@ -15026,6 +16072,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra (OpenAI)",
       "type": "chat"
     },
@@ -15130,6 +16177,7 @@
         "cache_read": 0.01,
         "cache_write": 0.125
       },
+      "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna (OpenAI)",
       "type": "chat"
     },
@@ -15184,6 +16232,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol (OpenAI)",
       "type": "chat"
     },
@@ -15233,6 +16282,7 @@
         "output": 60,
         "cache_read": 7.5
       },
+      "canonical_model_id": "openai/o1",
       "display_name": "o1 (OpenAI)",
       "type": "chat"
     },
@@ -15271,6 +16321,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/o3",
       "display_name": "o3 (OpenAI)",
       "type": "chat"
     },
@@ -15307,6 +16358,7 @@
         "output": 4.4,
         "cache_read": 0.55
       },
+      "canonical_model_id": "openai/o3-mini",
       "display_name": "o3 Mini (OpenAI)",
       "type": "chat"
     },
@@ -15355,6 +16407,7 @@
         "output": 4.4,
         "cache_read": 0.275
       },
+      "canonical_model_id": "openai/o4-mini",
       "display_name": "o4 Mini (OpenAI)",
       "type": "chat"
     },
@@ -15387,80 +16440,12 @@
         "output": 4096
       },
       "cost": {
-        "input": 1,
-        "output": 1
+        "input": 0.25,
+        "output": 2.5,
+        "cache_write": 0.25
       },
+      "canonical_model_id": "perplexity/sonar",
       "display_name": "Sonar (Perplexity)",
-      "type": "chat"
-    },
-    {
-      "id": "perplexity/sonar-pro",
-      "name": "Sonar Pro (Perplexity)",
-      "description": "Deeper Sonar search model with broader retrieval and stronger synthesis",
-      "family": "sonar-pro",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-09-01",
-      "release_date": "2024-01-01",
-      "last_updated": "2025-09-01",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 8192
-      },
-      "cost": {
-        "input": 3,
-        "output": 15
-      },
-      "display_name": "Sonar Pro (Perplexity)",
-      "type": "chat"
-    },
-    {
-      "id": "perplexity/sonar-reasoning-pro",
-      "name": "Sonar Reasoning Pro (Perplexity)",
-      "description": "Web-grounded Sonar for multi-step research questions that need cited reasoning",
-      "family": "sonar-reasoning",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-09-01",
-      "release_date": "2024-01-01",
-      "last_updated": "2025-09-01",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
-      "cost": {
-        "input": 2,
-        "output": 8
-      },
-      "display_name": "Sonar Reasoning Pro (Perplexity)",
       "type": "chat"
     },
     {
@@ -15527,6 +16512,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro (Preview) (Quartz)",
       "type": "chat"
     },
@@ -15581,6 +16567,7 @@
         "output": 0.28,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (RanoAI)",
       "type": "chat"
     },
@@ -15633,6 +16620,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Runpod)",
       "type": "chat"
     },
@@ -15684,6 +16672,7 @@
         "output": 0.153,
         "cache_read": 0.014
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Runware)",
       "type": "chat"
     },
@@ -15735,6 +16724,7 @@
         "output": 1.922,
         "cache_read": 0.079
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Runware)",
       "type": "chat"
     },
@@ -15753,9 +16743,7 @@
           "type": "effort",
           "values": [
             "none",
-            "minimal",
             "low",
-            "medium",
             "high",
             "xhigh",
             "max"
@@ -15787,6 +16775,7 @@
         "output": 0.6,
         "cache_read": 0.01
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Runware)",
       "type": "chat"
     },
@@ -15835,6 +16824,7 @@
         "output": 0.297,
         "cache_read": 0.012
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (Runware)",
       "type": "chat"
     },
@@ -15888,6 +16878,7 @@
         "output": 2.55,
         "cache_read": 0.16
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (Runware)",
       "type": "chat"
     },
@@ -15934,6 +16925,7 @@
         "output": 4,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (Runware)",
       "type": "chat"
     },
@@ -15987,6 +16979,7 @@
         "output": 0.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Runware)",
       "type": "chat"
     },
@@ -16033,6 +17026,7 @@
         "output": 0.14,
         "cache_read": 0.032
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Runware)",
       "type": "chat"
     },
@@ -16089,6 +17083,7 @@
         "output": 3.05,
         "cache_read": 0.13
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (Runware)",
       "type": "chat"
     },
@@ -16138,6 +17133,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Runware)",
       "type": "chat"
     },
@@ -16232,6 +17228,7 @@
         "output": 30,
         "cache_read": 0.5
       },
+      "canonical_model_id": "sakana/fugu-ultra",
       "display_name": "Fugu Ultra (Sakana AI)",
       "type": "chat"
     },
@@ -16315,6 +17312,7 @@
         "output": 0.6,
         "cache_read": 0.01
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (SCX.ai)",
       "type": "chat"
     },
@@ -16368,6 +17366,7 @@
         "output": 2.55,
         "cache_read": 0.16
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (SCX.ai)",
       "type": "chat"
     },
@@ -16405,6 +17404,7 @@
         "output": 6.5,
         "cache_read": 0.45
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 Turbo (SCX.ai)",
       "type": "chat"
     },
@@ -16451,6 +17451,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (SCX.ai)",
       "type": "chat"
     },
@@ -16500,6 +17501,7 @@
         "output": 0.25,
         "cache_read": 0.025
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (SCX.ai)",
       "type": "chat"
     },
@@ -16555,6 +17557,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code (SCX.ai)",
       "type": "chat"
     },
@@ -16607,6 +17610,7 @@
         "output": 18,
         "cache_read": 0.35
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (SCX.ai)",
       "type": "chat"
     },
@@ -16660,6 +17664,7 @@
         "cache_read": 0.25,
         "cache_write": 2.5
       },
+      "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max (SCX.ai)",
       "type": "chat"
     },
@@ -16694,6 +17699,7 @@
         "input": 0.3,
         "output": 0.91
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT (SCX.ai (Turbo))",
       "type": "chat"
     },
@@ -16739,6 +17745,7 @@
         "input": 0.17,
         "output": 0.55
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (SCX.ai (Turbo))",
       "type": "chat"
     },
@@ -16774,6 +17781,7 @@
         "input": 0.53,
         "output": 1.62
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama 4 Maverick 17B Instruct (SCX.ai (Turbo))",
       "type": "chat"
     },
@@ -16822,6 +17830,7 @@
         "output": 1.79,
         "cache_read": 0.05
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7 (SCX.ai (Turbo))",
       "type": "chat"
     },
@@ -16863,6 +17872,7 @@
         "input": 0.36,
         "output": 0.87
       },
+      "canonical_model_id": "alibaba/qwen3-32b",
       "display_name": "Qwen3 32B (SCX.ai (Turbo))",
       "type": "chat"
     },
@@ -16917,6 +17927,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Tencent Cloud)",
       "type": "chat"
     },
@@ -16971,6 +17982,7 @@
         "output": 0.87,
         "cache_read": 0.00363
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Tencent Cloud)",
       "type": "chat"
     },
@@ -17024,6 +18036,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17072,6 +18085,7 @@
         "output": 4,
         "cache_read": 0.24
       },
+      "canonical_model_id": "zhipuai/glm-5-turbo",
       "display_name": "GLM-5 Turbo (Tencent Cloud)",
       "type": "chat"
     },
@@ -17123,6 +18137,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17176,6 +18191,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17227,6 +18243,7 @@
         "output": 4,
         "cache_read": 0.24
       },
+      "canonical_model_id": "zhipuai/glm-5v-turbo",
       "display_name": "GLM-5V Turbo (Tencent Cloud)",
       "type": "chat"
     },
@@ -17310,6 +18327,7 @@
         "output": 0.528,
         "cache_read": 0.033
       },
+      "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17360,6 +18378,7 @@
         "output": 2.501,
         "cache_read": 0.042
       },
+      "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 Preview (Tencent Cloud)",
       "type": "chat"
     },
@@ -17416,6 +18435,7 @@
         "output": 3.566,
         "cache_read": 0.145
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17471,6 +18491,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code (Tencent Cloud)",
       "type": "chat"
     },
@@ -17526,6 +18547,7 @@
         "output": 8,
         "cache_read": 0.38
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code-highspeed",
       "display_name": "Kimi K2.7 Code Highspeed (Tencent Cloud)",
       "type": "chat"
     },
@@ -17578,6 +18600,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17645,6 +18668,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro (Tencent Cloud)",
       "type": "chat"
     },
@@ -17693,6 +18717,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax M2.7 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17743,6 +18768,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3 (Tencent Cloud)",
       "type": "chat"
     },
@@ -17793,6 +18819,7 @@
         "output": 0.28,
         "cache_read": 0.03
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash (Together AI)",
       "type": "chat"
     },
@@ -17843,6 +18870,7 @@
         "output": 3.96,
         "cache_read": 0.13
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (Together AI)",
       "type": "chat"
     },
@@ -17893,6 +18921,7 @@
         "output": 1.2,
         "cache_read": 0.006
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Together AI)",
       "type": "chat"
     },
@@ -17937,6 +18966,7 @@
         "input": 0.45,
         "output": 2
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (Together AI)",
       "type": "chat"
     },
@@ -17954,7 +18984,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "high",
             "max"
@@ -17984,6 +19013,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (Together AI)",
       "type": "chat"
     },
@@ -18001,12 +19031,8 @@
         {
           "type": "effort",
           "values": [
-            "none",
-            "minimal",
             "low",
-            "medium",
             "high",
-            "xhigh",
             "max"
           ]
         }
@@ -18037,6 +19063,7 @@
         "output": 0.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Together AI)",
       "type": "chat"
     },
@@ -18082,59 +19109,8 @@
         "input": 0.15,
         "output": 0.6
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Together AI)",
-      "type": "chat"
-    },
-    {
-      "id": "together-ai/inkling",
-      "name": "Inkling (Together AI)",
-      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
-      "family": "ling",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-07-15",
-      "last_updated": "2026-07-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 471859
-      },
-      "cost": {
-        "input": 1,
-        "output": 4.05,
-        "cache_read": 0.17
-      },
-      "display_name": "Inkling (Together AI)",
       "type": "chat"
     },
     {
@@ -18177,6 +19153,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 (Together AI)",
       "type": "chat"
     },
@@ -18218,6 +19195,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3 (Together AI)",
       "type": "chat"
     },
@@ -18269,6 +19247,7 @@
         "output": 1.5,
         "cache_read": 0.04
       },
+      "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B (Together AI)",
       "type": "chat"
     },
@@ -18316,6 +19295,7 @@
         "output": 6,
         "cache_read": 0.25
       },
+      "canonical_model_id": "alibaba/qwen3.8-2.4t-a95b",
       "display_name": "Qwen3.8 2.4T A95B (Together AI)",
       "type": "chat"
     },
@@ -18367,6 +19347,7 @@
         "output": 5,
         "cache_read": 0.1
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18423,6 +19404,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5-20251101",
       "display_name": "Claude Opus 4.5 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18474,6 +19456,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18525,6 +19508,7 @@
         "output": 25,
         "cache_read": 0.5
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18581,6 +19565,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18637,6 +19622,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18689,6 +19675,7 @@
         "cache_read": 0.2,
         "cache_write": 2.5
       },
+      "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 (Vertex AI (Anthropic))",
       "type": "chat"
     },
@@ -18725,6 +19712,7 @@
         "output": 1.68,
         "cache_read": 0.056
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -18769,6 +19757,7 @@
         "input": 0.6,
         "output": 2.2
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -18822,6 +19811,7 @@
         "output": 3.2,
         "cache_read": 0.1
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -18986,6 +19976,7 @@
         "output": 6,
         "cache_read": 0.5
       },
+      "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6 (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19027,6 +20018,7 @@
         "output": 2.5,
         "cache_read": 0.06
       },
+      "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19061,6 +20053,7 @@
         "input": 0.22,
         "output": 0.88
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B A22B Instruct 2507 (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19097,6 +20090,7 @@
         "output": 1.8,
         "cache_read": 0.022
       },
+      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen3 Coder 480B A35B Instruct (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19132,6 +20126,7 @@
         "input": 0.15,
         "output": 1.2
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3 Next 80B A3B Instruct (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19181,6 +20176,7 @@
         "input": 0.15,
         "output": 1.2
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-thinking",
       "display_name": "Qwen3 Next 80B A3B Thinking (Vertex AI (OpenAI-compatible))",
       "type": "chat"
     },
@@ -19494,6 +20490,7 @@
         "output": 6,
         "cache_read": 0.5
       },
+      "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6 (xAI)",
       "type": "chat"
     },
@@ -19675,6 +20672,7 @@
           "cache_read": 0.16
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5 (Xiaomi)",
       "type": "chat"
     },
@@ -19742,6 +20740,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro (Xiaomi)",
       "type": "chat"
     },
@@ -19792,6 +20791,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "xiaomi/mimo-v2.6-flash",
       "display_name": "MiMo V2.6 Flash (Xiaomi)",
       "type": "chat"
     },
@@ -19842,6 +20842,7 @@
         "output": 0.87,
         "cache_read": 0.0036
       },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro",
       "display_name": "MiMo V2.6 Pro (Xiaomi)",
       "type": "chat"
     },
@@ -19918,6 +20919,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.5",
       "display_name": "GLM-4.5 (Z AI)",
       "type": "chat"
     },
@@ -19954,6 +20956,7 @@
         "output": 1.1,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-4.5-air",
       "display_name": "GLM-4.5 Air (Z AI)",
       "type": "chat"
     },
@@ -20074,6 +21077,7 @@
         "output": 1.8,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM-4.5V (Z AI)",
       "type": "chat"
     },
@@ -20116,6 +21120,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM-4.6 (Z AI)",
       "type": "chat"
     },
@@ -20160,6 +21165,7 @@
         "output": 0.9,
         "cache_read": 0.05
       },
+      "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V (Z AI)",
       "type": "chat"
     },
@@ -20247,6 +21253,7 @@
         "output": 2.2,
         "cache_read": 0.11
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7 (Z AI)",
       "type": "chat"
     },
@@ -20289,6 +21296,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flashx",
       "display_name": "GLM-4.7 FlashX (Z AI)",
       "type": "chat"
     },
@@ -20342,6 +21350,7 @@
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5 (Z AI)",
       "type": "chat"
     },
@@ -20395,6 +21404,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1 (Z AI)",
       "type": "chat"
     },
@@ -20444,6 +21454,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2 (Z AI)",
       "type": "chat"
     },
@@ -20490,6 +21501,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (Z AI)",
       "type": "chat"
     },
@@ -20539,6 +21551,7 @@
         "output": 0.5,
         "cache_read": 0.03
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Z AI)",
       "type": "chat"
     }

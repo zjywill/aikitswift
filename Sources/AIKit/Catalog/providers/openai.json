@@ -493,6 +493,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
       "type": "chat"
     },
@@ -1486,6 +1487,7 @@
           "cache_write": 10
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6",
       "type": "chat"
     },
@@ -1584,6 +1586,7 @@
           "cache_write": 0.5
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
       "type": "chat"
     },
@@ -1682,6 +1685,7 @@
           "cache_write": 10
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
       "type": "chat"
     },
@@ -1780,6 +1784,7 @@
           "cache_write": 5
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
       "type": "chat"
     },
@@ -1877,6 +1882,7 @@
           "cache_write": 25
         }
       },
+      "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra",
       "type": "chat"
     },
@@ -1975,6 +1981,7 @@
           "cache_write": 0.25
         }
       },
+      "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna",
       "type": "chat"
     },
@@ -2073,7 +2080,135 @@
           "cache_write": 5
         }
       },
+      "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol",
+      "type": "chat"
+    },
+    {
+      "id": "gpt-daybreak-blue-latest",
+      "name": "Daybreak Blue",
+      "description": "Alias for flagship general-purpose models with safeguards for defensive cybersecurity work",
+      "family": "gpt-sol",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-02-16",
+      "release_date": "2026-08-07",
+      "last_updated": "2026-08-07",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 922000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5,
+        "tiers": [
+          {
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 8,
+          "output": 30,
+          "cache_read": 0.8,
+          "cache_write": 10
+        }
+      },
+      "canonical_model_id": "openai/gpt-5.6-sol",
+      "display_name": "Daybreak Blue",
+      "type": "chat"
+    },
+    {
+      "id": "gpt-daybreak-red-latest",
+      "name": "Daybreak Red",
+      "description": "Alias for advanced cybersecurity models for authorized vulnerability research and security testing",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-02-16",
+      "release_date": "2026-08-07",
+      "last_updated": "2026-08-07",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 400000,
+        "input": 272000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 12.5,
+        "output": 75,
+        "cache_read": 1.25,
+        "cache_write": 15.625
+      },
+      "canonical_model_id": "openai/gpt-5.6-cyber",
+      "display_name": "Daybreak Red",
       "type": "chat"
     },
     {
@@ -2105,6 +2240,7 @@
         "output": 0
       },
       "status": "deprecated",
+      "canonical_model_id": "openai/gpt-image-1",
       "display_name": "gpt-image-1",
       "type": "image-generation"
     },
@@ -2169,6 +2305,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "openai/gpt-image-1.5",
       "display_name": "gpt-image-1.5",
       "type": "image-generation"
     },
@@ -2205,6 +2342,7 @@
         "output": 30,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-image-2",
       "display_name": "gpt-image-2",
       "type": "image-generation"
     },
@@ -2260,6 +2398,7 @@
         "input_audio": 32,
         "output_audio": 64
       },
+      "canonical_model_id": "openai/gpt-realtime-2.1",
       "display_name": "GPT-Realtime-2.1",
       "type": "realtime"
     },

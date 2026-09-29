@@ -1476,6 +1476,7 @@
         "output": 0.28,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -1706,6 +1707,7 @@
         "cache_read": 0.26,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"
     }

@@ -38,6 +38,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -53,7 +54,14 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
         }
       ],
       "tool_call": true,
@@ -79,6 +87,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
       "type": "chat"
     },
@@ -92,7 +101,17 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -115,6 +134,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
       "type": "chat"
     },
@@ -128,7 +148,17 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -152,13 +182,14 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash",
       "type": "chat"
     },
     {
-      "id": "mimo-v2.5",
-      "name": "MiMo-V2.5",
-      "description": "Open MiMo model for multimodal coding agents and long-context automation",
+      "id": "mimo-v2.6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "description": "MiMo Flash model for multimodal coding agents and long-context automation",
       "family": "mimo",
       "attachment": true,
       "reasoning": {
@@ -168,9 +199,8 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text",
@@ -190,8 +220,43 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "MiMo-V2.5",
+      "canonical_model_id": "xiaomi/mimo-v2.6-flash",
+      "display_name": "MiMo-V2.6-Flash",
       "type": "chat"
+    },
+    {
+      "id": "qwen-image-2.1",
+      "name": "Qwen-Image-2.1",
+      "description": "Unified text-to-image generation and image editing model with native RGBA transparency and reference-image editing",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "temperature": true,
+      "release_date": "2026-09-14",
+      "last_updated": "2026-09-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 8192,
+        "output": 0
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "canonical_model_id": "alibaba/qwen-image-2.1",
+      "display_name": "Qwen-Image-2.1",
+      "type": "image-generation"
     },
     {
       "id": "qwen3.6",
@@ -205,7 +270,14 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
         }
       ],
       "tool_call": true,
@@ -231,6 +303,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B-A3B",
       "type": "chat"
     },
@@ -267,6 +340,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash",
       "type": "chat"
     }

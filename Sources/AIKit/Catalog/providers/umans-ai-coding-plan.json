@@ -52,6 +52,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "Umans Coder",
       "type": "chat"
     },
@@ -106,15 +107,16 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
     {
-      "id": "umans-deepseek-v4-pro-0813",
-      "name": "DeepSeek V4 Pro",
-      "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
-      "attachment": false,
+      "id": "umans-deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -126,6 +128,7 @@
         {
           "type": "effort",
           "values": [
+            "low",
             "high",
             "max"
           ]
@@ -137,11 +140,13 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
-      "last_updated": "2026-08-22",
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -158,7 +163,8 @@
         "cache_read": 0,
         "cache_write": 0
       },
-      "display_name": "DeepSeek V4 Pro",
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
     {
@@ -212,6 +218,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Umans Flash",
       "type": "chat"
     },
@@ -264,6 +271,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM 5.3 Flash",
       "type": "chat"
     },
@@ -318,6 +326,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -372,6 +381,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B",
       "type": "chat"
     }

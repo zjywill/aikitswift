@@ -90,6 +90,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
     },
@@ -133,6 +134,7 @@
         "output": 8,
         "cache_read": 0.38
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code HighSpeed",
       "type": "chat"
     },
@@ -187,6 +189,7 @@
         "output": 15,
         "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     }

@@ -3,11 +3,11 @@
 Vendored provider definitions. Each file names a provider's base URL, its
 models, and the `adapter` identifying which wire protocol it speaks.
 
-- Upstream commit: `f90976c`
-- Providers: 201
-- Models: 6700
+- Upstream commit: `23e18c5`
+- Providers: 203
+- Models: 6761
 - Updated from upstream: 201
-- Added from upstream: 0
+- Added from upstream: 2
 - Removed from previous catalog: 0
 - Unsupported upstream providers omitted: 22
 
@@ -15,7 +15,7 @@ models, and the `adapter` identifying which wire protocol it speaks.
 
 | Adapter | Providers |
 |---|---|
-| `openai` | 189 |
+| `openai` | 191 |
 | `anthropic` | 9 |
 | `gemini` | 2 |
 | `openai-responses` | 1 |

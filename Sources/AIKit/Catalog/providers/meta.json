@@ -51,6 +51,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.1",
       "display_name": "Muse Spark 1.1",
       "type": "chat"
     },
@@ -103,6 +104,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2",
       "type": "chat"
     },
@@ -155,6 +157,7 @@
         "output": 0.2,
         "cache_read": 0.002
       },
+      "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2 Contributor",
       "type": "chat"
     },
@@ -208,6 +211,7 @@
         "output": 4.25,
         "cache_read": 0.15
       },
+      "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3",
       "type": "chat"
     },
@@ -260,6 +264,7 @@
         "output": 0.2,
         "cache_read": 0.002
       },
+      "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3 Contributor",
       "type": "chat"
     }

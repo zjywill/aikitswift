@@ -55,6 +55,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
     },
@@ -106,6 +107,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3-256K",
       "type": "chat"
     },
@@ -159,6 +161,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k2.8-preview",
       "display_name": "kimi-for-coding",
       "type": "chat"
     },
@@ -203,6 +206,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code-highspeed",
       "display_name": "Kimi For Coding HighSpeed",
       "type": "chat"
     }

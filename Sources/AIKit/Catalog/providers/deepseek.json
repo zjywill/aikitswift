@@ -55,6 +55,7 @@
         "reasoning": 0.6,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -111,6 +112,7 @@
         "reasoning": 0.6,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
@@ -167,6 +169,7 @@
         "reasoning": 0.6,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
     },
@@ -220,6 +223,7 @@
         "reasoning": 0.87,
         "cache_read": 0.003625
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
     }

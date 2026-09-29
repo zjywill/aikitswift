@@ -40,6 +40,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 (latest)",
       "type": "chat"
     },
@@ -85,6 +86,7 @@
         "cache_read": 1.5,
         "cache_write": 18.75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Claude Opus 4.1 (latest)",
       "type": "chat"
     },
@@ -130,6 +132,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Claude Opus 4.5 (latest)",
       "type": "chat"
     },
@@ -195,6 +198,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6",
       "type": "chat"
     },
@@ -260,6 +264,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
       "type": "chat"
     },
@@ -305,6 +310,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5-20250929",
       "display_name": "Claude Sonnet 4.5",
       "type": "chat"
     },
@@ -350,6 +356,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 (latest)",
       "type": "chat"
     },
@@ -395,6 +402,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6",
       "type": "chat"
     },
@@ -444,6 +452,7 @@
         "cache_read": 0.03,
         "input_audio": 1
       },
+      "canonical_model_id": "google/gemini-2.5-flash",
       "display_name": "Gemini 2.5 Flash",
       "type": "chat"
     },
@@ -508,6 +517,7 @@
           "cache_read": 0.25
         }
       },
+      "canonical_model_id": "google/gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro",
       "type": "chat"
     },
@@ -560,6 +570,7 @@
         "cache_read": 0.025,
         "input_audio": 0.5
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite-preview",
       "display_name": "Gemini 3.1 Flash Lite Preview",
       "type": "chat"
     },
@@ -627,6 +638,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview-customtools",
       "display_name": "Gemini 3.1 Pro Preview Custom Tools",
       "type": "chat"
     },
@@ -679,6 +691,7 @@
         "cache_read": 0.05,
         "input_audio": 1
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash Preview",
       "type": "chat"
     },
@@ -746,6 +759,7 @@
           "cache_read": 0.4
         }
       },
+      "canonical_model_id": "google/gemini-3-pro-preview",
       "display_name": "Gemini 3 Pro Preview",
       "type": "chat"
     },
@@ -792,6 +806,7 @@
         "output": 4.4,
         "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"
     },
@@ -842,6 +857,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
       "type": "chat"
     },
@@ -892,6 +908,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1",
       "type": "chat"
     },
@@ -942,6 +959,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2",
       "type": "chat"
     },
@@ -1024,6 +1042,7 @@
           "cache_read": 0.5
         }
       },
+      "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4",
       "type": "chat"
     },
@@ -1089,6 +1108,7 @@
         "output": 4.5,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 mini",
       "type": "chat"
     },
@@ -1138,6 +1158,7 @@
         "output": 1.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 nano",
       "type": "chat"
     },
@@ -1220,6 +1241,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
       "type": "chat"
     },
@@ -1286,6 +1308,7 @@
           "cache_read": 0.2
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
       "type": "chat"
     },
@@ -1353,6 +1376,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
       "type": "chat"
     },
@@ -1419,6 +1443,7 @@
           "cache_read": 0.5
         }
       },
+      "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
       "type": "chat"
     },
@@ -1469,6 +1494,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini",
       "type": "chat"
     },
@@ -1519,6 +1545,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano",
       "type": "chat"
     },
@@ -1658,6 +1685,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
       "type": "chat"
     }

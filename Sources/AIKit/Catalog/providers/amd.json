@@ -51,6 +51,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
     },
@@ -102,6 +103,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"
     },
@@ -154,6 +156,7 @@
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
     },
@@ -189,6 +192,7 @@
         "output": 0.7425,
         "cache_read": 0.124
       },
+      "canonical_model_id": "openbmb/minicpm5-2b",
       "display_name": "MiniCPM5-2B",
       "type": "chat"
     },
@@ -234,6 +238,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
       "type": "chat"
     },
@@ -281,6 +286,7 @@
         "output": 0.47,
         "cache_read": 0.016
       },
+      "canonical_model_id": "alibaba/qwen3.8-flash-next",
       "display_name": "Qwen3.8 Flash Next",
       "type": "chat"
     }
