@@ -4050,43 +4050,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4",
-      "name": "Claude 4 Opus",
-      "description": "Claude 4 Opus by Anthropic. The premium version of the new Claude models. A new generation model with improved capabilities, especially on programming and development.",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5
-      },
-      "display_name": "Claude 4 Opus",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-4.1",
       "name": "Claude 4.1 Opus",
       "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
@@ -4842,162 +4805,6 @@
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8 Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-4:thinking",
-      "name": "Claude 4 Opus Thinking",
-      "description": "Anthropic's Claude 4 Opus with the ability to show its thinking process step by step.",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-07-15",
-      "last_updated": "2025-07-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5
-      },
-      "display_name": "Claude 4 Opus Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-4:thinking:1024",
-      "name": "Claude 4 Opus Thinking (1K)",
-      "description": "Claude 4 Opus with minimal thinking budget (1,024 tokens).",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5
-      },
-      "display_name": "Claude 4 Opus Thinking (1K)",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-4:thinking:32768",
-      "name": "Claude 4 Opus Thinking (32K)",
-      "description": "Claude 4 Opus with extended thinking budget (32,768 tokens).",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5
-      },
-      "display_name": "Claude 4 Opus Thinking (32K)",
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-opus-4:thinking:8192",
-      "name": "Claude 4 Opus Thinking (8K)",
-      "description": "Claude 4 Opus with reduced thinking budget (8,192 tokens).",
-      "family": "claude-opus",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2025-08-05",
-      "last_updated": "2025-08-05",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 32000
-      },
-      "cost": {
-        "input": 15,
-        "output": 75,
-        "cache_read": 1.5
-      },
-      "display_name": "Claude 4 Opus Thinking (8K)",
       "type": "chat"
     },
     {
@@ -12266,7 +12073,7 @@
         "supported": false
       },
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-06-30",
       "last_updated": "2026-06-30",
@@ -12280,9 +12087,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
-        "output": 262144
+        "context": 1000000,
+        "input": 1000000,
+        "output": 131072
       },
       "cost": {
         "input": 0.75,
@@ -12305,7 +12112,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-06-30",
       "last_updated": "2026-06-30",
@@ -12319,9 +12126,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048756,
-        "input": 1048756,
-        "output": 262144
+        "context": 1000000,
+        "input": 1000000,
+        "output": 131072
       },
       "cost": {
         "input": 0.75,
@@ -17281,6 +17088,111 @@
       "type": "chat"
     },
     {
+      "id": "openai/gpt-6.1-sol",
+      "name": "GPT 6.1 Sol",
+      "description": "Near-Astra performance for complex coding, computer use, and professional work at a lower cost.",
+      "family": "gpt-sol",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-04-30",
+      "release_date": "2026-09-29",
+      "last_updated": "2026-09-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "canonical_model_id": "openai/gpt-6.1-sol",
+      "display_name": "GPT 6.1 Sol",
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6.1-sol-pro",
+      "name": "GPT 6.1 Sol Pro",
+      "description": "GPT-6.1 Sol Pro uses the same underlying model as GPT-6.1 Sol with Pro reasoning mode enabled for higher-quality responses on complex tasks.",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-09-29",
+      "last_updated": "2026-09-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1050000,
+        "input": 1050000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "display_name": "GPT 6.1 Sol Pro",
+      "type": "chat"
+    },
+    {
       "id": "openai/gpt-astra-latest",
       "name": "GPT Astra Latest",
       "description": "Compatibility alias that routes to GPT 6 Astra, the latest supported GPT Astra model.",
@@ -17641,7 +17553,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -17673,7 +17584,7 @@
       "cost": {
         "input": 2,
         "output": 10,
-        "cache_read": 0.2,
+        "cache_read": 0.1,
         "cache_write": 2.5
       },
       "display_name": "GPT Sol Latest",
@@ -23959,8 +23870,7 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -24045,8 +23955,7 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
