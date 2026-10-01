@@ -341,8 +341,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "audio"
+          "image"
         ],
         "output": [
           "text"
@@ -352,6 +351,22 @@
       "limit": {
         "context": 1048576,
         "output": 1048576
+      },
+      "experimental": {
+        "modes": {
+          "priority": {
+            "cost": {
+              "input": 1,
+              "output": 4.05,
+              "cache_read": 0.17
+            },
+            "provider": {
+              "body": {
+                "service_tier": "priority"
+              }
+            }
+          }
+        }
       },
       "cost": {
         "input": 1,
@@ -574,6 +589,22 @@
       "limit": {
         "context": 262144,
         "output": 262144
+      },
+      "experimental": {
+        "modes": {
+          "priority": {
+            "cost": {
+              "input": 0.0625,
+              "output": 0.25,
+              "cache_read": 0.0125
+            },
+            "provider": {
+              "body": {
+                "service_tier": "priority"
+              }
+            }
+          }
+        }
       },
       "cost": {
         "input": 0.05,

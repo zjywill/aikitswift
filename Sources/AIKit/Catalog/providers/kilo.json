@@ -2313,8 +2313,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 131072
+        "context": 1024000,
+        "output": 384000
       },
       "cost": {
         "input": 0.14,
@@ -2508,7 +2508,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
         "input": 1.32,
@@ -3941,8 +3941,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.08,
-        "output": 0.3,
+        "input": 0.09,
+        "output": 0.34,
         "cache_read": 0.05
       },
       "canonical_model_id": "google/gemma-4-31b-it",
@@ -5000,7 +5000,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
+        "context": 65536,
         "output": 16384
       },
       "cost": {
@@ -5156,7 +5156,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 16384
+        "output": 117964
       },
       "cost": {
         "input": 0.3,
@@ -6797,8 +6797,8 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.6562,
-        "output": 3.3,
+        "input": 0.6712,
+        "output": 3.35,
         "cache_read": 0.18
       },
       "canonical_model_id": "moonshotai/kimi-k2.7-code",
@@ -6846,9 +6846,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 3,
-        "output": 15,
-        "cache_read": 0.3
+        "input": 0.28,
+        "output": 10,
+        "cache_read": 0.27
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -13370,8 +13370,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 1000000,
+        "output": 131072
       },
       "cost": {
         "input": 0.425,
@@ -14337,7 +14337,7 @@
     },
     {
       "id": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha (new)",
+      "name": "Space Bunny Alpha (retires Oct 5)",
       "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
       "family": "alpha",
       "attachment": true,
@@ -14381,7 +14381,7 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Space Bunny Alpha (new)",
+      "display_name": "Space Bunny Alpha (retires Oct 5)",
       "type": "chat"
     },
     {
@@ -14807,9 +14807,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 0.834,
-        "output": 2.501,
-        "cache_read": 0.042
+        "input": 0.7506,
+        "output": 2.2509,
+        "cache_read": 0.0378
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
@@ -15842,9 +15842,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.08,
+        "input": 0.07,
         "output": 0.28,
-        "cache_read": 0.0028
+        "cache_read": 0.002
       },
       "canonical_model_id": "xiaomi/mimo-v2.6-flash",
       "display_name": "MiMo-V2.6-Flash",
@@ -15891,9 +15891,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.43,
+        "input": 0.435,
         "output": 0.87,
-        "cache_read": 0.0036
+        "cache_read": 0.004
       },
       "canonical_model_id": "xiaomi/mimo-v2.6-pro",
       "display_name": "MiMo-V2.6-Pro",
@@ -16945,9 +16945,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.02,
-        "output": 0.6,
-        "cache_read": 0.02
+        "input": 0.0198,
+        "output": 0.396,
+        "cache_read": 0.00291
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16992,9 +16992,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.15,
+        "input": 0.123,
         "output": 3.5,
-        "cache_read": 0.15
+        "cache_read": 0.123
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17039,9 +17039,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.012,
-        "output": 1.25,
-        "cache_read": 0.01
+        "input": 0.0099,
+        "output": 0.13068,
+        "cache_read": 0.001386
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17192,9 +17192,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.4,
-        "output": 9,
-        "cache_read": 0.4
+        "input": 0.28,
+        "output": 10,
+        "cache_read": 0.27
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17546,7 +17546,7 @@
       },
       "cost": {
         "input": 0.02,
-        "output": 0.3,
+        "output": 0.2475,
         "cache_read": 0.01
       },
       "display_name": "Z.ai: GLM Flash Latest",
@@ -17591,9 +17591,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.12,
+        "input": 0.13,
         "output": 4,
-        "cache_read": 0.12
+        "cache_read": 0.13
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
