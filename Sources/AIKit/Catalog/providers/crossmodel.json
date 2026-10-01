@@ -580,10 +580,10 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.27,
-        "output": 1.08,
-        "cache_read": 0.0054,
-        "cache_write": 0.27
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": 0.3
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -634,10 +634,10 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.27,
-        "output": 1.08,
-        "cache_read": 0.0054,
-        "cache_write": 0.27
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": 0.3
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
@@ -688,10 +688,10 @@
         "output": 384000
       },
       "cost": {
-        "input": 1.215,
-        "output": 3.645,
-        "cache_read": 0.0405,
-        "cache_write": 1.215
+        "input": 1.35,
+        "output": 4.05,
+        "cache_read": 0.045,
+        "cache_write": 1.35
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -743,10 +743,10 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.27,
-        "output": 1.08,
-        "cache_read": 0.0054,
-        "cache_write": 0.27
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": 0.3
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",

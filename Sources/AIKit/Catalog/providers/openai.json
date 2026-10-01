@@ -1855,6 +1855,19 @@
                 }
               }
             }
+          },
+          "ultrafast": {
+            "cost": {
+              "input": 60,
+              "output": 300,
+              "cache_read": 6,
+              "cache_write": 75
+            },
+            "provider": {
+              "body": {
+                "service_tier": "ultrafast"
+              }
+            }
           }
         }
       },
