@@ -447,6 +447,109 @@
       "type": "chat"
     },
     {
+      "id": "deepseek-ai/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/diffusiongemma-26b-a4b-it",
+      "name": "DiffusionGemma 26B A4B IT",
+      "description": "Gemma 4 based discrete text diffusion model for fast chat, reasoning, and tool use",
+      "family": "gemma",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "temperature": true,
+      "knowledge": "2025-01",
+      "release_date": "2026-06-09",
+      "last_updated": "2026-07-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 250000,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "canonical_model_id": "google/diffusiongemma-26b-a4b-it",
+      "display_name": "DiffusionGemma 26B A4B IT",
+      "type": "chat"
+    },
+    {
       "id": "google/gemma-2-2b-it",
       "name": "Gemma 2 2b It",
       "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
@@ -1520,6 +1623,7 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -1598,6 +1702,7 @@
         "context": 65536,
         "output": 13108
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -1630,6 +1735,7 @@
         "context": 32768,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -2591,6 +2697,50 @@
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nemotron 3 Ultra 550B A55B",
+      "type": "chat"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "name": "Nemotron 3.5 Content Safety",
+      "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
+      "family": "nemotron",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": false,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "release_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "canonical_model_id": "nvidia/nemotron-3.5-content-safety",
+      "display_name": "Nemotron 3.5 Content Safety",
       "type": "chat"
     },
     {

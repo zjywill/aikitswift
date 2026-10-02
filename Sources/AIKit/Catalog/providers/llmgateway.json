@@ -37,7 +37,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 32768,
+        "context": 262000,
         "output": 32768
       },
       "cost": {
@@ -8435,7 +8435,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 997952,
         "output": 65536
       },
       "cost": {
@@ -9120,7 +9120,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 983616,
         "output": 65536
       },
       "cost": {
@@ -9213,7 +9213,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 983616,
         "output": 65536
       },
       "cost": {
@@ -9283,7 +9283,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 983616,
         "output": 1000000
       },
       "cost": {
@@ -9387,7 +9387,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 983616,
         "output": 64000
       },
       "cost": {
