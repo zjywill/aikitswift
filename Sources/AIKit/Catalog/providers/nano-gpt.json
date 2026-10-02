@@ -2592,51 +2592,6 @@
       "type": "chat"
     },
     {
-      "id": "TEE/qwen3.8-27b-uncensored",
-      "name": "Qwen3.8 27B Uncensored TEE",
-      "description": "HauhauCS's Aggressive finetune of Qwen3.8 27B reduces refusal behavior for creative writing, coding, and image analysis. It supports reasoning, tool calling, and structured output with a 262K-token context. Runs inside a TEE (Trusted Execution Environment), with provider attestation support.",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "release_date": "2026-09-25",
-      "last_updated": "2026-09-25",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 262144,
-        "output": 262144
-      },
-      "cost": {
-        "input": 0.3,
-        "output": 1.5
-      },
-      "display_name": "Qwen3.8 27B Uncensored TEE",
-      "type": "chat"
-    },
-    {
       "id": "THUDM/GLM-4-32B-0414",
       "name": "GLM 4 32B 0414",
       "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
@@ -7312,9 +7267,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
+        "input": 0.44,
+        "output": 1.32,
+        "cache_read": 0.014
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
@@ -16990,7 +16945,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -17097,7 +17051,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high",
@@ -22285,6 +22238,41 @@
       },
       "canonical_model_id": "unbiased/pareto",
       "display_name": "Pareto",
+      "type": "chat"
+    },
+    {
+      "id": "unbiased/pareto-26.10-preview",
+      "name": "Pareto 26.10 Preview",
+      "description": "Pareto 26.10 Preview is Unbiased AI's multimodal composite model for research, coding, and agentic workflows. It accepts text and images, supports tool calling, and provides a 1M-token context window with up to 131K output tokens.",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.8,
+        "output": 3.2,
+        "cache_read": 0.03
+      },
+      "display_name": "Pareto 26.10 Preview",
       "type": "chat"
     },
     {

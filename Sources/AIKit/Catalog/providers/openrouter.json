@@ -1325,6 +1325,45 @@
       "type": "chat"
     },
     {
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex 1.1 Mini (free)",
+      "description": "Efficient model for low-latency assistance, extraction, and routine automation",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Apodex 1.1 Mini (free)",
+      "type": "chat"
+    },
+    {
       "id": "arcee-ai/trinity-large-thinking",
       "name": "Trinity Large Thinking",
       "description": "Reasoning-optimized 398B MoE agent model with extended thinking for long-horizon and multi-turn tool use",
@@ -2093,7 +2132,7 @@
       "open_weights": true,
       "limit": {
         "context": 163840,
-        "output": 147456
+        "output": 115200
       },
       "cost": {
         "input": 0.29,
@@ -2392,9 +2431,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.07854,
-        "output": 0.15708,
-        "cache_read": 0.015708
+        "input": 0.042,
+        "output": 0.084,
+        "cache_read": 0.0084
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -2443,9 +2482,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.01,
+        "input": 0.0108,
         "output": 1.28,
-        "cache_read": 0.01
+        "cache_read": 0.0108
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2547,9 +2586,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.783,
-        "output": 1.566,
-        "cache_read": 0.06525
+        "input": 0.2088,
+        "output": 0.4176,
+        "cache_read": 0.0174
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -2649,9 +2688,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0198,
-        "output": 0.396,
-        "cache_read": 0.00291
+        "input": 0.03,
+        "output": 0.5,
+        "cache_read": 0.01
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -5573,7 +5612,7 @@
         "output": 40000
       },
       "cost": {
-        "input": 0.4,
+        "input": 0.55,
         "output": 2.2
       },
       "display_name": "MiniMax M1",
@@ -5749,7 +5788,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-03-18",
       "last_updated": "2026-03-18",
@@ -6738,9 +6777,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.65,
-        "output": 3.41,
-        "cache_read": 0.15
+        "input": 0.43415,
+        "output": 1.828,
+        "cache_read": 0.07312
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -6830,9 +6869,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.28,
+        "input": 0.3644,
         "output": 10,
-        "cache_read": 0.27
+        "cache_read": 0.3644
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -7343,12 +7382,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 182520
+        "output": 16384
       },
       "cost": {
-        "input": 0.6,
-        "output": 2.4,
-        "cache_read": 0.12
+        "input": 0.5,
+        "output": 2.2,
+        "cache_read": 0.1
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nemotron 3 Ultra 550B A55B",
@@ -12031,11 +12070,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32000
+        "output": 235929
       },
       "cost": {
-        "input": 0.04815,
-        "output": 0.19305
+        "input": 0.1,
+        "output": 0.3
       },
       "display_name": "Qwen3 30B A3B Instruct 2507",
       "type": "chat"
@@ -14790,9 +14829,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.0825,
-        "output": 0.33,
-        "cache_read": 0.020625
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3",
@@ -14884,9 +14923,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 0.7506,
-        "output": 2.2509,
-        "cache_read": 0.0378
+        "input": 0.834,
+        "output": 2.501,
+        "cache_read": 0.042
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
@@ -15037,12 +15076,12 @@
       "open_weights": true,
       "limit": {
         "context": 524288,
-        "output": 471859
+        "output": 262144
       },
       "cost": {
-        "input": 1,
+        "input": 0.95,
         "output": 4.05,
-        "cache_read": 0.17
+        "cache_read": 0.16
       },
       "canonical_model_id": "thinkingmachines/inkling",
       "display_name": "Inkling",
@@ -15236,6 +15275,41 @@
       },
       "canonical_model_id": "unbiased/pareto",
       "display_name": "Pareto",
+      "type": "chat"
+    },
+    {
+      "id": "unbiased/pareto-26.10-preview",
+      "name": "Pareto 26.10 Preview",
+      "description": "Preview model for early access evaluation, prototyping, and compatibility testing",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.8,
+        "output": 3.2,
+        "cache_read": 0.03
+      },
+      "display_name": "Pareto 26.10 Preview",
       "type": "chat"
     },
     {
@@ -16343,7 +16417,7 @@
       "cost": {
         "input": 0.3,
         "output": 0.9,
-        "cache_read": 0.055
+        "cache_read": 0.05
       },
       "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V",
@@ -16619,7 +16693,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.3249,
+        "input": 0.41,
         "output": 3.99,
         "cache_read": 0.26
       },
@@ -16663,12 +16737,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943717
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
         "output": 4.4,
-        "cache_read": 0.26
+        "cache_read": 0.14
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -17102,9 +17176,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0198,
-        "output": 0.396,
-        "cache_read": 0.00291
+        "input": 0.027,
+        "output": 0.6,
+        "cache_read": 0.027
       },
       "display_name": "DeepSeek Flash Latest",
       "type": "chat"
@@ -17151,9 +17225,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.123,
+        "input": 0.1431,
         "output": 3.5,
-        "cache_read": 0.123
+        "cache_read": 0.1431
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -17200,9 +17274,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0099,
-        "output": 0.13068,
-        "cache_read": 0.001386
+        "input": 0.0108,
+        "output": 1.28,
+        "cache_read": 0.0108
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17373,9 +17447,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.28,
+        "input": 0.3644,
         "output": 10,
-        "cache_read": 0.27
+        "cache_read": 0.3644
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17819,7 +17893,7 @@
       },
       "cost": {
         "input": 0.02,
-        "output": 0.2475,
+        "output": 0.3,
         "cache_read": 0.01
       },
       "display_name": "GLM Flash Latest",
@@ -17861,12 +17935,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.13,
-        "output": 4,
-        "cache_read": 0.13
+        "input": 0.106,
+        "output": 2.653,
+        "cache_read": 0.176
       },
       "display_name": "GLM Latest",
       "type": "chat"
