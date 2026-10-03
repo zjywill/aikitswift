@@ -73,13 +73,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
+        "context": 1000000,
         "output": 131072
       },
       "status": "beta",
       "cost": {
         "input": 1.791,
-        "output": 8.9436,
+        "output": 6.6326,
         "cache_read": 0.1733
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -122,7 +122,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
+        "context": 1000000,
         "output": 131072
       },
       "status": "beta",
@@ -171,7 +171,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
+        "context": 1000000,
         "output": 131072
       },
       "status": "beta",
@@ -219,13 +219,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
+        "context": 1000000,
         "output": 131072
       },
       "status": "beta",
       "cost": {
         "input": 1.791,
-        "output": 8.9436,
+        "output": 6.6326,
         "cache_read": 0.1733
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -271,8 +271,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.4969,
-        "output": 1.9644,
+        "input": 0.2311,
+        "output": 0.7511,
         "cache_read": 0.0462
       },
       "canonical_model_id": "openai/gpt-oss-120b",

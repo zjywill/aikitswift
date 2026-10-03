@@ -2218,13 +2218,12 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 65536
+        "context": 163840,
+        "output": 147456
       },
       "cost": {
-        "input": 0.3,
-        "output": 1,
-        "cache_read": 0.135
+        "input": 0.27,
+        "output": 1
       },
       "display_name": "DeepSeek: DeepSeek V3.1 Terminus",
       "type": "chat"
@@ -2788,10 +2787,10 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 1.25,
-        "cache_read": 0.015,
-        "cache_write": 0.041667
+        "input": 0.3,
+        "output": 2.5,
+        "cache_read": 0.03,
+        "cache_write": 0.083333
       },
       "canonical_model_id": "google/gemini-2.5-flash-image",
       "display_name": "Nano Banana",
@@ -4353,7 +4352,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 32768
       },
       "cost": {
         "input": 0.075,
@@ -4452,6 +4451,50 @@
         "cache_read": 0.015
       },
       "display_name": "inclusionAI: Ling 3.0 Flash VL",
+      "type": "chat"
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash (new)",
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "family": "ling",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-02",
+      "last_updated": "2026-10-02",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "inclusionAI: Ling 3.1 Flash (new)",
       "type": "chat"
     },
     {
@@ -6695,12 +6738,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 98304
+        "output": 235929
       },
       "cost": {
         "input": 0.6,
-        "output": 2.5,
-        "cache_read": 0.15
+        "output": 2.5
       },
       "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking",
@@ -6889,9 +6931,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.3644,
-        "output": 10,
-        "cache_read": 0.3644
+        "input": 2.7,
+        "output": 13.5,
+        "cache_read": 0.27
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -7577,7 +7619,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
         "input": 0.039,
@@ -11136,7 +11178,7 @@
     },
     {
       "id": "poolside/laguna-s-2.1",
-      "name": "Poolside: Laguna S 2.1",
+      "name": "Poolside: Laguna S 2.1 (retires Oct 31)",
       "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
       "family": "laguna-s",
       "attachment": false,
@@ -11176,7 +11218,7 @@
         "output": 0.2,
         "cache_read": 0.01
       },
-      "display_name": "Poolside: Laguna S 2.1",
+      "display_name": "Poolside: Laguna S 2.1 (retires Oct 31)",
       "type": "chat"
     },
     {
@@ -11225,7 +11267,7 @@
     },
     {
       "id": "poolside/laguna-xs-2.1",
-      "name": "Poolside: Laguna XS 2.1",
+      "name": "Poolside: Laguna XS 2.1 (retires Oct 31)",
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
       "family": "laguna",
       "attachment": false,
@@ -11265,7 +11307,7 @@
         "output": 0.2,
         "cache_read": 0.05
       },
-      "display_name": "Poolside: Laguna XS 2.1",
+      "display_name": "Poolside: Laguna XS 2.1 (retires Oct 31)",
       "type": "chat"
     },
     {
@@ -12281,8 +12323,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 235929
+        "context": 131072,
+        "output": 32768
       },
       "cost": {
         "input": 0.15,
@@ -12699,7 +12741,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 235929
       },
       "cost": {
         "input": 0.1625,
@@ -15920,9 +15962,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.07,
+        "input": 0.12,
         "output": 0.28,
-        "cache_read": 0.002
+        "cache_read": 0.006
       },
       "canonical_model_id": "xiaomi/mimo-v2.6-flash",
       "display_name": "MiMo-V2.6-Flash",
@@ -17023,9 +17065,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.027,
-        "output": 0.6,
-        "cache_read": 0.027
+        "input": 0.015,
+        "output": 0.676999,
+        "cache_read": 0.002097
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -17070,9 +17112,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.1431,
-        "output": 3.5,
-        "cache_read": 0.1431
+        "input": 0.132,
+        "output": 0.396,
+        "cache_read": 0.0042
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17117,9 +17159,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0108,
-        "output": 1.28,
-        "cache_read": 0.0108
+        "input": 0.003825,
+        "output": 1.043574,
+        "cache_read": 0.00105
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17270,9 +17312,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.3644,
-        "output": 10,
-        "cache_read": 0.3644
+        "input": 0.99,
+        "output": 13,
+        "cache_read": 0.8
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17623,9 +17665,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.02,
-        "output": 0.3,
-        "cache_read": 0.01
+        "input": 0.02625,
+        "output": 0.928749,
+        "cache_read": 0.01125
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17666,12 +17708,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.106,
-        "output": 2.653,
-        "cache_read": 0.176
+        "input": 0.12,
+        "output": 4,
+        "cache_read": 0.08
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"
