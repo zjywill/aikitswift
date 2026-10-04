@@ -11949,42 +11949,6 @@
       "type": "chat"
     },
     {
-      "id": "kitani/clover-1-150b",
-      "name": "Clover 1 150B Preview",
-      "description": "Kitani's 150B multimodal reasoning model for coding, tool use, and everyday assistance. This is a preview release and may have reliability issues.",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": false,
-      "release_date": "2026-09-24",
-      "last_updated": "2026-09-24",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 100000
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.8
-      },
-      "display_name": "Clover 1 150B Preview",
-      "type": "chat"
-    },
-    {
       "id": "lightonai/LightOnOCR-2-1B",
       "name": "LightOnOCR 2",
       "description": "LightOnOCR 2 hosted by IONOS in Berlin, Germany. Zero data retention.",
@@ -21456,6 +21420,55 @@
         "cache_read": 0.5
       },
       "display_name": "Fugu Ultra v1.1",
+      "type": "chat"
+    },
+    {
+      "id": "sakana/sakana-namazu",
+      "name": "Sakana Namazu",
+      "description": "Japanese-specialized reasoning model based on Kimi K2.6 and tuned for Japanese language, culture, and business workflows",
+      "family": "sakana-namazu",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-03",
+      "last_updated": "2026-08-03",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.95,
+        "output": 4,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "sakana/sakana-namazu",
+      "display_name": "Sakana Namazu",
       "type": "chat"
     },
     {
