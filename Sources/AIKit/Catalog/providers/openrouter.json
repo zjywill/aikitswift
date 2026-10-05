@@ -2132,12 +2132,11 @@
       "open_weights": true,
       "limit": {
         "context": 163840,
-        "output": 115200
+        "output": 147456
       },
       "cost": {
-        "input": 0.29,
-        "output": 1.14,
-        "cache_read": 0.11
+        "input": 0.25,
+        "output": 1
       },
       "display_name": "DeepSeek V3 0324",
       "type": "chat"
@@ -2427,12 +2426,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 384000
+        "output": 943718
       },
       "cost": {
-        "input": 0.028,
-        "output": 0.056,
-        "cache_read": 0.0056
+        "input": 0.0224,
+        "output": 1.28,
+        "cache_read": 0.0224
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -2481,9 +2480,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0051,
+        "input": 0.0152,
         "output": 1.28,
-        "cache_read": 0.0051
+        "cache_read": 0.0152
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2632,12 +2631,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
-        "input": 0.66,
-        "output": 1.98,
-        "cache_read": 0.022
+        "input": 0.85,
+        "output": 5,
+        "cache_read": 0.7
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
@@ -2687,9 +2686,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006
+        "input": 0.003,
+        "output": 2.4,
+        "cache_read": 0.003
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -5086,8 +5085,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.32
+        "input": 0.22,
+        "output": 0.5,
+        "cache_read": 0.11
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct",
@@ -6481,7 +6481,7 @@
         "supported": false
       },
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-10-31",
       "release_date": "2025-03-17",
@@ -6815,9 +6815,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.43415,
-        "output": 1.828,
-        "cache_read": 0.07312
+        "input": 0.95,
+        "output": 4,
+        "cache_read": 0.16
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -6907,9 +6907,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 2.7,
-        "output": 13.5,
-        "cache_read": 0.27
+        "input": 0.72,
+        "output": 14,
+        "cache_read": 0.7
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -12108,11 +12108,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 32000
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.3
+        "input": 0.04815,
+        "output": 0.19305
       },
       "display_name": "Qwen3 30B A3B Instruct 2507",
       "type": "chat"
@@ -13822,9 +13822,10 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.42,
-        "output": 3,
-        "cache_read": 0.085
+        "input": 0.425,
+        "output": 2.55,
+        "cache_read": 0.085,
+        "cache_write": 0.53125
       },
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
@@ -14868,9 +14869,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.132,
-        "output": 0.528,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3",
@@ -14962,9 +14963,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 0.834,
-        "output": 2.501,
-        "cache_read": 0.042
+        "input": 0.7506,
+        "output": 2.2509,
+        "cache_read": 0.0378
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
@@ -16729,12 +16730,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.41,
-        "output": 3.99,
-        "cache_read": 0.26
+        "input": 0.104,
+        "output": 8,
+        "cache_read": 0.1
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
@@ -17215,9 +17216,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.015,
-        "output": 0.676999,
-        "cache_read": 0.002097
+        "input": 0.003,
+        "output": 2.4,
+        "cache_read": 0.003
       },
       "display_name": "DeepSeek Flash Latest",
       "type": "chat"
@@ -17264,9 +17265,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.132,
-        "output": 0.396,
-        "cache_read": 0.0042
+        "input": 0.1901,
+        "output": 4.2,
+        "cache_read": 0.19
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -17313,9 +17314,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.003825,
-        "output": 1.043574,
-        "cache_read": 0.00105
+        "input": 0.0152,
+        "output": 1.28,
+        "cache_read": 0.0152
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17486,9 +17487,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.99,
+        "input": 0.6566,
         "output": 13,
-        "cache_read": 0.8
+        "cache_read": 0.45
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17928,12 +17929,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.02625,
-        "output": 0.928749,
-        "cache_read": 0.01125
+        "input": 0.0352,
+        "output": 0.5,
+        "cache_read": 0.0232
       },
       "display_name": "GLM Flash Latest",
       "type": "chat"
@@ -17974,12 +17975,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.12,
-        "output": 4,
-        "cache_read": 0.08
+        "input": 0.08,
+        "output": 5,
+        "cache_read": 0.07
       },
       "display_name": "GLM Latest",
       "type": "chat"
