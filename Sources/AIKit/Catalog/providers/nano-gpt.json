@@ -20601,6 +20601,44 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b-antislop",
+      "name": "Qwen 3.8 27B Antislop",
+      "description": "Qwen 3.8 27B Antislop is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Antislop",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-27b-cybersecurity",
       "name": "Qwen 3.8 27B Cybersecurity",
       "description": "Qwen 3.8 27B Cybersecurity is a cybersecurity-focused variant based on the uncensored model, with provider moderation for illegal activities. It supports optional reasoning, image understanding, tool calling, and a 262,144-token context window.",
@@ -20636,6 +20674,44 @@
         "cache_read": 0.05
       },
       "display_name": "Qwen 3.8 27B Cybersecurity",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-darkidol",
+      "name": "Qwen 3.8 27B DarkIdol",
+      "description": "Qwen 3.8 27B DarkIdol is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B DarkIdol",
       "type": "chat"
     },
     {
@@ -20677,6 +20753,44 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3.8-27b-fimi",
+      "name": "Qwen 3.8 27B Fimi",
+      "description": "Qwen 3.8 27B Fimi is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Fimi",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-27b-hemmingway",
       "name": "Qwen 3.8 27B Hemingway",
       "description": "Qwen 3.8 27B Hemingway is an open-weight NVFP4 multimodal creative finetune for long-form prose, character dialogue, storytelling, and roleplay.",
@@ -20712,6 +20826,120 @@
         "cache_read": 0.125
       },
       "display_name": "Qwen 3.8 27B Hemingway",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-kimiko",
+      "name": "Qwen 3.8 27B Kimiko",
+      "description": "Qwen 3.8 27B Kimiko is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Kimiko",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-kiwen",
+      "name": "Qwen 3.8 27B Kiwen",
+      "description": "Qwen 3.8 27B Kiwen is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Kiwen",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-novelist",
+      "name": "Qwen 3.8 27B Novelist",
+      "description": "Qwen 3.8 27B Novelist is a creative finetune served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Novelist",
       "type": "chat"
     },
     {
@@ -20826,6 +21054,79 @@
         "cache_read": 0.125
       },
       "display_name": "Qwen 3.8 27B Queen",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-swift",
+      "name": "Qwen 3.8 27B Swift",
+      "description": "Qwen 3.8 27B Swift is a finetune for fast responses, served by Aoru in NVFP4 with a 262,144-token context window. It supports image understanding, tool calling, and optional reasoning.",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Swift",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3.8-27b-synthia",
+      "name": "Qwen 3.8 27B Synthia",
+      "description": "Qwen 3.8 27B Synthia is a text-only roleplay finetune served by Aoru in NVFP4 with a 262,144-token context window.",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.6,
+        "cache_read": 0.05
+      },
+      "display_name": "Qwen 3.8 27B Synthia",
       "type": "chat"
     },
     {
@@ -24783,6 +25084,100 @@
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM 5.3 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "z-ai/glm-5.3-flash-apex",
+      "name": "Apex Flash 1",
+      "description": "Apex Flash 1 is Cantina Security and Yeta's cybersecurity-focused post-train of GLM 5.3 Flash for code investigation and tool use.",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.075
+      },
+      "display_name": "Apex Flash 1",
+      "type": "chat"
+    },
+    {
+      "id": "z-ai/glm-5.3-flash-apex-abliterated",
+      "name": "Apex Flash 1 Abliterated",
+      "description": "Apex Flash 1 Abliterated is an experimental derivative of Cantina Security and Yeta's Apex Flash 1 with modified refusal behavior.",
+      "family": "glm",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.075
+      },
+      "display_name": "Apex Flash 1 Abliterated",
       "type": "chat"
     },
     {

@@ -1058,44 +1058,6 @@
       "type": "chat"
     },
     {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
-      "name": "luminal/DeepSeek-V4.1-Flash",
-      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-      "family": "deepseek",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-10-04",
-      "last_updated": "2026-10-04",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 1000000
-      },
-      "cost": {
-        "input": 0.135,
-        "output": 0.54,
-        "cache_read": 0.0027
-      },
-      "display_name": "luminal/DeepSeek-V4.1-Flash",
-      "type": "chat"
-    },
-    {
       "id": "deepseek-v3.2",
       "name": "DeepSeek V3.2",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
@@ -1292,9 +1254,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.55,
-        "cache_read": 0.005
+        "input": 0.135,
+        "output": 0.54,
+        "cache_read": 0.0027
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",

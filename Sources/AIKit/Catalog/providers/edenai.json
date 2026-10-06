@@ -5587,6 +5587,55 @@
       "type": "chat"
     },
     {
+      "id": "greenference/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (Greenference)",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.0015,
+        "output": 0.09,
+        "cache_read": 0.00075
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash (Greenference)",
+      "type": "chat"
+    },
+    {
       "id": "greenference/gpt-oss-20b",
       "name": "GPT OSS 20B (Greenference)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
@@ -5802,8 +5851,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33675,
-        "output": 0.449
+        "input": 0.33612,
+        "output": 0.44816
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -5838,8 +5887,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.729625,
-        "output": 0.729625
+        "input": 0.72826,
+        "output": 0.72826
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -5884,8 +5933,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168375,
-        "output": 0.729625
+        "input": 0.16806,
+        "output": 0.72826
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -10620,9 +10669,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.449,
-        "output": 0.898,
-        "cache_read": 0.0898
+        "input": 0.44816,
+        "output": 0.89632,
+        "cache_read": 0.089632
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -10704,8 +10753,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168375,
-        "output": 0.6735
+        "input": 0.16806,
+        "output": 0.67224
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -10740,8 +10789,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.01025,
-        "output": 1.01025
+        "input": 1.00836,
+        "output": 1.00836
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
