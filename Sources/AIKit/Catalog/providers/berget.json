@@ -253,7 +253,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-26",
-      "last_updated": "2026-09-01",
+      "last_updated": "2026-09-30",
       "modalities": {
         "input": [
           "text",
@@ -266,7 +266,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 524288,
+        "context": 1048576,
         "output": 16384
       },
       "cost": {
