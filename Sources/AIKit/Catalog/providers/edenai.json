@@ -550,7 +550,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
+        "context": 32768,
         "output": 32768
       },
       "cost": {
@@ -586,7 +586,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
+        "context": 32768,
         "output": 32768
       },
       "cost": {
@@ -622,7 +622,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
+        "context": 32768,
         "output": 32768
       },
       "cost": {
@@ -658,7 +658,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
+        "context": 32768,
         "output": 32768
       },
       "cost": {
@@ -5995,8 +5995,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33531,
-        "output": 0.44708
+        "input": 0.33558,
+        "output": 0.44744
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -6031,8 +6031,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.726505,
-        "output": 0.726505
+        "input": 0.72709,
+        "output": 0.72709
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -6077,8 +6077,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.167655,
-        "output": 0.726505
+        "input": 0.16779,
+        "output": 0.72709
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -10858,9 +10858,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.44708,
-        "output": 0.89416,
-        "cache_read": 0.089416
+        "input": 0.44744,
+        "output": 0.89488,
+        "cache_read": 0.089488
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -10942,8 +10942,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.167655,
-        "output": 0.67062
+        "input": 0.16779,
+        "output": 0.67116
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -10978,8 +10978,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.005931,
-        "output": 1.005931
+        "input": 1.00674,
+        "output": 1.00674
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",

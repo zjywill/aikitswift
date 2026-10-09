@@ -1358,51 +1358,6 @@
       "type": "chat"
     },
     {
-      "id": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "Baidu: ERNIE 4.5 VL 424B A47B  (retires Oct 8)",
-      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
-      "family": "ernie",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2025-06-30",
-      "last_updated": "2025-06-30",
-      "modalities": {
-        "input": [
-          "image",
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 123000,
-        "output": 16000
-      },
-      "cost": {
-        "input": 0.42,
-        "output": 1.25
-      },
-      "display_name": "Baidu: ERNIE 4.5 VL 424B A47B  (retires Oct 8)",
-      "type": "chat"
-    },
-    {
       "id": "bytedance-seed/seed-1.6",
       "name": "ByteDance Seed: Seed 1.6",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
@@ -2468,9 +2423,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.44,
-        "output": 1.32,
-        "cache_read": 0.028
+        "input": 0.2156,
+        "output": 0.6468,
+        "cache_read": 0.00686
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
@@ -3763,9 +3718,9 @@
     },
     {
       "id": "google/gemini-nano-banana-2.1",
-      "name": "Google: Nano Banana 2.1",
+      "name": "Nano Banana 2.1",
       "description": "Nano Banana 2.1 (Gemini Nano Banana 2.1) is Google's image generation and editing model on the Flash tier, succeeding Nano Banana 2 and Nano Banana Pro. It improves product recontextualization,...",
-      "family": "nano-banana",
+      "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -3793,8 +3748,8 @@
           "pdf"
         ],
         "output": [
-          "image",
-          "text"
+          "text",
+          "image"
         ]
       },
       "open_weights": false,
@@ -3806,7 +3761,8 @@
         "input": 1.5,
         "output": 7.5
       },
-      "display_name": "Google: Nano Banana 2.1",
+      "canonical_model_id": "google/gemini-nano-banana-2.1",
+      "display_name": "Nano Banana 2.1",
       "type": "image-generation"
     },
     {
@@ -4422,8 +4378,8 @@
       "type": "chat"
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
       "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
       "family": "ling",
       "attachment": false,
@@ -4459,10 +4415,11 @@
         "output": 32768
       },
       "cost": {
-        "input": 0,
-        "output": 0
+        "input": 0.075,
+        "output": 0.22,
+        "cache_read": 0.015
       },
-      "display_name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "display_name": "inclusionAI: Ling 3.0 Flash Sante",
       "type": "chat"
     },
     {
@@ -6243,7 +6200,7 @@
     },
     {
       "id": "mistralai/mistral-large-4-0",
-      "name": "Mistral: Mistral Large 4",
+      "name": "Mistral: Mistral Large 4 (50% off)",
       "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
       "family": "mistral-large",
       "attachment": true,
@@ -6276,15 +6233,15 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 524288,
+        "context": 1048576,
         "output": 262144
       },
       "cost": {
-        "input": 1.36,
-        "output": 4.18,
-        "cache_read": 0.14
+        "input": 0.68,
+        "output": 2.09,
+        "cache_read": 0.07
       },
-      "display_name": "Mistral: Mistral Large 4",
+      "display_name": "Mistral: Mistral Large 4 (50% off)",
       "type": "chat"
     },
     {
@@ -6907,9 +6864,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.465,
+        "input": 0.4344,
         "output": 2.45,
-        "cache_read": 0.0975
+        "cache_read": 0.12
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -7415,7 +7372,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 235929
       },
       "cost": {
         "input": 0.08,
@@ -11918,8 +11875,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 128000,
-        "output": 32000
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.13,
@@ -12350,8 +12307,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 32768
+        "context": 262144,
+        "output": 16384
       },
       "cost": {
         "input": 0.0975,
@@ -12860,7 +12817,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 81920
+        "output": 235929
       },
       "cost": {
         "input": 0.39,
@@ -14121,7 +14078,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "release_date": "2024-08-28",
@@ -14393,6 +14350,53 @@
       "type": "chat"
     },
     {
+      "id": "stealth/glyph-cluster",
+      "name": "Stealth: Glyph Cluster (free)",
+      "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Glyph Cluster is a reasoning model for coding and long-context analysis, served through Vercel AI Gateway during its stealth period at no cost. It supports function calling and streaming, takes text input only, and does not support structured outputs. Zero Data Retention is not available for this model.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-08-26",
+      "last_updated": "2025-08-26",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 256000,
+        "output": 256000
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache_read": 0
+      },
+      "display_name": "Stealth: Glyph Cluster (free)",
+      "type": "chat"
+    },
+    {
       "id": "stealth/qwen3.6-plus",
       "name": "Stealth: Qwen3.6 Plus (50% off)",
       "description": "Your prompts and completions may be retained and used to train or improve the provider's services. This third-party-served variant of Qwen3.6 Plus is offered at 50% lower cost than standard Qwen3.6 Plus pricing and is not served by Alibaba or Kilo Code. Note: a surcharge applies to long-context workloads exceeding 256K input tokens.",
@@ -14538,9 +14542,59 @@
       "type": "chat"
     },
     {
-      "id": "stepfun/step-3.7-flash:free",
-      "name": "StepFun: Step 3.7 Flash (free)",
-      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters per token. The model supports a 256K context window and exposes selectable reasoning levels (high/medium/low), letting callers trade off speed, cost, and depth of reasoning. Designed for coding, agentic workflows, structured outputs, and long-context productivity tasks.",
+      "id": "stepfun/step-5-preview",
+      "name": "Step 5 Preview",
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 64000
+      },
+      "cost": {
+        "input": 1,
+        "output": 2.7,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "stepfun/step-5-preview",
+      "display_name": "Step 5 Preview",
+      "type": "chat"
+    },
+    {
+      "id": "stepfun/step-5-preview-free",
+      "name": "StepFun: Step 5 Preview (free)",
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, with strong capabilities in software engineering, professional knowledge work, and finance. It natively supports text, image, and video input with a 1M-token context window and up to 64K output tokens. The model supports tool calling, structured outputs, and selectable reasoning levels (low/medium/high) for long-context research, coding, and multi-step workflows.",
+      "family": "step",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -14559,9 +14613,8 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
-      "knowledge": "2026-03-01",
-      "release_date": "2026-05-29",
-      "last_updated": "2026-05-29",
+      "release_date": "2025-08-26",
+      "last_updated": "2025-08-26",
       "modalities": {
         "input": [
           "text",
@@ -14571,10 +14624,10 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
-        "context": 262144,
-        "output": 262144
+        "context": 1000000,
+        "output": 64000
       },
       "cost": {
         "input": 0,
@@ -14582,8 +14635,7 @@
         "reasoning": 0,
         "cache_read": 0
       },
-      "canonical_model_id": "stepfun/step-3.7-flash",
-      "display_name": "StepFun: Step 3.7 Flash (free)",
+      "display_name": "StepFun: Step 5 Preview (free)",
       "type": "chat"
     },
     {
@@ -14772,9 +14824,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.53,
-        "cache_read": 0.033
+        "input": 0.0825,
+        "output": 0.33,
+        "cache_read": 0.020625
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3",
@@ -14866,9 +14918,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 0.834,
-        "output": 2.501,
-        "cache_read": 0.042
+        "input": 0.7506,
+        "output": 2.2509,
+        "cache_read": 0.0378
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
@@ -16547,7 +16599,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
         "input": 1.4,
@@ -17043,9 +17095,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0116,
+        "input": 0.012,
         "output": 1.2,
-        "cache_read": 0.01
+        "cache_read": 0.005
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -17090,9 +17142,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.261,
-        "output": 4.2,
-        "cache_read": 0.2
+        "input": 0.108,
+        "output": 8,
+        "cache_read": 0.11
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17137,9 +17189,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.018,
-        "output": 1.28,
-        "cache_read": 0.018
+        "input": 0.01096,
+        "output": 0.532795,
+        "cache_read": 0.01096
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17290,9 +17342,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.47,
+        "input": 0.81,
         "output": 13,
-        "cache_read": 0.45
+        "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17640,12 +17692,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.5,
-        "cache_read": 0.025
+        "input": 0.032,
+        "output": 2.798391,
+        "cache_read": 0.02
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17689,9 +17741,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0392,
-        "output": 12,
-        "cache_read": 0.0365
+        "input": 0.0312,
+        "output": 4.4,
+        "cache_read": 0.029
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

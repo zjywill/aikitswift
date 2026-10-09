@@ -4022,12 +4022,14 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
-          "type": "budget_tokens",
-          "min": 1024,
-          "max": 63999
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
         }
       ],
       "tool_call": true,
@@ -4046,14 +4048,15 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 200000,
-        "input": 200000,
-        "output": 64000
+        "context": 1000000,
+        "input": 1000000,
+        "output": 128000
       },
       "cost": {
-        "input": 1,
-        "output": 5,
-        "cache_read": 0.1
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
       },
       "display_name": "Claude Haiku Latest",
       "type": "chat"
@@ -5505,7 +5508,7 @@
       "cost": {
         "input": 2,
         "output": 10,
-        "cache_read": 0.2,
+        "cache_read": 0.1,
         "cache_write": 2.5
       },
       "canonical_model_id": "anthropic/claude-sonnet-5-5",
@@ -5559,7 +5562,7 @@
       "cost": {
         "input": 2,
         "output": 10,
-        "cache_read": 0.2,
+        "cache_read": 0.1,
         "cache_write": 2.5
       },
       "canonical_model_id": "anthropic/claude-sonnet-5-5",
@@ -5665,7 +5668,7 @@
       "cost": {
         "input": 2,
         "output": 10,
-        "cache_read": 0.2,
+        "cache_read": 0.1,
         "cache_write": 2.5
       },
       "display_name": "Claude Sonnet Latest",
@@ -6237,9 +6240,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "display_name": "Claw High",
       "type": "chat"
@@ -6282,9 +6285,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2,
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13,
         "cache_write": 0.08333
       },
       "display_name": "Claw Low",
@@ -6328,9 +6331,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "display_name": "Claw Medium",
       "type": "chat"
@@ -7269,8 +7272,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
+        "context": 1048576,
+        "input": 1048576,
         "output": 131072
       },
       "cost": {
@@ -7319,8 +7322,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
+        "context": 1048576,
+        "input": 1048576,
         "output": 131072
       },
       "cost": {
@@ -9349,6 +9352,44 @@
       "type": "chat"
     },
     {
+      "id": "gemma-4-26b-a4b-it-chimeraxheretic",
+      "name": "Gemma 4 26B A4B Chimera X Heretic",
+      "description": "Chimera X Heretic is a Gemma 4 26B A4B multimodal mixture-of-experts fine-tune for creative writing, expressive dialogue, and roleplay.",
+      "family": "gemma",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-08",
+      "last_updated": "2026-10-08",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.12,
+        "output": 0.38,
+        "cache_read": 0.06
+      },
+      "display_name": "Gemma 4 26B A4B Chimera X Heretic",
+      "type": "chat"
+    },
+    {
       "id": "gemma-4-26b-a4b-it-darksoul",
       "name": "Dark Soul",
       "description": "Dark Soul is a Gemma 4 26B A4B multimodal mixture-of-experts fine-tune for creative writing, expressive dialogue, and roleplay.",
@@ -9838,6 +9879,44 @@
         "cache_read": 0.05
       },
       "display_name": "Novelist",
+      "type": "chat"
+    },
+    {
+      "id": "gemma-4-31b-it-scarlet",
+      "name": "Gemma 4 31B Scarlet",
+      "description": "Scarlet is a multimodal Gemma 4 31B creative finetune for expressive dialogue, long-form storytelling, and roleplay.",
+      "family": "gemma",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-08",
+      "last_updated": "2026-10-08",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "Gemma 4 31B Scarlet",
       "type": "chat"
     },
     {
@@ -11261,9 +11340,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "display_name": "Hermes High",
       "type": "chat"
@@ -11307,9 +11386,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2,
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13,
         "cache_write": 0.08333
       },
       "display_name": "Hermes Low",
@@ -11354,9 +11433,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "display_name": "Hermes Medium",
       "type": "chat"
@@ -14362,8 +14441,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -14403,8 +14482,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -14442,8 +14521,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -14483,8 +14562,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -17543,8 +17622,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "input": 128000,
+        "context": 131072,
+        "input": 131072,
         "output": 16384
       },
       "cost": {
@@ -19510,8 +19589,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "input": 131072,
+        "context": 262144,
+        "input": 262144,
         "output": 32768
       },
       "cost": {
@@ -19549,8 +19628,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "input": 131072,
+        "context": 262144,
+        "input": 262144,
         "output": 32768
       },
       "cost": {
@@ -19748,8 +19827,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 258048,
-        "input": 258048,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -19789,8 +19868,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 258048,
-        "input": 258048,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -19839,8 +19918,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "input": 256000,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -20106,8 +20185,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 260096,
-        "input": 260096,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -20147,8 +20226,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 260096,
-        "input": 260096,
+        "context": 262144,
+        "input": 262144,
         "output": 65536
       },
       "cost": {
@@ -20685,8 +20764,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 262144,
+        "context": 1001536,
+        "input": 1001536,
         "output": 32768
       },
       "cost": {
@@ -21253,8 +21332,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 524288,
-        "input": 524288,
+        "context": 1010000,
+        "input": 1010000,
         "output": 32768
       },
       "cost": {
@@ -21291,8 +21370,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 524288,
-        "input": 524288,
+        "context": 1010000,
+        "input": 1010000,
         "output": 32768
       },
       "cost": {
@@ -21331,8 +21410,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 262144,
+        "context": 1001536,
+        "input": 1001536,
         "output": 32768
       },
       "cost": {
@@ -25028,9 +25107,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3",
@@ -25358,9 +25437,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3 Thinking",
@@ -25515,9 +25594,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
+        "input": 0.7,
+        "output": 2.2,
+        "cache_read": 0.13
       },
       "display_name": "GLM Latest",
       "type": "chat"

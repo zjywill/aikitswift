@@ -8081,54 +8081,6 @@
       "type": "chat"
     },
     {
-      "id": "deepinfra/hy3",
-      "name": "Hy3 (DeepInfra)",
-      "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "family": "Hy",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-07-06",
-      "last_updated": "2026-07-06",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "input": 192000,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.14,
-        "output": 0.58,
-        "cache_read": 0.035
-      },
-      "canonical_model_id": "tencent/hy3",
-      "display_name": "Hy3 (DeepInfra)",
-      "type": "chat"
-    },
-    {
       "id": "deepinfra/inkling",
       "name": "Inkling (DeepInfra)",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",

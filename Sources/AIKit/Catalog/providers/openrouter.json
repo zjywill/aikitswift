@@ -635,7 +635,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-10-07",
       "last_updated": "2026-10-07",
@@ -945,7 +945,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-01",
       "release_date": "2026-05-28",
       "last_updated": "2026-05-28",
@@ -1001,7 +1001,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-05",
       "release_date": "2026-07-24",
       "last_updated": "2026-07-24",
@@ -1054,7 +1054,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -1363,7 +1363,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-28",
       "last_updated": "2026-09-28",
@@ -1467,48 +1467,6 @@
       },
       "canonical_model_id": "arcee-ai/trinity-large-thinking",
       "display_name": "Trinity Large Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "ERNIE 4.5 VL 424B A47B ",
-      "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
-      "family": "ernie",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-06-30",
-      "last_updated": "2025-06-30",
-      "modalities": {
-        "input": [
-          "image",
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 123000,
-        "output": 16000
-      },
-      "cost": {
-        "input": 0.42,
-        "output": 1.25
-      },
-      "display_name": "ERNIE 4.5 VL 424B A47B ",
       "type": "chat"
     },
     {
@@ -2498,9 +2456,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.03,
+        "input": 0.0173,
         "output": 1.28,
-        "cache_read": 0.03
+        "cache_read": 0.0173
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -2549,9 +2507,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.018,
+        "input": 0.0137,
         "output": 1.28,
-        "cache_read": 0.018
+        "cache_read": 0.0137
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2653,9 +2611,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.2088,
-        "output": 0.4176,
-        "cache_read": 0.0174
+        "input": 0.287274,
+        "output": 0.574548,
+        "cache_read": 0.02394
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -3960,7 +3918,7 @@
       "id": "google/gemini-nano-banana-2.1",
       "name": "Nano Banana 2.1",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "nano-banana",
+      "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -3989,8 +3947,8 @@
           "text"
         ],
         "output": [
-          "image",
-          "text"
+          "text",
+          "image"
         ]
       },
       "open_weights": false,
@@ -4002,6 +3960,7 @@
         "input": 1.5,
         "output": 7.5
       },
+      "canonical_model_id": "google/gemini-nano-banana-2.1",
       "display_name": "Nano Banana 2.1",
       "type": "image-generation"
     },
@@ -4691,8 +4650,8 @@
       "type": "chat"
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "Ling 3.0 Flash Sante (free)",
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "Ling 3.0 Flash Sante",
       "description": "Efficient model for low-latency assistance, extraction, and routine automation",
       "family": "ling",
       "attachment": false,
@@ -4724,10 +4683,11 @@
         "output": 32768
       },
       "cost": {
-        "input": 0,
-        "output": 0
+        "input": 0.042,
+        "output": 0.1232,
+        "cache_read": 0.0084
       },
-      "display_name": "Ling 3.0 Flash Sante (free)",
+      "display_name": "Ling 3.0 Flash Sante",
       "type": "chat"
     },
     {
@@ -5168,9 +5128,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.5,
-        "cache_read": 0.11
+        "input": 0.1,
+        "output": 0.32
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct",
@@ -6312,7 +6271,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 524288,
+        "context": 1048576,
         "output": 262144
       },
       "cost": {
@@ -6474,7 +6433,7 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.019,
+        "input": 0.029,
         "output": 0.03
       },
       "canonical_model_id": "mistral/mistral-nemo",
@@ -6945,9 +6904,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.465,
+        "input": 0.4344,
         "output": 2.45,
-        "cache_read": 0.0975
+        "cache_read": 0.12
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -7037,9 +6996,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.5,
-        "output": 15,
-        "cache_read": 0.45
+        "input": 0.82,
+        "output": 13.5,
+        "cache_read": 0.55
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -7349,11 +7308,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 235929
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.2
+        "input": 0.06,
+        "output": 0.24
       },
       "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b",
       "display_name": "Nemotron 3 Nano 30B A3B",
@@ -12738,12 +12697,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 1.1,
-        "cache_read": 0.07
+        "input": 0.09,
+        "output": 1.1
       },
       "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3-Next 80B-A3B Instruct",
@@ -13121,11 +13079,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 81920
       },
       "cost": {
-        "input": 0.195,
-        "output": 1.56
+        "input": 0.26,
+        "output": 2.6
       },
       "canonical_model_id": "alibaba/qwen3.5-27b",
       "display_name": "Qwen3.5 27B",
@@ -13208,12 +13166,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 81920
+        "output": 235929
       },
       "cost": {
-        "input": 0.45,
-        "output": 3,
-        "cache_read": 0.22
+        "input": 0.55,
+        "output": 3.5,
+        "cache_read": 0.225
       },
       "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B-A17B",
@@ -14567,7 +14525,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2023-12-31",
@@ -14713,6 +14671,55 @@
       },
       "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "stepfun/step-5-preview",
+      "name": "Step 5 Preview",
+      "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 64000
+      },
+      "cost": {
+        "input": 1,
+        "output": 2.7,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "stepfun/step-5-preview",
+      "display_name": "Step 5 Preview",
       "type": "chat"
     },
     {
@@ -16486,7 +16493,7 @@
       "cost": {
         "input": 0.3,
         "output": 0.9,
-        "cache_read": 0.05
+        "cache_read": 0.055
       },
       "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V",
@@ -16759,12 +16766,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.0883,
-        "output": 7.2,
-        "cache_read": 0.0795
+        "input": 0.069,
+        "output": 4.3,
+        "cache_read": 0.068
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
@@ -16809,9 +16816,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.062,
+        "input": 0.039,
         "output": 3.39,
-        "cache_read": 0.06
+        "cache_read": 0.038
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -17082,7 +17089,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-04-27",
       "last_updated": "2026-04-27",
       "modalities": {
@@ -17145,7 +17152,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-04-21",
       "last_updated": "2026-04-21",
       "modalities": {
@@ -17196,7 +17203,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-04-27",
       "last_updated": "2026-04-27",
@@ -17267,8 +17274,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0152,
-        "output": 0.8,
+        "input": 0.012,
+        "output": 1.2,
         "cache_read": 0.005
       },
       "display_name": "DeepSeek Flash Latest",
@@ -17316,9 +17323,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.2909,
-        "output": 4.2,
-        "cache_read": 0.2
+        "input": 0.108,
+        "output": 8,
+        "cache_read": 0.11
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -17365,9 +17372,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.018,
-        "output": 1.28,
-        "cache_read": 0.018
+        "input": 0.01096,
+        "output": 0.532795,
+        "cache_read": 0.01096
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17538,9 +17545,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.49,
+        "input": 0.81,
         "output": 13,
-        "cache_read": 0.45
+        "cache_read": 0.3
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17980,12 +17987,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.5,
-        "cache_read": 0.025
+        "input": 0.032,
+        "output": 2.798391,
+        "cache_read": 0.02
       },
       "display_name": "GLM Flash Latest",
       "type": "chat"
@@ -18029,9 +18036,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0496,
-        "output": 6.3,
-        "cache_read": 0.0461
+        "input": 0.0312,
+        "output": 4.4,
+        "cache_read": 0.029
       },
       "display_name": "GLM Latest",
       "type": "chat"
