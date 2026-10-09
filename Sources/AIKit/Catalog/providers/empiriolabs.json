@@ -2142,6 +2142,11 @@
       "reasoning_options": [
         {
           "type": "toggle"
+        },
+        {
+          "type": "budget_tokens",
+          "min": 1,
+          "max": 81920
         }
       ],
       "tool_call": true,
@@ -2186,6 +2191,11 @@
       "reasoning_options": [
         {
           "type": "toggle"
+        },
+        {
+          "type": "budget_tokens",
+          "min": 1,
+          "max": 81920
         }
       ],
       "tool_call": true,
