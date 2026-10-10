@@ -1205,6 +1205,108 @@
       "type": "chat"
     },
     {
+      "id": "mimo-v2.6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "interleaved": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048560,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.87,
+        "output": 1.74,
+        "cache_read": 0.036
+      },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro",
+      "display_name": "MiMo-V2.6-Pro",
+      "type": "chat"
+    },
+    {
+      "id": "mimo-v2.6-pro-flex",
+      "name": "MiMo-V2.6-Pro Flex",
+      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
+      "family": "mimo",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        },
+        {
+          "type": "budget_tokens"
+        }
+      ],
+      "tool_call": true,
+      "interleaved": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048560,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.5655,
+        "output": 1.131,
+        "cache_read": 0.0234
+      },
+      "canonical_model_id": "xiaomi/mimo-v2.6-pro",
+      "display_name": "MiMo-V2.6-Pro Flex",
+      "type": "chat"
+    },
+    {
       "id": "qwen-3.8-27b",
       "name": "Qwen3.8 27B",
       "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",

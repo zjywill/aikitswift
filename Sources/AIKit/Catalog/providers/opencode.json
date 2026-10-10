@@ -4509,7 +4509,7 @@
       "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-27",
-      "last_updated": "2026-08-27",
+      "last_updated": "2026-09-03",
       "modalities": {
         "input": [
           "text"
@@ -4518,7 +4518,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 32768
@@ -5290,6 +5290,9 @@
       "limit": {
         "context": 524288,
         "output": 262144
+      },
+      "provider": {
+        "npm": "@ai-sdk/mistral"
       },
       "cost": {
         "input": 0.68,
