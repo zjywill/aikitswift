@@ -2153,6 +2153,41 @@
       "type": "chat"
     },
     {
+      "id": "cloudflare/@cf/meta/llama-3.2-1b-instruct",
+      "name": "Llama 3.2 1B Instruct (Cloudflare)",
+      "description": "Compact instruction-tuned Llama model for multilingual dialogue and on-device assistants",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2024-09-25",
+      "last_updated": "2024-09-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 60000,
+        "output": 32000
+      },
+      "cost": {
+        "input": 0.027,
+        "output": 0.201
+      },
+      "canonical_model_id": "meta/llama-3.2-1b-instruct",
+      "display_name": "Llama 3.2 1B Instruct (Cloudflare)",
+      "type": "chat"
+    },
+    {
       "id": "cloudflare/@cf/meta/llama-guard-3-8b",
       "name": "Llama-Guard-3-8B (Cloudflare)",
       "description": "Llama 3.1-based safety classifier for moderating prompts and model responses",
@@ -2974,6 +3009,40 @@
       "type": "chat"
     },
     {
+      "id": "deepinfra/Gryphe/MythoMax-L2-13b",
+      "name": "MythoMax L2 13B (Deep Infra)",
+      "description": "Llama 2 merge combining MythoLogic and Huginn for creative writing and roleplay",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2023-08-10",
+      "last_updated": "2023-08-10",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 4096,
+        "output": 3200
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 0.4
+      },
+      "canonical_model_id": "gryphe/mythomax-l2-13b",
+      "display_name": "MythoMax L2 13B (Deep Infra)",
+      "type": "chat"
+    },
+    {
       "id": "deepinfra/deepseek-ai/DeepSeek-R1",
       "name": "DeepSeek-R1 (Deep Infra)",
       "description": "Classic open reasoning model for transparent math, coding, and deliberate problem solving",
@@ -3009,6 +3078,44 @@
       },
       "canonical_model_id": "deepseek/deepseek-r1",
       "display_name": "DeepSeek-R1 (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/deepseek-ai/DeepSeek-R1-0528",
+      "name": "DeepSeek R1 0528 (Deep Infra)",
+      "description": "May 2025 DeepSeek R1 update with improved mathematics, coding, and reasoning",
+      "family": "deepseek-thinking",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-05-28",
+      "last_updated": "2025-05-28",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 163840,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 2.15,
+        "cache_read": 0.35
+      },
+      "canonical_model_id": "deepseek/deepseek-r1-0528",
+      "display_name": "DeepSeek R1 0528 (Deep Infra)",
       "type": "chat"
     },
     {
@@ -3497,6 +3604,75 @@
       },
       "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/microsoft/WizardLM-2-8x22B",
+      "name": "WizardLM 2 8x22B (Deep Infra)",
+      "description": "Microsoft WizardLM instruction-tuned Mixtral MoE for multilingual dialogue and complex tasks",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2024-04-15",
+      "last_updated": "2024-04-15",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "output": 8000
+      },
+      "cost": {
+        "input": 0.48,
+        "output": 0.48
+      },
+      "canonical_model_id": "microsoft/wizardlm-2-8x22b",
+      "display_name": "WizardLM 2 8x22B (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/moonshotai/Kimi-K2-Instruct",
+      "name": "Kimi K2 Instruct (Deep Infra)",
+      "description": "Non-thinking Kimi K2 MoE instruction model for coding and tool-using agents",
+      "family": "kimi-k2",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-11",
+      "last_updated": "2025-07-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 2
+      },
+      "canonical_model_id": "moonshotai/kimi-k2-instruct",
+      "display_name": "Kimi K2 Instruct (Deep Infra)",
       "type": "chat"
     },
     {
@@ -5660,6 +5836,54 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-nano-banana-2.1",
+      "name": "Nano Banana 2.1",
+      "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-06",
+      "last_updated": "2026-10-06",
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text",
+          "image"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 65536,
+        "output": 32768
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "canonical_model_id": "google/gemini-nano-banana-2.1",
+      "display_name": "Nano Banana 2.1",
+      "type": "image-generation"
+    },
+    {
       "id": "google/gemini-pro-latest",
       "name": "Gemini Pro Latest (Gemini 3.1 Pro Preview)",
       "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
@@ -5995,8 +6219,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33558,
-        "output": 0.44744
+        "input": 0.33618,
+        "output": 0.44824
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -6031,8 +6255,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.72709,
-        "output": 0.72709
+        "input": 0.72839,
+        "output": 0.72839
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -6077,8 +6301,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16779,
-        "output": 0.72709
+        "input": 0.16809,
+        "output": 0.72839
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -9918,6 +10142,41 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen-mt-plus",
+      "name": "Qwen MT Plus",
+      "description": "Flagship Qwen translation model with terminology control and support for 92 languages",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-24",
+      "last_updated": "2025-07-24",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 4096,
+        "output": 8192
+      },
+      "cost": {
+        "input": 2.46,
+        "output": 7.37
+      },
+      "canonical_model_id": "alibaba/qwen-mt-plus",
+      "display_name": "Qwen MT Plus",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen-vl-max",
       "name": "Qwen-VL Max",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -10479,6 +10738,43 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "name": "Qwen3 VL 30B A3B Instruct",
+      "description": "Open vision-language MoE model for image and video understanding, documents, and visual agents",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-10-04",
+      "last_updated": "2025-10-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.8
+      },
+      "canonical_model_id": "alibaba/qwen3-vl-30b-a3b-instruct",
+      "display_name": "Qwen3 VL 30B A3B Instruct",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3.8-2.4t-a95b",
       "name": "Qwen3.8 2.4T A95B",
       "description": "Open-weight sparse MoE (2.4T total, 95B active), the open-weight twin of Qwen3.8 Max for coding, research, complex reasoning, and agentic workflows",
@@ -10858,9 +11154,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.44744,
-        "output": 0.89488,
-        "cache_read": 0.089488
+        "input": 0.44824,
+        "output": 0.89648,
+        "cache_read": 0.089648
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -10942,8 +11238,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16779,
-        "output": 0.67116
+        "input": 0.16809,
+        "output": 0.67236
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -10978,8 +11274,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.00674,
-        "output": 1.00674
+        "input": 1.00854,
+        "output": 1.00854
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -11129,28 +11425,21 @@
       "type": "chat"
     },
     {
-      "id": "tencent/step-5-preview",
-      "name": "Step 5 Preview (Tencent)",
-      "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
+      "id": "tensorx/deepseek/deepseek-r1-0528",
+      "name": "DeepSeek R1 0528 (TensorX)",
+      "description": "May 2025 DeepSeek R1 update with improved mathematics, coding, and reasoning",
+      "family": "deepseek-thinking",
       "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": false,
-      "release_date": "2026-09-16",
-      "last_updated": "2026-09-20",
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-05-28",
+      "last_updated": "2025-05-28",
       "modalities": {
         "input": [
           "text"
@@ -11159,19 +11448,18 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "input": 1000000,
-        "output": 1000000
+        "context": 164000,
+        "output": 32768
       },
       "cost": {
-        "input": 1,
-        "output": 2.7,
-        "cache_read": 0.05
+        "input": 0.66,
+        "output": 2.6,
+        "cache_read": 0.165
       },
-      "canonical_model_id": "stepfun/step-5-preview",
-      "display_name": "Step 5 Preview (Tencent)",
+      "canonical_model_id": "deepseek/deepseek-r1-0528",
+      "display_name": "DeepSeek R1 0528 (TensorX)",
       "type": "chat"
     },
     {
@@ -13028,6 +13316,52 @@
       },
       "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini Flash Latest (Gemini 3.8 Flash, Vertex AI)",
+      "type": "chat"
+    },
+    {
+      "id": "vertex/gemini-nano-banana-2.1",
+      "name": "Nano Banana 2.1 (Vertex AI)",
+      "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
+      "family": "gemini-flash",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2026-10-06",
+      "last_updated": "2026-10-06",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "canonical_model_id": "google/gemini-nano-banana-2.1",
+      "display_name": "Nano Banana 2.1 (Vertex AI)",
       "type": "chat"
     },
     {

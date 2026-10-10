@@ -2122,11 +2122,11 @@
       "open_weights": true,
       "limit": {
         "context": 163840,
-        "output": 16000
+        "output": 16384
       },
       "cost": {
-        "input": 0.2574,
-        "output": 1.0287
+        "input": 0.32,
+        "output": 0.89
       },
       "canonical_model_id": "deepseek/deepseek-chat",
       "display_name": "DeepSeek Chat",
@@ -2250,9 +2250,9 @@
     },
     {
       "id": "deepseek/deepseek-r1-0528",
-      "name": "R1 0528",
+      "name": "DeepSeek R1 0528",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek",
+      "family": "deepseek-thinking",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2262,7 +2262,6 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2025-03-31",
       "release_date": "2025-05-28",
       "last_updated": "2025-05-28",
       "modalities": {
@@ -2283,7 +2282,8 @@
         "output": 2.15,
         "cache_read": 0.35
       },
-      "display_name": "R1 0528",
+      "canonical_model_id": "deepseek/deepseek-r1-0528",
+      "display_name": "DeepSeek R1 0528",
       "type": "chat"
     },
     {
@@ -2456,9 +2456,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0173,
+        "input": 0.03,
         "output": 1.28,
-        "cache_read": 0.0173
+        "cache_read": 0.03
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -2507,9 +2507,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0137,
+        "input": 0.006,
         "output": 1.28,
-        "cache_read": 0.0137
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2611,9 +2611,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.287274,
-        "output": 0.574548,
-        "cache_read": 0.02394
+        "input": 0.2088,
+        "output": 0.4176,
+        "cache_read": 0.0174
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -4147,9 +4147,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.0765,
-        "output": 0.255,
-        "cache_read": 0.0425
+        "input": 0.0675,
+        "output": 0.225,
+        "cache_read": 0.0375
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
@@ -4624,7 +4624,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-27",
       "last_updated": "2026-08-27",
@@ -5041,7 +5041,6 @@
       "tool_call": false,
       "structured_output": false,
       "temperature": true,
-      "knowledge": "2023-12-31",
       "release_date": "2024-09-25",
       "last_updated": "2024-09-25",
       "modalities": {
@@ -5061,6 +5060,7 @@
         "input": 0.027,
         "output": 0.201
       },
+      "canonical_model_id": "meta/llama-3.2-1b-instruct",
       "display_name": "Llama 3.2 1B Instruct",
       "type": "chat"
     },
@@ -5128,8 +5128,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.32
+        "input": 0.22,
+        "output": 0.5,
+        "cache_read": 0.11
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct",
@@ -6744,7 +6745,7 @@
     },
     {
       "id": "moonshotai/kimi-k2-0905",
-      "name": "Kimi K2 0905",
+      "name": "Kimi K2 Instruct 0905",
       "description": "Kimi model for long-context chat, coding, and agentic reasoning",
       "family": "kimi-k2",
       "attachment": false,
@@ -6754,9 +6755,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2024-12-31",
-      "release_date": "2025-09-04",
-      "last_updated": "2025-09-04",
+      "release_date": "2025-09-05",
+      "last_updated": "2025-09-05",
       "modalities": {
         "input": [
           "text"
@@ -6774,7 +6774,8 @@
         "input": 0.6,
         "output": 2.5
       },
-      "display_name": "Kimi K2 0905",
+      "canonical_model_id": "moonshotai/kimi-k2-0905",
+      "display_name": "Kimi K2 Instruct 0905",
       "type": "chat"
     },
     {
@@ -6808,11 +6809,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 98304
       },
       "cost": {
         "input": 0.6,
-        "output": 2.5
+        "output": 2.5,
+        "cache_read": 0.15
       },
       "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking",
@@ -6906,7 +6908,7 @@
       "cost": {
         "input": 0.4344,
         "output": 2.45,
-        "cache_read": 0.12
+        "cache_read": 0.1077
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -6996,9 +6998,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.82,
+        "input": 0.8,
         "output": 13.5,
-        "cache_read": 0.55
+        "cache_read": 0.5
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -7685,12 +7687,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 131072
+        "output": 235929
       },
       "cost": {
-        "input": 0.049,
-        "output": 0.14,
-        "cache_read": 0.0245
+        "input": 0.07,
+        "output": 0.2,
+        "cache_read": 0.04
       },
       "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nemotron 3.5 Lightning 30B A3B",
@@ -11888,55 +11890,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen Plus 0728",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-09-08",
-      "last_updated": "2025-09-08",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.26,
-        "output": 0.78,
-        "tiers": [
-          {
-            "input": 0.78,
-            "output": 2.34,
-            "tier": {
-              "type": "context",
-              "size": 256000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 0.78,
-          "output": 2.34
-        }
-      },
-      "display_name": "Qwen Plus 0728",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen2.5 VL 72B Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -12004,7 +11957,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
+        "context": 40960,
         "output": 16384
       },
       "cost": {
@@ -12012,48 +11965,6 @@
         "output": 0.24
       },
       "display_name": "Qwen3 14B",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b",
-      "name": "Qwen3 235B-A22B",
-      "description": "Large open Qwen MoE for multilingual reasoning, coding, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.455,
-        "output": 1.82
-      },
-      "canonical_model_id": "alibaba/qwen3-235b-a22b",
-      "display_name": "Qwen3 235B-A22B",
       "type": "chat"
     },
     {
@@ -12118,12 +12029,12 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
-        "output": 117964
+        "context": 128000,
+        "output": 16384
       },
       "cost": {
-        "input": 0.23,
-        "output": 2.3
+        "input": 0.45,
+        "output": 3.5
       },
       "display_name": "Qwen3 235B A22B Thinking 2507",
       "type": "chat"
@@ -12158,7 +12069,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
+        "context": 40960,
         "output": 16384
       },
       "cost": {
@@ -12205,43 +12116,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen3-30b-a3b-thinking-2507",
-      "name": "Qwen3 30B A3B Thinking 2507",
-      "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-06-30",
-      "release_date": "2025-08-28",
-      "last_updated": "2025-08-28",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 81920,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.2,
-        "output": 2.4
-      },
-      "display_name": "Qwen3 30B A3B Thinking 2507",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3-32b",
       "name": "Qwen3 32B",
       "description": "Dense open Qwen model for self-hosted chat, reasoning, and coding",
@@ -12281,47 +12155,6 @@
       },
       "canonical_model_id": "alibaba/qwen3-32b",
       "display_name": "Qwen3 32B",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-8b",
-      "name": "Qwen3 8B",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-04-28",
-      "last_updated": "2025-04-28",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.117,
-        "output": 0.455
-      },
-      "display_name": "Qwen3 8B",
       "type": "chat"
     },
     {
@@ -12494,184 +12327,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen3-coder-plus",
-      "name": "Qwen3 Coder Plus",
-      "description": "Hosted Qwen coder for software agents, repo edits, and long-context code",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-07-23",
-      "last_updated": "2025-07-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.65,
-        "output": 3.25,
-        "cache_read": 0.13,
-        "cache_write": 0.8125,
-        "tiers": [
-          {
-            "input": 1.17,
-            "output": 5.85,
-            "cache_read": 0.234,
-            "cache_write": 1.4625,
-            "tier": {
-              "type": "context",
-              "size": 32000
-            }
-          },
-          {
-            "input": 1.95,
-            "output": 9.75,
-            "cache_read": 0.39,
-            "cache_write": 2.4375,
-            "tier": {
-              "type": "context",
-              "size": 128000
-            }
-          }
-        ]
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-plus",
-      "display_name": "Qwen3 Coder Plus",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max",
-      "name": "Qwen3 Max",
-      "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.78,
-        "output": 3.9,
-        "cache_read": 0.156,
-        "cache_write": 0.975,
-        "tiers": [
-          {
-            "input": 1.56,
-            "output": 7.8,
-            "cache_read": 0.312,
-            "cache_write": 1.95,
-            "tier": {
-              "type": "context",
-              "size": 32000
-            }
-          },
-          {
-            "input": 1.95,
-            "output": 9.75,
-            "cache_read": 0.39,
-            "cache_write": 2.4375,
-            "tier": {
-              "type": "context",
-              "size": 128000
-            }
-          }
-        ]
-      },
-      "canonical_model_id": "alibaba/qwen3-max",
-      "display_name": "Qwen3 Max",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max-thinking",
-      "name": "Qwen3 Max Thinking",
-      "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-02-09",
-      "last_updated": "2026-02-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.78,
-        "output": 3.9,
-        "tiers": [
-          {
-            "input": 1.56,
-            "output": 7.8,
-            "tier": {
-              "type": "context",
-              "size": 32000
-            }
-          },
-          {
-            "input": 1.95,
-            "output": 9.75,
-            "tier": {
-              "type": "context",
-              "size": 128000
-            }
-          }
-        ]
-      },
-      "display_name": "Qwen3 Max Thinking",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "name": "Qwen3-Next 80B-A3B Instruct",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
@@ -12697,11 +12352,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 16384
+        "output": 235929
       },
       "cost": {
-        "input": 0.09,
-        "output": 1.1
+        "input": 0.1,
+        "output": 1.1,
+        "cache_read": 0.07
       },
       "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3-Next 80B-A3B Instruct",
@@ -12735,7 +12391,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 235929
       },
       "cost": {
         "input": 0.15,
@@ -12784,45 +12440,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen3 VL 235B A22B Thinking",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.4,
-        "output": 4
-      },
-      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-thinking",
-      "display_name": "Qwen3 VL 235B A22B Thinking",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen3 VL 30B A3B Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -12834,9 +12451,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-10-06",
-      "last_updated": "2025-10-06",
+      "release_date": "2025-10-04",
+      "last_updated": "2025-10-04",
       "modalities": {
         "input": [
           "text",
@@ -12855,6 +12471,7 @@
         "input": 0.15,
         "output": 0.6
       },
+      "canonical_model_id": "alibaba/qwen3-vl-30b-a3b-instruct",
       "display_name": "Qwen3 VL 30B A3B Instruct",
       "type": "chat"
     },
@@ -12887,48 +12504,13 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 235929
       },
       "cost": {
-        "input": 0.2,
-        "output": 2.4
+        "input": 0.29,
+        "output": 1
       },
       "display_name": "Qwen3 VL 30B A3B Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-32b-instruct",
-      "name": "Qwen3 VL 32B Instruct",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2025-10-23",
-      "last_updated": "2025-10-23",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.104,
-        "output": 0.416
-      },
-      "display_name": "Qwen3 VL 32B Instruct",
       "type": "chat"
     },
     {
@@ -12957,50 +12539,14 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 32768
+        "output": 235929
       },
       "cost": {
-        "input": 0.117,
-        "output": 0.455
+        "input": 0.25,
+        "output": 0.75,
+        "cache_read": 0.12
       },
       "display_name": "Qwen3 VL 8B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-8b-thinking",
-      "name": "Qwen3 VL 8B Thinking",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2025-10-14",
-      "last_updated": "2025-10-14",
-      "modalities": {
-        "input": [
-          "image",
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.18,
-        "output": 2.1
-      },
-      "display_name": "Qwen3 VL 8B Thinking",
       "type": "chat"
     },
     {
@@ -13122,12 +12668,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 32768
       },
       "cost": {
-        "input": 0.15,
-        "output": 1,
-        "cache_read": 0.05
+        "input": 0.08,
+        "output": 0.75,
+        "cache_read": 0.04
       },
       "canonical_model_id": "alibaba/qwen3.5-35b-a3b",
       "display_name": "Qwen3.5 35B-A3B",
@@ -13411,12 +12957,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 81920
       },
       "cost": {
-        "input": 0.3,
-        "output": 2,
-        "cache_read": 0.03
+        "input": 0.32,
+        "output": 3.2
       },
       "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B",
@@ -13524,60 +13069,6 @@
       },
       "canonical_model_id": "alibaba/qwen3.6-flash",
       "display_name": "Qwen3.6 Flash",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3.6-max-preview",
-      "name": "Qwen3.6 Max Preview",
-      "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2026-04-20",
-      "last_updated": "2026-04-20",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1.027,
-        "output": 6.162,
-        "cache_write": 1.28375,
-        "tiers": [
-          {
-            "input": 1.58,
-            "output": 9.48,
-            "cache_write": 1.975,
-            "tier": {
-              "type": "context",
-              "size": 128000
-            }
-          }
-        ]
-      },
-      "canonical_model_id": "alibaba/qwen3.6-max-preview",
-      "display_name": "Qwen3.6 Max Preview",
       "type": "chat"
     },
     {
@@ -13959,8 +13450,7 @@
       "cost": {
         "input": 0.15,
         "output": 0.47,
-        "cache_read": 0.016,
-        "cache_write": 0.2
+        "cache_read": 0.016
       },
       "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash",
@@ -14011,8 +13501,7 @@
       "cost": {
         "input": 2,
         "output": 6,
-        "cache_read": 0.25,
-        "cache_write": 2.5
+        "cache_read": 0.25
       },
       "canonical_model_id": "alibaba/qwen3.8-max-0902",
       "display_name": "Qwen3.8 Max 0902",
@@ -16443,12 +15932,12 @@
       "open_weights": true,
       "limit": {
         "context": 204800,
-        "output": 16384
+        "output": 131072
       },
       "cost": {
-        "input": 0.43,
-        "output": 1.75,
-        "cache_read": 0.08
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.1
       },
       "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM-4.6",
@@ -16769,9 +16258,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.069,
-        "output": 4.3,
-        "cache_read": 0.068
+        "input": 0.06,
+        "output": 7,
+        "cache_read": 0.059
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
@@ -16817,7 +16306,7 @@
       },
       "cost": {
         "input": 0.039,
-        "output": 3.39,
+        "output": 6,
         "cache_read": 0.038
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -17274,8 +16763,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.012,
-        "output": 1.2,
+        "input": 0.016,
+        "output": 0.6,
         "cache_read": 0.005
       },
       "display_name": "DeepSeek Flash Latest",
@@ -17323,9 +16812,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.108,
-        "output": 8,
-        "cache_read": 0.11
+        "input": 0.14256,
+        "output": 0.42768,
+        "cache_read": 0.004536
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -17372,9 +16861,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.01096,
-        "output": 0.532795,
-        "cache_read": 0.01096
+        "input": 0.006,
+        "output": 1.28,
+        "cache_read": 0.006
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17545,9 +17034,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.81,
-        "output": 13,
-        "cache_read": 0.3
+        "input": 0.7,
+        "output": 15,
+        "cache_read": 0.45
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17991,8 +17480,8 @@
       },
       "cost": {
         "input": 0.032,
-        "output": 2.798391,
-        "cache_read": 0.02
+        "output": 0.72,
+        "cache_read": 0.01
       },
       "display_name": "GLM Flash Latest",
       "type": "chat"
@@ -18033,12 +17522,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.0312,
-        "output": 4.4,
-        "cache_read": 0.029
+        "input": 0.039,
+        "output": 6,
+        "cache_read": 0.038
       },
       "display_name": "GLM Latest",
       "type": "chat"

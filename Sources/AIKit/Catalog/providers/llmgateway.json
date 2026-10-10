@@ -3038,7 +3038,9 @@
           "type": "effort",
           "values": [
             "none",
+            "minimal",
             "low",
+            "medium",
             "high",
             "xhigh",
             "max"
@@ -6660,9 +6662,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028,
+        "input": 0.168,
+        "output": 0.336,
+        "cache_read": 0.0034,
         "tiers": [
           {
             "input": 0.8,
@@ -9780,6 +9782,41 @@
       },
       "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B-A17B",
+      "type": "chat"
+    },
+    {
+      "id": "reka-edge-2603",
+      "name": "Reka Edge 2603",
+      "description": "Multimodal model for analyzing text, images, documents, and rich media",
+      "family": "reka",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-09",
+      "last_updated": "2026-10-09",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 16384,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.1
+      },
+      "display_name": "Reka Edge 2603",
       "type": "chat"
     },
     {
