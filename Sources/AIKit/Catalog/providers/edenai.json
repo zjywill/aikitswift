@@ -839,6 +839,42 @@
       "type": "chat"
     },
     {
+      "id": "amazon/qwen.qwen3-coder-next",
+      "name": "Qwen3 Coder Next (Amazon Bedrock)",
+      "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-09",
+      "release_date": "2026-02-03",
+      "last_updated": "2026-02-03",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 1.44
+      },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
+      "display_name": "Qwen3 Coder Next (Amazon Bedrock)",
+      "type": "chat"
+    },
+    {
       "id": "amazon/zai.glm-4.7-flash",
       "name": "GLM-4.7-Flash (Amazon Bedrock)",
       "description": "Budget GLM lane for fast coding help, routing, and everyday automation",
@@ -2910,6 +2946,82 @@
       "type": "chat"
     },
     {
+      "id": "databricks/databricks-qwen3-next-80b-a3b-instruct",
+      "name": "Qwen3-Next 80B-A3B Instruct (Databricks)",
+      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-09",
+      "last_updated": "2025-09",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15001,
+        "output": 1.20001,
+        "cache_read": 0.015001,
+        "cache_write": 0.15001
+      },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
+      "display_name": "Qwen3-Next 80B-A3B Instruct (Databricks)",
+      "type": "chat"
+    },
+    {
+      "id": "databricks/databricks-qwen3-next-80b-a3b-instruct@eu",
+      "name": "Qwen3-Next 80B-A3B Instruct (Databricks, EU)",
+      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-09",
+      "last_updated": "2025-09",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15001,
+        "output": 1.20001,
+        "cache_read": 0.015001,
+        "cache_write": 0.15001
+      },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
+      "display_name": "Qwen3-Next 80B-A3B Instruct (Databricks, EU)",
+      "type": "chat"
+    },
+    {
       "id": "deepinfra/ByteDance/Seed-2.0-code",
       "name": "Seed 2.0 Code (Deep Infra)",
       "description": "ByteDance Seed coding model for multimodal software engineering and long-running agents",
@@ -3040,6 +3152,224 @@
       },
       "canonical_model_id": "gryphe/mythomax-l2-13b",
       "display_name": "MythoMax L2 13B (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen3 235B-A22B Instruct 2507 (Deep Infra)",
+      "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-21",
+      "last_updated": "2025-07-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.09,
+        "output": 0.55
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
+      "display_name": "Qwen3 235B-A22B Instruct 2507 (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "name": "Qwen3-Coder 480B-A35B Instruct (Deep Infra)",
+      "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-04",
+      "last_updated": "2025-04",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 1.6
+      },
+      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
+      "display_name": "Qwen3-Coder 480B-A35B Instruct (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-Max",
+      "name": "Qwen3 Max (Deep Infra)",
+      "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-09-23",
+      "last_updated": "2025-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 256000,
+        "output": 65536
+      },
+      "cost": {
+        "input": 1.2,
+        "output": 6,
+        "cache_read": 0.24
+      },
+      "canonical_model_id": "alibaba/qwen3-max",
+      "display_name": "Qwen3 Max (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "name": "Qwen3-Next 80B-A3B Instruct (Deep Infra)",
+      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-09",
+      "last_updated": "2025-09",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.09,
+        "output": 1.1
+      },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
+      "display_name": "Qwen3-Next 80B-A3B Instruct (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "name": "Qwen3 VL 235B A22B Instruct (Deep Infra)",
+      "description": "Qwen vision-language instruct model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-03-31",
+      "release_date": "2025-09-23",
+      "last_updated": "2025-09-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.88,
+        "cache_read": 0.11
+      },
+      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-instruct",
+      "display_name": "Qwen3 VL 235B A22B Instruct (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "name": "Qwen3 VL 30B A3B Instruct (Deep Infra)",
+      "description": "Open vision-language MoE model for image and video understanding, documents, and visual agents",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-10-04",
+      "last_updated": "2025-10-04",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "canonical_model_id": "alibaba/qwen3-vl-30b-a3b-instruct",
+      "display_name": "Qwen3 VL 30B A3B Instruct (Deep Infra)",
       "type": "chat"
     },
     {
@@ -6227,6 +6557,42 @@
       "type": "chat"
     },
     {
+      "id": "ionos/Qwen/Qwen3-Coder-Next",
+      "name": "Qwen3 Coder Next (IONOS)",
+      "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-09",
+      "release_date": "2026-02-03",
+      "last_updated": "2026-02-03",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.16809,
+        "output": 0.89648
+      },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
+      "display_name": "Qwen3 Coder Next (IONOS)",
+      "type": "chat"
+    },
+    {
       "id": "ionos/meta-llama/Llama-3.3-70B-Instruct",
       "name": "Llama-3.3-70B-Instruct (IONOS)",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
@@ -7203,6 +7569,42 @@
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
+      "type": "chat"
+    },
+    {
+      "id": "nebius/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen3 235B-A22B Instruct 2507 (Nebius)",
+      "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-07-21",
+      "last_updated": "2025-07-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.6,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
+      "display_name": "Qwen3 235B-A22B Instruct 2507 (Nebius)",
       "type": "chat"
     },
     {
@@ -10177,191 +10579,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen-vl-max",
-      "name": "Qwen-VL Max",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-04-08",
-      "last_updated": "2025-08-13",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.8,
-        "output": 3.2,
-        "cache_read": 0.16
-      },
-      "canonical_model_id": "alibaba/qwen-vl-max",
-      "display_name": "Qwen-VL Max",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen-vl-plus",
-      "name": "Qwen-VL Plus",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-01-25",
-      "last_updated": "2025-08-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.21,
-        "output": 0.63,
-        "cache_read": 0.042
-      },
-      "canonical_model_id": "alibaba/qwen-vl-plus",
-      "display_name": "Qwen-VL Plus",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b-instruct-2507",
-      "name": "Qwen3 235B-A22B Instruct 2507",
-      "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2025-07-21",
-      "last_updated": "2025-07-21",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.23,
-        "output": 0.92
-      },
-      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
-      "display_name": "Qwen3 235B-A22B Instruct 2507",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-coder-30b-a3b-instruct",
-      "name": "Qwen3-Coder 30B-A3B Instruct",
-      "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.45,
-        "output": 2.25
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
-      "display_name": "Qwen3-Coder 30B-A3B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-coder-480b-a35b-instruct",
-      "name": "Qwen3-Coder 480B-A35B Instruct",
-      "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1.5,
-        "output": 7.5
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
-      "display_name": "Qwen3-Coder 480B-A35B Instruct",
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3-coder-flash",
       "name": "Qwen3 Coder Flash",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
@@ -10397,381 +10614,6 @@
       },
       "canonical_model_id": "alibaba/qwen3-coder-flash",
       "display_name": "Qwen3 Coder Flash",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-coder-next",
-      "name": "Qwen3 Coder Next",
-      "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-09",
-      "release_date": "2026-02-03",
-      "last_updated": "2026-02-03",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.3,
-        "output": 1.5
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-next",
-      "display_name": "Qwen3 Coder Next",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-coder-next@eu",
-      "name": "Qwen3 Coder Next (EU)",
-      "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-09",
-      "release_date": "2026-02-03",
-      "last_updated": "2026-02-03",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.3,
-        "output": 1.5
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-next",
-      "display_name": "Qwen3 Coder Next (EU)",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-coder-plus",
-      "name": "Qwen3 Coder Plus",
-      "description": "Hosted Qwen coder for software agents, repo edits, and long-context code",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-07-23",
-      "last_updated": "2025-07-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1,
-        "output": 5,
-        "cache_read": 0.2,
-        "cache_write": 1.25
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-plus",
-      "display_name": "Qwen3 Coder Plus",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max",
-      "name": "Qwen3 Max",
-      "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1.2,
-        "output": 6,
-        "cache_read": 0.24,
-        "cache_write": 1.5
-      },
-      "canonical_model_id": "alibaba/qwen3-max",
-      "display_name": "Qwen3 Max",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max@eu",
-      "name": "Qwen3 Max (EU)",
-      "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1.2,
-        "output": 6,
-        "cache_read": 0.24,
-        "cache_write": 1.5
-      },
-      "canonical_model_id": "alibaba/qwen3-max",
-      "display_name": "Qwen3 Max (EU)",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-instruct",
-      "name": "Qwen3-Next 80B-A3B Instruct",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-09",
-      "last_updated": "2025-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 1.2
-      },
-      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
-      "display_name": "Qwen3-Next 80B-A3B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-thinking",
-      "name": "Qwen3-Next 80B-A3B (Thinking)",
-      "description": "Efficient Qwen thinking model for local reasoning, math, and coding agents",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-09",
-      "last_updated": "2025-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 1.2
-      },
-      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-thinking",
-      "display_name": "Qwen3-Next 80B-A3B (Thinking)",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-instruct",
-      "name": "Qwen3 VL 235B A22B Instruct",
-      "description": "Qwen vision-language instruct model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.4,
-        "output": 1.6
-      },
-      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-instruct",
-      "display_name": "Qwen3 VL 235B A22B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen3 VL 235B A22B Thinking",
-      "description": "Qwen vision-language thinking model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.4,
-        "output": 4
-      },
-      "canonical_model_id": "alibaba/qwen3-vl-235b-a22b-thinking",
-      "display_name": "Qwen3 VL 235B A22B Thinking",
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-30b-a3b-instruct",
-      "name": "Qwen3 VL 30B A3B Instruct",
-      "description": "Open vision-language MoE model for image and video understanding, documents, and visual agents",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2025-10-04",
-      "last_updated": "2025-10-04",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.2,
-        "output": 0.8
-      },
-      "canonical_model_id": "alibaba/qwen3-vl-30b-a3b-instruct",
-      "display_name": "Qwen3 VL 30B A3B Instruct",
       "type": "chat"
     },
     {
@@ -11076,44 +10918,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwq-plus",
-      "name": "QwQ Plus",
-      "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2025-03-05",
-      "last_updated": "2025-03-05",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.8,
-        "output": 2.4
-      },
-      "canonical_model_id": "alibaba/qwq-plus",
-      "display_name": "QwQ Plus",
-      "type": "chat"
-    },
-    {
       "id": "scaleway/deepseek-v4-flash-0731",
       "name": "DeepSeek V4 Flash 0731 (Scaleway)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
@@ -11279,6 +11083,77 @@
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
+      "type": "chat"
+    },
+    {
+      "id": "scaleway/qwen3-235b-a22b-instruct-2507",
+      "name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
+      "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-21",
+      "last_updated": "2025-07-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 250000,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.84045,
+        "output": 2.52135
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
+      "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
+      "type": "chat"
+    },
+    {
+      "id": "scaleway/qwen3-coder-30b-a3b-instruct",
+      "name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",
+      "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-04",
+      "last_updated": "2025-04",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 128000,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.22412,
+        "output": 0.89648
+      },
+      "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
+      "display_name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",
       "type": "chat"
     },
     {
