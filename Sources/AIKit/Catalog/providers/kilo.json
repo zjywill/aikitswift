@@ -2235,8 +2235,8 @@
       },
       "cost": {
         "input": 0.259,
-        "output": 0.42,
-        "cache_read": 0.135
+        "output": 0.8,
+        "cache_read": 0.14
       },
       "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
@@ -10291,7 +10291,7 @@
       },
       "cost": {
         "input": 0.03,
-        "output": 0.17,
+        "output": 0.15,
         "cache_read": 0.03
       },
       "canonical_model_id": "openai/gpt-oss-120b",
@@ -12695,12 +12695,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 65536
       },
       "cost": {
-        "input": 0.15,
-        "output": 1,
-        "cache_read": 0.05
+        "input": 0.1,
+        "output": 0.95,
+        "cache_read": 0.1
       },
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B-A3B",
@@ -16646,7 +16646,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.016,
+        "input": 0.0001,
         "output": 0.6,
         "cache_read": 0.005
       },
@@ -16693,9 +16693,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.14256,
-        "output": 0.42768,
-        "cache_read": 0.004536
+        "input": 0.21912,
+        "output": 0.65736,
+        "cache_read": 0.006972
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16740,9 +16740,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.006,
+        "input": 0.0095,
         "output": 1.28,
-        "cache_read": 0.006
+        "cache_read": 0.0095
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16893,9 +16893,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.7,
-        "output": 15,
-        "cache_read": 0.45
+        "input": 0.28,
+        "output": 14.89,
+        "cache_read": 0.27
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17243,12 +17243,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.032,
-        "output": 0.72,
-        "cache_read": 0.01
+        "input": 0.04,
+        "output": 0.5,
+        "cache_read": 0.0125
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17293,7 +17293,7 @@
       },
       "cost": {
         "input": 0.039,
-        "output": 6,
+        "output": 4.8,
         "cache_read": 0.038
       },
       "display_name": "Z.ai: GLM Latest",
