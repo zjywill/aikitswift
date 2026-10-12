@@ -1359,7 +1359,7 @@
     },
     {
       "id": "bytedance-seed/seed-1.6",
-      "name": "ByteDance Seed: Seed 1.6",
+      "name": "ByteDance Seed: Seed 1.6 (retires Nov 11)",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
       "family": "seed",
       "attachment": true,
@@ -1400,12 +1400,12 @@
         "input": 0.25,
         "output": 2
       },
-      "display_name": "ByteDance Seed: Seed 1.6",
+      "display_name": "ByteDance Seed: Seed 1.6 (retires Nov 11)",
       "type": "chat"
     },
     {
       "id": "bytedance-seed/seed-1.6-flash",
-      "name": "ByteDance Seed: Seed 1.6 Flash",
+      "name": "ByteDance Seed: Seed 1.6 Flash (retires Nov 11)",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
       "family": "seed",
       "attachment": true,
@@ -1446,7 +1446,7 @@
         "input": 0.075,
         "output": 0.3
       },
-      "display_name": "ByteDance Seed: Seed 1.6 Flash",
+      "display_name": "ByteDance Seed: Seed 1.6 Flash (retires Nov 11)",
       "type": "chat"
     },
     {
@@ -5230,7 +5230,7 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 1.1,
+        "output": 1.2,
         "cache_read": 0.04
       },
       "canonical_model_id": "meta/muse-glimmer-30b",
@@ -6868,9 +6868,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.4344,
-        "output": 2.45,
-        "cache_read": 0.1077
+        "input": 0.65,
+        "output": 3.41,
+        "cache_read": 0.15
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -7467,8 +7467,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 16384
+        "context": 202800,
+        "output": 182520
       },
       "cost": {
         "input": 0.5,
@@ -13035,8 +13035,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1000000,
-        "output": 131072
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.425,
@@ -16643,12 +16643,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
-        "input": 0.0001,
-        "output": 0.6,
-        "cache_read": 0.005
+        "input": 0.0348,
+        "output": 0.1392,
+        "cache_read": 0.000696
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -16693,9 +16693,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.21912,
-        "output": 0.65736,
-        "cache_read": 0.006972
+        "input": 0.20988,
+        "output": 0.62964,
+        "cache_read": 0.006678
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16740,9 +16740,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0095,
-        "output": 1.28,
-        "cache_read": 0.0095
+        "input": 0.0161,
+        "output": 0.9,
+        "cache_read": 0.0161
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -16893,9 +16893,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.28,
-        "output": 14.89,
-        "cache_read": 0.27
+        "input": 0.72,
+        "output": 16.5,
+        "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17292,9 +17292,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.039,
+        "input": 0.079,
         "output": 4.8,
-        "cache_read": 0.038
+        "cache_read": 0.059
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

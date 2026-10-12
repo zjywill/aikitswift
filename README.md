@@ -63,7 +63,7 @@ the next request when they are.
 ## The idea: protocols, not providers
 
 The mistake to avoid is writing one implementation per vendor. The bundled catalog
-holds **204 providers and 6878 models — but only 5 wire protocols**, because most
+holds **205 providers and 6895 models — but only 5 wire protocols**, because most
 providers speak someone else's:
 
 | Protocol | Providers |
@@ -79,7 +79,7 @@ AIKit splits along that seam:
 Sources/AIKit/
   Spec/        the normalized vocabulary — one enum every provider maps onto
   Wire/        one implementation per protocol   (5, the real work)
-  Providers/   the catalog                       (204 JSON configs, pure data)
+  Providers/   the catalog                       (205 JSON configs, pure data)
   Tokens/      context attribution
   Client/      the plumbing between them
 ```
@@ -247,7 +247,7 @@ guard ProviderCatalog.isLoaded else { fatalError(ProviderCatalog.diagnostics) }
 ## Status
 
 Early, and the API will change. Streaming responses and request encoding work across
-all five protocols; the catalog covers 204 providers.
+all five protocols; the catalog covers 205 providers.
 
 | | |
 |---|---|
@@ -257,7 +257,7 @@ all five protocols; the catalog covers 204 providers.
 | OpenAI Chat Completions | ✅ stream + request |
 | OpenAI Responses | ✅ stream + request |
 | Google Generative AI | ✅ stream + request |
-| Provider catalog | ✅ 204 providers, 6878 models |
+| Provider catalog | ✅ 205 providers, 6895 models |
 | Thinking on / off / level | ✅ all protocols |
 | Live model listing (`GET /models`) | ✅ all protocols |
 | Context attribution | ✅ |
