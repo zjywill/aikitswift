@@ -6242,7 +6242,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "display_name": "Claw High",
@@ -6287,7 +6287,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2,
         "cache_write": 0.08333
       },
@@ -6333,7 +6333,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "display_name": "Claw Medium",
@@ -11342,7 +11342,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "display_name": "Hermes High",
@@ -11388,7 +11388,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2,
         "cache_write": 0.08333
       },
@@ -11435,7 +11435,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "display_name": "Hermes Medium",
@@ -25118,7 +25118,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -25448,7 +25448,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -25605,7 +25605,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.2,
+        "output": 1.1,
         "cache_read": 0.2
       },
       "display_name": "GLM Latest",

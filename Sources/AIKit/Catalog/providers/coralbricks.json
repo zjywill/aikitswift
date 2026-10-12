@@ -46,7 +46,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.3,
+        "input": 0.01,
         "output": 1.2,
         "cache_read": 0,
         "cache_write": 0.09
@@ -98,7 +98,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.3,
+        "input": 0.01,
         "output": 1.2,
         "cache_read": 0,
         "cache_write": 0.09
