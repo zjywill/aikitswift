@@ -1949,6 +1949,6 @@
       "type": "chat"
     }
   ],
-  "api": "https://opencode.ai/zen/go/v1",
+  "api": "https://opencode.ai/inference/go/v1",
   "doc": "https://opencode.ai/docs/zen"
 }

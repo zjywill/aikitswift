@@ -524,6 +524,7 @@
         "context": 16000,
         "output": 0
       },
+      "canonical_model_id": "xai/grok-imagine-image",
       "display_name": "Grok Imagine Image",
       "type": "image-generation"
     },
