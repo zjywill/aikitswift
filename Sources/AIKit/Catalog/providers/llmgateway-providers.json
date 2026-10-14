@@ -8946,60 +8946,6 @@
       "type": "chat"
     },
     {
-      "id": "fireworks/deepseek-v4-pro",
-      "name": "DeepSeek V4 Pro (Fireworks AI)",
-      "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 393216
-      },
-      "cost": {
-        "input": 1.32,
-        "output": 3.96,
-        "cache_read": 0.044
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-pro",
-      "display_name": "DeepSeek V4 Pro (Fireworks AI)",
-      "type": "chat"
-    },
-    {
       "id": "fireworks/deepseek-v4.1-flash",
       "name": "DeepSeek V4.1 Flash (Fireworks AI)",
       "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
@@ -10017,6 +9963,57 @@
       "type": "chat"
     },
     {
+      "id": "google-ai-studio/gemini-4-argon",
+      "name": "Gemini 4 Argon (Google AI Studio)",
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 0.375
+      },
+      "canonical_model_id": "google/gemini-4-argon",
+      "display_name": "Gemini 4 Argon (Google AI Studio)",
+      "type": "chat"
+    },
+    {
       "id": "google-ai-studio/gemini-pro-latest",
       "name": "Gemini Pro Latest (Google AI Studio)",
       "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
@@ -10673,6 +10670,53 @@
         "cache_write": 0.08333
       },
       "display_name": "Gemini 3.8 Flash (Google Vertex AI)",
+      "type": "chat"
+    },
+    {
+      "id": "google-vertex/gemini-4-argon",
+      "name": "Gemini 4 Argon (Google Vertex AI)",
+      "description": "Gemini multimodal model for text, image, audio, video, and document tasks",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-09-30",
+      "last_updated": "2026-09-30",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 0.375
+      },
+      "display_name": "Gemini 4 Argon (Google Vertex AI)",
       "type": "chat"
     },
     {

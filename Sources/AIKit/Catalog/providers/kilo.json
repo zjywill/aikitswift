@@ -2328,13 +2328,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 1048575,
+        "output": 943717
       },
       "cost": {
-        "input": 0.0312,
-        "output": 1.28,
-        "cache_read": 0.0312
+        "input": 0.091,
+        "output": 0.182,
+        "cache_read": 0.0182
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -3726,6 +3726,60 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "reasoning": 10,
+        "cache_read": 0.1,
+        "cache_write": 0.1875
+      },
+      "canonical_model_id": "google/gemini-4-argon",
+      "display_name": "Gemini 4 Argon",
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "name": "Nano Banana 2.1",
       "description": "Nano Banana 2.1 (Gemini Nano Banana 2.1) is Google's image generation and editing model on the Flash tier, succeeding Nano Banana 2 and Nano Banana Pro. It improves product recontextualization,...",
@@ -3877,8 +3931,9 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.08,
-        "output": 0.16
+        "input": 0.07,
+        "output": 0.275,
+        "cache_read": 0.04
       },
       "canonical_model_id": "google/gemma-3-27b-it",
       "display_name": "Gemma 3 27B IT",
@@ -4344,96 +4399,6 @@
       "type": "chat"
     },
     {
-      "id": "inclusionai/ling-3.0-flash-fin",
-      "name": "inclusionAI: Ling 3.0 Flash Fin",
-      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
-      "family": "ling",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-08-27",
-      "last_updated": "2026-08-27",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.075,
-        "output": 0.22,
-        "cache_read": 0.015
-      },
-      "display_name": "inclusionAI: Ling 3.0 Flash Fin",
-      "type": "chat"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante",
-      "name": "inclusionAI: Ling 3.0 Flash Sante",
-      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
-      "family": "ling",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-04",
-      "last_updated": "2026-09-04",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.075,
-        "output": 0.22,
-        "cache_read": 0.015
-      },
-      "display_name": "inclusionAI: Ling 3.0 Flash Sante",
-      "type": "chat"
-    },
-    {
       "id": "inclusionai/ling-3.0-flash-vl",
       "name": "inclusionAI: Ling 3.0 Flash VL",
       "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
@@ -4469,13 +4434,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
+        "context": 131072,
         "output": 32768
       },
       "cost": {
-        "input": 0.075,
-        "output": 0.22,
-        "cache_read": 0.015
+        "input": 0.06,
+        "output": 0.18,
+        "cache_read": 0.012
       },
       "display_name": "inclusionAI: Ling 3.0 Flash VL",
       "type": "chat"
@@ -4518,8 +4483,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0,
-        "output": 0
+        "input": 0.3,
+        "output": 0.9,
+        "cache_read": 0.06
       },
       "display_name": "inclusionAI: Ling 3.1 Flash",
       "type": "chat"
@@ -4832,6 +4798,50 @@
         "output": 0
       },
       "display_name": "LiquidAI: LFM2.5-2.6B (free)",
+      "type": "chat"
+    },
+    {
+      "id": "liquid/lfm-2.5-24b-a2b",
+      "name": "LiquidAI: LFM2.5-24B-A2B",
+      "description": "LFM2.5-24B-A2B is a mixture-of-experts reasoning model from Liquid AI with 24B total and 2.45B active parameters. It always reasons before answering and is built for agents that call tools. Liquid...",
+      "family": "liquid",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.05,
+        "output": 0.7,
+        "cache_read": 0.025
+      },
+      "display_name": "LiquidAI: LFM2.5-24B-A2B",
       "type": "chat"
     },
     {
@@ -12458,8 +12468,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 32768
+        "context": 256000,
+        "output": 16384
       },
       "cost": {
         "input": 0.1625,
@@ -13783,6 +13793,76 @@
       "type": "chat"
     },
     {
+      "id": "scaledown/extract",
+      "name": "ScaleDown: Extract",
+      "description": "Extract is a description-driven entity extraction model from ScaleDown. Instead of a fixed set of entity types, callers describe the fields they want in plain English through `provider.options.scaledown.entities`, and the...",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 900000
+      },
+      "cost": {
+        "input": 0.05,
+        "output": 0
+      },
+      "display_name": "ScaleDown: Extract",
+      "type": "chat"
+    },
+    {
+      "id": "scaledown/summarize",
+      "name": "ScaleDown: Summarize",
+      "description": "Summarize is an abstractive summarization model from ScaleDown. It condenses long text and documents into a fluent, faithful rewrite rather than lifting sentences from the source, and is suited for...",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 4000
+      },
+      "cost": {
+        "input": 0.05,
+        "output": 0
+      },
+      "display_name": "ScaleDown: Summarize",
+      "type": "chat"
+    },
+    {
       "id": "stealth/claude-opus-4.6",
       "name": "Stealth: Claude Opus 4.6 (20% off)",
       "description": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
@@ -14868,7 +14948,7 @@
     },
     {
       "id": "unbiased/pareto-26.10-preview",
-      "name": "Pareto 26.10 Preview",
+      "name": "Pareto 26.10 Preview (retires Oct 15)",
       "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. This is a preview of the...",
       "attachment": true,
       "reasoning": {
@@ -14898,7 +14978,7 @@
         "output": 3.2,
         "cache_read": 0.03
       },
-      "display_name": "Pareto 26.10 Preview",
+      "display_name": "Pareto 26.10 Preview (retires Oct 15)",
       "type": "chat"
     },
     {
@@ -16743,8 +16823,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.045,
-        "output": 0.891,
+        "input": 0.0405,
+        "output": 0.765,
         "cache_read": 0.0054
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
@@ -16787,12 +16867,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
-        "input": 0.25,
-        "output": 5,
-        "cache_read": 0.2
+        "input": 0.1452,
+        "output": 0.4356,
+        "cache_read": 0.00462
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -16990,9 +17070,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.73,
-        "output": 13.5,
-        "cache_read": 0.55
+        "input": 0.72,
+        "output": 24,
+        "cache_read": 0.3
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17343,7 +17423,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0261,
+        "input": 0.0333,
         "output": 0.9,
         "cache_read": 0.0108
       },
@@ -17386,12 +17466,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.055,
-        "output": 5,
-        "cache_read": 0.06
+        "input": 0.063,
+        "output": 4.4,
+        "cache_read": 0.0586
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

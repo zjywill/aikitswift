@@ -63,7 +63,7 @@ the next request when they are.
 ## The idea: protocols, not providers
 
 The mistake to avoid is writing one implementation per vendor. The bundled catalog
-holds **207 providers and 7173 models — but only 5 wire protocols**, because most
+holds **207 providers and 7206 models — but only 5 wire protocols**, because most
 providers speak someone else's:
 
 | Protocol | Providers |
@@ -257,7 +257,7 @@ all five protocols; the catalog covers 207 providers.
 | OpenAI Chat Completions | ✅ stream + request |
 | OpenAI Responses | ✅ stream + request |
 | Google Generative AI | ✅ stream + request |
-| Provider catalog | ✅ 207 providers, 7173 models |
+| Provider catalog | ✅ 207 providers, 7206 models |
 | Thinking on / off / level | ✅ all protocols |
 | Live model listing (`GET /models`) | ✅ all protocols |
 | Context attribution | ✅ |

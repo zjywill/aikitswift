@@ -1033,8 +1033,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0,
-        "output": 0
+        "input": 0.3,
+        "output": 0.9,
+        "cache_read": 0.06
       },
       "canonical_model_id": "inclusionai/ling-3.1-flash",
       "display_name": "Ling 3.1 Flash",
@@ -2834,6 +2835,57 @@
       },
       "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "stepfun/step-5-preview",
+      "name": "Step 5 Preview",
+      "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 64000
+      },
+      "cost": {
+        "input": 1,
+        "output": 2.7,
+        "cache_read": 0.1
+      },
+      "canonical_model_id": "stepfun/step-5-preview",
+      "display_name": "Step 5 Preview",
       "type": "chat"
     },
     {

@@ -4,6 +4,56 @@
   "adapter": "openai",
   "models": [
     {
+      "id": "cat-jam-free",
+      "name": "Cat Jam Free",
+      "description": "A text-only reasoning model for coding and agentic workflows, with tool calling and structured JSON outputs.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-12",
+      "last_updated": "2026-10-12",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
+      },
+      "display_name": "Cat Jam Free",
+      "type": "chat"
+    },
+    {
       "id": "claude-haiku-5-5",
       "name": "Claude Haiku 5.5",
       "description": "Fast Claude model for responsive assistance, classification, and lightweight agents",

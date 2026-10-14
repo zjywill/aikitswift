@@ -51,6 +51,41 @@
       "type": "chat"
     },
     {
+      "id": "ambient/small",
+      "name": "Ambient Small",
+      "description": "Efficient model for low-latency assistance, extraction, and routine automation",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 101072,
+        "output": 101072
+      },
+      "cost": {
+        "input": 0.001,
+        "output": 0.001,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "display_name": "Ambient Small",
+      "type": "chat"
+    },
+    {
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek V4 Flash",
       "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
@@ -456,6 +491,42 @@
       },
       "canonical_model_id": "stepfun/step-3.7-flash",
       "display_name": "Step 3.7 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "unsloth/qwen3.8-27b-gguf",
+      "name": "qwen3.8-27b-4q",
+      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "family": "unsloth",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 101072,
+        "output": 101072
+      },
+      "cost": {
+        "input": 0.001,
+        "output": 0.001,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "display_name": "qwen3.8-27b-4q",
       "type": "chat"
     },
     {
