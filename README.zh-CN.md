@@ -58,7 +58,7 @@ for call in response.pendingToolCalls {
 
 ## 核心思路：按协议切，不按厂商切
 
-最该避免的错误是每家厂商写一套实现。内置的 catalog 里有 **207 家 provider、7206 个模型，
+最该避免的错误是每家厂商写一套实现。内置的 catalog 里有 **208 家 provider、7209 个模型，
 但只有 5 种 wire protocol** —— 因为大多数厂商说的是别人的协议：
 
 | 协议 | provider 数 |
@@ -229,7 +229,7 @@ guard ProviderCatalog.isLoaded else { fatalError(ProviderCatalog.diagnostics) }
 
 ## 现状
 
-早期，API 会变。五种协议的流式响应和请求编码都能用了，catalog 覆盖 207 家。
+早期，API 会变。五种协议的流式响应和请求编码都能用了，catalog 覆盖 208 家。
 
 | | |
 |---|---|
@@ -239,7 +239,7 @@ guard ProviderCatalog.isLoaded else { fatalError(ProviderCatalog.diagnostics) }
 | OpenAI Chat Completions | ✅ 流式 + 请求 |
 | OpenAI Responses | ✅ 流式 + 请求 |
 | Google Generative AI | ✅ 流式 + 请求 |
-| Provider catalog | ✅ 207 家、7206 模型 |
+| Provider catalog | ✅ 208 家、7209 模型 |
 | 思考开 / 关 / 分级 | ✅ 全协议 |
 | 在线模型列表（`GET /models`） | ✅ 全协议 |
 | 上下文分摊 | ✅ |

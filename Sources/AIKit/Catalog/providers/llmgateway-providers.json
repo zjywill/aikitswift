@@ -4391,44 +4391,6 @@
       "type": "chat"
     },
     {
-      "id": "azure/gpt-4.1-nano",
-      "name": "GPT-4.1 Nano (Azure)",
-      "description": "Tiny GPT-4.1 option for classification, routing, and very high-volume tasks",
-      "family": "gpt-nano",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2025-04-14",
-      "last_updated": "2025-04-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.1,
-        "output": 0.4,
-        "cache_read": 0.025
-      },
-      "canonical_model_id": "openai/gpt-4.1-nano",
-      "display_name": "GPT-4.1 Nano (Azure)",
-      "type": "chat"
-    },
-    {
       "id": "azure/gpt-4o",
       "name": "GPT-4o (Azure)",
       "description": "Omni-era GPT for multimodal chat, practical coding, and general assistants",
@@ -7320,7 +7282,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 524288,
+        "context": 1000000,
         "output": 384000
       },
       "cost": {
@@ -7525,6 +7487,108 @@
       },
       "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B (Consensus Protocol)",
+      "type": "chat"
+    },
+    {
+      "id": "consensusprotocol/mimo-v2.6-flash",
+      "name": "MiMo V2.6 Flash (Consensus Protocol)",
+      "description": "MiMo Flash model for multimodal coding agents and long-context automation",
+      "family": "mimo",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.12,
+        "output": 0.25,
+        "cache_read": 0.0025
+      },
+      "canonical_model_id": "xiaomi/mimo-v2.6-flash",
+      "display_name": "MiMo V2.6 Flash (Consensus Protocol)",
+      "type": "chat"
+    },
+    {
+      "id": "consensusprotocol/minimax-m3",
+      "name": "MiniMax M3 (Consensus Protocol)",
+      "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
+      "family": "minimax",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-06-01",
+      "last_updated": "2026-06-01",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 512000
+      },
+      "cost": {
+        "input": 0.28,
+        "output": 1.1,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "minimax/MiniMax-M3",
+      "display_name": "MiniMax M3 (Consensus Protocol)",
       "type": "chat"
     },
     {
@@ -9194,109 +9258,6 @@
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 Fast (Fireworks AI)",
-      "type": "chat"
-    },
-    {
-      "id": "gonka24/deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash (Gonka24)",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 390000,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.065,
-        "output": 0.116,
-        "cache_read": 0.012
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "DeepSeek V4 Flash (Gonka24)",
-      "type": "chat"
-    },
-    {
-      "id": "gonka24/glm-5.3-flash",
-      "name": "GLM-5.3 Flash (Gonka24)",
-      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-26",
-      "last_updated": "2026-08-26",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 200000,
-        "output": 16384
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.3,
-        "cache_read": 0.035
-      },
-      "canonical_model_id": "zhipuai/glm-5.3-flash",
-      "display_name": "GLM-5.3 Flash (Gonka24)",
       "type": "chat"
     },
     {
@@ -16583,61 +16544,6 @@
       "type": "chat"
     },
     {
-      "id": "reka-ai/deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash (reka-ai)",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.11,
-        "output": 0.66,
-        "cache_read": 0.01
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "DeepSeek V4 Flash (reka-ai)",
-      "type": "chat"
-    },
-    {
       "id": "reka-ai/deepseek-v4-pro",
       "name": "DeepSeek V4 Pro (reka-ai)",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
@@ -16741,113 +16647,6 @@
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3 (reka-ai)",
-      "type": "chat"
-    },
-    {
-      "id": "reka-ai/glm-5.3-flash",
-      "name": "GLM-5.3 Flash (reka-ai)",
-      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
-      "family": "glm-flash",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-26",
-      "last_updated": "2026-08-26",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.5,
-        "cache_read": 0.02
-      },
-      "canonical_model_id": "zhipuai/glm-5.3-flash",
-      "display_name": "GLM-5.3 Flash (reka-ai)",
-      "type": "chat"
-    },
-    {
-      "id": "reka-ai/qwen3.8-27b",
-      "name": "Qwen3.8 27B (reka-ai)",
-      "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-08-14",
-      "last_updated": "2026-08-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
-      "cost": {
-        "input": 0.41,
-        "output": 3,
-        "cache_read": 0.085
-      },
-      "canonical_model_id": "alibaba/qwen3.8-27b",
-      "display_name": "Qwen3.8 27B (reka-ai)",
       "type": "chat"
     },
     {
@@ -17765,7 +17564,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 2.1256,
+        "input": 2.156,
         "output": 6.776,
         "cache_read": 0.429
       },
@@ -18070,41 +17869,6 @@
       "type": "chat"
     },
     {
-      "id": "scx-ai/gemma-4-31b-it",
-      "name": "Gemma 4 31B IT (SCX.ai (Turbo))",
-      "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",
-      "family": "gemma",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-04-02",
-      "last_updated": "2026-04-02",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.3,
-        "output": 0.91
-      },
-      "canonical_model_id": "google/gemma-4-31b-it",
-      "display_name": "Gemma 4 31B IT (SCX.ai (Turbo))",
-      "type": "chat"
-    },
-    {
       "id": "scx-ai/gpt-oss-120b",
       "name": "GPT OSS 120B (SCX.ai (Turbo))",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
@@ -18148,42 +17912,6 @@
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (SCX.ai (Turbo))",
-      "type": "chat"
-    },
-    {
-      "id": "scx-ai/llama-4-maverick-17b-instruct",
-      "name": "Llama 4 Maverick 17B Instruct (SCX.ai (Turbo))",
-      "description": "Open multimodal Llama for strong reasoning with efficient everyday serving",
-      "family": "llama",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-08",
-      "release_date": "2025-04-05",
-      "last_updated": "2025-04-05",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.53,
-        "output": 1.62
-      },
-      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
-      "display_name": "Llama 4 Maverick 17B Instruct (SCX.ai (Turbo))",
       "type": "chat"
     },
     {
@@ -21010,145 +20738,6 @@
         }
       },
       "display_name": "Grok Build 0.1 (xAI)",
-      "type": "chat"
-    },
-    {
-      "id": "xiaomi/mimo-v2.5",
-      "name": "MiMo V2.5 (Xiaomi)",
-      "description": "Open MiMo model for multimodal coding agents and long-context automation",
-      "family": "mimo",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.0028,
-        "tiers": [
-          {
-            "input": 0.8,
-            "output": 4,
-            "cache_read": 0.16,
-            "tier": {
-              "type": "context",
-              "size": 256000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 0.8,
-          "output": 4,
-          "cache_read": 0.16
-        }
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5",
-      "display_name": "MiMo V2.5 (Xiaomi)",
-      "type": "chat"
-    },
-    {
-      "id": "xiaomi/mimo-v2.5-pro",
-      "name": "MiMo V2.5 Pro (Xiaomi)",
-      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.435,
-        "output": 0.87,
-        "cache_read": 0.0036,
-        "tiers": [
-          {
-            "input": 2,
-            "output": 6,
-            "cache_read": 0.4,
-            "tier": {
-              "type": "context",
-              "size": 256000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 2,
-          "output": 6,
-          "cache_read": 0.4
-        }
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
-      "display_name": "MiMo V2.5 Pro (Xiaomi)",
       "type": "chat"
     },
     {

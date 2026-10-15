@@ -1056,7 +1056,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4",
-      "name": "Anthropic: Claude Sonnet 4",
+      "name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
       "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
       "family": "claude-sonnet",
       "attachment": true,
@@ -1099,7 +1099,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
-      "display_name": "Anthropic: Claude Sonnet 4",
+      "display_name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
       "type": "chat"
     },
     {
@@ -3931,9 +3931,8 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.07,
-        "output": 0.275,
-        "cache_read": 0.04
+        "input": 0.08,
+        "output": 0.16
       },
       "canonical_model_id": "google/gemma-3-27b-it",
       "display_name": "Gemma 3 27B IT",
@@ -4465,7 +4464,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-10-02",
       "last_updated": "2026-10-02",
@@ -5749,8 +5748,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 196608,
-        "output": 176947
+        "context": 204800,
+        "output": 131072
       },
       "cost": {
         "input": 0.3,
@@ -6673,7 +6672,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
+        "context": 128000,
         "output": 16384
       },
       "cost": {
@@ -10388,7 +10387,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 65536
+        "output": 117964
       },
       "cost": {
         "input": 0.03,
@@ -12796,12 +12795,12 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 235929
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.95,
-        "cache_read": 0.1
+        "input": 0.15,
+        "output": 1,
+        "cache_read": 0.05
       },
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B-A3B",
@@ -13085,7 +13084,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
+        "context": 1000000,
         "output": 131072
       },
       "cost": {
@@ -14911,42 +14910,6 @@
       "type": "chat"
     },
     {
-      "id": "unbiased/pareto",
-      "name": "Pareto",
-      "description": "Blended multimodal model that runs multiple language models in parallel and returns a synthesized answer",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-17",
-      "last_updated": "2026-09-17",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 131072
-      },
-      "cost": {
-        "input": 2.5,
-        "output": 7.5,
-        "cache_read": 0.25
-      },
-      "canonical_model_id": "unbiased/pareto",
-      "display_name": "Pareto",
-      "type": "chat"
-    },
-    {
       "id": "unbiased/pareto-26.10-preview",
       "name": "Pareto 26.10 Preview (retires Oct 15)",
       "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. This is a preview of the...",
@@ -14979,6 +14942,41 @@
         "cache_read": 0.03
       },
       "display_name": "Pareto 26.10 Preview (retires Oct 15)",
+      "type": "chat"
+    },
+    {
+      "id": "unbiased/pareto-26.9",
+      "name": "Pareto 26.9",
+      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.5,
+        "output": 7.5,
+        "cache_read": 0.25
+      },
+      "display_name": "Pareto 26.9",
       "type": "chat"
     },
     {
@@ -16279,8 +16277,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 200000,
-        "output": 128000
+        "context": 202745,
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -16422,8 +16420,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 1048575,
+        "output": 943717
       },
       "cost": {
         "input": 0.15,
@@ -16823,8 +16821,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0405,
-        "output": 0.765,
+        "input": 0.01584,
+        "output": 0.891,
         "cache_read": 0.0054
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
@@ -16870,9 +16868,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.1452,
-        "output": 0.4356,
-        "cache_read": 0.00462
+        "input": 0.1307,
+        "output": 8,
+        "cache_read": 0.13
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17070,9 +17068,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.72,
-        "output": 24,
-        "cache_read": 0.3
+        "input": 0.49,
+        "output": 14.9,
+        "cache_read": 0.45
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17334,6 +17332,41 @@
       "type": "chat"
     },
     {
+      "id": "~unbiased/pareto-latest",
+      "name": "Pareto Latest",
+      "description": "This model always redirects to the latest model in the Pareto family.",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.5,
+        "output": 7.5,
+        "cache_read": 0.25
+      },
+      "display_name": "Pareto Latest",
+      "type": "chat"
+    },
+    {
       "id": "~x-ai/grok-latest",
       "name": "xAI: Grok Latest",
       "description": "This model always redirects to the latest Grok model from xAI.",
@@ -17423,9 +17456,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0333,
+        "input": 0.036,
         "output": 0.9,
-        "cache_read": 0.0108
+        "cache_read": 0.01125
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17469,9 +17502,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.063,
+        "input": 0.0608,
         "output": 4.4,
-        "cache_read": 0.0586
+        "cache_read": 0.0565
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

@@ -2576,7 +2576,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 65536
+        "output": 117964
       },
       "cost": {
         "input": 0.35,

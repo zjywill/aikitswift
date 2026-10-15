@@ -71,7 +71,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 101072,
         "output": 101072
@@ -515,7 +515,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 101072,
         "output": 101072
