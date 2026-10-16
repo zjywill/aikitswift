@@ -1055,54 +1055,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-sonnet-4",
-      "name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
-      "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-      "family": "claude-sonnet",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2025-05-22",
-      "last_updated": "2025-05-22",
-      "modalities": {
-        "input": [
-          "image",
-          "text",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 64000
-      },
-      "cost": {
-        "input": 3,
-        "output": 15,
-        "cache_read": 0.3,
-        "cache_write": 3.75
-      },
-      "display_name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-sonnet-4.5",
       "name": "Claude Sonnet 4.5 (latest)",
       "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
@@ -2573,7 +2525,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 393216
       },
       "cost": {
         "input": 0.3,
@@ -3968,8 +3920,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.1
+        "input": 0.04,
+        "output": 0.05,
+        "cache_read": 0.02
       },
       "canonical_model_id": "google/gemma-3-4b-it",
       "display_name": "Gemma 3 4B IT",
@@ -4063,9 +4016,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.09,
+        "input": 0.1,
         "output": 0.34,
-        "cache_read": 0.05
+        "cache_read": 0.1
       },
       "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT",
@@ -5517,6 +5470,59 @@
       "type": "chat"
     },
     {
+      "id": "meta/muse-spark-open",
+      "name": "Muse Spark Open",
+      "description": "Muse Spark Open is a coding-optimized open-weight model. Trained specifically for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across the repos developers...",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-01-04",
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-open",
+      "display_name": "Muse Spark Open",
+      "type": "chat"
+    },
+    {
       "id": "meta/muse-wonder",
       "name": "Meta: Muse Wonder",
       "description": "Muse Wonder is a frontier reasoning model from Meta, designed for complex personal and professional agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with...",
@@ -5873,8 +5879,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 200000,
-        "output": 128000
+        "context": 198000,
+        "output": 32768
       },
       "cost": {
         "input": 0.3,
@@ -6672,7 +6678,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
+        "context": 256000,
         "output": 16384
       },
       "cost": {
@@ -6758,6 +6764,94 @@
       },
       "canonical_model_id": "mistral/voxtral-small-24b-2507",
       "display_name": "Voxtral Small 24B 2507",
+      "type": "chat"
+    },
+    {
+      "id": "moondream/moondream3-preview",
+      "name": "Moondream: Moondream 3 Preview",
+      "description": "Moondream 3 Preview is a vision-language model from Moondream with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and visual reasoning over images, with...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 32000,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "display_name": "Moondream: Moondream 3 Preview",
+      "type": "chat"
+    },
+    {
+      "id": "moondream/moondream3.1-9b-a2b",
+      "name": "Moondream: Moondream 3.1",
+      "description": "Moondream 3.1 is a vision-language model from Moondream, the successor to Moondream 3 Preview, with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 32000,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "display_name": "Moondream: Moondream 3.1",
       "type": "chat"
     },
     {
@@ -7033,6 +7127,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -7802,6 +7897,99 @@
       },
       "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "type": "chat"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-super-vl",
+      "name": "NVIDIA: Nemotron 3.5 Super VL",
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
+      "family": "nemotron",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.08
+      },
+      "display_name": "NVIDIA: Nemotron 3.5 Super VL",
+      "type": "chat"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video... **Terms of service** For NVIDIA free endpoints (Super/Ultra/etc): Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services. The logged session data for improvement purposes is not linked to your identity or any persistent identifier. For more information about our data processing practices, see our [Privacy Policy](https://www.nvidia.com/en-us/about-nvidia/privacy-policy/). By interacting with this endpoint, you consent to our collection, recording, and use of such information and the [NVIDIA API Trial Terms of Service](https://assets.ngc.nvidia.com/products/api-catalog/legal/NVIDIA%20API%20Trial%20Terms%20of%20Service.pdf).",
+      "family": "nemotron",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "NVIDIA: Nemotron 3.5 Super VL (free)",
       "type": "chat"
     },
     {
@@ -8839,7 +9027,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
             "medium",
             "high"
@@ -10387,7 +10574,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 65536
       },
       "cost": {
         "input": 0.03,
@@ -10504,7 +10691,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -10553,7 +10739,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -10601,7 +10786,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -10650,7 +10834,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -10743,7 +10926,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -10791,7 +10973,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -11154,7 +11335,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -11278,7 +11458,6 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "high"
           ]
         }
@@ -12748,7 +12927,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 81920
+        "output": 65536
       },
       "cost": {
         "input": 0.45,
@@ -14308,58 +14487,10 @@
       "cost": {
         "input": 1,
         "output": 2.7,
-        "cache_read": 0.05
+        "cache_read": 0.1
       },
       "canonical_model_id": "stepfun/step-5-preview",
       "display_name": "Step 5 Preview",
-      "type": "chat"
-    },
-    {
-      "id": "stepfun/step-5-preview-free",
-      "name": "StepFun: Step 5 Preview (free)",
-      "description": "Step 5 Preview is StepFun's flagship model for agentic work, with strong capabilities in software engineering, professional knowledge work, and finance. It natively supports text, image, and video input with a 1M-token context window and up to 64K output tokens. The model supports tool calling, structured outputs, and selectable reasoning levels (low/medium/high) for long-context research, coding, and multi-step workflows.",
-      "family": "step",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2025-08-26",
-      "last_updated": "2025-08-26",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 64000
-      },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "reasoning": 0,
-        "cache_read": 0
-      },
-      "display_name": "StepFun: Step 5 Preview (free)",
       "type": "chat"
     },
     {
@@ -14907,41 +15038,6 @@
       },
       "canonical_model_id": "thinkingmachines/inkling-small",
       "display_name": "Thinking Machines: Inkling Small (free)",
-      "type": "chat"
-    },
-    {
-      "id": "unbiased/pareto-26.10-preview",
-      "name": "Pareto 26.10 Preview (retires Oct 15)",
-      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. This is a preview of the...",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-10-01",
-      "last_updated": "2026-10-01",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.8,
-        "output": 3.2,
-        "cache_read": 0.03
-      },
-      "display_name": "Pareto 26.10 Preview (retires Oct 15)",
       "type": "chat"
     },
     {
@@ -16185,13 +16281,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 198000,
-        "output": 128000
+        "context": 202752,
+        "output": 131072
       },
       "cost": {
-        "input": 0.6,
-        "output": 1.92,
-        "cache_read": 0.12
+        "input": 1,
+        "output": 3.2,
+        "cache_read": 0.2
       },
       "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5",
@@ -16277,8 +16373,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 202745,
-        "output": 131072
+        "context": 200000,
+        "output": 128000
       },
       "cost": {
         "input": 1.4,
@@ -16420,8 +16516,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048575,
-        "output": 943717
+        "context": 1048576,
+        "output": 131072
       },
       "cost": {
         "input": 0.15,
@@ -16821,8 +16917,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.01584,
-        "output": 0.891,
+        "input": 0.0144,
+        "output": 0.72,
         "cache_read": 0.0054
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
@@ -16915,9 +17011,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0144,
+        "input": 0.00999,
         "output": 0.576,
-        "cache_read": 0.0108
+        "cache_read": 0.00999
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17018,10 +17114,10 @@
       },
       "cost": {
         "input": 2,
-        "output": 12,
-        "reasoning": 12,
-        "cache_read": 0.2,
-        "cache_write": 0.375
+        "output": 10,
+        "reasoning": 10,
+        "cache_read": 0.1,
+        "cache_write": 0.1875
       },
       "display_name": "Google: Gemini Pro Latest",
       "type": "chat"
@@ -17068,9 +17164,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.49,
-        "output": 14.9,
-        "cache_read": 0.45
+        "input": 0.32,
+        "output": 24,
+        "cache_read": 0.31
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17453,12 +17549,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.036,
-        "output": 0.9,
-        "cache_read": 0.01125
+        "input": 0.025,
+        "output": 0.68,
+        "cache_read": 0.0125
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"

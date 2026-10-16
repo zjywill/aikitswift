@@ -117,6 +117,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -166,6 +167,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -216,6 +218,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -266,6 +269,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -366,6 +370,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -415,6 +420,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -452,6 +458,56 @@
       "type": "chat"
     },
     {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Claude Sonnet 5.5",
+      "description": "Fast Claude model for everyday coding, agents, and knowledge work",
+      "family": "claude-sonnet",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-06",
+      "release_date": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 128000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10
+      },
+      "canonical_model_id": "anthropic/claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5",
+      "type": "chat"
+    },
+    {
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek V4 Flash 0423",
       "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
@@ -465,6 +521,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "high",
             "xhigh"
           ]
@@ -511,6 +568,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -558,6 +616,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "high",
             "xhigh"
           ]
@@ -655,6 +714,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "minimal",
             "low",
             "medium",
@@ -944,6 +1004,56 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 2,
+        "output": 10
+      },
+      "canonical_model_id": "google/gemini-4-argon",
+      "display_name": "Gemini 4 Argon",
+      "type": "chat"
+    },
+    {
       "id": "google/gemma-3-27b-it",
       "name": "Gemma 3 27B",
       "description": "Largest open Gemma 3 instruction model for multilingual text generation and visual understanding",
@@ -1221,6 +1331,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -1684,54 +1795,6 @@
       },
       "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-5.2-pro",
-      "name": "GPT-5.2 Pro",
-      "description": "Higher-accuracy GPT-5.2 variant for tougher reasoning and review workflows",
-      "family": "gpt-pro",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "medium",
-            "high",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2025-08-31",
-      "release_date": "2025-12-11",
-      "last_updated": "2025-12-11",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 400000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 21,
-        "output": 168
-      },
-      "canonical_model_id": "openai/gpt-5.2-pro",
-      "display_name": "GPT-5.2 Pro",
       "type": "chat"
     },
     {
@@ -2576,7 +2639,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 65536
       },
       "cost": {
         "input": 0.35,
@@ -2853,6 +2916,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "high",
             "xhigh"
           ]

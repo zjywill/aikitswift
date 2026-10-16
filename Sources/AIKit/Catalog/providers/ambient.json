@@ -188,6 +188,49 @@
       "type": "chat"
     },
     {
+      "id": "minimax/minimax-m3",
+      "name": "MiniMax-M3",
+      "description": "MiniMax multimodal coding model for long-context reasoning and agent tasks",
+      "family": "minimax",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-06-01",
+      "last_updated": "2026-06-01",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.23,
+        "output": 0.96,
+        "cache_read": 0.05,
+        "cache_write": 0
+      },
+      "canonical_model_id": "minimax/MiniMax-M3",
+      "display_name": "MiniMax-M3",
+      "type": "chat"
+    },
+    {
       "id": "moonshotai/kimi-k2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",

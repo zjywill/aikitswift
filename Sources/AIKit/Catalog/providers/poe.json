@@ -1221,7 +1221,8 @@
     {
       "id": "google/gemini-3-flash",
       "name": "Gemini-3-Flash",
-      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "description": "New Gemini flash lane bringing frontier-style multimodal reasoning to cheaper runs",
+      "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1238,9 +1239,11 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
-      "release_date": "2025-10-07",
-      "last_updated": "2025-10-07",
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-01",
+      "release_date": "2025-12-17",
+      "last_updated": "2025-12-17",
       "modalities": {
         "input": [
           "text",
@@ -1258,10 +1261,11 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.4,
-        "output": 2.4,
-        "cache_read": 0.04
+        "input": 0.404,
+        "output": 2.4242,
+        "cache_read": 0.0404
       },
+      "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini-3-Flash",
       "type": "chat"
     },
@@ -1309,6 +1313,7 @@
       "id": "google/gemini-3.1-flash-lite",
       "name": "Gemini-3.1-Flash-Lite",
       "description": "Low-latency Gemini model for high-volume multimodal and agent workloads",
+      "family": "gemini-flash-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1325,9 +1330,11 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
-      "release_date": "2026-02-18",
-      "last_updated": "2026-02-18",
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-01",
+      "release_date": "2026-05-07",
+      "last_updated": "2026-05-07",
       "modalities": {
         "input": [
           "text",
@@ -1345,16 +1352,18 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.25,
-        "output": 1.5
+        "input": 0.2525,
+        "output": 1.5152
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite",
       "display_name": "Gemini-3.1-Flash-Lite",
       "type": "chat"
     },
     {
       "id": "google/gemini-3.1-pro",
       "name": "Gemini-3.1-Pro",
-      "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+      "description": "Reasoning-first Gemini preview for agentic coding and complex problem solving",
+      "family": "gemini-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1370,7 +1379,9 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-02-19",
       "last_updated": "2026-02-19",
       "modalities": {
@@ -1390,10 +1401,11 @@
         "output": 65536
       },
       "cost": {
-        "input": 2,
-        "output": 12,
-        "cache_read": 0.2
+        "input": 2.0202,
+        "output": 12.1212,
+        "cache_read": 0.202
       },
+      "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini-3.1-Pro",
       "type": "chat"
     },
@@ -1419,7 +1431,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-01",
       "release_date": "2026-05-19",
       "last_updated": "2026-05-19",
@@ -1427,7 +1439,7 @@
         "input": [
           "text",
           "image",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
@@ -1445,6 +1457,211 @@
       },
       "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini-3.5-Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite",
+      "name": "Gemini-3.5-Flash-Lite",
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "family": "gemini-flash-lite",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-07-21",
+      "last_updated": "2026-07-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.303,
+        "output": 2.5253,
+        "cache_read": 0.0303
+      },
+      "canonical_model_id": "google/gemini-3.5-flash-lite",
+      "display_name": "Gemini-3.5-Flash-Lite",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.6-flash",
+      "name": "Gemini-3.6-Flash",
+      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-07-21",
+      "last_updated": "2026-07-21",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.7576,
+        "output": 3.7879,
+        "cache_read": 0.0758
+      },
+      "canonical_model_id": "google/gemini-3.6-flash",
+      "display_name": "Gemini-3.6-Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.7-flash",
+      "name": "Gemini-3.7-Flash",
+      "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-08-13",
+      "last_updated": "2026-08-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.7576,
+        "output": 3.7879,
+        "cache_read": 0.0758
+      },
+      "canonical_model_id": "google/gemini-3.7-flash",
+      "display_name": "Gemini-3.7-Flash",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Gemini-3.8-Flash",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
+      "family": "gemini-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.7576,
+        "output": 3.7879,
+        "cache_read": 0.0758
+      },
+      "canonical_model_id": "google/gemini-3.8-flash",
+      "display_name": "Gemini-3.8-Flash",
       "type": "chat"
     },
     {
@@ -1483,6 +1700,44 @@
       },
       "display_name": "gemini-deep-research",
       "type": "chat"
+    },
+    {
+      "id": "google/gemini-omni-1.1-flash",
+      "type": "video",
+      "name": "Gemini-Omni-1.1-Flash",
+      "description": "Video generation and editing model for scene extension, frame interpolation, and reference-guided multimodal control",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "temperature": false,
+      "release_date": "2026-08-27",
+      "last_updated": "2026-08-27",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "video"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 57920
+      },
+      "cost": {
+        "input": 1.5152,
+        "output": 9.0909
+      },
+      "canonical_model_id": "google/gemini-omni-1.1-flash",
+      "display_name": "Gemini-Omni-1.1-Flash"
     },
     {
       "id": "google/gemma-4-31b",

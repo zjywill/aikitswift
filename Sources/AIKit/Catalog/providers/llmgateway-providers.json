@@ -2180,54 +2180,6 @@
       "type": "chat"
     },
     {
-      "id": "atria/atria-dawn-preview",
-      "name": "Atria Dawn Preview (Atria)",
-      "description": "Preview model for early access evaluation, prototyping, and compatibility testing",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-09-12",
-      "last_updated": "2026-09-12",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "Atria Dawn Preview (Atria)",
-      "type": "chat"
-    },
-    {
       "id": "aws-bedrock/claude-fable-5",
       "name": "Claude Fable 5 (AWS Bedrock)",
       "description": "Claude model for creative writing, analysis, and controlled agent workflows",
@@ -7436,7 +7388,7 @@
       "cost": {
         "input": 0.1,
         "output": 0.25,
-        "cache_read": 0.02
+        "cache_read": 0.01
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3 Flash (Consensus Protocol)",
@@ -8901,6 +8853,55 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (entrim)",
+      "type": "chat"
+    },
+    {
+      "id": "entrim/glm-5.3",
+      "name": "GLM-5.3 (entrim)",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "zhipuai/glm-5.3",
+      "display_name": "GLM-5.3 (entrim)",
       "type": "chat"
     },
     {

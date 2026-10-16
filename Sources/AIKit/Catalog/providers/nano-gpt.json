@@ -3565,6 +3565,42 @@
       "type": "chat"
     },
     {
+      "id": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+      "name": "Gemma SEA-LION v4 27B",
+      "description": "Gemma 3 27B tuned by AI Singapore for Southeast Asian languages and instruction following",
+      "family": "gemma",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-09-23",
+      "last_updated": "2025-09-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "input": 131072,
+        "output": 128000
+      },
+      "cost": {
+        "input": 0.24,
+        "output": 0.48
+      },
+      "canonical_model_id": "aisingapore/gemma-sea-lion-v4-27b-it",
+      "display_name": "Gemma SEA-LION v4 27B",
+      "type": "chat"
+    },
+    {
       "id": "amazon/nova-2-lite-v1",
       "name": "Amazon Nova 2 Lite",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
@@ -6195,10 +6231,10 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.1179,
-        "output": 0.2947,
-        "cache_read": 0.0236,
-        "cache_write": 0.0025
+        "input": 0.15,
+        "output": 0.37,
+        "cache_read": 0.03,
+        "cache_write": 0.003
       },
       "display_name": "Doubao Seed Character",
       "type": "chat"
@@ -7072,9 +7108,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.28,
-        "output": 0.42,
-        "cache_read": 0.14
+        "input": 0.2088,
+        "output": 0.3096,
+        "cache_read": 0.0216
       },
       "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
@@ -7113,9 +7149,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.28,
-        "output": 0.42,
-        "cache_read": 0.14
+        "input": 0.2088,
+        "output": 0.3096,
+        "cache_read": 0.0216
       },
       "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 Thinking",
@@ -7465,52 +7501,6 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
-      "type": "chat"
-    },
-    {
-      "id": "deepseek/deepseek-v4-flash-vision-exp-cybersecurity",
-      "name": "DeepSeek V4 Flash Vision Exp Cybersecurity",
-      "description": "A cybersecurity-focused variant of DeepSeek V4 Flash Vision Exp, with image understanding, tool calling, optional reasoning, and a 1,048,576-token context window.",
-      "family": "deepseek",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "release_date": "2026-10-13",
-      "last_updated": "2026-10-13",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "input": 1048576,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.075
-      },
-      "display_name": "DeepSeek V4 Flash Vision Exp Cybersecurity",
       "type": "chat"
     },
     {
@@ -15621,6 +15611,54 @@
       "type": "chat"
     },
     {
+      "id": "nvidia/nemotron-3.5-super-vl",
+      "name": "Nvidia Nemotron 3.5 Super VL",
+      "description": "NVIDIA’s open-weight 120B model (12B active) for reasoning, coding, tool use, document and GUI understanding, and video understanding. Text, images and video in; text out. Served in NVFP4 with a 262,144-token shared context window. NanoGPT currently limits responses to 16,384 tokens while separate hosted output limits remain unpublished. OpenMDW 1.1 license.",
+      "family": "nemotron",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.02
+      },
+      "display_name": "Nvidia Nemotron 3.5 Super VL",
+      "type": "chat"
+    },
+    {
       "id": "openai/gpt-3.5-turbo",
       "name": "GPT-3.5 Turbo",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
@@ -21327,8 +21365,8 @@
       },
       "cost": {
         "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.2
+        "output": 1.75,
+        "cache_read": 0.225
       },
       "display_name": "Qwen 3.8 27B Obliterated",
       "type": "chat"
@@ -21365,8 +21403,8 @@
       },
       "cost": {
         "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.2
+        "output": 1.75,
+        "cache_read": 0.225
       },
       "display_name": "Qwen 3.8 27B Obliterated Thinking",
       "type": "chat"
@@ -21930,6 +21968,77 @@
         "cache_read": 0.15
       },
       "display_name": "Qwen3 VL 235B A22B Instruct Original",
+      "type": "chat"
+    },
+    {
+      "id": "reka/reka-edge-2603",
+      "name": "Reka Edge 2603",
+      "description": "Reka's compact multimodal model for visual understanding and tool use, served directly by Reka.",
+      "family": "reka",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 16384,
+        "input": 16384,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.105,
+        "output": 0.105
+      },
+      "display_name": "Reka Edge 2603",
+      "type": "chat"
+    },
+    {
+      "id": "reka/reka-flash-3",
+      "name": "Reka Flash 3",
+      "description": "Reka's 21B reasoning model for chat and coding, served directly by Reka.",
+      "family": "reka",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": false,
+      "structured_output": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "input": 65536,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.105,
+        "output": 0.21
+      },
+      "display_name": "Reka Flash 3",
       "type": "chat"
     },
     {
