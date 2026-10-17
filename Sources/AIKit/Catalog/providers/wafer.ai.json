@@ -205,7 +205,6 @@
             "cache_read": 0.13,
             "cache_write": 0,
             "tier": {
-              "type": "context",
               "size": 512000
             }
           }

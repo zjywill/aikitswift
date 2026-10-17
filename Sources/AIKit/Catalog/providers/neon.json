@@ -1524,15 +1524,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.125
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
@@ -1581,15 +1581,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.125
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1",
@@ -1639,15 +1639,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2",
@@ -1698,15 +1698,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex",
@@ -1757,11 +1757,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -1782,6 +1777,11 @@
           "output": 22.5,
           "cache_read": 0.5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4",
@@ -1831,15 +1831,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.75,
         "output": 4.5,
         "cache_read": 0.075
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 mini",
@@ -1889,15 +1889,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.2,
         "output": 1.25,
         "cache_read": 0.02
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 nano",
@@ -1948,11 +1948,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -1973,6 +1968,11 @@
           "output": 45,
           "cache_read": 1
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
@@ -2021,11 +2021,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 30,
         "output": 180,
@@ -2043,6 +2038,11 @@
           "input": 60,
           "output": 270
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.5-pro",
       "display_name": "GPT-5.5 Pro",
@@ -2094,11 +2094,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.2,
         "output": 1.2,
@@ -2122,6 +2117,11 @@
           "cache_read": 0.04,
           "cache_write": 0.5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
@@ -2173,11 +2173,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -2201,6 +2196,11 @@
           "cache_read": 1,
           "cache_write": 12.5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
@@ -2252,11 +2252,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2,
         "output": 12,
@@ -2280,6 +2275,11 @@
           "cache_read": 0.4,
           "cache_write": 5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
@@ -2328,15 +2328,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.25,
         "output": 2,
         "cache_read": 0.025
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini",
@@ -2385,15 +2385,15 @@
         "input": 272000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.05,
         "output": 0.4,
         "cache_read": 0.005
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano",
@@ -2442,11 +2442,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2,
         "output": 10,
@@ -2470,6 +2465,11 @@
           "cache_read": 0.2,
           "cache_write": 5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-6.1-sol",
       "display_name": "GPT-6.1 Sol",
@@ -2520,11 +2520,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 10,
         "output": 50,
@@ -2548,6 +2543,11 @@
           "cache_read": 2,
           "cache_write": 25
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra",
@@ -2597,11 +2597,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 0.1,
         "output": 0.5,
@@ -2625,6 +2620,11 @@
           "cache_read": 0.02,
           "cache_write": 0.25
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna",
@@ -2674,11 +2674,6 @@
         "input": 922000,
         "output": 128000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2,
         "output": 10,
@@ -2702,6 +2697,11 @@
           "cache_read": 0.4,
           "cache_write": 5
         }
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol",
@@ -2839,15 +2839,15 @@
         "context": 500000,
         "output": 524288
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2,
         "output": 6,
         "cache_read": 0.5
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6",
@@ -2895,15 +2895,15 @@
         "context": 500000,
         "output": 500000
       },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
-        "shape": "responses"
-      },
       "cost": {
         "input": 2.5,
         "output": 7.5,
         "cache_read": 0.5
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "${NEON_AI_GATEWAY_BASE_URL}/openai/v1",
+        "shape": "responses"
       },
       "canonical_model_id": "xai/grok-4.7",
       "display_name": "Grok 4.7",

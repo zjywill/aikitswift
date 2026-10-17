@@ -5179,6 +5179,59 @@
       "type": "chat"
     },
     {
+      "id": "fireworks_ai/accounts/fireworks/models/muse-spark-open",
+      "name": "Muse Spark Open (Fireworks AI)",
+      "description": "Muse Spark Open is an 816B total / 42B active open-weight multimodal reasoning model from Meta for coding and long-horizon agentic work, with 1M-token context.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-01-04",
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-open",
+      "display_name": "Muse Spark Open (Fireworks AI)",
+      "type": "chat"
+    },
+    {
       "id": "fireworks_ai/gpt-oss-120b",
       "name": "GPT OSS 120B (Fireworks AI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
@@ -6865,9 +6918,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.156912,
-        "output": 0.39228,
-        "cache_read": 0.044832
+        "input": 0.157542,
+        "output": 0.393855,
+        "cache_read": 0.045012
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Greenpt)",
@@ -6915,9 +6968,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.246576,
-        "output": 1.23288,
-        "cache_read": 0.012329
+        "input": 0.247566,
+        "output": 1.23783,
+        "cache_read": 0.012378
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Greenpt)",
@@ -6962,8 +7015,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.22416,
-        "output": 0.78456
+        "input": 0.22506,
+        "output": 0.78771
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Greenpt)",
@@ -6998,8 +7051,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.23288,
-        "output": 1.23288
+        "input": 1.23783,
+        "output": 1.23783
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Greenpt)",
@@ -7033,8 +7086,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.00872,
-        "output": 3.026159
+        "input": 1.01277,
+        "output": 3.03831
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
@@ -7210,8 +7263,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33624,
-        "output": 0.44832
+        "input": 0.33759,
+        "output": 0.45012
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -7246,8 +7299,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.16812,
-        "output": 0.89664
+        "input": 0.168795,
+        "output": 0.90024
       },
       "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (IONOS)",
@@ -7282,8 +7335,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.72852,
-        "output": 0.72852
+        "input": 0.731445,
+        "output": 0.731445
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -7328,8 +7381,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16812,
-        "output": 0.72852
+        "input": 0.168795,
+        "output": 0.731445
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -8687,6 +8740,59 @@
       },
       "canonical_model_id": "google/gemma-3-27b-it",
       "display_name": "Gemma 3 27B IT (Nebius)",
+      "type": "chat"
+    },
+    {
+      "id": "nebius/meta-models/muse-spark-open",
+      "name": "Muse Spark Open (Nebius)",
+      "description": "Muse Spark Open is an 816B total / 42B active open-weight multimodal reasoning model from Meta for coding and long-horizon agentic work, with 1M-token context.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-01-04",
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 1.25
+      },
+      "canonical_model_id": "meta/muse-spark-open",
+      "display_name": "Muse Spark Open (Nebius)",
       "type": "chat"
     },
     {
@@ -11884,9 +11990,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.44832,
-        "output": 0.89664,
-        "cache_read": 0.089664
+        "input": 0.45012,
+        "output": 0.90024,
+        "cache_read": 0.090024
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -11934,9 +12040,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.67248,
-        "output": 2.01744,
-        "cache_read": 0.134496
+        "input": 0.67518,
+        "output": 2.02554,
+        "cache_read": 0.135036
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Scaleway)",
@@ -12018,8 +12124,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16812,
-        "output": 0.67248
+        "input": 0.168795,
+        "output": 0.67518
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -12054,8 +12160,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.00872,
-        "output": 1.00872
+        "input": 1.01277,
+        "output": 1.01277
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -12089,8 +12195,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.8406,
-        "output": 2.5218
+        "input": 0.843975,
+        "output": 2.531925
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
@@ -12125,8 +12231,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.22416,
-        "output": 0.89664
+        "input": 0.22506,
+        "output": 0.90024
       },
       "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",

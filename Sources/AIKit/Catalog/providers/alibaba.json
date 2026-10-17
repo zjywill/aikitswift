@@ -2155,7 +2155,6 @@
             "cache_read": 0.2,
             "cache_write": 2.5,
             "tier": {
-              "type": "context",
               "size": 256000
             }
           }
@@ -2343,7 +2342,6 @@
             "cache_read": 0.12,
             "cache_write": 1.5,
             "tier": {
-              "type": "context",
               "size": 256000
             }
           }

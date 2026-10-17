@@ -32,8 +32,8 @@
       "open_weights": true,
       "limit": {
         "context": 196608,
-        "input": 196601,
-        "output": 32768
+        "output": 32768,
+        "input": 196601
       },
       "cost": {
         "input": 0,
@@ -1241,13 +1241,13 @@
         "context": 1000000,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
       },
+      "status": "deprecated",
       "canonical_model_id": "alibaba/qwen3.8-max-preview",
       "display_name": "Qwen3.8 Max Preview",
       "type": "chat"

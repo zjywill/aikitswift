@@ -111,13 +111,13 @@
         "context": 200000,
         "output": 4096
       },
-      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
       },
+      "status": "deprecated",
       "display_name": "Claude 3 Opus",
       "type": "chat"
     },
@@ -148,13 +148,13 @@
         "context": 200000,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.8,
         "output": 4,
         "cache_read": 0.08,
         "cache_write": 1
       },
+      "status": "deprecated",
       "display_name": "Claude 3.5 Haiku",
       "type": "chat"
     },
@@ -186,13 +186,13 @@
         "context": 200000,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "status": "deprecated",
       "display_name": "Claude 3.5 Sonnet",
       "type": "chat"
     },
@@ -235,13 +235,13 @@
         "context": 200000,
         "output": 64000
       },
-      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "status": "deprecated",
       "display_name": "Claude 3.7 Sonnet",
       "type": "chat"
     },
@@ -1109,7 +1109,6 @@
             "cache_read": 0.3,
             "cache_write": 3.75,
             "tier": {
-              "type": "context",
               "size": 200000
             }
           }
@@ -2032,7 +2031,7 @@
       "name": "GLM5.3 Flash",
       "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
       "family": "glm-flash",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2056,9 +2055,7 @@
       "last_updated": "2026-08-26",
       "modalities": {
         "input": [
-          "text",
-          "image",
-          "video"
+          "text"
         ],
         "output": [
           "text"
@@ -2586,11 +2583,11 @@
         "context": 128000,
         "output": 16384
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 0.3
       },
+      "status": "deprecated",
       "display_name": "Mistral Nemo Instruct",
       "type": "chat"
     },
@@ -4562,11 +4559,11 @@
         "context": 8000,
         "output": 1024
       },
-      "status": "beta",
       "cost": {
         "input": 0.04,
         "output": 0
       },
+      "status": "beta",
       "display_name": "Qwen3 Embedding 0.6B",
       "type": "other"
     },

@@ -33,12 +33,12 @@
         "context": 262144,
         "output": 262144
       },
-      "status": "beta",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
       },
+      "status": "beta",
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B FP8",
       "type": "chat"
@@ -73,12 +73,12 @@
         "context": 262144,
         "output": 262144
       },
-      "status": "beta",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
       },
+      "status": "beta",
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8-27B",
       "type": "chat"

@@ -89,8 +89,8 @@
       "cost": {
         "input": 3,
         "output": 15,
-        "reasoning": 15,
-        "cache_read": 0.3
+        "cache_read": 0.3,
+        "reasoning": 15
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",

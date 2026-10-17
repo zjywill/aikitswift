@@ -437,13 +437,13 @@
         "context": 189096,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 2.6,
         "output": 13,
         "cache_read": 0.26,
         "cache_write": 3.2
       },
+      "status": "deprecated",
       "display_name": "Claude-Sonnet-3.5",
       "type": "chat"
     },
@@ -475,13 +475,13 @@
         "context": 189096,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 2.6,
         "output": 13,
         "cache_read": 0.26,
         "cache_write": 3.2
       },
+      "status": "deprecated",
       "display_name": "Claude-Sonnet-3.5-June",
       "type": "chat"
     },
@@ -1300,12 +1300,12 @@
         "context": 1048576,
         "output": 65536
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.6,
         "output": 9.6,
         "cache_read": 0.16
       },
+      "status": "deprecated",
       "display_name": "Gemini-3-Pro",
       "type": "chat"
     },
@@ -1693,17 +1693,16 @@
         "context": 1048576,
         "output": 0
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.6,
         "output": 9.6
       },
+      "status": "deprecated",
       "display_name": "gemini-deep-research",
       "type": "chat"
     },
     {
       "id": "google/gemini-omni-1.1-flash",
-      "type": "video",
       "name": "Gemini-Omni-1.1-Flash",
       "description": "Video generation and editing model for scene extension, frame interpolation, and reference-guided multimodal control",
       "family": "gemini",
@@ -1736,6 +1735,7 @@
         "input": 1.5152,
         "output": 9.0909
       },
+      "type": "video",
       "canonical_model_id": "google/gemini-omni-1.1-flash",
       "display_name": "Gemini-Omni-1.1-Flash"
     },
@@ -2732,11 +2732,11 @@
         "context": 128000,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 4.5,
         "output": 14
       },
+      "status": "deprecated",
       "display_name": "ChatGPT-4o-Latest",
       "type": "chat"
     },
@@ -2898,11 +2898,11 @@
         "context": 8192,
         "output": 4096
       },
-      "status": "deprecated",
       "cost": {
         "input": 27,
         "output": 54
       },
+      "status": "deprecated",
       "display_name": "GPT-4-Classic",
       "type": "chat"
     },
@@ -2933,11 +2933,11 @@
         "context": 8192,
         "output": 4096
       },
-      "status": "deprecated",
       "cost": {
         "input": 27,
         "output": 54
       },
+      "status": "deprecated",
       "display_name": "GPT-4-Classic-0314",
       "type": "chat"
     },

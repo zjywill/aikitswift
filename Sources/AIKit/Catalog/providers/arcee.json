@@ -44,12 +44,12 @@
         "context": 1048576,
         "output": 384000
       },
-      "status": "beta",
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.028
       },
+      "status": "beta",
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -95,12 +95,12 @@
         "context": 512000,
         "output": 384000
       },
-      "status": "beta",
       "cost": {
         "input": 1.74,
         "output": 3.48,
         "cache_read": 0.2
       },
+      "status": "beta",
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -145,12 +145,12 @@
         "context": 1048576,
         "output": 384000
       },
-      "status": "beta",
       "cost": {
         "input": 1.32,
         "output": 3.96,
         "cache_read": 0.044
       },
+      "status": "beta",
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
@@ -196,12 +196,12 @@
         "context": 1048576,
         "output": 131072
       },
-      "status": "beta",
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3
       },
+      "status": "beta",
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
       "type": "chat"
@@ -237,12 +237,12 @@
         "context": 262144,
         "output": 262144
       },
-      "status": "beta",
       "cost": {
         "input": 0.5,
         "output": 1.2,
         "cache_read": 0.1
       },
+      "status": "beta",
       "canonical_model_id": "thinkingmachines/inkling-small",
       "display_name": "Inkling Small",
       "type": "chat"
@@ -278,12 +278,12 @@
         "context": 262144,
         "output": 262144
       },
-      "status": "beta",
       "cost": {
         "input": 0.25,
         "output": 0.8,
         "cache_read": 0.06
       },
+      "status": "beta",
       "canonical_model_id": "arcee-ai/trinity-large-thinking",
       "display_name": "Trinity Large Thinking",
       "type": "chat"
@@ -328,12 +328,12 @@
         "context": 262144,
         "output": 131072
       },
-      "status": "beta",
       "cost": {
         "input": 1.4,
         "output": 4.4,
         "cache_read": 0.26
       },
+      "status": "beta",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
       "type": "chat"

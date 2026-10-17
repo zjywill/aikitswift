@@ -66,8 +66,8 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.03
+        "cache_read": 0.03,
+        "output": 1.2
       },
       "display_name": "MiniMaxAI/MiniMax-M2.5",
       "type": "chat"
@@ -2004,8 +2004,8 @@
       },
       "cost": {
         "input": 0.132,
-        "output": 0.528,
-        "cache_read": 0.033
+        "cache_read": 0.033,
+        "output": 0.528
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3",

@@ -39,12 +39,12 @@
         "context": 262144,
         "output": 65536
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2-Flash",
       "type": "chat"
     },
@@ -88,12 +88,12 @@
         "context": 262144,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2-Omni",
       "type": "chat"
     },
@@ -133,12 +133,12 @@
         "context": 1048576,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.435,
         "output": 0.87,
         "cache_read": 0.0036
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2-Pro",
       "type": "chat"
     },
@@ -181,12 +181,12 @@
         "context": 1048576,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.0028
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2.5",
       "type": "chat"
     },
@@ -226,12 +226,12 @@
         "context": 1048576,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.435,
         "output": 0.87,
         "cache_read": 0.0036
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2.5-Pro",
       "type": "chat"
     },
@@ -271,12 +271,12 @@
         "context": 1048576,
         "output": 131072
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.305,
         "output": 2.61,
         "cache_read": 0.0108
       },
+      "status": "deprecated",
       "display_name": "MiMo-V2.5-Pro-UltraSpeed",
       "type": "chat"
     },

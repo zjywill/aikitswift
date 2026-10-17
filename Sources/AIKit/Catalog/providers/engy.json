@@ -46,8 +46,8 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "input": 920576,
-        "output": 128000
+        "output": 128000,
+        "input": 920576
       },
       "cost": {
         "input": 0.045,
@@ -101,9 +101,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 327680,
-        "input": 262144,
-        "output": 65536
+        "context": 1048576,
+        "output": 65536,
+        "input": 983040
       },
       "cost": {
         "input": 0.04,
@@ -155,8 +155,8 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "input": 229376,
-        "output": 32768
+        "output": 32768,
+        "input": 229376
       },
       "cost": {
         "input": 0.68,
@@ -206,8 +206,8 @@
       "open_weights": true,
       "limit": {
         "context": 327680,
-        "input": 294912,
-        "output": 32768
+        "output": 32768,
+        "input": 294912
       },
       "cost": {
         "input": 0.98,
@@ -257,9 +257,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 229376,
-        "output": 32768
+        "context": 327680,
+        "output": 32768,
+        "input": 294912
       },
       "cost": {
         "input": 0.135,
@@ -305,8 +305,8 @@
       "open_weights": true,
       "limit": {
         "context": 1113088,
-        "input": 1047552,
-        "output": 65536
+        "output": 65536,
+        "input": 1047552
       },
       "cost": {
         "input": 1.95,
@@ -351,8 +351,8 @@
       "open_weights": true,
       "limit": {
         "context": 208192,
-        "input": 200000,
-        "output": 8192
+        "output": 8192,
+        "input": 200000
       },
       "cost": {
         "input": 0.045,
@@ -406,8 +406,8 @@
       "open_weights": true,
       "limit": {
         "context": 1001536,
-        "input": 936000,
-        "output": 65536
+        "output": 65536,
+        "input": 936000
       },
       "cost": {
         "input": 0.045,

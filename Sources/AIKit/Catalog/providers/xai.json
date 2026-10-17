@@ -97,7 +97,6 @@
             "output": 5,
             "cache_read": 0.4,
             "tier": {
-              "type": "context",
               "size": 200000
             }
           }
@@ -162,7 +161,6 @@
             "output": 5,
             "cache_read": 0.4,
             "tier": {
-              "type": "context",
               "size": 200000
             }
           }
@@ -227,7 +225,6 @@
             "output": 5,
             "cache_read": 0.4,
             "tier": {
-              "type": "context",
               "size": 200000
             }
           }
@@ -481,7 +478,6 @@
             "output": 4,
             "cache_read": 0.4,
             "tier": {
-              "type": "context",
               "size": 200000
             }
           }

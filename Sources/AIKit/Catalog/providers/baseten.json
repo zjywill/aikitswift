@@ -35,11 +35,11 @@
         "context": 204000,
         "output": 204000
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2
       },
+      "status": "deprecated",
       "display_name": "MiniMax-M2.5",
       "type": "chat"
     },
@@ -71,11 +71,11 @@
         "context": 164000,
         "output": 131000
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 1.5
       },
+      "status": "deprecated",
       "display_name": "DeepSeek V3.1",
       "type": "chat"
     },

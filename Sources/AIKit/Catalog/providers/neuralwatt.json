@@ -194,12 +194,12 @@
         "context": 1048560,
         "output": 393216
       },
-      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 3,
         "cache_read": 0.1
       },
+      "status": "deprecated",
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "type": "chat"
@@ -398,12 +398,12 @@
         "context": 1048560,
         "output": 1048560
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.45,
         "output": 4.5,
         "cache_read": 0.145
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2",
       "type": "chat"
@@ -450,12 +450,12 @@
         "context": 1048560,
         "output": 1048560
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.45,
         "output": 4.5,
         "cache_read": 0.145
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Fast",
       "type": "chat"
@@ -502,12 +502,12 @@
         "context": 1048560,
         "output": 1048560
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.9425,
         "output": 2.925,
         "cache_read": 0.09425
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Flex",
       "type": "chat"
@@ -554,12 +554,12 @@
         "context": 199984,
         "output": 32000
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.45,
         "output": 4.5,
         "cache_read": 0.145
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Short",
       "type": "chat"
@@ -606,12 +606,12 @@
         "context": 199984,
         "output": 32000
       },
-      "status": "deprecated",
       "cost": {
         "input": 1.45,
         "output": 4.5,
         "cache_read": 0.145
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Short Fast",
       "type": "chat"
@@ -658,12 +658,12 @@
         "context": 199984,
         "output": 32000
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.9425,
         "output": 2.925,
         "cache_read": 0.09425
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Short Fast Flex",
       "type": "chat"
@@ -710,12 +710,12 @@
         "context": 199984,
         "output": 32000
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.9425,
         "output": 2.925,
         "cache_read": 0.09425
       },
+      "status": "deprecated",
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Short Flex",
       "type": "chat"

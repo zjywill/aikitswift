@@ -102,6 +102,12 @@
         "context": 1000000,
         "output": 128000
       },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
+      },
       "experimental": {
         "modes": {
           "fast": {
@@ -121,12 +127,6 @@
             }
           }
         }
-      },
-      "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7",

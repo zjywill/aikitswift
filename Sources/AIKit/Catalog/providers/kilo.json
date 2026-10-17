@@ -2525,7 +2525,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
         "input": 0.3,
@@ -3846,8 +3846,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.15
+        "input": 0.04,
+        "output": 0.12
       },
       "canonical_model_id": "google/gemma-3-12b-it",
       "display_name": "Gemma 3 12B IT",
@@ -5042,7 +5042,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 16384
       },
       "cost": {
         "input": 0.1,
@@ -5113,12 +5113,12 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
-        "output": 117964
+        "context": 327680,
+        "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.3
+        "input": 0.08,
+        "output": 0.24
       },
       "display_name": "Meta: Llama 4 Scout",
       "type": "chat"
@@ -5152,8 +5152,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.18,
-        "output": 0.18
+        "input": 0.144,
+        "output": 0.144
       },
       "display_name": "Meta: Llama Guard 4 12B",
       "type": "chat"
@@ -5603,8 +5603,8 @@
         "output": 14745
       },
       "cost": {
-        "input": 0.07,
-        "output": 0.14
+        "input": 0.056,
+        "output": 0.112
       },
       "display_name": "Microsoft: Phi 4",
       "type": "chat"
@@ -7414,7 +7414,7 @@
         }
       ],
       "tool_call": false,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-08-26",
       "last_updated": "2025-08-26",
@@ -7662,9 +7662,9 @@
         "output": 182520
       },
       "cost": {
-        "input": 0.5,
-        "output": 2.2,
-        "cache_read": 0.1
+        "input": 0.4,
+        "output": 1.76,
+        "cache_read": 0.08
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nemotron 3 Ultra 550B A55B",
@@ -10579,7 +10579,7 @@
       "cost": {
         "input": 0.03,
         "output": 0.15,
-        "cache_read": 0.03
+        "cache_read": 0.015
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
@@ -11116,11 +11116,11 @@
         "context": 128000,
         "output": 32768
       },
-      "status": "beta",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "status": "beta",
       "display_name": "Body Builder (beta)",
       "type": "chat"
     },
@@ -12306,12 +12306,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 1.1,
-        "cache_read": 0.07
+        "input": 0.09,
+        "output": 1.1
       },
       "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3-Next 80B-A3B Instruct",
@@ -13526,6 +13525,102 @@
       },
       "canonical_model_id": "alibaba/qwen3.8-omni-flash",
       "display_name": "Qwen3.8 Omni Flash",
+      "type": "chat"
+    },
+    {
+      "id": "reflection/beam-1.0-501b-a23b",
+      "name": "Reflection: Beam 1.0 501B A23B",
+      "description": "Beam 1.0 is Reflection's open-weight reasoning model for coding and long-horizon agentic workflows. It uses a sparse mixture-of-experts architecture with 501B total and 23B active parameters per token, and a...",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 0.25,
+        "output": 1
+      },
+      "display_name": "Reflection: Beam 1.0 501B A23B",
+      "type": "chat"
+    },
+    {
+      "id": "reflection/beam-free",
+      "name": "Reflection: Beam 1.0 (free)",
+      "description": "Your prompts and completions may be retained and used to train or improve the provider's services. Beam is Reflection's reasoning model for coding and agentic workflows, combining strong coding capabilities with fast, low-latency inference, served through Vercel AI Gateway at no cost. It supports function calling, structured outputs, and streaming, and takes text input only. Zero Data Retention is not available for this model.",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-08-26",
+      "last_updated": "2025-08-26",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "reasoning": 0,
+        "cache_read": 0
+      },
+      "display_name": "Reflection: Beam 1.0 (free)",
       "type": "chat"
     },
     {
@@ -15917,6 +16012,50 @@
       "type": "chat"
     },
     {
+      "id": "xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "description": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the TeleChat series. It has 29B total parameters with 4B active per token...",
+      "family": "agi",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "XingChen: Xing4.0 29B A4B (free)",
+      "type": "chat"
+    },
+    {
       "id": "z-ai/glm-4.5",
       "name": "GLM-4.5",
       "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
@@ -16517,7 +16656,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
         "input": 0.15,
@@ -16917,8 +17056,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0144,
-        "output": 0.72,
+        "input": 0.036,
+        "output": 0.45,
         "cache_read": 0.0054
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
@@ -16964,9 +17103,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.1307,
-        "output": 8,
-        "cache_read": 0.13
+        "input": 0.24948,
+        "output": 0.74844,
+        "cache_read": 0.007938
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17011,9 +17150,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.00999,
-        "output": 0.576,
-        "cache_read": 0.00999
+        "input": 0.01179,
+        "output": 0.45,
+        "cache_read": 0.01179
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17164,9 +17303,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.32,
+        "input": 0.294,
         "output": 24,
-        "cache_read": 0.31
+        "cache_read": 0.284
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17549,12 +17688,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.025,
-        "output": 0.68,
-        "cache_read": 0.0125
+        "input": 0.01782,
+        "output": 0.45,
+        "cache_read": 0.01125
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"

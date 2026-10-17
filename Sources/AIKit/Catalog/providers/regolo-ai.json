@@ -97,11 +97,11 @@
         "context": 100000,
         "output": 15000
       },
-      "status": "beta",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "status": "beta",
       "display_name": "Brick v1 Beta",
       "type": "chat"
     },

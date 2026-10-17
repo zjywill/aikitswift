@@ -146,11 +146,11 @@
         "context": 8192,
         "output": 8192
       },
-      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 5
       },
+      "status": "deprecated",
       "display_name": "MedGemma 4B",
       "type": "chat"
     },

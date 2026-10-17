@@ -2384,9 +2384,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0094,
-        "output": 0.64,
-        "cache_read": 0.0094
+        "input": 0.0131,
+        "output": 1.28,
+        "cache_read": 0.0131
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2484,9 +2484,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.346434,
-        "output": 0.692868,
-        "cache_read": 0.02887
+        "input": 0.276834,
+        "output": 0.553668,
+        "cache_read": 0.02307
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -2579,12 +2579,12 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 943718
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.003
+        "input": 0.036,
+        "output": 0.45,
+        "cache_read": 0.0054
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -4056,9 +4056,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.0765,
-        "output": 0.255,
-        "cache_read": 0.0425
+        "input": 0.0675,
+        "output": 0.225,
+        "cache_read": 0.0375
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
@@ -4989,12 +4989,11 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 16384
       },
       "cost": {
-        "input": 0.59,
-        "output": 0.79,
-        "cache_read": 0.295
+        "input": 0.1,
+        "output": 0.32
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct",
@@ -5064,11 +5063,11 @@
       "open_weights": true,
       "limit": {
         "context": 1310720,
-        "output": 117964
+        "output": 16384
       },
       "cost": {
-        "input": 0.18,
-        "output": 0.59
+        "input": 0.1,
+        "output": 0.3
       },
       "display_name": "Llama 4 Scout",
       "type": "chat"
@@ -7060,9 +7059,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.405,
-        "output": 15,
-        "cache_read": 0.28
+        "input": 0.304,
+        "output": 11.936,
+        "cache_read": 0.21
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -7316,7 +7315,7 @@
         }
       ],
       "tool_call": false,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-08-31",
       "release_date": "2025-08-26",
@@ -7829,9 +7828,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.5,
-        "cache_read": 0.02
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.08
       },
       "display_name": "Nemotron 3.5 Super VL",
       "type": "chat"
@@ -12490,12 +12489,11 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 235929
+        "output": 16384
       },
       "cost": {
-        "input": 0.1,
-        "output": 1.1,
-        "cache_read": 0.07
+        "input": 0.09,
+        "output": 1.1
       },
       "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3-Next 80B-A3B Instruct",
@@ -13740,6 +13738,55 @@
       },
       "canonical_model_id": "alibaba/qwen3.8-omni-flash",
       "display_name": "Qwen3.8 Omni Flash",
+      "type": "chat"
+    },
+    {
+      "id": "reflection/beam-1.0-501b-a23b",
+      "name": "Beam 1.0 501B A23B",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 943718
+      },
+      "cost": {
+        "input": 1,
+        "output": 3,
+        "cache_read": 0.1
+      },
+      "display_name": "Beam 1.0 501B A23B",
       "type": "chat"
     },
     {
@@ -15946,6 +15993,46 @@
       "type": "chat"
     },
     {
+      "id": "xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "Xing4.0 29B A4B (free)",
+      "description": "Free provider route for experiments, demos, and cost-sensitive chat workloads",
+      "family": "agi",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-16",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "display_name": "Xing4.0 29B A4B (free)",
+      "type": "chat"
+    },
+    {
       "id": "z-ai/glm-4.5",
       "name": "GLM-4.5",
       "description": "Hybrid-reasoning GLM release that made the 4.5 line broadly useful",
@@ -16431,9 +16518,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.037,
-        "output": 7,
-        "cache_read": 0.036
+        "input": 0.62,
+        "output": 2.42,
+        "cache_read": 0.14
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
@@ -16478,9 +16565,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.4,
-        "output": 8,
-        "cache_read": 0.399
+        "input": 0.079,
+        "output": 4.8,
+        "cache_read": 0.078
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -16527,8 +16614,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0225,
-        "output": 0.9,
+        "input": 0.01782,
+        "output": 0.45,
         "cache_read": 0.01125
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
@@ -16932,9 +17019,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0115,
-        "output": 0.8,
-        "cache_read": 0.01
+        "input": 0.036,
+        "output": 0.45,
+        "cache_read": 0.0054
       },
       "display_name": "DeepSeek Flash Latest",
       "type": "chat"
@@ -16979,9 +17066,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.1307,
-        "output": 8,
-        "cache_read": 0.13
+        "input": 0.24948,
+        "output": 0.74844,
+        "cache_read": 0.007938
       },
       "display_name": "DeepSeek Pro Latest",
       "type": "chat"
@@ -17026,9 +17113,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0094,
-        "output": 0.64,
-        "cache_read": 0.0094
+        "input": 0.01179,
+        "output": 0.45,
+        "cache_read": 0.01179
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17197,9 +17284,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.31,
-        "output": 14,
-        "cache_read": 0.3
+        "input": 0.294,
+        "output": 24,
+        "cache_read": 0.284
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17677,8 +17764,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0225,
-        "output": 0.9,
+        "input": 0.01782,
+        "output": 0.45,
         "cache_read": 0.01125
       },
       "display_name": "GLM Flash Latest",

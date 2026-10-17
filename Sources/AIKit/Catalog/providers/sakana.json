@@ -86,9 +86,6 @@
         "context": 1000000,
         "output": 1000000
       },
-      "provider": {
-        "shape": "responses"
-      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -109,6 +106,9 @@
           "output": 45,
           "cache_read": 1
         }
+      },
+      "provider": {
+        "shape": "responses"
       },
       "canonical_model_id": "sakana/fugu-ultra",
       "display_name": "Fugu Ultra",
@@ -152,9 +152,6 @@
         "context": 1000000,
         "output": 1000000
       },
-      "provider": {
-        "shape": "responses"
-      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -175,6 +172,9 @@
           "output": 45,
           "cache_read": 1
         }
+      },
+      "provider": {
+        "shape": "responses"
       },
       "canonical_model_id": "sakana/fugu-ultra",
       "display_name": "Fugu Ultra",
