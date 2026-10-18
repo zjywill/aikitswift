@@ -225,12 +225,12 @@
         "context": 524288,
         "output": 262144
       },
+      "status": "beta",
       "cost": {
         "input": 0.7112,
         "output": 2.1859,
         "cache_read": 0.0732
       },
-      "status": "beta",
       "canonical_model_id": "mistral/mistral-large-4",
       "display_name": "Mistral Large 4",
       "type": "chat"

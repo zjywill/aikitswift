@@ -172,12 +172,6 @@
         "context": 1000000,
         "output": 128000
       },
-      "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -197,6 +191,12 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6",
@@ -238,12 +238,6 @@
         "context": 1000000,
         "output": 128000
       },
-      "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -263,6 +257,12 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
@@ -1058,6 +1058,22 @@
         "input": 922000,
         "output": 128000
       },
+      "experimental": {
+        "modes": {
+          "fast": {
+            "cost": {
+              "input": 5,
+              "output": 30,
+              "cache_read": 0.5
+            },
+            "provider": {
+              "body": {
+                "service_tier": "priority"
+              }
+            }
+          }
+        }
+      },
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -1077,22 +1093,6 @@
           "input": 5,
           "output": 22.5,
           "cache_read": 0.5
-        }
-      },
-      "experimental": {
-        "modes": {
-          "fast": {
-            "cost": {
-              "input": 5,
-              "output": 30,
-              "cache_read": 0.5
-            },
-            "provider": {
-              "body": {
-                "service_tier": "priority"
-              }
-            }
-          }
         }
       },
       "canonical_model_id": "openai/gpt-5.4",
@@ -1140,11 +1140,6 @@
         "input": 272000,
         "output": 128000
       },
-      "cost": {
-        "input": 0.75,
-        "output": 4.5,
-        "cache_read": 0.075
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -1160,6 +1155,11 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 4.5,
+        "cache_read": 0.075
       },
       "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 mini",
@@ -1257,6 +1257,22 @@
         "input": 922000,
         "output": 128000
       },
+      "experimental": {
+        "modes": {
+          "fast": {
+            "cost": {
+              "input": 12.5,
+              "output": 75,
+              "cache_read": 1.25
+            },
+            "provider": {
+              "body": {
+                "service_tier": "priority"
+              }
+            }
+          }
+        }
+      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -1276,22 +1292,6 @@
           "input": 10,
           "output": 45,
           "cache_read": 1
-        }
-      },
-      "experimental": {
-        "modes": {
-          "fast": {
-            "cost": {
-              "input": 12.5,
-              "output": 75,
-              "cache_read": 1.25
-            },
-            "provider": {
-              "body": {
-                "service_tier": "priority"
-              }
-            }
-          }
         }
       },
       "canonical_model_id": "openai/gpt-5.5",

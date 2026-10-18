@@ -29,11 +29,11 @@
         "context": 200000,
         "output": 50000
       },
+      "status": "beta",
       "cost": {
         "input": 0.23,
         "output": 1.16
       },
-      "status": "beta",
       "display_name": "Kloker",
       "type": "chat"
     },
@@ -63,11 +63,11 @@
         "context": 200000,
         "output": 50000
       },
+      "status": "beta",
       "cost": {
         "input": 0.23,
         "output": 1.16
       },
-      "status": "beta",
       "display_name": "Kloker Integration Architect",
       "type": "chat"
     },
@@ -97,11 +97,11 @@
         "context": 200000,
         "output": 50000
       },
+      "status": "beta",
       "cost": {
         "input": 0.23,
         "output": 1.16
       },
-      "status": "beta",
       "display_name": "Kloker Integration Developer",
       "type": "chat"
     }

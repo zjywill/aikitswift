@@ -41,11 +41,11 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "beta",
       "cost": {
         "input": 10,
         "output": 50
       },
-      "status": "beta",
       "display_name": "Echo",
       "type": "chat"
     }

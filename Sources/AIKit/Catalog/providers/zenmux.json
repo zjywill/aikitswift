@@ -30,16 +30,16 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0.8,
         "output": 4,
         "cache_read": 0.08,
         "cache_write": 1
-      },
-      "status": "deprecated",
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude 3.5 Haiku",
       "type": "chat"
@@ -83,16 +83,16 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "status": "deprecated",
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude 3.7 Sonnet",
       "type": "chat"
@@ -137,15 +137,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 10,
         "output": 50,
         "cache_read": 1,
         "cache_write": 12.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
@@ -193,15 +193,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 10,
         "output": 50,
         "cache_read": 0.25,
         "cache_write": 12.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1",
@@ -234,15 +234,15 @@
         "context": 200000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 1,
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Haiku 4.5",
       "type": "chat"
@@ -286,15 +286,15 @@
         "context": 200000,
         "output": 32000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Opus 4",
       "type": "chat"
@@ -338,15 +338,15 @@
         "context": 200000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Opus 4.1",
       "type": "chat"
@@ -390,15 +390,15 @@
         "context": 200000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Opus 4.5",
       "type": "chat"
@@ -441,15 +441,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Opus 4.6",
       "type": "chat"
@@ -493,15 +493,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Opus 4.7",
       "type": "chat"
@@ -546,15 +546,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8",
@@ -602,15 +602,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 4,
         "output": 20,
         "cache_read": 0.2,
         "cache_write": 5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",
@@ -655,15 +655,15 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4",
       "type": "chat"
@@ -707,15 +707,15 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4.5",
       "type": "chat"
@@ -758,15 +758,15 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4.6",
       "type": "chat"
@@ -811,15 +811,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 2,
         "output": 10,
         "cache_read": 0.2,
         "cache_write": 4
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
@@ -865,15 +865,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5 (Free)",
@@ -942,12 +942,12 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.28,
         "output": 0.42,
         "cache_read": 0.03
       },
-      "status": "deprecated",
       "display_name": "DeepSeek-V3.2 (Non-thinking Mode)",
       "type": "chat"
     },
@@ -1593,12 +1593,12 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.56,
         "output": 2.24,
         "cache_read": 0.11
       },
-      "status": "deprecated",
       "display_name": "Ling-1T",
       "type": "chat"
     },
@@ -1630,12 +1630,12 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.56,
         "output": 2.24,
         "cache_read": 0.11
       },
-      "status": "deprecated",
       "display_name": "Ring-1T",
       "type": "chat"
     },
@@ -1736,15 +1736,15 @@
         "context": 204000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.03,
         "cache_write": 0.38
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "MiniMax M2",
       "type": "chat"
@@ -1777,15 +1777,15 @@
         "context": 204000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.03,
         "cache_write": 0.38
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "MiniMax M2.1",
       "type": "chat"
@@ -1818,15 +1818,15 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.03,
         "cache_write": 0.375
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "MiniMax M2.5",
       "type": "chat"
@@ -1859,15 +1859,15 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://zenmux.ai/api/anthropic/v1"
+      },
       "cost": {
         "input": 0.6,
         "output": 4.8,
         "cache_read": 0.06,
         "cache_write": 0.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://zenmux.ai/api/anthropic/v1"
       },
       "display_name": "MiniMax M2.5 highspeed",
       "type": "chat"
@@ -1900,13 +1900,13 @@
         "context": 204800,
         "output": 131070
       },
-      "cost": {
-        "input": 0.3055,
-        "output": 1.2219
-      },
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://zenmux.ai/api/anthropic/v1"
+      },
+      "cost": {
+        "input": 0.3055,
+        "output": 1.2219
       },
       "display_name": "MiniMax M2.7",
       "type": "chat"
@@ -1939,13 +1939,13 @@
         "context": 204800,
         "output": 131070
       },
-      "cost": {
-        "input": 0.611,
-        "output": 2.4439
-      },
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://zenmux.ai/api/anthropic/v1"
+      },
+      "cost": {
+        "input": 0.611,
+        "output": 2.4439
       },
       "display_name": "MiniMax M2.7 highspeed",
       "type": "chat"
@@ -1984,13 +1984,13 @@
         "context": 1048576,
         "output": 512000
       },
-      "cost": {
-        "input": 0.6,
-        "output": 2.4
-      },
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://zenmux.ai/api/anthropic/v1"
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 2.4
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax-M3",
@@ -2022,12 +2022,12 @@
         "context": 262000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 2.5,
         "cache_read": 0.15
       },
-      "status": "deprecated",
       "display_name": "Kimi K2 0905",
       "type": "chat"
     },
@@ -2059,12 +2059,12 @@
         "context": 262000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 2.5,
         "cache_read": 0.15
       },
-      "status": "deprecated",
       "display_name": "Kimi K2 Thinking",
       "type": "chat"
     },
@@ -2096,12 +2096,12 @@
         "context": 262000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.15,
         "output": 8,
         "cache_read": 0.15
       },
-      "status": "deprecated",
       "display_name": "Kimi K2 Thinking Turbo",
       "type": "chat"
     },
@@ -2466,14 +2466,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.12
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5",
       "type": "chat"
@@ -2516,14 +2516,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.12
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5 Codex",
       "type": "chat"
@@ -2567,14 +2567,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.12
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5.1",
       "type": "chat"
@@ -2607,15 +2607,15 @@
         "context": 128000,
         "output": 64000
       },
-      "cost": {
-        "input": 1.25,
-        "output": 10,
-        "cache_read": 0.12
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.12
       },
       "display_name": "GPT-5.1 Chat",
       "type": "chat"
@@ -2658,14 +2658,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.12
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5.1-Codex",
       "type": "chat"
@@ -2708,14 +2708,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 0.25,
         "output": 2,
         "cache_read": 0.03
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5.1-Codex-Mini",
       "type": "chat"
@@ -2759,14 +2759,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.17
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5.2",
       "type": "chat"
@@ -2810,14 +2810,14 @@
         "context": 400000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://zenmux.ai/api/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.17
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://zenmux.ai/api/v1"
       },
       "display_name": "GPT-5.2-Codex",
       "type": "chat"
@@ -2861,13 +2861,13 @@
         "context": 400000,
         "output": 128000
       },
-      "cost": {
-        "input": 21,
-        "output": 168
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 21,
+        "output": 168
       },
       "display_name": "GPT-5.2-Pro",
       "type": "chat"
@@ -2898,13 +2898,13 @@
         "context": 128000,
         "output": 16380
       },
-      "cost": {
-        "input": 1.75,
-        "output": 14
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 1.75,
+        "output": 14
       },
       "display_name": "GPT-5.3 Chat",
       "type": "chat"
@@ -2946,13 +2946,13 @@
         "context": 400000,
         "output": 128000
       },
-      "cost": {
-        "input": 1.75,
-        "output": 14
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 1.75,
+        "output": 14
       },
       "display_name": "GPT-5.3 Codex",
       "type": "chat"
@@ -2995,13 +2995,13 @@
         "context": 1050000,
         "output": 128000
       },
-      "cost": {
-        "input": 3.75,
-        "output": 18.75
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 3.75,
+        "output": 18.75
       },
       "display_name": "GPT-5.4",
       "type": "chat"
@@ -3032,13 +3032,13 @@
         "context": 400000,
         "output": 128000
       },
-      "cost": {
-        "input": 0.75,
-        "output": 4.5
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 0.75,
+        "output": 4.5
       },
       "display_name": "GPT-5.4 Mini",
       "type": "chat"
@@ -3069,13 +3069,13 @@
         "context": 400000,
         "output": 128000
       },
-      "cost": {
-        "input": 0.2,
-        "output": 1.25
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 1.25
       },
       "display_name": "GPT-5.4 Nano",
       "type": "chat"
@@ -3118,13 +3118,13 @@
         "context": 1050000,
         "output": 128000
       },
-      "cost": {
-        "input": 45,
-        "output": 225
-      },
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://zenmux.ai/api/v1"
+      },
+      "cost": {
+        "input": 45,
+        "output": 225
       },
       "display_name": "GPT-5.4 Pro",
       "type": "chat"
@@ -3171,6 +3171,22 @@
         "input": 922000,
         "output": 128000
       },
+      "experimental": {
+        "modes": {
+          "fast": {
+            "cost": {
+              "input": 12.5,
+              "output": 75,
+              "cache_read": 1.25
+            },
+            "provider": {
+              "body": {
+                "service_tier": "priority"
+              }
+            }
+          }
+        }
+      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -3190,22 +3206,6 @@
           "input": 10,
           "output": 45,
           "cache_read": 1
-        }
-      },
-      "experimental": {
-        "modes": {
-          "fast": {
-            "cost": {
-              "input": 12.5,
-              "output": 75,
-              "cache_read": 1.25
-            },
-            "provider": {
-              "body": {
-                "service_tier": "priority"
-              }
-            }
-          }
         }
       },
       "canonical_model_id": "openai/gpt-5.5",
@@ -3383,6 +3383,7 @@
             "cache_read": 0.2,
             "cache_write": 2.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -3455,6 +3456,7 @@
             "cache_read": 1,
             "cache_write": 12.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -3527,6 +3529,7 @@
             "cache_read": 0.5,
             "cache_write": 6.25,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -3879,6 +3882,7 @@
             "cache_read": 0.2,
             "cache_write": 2.5,
             "tier": {
+              "type": "context",
               "size": 256000
             }
           }
@@ -3982,6 +3986,7 @@
             "cache_read": 0.24,
             "cache_write": 1.5,
             "tier": {
+              "type": "context",
               "size": 256000
             }
           }
@@ -4093,11 +4098,11 @@
         "context": 65536,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.21,
         "output": 0.57
       },
-      "status": "deprecated",
       "display_name": "Step-3",
       "type": "chat"
     },
@@ -4540,12 +4545,12 @@
         "context": 256000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.17,
         "output": 1.12,
         "cache_read": 0.03
       },
-      "status": "deprecated",
       "display_name": "Doubao-Seed-Code",
       "type": "chat"
     },

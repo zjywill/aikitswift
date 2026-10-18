@@ -47,13 +47,13 @@
         "context": 1048576,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "reflection/beam-1.0-501b-a23b",
       "display_name": "Beam Free",
@@ -93,14 +93,14 @@
         "input": 160000,
         "output": 32000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Big Pickle",
       "type": "chat"
@@ -147,14 +147,14 @@
         "context": 1048576,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Cat Jam Free",
       "type": "chat"
@@ -188,16 +188,16 @@
         "context": 200000,
         "output": 8192
       },
+      "status": "deprecated",
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 0.8,
         "output": 4,
         "cache_read": 0.08,
         "cache_write": 1
-      },
-      "status": "deprecated",
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Haiku 3.5",
       "type": "chat"
@@ -244,15 +244,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 10,
         "output": 50,
         "cache_read": 1,
         "cache_write": 12.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
@@ -300,15 +300,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 10,
         "output": 50,
         "cache_read": 0.25,
         "cache_write": 12.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1",
@@ -350,15 +350,15 @@
         "context": 200000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 1,
         "output": 5,
         "cache_read": 0.1,
         "cache_write": 1.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Haiku 4.5",
       "type": "chat"
@@ -409,6 +409,10 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 0.1,
         "output": 0.5,
@@ -426,10 +430,6 @@
             }
           }
         ]
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-haiku-5-5",
       "display_name": "Claude Haiku 5.5",
@@ -471,16 +471,16 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
-      },
-      "status": "deprecated",
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Opus 4.1",
       "type": "chat"
@@ -529,15 +529,15 @@
         "context": 200000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Opus 4.5",
       "type": "chat"
@@ -587,15 +587,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6",
@@ -643,15 +643,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Opus 4.7",
       "type": "chat"
@@ -698,15 +698,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8",
@@ -754,15 +754,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 5,
         "output": 25,
         "cache_read": 0.5,
         "cache_write": 6.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
@@ -810,15 +810,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 4,
         "output": 20,
         "cache_read": 0.2,
         "cache_write": 5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",
@@ -860,6 +860,10 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
@@ -872,6 +876,7 @@
             "cache_read": 0.6,
             "cache_write": 7.5,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -882,10 +887,6 @@
           "cache_read": 0.6,
           "cache_write": 7.5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4",
       "type": "chat"
@@ -927,6 +928,10 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
@@ -939,6 +944,7 @@
             "cache_read": 0.6,
             "cache_write": 7.5,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -949,10 +955,6 @@
           "cache_read": 0.6,
           "cache_write": 7.5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4.5",
       "type": "chat"
@@ -1003,15 +1005,15 @@
         "context": 1000000,
         "output": 64000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3,
         "cache_write": 3.75
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Claude Sonnet 4.6",
       "type": "chat"
@@ -1058,15 +1060,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 2,
         "output": 10,
         "cache_read": 0.2,
         "cache_write": 2.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
@@ -1114,15 +1116,15 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 2,
         "output": 10,
         "cache_read": 0.2,
         "cache_write": 2.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "anthropic/claude-sonnet-5-5",
       "display_name": "Claude Sonnet 5.5",
@@ -1173,13 +1175,13 @@
         "context": 1000000,
         "output": 384000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.028
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash",
@@ -1227,14 +1229,14 @@
         "context": 200000,
         "output": 128000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash Free",
@@ -1285,13 +1287,13 @@
         "context": 1000000,
         "output": 384000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.14,
         "output": 0.28,
         "cache_read": 0.028
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
@@ -1341,13 +1343,13 @@
         "context": 1000000,
         "output": 384000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.74,
         "output": 3.84,
         "cache_read": 0.145
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -1396,13 +1398,13 @@
         "context": 1000000,
         "output": 384000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.006
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -1451,13 +1453,13 @@
         "context": 200000,
         "output": 32000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash Free",
@@ -1498,13 +1500,13 @@
         "context": 1048576,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Exo Free",
       "type": "chat"
@@ -1546,13 +1548,13 @@
         "context": 1048576,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Fledge Alpha Free",
       "type": "chat"
@@ -1601,14 +1603,14 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 0.5,
         "output": 3,
         "cache_read": 0.05
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "display_name": "Gemini 3 Flash",
       "type": "chat"
@@ -1655,6 +1657,11 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 2,
         "output": 12,
@@ -1665,6 +1672,7 @@
             "output": 18,
             "cache_read": 0.4,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -1674,11 +1682,6 @@
           "output": 18,
           "cache_read": 0.4
         }
-      },
-      "status": "deprecated",
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "display_name": "Gemini 3 Pro",
       "type": "chat"
@@ -1726,6 +1729,10 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 2,
         "output": 12,
@@ -1736,6 +1743,7 @@
             "output": 18,
             "cache_read": 0.4,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -1745,10 +1753,6 @@
           "output": 18,
           "cache_read": 0.4
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "display_name": "Gemini 3.1 Pro Preview",
       "type": "chat"
@@ -1797,15 +1801,15 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 1.5,
         "output": 9,
         "cache_read": 0.15,
         "input_audio": 1.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "display_name": "Gemini 3.5 Flash",
       "type": "chat"
@@ -1854,14 +1858,14 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 0.3,
         "output": 2.5,
         "cache_read": 0.03
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "canonical_model_id": "google/gemini-3.5-flash-lite",
       "display_name": "Gemini 3.5 Flash Lite",
@@ -1911,15 +1915,15 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 1.5,
         "output": 7.5,
         "cache_read": 0.15,
         "input_audio": 1.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash",
@@ -1968,15 +1972,15 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 1.5,
         "output": 7.5,
         "cache_read": 0.15,
         "input_audio": 1.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash",
@@ -2024,15 +2028,15 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 1.5,
         "output": 7.5,
         "cache_read": 0.15,
         "input_audio": 1.5
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
@@ -2081,15 +2085,15 @@
         "context": 1048576,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/google/v1beta"
+      },
       "cost": {
         "input": 2,
         "output": 10,
         "cache_read": 0.1,
         "input_audio": 2
-      },
-      "provider": {
-        "npm": "@ai-sdk/google",
-        "api": "https://opencode.ai/inference/google/v1beta"
       },
       "canonical_model_id": "google/gemini-4-argon",
       "display_name": "Gemini 4 Argon",
@@ -2128,14 +2132,14 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.6,
         "output": 2.2,
         "cache_read": 0.1
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-4.6",
       "type": "chat"
@@ -2176,14 +2180,14 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.6,
         "output": 2.2,
         "cache_read": 0.1
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-4.7",
       "type": "chat"
@@ -2224,14 +2228,14 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-4.7 Free",
       "type": "chat"
@@ -2272,13 +2276,13 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1,
         "output": 3.2,
         "cache_read": 0.2
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-5",
       "type": "chat"
@@ -2319,14 +2323,14 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-5 Free",
       "type": "chat"
@@ -2367,13 +2371,13 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.4,
         "output": 4.4,
         "cache_read": 0.26
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GLM-5.1",
       "type": "chat"
@@ -2418,13 +2422,13 @@
         "context": 1000000,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.4,
         "output": 4.4,
         "cache_read": 0.26
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
@@ -2471,13 +2475,13 @@
         "context": 1000000,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.4,
         "output": 4.4,
         "cache_read": 0.26
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -2527,13 +2531,13 @@
         "context": 1000000,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.15,
         "output": 0.5,
         "cache_read": 0.03
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash",
@@ -2583,13 +2587,13 @@
         "context": 200000,
         "output": 32000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM-5.3-Flash Free",
@@ -2637,14 +2641,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.07,
         "output": 8.5,
         "cache_read": 0.107
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5",
       "type": "chat"
@@ -2690,14 +2694,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.07,
         "output": 8.5,
         "cache_read": 0.107
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5 Codex",
       "type": "chat"
@@ -2744,14 +2748,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.05,
         "output": 0.4,
         "cache_read": 0.005
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5 Nano",
       "type": "chat"
@@ -2798,14 +2802,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.07,
         "output": 8.5,
         "cache_read": 0.107
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.1",
       "type": "chat"
@@ -2851,14 +2855,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.07,
         "output": 8.5,
         "cache_read": 0.107
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.1 Codex",
       "type": "chat"
@@ -2905,14 +2909,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.125
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.1 Codex Max",
       "type": "chat"
@@ -2958,14 +2962,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.25,
         "output": 2,
         "cache_read": 0.025
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.1 Codex Mini",
       "type": "chat"
@@ -3013,14 +3017,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.2",
       "type": "chat"
@@ -3068,14 +3072,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.2 Codex",
       "type": "chat"
@@ -3124,14 +3128,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.3 Codex",
       "type": "chat"
@@ -3177,14 +3181,14 @@
         "input": 128000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.75,
         "output": 14,
         "cache_read": 0.175
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.3 Codex Spark",
       "type": "chat"
@@ -3233,6 +3237,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -3253,10 +3261,6 @@
           "output": 22.5,
           "cache_read": 0.5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4",
@@ -3306,14 +3310,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.75,
         "output": 4.5,
         "cache_read": 0.075
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.4 Mini",
       "type": "chat"
@@ -3362,14 +3366,14 @@
         "input": 272000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.2,
         "output": 1.25,
         "cache_read": 0.02
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.4 Nano",
       "type": "chat"
@@ -3416,14 +3420,14 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 30,
         "output": 180,
         "cache_read": 30
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.4 Pro",
       "type": "chat"
@@ -3472,6 +3476,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 5,
         "output": 30,
@@ -3492,10 +3500,6 @@
           "output": 45,
           "cache_read": 1
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
@@ -3543,14 +3547,14 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 30,
         "output": 180,
         "cache_read": 30
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "GPT-5.5 Pro",
       "type": "chat"
@@ -3600,6 +3604,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.2,
         "output": 1.2,
@@ -3623,10 +3631,6 @@
           "cache_read": 0.04,
           "cache_write": 0.5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
@@ -3677,6 +3681,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 4,
         "output": 20,
@@ -3700,10 +3708,6 @@
           "cache_read": 0.8,
           "cache_write": 10
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
@@ -3754,6 +3758,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -3777,10 +3785,6 @@
           "cache_read": 0.5,
           "cache_write": 6.25
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
@@ -3830,6 +3834,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 10,
         "output": 50,
@@ -3853,10 +3861,6 @@
           "cache_read": 2,
           "cache_write": 25
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra",
@@ -3907,6 +3911,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.1,
         "output": 0.5,
@@ -3930,10 +3938,6 @@
           "cache_read": 0.02,
           "cache_write": 0.25
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna",
@@ -3984,6 +3988,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 10,
@@ -4007,10 +4015,6 @@
           "cache_read": 0.4,
           "cache_write": 5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol",
@@ -4060,6 +4064,10 @@
         "input": 922000,
         "output": 128000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 10,
@@ -4083,10 +4091,6 @@
           "cache_read": 0.2,
           "cache_write": 5
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "openai/gpt-6.1-sol",
       "display_name": "GPT-6.1 Sol",
@@ -4131,6 +4135,10 @@
         "context": 500000,
         "output": 500000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 6,
@@ -4141,6 +4149,7 @@
             "output": 12,
             "cache_read": 0.6,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -4150,10 +4159,6 @@
           "output": 12,
           "cache_read": 0.6
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "xai/grok-4.5",
       "display_name": "Grok 4.5",
@@ -4200,6 +4205,10 @@
         "context": 500000,
         "output": 500000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 6,
@@ -4220,10 +4229,6 @@
           "output": 12,
           "cache_read": 1
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "xai/grok-4.6",
       "display_name": "Grok 4.6",
@@ -4271,6 +4276,10 @@
         "context": 500000,
         "output": 500000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 6,
@@ -4291,10 +4300,6 @@
           "output": 12,
           "cache_read": 1
         }
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "xai/grok-4.7",
       "display_name": "Grok 4.7",
@@ -4331,14 +4336,14 @@
         "context": 256000,
         "output": 256000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1,
         "output": 2,
         "cache_read": 0.2
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "xai/grok-build-0.1",
       "display_name": "Grok Build 0.1",
@@ -4372,15 +4377,15 @@
         "context": 256000,
         "output": 256000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Grok Code Fast 1",
       "type": "chat"
@@ -4430,14 +4435,14 @@
         "input": 192000,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3 Free",
@@ -4472,14 +4477,14 @@
         "context": 256000,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Hy3 preview Free",
       "type": "chat"
@@ -4511,14 +4516,14 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.4,
         "output": 2.5,
         "cache_read": 0.4
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Kimi K2",
       "type": "chat"
@@ -4555,14 +4560,14 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.4,
         "output": 2.5,
         "cache_read": 0.4
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Kimi K2 Thinking",
       "type": "chat"
@@ -4605,13 +4610,13 @@
         "context": 262144,
         "output": 65536
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.6,
         "output": 3,
         "cache_read": 0.08
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Kimi K2.5",
       "type": "chat"
@@ -4654,14 +4659,14 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Kimi K2.5 Free",
       "type": "chat"
@@ -4704,13 +4709,13 @@
         "context": 262144,
         "output": 65536
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.95,
         "output": 4,
         "cache_read": 0.16
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Kimi K2.6",
       "type": "chat"
@@ -4750,13 +4755,13 @@
         "context": 262144,
         "output": 262144
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.95,
         "output": 4,
         "cache_read": 0.19
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
@@ -4803,13 +4808,13 @@
         "context": 1048576,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 3,
         "output": 15,
         "cache_read": 0.3
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -4853,14 +4858,14 @@
         "context": 256000,
         "output": 32000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "poolside/laguna-s-2.1",
       "display_name": "Laguna S 2.1 Free",
@@ -4893,13 +4898,13 @@
         "context": 262100,
         "output": 32800
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Ling 2.6 Flash Free",
       "type": "chat"
@@ -4937,14 +4942,14 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "inclusionai/ling-3.0-flash-fin",
       "display_name": "Ling 3.0 Flash Fin Free",
@@ -4988,14 +4993,14 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Ling-3.0-flash Free",
       "type": "chat"
@@ -5029,13 +5034,13 @@
         "context": 262144,
         "output": 32768
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Ling-3.0-tiny Free",
       "type": "chat"
@@ -5073,14 +5078,14 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "inclusionai/ling-3.1-flash",
       "display_name": "Ling 3.1 Flash Free",
@@ -5129,14 +5134,14 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "LL Alpha Free",
       "type": "chat"
@@ -5176,14 +5181,14 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "meituan/longcat-2.0",
       "display_name": "LongCat-2.0 Free",
@@ -5225,13 +5230,13 @@
         "context": 1000000,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "meituan/longcat-2.5-preview",
       "display_name": "LongCat 2.5 Preview Free",
@@ -5269,14 +5274,14 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiMo V2 Flash Free",
       "type": "chat"
@@ -5316,14 +5321,14 @@
         "context": 262144,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiMo V2 Omni Free",
       "type": "chat"
@@ -5360,14 +5365,14 @@
         "context": 1048576,
         "output": 64000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiMo V2 Pro Free",
       "type": "chat"
@@ -5407,14 +5412,14 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiMo V2.5 Free",
       "type": "chat"
@@ -5453,13 +5458,13 @@
         "context": 200000,
         "output": 32000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "xiaomi/mimo-v2.6-flash",
       "display_name": "MiMo-V2.6-Flash Free",
@@ -5497,14 +5502,14 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.1
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiniMax-M2.1",
       "type": "chat"
@@ -5538,15 +5543,15 @@
         "context": 204800,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://opencode.ai/inference/anthropic/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "display_name": "MiniMax-M2.1 Free",
       "type": "chat"
@@ -5583,13 +5588,13 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.06
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiniMax-M2.5",
       "type": "chat"
@@ -5623,15 +5628,15 @@
         "context": 204800,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://opencode.ai/inference/anthropic/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "display_name": "MiniMax-M2.5 Free",
       "type": "chat"
@@ -5668,13 +5673,13 @@
         "context": 204800,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.06
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "MiniMax-M2.7",
       "type": "chat"
@@ -5712,13 +5717,13 @@
         "context": 512000,
         "output": 128000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.3,
         "output": 1.2,
         "cache_read": 0.06
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax-M3",
@@ -5759,15 +5764,15 @@
         "context": 200000,
         "output": 32000
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://opencode.ai/inference/anthropic/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "display_name": "MiniMax-M3 Free",
       "type": "chat"
@@ -5810,14 +5815,14 @@
         "context": 524288,
         "output": 262144
       },
+      "provider": {
+        "npm": "@ai-sdk/mistral",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0.68,
         "output": 2.09,
         "cache_read": 0.07
-      },
-      "provider": {
-        "npm": "@ai-sdk/mistral",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "mistral/mistral-large-4",
       "display_name": "Mistral Large 4",
@@ -5867,14 +5872,14 @@
         "context": 1048576,
         "output": 131072
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 4.25,
         "cache_read": 0.15
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2",
@@ -5924,15 +5929,15 @@
         "context": 1048576,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2 Free",
@@ -5982,14 +5987,14 @@
         "context": 1048576,
         "output": 131072
       },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 1.25,
         "output": 4.25,
         "cache_read": 0.15
-      },
-      "provider": {
-        "npm": "@ai-sdk/openai",
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3",
@@ -6039,15 +6044,15 @@
         "context": 1048576,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai",
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "display_name": "Muse Spark 1.3 Free",
       "type": "chat"
@@ -6084,14 +6089,14 @@
         "context": 204800,
         "output": 128000
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
       "display_name": "Nemotron 3 Super Free",
@@ -6129,13 +6134,13 @@
         "context": 1000000,
         "output": 128000
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nemotron 3 Ultra Free",
@@ -6173,13 +6178,13 @@
         "context": 262144,
         "output": 262144
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nemotron 3.5 Lightning Free",
@@ -6227,16 +6232,16 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072,
-        "input": 1048576
+        "input": 1048576,
+        "output": 131072
+      },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
       },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
       "display_name": "Nemotron 3.5 Super VL Free",
@@ -6283,13 +6288,13 @@
         "context": 256000,
         "output": 64000
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "canonical_model_id": "cohere/north-mini-code-1-0",
       "display_name": "North Mini Code Free",
@@ -6322,13 +6327,13 @@
         "context": 262144,
         "output": 65536
       },
-      "cost": {
-        "input": 0.45,
-        "output": 1.8
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0.45,
+        "output": 1.8
       },
       "display_name": "Qwen3 Coder",
       "type": "chat"
@@ -6372,15 +6377,15 @@
         "context": 262144,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 0.2,
         "output": 1.2,
         "cache_read": 0.02,
         "cache_write": 0.25
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Qwen3.5 Plus",
       "type": "chat"
@@ -6424,15 +6429,15 @@
         "context": 262144,
         "output": 65536
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 0.5,
         "output": 3,
         "cache_read": 0.05,
         "cache_write": 0.625
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "display_name": "Qwen3.6 Plus",
       "type": "chat"
@@ -6476,15 +6481,15 @@
         "context": 262144,
         "output": 65536
       },
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0
-      },
       "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/anthropic",
         "api": "https://opencode.ai/inference/anthropic/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
       },
       "display_name": "Qwen3.6 Plus Free",
       "type": "chat"
@@ -6535,15 +6540,15 @@
         "context": 1000000,
         "output": 131072
       },
+      "provider": {
+        "npm": "@ai-sdk/anthropic",
+        "api": "https://opencode.ai/inference/anthropic/v1"
+      },
       "cost": {
         "input": 0.15,
         "output": 0.47,
         "cache_read": 0.016,
         "cache_write": 0.2
-      },
-      "provider": {
-        "npm": "@ai-sdk/anthropic",
-        "api": "https://opencode.ai/inference/anthropic/v1"
       },
       "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash",
@@ -6582,14 +6587,14 @@
         "context": 262144,
         "output": 131072
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 2,
         "output": 6,
         "cache_read": 0.25,
         "cache_write": 2.5
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max",
@@ -6627,13 +6632,13 @@
         "context": 262000,
         "output": 66000
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "display_name": "Ring 2.6 1T Free",
       "type": "chat"
@@ -6681,14 +6686,14 @@
         "input": 524288,
         "output": 524288
       },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
-      },
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Space Bunny Free",
       "type": "chat"
@@ -6735,14 +6740,14 @@
         "input": 1000000,
         "output": 65536
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "canonical_model_id": "stepfun/step-5-preview",
       "display_name": "Step 5 Preview Free",
@@ -6775,13 +6780,13 @@
         "context": 131072,
         "output": 131072
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
       },
       "canonical_model_id": "arcee-ai/trinity-large-preview",
       "display_name": "Trinity Large Preview",
@@ -6829,14 +6834,14 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0
-      },
-      "status": "deprecated",
-      "provider": {
-        "api": "https://opencode.ai/inference/openai/v1"
       },
       "display_name": "Ox Alpha Free (Unlimited)",
       "type": "chat"

@@ -77,13 +77,13 @@
         "context": 256000,
         "output": 32768
       },
+      "status": "beta",
       "cost": {
         "input": 0.468,
         "output": 0.936,
         "reasoning": 0.936,
         "cache_read": 0.0936
       },
-      "status": "beta",
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
       "type": "chat"
@@ -130,13 +130,13 @@
         "context": 256000,
         "output": 32768
       },
+      "status": "beta",
       "cost": {
         "input": 0.672,
         "output": 2.016,
         "reasoning": 2.016,
         "cache_read": 0.134
       },
-      "status": "beta",
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
       "type": "chat"
@@ -182,11 +182,11 @@
         "context": 256000,
         "output": 16384
       },
+      "status": "beta",
       "cost": {
         "input": 0.25,
         "output": 0.5
       },
-      "status": "beta",
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
       "type": "chat"
@@ -276,11 +276,11 @@
         "context": 256000,
         "output": 16384
       },
+      "status": "beta",
       "cost": {
         "input": 2.01,
         "output": 6.15
       },
-      "status": "beta",
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
       "type": "chat"
@@ -678,11 +678,11 @@
         "context": 128000,
         "output": 16384
       },
+      "status": "beta",
       "cost": {
         "input": 0.25,
         "output": 1.5
       },
-      "status": "beta",
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B A3B",
       "type": "chat"
@@ -728,13 +728,13 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "beta",
       "cost": {
         "input": 0.684,
         "output": 3.762,
         "reasoning": 3.762,
         "cache_read": 0.137
       },
-      "status": "beta",
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
       "type": "chat"

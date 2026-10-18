@@ -417,6 +417,7 @@
             "output": 15,
             "cache_read": 0.25,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -845,13 +846,13 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 1.5,
         "cache_read": 0.025,
         "input_audio": 0.5
       },
-      "status": "deprecated",
       "display_name": "Gemini 3.1 Flash Lite Preview",
       "type": "chat"
     },
@@ -999,6 +1000,7 @@
             "output": 18,
             "cache_read": 0.4,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -1065,6 +1067,7 @@
             "output": 18,
             "cache_read": 0.4,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }

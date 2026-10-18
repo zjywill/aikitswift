@@ -36,8 +36,8 @@
       "open_weights": true,
       "limit": {
         "context": 200000,
-        "output": 65536,
-        "input": 200000
+        "input": 200000,
+        "output": 65536
       },
       "cost": {
         "input": 0.5,
@@ -80,14 +80,14 @@
       "open_weights": true,
       "limit": {
         "context": 200000,
-        "output": 65536,
-        "input": 200000
+        "input": 200000,
+        "output": 65536
       },
+      "status": "beta",
       "cost": {
         "input": 0.99,
         "output": 4.46
       },
-      "status": "beta",
       "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B-A17B FP8",
       "type": "chat"
@@ -153,8 +153,8 @@
       "open_weights": true,
       "limit": {
         "context": 100000,
-        "output": 32768,
-        "input": 100000
+        "input": 100000,
+        "output": 32768
       },
       "cost": {
         "input": 0.25,
@@ -227,11 +227,11 @@
         "input": 100000,
         "output": 25600
       },
+      "status": "beta",
       "cost": {
         "input": 0.37,
         "output": 0.5
       },
-      "status": "beta",
       "display_name": "Ministral 3 14B Instruct",
       "type": "chat"
     },
@@ -264,8 +264,8 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 256000,
-        "input": 256000
+        "input": 256000,
+        "output": 256000
       },
       "cost": {
         "input": 0.25,
@@ -309,14 +309,14 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 256000,
-        "input": 256000
+        "input": 256000,
+        "output": 256000
       },
+      "status": "beta",
       "cost": {
         "input": 0.74,
         "output": 3.72
       },
-      "status": "beta",
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "type": "chat"
@@ -352,14 +352,14 @@
       "open_weights": true,
       "limit": {
         "context": 1000000,
-        "output": 262144,
-        "input": 1000000
+        "input": 1000000,
+        "output": 262144
       },
+      "status": "beta",
       "cost": {
         "input": 0.06,
         "output": 0.25
       },
-      "status": "beta",
       "canonical_model_id": "nvidia/nemotron-3-nano-30b-a3b",
       "display_name": "Nemotron 3 Nano 30B A3B FP8",
       "type": "chat"
@@ -392,11 +392,11 @@
         "input": 100000,
         "output": 8192
       },
+      "status": "beta",
       "cost": {
         "input": 0.87,
         "output": 3.1
       },
-      "status": "beta",
       "display_name": "Apertus v1.5 70B",
       "type": "chat"
     }

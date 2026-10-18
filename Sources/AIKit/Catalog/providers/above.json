@@ -49,13 +49,13 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.165,
         "output": 0.66,
         "reasoning": 0.66,
         "cache_read": 0.0033
       },
-      "status": "deprecated",
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"

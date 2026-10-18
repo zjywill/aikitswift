@@ -48,6 +48,7 @@
     },
     {
       "id": "baai/bge-m3",
+      "type": "embedding",
       "name": "BGE M3",
       "description": "Multilingual embedding model combining dense, sparse, and multi-vector retrieval",
       "family": "bge",
@@ -76,12 +77,12 @@
         "input": 0.01,
         "output": 0
       },
-      "type": "embedding",
       "canonical_model_id": "baai/bge-m3",
       "display_name": "BGE M3"
     },
     {
       "id": "baai/bge-reranker-v2-m3",
+      "type": "reranking",
       "name": "BGE Reranker V2 M3",
       "description": "Lightweight multilingual cross-encoder that scores query-document relevance",
       "family": "bge",
@@ -110,7 +111,6 @@
         "input": 0.01,
         "output": 0
       },
-      "type": "reranking",
       "canonical_model_id": "baai/bge-reranker-v2-m3",
       "display_name": "BGE Reranker V2 M3"
     },
@@ -2075,6 +2075,7 @@
     },
     {
       "id": "qwen/qwen3-embedding-8b",
+      "type": "embedding",
       "name": "Qwen3 Embedding 8B",
       "description": "Multilingual text embedding model for retrieval, code search, classification, and clustering",
       "family": "qwen",
@@ -2103,7 +2104,6 @@
         "input": 0.07,
         "output": 0
       },
-      "type": "embedding",
       "canonical_model_id": "alibaba/qwen3-embedding-8b",
       "display_name": "Qwen3 Embedding 8B"
     },
@@ -2150,6 +2150,7 @@
     },
     {
       "id": "qwen/qwen3-reranker-8b",
+      "type": "reranking",
       "name": "Qwen3 Reranker 8B",
       "description": "Multilingual query-document reranking model supporting more than 100 languages",
       "family": "qwen",
@@ -2178,7 +2179,6 @@
         "input": 0.05,
         "output": 0
       },
-      "type": "reranking",
       "canonical_model_id": "alibaba/qwen3-reranker-8b",
       "display_name": "Qwen3 Reranker 8B"
     },

@@ -527,12 +527,6 @@
         "context": 1000000,
         "output": 128000
       },
-      "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -552,6 +546,12 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "display_name": "Claude Opus 4.8",
       "type": "chat"
@@ -599,12 +599,6 @@
         "context": 1000000,
         "output": 128000
       },
-      "cost": {
-        "input": 5,
-        "output": 25,
-        "cache_read": 0.5,
-        "cache_write": 6.25
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -624,6 +618,12 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
@@ -672,12 +672,6 @@
         "context": 1000000,
         "output": 128000
       },
-      "cost": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
-      },
       "experimental": {
         "modes": {
           "fast": {
@@ -697,6 +691,12 @@
             }
           }
         }
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
       },
       "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",

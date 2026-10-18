@@ -2188,13 +2188,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 163840,
-        "output": 147456
+        "context": 131072,
+        "output": 65536
       },
       "cost": {
-        "input": 0.259,
-        "output": 0.8,
-        "cache_read": 0.14
+        "input": 0.28,
+        "output": 0.42,
+        "cache_read": 0.028
       },
       "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
@@ -2537,6 +2537,54 @@
       "type": "chat"
     },
     {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
+      "family": "deepseek",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
+      },
+      "display_name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "type": "chat"
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
@@ -2578,6 +2626,52 @@
         "output": 0
       },
       "display_name": "Dots Studio: Dots3-Note Preview (free)",
+      "type": "chat"
+    },
+    {
+      "id": "elorian/glimpse",
+      "name": "Elorian: Glimpse",
+      "description": "Glimpse is a multimodal visual reasoning model from Elorian, built for visual understanding and complex visual reasoning in the physical world. It reasons directly over images and video rather than...",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 256000
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 3,
+        "cache_read": 0.06
+      },
+      "display_name": "Elorian: Glimpse",
       "type": "chat"
     },
     {
@@ -11116,11 +11210,11 @@
         "context": 128000,
         "output": 32768
       },
+      "status": "beta",
       "cost": {
         "input": 0,
         "output": 0
       },
-      "status": "beta",
       "display_name": "Body Builder (beta)",
       "type": "chat"
     },
@@ -12645,8 +12739,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 256000,
-        "output": 16384
+        "context": 262144,
+        "output": 235929
       },
       "cost": {
         "input": 0.1625,
@@ -15136,6 +15230,41 @@
       "type": "chat"
     },
     {
+      "id": "unbiased/pareto-26.10",
+      "name": "Pareto 26.10",
+      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.8,
+        "output": 3.2,
+        "cache_read": 0.03
+      },
+      "display_name": "Pareto 26.10",
+      "type": "chat"
+    },
+    {
       "id": "unbiased/pareto-26.9",
       "name": "Pareto 26.9",
       "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
@@ -16328,13 +16457,13 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 202752,
+        "context": 204800,
         "output": 131072
       },
       "cost": {
-        "input": 0.6,
-        "output": 2.2,
-        "cache_read": 0.11
+        "input": 0.54,
+        "output": 1.98,
+        "cache_read": 0.099
       },
       "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7",
@@ -17052,13 +17181,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 943718
+        "context": 262144,
+        "output": 131072
       },
       "cost": {
-        "input": 0.036,
-        "output": 0.45,
-        "cache_read": 0.0054
+        "input": 0.08,
+        "output": 0.5,
+        "cache_read": 0.008
       },
       "display_name": "DeepSeek: DeepSeek Flash Latest",
       "type": "chat"
@@ -17103,9 +17232,9 @@
         "output": 393216
       },
       "cost": {
-        "input": 0.24948,
-        "output": 0.74844,
-        "cache_read": 0.007938
+        "input": 0.12,
+        "output": 8,
+        "cache_read": 0.12
       },
       "display_name": "DeepSeek: DeepSeek Pro Latest",
       "type": "chat"
@@ -17150,9 +17279,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.01179,
-        "output": 0.45,
-        "cache_read": 0.01179
+        "input": 0.0057,
+        "output": 1.28,
+        "cache_read": 0.0057
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17303,9 +17432,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.294,
-        "output": 24,
-        "cache_read": 0.284
+        "input": 0.27,
+        "output": 14,
+        "cache_read": 0.27
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17590,13 +17719,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
+        "context": 1048576,
         "output": 131072
       },
       "cost": {
-        "input": 2.5,
-        "output": 7.5,
-        "cache_read": 0.25
+        "input": 0.8,
+        "output": 3.2,
+        "cache_read": 0.03
       },
       "display_name": "Pareto Latest",
       "type": "chat"
@@ -17691,9 +17820,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.01782,
-        "output": 0.45,
-        "cache_read": 0.01125
+        "input": 0.048,
+        "output": 0.2,
+        "cache_read": 0.006
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -17737,9 +17866,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0608,
+        "input": 0.0632,
         "output": 4.4,
-        "cache_read": 0.0565
+        "cache_read": 0.0588
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

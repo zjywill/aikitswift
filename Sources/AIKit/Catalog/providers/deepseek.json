@@ -105,13 +105,13 @@
         "context": 1000000,
         "output": 393216
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.6,
         "reasoning": 0.6,
         "cache_read": 0.003
       },
-      "status": "deprecated",
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4 Flash",
       "type": "chat"
@@ -162,13 +162,13 @@
         "context": 1000000,
         "output": 393216
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.6,
         "reasoning": 0.6,
         "cache_read": 0.003
       },
-      "status": "deprecated",
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4 Flash Vision Exp",
       "type": "chat"

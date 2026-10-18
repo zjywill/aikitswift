@@ -17,7 +17,7 @@
         {
           "type": "effort",
           "values": [
-            "null",
+            null,
             "low",
             "medium",
             "high"
@@ -61,7 +61,7 @@
         {
           "type": "effort",
           "values": [
-            "null",
+            null,
             "low",
             "medium",
             "high"

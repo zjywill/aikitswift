@@ -32,12 +32,12 @@
         "context": 262144,
         "output": 65536
       },
+      "provider": {
+        "shape": "completions"
+      },
       "cost": {
         "input": 0.19,
         "output": 0.48
-      },
-      "provider": {
-        "shape": "completions"
       },
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B-A3B",

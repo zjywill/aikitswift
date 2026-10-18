@@ -267,6 +267,7 @@
             "output": 2.4,
             "cache_read": 0.12,
             "tier": {
+              "type": "context",
               "size": 512000
             }
           }

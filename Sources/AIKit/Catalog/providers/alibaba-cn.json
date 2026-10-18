@@ -3193,8 +3193,8 @@
       },
       "cost": {
         "input": 1.32,
-        "cache_read": 0.132,
-        "output": 7.9
+        "output": 7.9,
+        "cache_read": 0.132
       },
       "display_name": "Qwen3.6 Max Preview",
       "type": "chat"
@@ -3250,6 +3250,7 @@
             "cache_read": 0.2,
             "cache_write": 2.5,
             "tier": {
+              "type": "context",
               "size": 256000
             }
           }

@@ -186,6 +186,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "beta",
       "experimental": {
         "modes": {
           "fast": {
@@ -206,7 +207,6 @@
           }
         }
       },
-      "status": "beta",
       "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
       "type": "chat"
@@ -813,6 +813,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "beta",
       "experimental": {
         "modes": {
           "fast": {
@@ -829,7 +830,6 @@
           }
         }
       },
-      "status": "beta",
       "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4",
       "type": "chat"

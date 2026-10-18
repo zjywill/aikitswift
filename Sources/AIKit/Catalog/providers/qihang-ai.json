@@ -158,6 +158,7 @@
             "input": 0.09,
             "output": 0.71,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -212,6 +213,7 @@
             "input": 0.07,
             "output": 0.43,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }

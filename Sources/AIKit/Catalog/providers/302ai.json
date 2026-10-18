@@ -663,6 +663,7 @@
             "cache_read": 1,
             "cache_write": 12.5,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -3429,6 +3430,7 @@
             "input": 5,
             "output": 22.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }

@@ -904,6 +904,7 @@
             "output": 15,
             "cache_read": 0.25,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -1024,6 +1025,7 @@
             "output": 18,
             "cache_read": 0.4,
             "tier": {
+              "type": "context",
               "size": 200000
             }
           }
@@ -2210,6 +2212,7 @@
             "output": 22.5,
             "cache_read": 0.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2379,6 +2382,7 @@
             "output": 270,
             "cache_read": 3,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2447,6 +2451,7 @@
             "output": 45,
             "cache_read": 1,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2513,6 +2518,7 @@
             "output": 270,
             "cache_read": 3,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2583,6 +2589,7 @@
             "cache_read": 0.04,
             "cache_write": 0.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2654,6 +2661,7 @@
             "cache_read": 1,
             "cache_write": 12.5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2725,6 +2733,7 @@
             "cache_read": 0.4,
             "cache_write": 5,
             "tier": {
+              "type": "context",
               "size": 272000
             }
           }
@@ -2982,6 +2991,7 @@
             "output": 4,
             "cache_read": 0.2,
             "tier": {
+              "type": "context",
               "size": 262144
             }
           }
@@ -3082,6 +3092,7 @@
             "output": 4.8,
             "cache_read": 0.24,
             "tier": {
+              "type": "context",
               "size": 262144
             }
           }
