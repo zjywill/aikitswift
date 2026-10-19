@@ -2384,9 +2384,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0057,
-        "output": 1.28,
-        "cache_read": 0.0057
+        "input": 0.0065,
+        "output": 0.45,
+        "cache_read": 0.0065
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -2529,7 +2529,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 393216
+        "output": 384000
       },
       "cost": {
         "input": 0.66,
@@ -2582,8 +2582,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0568,
-        "output": 0.144,
+        "input": 0.0632,
+        "output": 0.12,
         "cache_read": 0.0016
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
@@ -2594,7 +2594,7 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek V4.1 Flash 1017",
       "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-      "family": "deepseek",
+      "family": "deepseek-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2614,6 +2614,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-05",
       "release_date": "2026-10-17",
       "last_updated": "2026-10-17",
       "modalities": {
@@ -2635,6 +2636,7 @@
         "output": 0.6,
         "cache_read": 0.003
       },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
       "display_name": "DeepSeek V4.1 Flash 1017",
       "type": "chat"
     },
@@ -4066,7 +4068,7 @@
       },
       "cost": {
         "input": 0.08,
-        "output": 0.45,
+        "output": 0.35,
         "cache_read": 0.04
       },
       "canonical_model_id": "google/gemma-3-27b-it",
@@ -5044,11 +5046,11 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 117964
+        "output": 72000
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.33
+        "input": 0.0509,
+        "output": 0.335
       },
       "display_name": "Llama 3.2 3B Instruct",
       "type": "chat"
@@ -7149,7 +7151,7 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.304,
+        "input": 0.249,
         "output": 11.936,
         "cache_read": 0.21
       },
@@ -7167,7 +7169,7 @@
         "supported": false
       },
       "tool_call": false,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-07-07",
       "last_updated": "2025-07-07",
@@ -7181,8 +7183,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 81920,
-        "output": 38000
+        "context": 262144,
+        "output": 131072
       },
       "cost": {
         "input": 0.8,
@@ -7918,9 +7920,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.5,
-        "cache_read": 0.02
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.08
       },
       "display_name": "Nemotron 3.5 Super VL",
       "type": "chat"
@@ -12336,7 +12338,7 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.1,
+        "input": 0.09,
         "output": 0.3
       },
       "display_name": "Qwen3 30B A3B Instruct 2507",
@@ -14541,7 +14543,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "input": 1000000,
@@ -16691,7 +16693,7 @@
       },
       "cost": {
         "input": 0.079,
-        "output": 4.8,
+        "output": 1.4,
         "cache_read": 0.078
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -17141,11 +17143,11 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 943718
       },
       "cost": {
-        "input": 0.08,
-        "output": 0.5,
+        "input": 0.05,
+        "output": 0.6,
         "cache_read": 0.008
       },
       "display_name": "DeepSeek Flash Latest",
@@ -17238,9 +17240,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.0057,
-        "output": 1.28,
-        "cache_read": 0.0057
+        "input": 0.0052,
+        "output": 0.12,
+        "cache_read": 0.001523
       },
       "display_name": "DeepSeek V4 Flash Latest",
       "type": "chat"
@@ -17409,9 +17411,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.27,
-        "output": 14,
-        "cache_read": 0.27
+        "input": 0.249,
+        "output": 11.936,
+        "cache_read": 0.21
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -17935,9 +17937,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0632,
-        "output": 4.4,
-        "cache_read": 0.0588
+        "input": 0.075,
+        "output": 2.2,
+        "cache_read": 0.07
       },
       "display_name": "GLM Latest",
       "type": "chat"

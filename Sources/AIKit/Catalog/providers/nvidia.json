@@ -3799,6 +3799,60 @@
       "type": "chat"
     },
     {
+      "id": "stepfun-ai/step-5-preview",
+      "name": "Step 5 Preview",
+      "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
+      "canonical_model_id": "stepfun/step-5-preview",
+      "display_name": "Step 5 Preview",
+      "type": "chat"
+    },
+    {
       "id": "thinkingmachines/inkling",
       "name": "Inkling",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",

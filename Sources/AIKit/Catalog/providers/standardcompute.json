@@ -2017,10 +2017,6 @@
       "provider": {
         "npm": "@openrouter/ai-sdk-provider"
       },
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
       "display_name": "Standard Compute",
       "type": "chat"
     },
