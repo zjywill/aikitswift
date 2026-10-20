@@ -517,14 +517,16 @@
     },
     {
       "id": "openai/whisper-large-v3",
+      "type": "transcription",
       "name": "Whisper 3 Large",
       "description": "Open Whisper checkpoint for robust multilingual transcription and captioning",
       "family": "whisper",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
+      "temperature": true,
       "release_date": "2024-10-01",
       "last_updated": "2024-10-01",
       "modalities": {
@@ -546,19 +548,20 @@
         "output_audio": 2.3
       },
       "canonical_model_id": "openai/whisper-large-v3",
-      "display_name": "Whisper 3 Large",
-      "type": "speech-transcription"
+      "display_name": "Whisper 3 Large"
     },
     {
       "id": "openai/whisper-large-v3-turbo",
+      "type": "transcription",
       "name": "Whisper Large v3 Turbo",
       "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
       "family": "whisper",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
+      "temperature": true,
       "release_date": "2024-10-01",
       "last_updated": "2024-10-01",
       "modalities": {
@@ -580,8 +583,7 @@
         "output_audio": 2.3
       },
       "canonical_model_id": "openai/whisper-large-v3-turbo",
-      "display_name": "Whisper Large v3 Turbo",
-      "type": "speech-transcription"
+      "display_name": "Whisper Large v3 Turbo"
     },
     {
       "id": "zai-org/GLM-5.2",

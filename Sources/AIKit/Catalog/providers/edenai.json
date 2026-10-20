@@ -7014,9 +7014,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.157542,
-        "output": 0.393855,
-        "cache_read": 0.045012
+        "input": 0.15715,
+        "output": 0.392875,
+        "cache_read": 0.0449
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Greenpt)",
@@ -7064,9 +7064,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.247566,
-        "output": 1.23783,
-        "cache_read": 0.012378
+        "input": 0.24695,
+        "output": 1.234749,
+        "cache_read": 0.012347
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Greenpt)",
@@ -7111,8 +7111,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.22506,
-        "output": 0.78771
+        "input": 0.2245,
+        "output": 0.78575
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Greenpt)",
@@ -7147,8 +7147,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.23783,
-        "output": 1.23783
+        "input": 1.234749,
+        "output": 1.234749
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Greenpt)",
@@ -7182,8 +7182,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.01277,
-        "output": 3.03831
+        "input": 1.01025,
+        "output": 3.030749
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
@@ -7359,8 +7359,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33759,
-        "output": 0.45012
+        "input": 0.33675,
+        "output": 0.449
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -7395,8 +7395,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.168795,
-        "output": 0.90024
+        "input": 0.168375,
+        "output": 0.898
       },
       "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (IONOS)",
@@ -7431,8 +7431,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.731445,
-        "output": 0.731445
+        "input": 0.729625,
+        "output": 0.729625
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -7477,8 +7477,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168795,
-        "output": 0.731445
+        "input": 0.168375,
+        "output": 0.729625
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -7673,6 +7673,55 @@
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax-M3",
+      "type": "chat"
+    },
+    {
+      "id": "minimax/MiniMax-M3.1-Flash",
+      "name": "MiniMax-M3.1-Flash",
+      "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "family": "minimax",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2026-10-19",
+      "last_updated": "2026-10-19",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 512000
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.015
+      },
+      "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
+      "display_name": "MiniMax-M3.1-Flash",
       "type": "chat"
     },
     {
@@ -11635,6 +11684,56 @@
       "type": "chat"
     },
     {
+      "id": "qwen/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Alibaba)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.015
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (Alibaba)",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen-max",
       "name": "Qwen Max",
       "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
@@ -12086,9 +12185,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.45012,
-        "output": 0.90024,
-        "cache_read": 0.090024
+        "input": 0.449,
+        "output": 0.898,
+        "cache_read": 0.0898
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -12136,9 +12235,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.67518,
-        "output": 2.02554,
-        "cache_read": 0.135036
+        "input": 0.6735,
+        "output": 2.020499,
+        "cache_read": 0.1347
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Scaleway)",
@@ -12220,8 +12319,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168795,
-        "output": 0.67518
+        "input": 0.168375,
+        "output": 0.6735
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -12256,8 +12355,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.01277,
-        "output": 1.01277
+        "input": 1.01025,
+        "output": 1.01025
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -12291,8 +12390,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.843975,
-        "output": 2.531925
+        "input": 0.841875,
+        "output": 2.525624
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
@@ -12327,8 +12426,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.22506,
-        "output": 0.90024
+        "input": 0.2245,
+        "output": 0.898
       },
       "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",
@@ -12947,6 +13046,56 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Together AI)",
+      "type": "chat"
+    },
+    {
+      "id": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Together AI)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (Together AI)",
       "type": "chat"
     },
     {

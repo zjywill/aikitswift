@@ -440,6 +440,7 @@
     },
     {
       "id": "whisper-large-v3",
+      "type": "transcription",
       "name": "Whisper large-v3",
       "description": "Open Whisper checkpoint for robust multilingual transcription and captioning",
       "family": "whisper",
@@ -448,6 +449,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": true,
       "release_date": "2024-10-01",
       "last_updated": "2024-10-01",
       "modalities": {
@@ -468,8 +470,7 @@
         "output": 0
       },
       "canonical_model_id": "openai/whisper-large-v3",
-      "display_name": "Whisper large-v3",
-      "type": "speech-transcription"
+      "display_name": "Whisper large-v3"
     }
   ],
   "api": "http://localhost:8080/v1",

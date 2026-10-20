@@ -1378,6 +1378,7 @@
     },
     {
       "id": "gpt-image-2",
+      "type": "image",
       "name": "GPT-Image-2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gpt-image",
@@ -1408,8 +1409,7 @@
         "output": 0
       },
       "canonical_model_id": "openai/gpt-image-2",
-      "display_name": "GPT-Image-2",
-      "type": "image-generation"
+      "display_name": "GPT-Image-2"
     },
     {
       "id": "gpt-oss-120b",
@@ -1637,6 +1637,7 @@
     },
     {
       "id": "grok-imagine-image",
+      "type": "image",
       "name": "Grok Imagine Image",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "grok",
@@ -1651,12 +1652,10 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
-          "image",
-          "pdf"
+          "image"
         ]
       },
       "open_weights": false,
@@ -1669,11 +1668,11 @@
         "output": 0
       },
       "canonical_model_id": "xai/grok-imagine-image",
-      "display_name": "Grok Imagine Image",
-      "type": "image-generation"
+      "display_name": "Grok Imagine Image"
     },
     {
       "id": "grok-imagine-image-2-0",
+      "type": "image",
       "name": "Grok Imagine Image 2.0",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "grok",
@@ -1696,7 +1695,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 8000,
+        "context": 64000,
         "output": 0
       },
       "cost": {
@@ -1704,8 +1703,7 @@
         "output": 0
       },
       "canonical_model_id": "xai/grok-imagine-image-2.0",
-      "display_name": "Grok Imagine Image 2.0",
-      "type": "image-generation"
+      "display_name": "Grok Imagine Image 2.0"
     },
     {
       "id": "hy3",
@@ -2815,14 +2813,16 @@
     },
     {
       "id": "whisper-large-v3-turbo",
+      "type": "transcription",
       "name": "Whisper Large v3 Turbo",
       "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
       "family": "whisper",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
+      "temperature": true,
       "release_date": "2024-10-01",
       "last_updated": "2024-10-01",
       "modalities": {
@@ -2843,8 +2843,7 @@
         "output": 0
       },
       "canonical_model_id": "openai/whisper-large-v3-turbo",
-      "display_name": "Whisper Large v3 Turbo",
-      "type": "speech-transcription"
+      "display_name": "Whisper Large v3 Turbo"
     }
   ],
   "api": "https://kenari.id/v1",

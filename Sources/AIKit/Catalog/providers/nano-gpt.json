@@ -6882,9 +6882,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.13332,
-        "output": 0.39996,
-        "cache_read": 0.004242
+        "input": 0.1452,
+        "output": 0.4356,
+        "cache_read": 0.00462
       },
       "display_name": "DeepSeek Latest",
       "type": "chat"
@@ -7260,7 +7260,7 @@
       },
       "cost": {
         "input": 0.1,
-        "output": 0.6,
+        "output": 0.5,
         "cache_read": 0.003
       },
       "display_name": "DeepSeek V4 Flash Latest",
@@ -7455,9 +7455,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.13332,
-        "output": 0.39996,
-        "cache_read": 0.004242
+        "input": 0.1452,
+        "output": 0.4356,
+        "cache_read": 0.00462
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
@@ -7504,9 +7504,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.13332,
-        "output": 0.39996,
-        "cache_read": 0.004242
+        "input": 0.1452,
+        "output": 0.4356,
+        "cache_read": 0.00462
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813 Thinking",
@@ -7656,7 +7656,7 @@
       },
       "cost": {
         "input": 0.1,
-        "output": 0.6,
+        "output": 0.5,
         "cache_read": 0.003
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -7707,7 +7707,7 @@
       },
       "cost": {
         "input": 0.1,
-        "output": 0.6,
+        "output": 0.5,
         "cache_read": 0.003
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
@@ -11171,9 +11171,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0675,
-        "output": 0.225,
-        "cache_read": 0.0375
+        "input": 0.0765,
+        "output": 0.255,
+        "cache_read": 0.0425
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B",
@@ -11250,9 +11250,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0675,
-        "output": 0.225,
-        "cache_read": 0.0375
+        "input": 0.0765,
+        "output": 0.255,
+        "cache_read": 0.0425
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B Thinking",
@@ -11923,6 +11923,53 @@
         "cache_read": 0.004
       },
       "display_name": "Mercury 2.5 Preview",
+      "type": "chat"
+    },
+    {
+      "id": "inception/mercury-3",
+      "name": "Mercury 3",
+      "description": "Mercury 3 is Inception's diffusion language model for fast chat, coding, and multi-step agents. It accepts and generates text, with adjustable reasoning, parallel tool calls, structured JSON output, and a shared 1,000,000-token context window. Responses can use up to 131,072 tokens, including reasoning, within the remaining context.",
+      "family": "mercury",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-19",
+      "last_updated": "2026-10-19",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.35,
+        "cache_read": 0.01
+      },
+      "display_name": "Mercury 3",
       "type": "chat"
     },
     {
@@ -13602,6 +13649,58 @@
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3",
+      "type": "chat"
+    },
+    {
+      "id": "minimax/minimax-m3.1-flash",
+      "name": "MiniMax M3.1 Flash",
+      "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "family": "minimax",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2026-10-19",
+      "last_updated": "2026-10-19",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 524288
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.015
+      },
+      "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
+      "display_name": "MiniMax M3.1 Flash",
       "type": "chat"
     },
     {
@@ -20959,7 +21058,7 @@
       "limit": {
         "context": 1000000,
         "input": 1000000,
-        "output": 65536
+        "output": 131072
       },
       "cost": {
         "input": 1.475,
@@ -21007,7 +21106,7 @@
       "limit": {
         "context": 1000000,
         "input": 1000000,
-        "output": 65536
+        "output": 131072
       },
       "cost": {
         "input": 1.475,
@@ -23319,16 +23418,18 @@
     {
       "id": "upstage/solar-mini4",
       "name": "Solar Mini 4",
-      "description": "Upstage's compact 35B-parameter mixture-of-experts model with 3B active parameters and a 524K context window. Built for fast, cost-efficient agentic tasks, with strong Korean and English support.",
-      "family": "solar",
+      "description": "Upstage's compact, cost-efficient model for agentic use",
+      "family": "solar-mini",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-09-23",
-      "last_updated": "2026-09-23",
+      "temperature": true,
+      "knowledge": "2026-02",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text"
@@ -23348,14 +23449,15 @@
         "output": 0.2,
         "cache_read": 0.005
       },
+      "canonical_model_id": "upstage/solar-mini4",
       "display_name": "Solar Mini 4",
       "type": "chat"
     },
     {
       "id": "upstage/solar-mini4:thinking",
       "name": "Solar Mini 4 Thinking",
-      "description": "Solar Mini 4 with reasoning enabled for agentic tasks and harder analysis across a 524K-token context window.",
-      "family": "solar",
+      "description": "Upstage's compact, cost-efficient model for agentic use",
+      "family": "solar-mini",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -23374,8 +23476,10 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-09-23",
-      "last_updated": "2026-09-23",
+      "temperature": true,
+      "knowledge": "2026-02",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text"
@@ -23395,6 +23499,7 @@
         "output": 0.2,
         "cache_read": 0.005
       },
+      "canonical_model_id": "upstage/solar-mini4",
       "display_name": "Solar Mini 4 Thinking",
       "type": "chat"
     },
@@ -25483,9 +25588,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.189,
-        "output": 0.594,
-        "cache_read": 0.0351
+        "input": 0.42,
+        "output": 1.32,
+        "cache_read": 0.078
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2",
@@ -25530,9 +25635,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.189,
-        "output": 0.594,
-        "cache_read": 0.0351
+        "input": 0.42,
+        "output": 1.32,
+        "cache_read": 0.078
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 Thinking",

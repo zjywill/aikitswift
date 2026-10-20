@@ -193,7 +193,8 @@
             "none",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -257,7 +258,8 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -497,6 +499,7 @@
     },
     {
       "id": "grok-imagine-image",
+      "type": "image",
       "name": "Grok Imagine Image",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "grok",
@@ -511,12 +514,10 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
-          "image",
-          "pdf"
+          "image"
         ]
       },
       "open_weights": false,
@@ -525,11 +526,11 @@
         "output": 0
       },
       "canonical_model_id": "xai/grok-imagine-image",
-      "display_name": "Grok Imagine Image",
-      "type": "image-generation"
+      "display_name": "Grok Imagine Image"
     },
     {
       "id": "grok-imagine-image-quality",
+      "type": "image",
       "name": "Grok Imagine Image Quality",
       "description": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
       "family": "grok",
@@ -544,12 +545,10 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
-          "image",
-          "pdf"
+          "image"
         ]
       },
       "open_weights": false,
@@ -557,12 +556,13 @@
         "context": 16000,
         "output": 0
       },
+      "status": "deprecated",
       "canonical_model_id": "xai/grok-imagine-image-quality",
-      "display_name": "Grok Imagine Image Quality",
-      "type": "image-generation"
+      "display_name": "Grok Imagine Image Quality"
     },
     {
       "id": "grok-imagine-video",
+      "type": "video",
       "name": "Grok Imagine Video",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "grok",
@@ -578,8 +578,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "pdf"
+          "video"
         ],
         "output": [
           "video"
@@ -590,13 +589,13 @@
         "context": 1024,
         "output": 0
       },
-      "display_name": "Grok Imagine Video",
-      "type": "chat"
+      "display_name": "Grok Imagine Video"
     },
     {
       "id": "grok-imagine-video-1.5",
+      "type": "video",
       "name": "Grok Imagine Video 1.5",
-      "description": "Video model for image-to-video generation, editing, and extension workflows",
+      "description": "Video model for text-to-video, image-to-video, and reference-to-video generation with optional voice references",
       "family": "grok",
       "attachment": true,
       "reasoning": {
@@ -610,8 +609,7 @@
         "input": [
           "text",
           "image",
-          "audio",
-          "pdf"
+          "audio"
         ],
         "output": [
           "video"
@@ -623,11 +621,11 @@
         "output": 0
       },
       "canonical_model_id": "xai/grok-imagine-video-1.5",
-      "display_name": "Grok Imagine Video 1.5",
-      "type": "chat"
+      "display_name": "Grok Imagine Video 1.5"
     },
     {
       "id": "grok-imagine-video-1.5-lite",
+      "type": "video",
       "name": "Grok Imagine Video 1.5 Lite",
       "description": "Cost-efficient video model for text-to-video and image-to-video generation",
       "family": "grok",
@@ -642,8 +640,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "video"
@@ -655,8 +652,7 @@
         "output": 0
       },
       "canonical_model_id": "xai/grok-imagine-video-1.5-lite",
-      "display_name": "Grok Imagine Video 1.5 Lite",
-      "type": "chat"
+      "display_name": "Grok Imagine Video 1.5 Lite"
     }
   ],
   "doc": "https://docs.x.ai/docs/models"

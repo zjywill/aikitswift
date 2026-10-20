@@ -779,7 +779,7 @@
     },
     {
       "id": "reflection/Beam-1.0-501B-A23B",
-      "name": "Beam 1.0",
+      "name": "Beam 1.0 501B A23B",
       "description": "Beam is a 501B-parameter MoE model with 23B active parameters built for coding, reasoning, and agentic workflows.",
       "family": "beam",
       "attachment": false,
@@ -819,11 +819,11 @@
         "output": 1048576
       },
       "cost": {
-        "input": 1,
-        "output": 3,
-        "cache_read": 0.1
+        "input": 0.3,
+        "output": 1,
+        "cache_read": 0.04
       },
-      "display_name": "Beam 1.0",
+      "display_name": "Beam 1.0 501B A23B",
       "type": "chat"
     },
     {
