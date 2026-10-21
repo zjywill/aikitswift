@@ -39,40 +39,6 @@
       "type": "chat"
     },
     {
-      "id": "@cf/cloudflare/clairic",
-      "name": "Clairic",
-      "description": "Multimodal model for analyzing text, images, documents, and rich media",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-10-14",
-      "last_updated": "2026-10-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 65536,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.1,
-        "output": 0
-      },
-      "display_name": "Clairic",
-      "type": "chat"
-    },
-    {
       "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
       "name": "Deepseek R1 Distill Qwen 32B",
       "description": "Classic open reasoning model for transparent math, coding, and deliberate problem solving",
@@ -183,7 +149,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -208,6 +174,54 @@
       "type": "chat"
     },
     {
+      "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
+      "name": "Deepseek V4.1 Flash 1017",
+      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+      "family": "deepseek",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "display_name": "Deepseek V4.1 Flash 1017",
+      "type": "chat"
+    },
+    {
       "id": "@cf/google/gemma-4-26b-a4b-it",
       "name": "Gemma 4 26B A4B IT",
       "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
@@ -219,11 +233,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "none",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -607,8 +617,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -690,7 +700,6 @@
           "type": "effort",
           "values": [
             "low",
-            "medium",
             "high"
           ]
         }
@@ -699,6 +708,7 @@
       "interleaved": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {

@@ -4594,8 +4594,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -4641,8 +4641,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -5074,8 +5074,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
@@ -5099,7 +5098,7 @@
       "name": "Qwen3.5 Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -5167,8 +5166,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
@@ -5442,6 +5440,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {

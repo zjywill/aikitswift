@@ -82,6 +82,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-09",
@@ -131,6 +132,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-02-28",
       "release_date": "2025-10-15",
@@ -251,6 +253,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-03-31",
       "release_date": "2025-08-05",
@@ -309,6 +312,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2025-11-01",
@@ -367,6 +371,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05-31",
       "release_date": "2026-02-05",
@@ -422,6 +427,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-04-16",
@@ -477,6 +483,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01",
       "release_date": "2026-05-28",
@@ -526,6 +533,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-03-31",
       "release_date": "2025-05-22",
@@ -638,6 +646,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-05",
       "release_date": "2026-07-24",
@@ -687,6 +696,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-07-31",
       "release_date": "2025-09-29",
@@ -746,6 +756,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-02-17",
@@ -795,6 +806,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-03-31",
       "release_date": "2025-05-22",
@@ -910,6 +922,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-30",
@@ -1131,6 +1144,7 @@
     },
     {
       "id": "gemini-2.5-flash-image",
+      "type": "image",
       "name": "Nano Banana",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
       "family": "gemini-flash",
@@ -1164,8 +1178,7 @@
         "output": 30
       },
       "canonical_model_id": "google/gemini-2.5-flash-image",
-      "display_name": "Nano Banana",
-      "type": "image-generation"
+      "display_name": "Nano Banana"
     },
     {
       "id": "gemini-2.5-flash-lite",
@@ -1223,6 +1236,7 @@
     },
     {
       "id": "gemini-2.5-flash-tts",
+      "type": "speech",
       "name": "Gemini 2.5 Flash TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "gemini-flash",
@@ -1254,8 +1268,7 @@
         "output": 10
       },
       "canonical_model_id": "google/gemini-2.5-flash-tts",
-      "display_name": "Gemini 2.5 Flash TTS",
-      "type": "speech-synthesis"
+      "display_name": "Gemini 2.5 Flash TTS"
     },
     {
       "id": "gemini-2.5-pro",
@@ -1325,6 +1338,7 @@
     },
     {
       "id": "gemini-2.5-pro-tts",
+      "type": "speech",
       "name": "Gemini 2.5 Pro TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "gemini-pro",
@@ -1356,8 +1370,7 @@
         "output": 20
       },
       "canonical_model_id": "google/gemini-2.5-pro-tts",
-      "display_name": "Gemini 2.5 Pro TTS",
-      "type": "speech-synthesis"
+      "display_name": "Gemini 2.5 Pro TTS"
     },
     {
       "id": "gemini-3-flash-preview",
@@ -1416,6 +1429,7 @@
     },
     {
       "id": "gemini-3-pro-image",
+      "type": "image",
       "name": "Nano Banana Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -1452,11 +1466,11 @@
         "cache_read": 0.2
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro"
     },
     {
       "id": "gemini-3.1-flash-image",
+      "type": "image",
       "name": "Nano Banana 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -1502,8 +1516,7 @@
         "cache_read": 0.05
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2"
     },
     {
       "id": "gemini-3.1-flash-lite",
@@ -1561,6 +1574,7 @@
     },
     {
       "id": "gemini-3.1-flash-lite-image",
+      "type": "image",
       "name": "Nano Banana 2 Lite",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
       "family": "gemini-flash-lite",
@@ -1587,7 +1601,9 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video",
+          "pdf"
         ],
         "output": [
           "text",
@@ -1605,8 +1621,7 @@
         "cache_read": 0.025
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-image",
-      "display_name": "Nano Banana 2 Lite",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 Lite"
     },
     {
       "id": "gemini-3.1-pro-preview",
@@ -2068,6 +2083,7 @@
     },
     {
       "id": "gemini-embedding-001",
+      "type": "embedding",
       "name": "Gemini Embedding 001",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "gemini",
@@ -2098,11 +2114,11 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-embedding-001",
-      "display_name": "Gemini Embedding 001",
-      "type": "other"
+      "display_name": "Gemini Embedding 001"
     },
     {
       "id": "gemini-nano-banana-2.1",
+      "type": "image",
       "name": "Nano Banana 2.1",
       "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
       "family": "gemini-flash",
@@ -2130,7 +2146,8 @@
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "pdf"
         ],
         "output": [
           "text",
@@ -2148,8 +2165,7 @@
         "cache_read": 0.15
       },
       "canonical_model_id": "google/gemini-nano-banana-2.1",
-      "display_name": "Nano Banana 2.1",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2.1"
     },
     {
       "id": "google/gemma-4-26b-a4b-it-maas",

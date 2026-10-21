@@ -79,6 +79,7 @@
         "context": 131072,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -130,6 +131,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -276,7 +278,7 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -355,6 +357,62 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
+      "type": "chat"
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017",
       "type": "chat"
     },
     {
@@ -552,6 +610,7 @@
     },
     {
       "id": "happyhorse-1.1-i2v",
+      "type": "video",
       "name": "HappyHorse 1.1 Image-to-Video",
       "description": "Video model for image-to-video generation",
       "attachment": true,
@@ -580,11 +639,11 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "HappyHorse 1.1 Image-to-Video",
-      "type": "chat"
+      "display_name": "HappyHorse 1.1 Image-to-Video"
     },
     {
       "id": "happyhorse-1.1-r2v",
+      "type": "video",
       "name": "HappyHorse 1.1 Reference-to-Video",
       "description": "Video model for reference-guided video generation",
       "attachment": true,
@@ -613,11 +672,11 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "HappyHorse 1.1 Reference-to-Video",
-      "type": "chat"
+      "display_name": "HappyHorse 1.1 Reference-to-Video"
     },
     {
       "id": "happyhorse-1.1-t2v",
+      "type": "video",
       "name": "HappyHorse 1.1 Text-to-Video",
       "description": "Video model for prompt-driven text-to-video generation",
       "attachment": false,
@@ -645,8 +704,7 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "HappyHorse 1.1 Text-to-Video",
-      "type": "chat"
+      "display_name": "HappyHorse 1.1 Text-to-Video"
     },
     {
       "id": "kimi-k2.5",
@@ -673,8 +731,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -725,8 +783,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -806,6 +864,7 @@
     },
     {
       "id": "qwen-image-2.0",
+      "type": "image",
       "name": "Qwen Image 2.0",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "qwen",
@@ -834,11 +893,11 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Qwen Image 2.0",
-      "type": "image-generation"
+      "display_name": "Qwen Image 2.0"
     },
     {
       "id": "qwen-image-2.0-pro",
+      "type": "image",
       "name": "Qwen Image 2.0 Pro",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "qwen",
@@ -867,8 +926,7 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Qwen Image 2.0 Pro",
-      "type": "image-generation"
+      "display_name": "Qwen Image 2.0 Pro"
     },
     {
       "id": "qwen3.6-flash",
@@ -1110,6 +1168,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {
@@ -1260,6 +1319,7 @@
     },
     {
       "id": "wan2.7-image",
+      "type": "image",
       "name": "Wan2.7 Image",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "attachment": false,
@@ -1287,11 +1347,11 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Wan2.7 Image",
-      "type": "image-generation"
+      "display_name": "Wan2.7 Image"
     },
     {
       "id": "wan2.7-image-pro",
+      "type": "image",
       "name": "Wan2.7 Image Pro",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "attachment": false,
@@ -1319,8 +1379,7 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Wan2.7 Image Pro",
-      "type": "image-generation"
+      "display_name": "Wan2.7 Image Pro"
     }
   ],
   "api": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1",

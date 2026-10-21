@@ -226,6 +226,7 @@
     },
     {
       "id": "qwen-image-2.1",
+      "type": "image",
       "name": "Qwen-Image-2.1",
       "description": "Unified text-to-image generation and image editing model with native RGBA transparency and reference-image editing",
       "family": "qwen",
@@ -234,7 +235,7 @@
         "supported": false
       },
       "tool_call": false,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-09-14",
       "last_updated": "2026-09-21",
       "modalities": {
@@ -255,8 +256,7 @@
         "output": 0
       },
       "canonical_model_id": "alibaba/qwen-image-2.1",
-      "display_name": "Qwen-Image-2.1",
-      "type": "image-generation"
+      "display_name": "Qwen-Image-2.1"
     },
     {
       "id": "qwen3.6",
@@ -320,6 +320,7 @@
       "reasoning_options": [],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {

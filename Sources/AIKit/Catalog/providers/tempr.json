@@ -937,7 +937,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -1474,6 +1474,7 @@
     },
     {
       "id": "google/gemini-embedding-001",
+      "type": "embedding",
       "name": "Gemini Embedding 001",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "gemini",
@@ -1504,11 +1505,11 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-embedding-001",
-      "display_name": "Gemini Embedding 001",
-      "type": "other"
+      "display_name": "Gemini Embedding 001"
     },
     {
       "id": "google/gemini-embedding-2",
+      "type": "embedding",
       "name": "Gemini Embedding 2",
       "description": "Multimodal embedding model mapping text, images, video, audio, and PDFs into a unified embedding space",
       "family": "gemini",
@@ -1539,8 +1540,7 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-embedding-2",
-      "display_name": "Gemini Embedding 2",
-      "type": "other"
+      "display_name": "Gemini Embedding 2"
     },
     {
       "id": "google/gemini-flash-latest",
@@ -2036,6 +2036,7 @@
     },
     {
       "id": "mistral/mistral-embed",
+      "type": "embedding",
       "name": "Mistral Embed",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "mistral-embed",
@@ -2065,8 +2066,7 @@
         "output": 0
       },
       "canonical_model_id": "mistral/mistral-embed",
-      "display_name": "Mistral Embed",
-      "type": "chat"
+      "display_name": "Mistral Embed"
     },
     {
       "id": "mistral/mistral-large-2512",
@@ -2473,8 +2473,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",

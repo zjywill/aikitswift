@@ -422,7 +422,7 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -2290,8 +2290,8 @@
       ],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-04-07",
-      "last_updated": "2025-04-07",
+      "release_date": "2025-03-18",
+      "last_updated": "2025-03-18",
       "modalities": {
         "input": [
           "text"
@@ -2389,6 +2389,7 @@
     },
     {
       "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "type": "embedding",
       "name": "llama-nemotron-embed-vl-1b-v2",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "nemotron",
@@ -2419,11 +2420,11 @@
         "output": 0
       },
       "canonical_model_id": "nvidia/llama-nemotron-embed-vl-1b-v2",
-      "display_name": "llama-nemotron-embed-vl-1b-v2",
-      "type": "chat"
+      "display_name": "llama-nemotron-embed-vl-1b-v2"
     },
     {
       "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
+      "type": "reranking",
       "name": "llama-nemotron-rerank-vl-1b-v2",
       "description": "Reranking model for improving retrieval quality in search and recommendation systems",
       "family": "nemotron",
@@ -2454,8 +2455,7 @@
         "output": 0
       },
       "canonical_model_id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
-      "display_name": "llama-nemotron-rerank-vl-1b-v2",
-      "type": "chat"
+      "display_name": "llama-nemotron-rerank-vl-1b-v2"
     },
     {
       "id": "nvidia/magpie-tts-zeroshot",
@@ -2634,6 +2634,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {
@@ -2678,8 +2679,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-06-04",
-      "last_updated": "2026-06-04",
+      "release_date": "2026-06-02",
+      "last_updated": "2026-06-02",
       "modalities": {
         "input": [
           "text",
@@ -2720,6 +2721,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-08-11",
       "last_updated": "2026-08-11",
       "modalities": {

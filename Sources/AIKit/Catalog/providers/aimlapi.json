@@ -26,7 +26,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 32768,
         "output": 32768
@@ -125,8 +125,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-07-22",
+      "last_updated": "2025-07-22",
       "modalities": {
         "input": [
           "text"
@@ -307,6 +307,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {
@@ -748,6 +749,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-10-07",
@@ -1460,7 +1462,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-08-31",
@@ -1569,8 +1571,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-06-01",
-      "release_date": "2024-12-02",
-      "last_updated": "2024-12-02",
+      "release_date": "2024-12-13",
+      "last_updated": "2024-12-13",
       "modalities": {
         "input": [
           "text"
@@ -1859,7 +1861,7 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -2663,8 +2665,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-03-04",
-      "last_updated": "2026-03-04",
+      "release_date": "2026-02-24",
+      "last_updated": "2026-02-24",
       "modalities": {
         "input": [
           "text"
@@ -2745,8 +2747,8 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-09-12",
-      "last_updated": "2026-09-12",
+      "release_date": "2026-04-16",
+      "last_updated": "2026-04-16",
       "modalities": {
         "input": [
           "text"
@@ -2755,7 +2757,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 128000,
         "output": 4096
@@ -2779,8 +2781,8 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-09-12",
-      "last_updated": "2026-09-12",
+      "release_date": "2026-04-16",
+      "last_updated": "2026-04-16",
       "modalities": {
         "input": [
           "text"
@@ -2789,7 +2791,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 128000,
         "output": 8192
@@ -2897,6 +2899,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2026-01-04",
       "release_date": "2026-08-10",
@@ -2948,6 +2951,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-04-08",
       "last_updated": "2026-07-09",
@@ -3000,6 +3004,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-05",
       "last_updated": "2026-08-05",
@@ -3050,6 +3055,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-09-02",
       "last_updated": "2026-09-02",
@@ -3313,8 +3319,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-03-31",
-      "release_date": "2024-11-19",
-      "last_updated": "2024-11-19",
+      "release_date": "2024-07-24",
+      "last_updated": "2024-07-24",
       "modalities": {
         "input": [
           "text",
@@ -3436,8 +3442,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-06-30",
-      "release_date": "2025-08-13",
-      "last_updated": "2025-08-13",
+      "release_date": "2025-08-12",
+      "last_updated": "2025-08-12",
       "modalities": {
         "input": [
           "text",
@@ -3474,8 +3480,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-07",
-      "release_date": "2024-07-01",
-      "last_updated": "2024-07-01",
+      "release_date": "2024-07-18",
+      "last_updated": "2024-07-18",
       "modalities": {
         "input": [
           "text"
@@ -4079,6 +4085,7 @@
         "supported": false
       },
       "tool_call": false,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2021-09-01",
       "release_date": "2023-03-01",
@@ -4114,6 +4121,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2023-11",
       "release_date": "2023-11-06",
@@ -4150,6 +4158,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2023-12",
       "release_date": "2023-11-06",
@@ -4186,6 +4195,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2025-04-14",
@@ -4224,6 +4234,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2025-04-14",
@@ -4262,6 +4273,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2025-04-14",
@@ -4299,6 +4311,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-09",
       "release_date": "2024-05-13",
@@ -4337,6 +4350,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-09",
       "release_date": "2024-05-13",
@@ -4373,6 +4387,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-09",
       "release_date": "2024-08-06",
@@ -4410,6 +4425,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-09",
       "release_date": "2024-11-20",
@@ -4447,6 +4463,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2023-09",
       "release_date": "2024-07-18",
@@ -4500,6 +4517,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-09-30",
       "release_date": "2025-08-07",
@@ -4550,6 +4568,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-09-30",
       "release_date": "2025-11-13",
@@ -4600,6 +4619,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2025-12-11",
@@ -4650,6 +4670,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-03-05",
@@ -4701,6 +4722,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
@@ -4755,6 +4777,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-05-30",
       "release_date": "2025-08-07",
@@ -4808,6 +4831,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-05-30",
       "release_date": "2025-08-07",
@@ -4858,6 +4882,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-09-30",
       "release_date": "2025-10-06",
@@ -4909,6 +4934,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-09-30",
       "release_date": "2025-11-13",
@@ -4960,6 +4986,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": false,
       "temperature": false,
       "knowledge": "2025-08-31",
       "release_date": "2025-12-11",
@@ -5012,6 +5039,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-02-05",
@@ -5063,6 +5091,7 @@
         }
       ],
       "tool_call": false,
+      "structured_output": true,
       "temperature": false,
       "release_date": "2026-04-21",
       "last_updated": "2026-04-21",
@@ -5112,6 +5141,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-03-17",
@@ -5162,6 +5192,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-03-17",
@@ -5213,6 +5244,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": false,
       "temperature": false,
       "knowledge": "2025-08-31",
       "release_date": "2026-03-05",
@@ -5263,6 +5295,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
@@ -5313,6 +5346,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5367,6 +5401,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5418,6 +5453,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5472,6 +5508,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5523,6 +5560,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5577,6 +5615,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
@@ -5629,6 +5668,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-04-30",
       "release_date": "2026-09-04",
@@ -5680,6 +5720,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-05-18",
       "release_date": "2026-09-22",
@@ -5731,6 +5772,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-04-20",
       "release_date": "2026-09-22",
@@ -5781,6 +5823,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-04-30",
       "release_date": "2026-09-29",
@@ -5834,6 +5877,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
@@ -5883,6 +5927,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
@@ -5929,6 +5974,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-10-29",
       "last_updated": "2025-10-29",
@@ -5975,6 +6021,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2023-09",
       "release_date": "2024-12-05",
@@ -6027,6 +6074,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2023-09",
       "release_date": "2025-03-19",
@@ -6074,6 +6122,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-05",
       "release_date": "2024-12-20",
@@ -6124,6 +6173,7 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2024-05",
       "release_date": "2025-06-10",
@@ -6233,8 +6283,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-03-20",
-      "last_updated": "2026-03-20",
+      "release_date": "2026-03-11",
+      "last_updated": "2026-03-11",
       "modalities": {
         "input": [
           "image",
@@ -6596,6 +6646,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {
@@ -6635,8 +6686,8 @@
       "tool_call": false,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2026-08-20",
-      "last_updated": "2026-08-20",
+      "release_date": "2026-05-21",
+      "last_updated": "2026-05-21",
       "modalities": {
         "input": [
           "text"
@@ -6670,8 +6721,8 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-20",
-      "last_updated": "2026-08-20",
+      "release_date": "2026-05-21",
+      "last_updated": "2026-05-21",
       "modalities": {
         "input": [
           "text"
@@ -6705,8 +6756,8 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-19",
-      "last_updated": "2026-08-19",
+      "release_date": "2026-05-21",
+      "last_updated": "2026-05-21",
       "modalities": {
         "input": [
           "text"
@@ -7126,9 +7177,9 @@
       ],
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2025-03",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "knowledge": "2025-07",
+      "release_date": "2026-01-26",
+      "last_updated": "2026-03-23",
       "modalities": {
         "input": [
           "text"

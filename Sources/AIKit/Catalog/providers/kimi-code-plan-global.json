@@ -15,11 +15,9 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -73,6 +71,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -123,11 +122,9 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
-        },
-        {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "high",
             "max"
@@ -138,6 +135,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
+      "temperature": false,
       "release_date": "2026-09-11",
       "last_updated": "2026-09-11",
       "modalities": {

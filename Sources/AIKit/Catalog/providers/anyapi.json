@@ -334,7 +334,7 @@
       "name": "DeepSeek Chat",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
       "family": "deepseek",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -365,7 +365,7 @@
       "name": "DeepSeek Reasoner",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
       "family": "deepseek-thinking",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false

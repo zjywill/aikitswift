@@ -963,7 +963,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1000000,
         "output": 131072
@@ -999,7 +999,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-09-25",
       "last_updated": "2026-09-25",
       "modalities": {
@@ -1341,7 +1341,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -1354,7 +1354,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 512000
@@ -1754,6 +1754,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {
@@ -1808,6 +1809,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {

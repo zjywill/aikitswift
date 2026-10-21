@@ -5073,7 +5073,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 32768
@@ -5176,7 +5176,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1000000,
         "output": 131072
@@ -5213,7 +5213,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-09-25",
       "last_updated": "2026-09-25",
       "modalities": {
@@ -5803,7 +5803,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -5816,7 +5816,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 512000
@@ -6114,6 +6114,64 @@
       "type": "chat"
     },
     {
+      "id": "muse-wonder-1.0",
+      "name": "Muse Wonder",
+      "description": "Muse Wonder is a frontier multimodal reasoning model from Meta for personal and professional agents, long-horizon coding, and computer use. It combines Active Memory, which carries relevant context across conversations, with Active Focus, which keeps it working through blockers toward a goal.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-12",
+      "last_updated": "2026-10-12",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "pdf",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai",
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "meta/muse-wonder-1.0",
+      "display_name": "Muse Wonder",
+      "type": "chat"
+    },
+    {
       "id": "nemotron-3-super-free",
       "name": "Nemotron 3 Super Free",
       "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
@@ -6219,6 +6277,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-08-11",
       "last_updated": "2026-08-11",
       "modalities": {
@@ -6326,7 +6385,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-09-23",
       "release_date": "2026-06-09",
@@ -6779,6 +6838,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {

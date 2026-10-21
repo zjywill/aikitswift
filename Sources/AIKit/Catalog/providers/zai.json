@@ -19,6 +19,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
@@ -42,6 +45,7 @@
         "cache_read": 0.11,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.5",
       "display_name": "GLM-4.5",
       "type": "chat"
     },
@@ -61,6 +65,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
@@ -84,6 +91,7 @@
         "cache_read": 0.03,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.5-air",
       "display_name": "GLM-4.5-Air",
       "type": "chat"
     },
@@ -103,6 +111,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
@@ -115,7 +126,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 131072,
         "output": 98304
@@ -126,6 +137,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.5-flash",
       "display_name": "GLM-4.5-Flash",
       "type": "chat"
     },
@@ -145,6 +157,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-08-11",
@@ -167,8 +182,10 @@
       "cost": {
         "input": 0.6,
         "output": 1.8,
-        "cache_read": 0.11
+        "cache_read": 0.11,
+        "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM-4.5V",
       "type": "chat"
     },
@@ -188,6 +205,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-09-30",
@@ -211,6 +231,7 @@
         "cache_read": 0.11,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM-4.6",
       "type": "chat"
     },
@@ -230,6 +251,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-12-08",
@@ -252,8 +276,10 @@
       "cost": {
         "input": 0.3,
         "output": 0.9,
-        "cache_read": 0.05
+        "cache_read": 0.05,
+        "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V",
       "type": "chat"
     },
@@ -273,6 +299,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "release_date": "2025-12-08",
       "last_updated": "2025-12-08",
@@ -343,6 +372,7 @@
         "cache_read": 0.11,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.7",
       "display_name": "GLM-4.7",
       "type": "chat"
     },
@@ -362,6 +392,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-01-19",
@@ -385,6 +418,7 @@
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM-4.7-Flash",
       "type": "chat"
     },
@@ -404,6 +438,9 @@
         }
       ],
       "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-01-19",
@@ -427,6 +464,7 @@
         "cache_read": 0.01,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-4.7-flashx",
       "display_name": "GLM-4.7-FlashX",
       "type": "chat"
     },
@@ -517,6 +555,7 @@
         "cache_read": 0.24,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5-turbo",
       "display_name": "GLM-5-Turbo",
       "type": "chat"
     },
@@ -577,6 +616,9 @@
         "default": true
       },
       "reasoning_options": [
+        {
+          "type": "toggle"
+        },
         {
           "type": "effort",
           "values": [
@@ -819,6 +861,7 @@
         "cache_read": 0.24,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5v-turbo",
       "display_name": "GLM-5V-Turbo",
       "type": "chat"
     }

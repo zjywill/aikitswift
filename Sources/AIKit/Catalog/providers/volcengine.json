@@ -88,7 +88,7 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -650,7 +650,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "modalities": {

@@ -31,6 +31,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -66,6 +67,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -103,6 +105,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -140,6 +143,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -177,6 +181,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -214,6 +219,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -239,6 +245,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-06-01",
       "last_updated": "2026-06-25",
@@ -254,8 +261,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1048576,
-        "output": 512000
+        "context": 1000000,
+        "output": 524288
       },
       "cost": {
         "input": 0,
@@ -289,7 +296,8 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
+      "structured_output": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -302,10 +310,10 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 512000
+        "output": 524288
       },
       "cost": {
         "input": 0,
@@ -358,6 +366,7 @@
         "context": 1000000,
         "output": 512000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,

@@ -106,6 +106,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 2.294
@@ -141,6 +142,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 2.294
@@ -159,7 +161,7 @@
         "default": false
       },
       "reasoning_options": [],
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-01-01",
       "last_updated": "2025-01-01",
@@ -211,6 +213,7 @@
         "context": 32768,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -229,7 +232,7 @@
         "default": false
       },
       "reasoning_options": [],
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-01-01",
       "last_updated": "2025-01-01",
@@ -281,6 +284,7 @@
         "context": 32768,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.431
@@ -316,6 +320,7 @@
         "context": 32768,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.861
@@ -351,6 +356,7 @@
         "context": 32768,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.072,
         "output": 0.144
@@ -384,6 +390,7 @@
         "context": 65536,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 1.147
@@ -417,6 +424,7 @@
         "context": 131072,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 1.721
@@ -450,6 +458,7 @@
         "context": 131072,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.431
@@ -501,6 +510,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
@@ -555,9 +565,8 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.435,
-        "output": 0.87,
-        "cache_read": 0.003625
+        "input": 1.65,
+        "output": 3.301
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -742,7 +751,18 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "interleaved": {
         "field": "reasoning_content"
@@ -861,6 +881,7 @@
         "context": 262144,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 2.294
@@ -873,7 +894,7 @@
       "name": "Moonshot Kimi K2.5",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
       "family": "kimi-k2",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -913,7 +934,7 @@
       },
       "cost": {
         "input": 0.574,
-        "output": 2.411
+        "output": 3.011
       },
       "display_name": "Moonshot Kimi K2.5",
       "type": "chat"
@@ -980,6 +1001,9 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
@@ -1024,7 +1048,7 @@
       "name": "kimi/kimi-k2.5",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
       "family": "kimi-k2",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -1093,6 +1117,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 2.294
@@ -1105,7 +1130,7 @@
       "name": "QVQ Max",
       "description": "Multimodal reasoning model for visual analysis, planning, and tool use",
       "family": "qvq",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -1130,6 +1155,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.147,
         "output": 4.588
@@ -1225,6 +1251,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2025-07-28",
@@ -1244,7 +1271,25 @@
       },
       "cost": {
         "input": 0.022,
-        "output": 0.216
+        "output": 0.216,
+        "tiers": [
+          {
+            "input": 0.087,
+            "output": 0.861,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          },
+          {
+            "input": 0.173,
+            "output": 1.721,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ]
       },
       "display_name": "Qwen Flash",
       "type": "chat"
@@ -1258,7 +1303,8 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2025-01-25",
@@ -1310,6 +1356,7 @@
         "context": 4096,
         "output": 3072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 1.721
@@ -1344,6 +1391,7 @@
         "context": 4096,
         "output": 3072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.861
@@ -1361,6 +1409,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2024-04-03",
@@ -1446,6 +1495,7 @@
         "context": 16384,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.101,
         "output": 0.28
@@ -1458,7 +1508,7 @@
       "name": "Qwen-Omni Turbo",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1484,6 +1534,7 @@
         "context": 32768,
         "output": 2048
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.058,
         "output": 0.23,
@@ -1495,10 +1546,11 @@
     },
     {
       "id": "qwen-omni-turbo-realtime",
+      "type": "realtime",
       "name": "Qwen-Omni Turbo Realtime",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1523,14 +1575,14 @@
         "context": 32768,
         "output": 2048
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.23,
         "output": 0.918,
         "input_audio": 3.584,
         "output_audio": 7.168
       },
-      "display_name": "Qwen-Omni Turbo Realtime",
-      "type": "realtime"
+      "display_name": "Qwen-Omni Turbo Realtime"
     },
     {
       "id": "qwen-plus",
@@ -1552,6 +1604,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2024-01-25",
@@ -1574,7 +1627,27 @@
         "output": 0.287,
         "reasoning": 1.147,
         "cache_read": 0.012,
-        "cache_write": 0.144
+        "cache_write": 0.144,
+        "tiers": [
+          {
+            "input": 0.345,
+            "output": 2.868,
+            "reasoning": 3.441,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          },
+          {
+            "input": 0.689,
+            "output": 6.881,
+            "reasoning": 9.175,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ]
       },
       "display_name": "Qwen Plus",
       "type": "chat"
@@ -1588,7 +1661,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "knowledge": "2024-04",
       "release_date": "2024-01",
@@ -1650,6 +1723,7 @@
         "context": 1000000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.044,
         "output": 0.087,
@@ -1663,7 +1737,7 @@
       "name": "Qwen-VL Max",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1686,6 +1760,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.23,
         "output": 0.574
@@ -1698,7 +1773,7 @@
       "name": "Qwen-VL OCR",
       "description": "OCR model for extracting structured text from documents and screenshots",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1733,7 +1808,7 @@
       "name": "Qwen-VL Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1756,6 +1831,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.115,
         "output": 0.287
@@ -1790,6 +1866,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.431
@@ -1824,6 +1901,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.861
@@ -1858,6 +1936,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 1.721
@@ -1892,6 +1971,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.072,
         "output": 0.144
@@ -1926,6 +2006,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.861
@@ -1960,6 +2041,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.287
@@ -1994,6 +2076,7 @@
         "context": 4096,
         "output": 3072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 1.721
@@ -2028,6 +2111,7 @@
         "context": 4096,
         "output": 3072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.287
@@ -2040,7 +2124,7 @@
       "name": "Qwen2.5-Omni 7B",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -2066,6 +2150,7 @@
         "context": 32768,
         "output": 2048
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.087,
         "output": 0.345,
@@ -2079,7 +2164,7 @@
       "name": "Qwen2.5-VL 72B Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -2102,6 +2187,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.294,
         "output": 6.881
@@ -2114,7 +2200,7 @@
       "name": "Qwen2.5-VL 7B Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -2137,6 +2223,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.717
@@ -2181,6 +2268,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.574,
@@ -2226,6 +2314,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 1.147,
@@ -2271,6 +2360,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 1.147,
@@ -2316,6 +2406,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.072,
         "output": 0.287,
@@ -2326,6 +2417,7 @@
     },
     {
       "id": "qwen3-asr-flash",
+      "type": "transcription",
       "name": "Qwen3-ASR Flash",
       "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
       "family": "qwen",
@@ -2355,8 +2447,7 @@
         "input": 0.032,
         "output": 0.032
       },
-      "display_name": "Qwen3-ASR Flash",
-      "type": "speech-transcription"
+      "display_name": "Qwen3-ASR Flash"
     },
     {
       "id": "qwen3-coder-30b-a3b-instruct",
@@ -2385,6 +2476,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.216,
         "output": 0.861,
@@ -2437,6 +2529,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.861,
         "output": 3.441,
@@ -2472,6 +2565,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
@@ -2491,7 +2585,33 @@
       },
       "cost": {
         "input": 0.144,
-        "output": 0.574
+        "output": 0.574,
+        "tiers": [
+          {
+            "input": 0.216,
+            "output": 0.861,
+            "tier": {
+              "type": "context",
+              "size": 32000
+            }
+          },
+          {
+            "input": 0.359,
+            "output": 1.434,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          },
+          {
+            "input": 0.717,
+            "output": 3.584,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ]
       },
       "display_name": "Qwen3 Coder Flash",
       "type": "chat"
@@ -2523,6 +2643,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.574,
         "output": 2.296,
@@ -2597,6 +2718,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.359,
         "output": 1.434,
@@ -2652,6 +2774,7 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 0.574
@@ -2692,6 +2815,7 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.144,
         "output": 1.434
@@ -2704,7 +2828,7 @@
       "name": "Qwen3-Omni Flash",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2737,20 +2861,21 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.058,
-        "output": 0.23,
-        "input_audio": 3.584,
-        "output_audio": 7.168
+        "input": 0.258,
+        "output": 0.989,
+        "input_audio": 2.265,
+        "output_audio": 8.974
       },
       "display_name": "Qwen3-Omni Flash",
       "type": "chat"
     },
     {
       "id": "qwen3-omni-flash-realtime",
+      "type": "realtime",
       "name": "Qwen3-Omni Flash Realtime",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -2775,21 +2900,21 @@
         "context": 65536,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.23,
         "output": 0.918,
         "input_audio": 3.584,
         "output_audio": 7.168
       },
-      "display_name": "Qwen3-Omni Flash Realtime",
-      "type": "realtime"
+      "display_name": "Qwen3-Omni Flash Realtime"
     },
     {
       "id": "qwen3-vl-235b-a22b",
       "name": "Qwen3-VL 235B-A22B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2814,6 +2939,7 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.286705,
         "output": 1.14682,
@@ -2827,7 +2953,7 @@
       "name": "Qwen3-VL 30B-A3B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2852,6 +2978,7 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.108,
         "output": 0.431,
@@ -2865,7 +2992,7 @@
       "name": "Qwen3-VL Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2880,6 +3007,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-09-23",
@@ -2901,7 +3029,24 @@
       "cost": {
         "input": 0.143353,
         "output": 1.433525,
-        "reasoning": 4.300576
+        "tiers": [
+          {
+            "input": 0.215,
+            "output": 2.15,
+            "tier": {
+              "type": "context",
+              "size": 32000
+            }
+          },
+          {
+            "input": 0.43,
+            "output": 4.301,
+            "tier": {
+              "type": "context",
+              "size": 128000
+            }
+          }
+        ]
       },
       "display_name": "Qwen3-VL Plus",
       "type": "chat"
@@ -2911,7 +3056,7 @@
       "name": "Qwen3.5 397B-A17B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2926,6 +3071,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-02-16",
@@ -3146,9 +3292,28 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.1875,
-        "output": 1.125,
-        "cache_write": 0.234375
+        "input": 0.165,
+        "output": 0.99,
+        "cache_read": 0.0165,
+        "cache_write": 0.20625,
+        "tiers": [
+          {
+            "input": 0.66,
+            "output": 3.961,
+            "cache_read": 0.066,
+            "cache_write": 0.825,
+            "tier": {
+              "type": "context",
+              "size": 256000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.66,
+          "output": 3.961,
+          "cache_read": 0.066,
+          "cache_write": 0.825
+        }
       },
       "canonical_model_id": "alibaba/qwen3.6-flash",
       "display_name": "Qwen3.6 Flash",
@@ -3191,6 +3356,7 @@
         "context": 245800,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.32,
         "output": 7.9,
@@ -3204,7 +3370,7 @@
       "name": "Qwen3.6 Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -3219,6 +3385,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-04-02",
@@ -3239,16 +3406,16 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.5,
-        "output": 3,
-        "cache_read": 0.05,
-        "cache_write": 0.625,
+        "input": 0.276,
+        "output": 1.651,
+        "cache_read": 0.0276,
+        "cache_write": 0.345,
         "tiers": [
           {
-            "input": 2,
-            "output": 6,
-            "cache_read": 0.2,
-            "cache_write": 2.5,
+            "input": 1.101,
+            "output": 6.602,
+            "cache_read": 0.1101,
+            "cache_write": 1.37625,
             "tier": {
               "type": "context",
               "size": 256000
@@ -3256,10 +3423,10 @@
           }
         ],
         "context_over_200k": {
-          "input": 2,
-          "output": 6,
-          "cache_read": 0.2,
-          "cache_write": 2.5
+          "input": 1.101,
+          "output": 6.602,
+          "cache_read": 0.1101,
+          "cache_write": 1.37625
         }
       },
       "display_name": "Qwen3.6 Plus",
@@ -3357,6 +3524,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-05-21",
       "last_updated": "2026-05-21",
@@ -3374,10 +3542,10 @@
         "output": 131072
       },
       "cost": {
-        "input": 2.5,
-        "output": 7.5,
-        "cache_read": 0.5,
-        "cache_write": 3.125
+        "input": 1.65,
+        "output": 4.951,
+        "cache_read": 0.33,
+        "cache_write": 2.0625
       },
       "canonical_model_id": "alibaba/qwen3.7-max",
       "display_name": "Qwen3.7 Max",
@@ -3403,6 +3571,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-06-02",
@@ -3423,22 +3592,28 @@
         "output": 64000
       },
       "cost": {
-        "input": 0.5,
-        "output": 3,
-        "cache_read": 0.05,
-        "cache_write": 0.625,
+        "input": 0.276,
+        "output": 1.101,
+        "cache_read": 0.0276,
+        "cache_write": 0.345,
         "tiers": [
           {
-            "input": 2,
-            "output": 6,
-            "cache_read": 0.2,
-            "cache_write": 2.5,
+            "input": 0.826,
+            "output": 3.301,
+            "cache_read": 0.0826,
+            "cache_write": 1.0325,
             "tier": {
               "type": "context",
-              "size": 128000
+              "size": 256000
             }
           }
-        ]
+        ],
+        "context_over_200k": {
+          "input": 0.826,
+          "output": 3.301,
+          "cache_read": 0.0826,
+          "cache_write": 1.0325
+        }
       },
       "canonical_model_id": "alibaba/qwen3.7-plus",
       "display_name": "Qwen3.7 Plus",
@@ -3476,6 +3651,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {
@@ -3591,6 +3767,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-17",
       "last_updated": "2026-09-17",
       "modalities": {
@@ -3647,6 +3824,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.287,
         "output": 0.861
@@ -3683,6 +3861,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.23,
         "output": 0.574

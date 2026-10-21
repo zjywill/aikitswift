@@ -114,6 +114,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": true,
       "release_date": "2026-01-27",
       "last_updated": "2026-01-27",
       "modalities": {

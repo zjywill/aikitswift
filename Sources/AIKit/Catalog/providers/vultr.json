@@ -563,8 +563,8 @@
       ],
       "tool_call": false,
       "temperature": true,
-      "release_date": "2026-06-04",
-      "last_updated": "2026-06-04",
+      "release_date": "2026-06-02",
+      "last_updated": "2026-06-02",
       "modalities": {
         "input": [
           "text",

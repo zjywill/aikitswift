@@ -414,7 +414,7 @@
       "name": "Mistral Small 3.2 24B Instruct (2506)",
       "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
       "family": "mistral-small",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -443,42 +443,6 @@
       },
       "canonical_model_id": "mistral/mistral-small-2506",
       "display_name": "Mistral Small 3.2 24B Instruct (2506)",
-      "type": "chat"
-    },
-    {
-      "id": "pixtral-12b-2409",
-      "name": "Pixtral 12B 2409",
-      "description": "Mistral vision-language model for image understanding and multimodal chat",
-      "family": "pixtral",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-09",
-      "release_date": "2024-09-25",
-      "last_updated": "2026-03-17",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
-      "cost": {
-        "input": 0.2,
-        "output": 0.2
-      },
-      "canonical_model_id": "mistral/pixtral-12b",
-      "display_name": "Pixtral 12B 2409",
       "type": "chat"
     },
     {
@@ -517,41 +481,6 @@
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b",
       "display_name": "Qwen3 235B A22B Instruct 2507",
-      "type": "chat"
-    },
-    {
-      "id": "qwen3-coder-30b-a3b-instruct",
-      "name": "Qwen3-Coder 30B-A3B Instruct",
-      "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2026-03-17",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "output": 32768
-      },
-      "cost": {
-        "input": 0.2,
-        "output": 0.8
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
-      "display_name": "Qwen3-Coder 30B-A3B Instruct",
       "type": "chat"
     },
     {

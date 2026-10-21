@@ -4,6 +4,50 @@
   "adapter": "openai",
   "models": [
     {
+      "id": "beam",
+      "name": "Beam 1.0 501B A23B",
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "temperature": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "canonical_model_id": "reflection/beam-1.0-501b-a23b",
+      "display_name": "Beam 1.0 501B A23B",
+      "type": "chat"
+    },
+    {
       "id": "deepseek-v4-flash",
       "name": "deepseek-v4-flash",
       "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
@@ -170,7 +214,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -942,7 +986,7 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -955,7 +999,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 512000
@@ -1116,6 +1160,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-06-25",
       "release_date": "2025-12-15",
       "last_updated": "2026-01-19",
       "modalities": {
@@ -1156,6 +1201,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-12",
       "modalities": {
@@ -1197,6 +1243,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {

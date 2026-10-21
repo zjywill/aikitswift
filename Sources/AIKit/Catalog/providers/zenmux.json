@@ -2019,7 +2019,7 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -2032,7 +2032,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 512000
@@ -6251,6 +6251,7 @@
     },
     {
       "id": "z-ai/glm-image",
+      "type": "image",
       "name": "GLM-Image",
       "description": "GLM-Image is an image generation model adopts a hybrid autoregressive + diffusion decoder architecture. In general image generation quality, GLM‑Image aligns with mainstream latent diffusion approaches, but it shows significant advantages in text-rendering and knowledge‑intensive generation scenarios. It performs especially well in tasks requiring precise semantic understanding and complex information expression, while maintaining strong capabilities in high‑fidelity and fine‑grained detail generation. In addition to text‑to‑image generation, GLM‑Image also supports a rich set of image‑to‑image tasks including image editing, style transfer, identity‑preserving generation, and multi‑subject consistency.",
       "attachment": false,
@@ -6259,8 +6260,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2026-01-19",
-      "last_updated": "2026-01-19",
+      "release_date": "2026-01-14",
+      "last_updated": "2026-01-14",
       "modalities": {
         "input": [
           "text"
@@ -6275,8 +6276,7 @@
         "output": 0
       },
       "canonical_model_id": "zhipuai/glm-image",
-      "display_name": "GLM-Image",
-      "type": "image-generation"
+      "display_name": "GLM-Image"
     }
   ],
   "api": "https://zenmux.ai/api/v1",

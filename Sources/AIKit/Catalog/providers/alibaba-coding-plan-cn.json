@@ -79,6 +79,7 @@
         "context": 202752,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -205,6 +206,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -241,6 +243,7 @@
         "context": 1000000,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -277,6 +280,7 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -291,7 +295,7 @@
       "name": "Qwen3.5 Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -334,7 +338,7 @@
       "name": "Qwen3.6 Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false

@@ -2649,7 +2649,7 @@
       "name": "Mistral Small 3.2",
       "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
       "family": "mistral-small",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },

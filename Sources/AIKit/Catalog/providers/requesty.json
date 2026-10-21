@@ -1431,6 +1431,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -1896,7 +1897,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -1945,7 +1946,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -2542,6 +2543,7 @@
     },
     {
       "id": "gemini-3-pro-image",
+      "type": "image",
       "name": "Nano Banana Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -2590,11 +2592,11 @@
         "cache_write": 4.5
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro"
     },
     {
       "id": "gemini-3.1-flash-image",
+      "type": "image",
       "name": "Nano Banana 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -2643,8 +2645,7 @@
         "output": 2
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2"
     },
     {
       "id": "gemini-3.1-flash-lite",
@@ -3462,7 +3463,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 32768
       },
       "cost": {
         "input": 0.07,
@@ -3609,7 +3610,7 @@
       "open_weights": true,
       "limit": {
         "context": 200000,
-        "output": 200000
+        "output": 131072
       },
       "cost": {
         "input": 1.4,
@@ -3756,6 +3757,7 @@
         "context": 1048576,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.2,
         "output": 4.2,
@@ -5771,8 +5773,8 @@
     },
     {
       "id": "grok-4.2-beta",
-      "name": "grok-4.2-beta",
-      "description": "Grok 4.20 Beta is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.",
+      "name": "Grok 4.20 (Reasoning)",
+      "description": "Reasoning Grok for document-heavy analysis and long-horizon tool use",
       "family": "grok",
       "attachment": true,
       "reasoning": {
@@ -5793,12 +5795,14 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-03-19",
-      "last_updated": "2026-03-19",
+      "temperature": true,
+      "release_date": "2026-03-09",
+      "last_updated": "2026-03-09",
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "pdf"
         ],
         "output": [
           "text"
@@ -5807,7 +5811,7 @@
       "open_weights": false,
       "limit": {
         "context": 2000000,
-        "output": 2000000
+        "output": 30000
       },
       "cost": {
         "input": 2,
@@ -5833,7 +5837,8 @@
           "cache_write": 4
         }
       },
-      "display_name": "grok-4.2-beta",
+      "canonical_model_id": "xai/grok-4.20-0309-reasoning",
+      "display_name": "Grok 4.20 (Reasoning)",
       "type": "chat"
     },
     {
@@ -5876,7 +5881,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 1000000
+        "output": 30000
       },
       "cost": {
         "input": 1.25,
@@ -6238,8 +6243,9 @@
     },
     {
       "id": "inkling-256k",
-      "name": "inkling-256k",
-      "description": "Inkling 256K is the extended context variant of Inkling, a large MoE hybrid reasoning model from Thinking Machines with audio and vision input support and a 256K context window.",
+      "name": "Inkling 256K",
+      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
+      "family": "ling",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -6259,18 +6265,20 @@
       ],
       "tool_call": true,
       "structured_output": false,
-      "release_date": "2026-07-16",
-      "last_updated": "2026-07-16",
+      "temperature": true,
+      "release_date": "2026-07-15",
+      "last_updated": "2026-07-15",
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "audio"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 32768
@@ -6280,7 +6288,8 @@
         "output": 4.68,
         "cache_read": 0.374
       },
-      "display_name": "inkling-256k",
+      "canonical_model_id": "thinkingmachines/inkling",
+      "display_name": "Inkling 256K",
       "type": "chat"
     },
     {
@@ -6342,8 +6351,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -6395,8 +6404,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -6447,8 +6456,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -6719,6 +6728,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -6767,6 +6777,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -7335,7 +7346,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -7348,7 +7359,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 128000
@@ -7452,7 +7463,7 @@
       "open_weights": false,
       "limit": {
         "context": 524288,
-        "output": 524288
+        "output": 262144
       },
       "cost": {
         "input": 0.68,
@@ -7502,7 +7513,7 @@
       "open_weights": false,
       "limit": {
         "context": 524288,
-        "output": 524288
+        "output": 262144
       },
       "cost": {
         "input": 0.68,
@@ -7553,7 +7564,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 209715
       },
       "cost": {
         "input": 1.65,
@@ -7604,7 +7615,7 @@
       "open_weights": false,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 209715
       },
       "cost": {
         "input": 1.65,
@@ -8170,6 +8181,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -8218,6 +8230,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {
@@ -8313,8 +8326,8 @@
       "tool_call": false,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2026-06-04",
-      "last_updated": "2026-06-04",
+      "release_date": "2026-06-02",
+      "last_updated": "2026-06-02",
       "modalities": {
         "input": [
           "text",
@@ -8339,8 +8352,8 @@
     },
     {
       "id": "nemotron-3.5-lightning-30b-a3b",
-      "name": "nemotron-3.5-lightning-30b-a3b",
-      "description": "NVIDIA Nemotron 3.5 Lightning 30B-A3B is a hybrid Mamba-2 + MoE + Attention model with 30B total and 3B active parameters, pre-trained on over 20T tokens with an NVFP4 recipe and Multi-Token Prediction for fast generation. Up to 1M token context for long-running autonomous agents, sub-agent workhorse deployments, and agentic workflows. Supports reasoning and tool calling. English and coding languages plus Spanish, French, German, Italian, and Japanese. Open weights under the OpenMDW License Agreement v1.1. Part of the NVIDIA Nemotron family.",
+      "name": "Nemotron 3.5 Lightning 30B A3B",
+      "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
       "family": "nemotron",
       "attachment": false,
       "reasoning": {
@@ -8361,6 +8374,8 @@
       ],
       "tool_call": true,
       "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-08-11",
       "last_updated": "2026-08-11",
       "modalities": {
@@ -8371,7 +8386,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 65536
@@ -8380,7 +8395,8 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "nemotron-3.5-lightning-30b-a3b",
+      "canonical_model_id": "nvidia/nemotron-3.5-lightning",
+      "display_name": "Nemotron 3.5 Lightning 30B A3B",
       "type": "chat"
     },
     {
@@ -8432,8 +8448,8 @@
     },
     {
       "id": "nvidia-nemotron-3-super-120b-a12b",
-      "name": "nvidia-nemotron-3-super-120b-a12b",
-      "description": "NVIDIA Nemotron 3 Super is a hybrid Mixture-of-Experts (MoE) model engineered for highest compute efficiency and accuracy in multi-agent applications and specialized agentic systems. It is optimized to run many collaborating agents per application on a single GPU, delivering high accuracy for reasoning, tool use, and instruction following.",
+      "name": "Nemotron 3 Super 120B A12B",
+      "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
       "family": "nemotron",
       "attachment": false,
       "reasoning": {
@@ -8454,6 +8470,8 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -8464,7 +8482,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 262144
@@ -8473,13 +8491,14 @@
         "input": 0.1,
         "output": 0.5
       },
-      "display_name": "nvidia-nemotron-3-super-120b-a12b",
+      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
+      "display_name": "Nemotron 3 Super 120B A12B",
       "type": "chat"
     },
     {
       "id": "nvidia-nemotron-3-ultra",
-      "name": "nvidia-nemotron-3-ultra",
-      "description": "NVIDIA Nemotron 3 Ultra is NVIDIA's strongest open-weights reasoning model, positioned near GPT-5.4 Mini (xhigh) and ahead of DeepSeek V4-Flash and Qwen3.5-397B-A17B.",
+      "name": "Nemotron 3 Ultra 550B A55B",
+      "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
       "family": "nemotron",
       "attachment": false,
       "reasoning": {
@@ -8500,8 +8519,10 @@
       ],
       "tool_call": false,
       "structured_output": false,
-      "release_date": "2026-06-23",
-      "last_updated": "2026-06-23",
+      "temperature": true,
+      "knowledge": "2025-09",
+      "release_date": "2026-06-04",
+      "last_updated": "2026-06-04",
       "modalities": {
         "input": [
           "text"
@@ -8510,7 +8531,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 131072
@@ -8519,7 +8540,8 @@
         "input": 0.5,
         "output": 2.5
       },
-      "display_name": "nvidia-nemotron-3-ultra",
+      "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "display_name": "Nemotron 3 Ultra 550B A55B",
       "type": "chat"
     },
     {
@@ -8604,8 +8626,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
@@ -8614,7 +8635,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 65536
       },
       "cost": {
         "input": 0.26,
@@ -8626,9 +8647,9 @@
     },
     {
       "id": "qwen3.5-2b",
-      "name": "qwen3.5-2b",
-      "description": "Qwen3.5-2B is a compact yet capable model from Alibaba's Qwen3.5 series. It features a 262K token context window, support for 201 languages, thinking/reasoning mode, and tool calling for agentic workflows. A strong choice for prototyping, fine-tuning, and efficient multilingual deployments.",
-      "family": "qwen3.5",
+      "name": "Qwen3.5 2B",
+      "description": "Compact Qwen3.5 multimodal model for fast chat, reasoning, and tool use",
+      "family": "qwen",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -8648,27 +8669,30 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-03-10",
-      "last_updated": "2026-03-10",
+      "temperature": true,
+      "release_date": "2026-03-02",
+      "last_updated": "2026-03-02",
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 81920
       },
       "cost": {
         "input": 0.02,
         "output": 0.1
       },
-      "display_name": "qwen3.5-2b",
+      "canonical_model_id": "alibaba/qwen3.5-2b",
+      "display_name": "Qwen3.5 2B",
       "type": "chat"
     },
     {
@@ -8702,8 +8726,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
@@ -8712,7 +8735,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "output": 65536
       },
       "cost": {
         "input": 0.14,
@@ -9001,6 +9024,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {
@@ -9231,8 +9255,8 @@
     },
     {
       "id": "seed-1.8",
-      "name": "seed-1.8",
-      "description": "Optimized specifically for multimodal agent scenarios. It features enhanced agent capabilities, upgraded multimodal comprehension, and more flexible context management.",
+      "name": "Seed 1.8",
+      "description": "ByteDance Seed model for multimodal reasoning, long-context analysis, and agent workflows",
       "family": "seed",
       "attachment": true,
       "reasoning": {
@@ -9253,8 +9277,9 @@
       ],
       "tool_call": true,
       "structured_output": false,
-      "release_date": "2026-05-27",
-      "last_updated": "2026-05-27",
+      "temperature": true,
+      "release_date": "2025-12-28",
+      "last_updated": "2025-12-28",
       "modalities": {
         "input": [
           "text",
@@ -9267,14 +9292,15 @@
       "open_weights": false,
       "limit": {
         "context": 256000,
-        "output": 256000
+        "output": 64000
       },
       "cost": {
         "input": 0.25,
         "output": 2,
         "cache_read": 0.05
       },
-      "display_name": "seed-1.8",
+      "canonical_model_id": "bytedance-seed/seed-1-8",
+      "display_name": "Seed 1.8",
       "type": "chat"
     },
     {
@@ -9317,7 +9343,7 @@
       "open_weights": false,
       "limit": {
         "context": 256000,
-        "output": 256000
+        "output": 131072
       },
       "cost": {
         "input": 0.5,
@@ -9368,7 +9394,7 @@
       "open_weights": false,
       "limit": {
         "context": 256000,
-        "output": 256000
+        "output": 32000
       },
       "cost": {
         "input": 0.1,
@@ -9403,7 +9429,7 @@
       ],
       "tool_call": true,
       "structured_output": false,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "modalities": {
@@ -9419,7 +9445,7 @@
       "open_weights": false,
       "limit": {
         "context": 256000,
-        "output": 256000
+        "output": 128000
       },
       "cost": {
         "input": 0.5,
@@ -9504,6 +9530,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {

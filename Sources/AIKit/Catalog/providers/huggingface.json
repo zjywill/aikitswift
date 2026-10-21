@@ -281,8 +281,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-04-28",
+      "last_updated": "2025-04-28",
       "modalities": {
         "input": [
           "text"
@@ -427,8 +427,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-04-28",
+      "last_updated": "2025-04-28",
       "modalities": {
         "input": [
           "text"
@@ -463,8 +463,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-07-31",
+      "last_updated": "2025-07-31",
       "modalities": {
         "input": [
           "text"
@@ -1745,7 +1745,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [

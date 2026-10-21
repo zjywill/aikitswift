@@ -255,7 +255,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -984,7 +984,7 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
+      "release_date": "2026-04-20",
       "last_updated": "2026-06-12",
       "modalities": {
         "input": [
@@ -1139,95 +1139,6 @@
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
-      "type": "chat"
-    },
-    {
-      "id": "mimo-v2-5",
-      "name": "MiMo V2.5",
-      "description": "Open MiMo model for multimodal coding agents and long-context automation",
-      "family": "mimo",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 0.7,
-        "output": 1.4,
-        "cache_read": 0.014
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5",
-      "display_name": "MiMo V2.5",
-      "type": "chat"
-    },
-    {
-      "id": "mimo-v2-5-pro",
-      "name": "MiMo V2.5 Pro",
-      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 2.175,
-        "output": 4.35,
-        "cache_read": 0.018
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
-      "display_name": "MiMo V2.5 Pro",
       "type": "chat"
     },
     {
@@ -1538,7 +1449,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 524288
@@ -2647,7 +2558,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 131072
+        "output": 65536
       },
       "cost": {
         "input": 2.5,
@@ -3220,7 +3131,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
       "modalities": {

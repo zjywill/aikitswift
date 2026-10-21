@@ -626,6 +626,7 @@
     },
     {
       "id": "gemini-3-1-flash-tts",
+      "type": "speech",
       "name": "Gemini 3.1 Flash TTS Preview",
       "description": "Low-latency speech generation with steerable prompts and expressive audio tags",
       "family": "gemini-flash",
@@ -656,8 +657,7 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-3.1-flash-tts-preview",
-      "display_name": "Gemini 3.1 Flash TTS Preview",
-      "type": "speech-synthesis"
+      "display_name": "Gemini 3.1 Flash TTS Preview"
     },
     {
       "id": "gemini-3-1-pro",
@@ -1812,8 +1812,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -1852,8 +1852,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -2316,6 +2316,7 @@
     },
     {
       "id": "nano-banana-2",
+      "type": "image",
       "name": "Nano Banana 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -2360,11 +2361,11 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2"
     },
     {
       "id": "nano-banana-2-lite",
+      "type": "image",
       "name": "Nano Banana 2 Lite",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
       "family": "gemini-flash-lite",
@@ -2408,11 +2409,11 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-image",
-      "display_name": "Nano Banana 2 Lite",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 Lite"
     },
     {
       "id": "nano-banana-pro",
+      "type": "image",
       "name": "Nano Banana Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -2455,8 +2456,7 @@
         "output": 0
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro"
     },
     {
       "id": "nemotron-3-nano-30b-a3b",
@@ -2471,6 +2471,7 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-06-25",
       "release_date": "2025-12-15",
       "last_updated": "2025-12-15",
       "modalities": {
@@ -2515,6 +2516,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -2559,6 +2561,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -2603,6 +2606,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {

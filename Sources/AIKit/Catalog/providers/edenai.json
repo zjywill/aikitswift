@@ -22,6 +22,7 @@
         "input": [
           "text",
           "image",
+          "video",
           "pdf"
         ],
         "output": [
@@ -61,6 +62,7 @@
         "input": [
           "text",
           "image",
+          "video",
           "pdf"
         ],
         "output": [
@@ -174,6 +176,7 @@
         "input": [
           "text",
           "image",
+          "video",
           "pdf"
         ],
         "output": [
@@ -213,6 +216,7 @@
         "input": [
           "text",
           "image",
+          "video",
           "pdf"
         ],
         "output": [
@@ -460,7 +464,7 @@
       "name": "Pixtral Large (25.02) (Amazon Bedrock)",
       "description": "Mistral vision-language model for image understanding and multimodal chat",
       "family": "pixtral",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -471,7 +475,8 @@
       "last_updated": "2025-04-08",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -495,7 +500,7 @@
       "name": "Pixtral Large (25.02) (Amazon Bedrock, US)",
       "description": "Mistral vision-language model for image understanding and multimodal chat",
       "family": "pixtral",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -506,7 +511,8 @@
       "last_updated": "2025-04-08",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -722,8 +728,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -2229,7 +2235,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -2251,6 +2257,56 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813 (Cloudflare)",
+      "type": "chat"
+    },
+    {
+      "id": "cloudflare/@cf/deepseek-ai/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Cloudflare)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (Cloudflare)",
       "type": "chat"
     },
     {
@@ -2681,8 +2737,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-06-01",
-      "release_date": "2024-12-02",
-      "last_updated": "2024-12-02",
+      "release_date": "2024-12-13",
+      "last_updated": "2024-12-13",
       "modalities": {
         "input": [
           "text"
@@ -2778,7 +2834,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -3230,7 +3286,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "release_date": "2023-08-10",
@@ -3376,8 +3432,8 @@
       "structured_output": false,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-07-22",
+      "last_updated": "2025-07-22",
       "modalities": {
         "input": [
           "text"
@@ -3766,7 +3822,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -4002,6 +4058,53 @@
       "type": "chat"
     },
     {
+      "id": "deepinfra/ibm-granite/granite-4.2-8b",
+      "name": "Granite 4.2 8B (Deep Infra)",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "granite",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-25",
+      "last_updated": "2026-08-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 117964
+      },
+      "cost": {
+        "input": 0.06,
+        "output": 0.25,
+        "cache_read": 0.015
+      },
+      "canonical_model_id": "ibm/granite-4.2-8b",
+      "display_name": "Granite 4.2 8B (Deep Infra)",
+      "type": "chat"
+    },
+    {
       "id": "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct",
       "name": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
       "description": "Open multimodal Llama model for image understanding, captioning, and visual QA",
@@ -4203,7 +4306,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2023-10-31",
@@ -4280,8 +4383,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -4328,6 +4431,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -4374,6 +4478,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {
@@ -4447,6 +4552,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-06-25",
       "release_date": "2025-12-15",
       "last_updated": "2025-12-15",
       "modalities": {
@@ -4679,6 +4785,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-16",
       "last_updated": "2026-09-20",
       "modalities": {
@@ -5177,6 +5284,54 @@
       "type": "chat"
     },
     {
+      "id": "fireworks_ai/accounts/fireworks/models/ember-1",
+      "name": "Ember-1 (Fireworks AI)",
+      "description": "Specialized model from Fireworks built on Kimi K3, producing shorter reasoning traces with approximately 40% fewer tokens while maintaining comparable quality",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
+      },
+      "canonical_model_id": "fireworks/ember-1",
+      "display_name": "Ember-1 (Fireworks AI)",
+      "type": "chat"
+    },
+    {
       "id": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
       "name": "GPT OSS 120B (Fireworks AI)",
       "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
@@ -5514,9 +5669,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.66,
-        "cache_read": 0.015
+        "input": 0.103,
+        "output": 0.715,
+        "cache_read": 0.0154
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (FlexAI)",
@@ -5794,6 +5949,7 @@
     },
     {
       "id": "google/gemini-2.5-flash-image",
+      "type": "image",
       "name": "Nano Banana",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
       "family": "gemini-flash",
@@ -5835,8 +5991,7 @@
         "input_audio": 1
       },
       "canonical_model_id": "google/gemini-2.5-flash-image",
-      "display_name": "Nano Banana",
-      "type": "image-generation"
+      "display_name": "Nano Banana"
     },
     {
       "id": "google/gemini-3-flash-preview",
@@ -5896,6 +6051,7 @@
     },
     {
       "id": "google/gemini-3-pro-image",
+      "type": "image",
       "name": "Nano Banana Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -5943,11 +6099,11 @@
         "input_audio": 2
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro"
     },
     {
       "id": "google/gemini-3-pro-image-preview",
+      "type": "image",
       "name": "Nano Banana Pro Preview",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -5987,11 +6143,11 @@
         "input_audio": 2
       },
       "canonical_model_id": "google/gemini-3-pro-image-preview",
-      "display_name": "Nano Banana Pro Preview",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro Preview"
     },
     {
       "id": "google/gemini-3.1-flash-image",
+      "type": "image",
       "name": "Nano Banana 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -6035,11 +6191,11 @@
         "output": 3
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2"
     },
     {
       "id": "google/gemini-3.1-flash-image-preview",
+      "type": "image",
       "name": "Nano Banana 2 Preview",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -6083,8 +6239,7 @@
         "output": 3
       },
       "canonical_model_id": "google/gemini-3.1-flash-image-preview",
-      "display_name": "Nano Banana 2 Preview",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 Preview"
     },
     {
       "id": "google/gemini-3.1-flash-lite",
@@ -6144,6 +6299,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-lite-image",
+      "type": "image",
       "name": "Nano Banana 2 Lite",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
       "family": "gemini-flash-lite",
@@ -6187,8 +6343,7 @@
         "output": 1.5
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-image",
-      "display_name": "Nano Banana 2 Lite",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 Lite"
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
@@ -6776,6 +6931,7 @@
     },
     {
       "id": "google/gemini-nano-banana-2.1",
+      "type": "image",
       "name": "Nano Banana 2.1",
       "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
       "family": "gemini-flash",
@@ -6788,8 +6944,8 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "minimal",
+            "medium",
             "high"
           ]
         }
@@ -6819,8 +6975,7 @@
         "output": 7.5
       },
       "canonical_model_id": "google/gemini-nano-banana-2.1",
-      "display_name": "Nano Banana 2.1",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2.1"
     },
     {
       "id": "google/gemini-pro-latest",
@@ -6875,6 +7030,60 @@
       },
       "canonical_model_id": "google/gemini-4-argon",
       "display_name": "Gemini Pro Latest (Gemini 4 Argon)",
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-robotics-er-2-preview",
+      "name": "Gemini Robotics-ER 2 Preview",
+      "description": "Embodied reasoning model for robotics: spatial understanding, video progress, and multi-robot orchestration",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-07-30",
+      "last_updated": "2026-07-30",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 131072,
+        "output": 65536
+      },
+      "cost": {
+        "input": 1,
+        "output": 5,
+        "reasoning": 5,
+        "cache_read": 0.1,
+        "input_audio": 1
+      },
+      "canonical_model_id": "google/gemini-robotics-er-2-preview",
+      "display_name": "Gemini Robotics-ER 2 Preview",
       "type": "chat"
     },
     {
@@ -7014,9 +7223,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.15715,
-        "output": 0.392875,
-        "cache_read": 0.0449
+        "input": 0.15701,
+        "output": 0.392525,
+        "cache_read": 0.04486
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Greenpt)",
@@ -7064,9 +7273,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.24695,
-        "output": 1.234749,
-        "cache_read": 0.012347
+        "input": 0.24673,
+        "output": 1.23365,
+        "cache_read": 0.012336
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Greenpt)",
@@ -7111,8 +7320,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.2245,
-        "output": 0.78575
+        "input": 0.2243,
+        "output": 0.78505
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Greenpt)",
@@ -7147,8 +7356,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.234749,
-        "output": 1.234749
+        "input": 1.23365,
+        "output": 1.23365
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Greenpt)",
@@ -7182,8 +7391,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.01025,
-        "output": 3.030749
+        "input": 1.00935,
+        "output": 3.02805
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
@@ -7359,8 +7568,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33675,
-        "output": 0.449
+        "input": 0.33645,
+        "output": 0.4486
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -7395,8 +7604,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.168375,
-        "output": 0.898
+        "input": 0.168225,
+        "output": 0.8972
       },
       "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (IONOS)",
@@ -7431,8 +7640,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.729625,
-        "output": 0.729625
+        "input": 0.728975,
+        "output": 0.728975
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -7477,8 +7686,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168375,
-        "output": 0.729625
+        "input": 0.168225,
+        "output": 0.728975
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -7699,7 +7908,7 @@
       ],
       "tool_call": false,
       "structured_output": false,
-      "temperature": false,
+      "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
@@ -7710,7 +7919,7 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 1000000,
         "output": 512000
@@ -8044,8 +8253,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-03-31",
-      "release_date": "2024-11-19",
-      "last_updated": "2024-11-19",
+      "release_date": "2024-07-24",
+      "last_updated": "2024-07-24",
       "modalities": {
         "input": [
           "text",
@@ -8513,12 +8722,13 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -8558,7 +8768,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -8583,7 +8794,7 @@
       "name": "Kimi K2.7 Code Highspeed",
       "description": "Lower-latency Kimi Code variant for interactive edits and coding-agent loops",
       "family": "kimi-k2",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -8597,7 +8808,9 @@
       "last_updated": "2026-06-12",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -8775,7 +8988,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -8854,7 +9067,7 @@
       "name": "Gemma 3 27B IT (Nebius)",
       "description": "Largest open Gemma 3 instruction model for multilingual text generation and visual understanding",
       "family": "gemma",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -8866,8 +9079,7 @@
       "last_updated": "2025-03-12",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -8917,10 +9129,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "video",
-          "pdf",
-          "audio"
+          "image"
         ],
         "output": [
           "text"
@@ -8963,6 +9172,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
       "last_updated": "2026-06-04",
       "modalities": {
@@ -9010,6 +9220,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-06",
       "release_date": "2026-03-11",
       "last_updated": "2026-03-11",
       "modalities": {
@@ -9667,6 +9878,44 @@
       "canonical_model_id": "openai/gpt-5-pro",
       "display_name": "GPT-5 Pro",
       "type": "chat"
+    },
+    {
+      "id": "openai/gpt-5-search-api",
+      "type": "chat",
+      "name": "GPT-5 Search API",
+      "description": "GPT-5 model trained for web search in the Chat Completions API",
+      "family": "gpt",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2025-10-14",
+      "last_updated": "2025-10-14",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 272000,
+        "output": 100000
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125
+      },
+      "canonical_model_id": "openai/gpt-5-search-api",
+      "display_name": "GPT-5 Search API"
     },
     {
       "id": "openai/gpt-5.1",
@@ -11609,7 +11858,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -11814,7 +12063,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-04",
@@ -11965,6 +12214,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
       "modalities": {
@@ -12057,10 +12307,9 @@
         {
           "type": "effort",
           "values": [
-            "minimal",
+            "none",
             "low",
             "medium",
-            "high",
             "xhigh"
           ]
         }
@@ -12118,6 +12367,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
       "release_date": "2026-09-17",
       "last_updated": "2026-09-17",
       "modalities": {
@@ -12185,9 +12435,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.449,
-        "output": 0.898,
-        "cache_read": 0.0898
+        "input": 0.4486,
+        "output": 0.8972,
+        "cache_read": 0.08972
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -12235,9 +12485,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.6735,
-        "output": 2.020499,
-        "cache_read": 0.1347
+        "input": 0.6729,
+        "output": 2.0187,
+        "cache_read": 0.13458
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Scaleway)",
@@ -12319,8 +12569,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168375,
-        "output": 0.6735
+        "input": 0.168225,
+        "output": 0.6729
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -12355,8 +12605,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.01025,
-        "output": 1.01025
+        "input": 1.00935,
+        "output": 1.00935
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -12390,8 +12640,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.841875,
-        "output": 2.525624
+        "input": 0.841125,
+        "output": 2.523375
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
@@ -12410,8 +12660,8 @@
       "structured_output": false,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-04",
-      "last_updated": "2025-04",
+      "release_date": "2025-07-31",
+      "last_updated": "2025-07-31",
       "modalities": {
         "input": [
           "text"
@@ -12457,7 +12707,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -12551,8 +12801,8 @@
           ]
         }
       ],
-      "tool_call": false,
-      "structured_output": false,
+      "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-07-06",
       "last_updated": "2026-07-06",
@@ -12599,8 +12849,8 @@
           ]
         }
       ],
-      "tool_call": false,
-      "structured_output": false,
+      "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-28",
       "last_updated": "2026-08-28",
@@ -12624,6 +12874,56 @@
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview (Tencent)",
+      "type": "chat"
+    },
+    {
+      "id": "tencent/step-5-preview",
+      "name": "Step 5 Preview (Tencent)",
+      "description": "StepFun's next-generation flagship base model for coding and professional knowledge work, with native text, image, and video input and a 1M-token context window",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-16",
+      "last_updated": "2026-09-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "input": 1000000,
+        "output": 1000000
+      },
+      "cost": {
+        "input": 1,
+        "output": 2.7,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "stepfun/step-5-preview",
+      "display_name": "Step 5 Preview (Tencent)",
       "type": "chat"
     },
     {
@@ -12737,7 +13037,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -12876,8 +13176,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -12974,7 +13274,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-08-12",
+      "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
       "modalities": {
         "input": [
@@ -13195,6 +13495,56 @@
       "type": "chat"
     },
     {
+      "id": "together_ai/reflection/Beam-1.0-501B-A23B",
+      "name": "Beam 1.0 501B A23B (Together AI)",
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 1.2,
+        "cache_read": 0.04
+      },
+      "canonical_model_id": "reflection/beam-1.0-501b-a23b",
+      "display_name": "Beam 1.0 501B A23B (Together AI)",
+      "type": "chat"
+    },
+    {
       "id": "together_ai/thinkingmachines/Inkling",
       "name": "Inkling (Together AI)",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
@@ -13248,6 +13598,7 @@
     },
     {
       "id": "vertex/gemini-2.5-flash-image",
+      "type": "image",
       "name": "Nano Banana (Vertex AI)",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
       "family": "gemini-flash",
@@ -13287,8 +13638,7 @@
         "input_audio": 1
       },
       "canonical_model_id": "google/gemini-2.5-flash-image",
-      "display_name": "Nano Banana (Vertex AI)",
-      "type": "image-generation"
+      "display_name": "Nano Banana (Vertex AI)"
     },
     {
       "id": "vertex/gemini-3-flash-preview",
@@ -13348,6 +13698,7 @@
     },
     {
       "id": "vertex/gemini-3-pro-image",
+      "type": "image",
       "name": "Nano Banana Pro (Vertex AI)",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
       "family": "gemini-pro",
@@ -13395,11 +13746,11 @@
         "input_audio": 2
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro (Vertex AI)",
-      "type": "image-generation"
+      "display_name": "Nano Banana Pro (Vertex AI)"
     },
     {
       "id": "vertex/gemini-3.1-flash-image",
+      "type": "image",
       "name": "Nano Banana 2 (Vertex AI)",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gemini-flash",
@@ -13443,8 +13794,7 @@
         "output": 3
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2 (Vertex AI)",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 (Vertex AI)"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite",
@@ -13504,6 +13854,7 @@
     },
     {
       "id": "vertex/gemini-3.1-flash-lite-image",
+      "type": "image",
       "name": "Nano Banana 2 Lite (Vertex AI)",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
       "family": "gemini-flash-lite",
@@ -13547,8 +13898,7 @@
         "output": 1.5
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-image",
-      "display_name": "Nano Banana 2 Lite (Vertex AI)",
-      "type": "image-generation"
+      "display_name": "Nano Banana 2 Lite (Vertex AI)"
     },
     {
       "id": "vertex/gemini-3.1-flash-lite@eu",
@@ -14787,6 +15137,7 @@
     },
     {
       "id": "vertex/gemini-nano-banana-2.1",
+      "type": "image",
       "name": "Nano Banana 2.1 (Vertex AI)",
       "description": "Image model for prompt-driven generation, multi-turn editing, and visual design workflows",
       "family": "gemini-flash",
@@ -14799,8 +15150,8 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "minimal",
+            "medium",
             "high"
           ]
         }
@@ -14828,8 +15179,7 @@
         "output": 7.5
       },
       "canonical_model_id": "google/gemini-nano-banana-2.1",
-      "display_name": "Nano Banana 2.1 (Vertex AI)",
-      "type": "chat"
+      "display_name": "Nano Banana 2.1 (Vertex AI)"
     },
     {
       "id": "vertex/gemini-pro-latest",
@@ -15056,7 +15406,8 @@
             "none",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -15121,7 +15472,8 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -15674,6 +16026,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "high",
             "max"
           ]
