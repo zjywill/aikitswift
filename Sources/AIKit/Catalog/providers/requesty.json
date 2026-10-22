@@ -222,21 +222,8 @@
       "family": "claude-haiku",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -275,21 +262,8 @@
       "family": "claude-haiku",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -511,21 +485,8 @@
       "family": "claude-opus",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -564,21 +525,8 @@
       "family": "claude-opus",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -1147,21 +1095,8 @@
       "family": "claude-sonnet",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -1218,21 +1153,8 @@
       "family": "claude-sonnet",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -2231,8 +2153,21 @@
       "family": "devstral",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "release_date": "2026-05-27",
@@ -2265,8 +2200,21 @@
       "family": "devstral",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "release_date": "2026-05-27",
@@ -2602,21 +2550,8 @@
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
@@ -3499,6 +3434,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -5778,21 +5714,8 @@
       "family": "grok",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -6793,8 +6716,21 @@
       "family": "leanstral",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "release_date": "2026-05-27",
@@ -6826,8 +6762,21 @@
       "family": "leanstral",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "release_date": "2026-05-27",
@@ -6971,21 +6920,8 @@
       "family": "mimo",
       "attachment": true,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
@@ -7024,21 +6960,8 @@
       "family": "mimo",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
@@ -7633,8 +7556,21 @@
       "family": "mistral-medium",
       "attachment": true,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -7670,8 +7606,21 @@
       "family": "mistral-medium",
       "attachment": true,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,

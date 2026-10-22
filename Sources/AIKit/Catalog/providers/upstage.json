@@ -85,6 +85,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "upstage/solar-mini4",
       "display_name": "Solar Mini 4",
       "type": "chat"
     },
@@ -129,6 +130,7 @@
         "input": 0.25,
         "output": 0.25
       },
+      "canonical_model_id": "upstage/solar-pro2",
       "display_name": "solar-pro2",
       "type": "chat"
     },
@@ -155,8 +157,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-03",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-26",
+      "last_updated": "2026-03-23",
       "modalities": {
         "input": [
           "text"
@@ -174,6 +176,7 @@
         "input": 0.25,
         "output": 0.25
       },
+      "canonical_model_id": "upstage/solar-pro3",
       "display_name": "solar-pro3",
       "type": "chat"
     },
@@ -225,6 +228,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "upstage/solar-pro4",
       "display_name": "Solar Pro 4",
       "type": "chat"
     }

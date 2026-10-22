@@ -35,6 +35,7 @@
         "context": 164000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.69552,
         "output": 2.78208,
@@ -85,6 +86,7 @@
         "context": 164000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.34776,
         "output": 0.5796,
@@ -277,6 +279,7 @@
         "context": 203000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.10124,
         "output": 3.36168,
@@ -326,6 +329,7 @@
         "context": 203000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.50696,
         "output": 4.6368,
@@ -469,6 +473,7 @@
         "context": 262000,
         "output": 262000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5796,
         "output": 2.95596,
@@ -522,9 +527,9 @@
         "output": 256000
       },
       "cost": {
-        "input": 0.81144,
-        "output": 4.0572,
-        "cache_read": 0.266616
+        "input": 0.78505,
+        "output": 3.3645,
+        "cache_read": 0.280375
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -574,9 +579,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.81144,
-        "output": 3.4776,
-        "cache_read": 0.220248
+        "input": 0.728975,
+        "output": 3.644875,
+        "cache_read": 0.190655
       },
       "canonical_model_id": "moonshotai/kimi-k2.7-code",
       "display_name": "Kimi K2.7 Code",
@@ -625,9 +630,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 3.1878,
-        "output": 15.939,
-        "cache_read": 0.788256
+        "input": 3.196275,
+        "output": 15.981375,
+        "cache_read": 0.841125
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",

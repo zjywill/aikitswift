@@ -73,6 +73,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.425,
         "output": 2.125
@@ -150,6 +151,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.0625,
         "output": 0.125
@@ -188,6 +190,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -264,6 +267,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -328,6 +332,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -418,6 +423,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.6001,
         "output": 5.0288
@@ -455,6 +461,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -495,6 +502,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.05,
         "output": 8.4
@@ -536,6 +544,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.8,
         "output": 10.8
@@ -577,6 +586,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -659,6 +669,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -735,6 +746,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.819,
         "output": 3.276
@@ -847,6 +859,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -886,6 +899,7 @@
         "input": 256000,
         "output": 256000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0

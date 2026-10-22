@@ -691,7 +691,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "knowledge": "2024-08",
       "release_date": "2025-03-12",
@@ -727,7 +727,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "knowledge": "2024-08",
       "release_date": "2025-03-12",
@@ -820,6 +820,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -1108,7 +1109,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2023-12",
@@ -1144,9 +1145,10 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2023-12",
       "release_date": "2024-09-25",
       "last_updated": "2024-09-25",
       "modalities": {
@@ -1215,7 +1217,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-08",
@@ -1252,7 +1254,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "temperature": true,
       "knowledge": "2024-08",
       "release_date": "2025-04-05",
@@ -1940,11 +1942,12 @@
       "id": "nousresearch/hermes-2-pro-llama-3-8b",
       "name": "Hermes 2 Pro Llama 3 8B",
       "description": "Llama 3 fine-tune optimized for function calling, structured JSON responses, and dialogue",
+      "family": "hermes",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
       "structured_output": true,
       "temperature": true,
       "release_date": "2024-04-30",
@@ -2041,6 +2044,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {

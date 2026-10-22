@@ -33,7 +33,8 @@
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "audio"
         ],
         "output": [
           "text"
@@ -83,7 +84,8 @@
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "audio"
         ],
         "output": [
           "text"
@@ -119,7 +121,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "audio"
         ],
         "output": [
           "text"
@@ -169,7 +172,8 @@
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "audio"
         ],
         "output": [
           "text"
@@ -219,7 +223,8 @@
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "audio"
         ],
         "output": [
           "text"
@@ -267,7 +272,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "audio"
         ],
         "output": [
           "text"

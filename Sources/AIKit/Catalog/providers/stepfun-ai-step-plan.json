@@ -7,6 +7,7 @@
       "id": "step-3.5-flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -51,6 +52,7 @@
       "id": "step-3.5-flash-2603",
       "name": "Step 3.5 Flash 2603",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,

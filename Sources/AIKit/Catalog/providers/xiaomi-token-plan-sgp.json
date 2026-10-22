@@ -51,6 +51,7 @@
     },
     {
       "id": "mimo-v2-tts",
+      "type": "speech",
       "name": "MiMo-V2-TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "mimo",
@@ -59,6 +60,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": false,
       "release_date": "2026-03-18",
       "last_updated": "2026-03-18",
       "modalities": {
@@ -69,17 +71,18 @@
           "audio"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 8192,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
-      "display_name": "MiMo-V2-TTS",
-      "type": "speech-synthesis"
+      "canonical_model_id": "xiaomi/mimo-v2-tts",
+      "display_name": "MiMo-V2-TTS"
     },
     {
       "id": "mimo-v2.5",
@@ -178,6 +181,7 @@
     },
     {
       "id": "mimo-v2.5-tts",
+      "type": "speech",
       "name": "MiMo-V2.5-TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "mimo",
@@ -186,6 +190,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": false,
       "release_date": "2026-04-22",
       "last_updated": "2026-04-22",
       "modalities": {
@@ -196,7 +201,7 @@
           "audio"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 8192,
         "output": 8192
@@ -205,11 +210,12 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "MiMo-V2.5-TTS",
-      "type": "speech-synthesis"
+      "canonical_model_id": "xiaomi/mimo-v2.5-tts",
+      "display_name": "MiMo-V2.5-TTS"
     },
     {
       "id": "mimo-v2.5-tts-voiceclone",
+      "type": "speech",
       "name": "MiMo-V2.5-TTS-VoiceClone",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "mimo",
@@ -218,6 +224,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": false,
       "release_date": "2026-04-22",
       "last_updated": "2026-04-22",
       "modalities": {
@@ -228,7 +235,7 @@
           "audio"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 8192,
         "output": 8192
@@ -237,11 +244,12 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "MiMo-V2.5-TTS-VoiceClone",
-      "type": "speech-synthesis"
+      "canonical_model_id": "xiaomi/mimo-v2.5-tts-voiceclone",
+      "display_name": "MiMo-V2.5-TTS-VoiceClone"
     },
     {
       "id": "mimo-v2.5-tts-voicedesign",
+      "type": "speech",
       "name": "MiMo-V2.5-TTS-VoiceDesign",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "mimo",
@@ -250,6 +258,7 @@
         "supported": false
       },
       "tool_call": false,
+      "temperature": false,
       "release_date": "2026-04-22",
       "last_updated": "2026-04-22",
       "modalities": {
@@ -260,7 +269,7 @@
           "audio"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 8192,
         "output": 8192
@@ -269,8 +278,8 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "MiMo-V2.5-TTS-VoiceDesign",
-      "type": "speech-synthesis"
+      "canonical_model_id": "xiaomi/mimo-v2.5-tts-voicedesign",
+      "display_name": "MiMo-V2.5-TTS-VoiceDesign"
     },
     {
       "id": "mimo-v2.6-flash",
@@ -291,6 +300,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -338,6 +348,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",

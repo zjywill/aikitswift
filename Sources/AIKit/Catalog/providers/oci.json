@@ -30,6 +30,7 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.72,
         "output": 0.72
@@ -136,6 +137,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -185,6 +187,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {

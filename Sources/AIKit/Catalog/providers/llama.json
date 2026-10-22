@@ -8,7 +8,7 @@
       "name": "Cerebras-Llama-4-Maverick-17B-128E-Instruct",
       "description": "Open multimodal Llama model for strong reasoning and fast responses",
       "family": "llama",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -30,10 +30,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Cerebras-Llama-4-Maverick-17B-128E-Instruct",
       "type": "chat"
     },
@@ -42,7 +44,7 @@
       "name": "Cerebras-Llama-4-Scout-17B-16E-Instruct",
       "description": "Open multimodal Llama model for long-context analysis and efficient agents",
       "family": "llama",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -64,10 +66,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-4-scout-17b-instruct",
       "display_name": "Cerebras-Llama-4-Scout-17B-16E-Instruct",
       "type": "chat"
     },
@@ -76,7 +80,7 @@
       "name": "Groq-Llama-4-Maverick-17B-128E-Instruct",
       "description": "Open multimodal Llama model for strong reasoning and fast responses",
       "family": "llama",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -98,10 +102,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Groq-Llama-4-Maverick-17B-128E-Instruct",
       "type": "chat"
     },
@@ -110,7 +116,7 @@
       "name": "Llama-3.3-70B-Instruct",
       "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
       "family": "llama",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -132,10 +138,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct",
       "type": "chat"
     },
@@ -144,7 +152,7 @@
       "name": "Llama-3.3-8B-Instruct",
       "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
       "family": "llama",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -166,6 +174,7 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
@@ -201,10 +210,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
       "type": "chat"
     },
@@ -236,10 +247,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "meta/llama-4-scout-17b-instruct",
       "display_name": "Llama-4-Scout-17B-16E-Instruct-FP8",
       "type": "chat"
     }

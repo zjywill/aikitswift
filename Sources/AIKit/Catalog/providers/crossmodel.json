@@ -78,6 +78,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-01",
@@ -410,6 +411,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-22",
@@ -574,6 +576,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-28",
@@ -646,6 +649,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2,
@@ -682,7 +686,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-21",
       "last_updated": "2026-09-01",
@@ -700,6 +704,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2,
@@ -2980,7 +2985,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-09-17",
       "last_updated": "2026-09-17",
@@ -3434,107 +3439,6 @@
       },
       "canonical_model_id": "xai/grok-build-0.1",
       "display_name": "Grok Build 0.1",
-      "type": "chat"
-    },
-    {
-      "id": "xiaomi/mimo-v2.5",
-      "name": "MiMo-V2.5",
-      "description": "Open MiMo model for multimodal coding agents and long-context automation",
-      "family": "mimo",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 0.16,
-        "output": 0.32,
-        "cache_read": 0.004,
-        "cache_write": 0.16
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5",
-      "display_name": "MiMo-V2.5",
-      "type": "chat"
-    },
-    {
-      "id": "xiaomi/mimo-v2.5-pro",
-      "name": "MiMo-V2.5-Pro",
-      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 128000
-      },
-      "cost": {
-        "input": 0.47,
-        "output": 0.94,
-        "cache_read": 0.005,
-        "cache_write": 0.47
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
-      "display_name": "MiMo-V2.5-Pro",
       "type": "chat"
     },
     {

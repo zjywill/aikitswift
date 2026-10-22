@@ -1600,6 +1600,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -2683,6 +2684,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2730,6 +2732,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -3666,6 +3669,7 @@
       "id": "mixtral-8x7B-instruct-v0.1",
       "name": "Mixtral 8x7B Instruct v0.1",
       "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "mistral",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -3675,7 +3679,6 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2023-09",
       "release_date": "2023-12-11",
       "last_updated": "2023-12-11",
       "modalities": {
@@ -3696,6 +3699,7 @@
         "input": 0.488,
         "output": 0.758
       },
+      "canonical_model_id": "mistral/mixtral-8x7b-instruct-v0.1",
       "display_name": "Mixtral 8x7B Instruct v0.1",
       "type": "chat"
     },
@@ -3929,43 +3933,6 @@
       "type": "chat"
     },
     {
-      "id": "pixtral-12b-2409",
-      "name": "pixtral-12b-2409",
-      "description": "Pixtral 2409 12B is a state-of-the-art multimodal model with 12B parameters and a 400M vision encoder, natively trained on interleaved text and image data. It excels in tasks spanning vision-language reasoning, instruction following, and pure text understanding, making it highly effective for real-world multimodal applications.",
-      "family": "pixtral",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2024-09",
-      "release_date": "2024-09-11",
-      "last_updated": "2024-09-11",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
-      "cost": {
-        "input": 0.223,
-        "output": 0.223
-      },
-      "canonical_model_id": "mistral/pixtral-12b",
-      "display_name": "pixtral-12b-2409",
-      "type": "chat"
-    },
-    {
       "id": "pixtral-large-2502",
       "name": "Pixtral Large (25.02)",
       "description": "Pixtral Large (25.02) is a 124B open-weight multimodal model built on Mistral Large 2, offering advanced image understanding and strong performance across text and code tasks.",
@@ -4081,6 +4048,7 @@
       "id": "qwen3-30b-a3b-instruct-2507",
       "name": "qwen3-30b-a3b-instruct-2507",
       "description": "Qwen3-30B-A3B-Instruct-2507 is an advanced Mixture-of-Experts model optimized for reasoning, coding, and multilingual instruction following.",
+      "family": "qwen",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -4100,7 +4068,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262000,
         "output": 262000
@@ -4109,6 +4077,7 @@
         "input": 0.099,
         "output": 0.299
       },
+      "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507",
       "display_name": "qwen3-30b-a3b-instruct-2507",
       "type": "chat"
     },

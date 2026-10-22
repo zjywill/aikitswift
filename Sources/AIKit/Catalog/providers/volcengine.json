@@ -117,7 +117,7 @@
       "name": "Seed 1.6",
       "description": "ByteDance Seed model for long-context reasoning, instruction following, and tool-assisted tasks",
       "family": "seed",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -146,7 +146,9 @@
       "last_updated": "2025-10-15",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -157,6 +159,7 @@
         "context": 256000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11875,
         "output": 1.18747,
@@ -212,7 +215,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -223,6 +227,7 @@
         "context": 256000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.02227,
         "output": 0.22265,
@@ -289,6 +294,7 @@
         "context": 256000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11875,
         "output": 1.18747,
@@ -364,6 +370,7 @@
         "context": 256000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11875,
         "output": 1.18747,
@@ -440,6 +447,7 @@
         "context": 262144,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.47499,
         "output": 2.37494,
@@ -668,6 +676,7 @@
         "context": 256000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.47499,
         "output": 2.37494,

@@ -26,6 +26,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2026-06-30",
       "release_date": "2026-10-05",
@@ -70,6 +71,9 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
       "release_date": "2026-04-24",
       "last_updated": "2026-04-24",
       "modalities": {
@@ -85,11 +89,13 @@
         "context": 1048576,
         "output": 1048576
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.22,
         "output": 0.66,
         "cache_read": 0.007
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "deepseek-v4-flash",
       "type": "chat"
     },
@@ -116,7 +122,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2026-07-31",
@@ -134,6 +140,7 @@
         "context": 1048576,
         "output": 1048576
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.22,
         "output": 0.66,
@@ -160,12 +167,16 @@
         {
           "type": "effort",
           "values": [
+            "low",
             "high",
             "max"
           ]
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
       "release_date": "2026-04-24",
       "last_updated": "2026-04-24",
       "modalities": {
@@ -186,6 +197,7 @@
         "output": 1.98,
         "cache_read": 0.022
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "deepseek-v4-pro",
       "type": "chat"
     },
@@ -206,13 +218,14 @@
         {
           "type": "effort",
           "values": [
+            "low",
             "high",
             "max"
           ]
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
@@ -265,7 +278,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2026-09-10",
@@ -320,7 +333,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2026-10-17",
@@ -364,9 +377,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
       "knowledge": "2025-01",
       "release_date": "2026-04-02",
-      "last_updated": "2026-04-08",
+      "last_updated": "2026-04-02",
       "modalities": {
         "input": [
           "text",
@@ -386,6 +401,7 @@
         "output": 0.4,
         "cache_read": 0.05
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "gemma4:31b",
       "type": "chat"
     },
@@ -408,7 +424,9 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "release_date": "2026-03-27",
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2026-04-07",
       "last_updated": "2026-04-07",
       "modalities": {
         "input": [
@@ -423,11 +441,13 @@
         "context": 202752,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "glm-5.1",
       "type": "chat"
     },
@@ -443,6 +463,9 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "high",
@@ -454,7 +477,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-06-13",
       "last_updated": "2026-06-13",
@@ -504,7 +527,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-14",
       "last_updated": "2026-08-14",
@@ -554,7 +577,7 @@
       "interleaved": {
         "field": "reasoning_content"
       },
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-26",
       "last_updated": "2026-08-26",
@@ -604,8 +627,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2026-01-19",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -624,6 +650,7 @@
         "output": 0.6,
         "cache_read": 0.014
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "gpt-oss:120b",
       "type": "chat"
     },
@@ -648,8 +675,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2026-01-19",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -668,6 +698,7 @@
         "output": 0.3,
         "cache_read": 0.035
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "gpt-oss:20b",
       "type": "chat"
     },
@@ -687,6 +718,9 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": false,
+      "knowledge": "2025-01",
       "release_date": "2026-01-27",
       "last_updated": "2026-01-27",
       "modalities": {
@@ -703,6 +737,8 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "kimi-k2.5",
       "type": "chat"
     },
@@ -722,6 +758,9 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-20",
       "last_updated": "2026-04-20",
       "modalities": {
@@ -743,6 +782,7 @@
         "output": 4,
         "cache_read": 0.16
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "kimi-k2.6",
       "type": "chat"
     },
@@ -762,7 +802,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": false,
       "knowledge": "2025-01",
       "release_date": "2026-06-12",
@@ -814,10 +854,10 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": false,
       "release_date": "2026-07-16",
-      "last_updated": "2026-07-27",
+      "last_updated": "2026-07-16",
       "modalities": {
         "input": [
           "text",
@@ -853,6 +893,8 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
       "knowledge": "2025-01",
       "release_date": "2026-02-12",
       "last_updated": "2026-02-12",
@@ -869,6 +911,8 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "minimax-m2.5",
       "type": "chat"
     },
@@ -882,12 +926,10 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
+      "reasoning_options": [],
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
       "release_date": "2026-03-18",
       "last_updated": "2026-03-18",
       "modalities": {
@@ -908,6 +950,7 @@
         "output": 1.2,
         "cache_read": 0.06
       },
+      "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "minimax-m2.7",
       "type": "chat"
     },
@@ -915,7 +958,7 @@
       "id": "minimax-m3",
       "name": "minimax-m3",
       "description": "MiniMax multimodal coding model for long-context reasoning and agent tasks",
-      "family": "minimax-m3",
+      "family": "minimax",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -936,10 +979,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-05-31",
-      "last_updated": "2026-05-31",
+      "release_date": "2026-06-01",
+      "last_updated": "2026-06-01",
       "modalities": {
         "input": [
           "text",
@@ -960,6 +1004,7 @@
         "output": 2.4,
         "cache_read": 0.12
       },
+      "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "minimax-m3",
       "type": "chat"
     },
@@ -986,6 +1031,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
@@ -1023,8 +1069,11 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2024-11",
       "release_date": "2025-12-02",
-      "last_updated": "2026-01-19",
+      "last_updated": "2025-12-02",
       "modalities": {
         "input": [
           "text",
@@ -1043,6 +1092,7 @@
         "input": 0.5,
         "output": 1.5
       },
+      "canonical_model_id": "mistral/mistral-large-2512",
       "display_name": "mistral-large-3:675b",
       "type": "chat"
     },
@@ -1066,7 +1116,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-10-06",
       "last_updated": "2026-10-06",
@@ -1085,9 +1135,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 1.36,
-        "output": 4.18,
-        "cache_read": 0.14
+        "input": 0.68,
+        "output": 2.09,
+        "cache_read": 0.07
       },
       "canonical_model_id": "mistral/mistral-large-4",
       "display_name": "Mistral Large 4",
@@ -1105,17 +1155,20 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
             "medium",
             "high",
-            "xhigh"
+            "max"
           ]
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2026-01-04",
       "release_date": "2026-10-15",
@@ -1159,10 +1212,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-06-25",
       "release_date": "2025-12-15",
-      "last_updated": "2026-01-19",
+      "last_updated": "2025-12-15",
       "modalities": {
         "input": [
           "text"
@@ -1200,10 +1254,11 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-06",
       "release_date": "2026-03-11",
-      "last_updated": "2026-03-12",
+      "last_updated": "2026-03-11",
       "modalities": {
         "input": [
           "text"
@@ -1242,6 +1297,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-09",
       "release_date": "2026-06-04",
@@ -1287,8 +1343,10 @@
       "interleaved": {
         "field": "reasoning_details"
       },
+      "structured_output": false,
+      "temperature": true,
       "release_date": "2026-02-15",
-      "last_updated": "2026-02-17",
+      "last_updated": "2026-02-15",
       "modalities": {
         "input": [
           "text",
@@ -1303,10 +1361,12 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 3.6
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "qwen3.5:397b",
       "type": "chat"
     }

@@ -15,8 +15,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-12",
-      "release_date": "2025-01-15",
-      "last_updated": "2025-01-15",
+      "release_date": "2025-07-22",
+      "last_updated": "2025-07-22",
       "modalities": {
         "input": [
           "text"
@@ -31,11 +31,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.22,
-        "output": 0.95,
-        "cache_read": 0.11,
-        "cache_write": 0.44
+        "input": 0.46125,
+        "output": 2.29375,
+        "cache_read": 0.230625
       },
+      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen 3 Coder 480B",
       "type": "chat"
     },
@@ -44,7 +44,7 @@
       "name": "Qwen 2.5 VL 32B Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -67,6 +67,7 @@
         "context": 32000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.05,
         "output": 0.22,
@@ -90,8 +91,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-12",
-      "release_date": "2025-07-01",
-      "last_updated": "2025-07-01",
+      "release_date": "2025-07-25",
+      "last_updated": "2025-07-25",
       "modalities": {
         "input": [
           "text"
@@ -105,12 +106,14 @@
         "context": 262144,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11,
         "output": 0.6,
         "cache_read": 0.055,
         "cache_write": 0.22
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507",
       "display_name": "Qwen 3 235B Thinking",
       "type": "chat"
     },
@@ -126,8 +129,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-12",
-      "release_date": "2025-01-10",
-      "last_updated": "2025-01-10",
+      "release_date": "2025-09",
+      "last_updated": "2025-09",
       "modalities": {
         "input": [
           "text"
@@ -142,11 +145,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.8,
-        "cache_read": 0.05,
-        "cache_write": 0.2
+        "input": 0.11875,
+        "output": 1.2625,
+        "cache_read": 0.059375
       },
+      "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen 3 Next 80B Instruct",
       "type": "chat"
     },
@@ -164,7 +167,7 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-07",
-      "release_date": "2025-01-20",
+      "release_date": "2025-05-28",
       "last_updated": "2025-05-28",
       "modalities": {
         "input": [
@@ -180,11 +183,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 2,
-        "output": 8.75,
-        "cache_read": 1,
-        "cache_write": 4
+        "input": 0.523667,
+        "output": 2.205333,
+        "cache_read": 0.261834
       },
+      "canonical_model_id": "deepseek/deepseek-r1-0528",
       "display_name": "DeepSeek R1",
       "type": "chat"
     },
@@ -193,7 +196,7 @@
       "name": "Llama 3.2 90B Vision Instruct",
       "description": "Open Llama multimodal model for image understanding and text reasoning",
       "family": "llama",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -216,6 +219,7 @@
         "context": 16000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.35,
         "output": 0.4,
@@ -253,11 +257,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.38,
-        "cache_read": 0.065,
-        "cache_write": 0.26
+        "input": 0.5466,
+        "output": 1.0226,
+        "cache_read": 0.2733
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70B Instruct",
       "type": "chat"
     },
@@ -266,15 +270,15 @@
       "name": "Llama 4 Maverick 17B 128E Instruct",
       "description": "Open multimodal Llama model for strong reasoning and fast responses",
       "family": "llama",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-12",
-      "release_date": "2025-01-15",
-      "last_updated": "2025-01-15",
+      "release_date": "2025-04-05",
+      "last_updated": "2025-04-05",
       "modalities": {
         "input": [
           "text",
@@ -290,11 +294,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.075,
-        "cache_write": 0.3
+        "input": 0.26875,
+        "output": 0.82625,
+        "cache_read": 0.134375
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama 4 Maverick 17B 128E Instruct",
       "type": "chat"
     },
@@ -325,6 +329,7 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.05,
         "output": 0.22,
@@ -338,7 +343,7 @@
       "id": "mistralai/Magistral-Small-2506",
       "name": "Magistral Small 2506",
       "description": "Mistral reasoning model for transparent analysis, math, and complex decisions",
-      "family": "magistral-small",
+      "family": "magistral",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -346,8 +351,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2025-06-01",
-      "last_updated": "2025-06-01",
+      "release_date": "2025-06-10",
+      "last_updated": "2025-06-10",
       "modalities": {
         "input": [
           "text"
@@ -356,17 +361,19 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 1.5,
         "cache_read": 0.25,
         "cache_write": 1
       },
+      "canonical_model_id": "mistral/magistral-small-2506",
       "display_name": "Magistral Small 2506",
       "type": "chat"
     },
@@ -382,28 +389,29 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-10",
-      "release_date": "2024-11-01",
-      "last_updated": "2024-11-01",
+      "release_date": "2024-11-18",
+      "last_updated": "2024-11-18",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 6,
         "cache_read": 1,
         "cache_write": 4
       },
+      "canonical_model_id": "mistral/mistral-large-2411",
       "display_name": "Mistral Large Instruct 2411",
       "type": "chat"
     },
@@ -419,8 +427,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-05",
-      "release_date": "2024-07-01",
-      "last_updated": "2024-07-01",
+      "release_date": "2024-07-18",
+      "last_updated": "2024-07-18",
       "modalities": {
         "input": [
           "text"
@@ -435,11 +443,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.02,
-        "output": 0.04,
-        "cache_read": 0.01,
-        "cache_write": 0.04
+        "input": 0.0514,
+        "output": 0.082,
+        "cache_read": 0.0257
       },
+      "canonical_model_id": "mistral/mistral-nemo",
       "display_name": "Mistral Nemo Instruct 2407",
       "type": "chat"
     },
@@ -455,8 +463,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-08",
-      "release_date": "2024-09-05",
-      "last_updated": "2024-09-05",
+      "release_date": "2025-09-05",
+      "last_updated": "2025-09-05",
       "modalities": {
         "input": [
           "text"
@@ -465,17 +473,17 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 32768,
         "output": 4096
       },
       "cost": {
-        "input": 0.39,
-        "output": 1.9,
-        "cache_read": 0.195,
-        "cache_write": 0.78
+        "input": 0.57,
+        "output": 2.3,
+        "cache_read": 0.285
       },
+      "canonical_model_id": "moonshotai/kimi-k2-0905",
       "display_name": "Kimi K2 Instruct",
       "type": "chat"
     },
@@ -493,8 +501,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-08",
-      "release_date": "2024-11-01",
-      "last_updated": "2024-11-01",
+      "release_date": "2025-11-06",
+      "last_updated": "2025-11-06",
       "modalities": {
         "input": [
           "text"
@@ -503,17 +511,17 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 32768,
         "output": 4096
       },
       "cost": {
-        "input": 0.55,
-        "output": 2.25,
-        "cache_read": 0.275,
-        "cache_write": 1.1
+        "input": 0.6,
+        "output": 2.5,
+        "cache_read": 0.3
       },
+      "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking",
       "type": "chat"
     },
@@ -524,13 +532,24 @@
       "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-10",
-      "release_date": "2024-12-01",
-      "last_updated": "2024-12-01",
+      "release_date": "2025-08-05",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -545,11 +564,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.4,
-        "cache_read": 0.02,
-        "cache_write": 0.08
+        "input": 0.188,
+        "output": 0.7,
+        "cache_read": 0.094
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT-OSS 120B",
       "type": "chat"
     },
@@ -560,13 +579,24 @@
       "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-10",
-      "release_date": "2024-12-01",
-      "last_updated": "2024-12-01",
+      "release_date": "2025-08-05",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -581,11 +611,11 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.03,
-        "output": 0.14,
-        "cache_read": 0.015,
-        "cache_write": 0.06
+        "input": 0.055,
+        "output": 0.194,
+        "cache_read": 0.0275
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT-OSS 20B",
       "type": "chat"
     },
@@ -596,13 +626,25 @@
       "family": "glm",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-10",
-      "release_date": "2024-11-15",
-      "last_updated": "2024-11-15",
+      "release_date": "2025-09-30",
+      "last_updated": "2025-09-30",
       "modalities": {
         "input": [
           "text"
@@ -611,17 +653,17 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 200000,
         "output": 4096
       },
       "cost": {
-        "input": 0.4,
-        "output": 1.75,
-        "cache_read": 0.2,
-        "cache_write": 0.8
+        "input": 0.52,
+        "output": 2.0375,
+        "cache_read": 0.26
       },
+      "canonical_model_id": "zhipuai/glm-4.6",
       "display_name": "GLM 4.6",
       "type": "chat"
     }

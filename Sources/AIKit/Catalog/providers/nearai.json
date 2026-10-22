@@ -5,17 +5,18 @@
   "models": [
     {
       "id": "Qwen/Qwen3-Embedding-0.6B",
+      "type": "embedding",
       "name": "Qwen3 Embedding 0.6B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "text-embedding",
+      "family": "qwen",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2025-06-03",
-      "last_updated": "2025-06-03",
+      "release_date": "2025-06-05",
+      "last_updated": "2025-06-05",
       "modalities": {
         "input": [
           "text"
@@ -33,11 +34,12 @@
         "input": 0.01,
         "output": 0.01
       },
-      "display_name": "Qwen3 Embedding 0.6B",
-      "type": "other"
+      "canonical_model_id": "alibaba/qwen3-embedding-0.6b",
+      "display_name": "Qwen3 Embedding 0.6B"
     },
     {
       "id": "Qwen/Qwen3-Reranker-0.6B",
+      "type": "reranking",
       "name": "Qwen3 Reranker 0.6B",
       "description": "Reranking model for improving retrieval quality in search and recommendation systems",
       "family": "qwen",
@@ -47,8 +49,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2025-06-03",
-      "last_updated": "2025-06-03",
+      "release_date": "2025-06-05",
+      "last_updated": "2025-06-05",
       "modalities": {
         "input": [
           "text"
@@ -66,8 +68,8 @@
         "input": 0.01,
         "output": 0.01
       },
-      "display_name": "Qwen3 Reranker 0.6B",
-      "type": "chat"
+      "canonical_model_id": "alibaba/qwen3-reranker-0.6b",
+      "display_name": "Qwen3 Reranker 0.6B"
     },
     {
       "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
@@ -81,8 +83,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-09-23",
-      "last_updated": "2025-09-23",
+      "release_date": "2025-10-04",
+      "last_updated": "2025-10-04",
       "modalities": {
         "input": [
           "text",
@@ -102,6 +104,7 @@
         "output": 0.55,
         "cache_read": 0.03
       },
+      "canonical_model_id": "alibaba/qwen3-vl-30b-a3b-instruct",
       "display_name": "Qwen3-VL 30B-A3B Instruct",
       "type": "chat"
     },
@@ -110,7 +113,7 @@
       "name": "Qwen 3.6 35B A3B FP8",
       "description": "Open multimodal Qwen MoE for local agents that need vision, audio, and code",
       "family": "qwen",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -800,20 +803,22 @@
     },
     {
       "id": "black-forest-labs/FLUX.2-klein-4B",
+      "type": "image",
       "name": "FLUX.2 Klein 4B",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "flux",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
-      "temperature": true,
-      "release_date": "2026-01-14",
-      "last_updated": "2026-01-14",
+      "temperature": false,
+      "release_date": "2026-01-15",
+      "last_updated": "2026-01-15",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "image"
@@ -821,15 +826,11 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "output": 128000
+        "context": 0,
+        "output": 0
       },
-      "cost": {
-        "input": 1,
-        "output": 1
-      },
-      "display_name": "FLUX.2 Klein 4B",
-      "type": "image-generation"
+      "canonical_model_id": "black-forest-labs/flux-2-klein-4b",
+      "display_name": "FLUX.2 Klein 4B"
     },
     {
       "id": "deepseek/deepseek-v3.2",
@@ -2381,15 +2382,16 @@
     },
     {
       "id": "openai/whisper-large-v3",
+      "type": "transcription",
       "name": "Whisper Large v3",
       "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
       "family": "whisper",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
-      "temperature": false,
+      "temperature": true,
       "release_date": "2023-11-06",
       "last_updated": "2023-11-06",
       "modalities": {
@@ -2409,8 +2411,8 @@
         "input": 0.01,
         "output": 0.01
       },
-      "display_name": "Whisper Large v3",
-      "type": "speech-transcription"
+      "canonical_model_id": "openai/whisper-large-v3",
+      "display_name": "Whisper Large v3"
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",

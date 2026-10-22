@@ -298,8 +298,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05",
-      "release_date": "2025-11-01",
-      "last_updated": "2025-11-01",
+      "release_date": "2025-11-24",
+      "last_updated": "2025-11-24",
       "modalities": {
         "input": [
           "text",
@@ -787,8 +787,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2026-06-10",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -835,7 +836,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-14",
-      "last_updated": "2026-09-03",
+      "last_updated": "2026-08-14",
       "modalities": {
         "input": [
           "text",
@@ -1704,6 +1705,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -1780,8 +1782,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2025-10-21",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -1827,8 +1830,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2025-09-25",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -1893,7 +1897,8 @@
       },
       "cost": {
         "input": 0.8,
-        "output": 4
+        "output": 4,
+        "cache_read": 0.4
       },
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
@@ -1927,6 +1932,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2,
@@ -1965,6 +1971,7 @@
         "context": 204800,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 2.4,
@@ -2078,6 +2085,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-11",
       "release_date": "2025-12-02",
@@ -2098,7 +2106,8 @@
       },
       "cost": {
         "input": 0.5,
-        "output": 1.5
+        "output": 1.5,
+        "cache_read": 0.05
       },
       "canonical_model_id": "mistral/mistral-large-2512",
       "display_name": "Mistral Large 3",
@@ -2114,6 +2123,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2024-11",
       "release_date": "2024-11-01",
@@ -2134,7 +2144,8 @@
       },
       "cost": {
         "input": 0.5,
-        "output": 1.5
+        "output": 1.5,
+        "cache_read": 0.05
       },
       "canonical_model_id": "mistral/mistral-large-latest",
       "display_name": "Mistral Large (latest)",
@@ -2180,7 +2191,8 @@
       },
       "cost": {
         "input": 1.5,
-        "output": 7.5
+        "output": 7.5,
+        "cache_read": 0.15
       },
       "canonical_model_id": "mistral/mistral-medium-2604",
       "display_name": "Mistral Medium 3.5",
@@ -2226,7 +2238,8 @@
       },
       "cost": {
         "input": 1.5,
-        "output": 7.5
+        "output": 7.5,
+        "cache_read": 0.15
       },
       "canonical_model_id": "mistral/mistral-medium-latest",
       "display_name": "Mistral Medium (latest)",
@@ -2252,6 +2265,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-06",
       "release_date": "2026-03-16",
@@ -2272,7 +2286,8 @@
       },
       "cost": {
         "input": 0.15,
-        "output": 0.6
+        "output": 0.6,
+        "cache_read": 0.015
       },
       "canonical_model_id": "mistral/mistral-small-2603",
       "display_name": "Mistral Small 4",
@@ -2298,6 +2313,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-06",
       "release_date": "2026-03-16",
@@ -2318,7 +2334,8 @@
       },
       "cost": {
         "input": 0.15,
-        "output": 0.6
+        "output": 0.6,
+        "cache_read": 0.015
       },
       "canonical_model_id": "mistral/mistral-small-latest",
       "display_name": "Mistral Small (latest)",
@@ -2334,6 +2351,7 @@
         "supported": false
       },
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-07-15",
       "last_updated": "2025-07-15",
@@ -2353,7 +2371,7 @@
       },
       "cost": {
         "input": 0.1,
-        "output": 0.3
+        "output": 0.4
       },
       "canonical_model_id": "mistral/voxtral-small-latest",
       "display_name": "Voxtral Small (latest)",
@@ -2397,7 +2415,7 @@
         "context": 1000000,
         "output": 131072
       },
-      "status": "beta",
+      "status": "deprecated",
       "cost": {
         "input": 1.4,
         "output": 4.4,
@@ -2471,7 +2489,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2025-01",
       "release_date": "2026-04-20",
       "last_updated": "2026-04-20",
@@ -2627,7 +2645,8 @@
       "cost": {
         "input": 3,
         "output": 15,
-        "cache_read": 0.3
+        "cache_read": 0.3,
+        "cache_write": 3
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -2760,7 +2779,8 @@
             "none",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -2825,7 +2845,8 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -3362,7 +3383,8 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 1.8
+        "output": 1.8,
+        "cache_read": 0.11
       },
       "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM-4.5V",
@@ -3448,7 +3470,8 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 0.9
+        "output": 0.9,
+        "cache_read": 0.05
       },
       "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V",
@@ -3769,6 +3792,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "high",
             "max"
           ]

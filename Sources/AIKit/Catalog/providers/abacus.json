@@ -90,8 +90,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2024-11-28",
-      "last_updated": "2024-11-28",
+      "knowledge": "2024-04",
+      "release_date": "2025-03-05",
+      "last_updated": "2025-03-05",
       "modalities": {
         "input": [
           "text"
@@ -105,10 +106,12 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.4,
         "output": 0.4
       },
+      "canonical_model_id": "alibaba/qwq-32b",
       "display_name": "QwQ 32B",
       "type": "chat"
     },
@@ -138,6 +141,7 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11,
         "output": 0.38
@@ -152,14 +156,12 @@
       "family": "qwen",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-07-01",
-      "last_updated": "2025-07-01",
+      "release_date": "2025-07-21",
+      "last_updated": "2025-07-21",
       "modalities": {
         "input": [
           "text"
@@ -173,10 +175,12 @@
         "context": 262144,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.13,
         "output": 0.6
       },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B A22B Instruct",
       "type": "chat"
     },
@@ -210,8 +214,8 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.09,
-        "output": 0.29
+        "input": 0.08,
+        "output": 0.28
       },
       "canonical_model_id": "alibaba/qwen3-32b",
       "display_name": "Qwen3 32B",
@@ -245,8 +249,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.29,
-        "output": 1.2
+        "input": 0.38,
+        "output": 1.55
       },
       "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen3-Coder 480B-A35B Instruct",
@@ -257,7 +261,7 @@
       "name": "Qwen3.6 27B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -320,10 +324,12 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15
       },
+      "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219",
       "display_name": "Claude Sonnet 3.7",
       "type": "chat"
     },
@@ -416,6 +422,7 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-03-31",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -433,10 +440,12 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1-20250805",
       "display_name": "Claude Opus 4.1",
       "type": "chat"
     },
@@ -453,8 +462,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-05-14",
-      "last_updated": "2025-05-14",
+      "knowledge": "2025-03-31",
+      "release_date": "2025-05-22",
+      "last_updated": "2025-05-22",
       "modalities": {
         "input": [
           "text",
@@ -470,10 +480,12 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-20250514",
       "display_name": "Claude Opus 4",
       "type": "chat"
     },
@@ -491,8 +503,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-05",
-      "release_date": "2025-11-01",
-      "last_updated": "2025-11-01",
+      "release_date": "2025-11-24",
+      "last_updated": "2025-11-24",
       "modalities": {
         "input": [
           "text",
@@ -680,8 +692,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-05-14",
-      "last_updated": "2025-05-14",
+      "knowledge": "2025-03-31",
+      "release_date": "2025-05-22",
+      "last_updated": "2025-05-22",
       "modalities": {
         "input": [
           "text",
@@ -697,10 +710,12 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-20250514",
       "display_name": "Claude Sonnet 4",
       "type": "chat"
     },
@@ -811,8 +826,8 @@
         "output": 64000
       },
       "cost": {
-        "input": 3,
-        "output": 15
+        "input": 2,
+        "output": 10
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
@@ -831,8 +846,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2024-07",
       "release_date": "2025-01-20",
-      "last_updated": "2025-01-20",
+      "last_updated": "2025-05-29",
       "modalities": {
         "input": [
           "text"
@@ -846,10 +862,12 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 7
       },
+      "canonical_model_id": "deepseek/deepseek-r1",
       "display_name": "DeepSeek R1",
       "type": "chat"
     },
@@ -881,6 +899,7 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.27,
         "output": 1
@@ -901,8 +920,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-06-15",
-      "last_updated": "2025-06-15",
+      "knowledge": "2024-07",
+      "release_date": "2025-12-01",
+      "last_updated": "2025-12-01",
       "modalities": {
         "input": [
           "text"
@@ -916,10 +936,12 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.27,
         "output": 0.4
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2",
       "type": "chat"
     },
@@ -953,6 +975,7 @@
         "context": 1000000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
@@ -992,6 +1015,7 @@
         "context": 1000000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.74,
         "output": 3.48,
@@ -1014,8 +1038,8 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-01-20",
-      "last_updated": "2025-01-20",
+      "release_date": "2025-08-21",
+      "last_updated": "2025-08-21",
       "modalities": {
         "input": [
           "text"
@@ -1029,10 +1053,12 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.55,
         "output": 1.66
       },
+      "canonical_model_id": "deepseek/deepseek-v3.1",
       "display_name": "DeepSeek V3.1",
       "type": "chat"
     },
@@ -1270,6 +1296,7 @@
         "context": 65536,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 12,
@@ -1310,6 +1337,7 @@
         "context": 1048576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 3
@@ -1349,6 +1377,7 @@
         "context": 1048576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 3
@@ -1401,7 +1430,7 @@
       "id": "gemini-3.1-flash-lite-preview",
       "name": "Gemini 3.1 Flash Lite Preview",
       "description": "Low-latency Gemini model for high-volume multimodal and agent workloads",
-      "family": "gemini-flash",
+      "family": "gemini-flash-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1411,14 +1440,15 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-03-01",
-      "last_updated": "2026-03-01",
+      "knowledge": "2025-01",
+      "release_date": "2026-03-03",
+      "last_updated": "2026-03-03",
       "modalities": {
         "input": [
           "text",
           "image",
-          "audio",
           "video",
+          "audio",
           "pdf"
         ],
         "output": [
@@ -1430,12 +1460,14 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 1.5,
         "cache_read": 0.025,
         "cache_write": 1
       },
+      "canonical_model_id": "google/gemini-3.1-flash-lite-preview",
       "display_name": "Gemini 3.1 Flash Lite Preview",
       "type": "chat"
     },
@@ -1595,9 +1627,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 1.5,
-        "output": 7.5,
-        "cache_read": 0.15
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       },
       "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash",
@@ -1659,6 +1691,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -1852,8 +1885,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "audio"
+          "image"
         ],
         "output": [
           "text"
@@ -1864,10 +1896,12 @@
         "context": 128000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.5,
         "output": 10
       },
+      "canonical_model_id": "openai/gpt-4o-2024-11-20",
       "display_name": "GPT-4o (2024-11-20)",
       "type": "chat"
     },
@@ -1981,6 +2015,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -2143,10 +2178,12 @@
         "context": 400000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10
       },
+      "canonical_model_id": "openai/gpt-5.1-chat-latest",
       "display_name": "GPT-5.1 Chat Latest",
       "type": "chat"
     },
@@ -2182,6 +2219,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -2195,7 +2233,7 @@
       "id": "gpt-5.1-codex-max",
       "name": "GPT-5.1 Codex Max",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "family": "gpt",
+      "family": "gpt-codex",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2223,10 +2261,12 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10
       },
+      "canonical_model_id": "openai/gpt-5.1-codex-max",
       "display_name": "GPT-5.1 Codex Max",
       "type": "chat"
     },
@@ -2285,8 +2325,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2024-09-30",
-      "release_date": "2026-01-01",
-      "last_updated": "2026-01-01",
+      "release_date": "2025-12-11",
+      "last_updated": "2025-12-11",
       "modalities": {
         "input": [
           "text",
@@ -2301,10 +2341,12 @@
         "context": 400000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14
       },
+      "canonical_model_id": "openai/gpt-5.2-chat-latest",
       "display_name": "GPT-5.2 Chat Latest",
       "type": "chat"
     },
@@ -2340,6 +2382,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14,
@@ -2356,14 +2399,13 @@
       "family": "gpt",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2026-03-01",
-      "last_updated": "2026-03-01",
+      "knowledge": "2025-08-31",
+      "release_date": "2026-03-03",
+      "last_updated": "2026-03-03",
       "modalities": {
         "input": [
           "text",
@@ -2378,10 +2420,12 @@
         "context": 400000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14
       },
+      "canonical_model_id": "openai/gpt-5.3-chat-latest",
       "display_name": "GPT-5.3 Chat Latest",
       "type": "chat"
     },
@@ -2420,7 +2464,7 @@
       "cost": {
         "input": 1.75,
         "output": 14,
-        "cache_read": 0.18
+        "cache_read": 0.175
       },
       "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex",
@@ -2430,7 +2474,7 @@
       "id": "gpt-5.3-codex-xhigh",
       "name": "GPT-5.3 Codex XHigh",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "family": "gpt",
+      "family": "gpt-codex",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2459,10 +2503,12 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14
       },
+      "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex XHigh",
       "type": "chat"
     },
@@ -2660,9 +2706,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 1,
-        "output": 6,
-        "cache_read": 0.1
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02
       },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
@@ -2700,9 +2746,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 5,
-        "output": 30,
-        "cache_read": 0.5
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4
       },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
@@ -2740,9 +2786,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.5,
-        "output": 15,
-        "cache_read": 0.25
+        "input": 2,
+        "output": 12,
+        "cache_read": 0.2
       },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
@@ -2777,6 +2823,7 @@
         "context": 256000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15
@@ -2811,6 +2858,7 @@
         "context": 2000000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.5
@@ -2829,8 +2877,8 @@
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-07-09",
-      "last_updated": "2025-07-09",
+      "release_date": "2025-12-18",
+      "last_updated": "2025-12-18",
       "modalities": {
         "input": [
           "text",
@@ -2845,10 +2893,12 @@
         "context": 2000000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.5
       },
+      "canonical_model_id": "xai/grok-4-fast-non-reasoning",
       "display_name": "Grok 4 Fast (Non-Reasoning)",
       "type": "chat"
     },
@@ -2923,7 +2973,8 @@
       },
       "cost": {
         "input": 2,
-        "output": 6
+        "output": 6,
+        "cache_read": 0.3
       },
       "canonical_model_id": "xai/grok-4.5",
       "display_name": "Grok 4.5",
@@ -2974,18 +3025,17 @@
       "name": "Grok Code Fast 1",
       "description": "Fast Grok model for responsive chat, reasoning, and tool-assisted work",
       "family": "grok",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-09-01",
-      "last_updated": "2025-09-01",
+      "release_date": "2025-09-02",
+      "last_updated": "2025-09-02",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -2996,10 +3046,12 @@
         "context": 256000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 1.5
       },
+      "canonical_model_id": "xai/grok-code-fast-1",
       "display_name": "Grok Code Fast 1",
       "type": "chat"
     },
@@ -3029,6 +3081,7 @@
         "context": 256000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 8
@@ -3041,7 +3094,7 @@
       "name": "Kimi K2.5",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
       "family": "kimi-k2",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -3051,8 +3104,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-01",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -3068,10 +3121,12 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 3
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5",
       "type": "chat"
     },
@@ -3086,6 +3141,7 @@
       },
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2023-12",
       "release_date": "2024-12-06",
       "last_updated": "2024-12-06",
       "modalities": {
@@ -3101,10 +3157,12 @@
         "context": 128000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.59,
         "output": 0.79
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70B Versatile",
       "type": "chat"
     },
@@ -3136,6 +3194,7 @@
         "context": 1048576,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.59
@@ -3170,6 +3229,7 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 3.5,
         "output": 3.5
@@ -3188,6 +3248,7 @@
       },
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2023-12",
       "release_date": "2024-07-23",
       "last_updated": "2024-07-23",
       "modalities": {
@@ -3203,10 +3264,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.02,
         "output": 0.05
       },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
       "display_name": "Llama 3.1 8B Instruct",
       "type": "chat"
     },
@@ -3237,6 +3300,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.59,
         "output": 0.79
@@ -3318,7 +3382,7 @@
       "cost": {
         "input": 0.95,
         "output": 4,
-        "cache_read": 0.19
+        "cache_read": 0.16
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -3598,7 +3662,7 @@
       },
       "cost": {
         "input": 20,
-        "output": 40
+        "output": 80
       },
       "canonical_model_id": "openai/o3-pro",
       "display_name": "o3-pro",
@@ -3657,6 +3721,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -3673,8 +3738,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.08,
-        "output": 0.44
+        "input": 0.037,
+        "output": 0.17
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
@@ -3691,8 +3756,8 @@
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2024-11-11",
-      "last_updated": "2024-11-11",
+      "release_date": "2024-11-12",
+      "last_updated": "2024-11-12",
       "modalities": {
         "input": [
           "text"
@@ -3706,10 +3771,12 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.79,
         "output": 0.79
       },
+      "canonical_model_id": "alibaba/qwen2.5-coder-32b-instruct",
       "display_name": "Qwen 2.5 Coder 32B",
       "type": "chat"
     },
@@ -3726,8 +3793,9 @@
       "reasoning_options": [],
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-05-28",
-      "last_updated": "2025-05-28",
+      "knowledge": "2025-04",
+      "release_date": "2025-09-23",
+      "last_updated": "2025-09-23",
       "modalities": {
         "input": [
           "text"
@@ -3741,10 +3809,12 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.2,
         "output": 6
       },
+      "canonical_model_id": "alibaba/qwen3-max",
       "display_name": "Qwen3 Max",
       "type": "chat"
     },
@@ -3816,7 +3886,8 @@
       },
       "cost": {
         "input": 2,
-        "output": 6
+        "output": 6,
+        "cache_read": 0.25
       },
       "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max",
@@ -3850,8 +3921,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 3,
-        "output": 15
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1
       },
       "display_name": "RouteLLM",
       "type": "chat"
@@ -3923,6 +3995,7 @@
         "context": 131072,
         "output": 96000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 2.2
@@ -3961,7 +4034,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.6,
+        "input": 0.55,
         "output": 2.2
       },
       "canonical_model_id": "zhipuai/glm-4.6",
@@ -4071,7 +4144,7 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.4,
+        "input": 1.38,
         "output": 4.4,
         "cache_read": 0.26
       },

@@ -34,7 +34,7 @@
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-05-04",
-      "last_updated": "2026-07-24",
+      "last_updated": "2026-07-30",
       "modalities": {
         "input": [
           "text",
@@ -125,7 +125,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-05-04",
-      "last_updated": "2026-07-15",
+      "last_updated": "2026-10-06",
       "modalities": {
         "input": [
           "text"
@@ -269,7 +269,7 @@
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-05-04",
-      "last_updated": "2026-07-24",
+      "last_updated": "2026-07-30",
       "modalities": {
         "input": [
           "text",
@@ -360,7 +360,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-05-04",
-      "last_updated": "2026-07-15",
+      "last_updated": "2026-10-06",
       "modalities": {
         "input": [
           "text"
@@ -482,8 +482,8 @@
           "type": "effort",
           "values": [
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -494,7 +494,7 @@
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-07-06",
-      "last_updated": "2026-07-06",
+      "last_updated": "2026-08-18",
       "modalities": {
         "input": [
           "text"
@@ -505,9 +505,9 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
-        "input": 922000,
-        "output": 128000
+        "context": 1048576,
+        "input": 917504,
+        "output": 131072
       },
       "display_name": "GLM Latest",
       "type": "chat"
@@ -555,6 +555,51 @@
         "output": 128000
       },
       "display_name": "GPT Sol Latest",
+      "type": "chat"
+    },
+    {
+      "id": "kimi-latest",
+      "name": "Kimi Latest",
+      "description": "Lab latest market for Kimi supply. You contract for the latest qualifying route, not a specific model.",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-07-06",
+      "last_updated": "2026-07-06",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "input": 922000,
+        "output": 943718
+      },
+      "display_name": "Kimi Latest",
       "type": "chat"
     },
     {
@@ -632,7 +677,7 @@
       "structured_output": true,
       "temperature": false,
       "release_date": "2026-02-26",
-      "last_updated": "2026-07-24",
+      "last_updated": "2026-07-30",
       "modalities": {
         "input": [
           "text",
@@ -721,7 +766,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-02-26",
-      "last_updated": "2026-07-15",
+      "last_updated": "2026-10-06",
       "modalities": {
         "input": [
           "text"

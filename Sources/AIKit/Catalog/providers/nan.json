@@ -13,7 +13,20 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -105,9 +118,11 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high",
+            "xhigh",
             "max"
           ]
         }
@@ -152,9 +167,11 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high",
+            "xhigh",
             "max"
           ]
         }
@@ -196,7 +213,18 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "temperature": true,
       "release_date": "2026-09-22",
@@ -317,7 +345,20 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -334,7 +375,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 262144,
+        "context": 1048576,
         "output": 131072
       },
       "cost": {

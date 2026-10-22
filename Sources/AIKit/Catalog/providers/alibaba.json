@@ -1130,7 +1130,7 @@
       "name": "Qwen3-ASR Flash",
       "description": "Speech transcription model for accurate audio-to-text and captioning workflows",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1151,10 +1151,6 @@
       "limit": {
         "context": 53248,
         "output": 4096
-      },
-      "cost": {
-        "input": 0.035,
-        "output": 0.035
       },
       "display_name": "Qwen3-ASR Flash"
     },

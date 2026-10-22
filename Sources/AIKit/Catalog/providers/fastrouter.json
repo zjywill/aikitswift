@@ -62,9 +62,14 @@
       },
       "reasoning_options": [
         {
-          "type": "budget_tokens",
-          "min": 1024,
-          "max": 32000
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
         }
       ],
       "tool_call": true,
@@ -89,7 +94,9 @@
       },
       "cost": {
         "input": 5,
-        "output": 25
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8",
@@ -132,6 +139,7 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -181,7 +189,9 @@
       },
       "cost": {
         "input": 3,
-        "output": 15
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6",
@@ -189,8 +199,9 @@
     },
     {
       "id": "bytedance/seedance-2",
+      "type": "video",
       "name": "Seedance 2",
-      "description": "Video model for prompt-guided generation, editing, and motion workflows",
+      "description": "ByteDance unified multimodal audio-video model supporting text, image, video and audio references, editing, extension and synchronized stereo sound.",
       "family": "seed",
       "attachment": true,
       "reasoning": {
@@ -198,8 +209,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2026-04-01",
-      "last_updated": "2026-04-01",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-10-04",
       "modalities": {
         "input": [
           "text",
@@ -214,8 +225,8 @@
         "context": 4096,
         "output": 0
       },
-      "display_name": "Seedance 2",
-      "type": "chat"
+      "canonical_model_id": "bytedance-seed/seedance-2.0",
+      "display_name": "Seedance 2"
     },
     {
       "id": "deepseek-ai/deepseek-r1-distill-llama-70b",
@@ -246,6 +257,7 @@
         "context": 131072,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.03,
         "output": 0.14
@@ -266,6 +278,14 @@
       "reasoning_options": [
         {
           "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
         }
       ],
       "tool_call": true,
@@ -289,7 +309,8 @@
       },
       "cost": {
         "input": 1.74,
-        "output": 3.48
+        "output": 3.48,
+        "cache_read": 0.145
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -298,7 +319,7 @@
     {
       "id": "google/gemini-2.5-flash",
       "name": "Gemini 2.5 Flash",
-      "description": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
+      "description": "Fast Gemini workhorse for multimodal apps where latency and price matter",
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
@@ -324,6 +345,7 @@
         "input": [
           "text",
           "image",
+          "audio",
           "pdf"
         ],
         "output": [
@@ -338,15 +360,17 @@
       "cost": {
         "input": 0.3,
         "output": 2.5,
-        "cache_read": 0.0375
+        "cache_read": 0.03,
+        "input_audio": 1
       },
+      "canonical_model_id": "google/gemini-2.5-flash",
       "display_name": "Gemini 2.5 Flash",
       "type": "chat"
     },
     {
       "id": "google/gemini-2.5-pro",
       "name": "Gemini 2.5 Pro",
-      "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
+      "description": "Google's proven reasoning model for coding, math, and multimodal analysis",
       "family": "gemini-pro",
       "attachment": true,
       "reasoning": {
@@ -383,8 +407,25 @@
       "cost": {
         "input": 1.25,
         "output": 10,
-        "cache_read": 0.31
+        "cache_read": 0.125,
+        "tiers": [
+          {
+            "input": 2.5,
+            "output": 15,
+            "cache_read": 0.25,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 2.5,
+          "output": 15,
+          "cache_read": 0.25
+        }
       },
+      "canonical_model_id": "google/gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro",
       "type": "chat"
     },
@@ -521,7 +562,24 @@
       },
       "cost": {
         "input": 2,
-        "output": 12
+        "output": 12,
+        "cache_read": 0.2,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 18,
+          "cache_read": 0.4
+        }
       },
       "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro Preview",
@@ -572,7 +630,8 @@
       },
       "cost": {
         "input": 1.5,
-        "output": 9
+        "output": 9,
+        "cache_read": 0.15
       },
       "canonical_model_id": "google/gemini-3.5-flash",
       "display_name": "Gemini 3.5 Flash",
@@ -592,6 +651,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -609,73 +669,16 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.38
+        "input": 0.1,
+        "output": 0.3
       },
       "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B IT",
       "type": "chat"
     },
     {
-      "id": "google/imagen-4.0-fast",
-      "name": "Imagen 4 Fast",
-      "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "imagen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2025-05-20",
-      "last_updated": "2025-05-20",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "image"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 480,
-        "output": 0
-      },
-      "display_name": "Imagen 4 Fast",
-      "type": "image-generation"
-    },
-    {
-      "id": "google/imagen-4.0-ultra",
-      "name": "Imagen 4 Ultra",
-      "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "imagen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2025-05-20",
-      "last_updated": "2025-05-20",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "image"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 480,
-        "output": 0
-      },
-      "display_name": "Imagen 4 Ultra",
-      "type": "image-generation"
-    },
-    {
       "id": "google/veo3.1",
+      "type": "video",
       "name": "Veo 3.1",
       "description": "Video model for prompt-guided generation, editing, and motion workflows",
       "family": "veo",
@@ -685,8 +688,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2026-05-01",
-      "last_updated": "2026-05-01",
+      "release_date": "2025-10-15",
+      "last_updated": "2026-01",
       "modalities": {
         "input": [
           "text",
@@ -701,11 +704,12 @@
         "context": 400000,
         "output": 0
       },
-      "display_name": "Veo 3.1",
-      "type": "chat"
+      "canonical_model_id": "google/veo-3.1-generate-preview",
+      "display_name": "Veo 3.1"
     },
     {
       "id": "google/veo3.1-fast",
+      "type": "video",
       "name": "Veo 3.1 Fast",
       "description": "Video model for prompt-guided generation, editing, and motion workflows",
       "family": "veo",
@@ -715,8 +719,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2026-05-01",
-      "last_updated": "2026-05-01",
+      "release_date": "2025-10-15",
+      "last_updated": "2026-01-01",
       "modalities": {
         "input": [
           "text",
@@ -731,11 +735,12 @@
         "context": 400000,
         "output": 0
       },
-      "display_name": "Veo 3.1 Fast",
-      "type": "chat"
+      "canonical_model_id": "google/veo-3.1-fast-generate-preview",
+      "display_name": "Veo 3.1 Fast"
     },
     {
       "id": "google/veo3.1-lite",
+      "type": "video",
       "name": "Veo 3.1 Lite",
       "description": "Video model for prompt-guided generation, editing, and motion workflows",
       "family": "veo",
@@ -745,8 +750,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2026-05-01",
-      "last_updated": "2026-05-01",
+      "release_date": "2026-03-31",
+      "last_updated": "2026-03-31",
       "modalities": {
         "input": [
           "text",
@@ -761,15 +766,15 @@
         "context": 400000,
         "output": 0
       },
-      "display_name": "Veo 3.1 Lite",
-      "type": "chat"
+      "canonical_model_id": "google/veo-3.1-lite-generate-preview",
+      "display_name": "Veo 3.1 Lite"
     },
     {
       "id": "leonardo-ai/lucid-origin",
       "name": "Lucid Origin",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "lucid",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -779,8 +784,7 @@
       "last_updated": "2025-06-01",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "image"
@@ -799,7 +803,7 @@
       "name": "Lucid Realism",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "lucid",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
@@ -809,8 +813,7 @@
       "last_updated": "2025-06-01",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "image"
@@ -854,7 +857,9 @@
       },
       "cost": {
         "input": 0.3,
-        "output": 1.2
+        "output": 1.2,
+        "cache_read": 0.06,
+        "cache_write": 0.375
       },
       "canonical_model_id": "minimax/MiniMax-M2.7",
       "display_name": "MiniMax-M2.7",
@@ -890,7 +895,9 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 2.4
+        "output": 2.4,
+        "cache_read": 0.06,
+        "cache_write": 0.375
       },
       "canonical_model_id": "minimax/MiniMax-M2.7-highspeed",
       "display_name": "MiniMax-M2.7-highspeed",
@@ -923,10 +930,12 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.55,
         "output": 2.2
       },
+      "canonical_model_id": "moonshotai/kimi-k2",
       "display_name": "Kimi K2",
       "type": "chat"
     },
@@ -968,7 +977,8 @@
       },
       "cost": {
         "input": 0.75,
-        "output": 3.5
+        "output": 3.5,
+        "cache_read": 0.15
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -1014,7 +1024,7 @@
     {
       "id": "openai/gpt-5",
       "name": "GPT-5",
-      "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
+      "description": "Original GPT-5 workhorse for reasoning, coding, writing, and tool workflows",
       "family": "gpt",
       "attachment": true,
       "reasoning": {
@@ -1023,7 +1033,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2024-10-01",
       "release_date": "2025-08-07",
       "last_updated": "2025-08-07",
@@ -1039,6 +1049,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -1046,13 +1057,14 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
       "type": "chat"
     },
     {
       "id": "openai/gpt-5-mini",
       "name": "GPT-5 Mini",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Small GPT-5 for responsive agents, coding help, and everyday automation",
       "family": "gpt-mini",
       "attachment": true,
       "reasoning": {
@@ -1070,7 +1082,7 @@
         }
       ],
       "tool_call": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2024-10-01",
       "release_date": "2025-08-07",
       "last_updated": "2025-08-07",
@@ -1086,6 +1098,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -1093,13 +1106,14 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini",
       "type": "chat"
     },
     {
       "id": "openai/gpt-5-nano",
       "name": "GPT-5 Nano",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Tiny GPT-5 lane for routing, extraction, classification, and bulk jobs",
       "family": "gpt-nano",
       "attachment": true,
       "reasoning": {
@@ -1117,7 +1131,7 @@
         }
       ],
       "tool_call": true,
-      "temperature": true,
+      "temperature": false,
       "knowledge": "2024-10-01",
       "release_date": "2025-08-07",
       "last_updated": "2025-08-07",
@@ -1133,6 +1147,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -1140,6 +1155,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano",
       "type": "chat"
     },
@@ -1187,7 +1203,8 @@
       },
       "cost": {
         "input": 1.75,
-        "output": 14
+        "output": 14,
+        "cache_read": 0.175
       },
       "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex",
@@ -1236,7 +1253,8 @@
       },
       "cost": {
         "input": 0.75,
-        "output": 4.5
+        "output": 4.5,
+        "cache_read": 0.075
       },
       "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 mini",
@@ -1285,7 +1303,8 @@
       },
       "cost": {
         "input": 0.2,
-        "output": 1.25
+        "output": 1.25,
+        "cache_read": 0.02
       },
       "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 nano",
@@ -1335,7 +1354,24 @@
       },
       "cost": {
         "input": 5,
-        "output": 30
+        "output": 30,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 10,
+            "output": 45,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 10,
+          "output": 45,
+          "cache_read": 1
+        }
       },
       "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
@@ -1385,7 +1421,21 @@
       },
       "cost": {
         "input": 30,
-        "output": 180
+        "output": 180,
+        "tiers": [
+          {
+            "input": 60,
+            "output": 270,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 60,
+          "output": 270
+        }
       },
       "canonical_model_id": "openai/gpt-5.5-pro",
       "display_name": "GPT-5.5 Pro",
@@ -1393,6 +1443,7 @@
     },
     {
       "id": "openai/gpt-image-2",
+      "type": "image",
       "name": "GPT Image 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gpt-image",
@@ -1401,7 +1452,7 @@
         "supported": false
       },
       "tool_call": false,
-      "temperature": true,
+      "temperature": false,
       "release_date": "2026-04-21",
       "last_updated": "2026-04-21",
       "modalities": {
@@ -1418,13 +1469,13 @@
         "context": 128000,
         "output": 0
       },
-      "display_name": "GPT Image 2",
-      "type": "image-generation"
+      "canonical_model_id": "openai/gpt-image-2",
+      "display_name": "GPT Image 2"
     },
     {
       "id": "openai/gpt-oss-120b",
       "name": "GPT OSS 120B",
-      "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
@@ -1443,6 +1494,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -1459,16 +1511,17 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.6
+        "input": 0.09,
+        "output": 0.36
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
       "type": "chat"
     },
     {
       "id": "openai/gpt-oss-20b",
       "name": "GPT OSS 20B",
-      "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
       "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
@@ -1487,6 +1540,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -1500,28 +1554,32 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 65536
+        "output": 32768
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.2
+        "input": 0.07,
+        "output": 0.25,
+        "cache_read": 0.007
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B",
       "type": "chat"
     },
     {
       "id": "openai/gpt-realtime-1.5",
+      "type": "realtime",
       "name": "GPT Realtime 1.5",
-      "description": "Speech generation model for controllable voice, narration, and audio delivery",
+      "description": "Realtime speech-to-speech model for voice agents and customer support",
       "family": "gpt",
       "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
-      "temperature": true,
-      "release_date": "2025-06-01",
-      "last_updated": "2025-06-01",
+      "temperature": false,
+      "knowledge": "2024-09-30",
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
       "modalities": {
         "input": [
           "text",
@@ -1540,15 +1598,18 @@
       },
       "cost": {
         "input": 4,
-        "output": 16
+        "output": 16,
+        "cache_read": 0.4,
+        "input_audio": 32,
+        "output_audio": 64
       },
-      "display_name": "GPT Realtime 1.5",
-      "type": "realtime"
+      "canonical_model_id": "openai/gpt-realtime-1.5",
+      "display_name": "GPT Realtime 1.5"
     },
     {
       "id": "qwen/qwen3-coder",
       "name": "Qwen3 Coder",
-      "description": "Qwen coding model for software agents, repository edits, and code reasoning",
+      "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
       "family": "qwen",
       "attachment": false,
       "reasoning": {
@@ -1557,8 +1618,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-04",
-      "release_date": "2025-07-23",
-      "last_updated": "2025-07-23",
+      "release_date": "2025-07-22",
+      "last_updated": "2025-07-22",
       "modalities": {
         "input": [
           "text"
@@ -1570,12 +1631,14 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 66536
+        "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2
       },
+      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen3 Coder",
       "type": "chat"
     },
@@ -1609,7 +1672,8 @@
       },
       "cost": {
         "input": 0.04,
-        "output": 0.16
+        "output": 0.16,
+        "cache_read": 0.025
       },
       "canonical_model_id": "sarvam/sarvam-105b",
       "display_name": "Sarvam 105B",
@@ -1643,6 +1707,7 @@
         "context": 128000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.02,
         "output": 0.1
@@ -1653,16 +1718,17 @@
     },
     {
       "id": "wanx/wan-v2-6",
+      "type": "video",
       "name": "Wan 2.6",
-      "description": "Video model for prompt-guided generation, editing, and motion workflows",
+      "description": "Video model for text- and image-to-video with audio input and synchronized sound",
       "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2025-12-01",
-      "last_updated": "2025-12-01",
+      "release_date": "2025-12-03",
+      "last_updated": "2025-12-03",
       "modalities": {
         "input": [
           "text",
@@ -1672,13 +1738,13 @@
           "video"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 400000,
         "output": 0
       },
-      "display_name": "Wan 2.6",
-      "type": "chat"
+      "canonical_model_id": "alibaba/wan2.6",
+      "display_name": "Wan 2.6"
     },
     {
       "id": "x-ai/grok-4",
@@ -1709,6 +1775,7 @@
         "context": 256000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -1760,7 +1827,22 @@
       },
       "cost": {
         "input": 1.25,
-        "output": 2.5
+        "output": 2.5,
+        "cache_read": 0.2,
+        "tiers": [
+          {
+            "input": 2.5,
+            "output": 5,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 2.5,
+          "output": 5
+        }
       },
       "canonical_model_id": "xai/grok-4.3",
       "display_name": "Grok 4.3",
@@ -1808,7 +1890,24 @@
       },
       "cost": {
         "input": 1,
-        "output": 2
+        "output": 2,
+        "cache_read": 0.2,
+        "tiers": [
+          {
+            "input": 2,
+            "output": 4,
+            "cache_read": 0.4,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 2,
+          "output": 4,
+          "cache_read": 0.4
+        }
       },
       "canonical_model_id": "xai/grok-build-0.1",
       "display_name": "Grok Build 0.1",
@@ -1817,7 +1916,7 @@
     {
       "id": "z-ai/glm-5",
       "name": "GLM-5",
-      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
+      "description": "General GLM flagship for coding, analysis, and tool-heavy engineering workflows",
       "family": "glm",
       "attachment": false,
       "reasoning": {
@@ -1834,8 +1933,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-02-11",
-      "last_updated": "2026-02-11",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-02-12",
       "modalities": {
         "input": [
           "text"
@@ -1850,9 +1949,11 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.95,
-        "output": 3.15
+        "input": 0.6,
+        "output": 2.08,
+        "cache_read": 0.12
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5",
       "type": "chat"
     },
@@ -1891,7 +1992,8 @@
       },
       "cost": {
         "input": 1.05,
-        "output": 3.5
+        "output": 3.5,
+        "cache_read": 0.205
       },
       "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM-5.1",

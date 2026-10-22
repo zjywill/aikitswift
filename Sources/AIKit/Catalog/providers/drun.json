@@ -21,7 +21,7 @@
       "temperature": true,
       "knowledge": "2024-12",
       "release_date": "2025-01-20",
-      "last_updated": "2025-01-20",
+      "last_updated": "2025-05-29",
       "modalities": {
         "input": [
           "text"
@@ -39,6 +39,7 @@
         "input": 0.55,
         "output": 2.2
       },
+      "canonical_model_id": "deepseek/deepseek-r1",
       "display_name": "DeepSeek R1",
       "type": "chat"
     },
@@ -73,6 +74,7 @@
         "input": 0.28,
         "output": 1.1
       },
+      "canonical_model_id": "deepseek/deepseek-v3",
       "display_name": "DeepSeek V3",
       "type": "chat"
     },
@@ -92,8 +94,8 @@
         "field": "reasoning_details"
       },
       "temperature": true,
-      "release_date": "2025-03-01",
-      "last_updated": "2025-03-01",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-02-12",
       "modalities": {
         "input": [
           "text"
@@ -102,7 +104,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 204800,
         "output": 131072
@@ -111,6 +113,7 @@
         "input": 0.29,
         "output": 1.16
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax M2.5",
       "type": "chat"
     }

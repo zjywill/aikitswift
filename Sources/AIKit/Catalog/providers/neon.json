@@ -848,6 +848,7 @@
         "context": 1000000,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2,
@@ -1308,8 +1309,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2024-08-31",
-      "release_date": "2025-03-13",
-      "last_updated": "2025-03-13",
+      "release_date": "2025-03-12",
+      "last_updated": "2025-03-12",
       "modalities": {
         "input": [
           "text",
@@ -1328,6 +1329,7 @@
         "input": 0.15,
         "output": 0.5
       },
+      "canonical_model_id": "google/gemma-3-12b-it",
       "display_name": "Gemma 3 12B",
       "type": "chat"
     },
@@ -1459,9 +1461,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "video",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -1514,8 +1514,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1571,8 +1570,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1629,8 +1627,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1688,8 +1685,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1747,8 +1743,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1821,8 +1816,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1879,8 +1873,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -1938,8 +1931,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2011,8 +2003,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2084,8 +2075,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2163,8 +2153,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2242,8 +2231,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2318,8 +2306,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2375,8 +2362,7 @@
           "image"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2510,8 +2496,7 @@
           "pdf"
         ],
         "output": [
-          "text",
-          "image"
+          "text"
         ]
       },
       "open_weights": false,
@@ -2730,6 +2715,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2776,6 +2762,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2795,6 +2782,7 @@
         "input": 0.07,
         "output": 0.3
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B",
       "type": "chat"
     },
@@ -2858,7 +2846,7 @@
       "name": "Grok 4.7",
       "description": "xAI's frontier model for long-running agents, coding, knowledge work, and visual projects",
       "family": "grok",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -2882,9 +2870,7 @@
       "last_updated": "2026-09-21",
       "modalities": {
         "input": [
-          "text",
-          "image",
-          "pdf"
+          "text"
         ],
         "output": [
           "text"
@@ -2955,6 +2941,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 4.05,
@@ -3088,6 +3075,7 @@
         "input": 0.15,
         "output": 0.45
       },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
       "display_name": "Llama 3.1 8B Instruct",
       "type": "chat"
     },

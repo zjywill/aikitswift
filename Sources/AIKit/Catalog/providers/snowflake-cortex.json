@@ -15,6 +15,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-09",
@@ -22,8 +23,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -33,6 +33,13 @@
       "limit": {
         "context": 1000000,
         "output": 128000
+      },
+      "status": "beta",
+      "cost": {
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
       },
       "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
@@ -54,6 +61,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-02-28",
       "release_date": "2025-10-15",
@@ -61,8 +69,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -71,7 +78,13 @@
       "open_weights": false,
       "limit": {
         "context": 200000,
-        "output": 16384
+        "output": 64000
+      },
+      "cost": {
+        "input": 1,
+        "output": 5,
+        "cache_read": 0.1,
+        "cache_write": 1.25
       },
       "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude Haiku 4.5 (latest)",
@@ -93,6 +106,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05",
       "release_date": "2025-11-24",
@@ -100,8 +114,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -111,6 +124,12 @@
       "limit": {
         "context": 200000,
         "output": 64000
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Claude Opus 4.5 (latest)",
@@ -132,6 +151,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05-31",
       "release_date": "2026-02-05",
@@ -139,8 +159,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -150,6 +169,12 @@
       "limit": {
         "context": 1000000,
         "output": 128000
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Claude Opus 4.6",
@@ -167,6 +192,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-04-16",
@@ -174,8 +200,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -186,26 +211,11 @@
         "context": 1000000,
         "output": 128000
       },
-      "status": "beta",
-      "experimental": {
-        "modes": {
-          "fast": {
-            "cost": {
-              "input": 30,
-              "output": 150,
-              "cache_read": 3,
-              "cache_write": 37.5
-            },
-            "provider": {
-              "body": {
-                "speed": "fast"
-              },
-              "headers": {
-                "anthropic-beta": "fast-mode-2026-02-01"
-              }
-            }
-          }
-        }
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
@@ -223,6 +233,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01",
       "release_date": "2026-05-28",
@@ -230,8 +241,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -241,6 +251,12 @@
       "limit": {
         "context": 1000000,
         "output": 128000
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude Opus 4.8",
@@ -258,6 +274,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-05",
       "release_date": "2026-07-24",
@@ -265,8 +282,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -276,6 +292,12 @@
       "limit": {
         "context": 1000000,
         "output": 128000
+      },
+      "cost": {
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
@@ -297,6 +319,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-07-31",
       "release_date": "2025-09-29",
@@ -304,8 +327,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -314,7 +336,13 @@
       "open_weights": false,
       "limit": {
         "context": 200000,
-        "output": 16384
+        "output": 64000
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude Sonnet 4.5 (latest)",
@@ -336,6 +364,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2025-08-31",
       "release_date": "2026-02-17",
@@ -343,8 +372,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -353,7 +381,13 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 16384
+        "output": 64000
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3,
+        "cache_write": 3.75
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6",
@@ -371,6 +405,7 @@
       },
       "reasoning_options": [],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-30",
@@ -378,8 +413,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -388,7 +422,13 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 128000
+        "output": 64000
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
@@ -405,7 +445,8 @@
         "default": false
       },
       "reasoning_options": [],
-      "tool_call": true,
+      "tool_call": false,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2024-07",
       "release_date": "2025-01-20",
@@ -458,31 +499,32 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "output": 65536
+        "context": 1000000,
+        "output": 64000
       },
+      "status": "beta",
       "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro Preview",
       "type": "chat"
     },
     {
       "id": "mistral-large2",
-      "name": "Mistral Large (latest)",
+      "name": "Mistral Large 2407",
       "description": "Flagship Mistral model for advanced reasoning, coding, and multilingual work",
       "family": "mistral-large",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
+      "structured_output": false,
       "temperature": true,
-      "knowledge": "2024-11",
-      "release_date": "2024-11-01",
-      "last_updated": "2025-12-02",
+      "knowledge": "2024-03-31",
+      "release_date": "2024-07-24",
+      "last_updated": "2024-07-24",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -490,11 +532,15 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "output": 262144
+        "context": 128000,
+        "output": 8192
       },
-      "canonical_model_id": "mistral/mistral-large-latest",
-      "display_name": "Mistral Large (latest)",
+      "cost": {
+        "input": 2,
+        "output": 6
+      },
+      "canonical_model_id": "mistral/mistral-large-2407",
+      "display_name": "Mistral Large 2407",
       "type": "chat"
     },
     {
@@ -515,8 +561,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -526,6 +571,11 @@
       "limit": {
         "context": 128000,
         "output": 32000
+      },
+      "cost": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5
       },
       "canonical_model_id": "openai/gpt-4.1",
       "display_name": "GPT-4.1",
@@ -574,7 +624,11 @@
         "input": 272000,
         "output": 8192
       },
-      "status": "beta",
+      "cost": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13
+      },
       "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
       "type": "chat"
@@ -622,7 +676,11 @@
         "input": 272000,
         "output": 8192
       },
-      "status": "beta",
+      "cost": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03
+      },
       "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini",
       "type": "chat"
@@ -670,7 +728,11 @@
         "input": 272000,
         "output": 8192
       },
-      "status": "beta",
+      "cost": {
+        "input": 0.06,
+        "output": 0.44,
+        "cache_read": 0.01
+      },
       "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano",
       "type": "chat"
@@ -717,6 +779,11 @@
         "context": 272000,
         "input": 272000,
         "output": 8192
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.13
       },
       "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1",
@@ -765,6 +832,11 @@
         "input": 272000,
         "output": 128000
       },
+      "cost": {
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.18
+      },
       "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2",
       "type": "chat"
@@ -800,8 +872,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -813,21 +884,25 @@
         "input": 922000,
         "output": 128000
       },
-      "status": "beta",
-      "experimental": {
-        "modes": {
-          "fast": {
-            "cost": {
-              "input": 5,
-              "output": 30,
-              "cache_read": 0.5
-            },
-            "provider": {
-              "body": {
-                "service_tier": "priority"
-              }
+      "cost": {
+        "input": 2.5,
+        "output": 15,
+        "cache_read": 0.25,
+        "tiers": [
+          {
+            "input": 5,
+            "output": 22.5,
+            "cache_read": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
             }
           }
+        ],
+        "context_over_200k": {
+          "input": 5,
+          "output": 22.5,
+          "cache_read": 0.5
         }
       },
       "canonical_model_id": "openai/gpt-5.4",
@@ -865,8 +940,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -879,6 +953,27 @@
         "output": 128000
       },
       "status": "beta",
+      "cost": {
+        "input": 5,
+        "output": 30,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 10,
+            "output": 45,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 10,
+          "output": 45,
+          "cache_read": 1
+        }
+      },
       "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
       "type": "chat"
@@ -914,8 +1009,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -927,7 +1021,30 @@
         "input": 922000,
         "output": 128000
       },
-      "status": "beta",
+      "cost": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
       "type": "chat"
@@ -963,8 +1080,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -976,7 +1092,30 @@
         "input": 922000,
         "output": 128000
       },
-      "status": "beta",
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5,
+        "tiers": [
+          {
+            "input": 8,
+            "output": 30,
+            "cache_read": 0.8,
+            "cache_write": 10,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 8,
+          "output": 30,
+          "cache_read": 0.8,
+          "cache_write": 10
+        }
+      },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
       "type": "chat"
@@ -1012,8 +1151,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -1025,7 +1163,30 @@
         "input": 922000,
         "output": 128000
       },
-      "status": "beta",
+      "cost": {
+        "input": 2,
+        "output": 12,
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 18,
+            "cache_read": 0.4,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 18,
+          "cache_read": 0.4,
+          "cache_write": 5
+        }
+      },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
       "type": "chat"
@@ -1039,7 +1200,8 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": true,
+      "tool_call": false,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2023-12",
       "release_date": "2024-12-06",

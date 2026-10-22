@@ -1698,6 +1698,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -1735,6 +1736,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -1775,6 +1777,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -2093,6 +2096,7 @@
       "tool_call": false,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -3114,6 +3118,40 @@
         "cache_read": 0.05
       },
       "display_name": "Orion 26B A4B v1.1",
+      "type": "chat"
+    },
+    {
+      "id": "TheDrummer/skyfall-31b-v4.2",
+      "name": "TheDrummer Skyfall 31B v4.2",
+      "description": "TheDrummer's Skyfall 31B v4.2 is a Magistral Small finetune for creative writing, roleplay, and dialogue. This text-only deployment uses NVFP4 weights and supports a 16K-token context window.",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-12",
+      "last_updated": "2026-10-12",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 16384,
+        "input": 16384,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.12,
+        "output": 0.15,
+        "cache_read": 0.06
+      },
+      "display_name": "TheDrummer Skyfall 31B v4.2",
       "type": "chat"
     },
     {
@@ -5676,6 +5714,51 @@
       "type": "chat"
     },
     {
+      "id": "ateron/gemma-4-dark-thoughts-v2-31b",
+      "name": "Gemma 4 Dark Thoughts V2 31B",
+      "description": "Ateron's second Dark Thoughts merge combines Dark Scarlett V2, MeroMero V2, and Scotoma 2 for creative dialogue and extended character roleplay. This text-only Gemma 4 31B deployment supports a 65,536-token context window and up to 8,192 output tokens.",
+      "family": "gemma",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "input": 65536,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "Gemma 4 Dark Thoughts V2 31B",
+      "type": "chat"
+    },
+    {
       "id": "auto-model",
       "name": "Auto model",
       "description": "Automatic model router for matching prompts to suitable backends and budgets",
@@ -7071,9 +7154,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.16,
-        "cache_read": 0.013
+        "input": 0.04444,
+        "output": 0.13332,
+        "cache_read": 0.001414
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731",
@@ -7121,9 +7204,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.05,
-        "output": 0.16,
-        "cache_read": 0.013
+        "input": 0.04444,
+        "output": 0.13332,
+        "cache_read": 0.001414
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Thinking)",
@@ -7515,9 +7598,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.0354,
-        "output": 0.1416,
-        "cache_read": 0.000708
+        "input": 0.0342,
+        "output": 0.1368,
+        "cache_read": 0.000684
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -7668,9 +7751,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.0354,
-        "output": 0.1416,
-        "cache_read": 0.000708
+        "input": 0.0342,
+        "output": 0.1368,
+        "cache_read": 0.000684
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash Thinking",
@@ -8407,8 +8490,8 @@
     {
       "id": "gemini-2.5-flash-lite-preview-06-17",
       "name": "Gemini 2.5 Flash Lite Preview",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gemini",
+      "description": "First preview of Gemini 2.5 Flash-Lite, the low-cost, low-latency 2.5 model",
+      "family": "gemini-flash-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -8426,6 +8509,8 @@
       ],
       "tool_call": false,
       "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2025-06-17",
       "last_updated": "2025-06-17",
       "modalities": {
@@ -8449,14 +8534,15 @@
         "output": 0.6,
         "cache_read": 0.015
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite-preview-06-17",
       "display_name": "Gemini 2.5 Flash Lite Preview",
       "type": "chat"
     },
     {
       "id": "gemini-2.5-flash-lite-preview-09-2025",
       "name": "Gemini 2.5 Flash Lite Preview (09/2025)",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gemini",
+      "description": "September 2025 preview of Gemini 2.5 Flash-Lite with better instruction following and multimodal quality",
+      "family": "gemini-flash-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -8474,6 +8560,8 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2025-09-25",
       "last_updated": "2025-09-25",
       "modalities": {
@@ -8499,14 +8587,15 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite-preview-09-2025",
       "display_name": "Gemini 2.5 Flash Lite Preview (09/2025)",
       "type": "chat"
     },
     {
       "id": "gemini-2.5-flash-lite-preview-09-2025-thinking",
       "name": "Gemini 2.5 Flash Lite Preview (09/2025) – Thinking",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gemini",
+      "description": "September 2025 preview of Gemini 2.5 Flash-Lite with better instruction following and multimodal quality",
+      "family": "gemini-flash-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -8524,6 +8613,8 @@
       ],
       "tool_call": true,
       "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2025-09-25",
       "last_updated": "2025-09-25",
       "modalities": {
@@ -8549,6 +8640,7 @@
         "output": 0.4,
         "cache_read": 0.01
       },
+      "canonical_model_id": "google/gemini-2.5-flash-lite-preview-09-2025",
       "display_name": "Gemini 2.5 Flash Lite Preview (09/2025) – Thinking",
       "type": "chat"
     },
@@ -8692,14 +8784,16 @@
     {
       "id": "gemini-2.5-flash-preview-05-20",
       "name": "Gemini 2.5 Flash 0520",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gemini",
+      "description": "Preview snapshot of Gemini 2.5 Flash with controllable thinking budgets",
+      "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
       "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2025-05-20",
       "last_updated": "2025-05-20",
       "modalities": {
@@ -8723,14 +8817,15 @@
         "output": 0.6,
         "cache_read": 0.015
       },
+      "canonical_model_id": "google/gemini-2.5-flash-preview-05-20",
       "display_name": "Gemini 2.5 Flash 0520",
       "type": "chat"
     },
     {
       "id": "gemini-2.5-flash-preview-05-20:thinking",
       "name": "Gemini 2.5 Flash 0520 Thinking",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gemini",
+      "description": "Preview snapshot of Gemini 2.5 Flash with controllable thinking budgets",
+      "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -8748,6 +8843,8 @@
       ],
       "tool_call": false,
       "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2025-05-20",
       "last_updated": "2025-05-20",
       "modalities": {
@@ -8771,6 +8868,7 @@
         "output": 3.5,
         "cache_read": 0.015
       },
+      "canonical_model_id": "google/gemini-2.5-flash-preview-05-20",
       "display_name": "Gemini 2.5 Flash 0520 Thinking",
       "type": "chat"
     },
@@ -11213,6 +11311,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -11254,6 +11353,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -11867,7 +11967,7 @@
     {
       "id": "inception/mercury-3",
       "name": "Mercury 3",
-      "description": "Mercury 3 is Inception's diffusion language model for fast chat, coding, and multi-step agents. It accepts and generates text, with adjustable reasoning, parallel tool calls, structured JSON output, and a shared 1,000,000-token context window. Responses can use up to 131,072 tokens, including reasoning, within the remaining context.",
+      "description": "Inception's diffusion reasoning model for chat, multi-step problem solving, and tool use",
       "family": "mercury",
       "attachment": false,
       "reasoning": {
@@ -11887,8 +11987,9 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "release_date": "2026-10-19",
-      "last_updated": "2026-10-19",
+      "temperature": true,
+      "release_date": "2026-10-16",
+      "last_updated": "2026-10-20",
       "modalities": {
         "input": [
           "text"
@@ -11908,6 +12009,7 @@
         "output": 0.35,
         "cache_read": 0.01
       },
+      "canonical_model_id": "inception/mercury-3",
       "display_name": "Mercury 3",
       "type": "chat"
     },
@@ -12700,7 +12802,7 @@
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
       "name": "Llama 3.2 3b Instruct",
-      "description": "Open Llama multimodal model for image understanding and text reasoning",
+      "description": "Small instruction-tuned Llama model for multilingual dialogue and agentic retrieval",
       "family": "llama",
       "attachment": true,
       "reasoning": {
@@ -12708,7 +12810,9 @@
       },
       "tool_call": false,
       "structured_output": false,
-      "release_date": "2024-01-01",
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-09-25",
       "last_updated": "2024-09-25",
       "modalities": {
         "input": [
@@ -12730,6 +12834,7 @@
         "output": 0.0493,
         "cache_read": 0.0153
       },
+      "canonical_model_id": "meta/llama-3.2-3b-instruct",
       "display_name": "Llama 3.2 3b Instruct",
       "type": "chat"
     },
@@ -14967,9 +15072,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.42275,
-        "output": 1.78,
-        "cache_read": 0.0712
+        "input": 0.44935,
+        "output": 1.892,
+        "cache_read": 0.07568
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
@@ -15008,9 +15113,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.42275,
-        "output": 1.78,
-        "cache_read": 0.0712
+        "input": 0.44935,
+        "output": 1.892,
+        "cache_read": 0.07568
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 Thinking",
@@ -15408,6 +15513,130 @@
         "cache_read": 0.028
       },
       "display_name": "Coding Router Medium",
+      "type": "chat"
+    },
+    {
+      "id": "nbeerbower/gemma4-gutenberg-31b",
+      "name": "Gemma 4 Gutenberg 31B",
+      "description": "nbeerbower's Gemma 4 31B finetune for literary fiction, character interiority, and controlled narrative pacing. Its text decoder was trained with ORPO on 14,816 Athanorlite-DPO preference pairs. This text-only deployment supports a 65,536-token context window and up to 8,192 output tokens.",
+      "family": "gemma",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "input": 65536,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "Gemma 4 Gutenberg 31B",
+      "type": "chat"
+    },
+    {
+      "id": "nimbz/gemma-4-giftige-blume-31b-v2",
+      "name": "Gemma 4 Giftige-Blume V2 31B",
+      "description": "Nimbz's second Giftige-Blume merge focuses on character roleplay, creative prose, and stricter prompt adherence. It combines storymaxxed, Equinox, Mero-Artemis, Musica, Ortenzya, Gemopus, and Sprinkle. This text-only Gemma 4 31B deployment supports a 65,536-token context window and up to 8,192 output tokens.",
+      "family": "gemma",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "input": 65536,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "Gemma 4 Giftige-Blume V2 31B",
+      "type": "chat"
+    },
+    {
+      "id": "nimbz/schattenblume-31b",
+      "name": "Schattenblume 31B",
+      "description": "Nimbz's Gemma 4 31B merge for character roleplay, expressive prose, and creative dialogue. It combines Scotoma 2, Giftige-Blume v1, and MeroMero v2. This text-only deployment supports a 65,536-token context window and up to 8,192 output tokens.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": false,
+      "structured_output": false,
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "input": 65536,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.45,
+        "cache_read": 0.05
+      },
+      "display_name": "Schattenblume 31B",
       "type": "chat"
     },
     {
@@ -18064,6 +18293,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -18112,6 +18342,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -18719,6 +18950,44 @@
       "type": "chat"
     },
     {
+      "id": "ornith-ai/ornith-1.5-122b",
+      "name": "Ornith 1.5 122B",
+      "description": "Ornith 1.5 122B is an MIT-licensed open-weight model for coding, reasoning, tool use and image understanding. It accepts text and images across a shared 262,144-token context, with up to 32,768 output tokens. Reasoning is enabled by default; JSON object output and streaming are supported.",
+      "family": "ornith",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-20",
+      "last_updated": "2026-10-20",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.8,
+        "cache_read": 0.02
+      },
+      "display_name": "Ornith 1.5 122B",
+      "type": "chat"
+    },
+    {
       "id": "ornith-ai/ornith-1.5-35b-a3b",
       "name": "Ornith 1.5 35B",
       "description": "Ornith 1.5 35B A3B is an open-weight mixture-of-experts model for agentic coding, tool use, image understanding, and long-context work. This variant disables thinking for faster direct responses.",
@@ -18961,7 +19230,7 @@
     {
       "id": "phi-4-multimodal-instruct",
       "name": "Phi 4 Multimodal",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
+      "description": "Compact Microsoft multimodal model for text, image, and speech understanding",
       "family": "phi",
       "attachment": false,
       "reasoning": {
@@ -18969,8 +19238,10 @@
       },
       "tool_call": false,
       "structured_output": false,
-      "release_date": "2025-07-26",
-      "last_updated": "2025-07-26",
+      "temperature": true,
+      "knowledge": "2024-06",
+      "release_date": "2025-02-26",
+      "last_updated": "2025-02-26",
       "modalities": {
         "input": [
           "text"
@@ -18990,6 +19261,7 @@
         "output": 0.11,
         "cache_read": 0.035
       },
+      "canonical_model_id": "microsoft/phi-4-multimodal-instruct",
       "display_name": "Phi 4 Multimodal",
       "type": "chat"
     },
@@ -19524,6 +19796,42 @@
       "type": "chat"
     },
     {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen 3 235b A22B 2507 Thinking",
+      "description": "Updated large open Qwen3 MoE thinking model for reasoning, math, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-25",
+      "last_updated": "2025-07-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "input": 131072,
+        "output": 81920
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 0.5
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507",
+      "display_name": "Qwen 3 235b A22B 2507 Thinking",
+      "type": "chat"
+    },
+    {
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen3 30B A3B",
       "description": "Sparse MoE Qwen model with 3B active parameters for efficient chat and reasoning",
@@ -19563,7 +19871,7 @@
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen3 30B A3B Instruct 2507",
-      "description": "Qwen3-30B-A3B-Instruct-2507 is a 30.5B-parameter mixture-of-experts language model from Qwen, with 3.3B active parameters per inference. Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage.",
+      "description": "Updated compact Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
       "family": "qwen",
       "attachment": false,
       "reasoning": {
@@ -19571,8 +19879,9 @@
       },
       "tool_call": false,
       "structured_output": false,
-      "release_date": "2025-02-20",
-      "last_updated": "2025-02-20",
+      "temperature": true,
+      "release_date": "2025-07-28",
+      "last_updated": "2025-07-28",
       "modalities": {
         "input": [
           "text"
@@ -19592,6 +19901,7 @@
         "output": 0.5,
         "cache_read": 0.1
       },
+      "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507",
       "display_name": "Qwen3 30B A3B Instruct 2507",
       "type": "chat"
     },
@@ -19637,7 +19947,7 @@
     {
       "id": "qwen/qwen3-8b",
       "name": "Qwen 3 8B",
-      "description": "Qwen 3 8B is a 8B model. Supports switching between thinking and non thinking: trigger thinking with /think and /no_think anywhere in a prompt or system message to toggle chain-of-thought reasoning.",
+      "description": "Dense 8B Qwen3 model with switchable thinking for chat, reasoning, and tool use",
       "family": "qwen",
       "attachment": false,
       "reasoning": {
@@ -19645,8 +19955,9 @@
       },
       "tool_call": true,
       "structured_output": false,
-      "release_date": "2024-01-01",
-      "last_updated": "2024-01-01",
+      "temperature": true,
+      "release_date": "2025-04-29",
+      "last_updated": "2025-04-29",
       "modalities": {
         "input": [
           "text"
@@ -19666,6 +19977,7 @@
         "output": 0.47,
         "cache_read": 0.235
       },
+      "canonical_model_id": "alibaba/qwen3-8b",
       "display_name": "Qwen 3 8B",
       "type": "chat"
     },
@@ -22706,6 +23018,7 @@
       "id": "stepfun-ai/step-3.5-flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -22754,6 +23067,7 @@
       "id": "stepfun-ai/step-3.5-flash-2603",
       "name": "Step 3.5 Flash 2603",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,

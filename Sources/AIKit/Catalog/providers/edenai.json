@@ -1322,8 +1322,8 @@
       "structured_output": true,
       "temperature": true,
       "knowledge": "2025-05",
-      "release_date": "2025-11-01",
-      "last_updated": "2025-11-01",
+      "release_date": "2025-11-24",
+      "last_updated": "2025-11-24",
       "modalities": {
         "input": [
           "text",
@@ -2103,6 +2103,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2321,6 +2322,7 @@
       "tool_call": false,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2023-12",
       "release_date": "2024-09-25",
       "last_updated": "2024-09-25",
       "modalities": {
@@ -2342,6 +2344,42 @@
       },
       "canonical_model_id": "meta/llama-3.2-1b-instruct",
       "display_name": "Llama 3.2 1B Instruct (Cloudflare)",
+      "type": "chat"
+    },
+    {
+      "id": "cloudflare/@cf/meta/llama-3.2-3b-instruct",
+      "name": "Llama 3.2 3B Instruct (Cloudflare)",
+      "description": "Small instruction-tuned Llama model for multilingual dialogue and agentic retrieval",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-09-25",
+      "last_updated": "2024-09-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 80000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.0509,
+        "output": 0.335
+      },
+      "canonical_model_id": "meta/llama-3.2-3b-instruct",
+      "display_name": "Llama 3.2 3B Instruct (Cloudflare)",
       "type": "chat"
     },
     {
@@ -2440,6 +2478,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2486,6 +2525,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2882,6 +2922,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2930,6 +2971,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2978,6 +3020,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -3026,6 +3069,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -3128,7 +3172,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
+        "context": 262144,
         "output": 32768
       },
       "cost": {
@@ -3166,7 +3210,7 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 131072,
+        "context": 262144,
         "output": 32768
       },
       "cost": {
@@ -3201,7 +3245,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-02-14",
       "last_updated": "2026-02-14",
@@ -3385,6 +3429,41 @@
       "type": "chat"
     },
     {
+      "id": "deepinfra/Qwen/Qwen2.5-7B-Instruct",
+      "name": "Qwen2.5 7B Instruct (Deep Infra)",
+      "description": "Small open Qwen2.5 instruction model for chat, structured output, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2024-09-19",
+      "last_updated": "2024-09-19",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 32768,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.04,
+        "output": 0.1
+      },
+      "canonical_model_id": "alibaba/qwen2.5-7b-instruct",
+      "display_name": "Qwen2.5 7B Instruct (Deep Infra)",
+      "type": "chat"
+    },
+    {
       "id": "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507",
       "name": "Qwen3 235B-A22B Instruct 2507 (Deep Infra)",
       "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
@@ -3394,7 +3473,7 @@
         "supported": false
       },
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2025-07-21",
       "last_updated": "2025-07-21",
@@ -3417,6 +3496,44 @@
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "name": "Qwen3 235B-A22B Thinking 2507 (Deep Infra)",
+      "description": "Updated large open Qwen3 MoE thinking model for reasoning, math, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-07-25",
+      "last_updated": "2025-07-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 81920
+      },
+      "cost": {
+        "input": 0.23,
+        "output": 2.3,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507",
+      "display_name": "Qwen3 235B-A22B Thinking 2507 (Deep Infra)",
       "type": "chat"
     },
     {
@@ -3688,7 +3805,7 @@
         "supported": false
       },
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2024-12-26",
       "last_updated": "2024-12-26",
@@ -4078,7 +4195,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-25",
       "last_updated": "2026-08-25",
@@ -4139,6 +4256,42 @@
       },
       "canonical_model_id": "meta/llama-3.2-11b-vision-instruct",
       "display_name": "Llama-3.2-11B-Vision-Instruct (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/meta-llama/Llama-3.2-3B-Instruct",
+      "name": "Llama 3.2 3B Instruct (Deep Infra)",
+      "description": "Small instruction-tuned Llama model for multilingual dialogue and agentic retrieval",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-09-25",
+      "last_updated": "2024-09-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.02,
+        "output": 0.02
+      },
+      "canonical_model_id": "meta/llama-3.2-3b-instruct",
+      "display_name": "Llama 3.2 3B Instruct (Deep Infra)",
       "type": "chat"
     },
     {
@@ -4211,6 +4364,42 @@
       },
       "canonical_model_id": "meta/llama-guard-3-8b",
       "display_name": "Llama-Guard-3-8B (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/meta-llama/Llama-Guard-4-12B",
+      "name": "Llama Guard 4 12B (Deep Infra)",
+      "description": "Multimodal Llama 4-based safety classifier for moderating prompts and responses",
+      "family": "llama",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-04-29",
+      "last_updated": "2025-04-29",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 163840,
+        "output": 163840
+      },
+      "cost": {
+        "input": 0.18,
+        "output": 0.18
+      },
+      "canonical_model_id": "meta/llama-guard-4-12b",
+      "display_name": "Llama Guard 4 12B (Deep Infra)",
       "type": "chat"
     },
     {
@@ -4331,6 +4520,41 @@
       },
       "canonical_model_id": "mistral/mistral-small-24b-instruct-2501",
       "display_name": "Mistral Small 3 (Deep Infra)",
+      "type": "chat"
+    },
+    {
+      "id": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "name": "Mixtral 8x7B Instruct v0.1 (Deep Infra)",
+      "description": "Open sparse mixture-of-experts Mistral instruction model",
+      "family": "mistral",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2023-12-11",
+      "last_updated": "2023-12-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 32768,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 0.4
+      },
+      "canonical_model_id": "mistral/mixtral-8x7b-instruct-v0.1",
+      "display_name": "Mixtral 8x7B Instruct v0.1 (Deep Infra)",
       "type": "chat"
     },
     {
@@ -4600,6 +4824,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -4646,6 +4871,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -4673,6 +4899,7 @@
       "id": "deepinfra/stepfun-ai/Step-3.5-Flash",
       "name": "Step 3.5 Flash (Deep Infra)",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -5354,6 +5581,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -5505,6 +5733,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -5699,7 +5928,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": false,
+      "structured_output": true,
       "temperature": true,
       "knowledge": "2026-01-04",
       "release_date": "2026-08-10",
@@ -5798,6 +6027,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -5845,6 +6075,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7158,6 +7389,7 @@
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7223,9 +7455,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.15701,
-        "output": 0.392525,
-        "cache_read": 0.04486
+        "input": 0.157276,
+        "output": 0.39319,
+        "cache_read": 0.044936
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Greenpt)",
@@ -7273,9 +7505,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.24673,
-        "output": 1.23365,
-        "cache_read": 0.012336
+        "input": 0.247148,
+        "output": 1.23574,
+        "cache_read": 0.012357
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Greenpt)",
@@ -7304,6 +7536,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7320,8 +7553,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.2243,
-        "output": 0.78505
+        "input": 0.22468,
+        "output": 0.78638
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Greenpt)",
@@ -7356,8 +7589,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.23365,
-        "output": 1.23365
+        "input": 1.23574,
+        "output": 1.23574
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Greenpt)",
@@ -7391,11 +7624,83 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.00935,
-        "output": 3.02805
+        "input": 1.01106,
+        "output": 3.03318
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
+      "type": "chat"
+    },
+    {
+      "id": "groq/meta-llama/llama-prompt-guard-2-22m",
+      "name": "Llama Prompt Guard 2 22M (Groq)",
+      "description": "22M-parameter (DeBERTa-xsmall) English classifier that detects prompt injection and jailbreak attempts",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2025-04-29",
+      "last_updated": "2025-04-29",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 512,
+        "output": 512
+      },
+      "cost": {
+        "input": 0.03,
+        "output": 0.03,
+        "cache_read": 0.015
+      },
+      "canonical_model_id": "meta/llama-prompt-guard-2-22m",
+      "display_name": "Llama Prompt Guard 2 22M (Groq)",
+      "type": "chat"
+    },
+    {
+      "id": "groq/meta-llama/llama-prompt-guard-2-86m",
+      "name": "Llama Prompt Guard 2 86M (Groq)",
+      "description": "86M-parameter (mDeBERTa-base) multilingual classifier that detects prompt injection and jailbreak attempts",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "structured_output": false,
+      "temperature": false,
+      "release_date": "2025-04-29",
+      "last_updated": "2025-04-29",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 512,
+        "output": 512
+      },
+      "cost": {
+        "input": 0.04,
+        "output": 0.04,
+        "cache_read": 0.02
+      },
+      "canonical_model_id": "meta/llama-prompt-guard-2-86m",
+      "display_name": "Llama Prompt Guard 2 86M (Groq)",
       "type": "chat"
     },
     {
@@ -7421,6 +7726,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7468,6 +7774,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7568,8 +7875,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33645,
-        "output": 0.4486
+        "input": 0.33702,
+        "output": 0.44936
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -7604,8 +7911,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.168225,
-        "output": 0.8972
+        "input": 0.16851,
+        "output": 0.89872
       },
       "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (IONOS)",
@@ -7640,8 +7947,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.728975,
-        "output": 0.728975
+        "input": 0.73021,
+        "output": 0.73021
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -7670,6 +7977,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -7686,11 +7994,217 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168225,
-        "output": 0.728975
+        "input": 0.16851,
+        "output": 0.73021
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-spark-1.1",
+      "name": "Muse Spark 1.1 (Meta)",
+      "description": "Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-04-08",
+      "last_updated": "2026-07-09",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-1.1",
+      "display_name": "Muse Spark 1.1 (Meta)",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-spark-1.2",
+      "name": "Muse Spark 1.2 (Meta)",
+      "description": "Muse Spark 1.2 is a coding-focused update to Muse Spark 1.1 with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-05",
+      "last_updated": "2026-08-05",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-1.2",
+      "display_name": "Muse Spark 1.2 (Meta)",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-spark-1.3",
+      "name": "Muse Spark 1.3 (Meta)",
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-1.3",
+      "display_name": "Muse Spark 1.3 (Meta)",
+      "type": "chat"
+    },
+    {
+      "id": "meta/muse-wonder-1.0",
+      "name": "Muse Wonder (Meta)",
+      "description": "Muse Wonder is a frontier multimodal reasoning model from Meta for personal and professional agents, long-horizon coding, and computer use. It combines Active Memory, which carries relevant context across conversations, with Active Focus, which keeps it working through blockers toward a goal.",
+      "family": "muse",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-12",
+      "last_updated": "2026-10-12",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "meta/muse-wonder-1.0",
+      "display_name": "Muse Wonder (Meta)",
       "type": "chat"
     },
     {
@@ -8264,7 +8778,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 131072,
         "output": 104857
@@ -8916,6 +9430,42 @@
       "type": "chat"
     },
     {
+      "id": "nebius/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "name": "Qwen3 30B-A3B Instruct 2507 (Nebius)",
+      "description": "Updated compact Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-07-28",
+      "last_updated": "2025-07-28",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.1,
+        "output": 0.3,
+        "cache_read": 0.1
+      },
+      "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507",
+      "display_name": "Qwen3 30B-A3B Instruct 2507 (Nebius)",
+      "type": "chat"
+    },
+    {
       "id": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
       "name": "DeepSeek V4 Flash 0731 (Nebius)",
       "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
@@ -8986,7 +9536,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "release_date": "2026-08-13",
       "last_updated": "2026-08-22",
@@ -9072,7 +9622,7 @@
         "supported": false
       },
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2024-08",
       "release_date": "2025-03-12",
@@ -9121,7 +9671,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2026-01-04",
       "release_date": "2026-10-15",
@@ -9170,7 +9720,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-09",
       "release_date": "2026-06-04",
@@ -9218,7 +9768,7 @@
         }
       ],
       "tool_call": true,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-06",
       "release_date": "2026-03-11",
@@ -9268,6 +9818,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -11544,6 +12095,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -11590,6 +12142,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -12064,7 +12617,7 @@
         "supported": false
       },
       "tool_call": false,
-      "structured_output": true,
+      "structured_output": false,
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
@@ -12435,9 +12988,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.4486,
-        "output": 0.8972,
-        "cache_read": 0.08972
+        "input": 0.44936,
+        "output": 0.89872,
+        "cache_read": 0.089872
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -12485,9 +13038,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.6729,
-        "output": 2.0187,
-        "cache_read": 0.13458
+        "input": 0.67404,
+        "output": 2.02212,
+        "cache_read": 0.134808
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Scaleway)",
@@ -12553,6 +13106,7 @@
       "tool_call": true,
       "structured_output": false,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -12569,8 +13123,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.168225,
-        "output": 0.6729
+        "input": 0.16851,
+        "output": 0.67404
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -12605,8 +13159,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.00935,
-        "output": 1.00935
+        "input": 1.01106,
+        "output": 1.01106
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -12640,8 +13194,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.841125,
-        "output": 2.523375
+        "input": 0.84255,
+        "output": 2.52765
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
@@ -13471,6 +14025,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -15240,6 +15795,7 @@
       "id": "xai/grok-4-fast-non-reasoning",
       "name": "X-Ai/Grok-4-Fast-Non-Reasoning",
       "description": "Fast Grok model for responsive chat, reasoning, and tool-assisted work",
+      "family": "grok",
       "attachment": false,
       "reasoning": {
         "supported": false

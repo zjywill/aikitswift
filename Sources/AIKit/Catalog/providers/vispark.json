@@ -39,6 +39,7 @@
         "input": 7.37,
         "output": 22.11
       },
+      "canonical_model_id": "vispark/vision-large",
       "display_name": "Vision Large",
       "type": "chat"
     },
@@ -78,6 +79,7 @@
         "input": 4.21,
         "output": 12.63
       },
+      "canonical_model_id": "vispark/vision-medium",
       "display_name": "Vision Medium",
       "type": "chat"
     },
@@ -117,6 +119,7 @@
         "input": 1.05,
         "output": 3.16
       },
+      "canonical_model_id": "vispark/vision-small",
       "display_name": "Vision Small",
       "type": "chat"
     }

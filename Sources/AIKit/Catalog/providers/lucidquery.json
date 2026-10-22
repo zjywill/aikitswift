@@ -8,7 +8,7 @@
       "name": "LucidNova RF1 100B",
       "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
       "family": "nova",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -70,8 +70,8 @@
         "output": 120000
       },
       "cost": {
-        "input": 4.5,
-        "output": 22
+        "input": 5.04675,
+        "output": 24.673
       },
       "display_name": "AGI-01 Frontier",
       "type": "chat"
@@ -107,8 +107,8 @@
         "output": 120000
       },
       "cost": {
-        "input": 2.5,
-        "output": 15
+        "input": 2.80375,
+        "output": 16.8225
       },
       "display_name": "AGI-01 Swift",
       "type": "chat"
@@ -118,7 +118,7 @@
       "name": "LucidQuery Nexus Coder",
       "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
       "family": "lucid",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false

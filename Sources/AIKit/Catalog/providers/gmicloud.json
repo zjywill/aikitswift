@@ -251,7 +251,8 @@
       "last_updated": "2026-03-13",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -300,7 +301,8 @@
       "last_updated": "2026-04-16",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -415,7 +417,8 @@
       "last_updated": "2026-03-13",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -524,7 +527,7 @@
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
       "family": "kimi-k2",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -566,7 +569,7 @@
       "name": "Kimi K2.7 Code Highspeed",
       "description": "Lower-latency Kimi Code variant for interactive edits and coding-agent loops",
       "family": "kimi-k2",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false

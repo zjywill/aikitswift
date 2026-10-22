@@ -9,23 +9,9 @@
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -42,6 +28,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.15,
@@ -58,23 +45,9 @@
       "family": "liquid",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": false,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2026-01-31",
       "last_updated": "2026-02-25",
@@ -91,6 +64,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.03,
         "output": 0.12,
@@ -110,16 +84,7 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
+      "reasoning_options": [],
       "tool_call": true,
       "interleaved": {
         "field": "reasoning_content"
@@ -140,6 +105,7 @@
         "context": 204800,
         "output": 131000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.279,
         "output": 1.2,
@@ -162,12 +128,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -192,6 +153,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 1.2,
@@ -228,6 +190,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -244,23 +207,9 @@
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2025-03-31",
       "last_updated": "2025-03-31",
@@ -277,6 +226,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -312,6 +262,7 @@
         "context": 262144,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.2,
         "output": 1.2,
@@ -334,12 +285,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -363,6 +312,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.9,
         "output": 0.9,
@@ -379,23 +329,9 @@
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2025-03-31",
       "last_updated": "2025-03-31",
@@ -412,6 +348,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.15,
@@ -427,23 +364,9 @@
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2025-07-31",
       "last_updated": "2025-07-31",
@@ -460,6 +383,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
@@ -481,12 +405,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -510,6 +432,7 @@
         "context": 40960,
         "output": 40960
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
@@ -531,13 +454,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -563,6 +480,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 0.3,
@@ -585,13 +503,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high",
-            "xhigh"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -617,6 +532,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 0.6,
@@ -639,12 +555,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -670,6 +584,7 @@
         "context": 262144,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 1,
@@ -692,12 +607,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -724,6 +634,7 @@
         "context": 1050000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.14,
         "output": 0.28,
@@ -746,12 +657,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -775,6 +681,7 @@
         "context": 1050000,
         "output": 131000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.435,
         "output": 0.87,
@@ -828,6 +735,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -855,7 +763,8 @@
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -882,6 +791,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 11,
         "output": 55,
@@ -904,12 +814,8 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "budget_tokens",
+          "min": 1024
         }
       ],
       "tool_call": true,
@@ -935,6 +841,7 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 5,
@@ -957,12 +864,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -988,6 +890,7 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75,
@@ -1016,6 +919,10 @@
             "medium",
             "high"
           ]
+        },
+        {
+          "type": "budget_tokens",
+          "min": 1024
         }
       ],
       "tool_call": true,
@@ -1041,6 +948,7 @@
         "context": 200000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 25,
@@ -1067,8 +975,13 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "max"
           ]
+        },
+        {
+          "type": "budget_tokens",
+          "min": 1024
         }
       ],
       "tool_call": true,
@@ -1094,6 +1007,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 25,
@@ -1121,7 +1035,8 @@
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -1148,6 +1063,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 25,
@@ -1175,7 +1091,8 @@
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -1202,6 +1119,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 25,
@@ -1228,7 +1146,9 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -1255,6 +1175,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 25,
@@ -1281,7 +1202,9 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -1308,6 +1231,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 10,
         "output": 50,
@@ -1330,12 +1254,8 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "budget_tokens",
+          "min": 1024
         }
       ],
       "tool_call": true,
@@ -1361,6 +1281,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -1387,8 +1308,13 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "max"
           ]
+        },
+        {
+          "type": "budget_tokens",
+          "min": 1024
         }
       ],
       "tool_call": true,
@@ -1414,6 +1340,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -1436,11 +1363,16 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -1467,6 +1399,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 10,
@@ -1503,6 +1436,7 @@
         "context": 163840,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.27,
         "output": 1.12,
@@ -1554,6 +1488,7 @@
         "context": 163840,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.56,
         "output": 1.68,
@@ -1576,12 +1511,14 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
-            "medium",
             "high",
-            "xhigh"
+            "max"
           ]
         }
       ],
@@ -1607,6 +1544,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.2,
@@ -1629,11 +1567,14 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -1659,6 +1600,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.435,
         "output": 0.87,
@@ -1696,6 +1638,7 @@
         "context": 256000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.4,
         "output": 2,
@@ -1734,6 +1677,7 @@
         "context": 256000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.3,
@@ -1750,26 +1694,46 @@
       "description": "Classification-tuned GLiNER2 large. Entities, relations, and JSON extraction still work.",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2026-09-24",
       "last_updated": "2026-09-24",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 8192,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
+      },
+      "display_name": "GLiNER-2.5-Decide",
+      "type": "chat"
+    },
+    {
+      "id": "fastino/gliguard-LLMGuardrails-300M",
+      "name": "GLiGuard LLM Guardrails 300M",
+      "description": "LLM safety, PII, and adversarial-attack guardrails; 300M-param encoder.",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "temperature": true,
+      "release_date": "2026-04-30",
+      "last_updated": "2026-04-30",
       "modalities": {
         "input": [
           "text"
@@ -1789,54 +1753,6 @@
         "cache_read": 0.15,
         "cache_write": 0.15
       },
-      "display_name": "GLiNER-2.5-Decide",
-      "type": "chat"
-    },
-    {
-      "id": "fastino/gliguard-LLMGuardrails-300M",
-      "name": "GLiGuard LLM Guardrails 300M",
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
-      "attachment": false,
-      "reasoning": {
-        "supported": false,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "temperature": true,
-      "release_date": "2026-04-30",
-      "last_updated": "2026-04-30",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 8192,
-        "output": 8192
-      },
-      "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
-      },
       "display_name": "GLiGuard LLM Guardrails 300M",
       "type": "chat"
     },
@@ -1846,23 +1762,9 @@
       "description": "A 300M-parameter multilingual model that runs LLM safety moderation and PII detection in a single forward pass.",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2026-07-08",
       "last_updated": "2026-07-08",
@@ -1891,26 +1793,12 @@
     {
       "id": "fastino/gliner2-base-v1",
       "name": "GLiNER2 Base",
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "description": "Named entity recognition; zero-shot span extraction.",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -1922,16 +1810,16 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 8192,
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER2 Base",
       "type": "chat"
@@ -1939,26 +1827,12 @@
     {
       "id": "fastino/gliner2-large-v1",
       "name": "GLiNER2 Large",
-      "description": "Flagship model for demanding analysis, coding, and production agent workflows",
+      "description": "Higher-accuracy NER; broader entity coverage.",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-06-30",
       "last_updated": "2025-06-30",
@@ -1970,16 +1844,16 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 8192,
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER2 Large",
       "type": "chat"
@@ -1987,26 +1861,12 @@
     {
       "id": "fastino/gliner2-multi-large-v1",
       "name": "GLiNER2 Multi Large",
-      "description": "Flagship model for demanding analysis, coding, and production agent workflows",
+      "description": "High-accuracy multilingual NER and span extraction.",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-11-30",
       "last_updated": "2025-11-30",
@@ -2018,16 +1878,16 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 8192,
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER2 Multi Large",
       "type": "chat"
@@ -2035,26 +1895,12 @@
     {
       "id": "fastino/gliner2-multi-v1",
       "name": "GLiNER2 Multi",
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "description": "Multilingual NER for cross-lingual extraction.",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2025-11-30",
       "last_updated": "2025-11-30",
@@ -2066,16 +1912,16 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 8192,
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER2 Multi",
       "type": "chat"
@@ -2083,26 +1929,12 @@
     {
       "id": "fastino/gliner2-privacy-filter-PII-multi",
       "name": "GLiNER2 Privacy Filter PII (Multi)",
-      "description": "Tool-capable chat model for instruction following and agentic application workflows",
+      "description": "Multilingual PII entity detection across 40+ languages; non-trainable encoder.",
       "attachment": false,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2026-04-30",
       "last_updated": "2026-04-30",
@@ -2114,16 +1946,16 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 8192,
         "output": 8192
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER2 Privacy Filter PII (Multi)",
       "type": "chat"
@@ -2134,23 +1966,9 @@
       "description": "English boundary NER and structured extraction with LoRA fine-tuning.",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2026-08-24",
       "last_updated": "2026-08-24",
@@ -2182,23 +2000,9 @@
       "description": "Multilingual boundary NER and span extraction; non-trainable encoder.",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": false,
       "temperature": true,
       "release_date": "2026-08-24",
       "last_updated": "2026-08-24",
@@ -2216,10 +2020,10 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.15,
-        "cache_read": 0.15,
-        "cache_write": 0.15
+        "input": 0.03,
+        "output": 0,
+        "cache_read": 0.03,
+        "cache_write": 0.03
       },
       "display_name": "GLiNER 2.5 Multi",
       "type": "chat"
@@ -2238,6 +2042,7 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high"
@@ -2270,6 +2075,7 @@
         "context": 1000000,
         "output": 65000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 3,
@@ -2294,6 +2100,7 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high"
@@ -2326,6 +2133,7 @@
         "context": 1000000,
         "output": 65000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 1.5,
@@ -2382,6 +2190,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 12,
@@ -2406,6 +2215,7 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high"
@@ -2438,6 +2248,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.5,
         "output": 9,
@@ -2462,6 +2273,7 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high"
@@ -2494,6 +2306,7 @@
         "context": 1000000,
         "output": 65000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 2.5,
@@ -2518,6 +2331,7 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
             "high"
@@ -2550,6 +2364,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.5,
         "output": 7.5,
@@ -2563,7 +2378,8 @@
     {
       "id": "google/diffusiongemma-26B-A4B-it",
       "name": "DiffusionGemma 26B-A4B IT",
-      "description": "Gemini model for general assistance, reasoning, and multimodal workflows",
+      "description": "Gemma 4 based discrete text diffusion model for fast chat, reasoning, and tool use",
+      "family": "gemma",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2585,8 +2401,9 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-05-31",
-      "last_updated": "2026-05-31",
+      "knowledge": "2025-01",
+      "release_date": "2026-06-09",
+      "last_updated": "2026-07-15",
       "modalities": {
         "input": [
           "text"
@@ -2595,17 +2412,19 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 0.5,
         "cache_read": 0.5,
         "cache_write": 0.5
       },
+      "canonical_model_id": "google/diffusiongemma-26b-a4b-it",
       "display_name": "DiffusionGemma 26B-A4B IT",
       "type": "chat"
     },
@@ -2615,23 +2434,9 @@
       "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2025-02-28",
       "last_updated": "2025-02-28",
@@ -2648,6 +2453,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.15,
@@ -2660,7 +2466,8 @@
     {
       "id": "google/gemma-4-12B-it",
       "name": "Gemma 4 12B IT",
-      "description": "Open Gemma instruction model for efficient chat and self-hosted deployments",
+      "description": "Compact Gemma 4 instruction model for open, self-hosted chat and reasoning",
+      "family": "gemma",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2681,8 +2488,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-05-31",
-      "last_updated": "2026-05-31",
+      "release_date": "2026-06-09",
+      "last_updated": "2026-06-09",
       "modalities": {
         "input": [
           "text"
@@ -2691,17 +2498,19 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 0.25,
         "cache_read": 0.25,
         "cache_write": 0.25
       },
+      "canonical_model_id": "google/gemma-4-12b-it",
       "display_name": "Gemma 4 12B IT",
       "type": "chat"
     },
@@ -2717,12 +2526,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -2731,6 +2535,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {
@@ -2747,6 +2552,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 0.5,
@@ -2800,6 +2606,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -2853,6 +2660,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
@@ -2893,6 +2701,7 @@
         "context": 1047576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 8,
@@ -2933,6 +2742,7 @@
         "context": 1047576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.4,
         "output": 1.6,
@@ -2972,6 +2782,7 @@
         "context": 1047576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.4,
@@ -3012,6 +2823,7 @@
         "context": 128000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.5,
         "output": 10,
@@ -3052,6 +2864,7 @@
         "context": 128000,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.6,
@@ -3076,10 +2889,10 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
-            "high",
-            "xhigh"
+            "high"
           ]
         }
       ],
@@ -3107,6 +2920,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 2,
@@ -3131,10 +2945,10 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
-            "high",
-            "xhigh"
+            "high"
           ]
         }
       ],
@@ -3162,6 +2976,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.05,
         "output": 0.4,
@@ -3186,10 +3001,10 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
-            "high",
-            "xhigh"
+            "high"
           ]
         }
       ],
@@ -3217,6 +3032,7 @@
         "input": 272000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -3241,9 +3057,11 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -3272,6 +3090,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14,
@@ -3296,6 +3115,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -3327,6 +3147,7 @@
         "context": 1050000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -3351,6 +3172,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -3382,6 +3204,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.75,
         "output": 4.5,
@@ -3406,6 +3229,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -3436,6 +3260,7 @@
         "context": 1047576,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 1.25,
@@ -3460,6 +3285,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
@@ -3491,6 +3317,7 @@
         "context": 1050000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 30,
@@ -3515,10 +3342,12 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -3547,6 +3376,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 6,
@@ -3571,10 +3401,12 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -3603,6 +3435,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 30,
@@ -3627,10 +3460,12 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high",
-            "xhigh"
+            "xhigh",
+            "max"
           ]
         }
       ],
@@ -3659,6 +3494,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.5,
         "output": 15,
@@ -3685,7 +3521,8 @@
           "values": [
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -3711,6 +3548,7 @@
         "context": 500000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 6,
@@ -3735,8 +3573,7 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -3762,6 +3599,7 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2,
         "output": 5,
@@ -3775,30 +3613,16 @@
     {
       "id": "meta-llama/Llama-3.1-8B-Instruct",
       "name": "Llama 3.1 8B Instruct",
-      "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
+      "description": "Compact open Llama model for lightweight chat, drafting, and self-hosting",
       "family": "llama",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
-      "knowledge": "2023-12-31",
-      "release_date": "2024-06-30",
+      "knowledge": "2023-12",
+      "release_date": "2024-07-23",
       "last_updated": "2024-07-23",
       "modalities": {
         "input": [
@@ -3813,12 +3637,14 @@
         "context": 128000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
         "cache_read": 0.2,
         "cache_write": 0.2
       },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
       "display_name": "Llama 3.1 8B Instruct",
       "type": "chat"
     },
@@ -3849,6 +3675,7 @@
         "context": 131072,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -3862,30 +3689,16 @@
     {
       "id": "meta-llama/Llama-3.2-1B-Instruct",
       "name": "Llama 3.2 1B Instruct",
-      "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
+      "description": "Compact instruction-tuned Llama model for multilingual dialogue and on-device assistants",
       "family": "llama",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "tool_call": true,
       "temperature": true,
-      "knowledge": "2023-12-31",
-      "release_date": "2024-08-31",
+      "knowledge": "2023-12",
+      "release_date": "2024-09-25",
       "last_updated": "2024-09-25",
       "modalities": {
         "input": [
@@ -3900,12 +3713,14 @@
         "context": 131072,
         "output": 60000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.201,
         "cache_read": 0.1,
         "cache_write": 0.1
       },
+      "canonical_model_id": "meta/llama-3.2-1b-instruct",
       "display_name": "Llama 3.2 1B Instruct",
       "type": "chat"
     },
@@ -3936,6 +3751,7 @@
         "context": 131072,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -3953,23 +3769,9 @@
       "family": "llama",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": false,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "knowledge": "2023-12-31",
       "release_date": "2024-08-31",
@@ -3987,6 +3789,7 @@
         "context": 131072,
         "output": 80000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.335,
@@ -4023,6 +3826,7 @@
         "context": 16384,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.9,
         "output": 0.9,
@@ -4047,9 +3851,11 @@
         {
           "type": "effort",
           "values": [
+            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -4077,6 +3883,7 @@
         "context": 1048576,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 4.25,
@@ -4114,6 +3921,7 @@
         "context": 256000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
@@ -4151,6 +3959,7 @@
         "context": 128000,
         "output": 4000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.1,
@@ -4189,6 +3998,7 @@
         "context": 256000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 1.5,
@@ -4227,6 +4037,7 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.4,
         "output": 2,
@@ -4251,8 +4062,7 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -4279,6 +4089,7 @@
         "context": 256000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.5,
         "output": 7.5,
@@ -4315,6 +4126,7 @@
         "context": 128000,
         "output": 4000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 0.9,
@@ -4365,6 +4177,7 @@
         "context": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 1.5,
@@ -4401,6 +4214,7 @@
         "context": 128000,
         "output": 4000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.15,
@@ -4417,23 +4231,9 @@
       "description": "Mistral model for multilingual chat, reasoning, and tool-assisted workflows",
       "attachment": false,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "release_date": "2023-04-30",
       "last_updated": "2023-04-30",
@@ -4450,6 +4250,7 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.2,
         "output": 0.2,
@@ -4486,6 +4287,7 @@
         "context": 128000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.02,
         "output": 0.03,
@@ -4510,8 +4312,7 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
+            "none",
             "high"
           ]
         }
@@ -4538,6 +4339,7 @@
         "context": 32000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.6,
@@ -4576,6 +4378,7 @@
         "context": 128000,
         "output": 4000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.15,
@@ -4598,12 +4401,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -4630,6 +4428,7 @@
         "context": 262000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.95,
         "output": 4,
@@ -4650,16 +4449,7 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
+      "reasoning_options": [],
       "tool_call": true,
       "interleaved": {
         "field": "reasoning_content"
@@ -4684,6 +4474,7 @@
         "context": 256000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.95,
         "output": 4,
@@ -4709,8 +4500,8 @@
           "type": "effort",
           "values": [
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -4737,6 +4528,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -4762,8 +4554,8 @@
           "type": "effort",
           "values": [
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -4790,6 +4582,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 4.5,
         "output": 22.5,
@@ -4812,12 +4605,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -4841,6 +4629,7 @@
         "context": 262144,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.05,
         "output": 0.2,
@@ -4865,10 +4654,13 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
-            "medium",
-            "high"
+            "medium"
           ]
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -4892,6 +4684,7 @@
         "context": 256000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.09,
         "output": 0.45,
@@ -4916,10 +4709,13 @@
         {
           "type": "effort",
           "values": [
-            "low",
+            "none",
             "medium",
             "high"
           ]
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -4943,6 +4739,7 @@
         "context": 1000000,
         "output": 65000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 2.5,
@@ -4997,10 +4794,10 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.5,
-        "output": 0.5,
-        "cache_read": 0.5,
-        "cache_write": 0.5
+        "input": 0.07,
+        "output": 0.2,
+        "cache_read": 0.035,
+        "cache_write": 0.07
       },
       "canonical_model_id": "nvidia/nemotron-3.5-lightning",
       "display_name": "Nemotron 3.5 Lightning 30B A3B",
@@ -5085,6 +4882,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -5100,6 +4898,7 @@
         "context": 131072,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0.6,
@@ -5136,6 +4935,7 @@
       },
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -5151,6 +4951,7 @@
         "context": 131072,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.07,
         "output": 0.3,
@@ -5195,6 +4996,7 @@
         "context": 1048576,
         "output": 4096
       },
+      "status": "deprecated",
       "display_name": "Pioneer Auto",
       "type": "chat"
     },
@@ -5210,12 +5012,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -5239,6 +5036,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.2,
@@ -5261,12 +5059,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -5292,6 +5088,7 @@
         "context": 1000000,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1875,
         "output": 1.125,
@@ -5314,12 +5111,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -5343,6 +5138,7 @@
         "context": 240000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.04,
         "output": 6.24,
@@ -5365,12 +5161,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -5396,6 +5190,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.325,
         "output": 1.95,
@@ -5418,12 +5213,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -5446,6 +5239,7 @@
         "context": 991000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 3.75,
@@ -5468,12 +5262,10 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens"
         }
       ],
       "tool_call": true,
@@ -5499,6 +5291,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.32,
         "output": 1.28,
@@ -5523,9 +5316,8 @@
         {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
-            "high"
+            "high",
+            "xhigh"
           ]
         }
       ],
@@ -5551,6 +5343,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 5,
         "output": 30,
@@ -5575,9 +5368,12 @@
         {
           "type": "effort",
           "values": [
+            "none",
+            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -5603,6 +5399,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 1.2,
@@ -5625,12 +5422,7 @@
       },
       "reasoning_options": [
         {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
+          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -5654,6 +5446,7 @@
         "context": 202000,
         "output": 131072
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.98,
         "output": 3.08,
@@ -5676,11 +5469,13 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -5705,6 +5500,7 @@
         "context": 1040000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.4,
         "output": 4.4,
@@ -5727,11 +5523,13 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
-            "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
@@ -5756,6 +5554,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 2.1,
         "output": 6.6,

@@ -141,6 +141,7 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next FP8",
       "type": "chat"
     },
@@ -176,14 +177,16 @@
         "input": 0,
         "output": 0
       },
+      "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3-Coder-Next-FP8-no-thinking",
       "type": "chat"
     },
     {
       "id": "Qwen3-Embedding-8B",
+      "type": "embedding",
       "name": "Qwen3-Embedding-8B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "text-embedding",
+      "family": "qwen",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -209,8 +212,8 @@
         "input": 0,
         "output": 0
       },
-      "display_name": "Qwen3-Embedding-8B",
-      "type": "other"
+      "canonical_model_id": "alibaba/qwen3-embedding-8b",
+      "display_name": "Qwen3-Embedding-8B"
     },
     {
       "id": "Qwen3.6-27B-FP8",
@@ -391,6 +394,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2025-01",
       "release_date": "2026-04-02",
       "last_updated": "2026-04-02",
       "modalities": {

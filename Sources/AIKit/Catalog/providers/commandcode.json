@@ -2405,6 +2405,7 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -2997,6 +2998,7 @@
       "id": "stepfun/Step-3.5-Flash",
       "name": "Step 3.5 Flash",
       "description": "StepFun flash lane for quick multimodal reasoning and coding assistance",
+      "family": "step",
       "attachment": false,
       "reasoning": {
         "supported": true,

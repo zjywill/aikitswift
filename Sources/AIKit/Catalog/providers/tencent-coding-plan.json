@@ -23,8 +23,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-02-11",
-      "last_updated": "2026-02-11",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-02-12",
       "modalities": {
         "input": [
           "text"
@@ -33,17 +33,19 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 202752,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM-5",
       "type": "chat"
     },
@@ -73,6 +75,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -113,6 +116,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -153,6 +157,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -188,6 +193,7 @@
         "context": 131072,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
@@ -235,12 +241,14 @@
         "context": 262144,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi-K2.5",
       "type": "chat"
     },
@@ -275,12 +283,14 @@
         "context": 204800,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0,
         "output": 0,
         "cache_read": 0,
         "cache_write": 0
       },
+      "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax-M2.5",
       "type": "chat"
     },

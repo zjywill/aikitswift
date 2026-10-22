@@ -114,6 +114,7 @@
         "context": 200000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 3.89
@@ -154,6 +155,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 3.89
@@ -166,14 +168,16 @@
       "id": "gpt-oss-120b",
       "name": "GPT OSS 120B",
       "description": "Open-weight GPT model for self-hosted reasoning and instruction-following workloads",
+      "family": "gpt-oss",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-08",
-      "last_updated": "2025-08",
+      "knowledge": "2024-06",
+      "release_date": "2025-08-05",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -191,6 +195,7 @@
         "input": 0.0675,
         "output": 0.27
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
       "type": "chat"
     },
@@ -222,6 +227,7 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.22,
         "output": 0.88

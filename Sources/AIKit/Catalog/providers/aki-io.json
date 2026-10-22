@@ -33,8 +33,7 @@
       "last_updated": "2026-09-10",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -46,9 +45,9 @@
         "output": 81920
       },
       "cost": {
-        "input": 0.25,
-        "output": 1,
-        "cache_read": 0.1
+        "input": 0.280375,
+        "output": 1.1215,
+        "cache_read": 0.11215
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -80,8 +79,7 @@
       "last_updated": "2026-04-02",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -93,8 +91,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.5
+        "input": 0.11215,
+        "output": 0.56075
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
@@ -139,9 +137,9 @@
         "output": 81920
       },
       "cost": {
-        "input": 1,
-        "output": 3.5,
-        "cache_read": 0.25
+        "input": 1.1215,
+        "output": 3.92525,
+        "cache_read": 0.280375
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -170,6 +168,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -186,8 +185,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.55
+        "input": 0.168225,
+        "output": 0.616825
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
@@ -219,8 +218,7 @@
       "last_updated": "2026-03-16",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -232,8 +230,8 @@
         "output": 81920
       },
       "cost": {
-        "input": 0.2,
-        "output": 0.6
+        "input": 0.2243,
+        "output": 0.6729
       },
       "canonical_model_id": "mistral/mistral-small-2603",
       "display_name": "Mistral Small 4",
@@ -265,8 +263,7 @@
       "last_updated": "2026-04-17",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -277,9 +274,10 @@
         "context": 256000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
-        "input": 0.15,
-        "output": 0.5
+        "input": 0.168225,
+        "output": 0.56075
       },
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen3.6 35B-A3B",
@@ -313,8 +311,7 @@
       "last_updated": "2026-08-14",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -326,9 +323,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.3,
-        "output": 2.2,
-        "cache_read": 0.1
+        "input": 0.33645,
+        "output": 2.4673,
+        "cache_read": 0.11215
       },
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",

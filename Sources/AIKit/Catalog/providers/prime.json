@@ -2728,6 +2728,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2774,6 +2775,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -2795,6 +2797,41 @@
       },
       "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "gpt-oss-20b",
+      "type": "chat"
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "name": "Qwen3 30B A3B Instruct 2507",
+      "description": "Updated compact Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2025-07-28",
+      "last_updated": "2025-07-28",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 235929
+      },
+      "cost": {
+        "input": 0.13,
+        "output": 0.52
+      },
+      "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507",
+      "display_name": "Qwen3 30B A3B Instruct 2507",
       "type": "chat"
     },
     {

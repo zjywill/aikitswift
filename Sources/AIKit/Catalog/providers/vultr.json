@@ -45,6 +45,7 @@
         "context": 1048576,
         "output": 384000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.1,
         "output": 0.25
@@ -317,6 +318,7 @@
         "context": 1048576,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.09,
         "output": 0.18

@@ -364,8 +364,8 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-04-08",
-      "last_updated": "2026-06-01",
+      "release_date": "2026-04-07",
+      "last_updated": "2026-04-07",
       "modalities": {
         "input": [
           "text"
@@ -384,6 +384,7 @@
         "output": 2.46,
         "cache_read": 0.133
       },
+      "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1",
       "type": "chat"
     },

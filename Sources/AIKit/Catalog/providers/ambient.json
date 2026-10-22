@@ -322,7 +322,7 @@
     },
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
-      "name": "Qwen3 30B A3B Instruct 2507",
+      "name": "Qwen3 30B-A3B Instruct 2507",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "family": "qwen",
       "attachment": false,
@@ -332,8 +332,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-10-09",
-      "last_updated": "2026-10-09",
+      "release_date": "2025-07-28",
+      "last_updated": "2025-07-28",
       "modalities": {
         "input": [
           "text"
@@ -353,7 +353,8 @@
         "cache_read": 0.09,
         "cache_write": 0
       },
-      "display_name": "Qwen3 30B A3B Instruct 2507",
+      "canonical_model_id": "alibaba/qwen3-30b-a3b-instruct-2507",
+      "display_name": "Qwen3 30B-A3B Instruct 2507",
       "type": "chat"
     },
     {

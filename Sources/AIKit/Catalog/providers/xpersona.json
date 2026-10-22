@@ -608,7 +608,7 @@
       "id": "xpersona-frieren-coder",
       "name": "Xpersona Frieren 1",
       "description": "Coding model for repository understanding, refactors, and agentic engineering tasks",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -659,7 +659,7 @@
       "name": "GPT-5.5",
       "description": "Default frontier GPT for coding, computer use, research, and knowledge work",
       "family": "gpt",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -683,8 +683,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-12-30",
-      "release_date": "2026-05-29",
-      "last_updated": "2026-05-29",
+      "release_date": "2026-04-23",
+      "last_updated": "2026-04-23",
       "modalities": {
         "input": [
           "text",
@@ -699,6 +699,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 18,

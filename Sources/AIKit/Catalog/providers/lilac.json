@@ -42,6 +42,7 @@
         "context": 262100,
         "output": 262100
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.11,
         "output": 0.35
@@ -54,7 +55,7 @@
       "id": "minimaxai/minimax-m3",
       "name": "MiniMax M3",
       "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
-      "family": "minimax-m3",
+      "family": "minimax",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -85,6 +86,7 @@
         "context": 1048576,
         "output": 1048576
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.28,
         "output": 1.1,
@@ -132,6 +134,7 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.7,
         "output": 3.5,
@@ -184,6 +187,7 @@
         "context": 524288,
         "output": 524288
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.9,
         "output": 3,

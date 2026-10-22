@@ -227,9 +227,9 @@
       },
       "status": "beta",
       "cost": {
-        "input": 0.7112,
-        "output": 2.1859,
-        "cache_read": 0.0732
+        "input": 1.4367,
+        "output": 4.4156,
+        "cache_read": 0.1479
       },
       "canonical_model_id": "mistral/mistral-large-4",
       "display_name": "Mistral Large 4",
@@ -1405,6 +1405,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -1451,6 +1452,7 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {

@@ -65,6 +65,9 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
@@ -73,9 +76,6 @@
             "xhigh",
             "max"
           ]
-        },
-        {
-          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -118,6 +118,9 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "low",
@@ -125,9 +128,6 @@
             "high",
             "max"
           ]
-        },
-        {
-          "type": "toggle"
         }
       ],
       "tool_call": true,
@@ -264,6 +264,9 @@
       },
       "reasoning_options": [
         {
+          "type": "toggle"
+        },
+        {
           "type": "effort",
           "values": [
             "minimal",
@@ -272,9 +275,6 @@
             "high",
             "max"
           ]
-        },
-        {
-          "type": "toggle"
         },
         {
           "type": "budget_tokens"

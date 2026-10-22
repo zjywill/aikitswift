@@ -26,6 +26,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-09",
@@ -82,6 +83,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-01",
@@ -279,6 +281,7 @@
         "input": 168000,
         "output": 32000
       },
+      "status": "deprecated",
       "experimental": {
         "modes": {
           "fast": {
@@ -336,6 +339,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01",
       "release_date": "2026-05-28",
@@ -471,6 +475,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-22",
@@ -588,6 +593,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-01-31",
       "release_date": "2026-06-30",
@@ -644,6 +650,7 @@
         }
       ],
       "tool_call": true,
+      "structured_output": true,
       "temperature": false,
       "knowledge": "2026-06",
       "release_date": "2026-09-28",
@@ -727,6 +734,7 @@
         "input": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.5,
         "output": 9,
@@ -785,6 +793,7 @@
         "input": 936000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.75,
         "output": 3.75,
@@ -835,6 +844,7 @@
         "input": 936000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.75,
         "output": 3.75,
@@ -872,7 +882,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "pdf"
         ],
         "output": [
           "text"
@@ -923,8 +934,6 @@
         "input": [
           "text",
           "image",
-          "video",
-          "audio",
           "pdf"
         ],
         "output": [
@@ -986,6 +995,7 @@
         "input": 128000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 2,
@@ -1094,6 +1104,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai"
       },
@@ -1165,6 +1176,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai"
       },
@@ -1187,7 +1199,18 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -1265,6 +1288,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai"
       },
@@ -1991,8 +2015,7 @@
       "modalities": {
         "input": [
           "text",
-          "image",
-          "pdf"
+          "image"
         ],
         "output": [
           "text"
@@ -2064,6 +2087,7 @@
         "input": 224000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.95,
         "output": 4,
@@ -2161,6 +2185,7 @@
         "input": 128000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai"
       },

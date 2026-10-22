@@ -28,8 +28,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-04-30",
-      "last_updated": "2026-04-16",
+      "knowledge": "2025-04",
+      "release_date": "2025-04-28",
+      "last_updated": "2025-04-28",
       "modalities": {
         "input": [
           "text"
@@ -43,18 +44,20 @@
         "context": 32768,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 0.55
       },
+      "canonical_model_id": "alibaba/qwen3-32b",
       "display_name": "Qwen3 32B",
       "type": "chat"
     },
     {
       "id": "all-mini-lm-l6-v2",
+      "type": "embedding",
       "name": "All-MiniLM-L6-v2",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "text-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -62,7 +65,7 @@
       "tool_call": false,
       "temperature": false,
       "release_date": "2021-08-30",
-      "last_updated": "2026-04-16",
+      "last_updated": "2021-08-30",
       "modalities": {
         "input": [
           "text"
@@ -80,8 +83,8 @@
         "input": 0.009,
         "output": 0
       },
-      "display_name": "All-MiniLM-L6-v2",
-      "type": "other"
+      "canonical_model_id": "sentence-transformers/all-minilm-l6-v2",
+      "display_name": "All-MiniLM-L6-v2"
     },
     {
       "id": "anthropic-claude-3-opus",
@@ -132,9 +135,9 @@
       },
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2024-07",
-      "release_date": "2024-11-05",
-      "last_updated": "2024-11-05",
+      "knowledge": "2024-07-31",
+      "release_date": "2024-10-22",
+      "last_updated": "2024-10-22",
       "modalities": {
         "input": [
           "text"
@@ -155,6 +158,7 @@
         "cache_read": 0.08,
         "cache_write": 1
       },
+      "canonical_model_id": "anthropic/claude-3-5-haiku-20241022",
       "display_name": "Claude 3.5 Haiku",
       "type": "chat"
     },
@@ -218,9 +222,9 @@
       ],
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2024-11",
-      "release_date": "2025-02-24",
-      "last_updated": "2025-02-24",
+      "knowledge": "2024-10-31",
+      "release_date": "2025-02-19",
+      "last_updated": "2025-02-19",
       "modalities": {
         "input": [
           "text",
@@ -242,6 +246,7 @@
         "cache_read": 0.3,
         "cache_write": 3.75
       },
+      "canonical_model_id": "anthropic/claude-3-7-sonnet-20250219",
       "display_name": "Claude 3.7 Sonnet",
       "type": "chat"
     },
@@ -284,12 +289,14 @@
         "context": 200000,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-1",
       "display_name": "Anthropic Claude 4.1 Opus",
       "type": "chat"
     },
@@ -356,6 +363,7 @@
           "cache_write": 7.5
         }
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Anthropic Claude 4.5 Sonnet",
       "type": "chat"
     },
@@ -423,6 +431,7 @@
           "cache_write": 7.5
         }
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Anthropic Claude Sonnet 4.6",
       "type": "chat"
     },
@@ -551,8 +560,9 @@
       ],
       "tool_call": true,
       "temperature": false,
+      "knowledge": "2026-01-31",
       "release_date": "2026-06-09",
-      "last_updated": "2026-06-12",
+      "last_updated": "2026-06-09",
       "modalities": {
         "input": [
           "text",
@@ -573,6 +583,7 @@
         "cache_read": 1,
         "cache_write": 12.5
       },
+      "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Anthropic Claude Fable 5",
       "type": "chat"
     },
@@ -672,6 +683,7 @@
         "cache_read": 0.1,
         "cache_write": 1.25
       },
+      "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Anthropic Claude Haiku 4.5",
       "type": "chat"
     },
@@ -715,12 +727,14 @@
         "context": 200000,
         "output": 32000
       },
+      "status": "deprecated",
       "cost": {
         "input": 15,
         "output": 75,
         "cache_read": 1.5,
         "cache_write": 18.75
       },
+      "canonical_model_id": "anthropic/claude-opus-4-0",
       "display_name": "Claude Opus 4",
       "type": "chat"
     },
@@ -747,7 +761,7 @@
       ],
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2025-03-31",
+      "knowledge": "2025-05",
       "release_date": "2025-11-24",
       "last_updated": "2025-11-24",
       "modalities": {
@@ -770,6 +784,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Anthropic Claude Opus 4.5",
       "type": "chat"
     },
@@ -837,6 +852,7 @@
           "cache_write": 12.5
         }
       },
+      "canonical_model_id": "anthropic/claude-opus-4-6",
       "display_name": "Anthropic Claude Opus 4.6",
       "type": "chat"
     },
@@ -886,6 +902,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Anthropic Claude Opus 4.7",
       "type": "chat"
     },
@@ -912,8 +929,9 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2026-01",
       "release_date": "2026-05-28",
-      "last_updated": "2026-05-29",
+      "last_updated": "2026-05-28",
       "modalities": {
         "input": [
           "text",
@@ -934,6 +952,7 @@
         "cache_read": 0.5,
         "cache_write": 6.25
       },
+      "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Anthropic Claude Opus 4.8",
       "type": "chat"
     },
@@ -1097,6 +1116,7 @@
         "context": 1000000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 3,
         "output": 15,
@@ -1121,6 +1141,7 @@
           "cache_write": 3.75
         }
       },
+      "canonical_model_id": "anthropic/claude-sonnet-4-0",
       "display_name": "Claude Sonnet 4",
       "type": "chat"
     },
@@ -1223,8 +1244,9 @@
     },
     {
       "id": "bge-m3",
+      "type": "embedding",
       "name": "BGE M3",
-      "description": "Flagship model for demanding analysis, coding, and production agent workflows",
+      "description": "Multilingual embedding model combining dense, sparse, and multi-vector retrieval",
       "family": "bge",
       "attachment": false,
       "reasoning": {
@@ -1233,7 +1255,7 @@
       "tool_call": false,
       "temperature": false,
       "release_date": "2024-01-30",
-      "last_updated": "2026-04-30",
+      "last_updated": "2024-01-30",
       "modalities": {
         "input": [
           "text"
@@ -1251,11 +1273,12 @@
         "input": 0.02,
         "output": 0
       },
-      "display_name": "BGE M3",
-      "type": "chat"
+      "canonical_model_id": "baai/bge-m3",
+      "display_name": "BGE M3"
     },
     {
       "id": "bge-reranker-v2-m3",
+      "type": "reranking",
       "name": "BGE Reranker v2 M3",
       "description": "Reranking model for improving retrieval quality in search and recommendation systems",
       "family": "bge",
@@ -1265,8 +1288,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2024-03-12",
-      "last_updated": "2026-04-30",
+      "release_date": "2024-03-15",
+      "last_updated": "2024-03-15",
       "modalities": {
         "input": [
           "text"
@@ -1284,8 +1307,8 @@
         "input": 0.01,
         "output": 0
       },
-      "display_name": "BGE Reranker v2 M3",
-      "type": "chat"
+      "canonical_model_id": "baai/bge-reranker-v2-m3",
+      "display_name": "BGE Reranker v2 M3"
     },
     {
       "id": "deepseek-3.2",
@@ -1313,9 +1336,9 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2025-12-02",
-      "last_updated": "2026-04-30",
+      "knowledge": "2024-07",
+      "release_date": "2025-12-01",
+      "last_updated": "2025-12-01",
       "modalities": {
         "input": [
           "text"
@@ -1334,6 +1357,7 @@
         "output": 1.6,
         "cache_read": 0.15
       },
+      "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "Deepseek 3.2",
       "type": "chat"
     },
@@ -1341,15 +1365,16 @@
       "id": "deepseek-4-flash",
       "name": "Deepseek V4 Flash",
       "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-      "family": "deepseek",
+      "family": "deepseek-flash",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2026-05-27",
-      "last_updated": "2026-05-29",
+      "knowledge": "2025-05",
+      "release_date": "2026-04-24",
+      "last_updated": "2026-04-24",
       "modalities": {
         "input": [
           "text"
@@ -1358,7 +1383,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 384000
@@ -1368,6 +1393,7 @@
         "output": 0.28,
         "cache_read": 0.028
       },
+      "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "Deepseek V4 Flash",
       "type": "chat"
     },
@@ -1411,6 +1437,7 @@
         "context": 32678,
         "output": 8192
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.99,
         "output": 0.99
@@ -1510,10 +1537,10 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
-            "medium",
             "high",
-            "xhigh"
+            "max"
           ]
         }
       ],
@@ -1544,6 +1571,7 @@
         "output": 3.48,
         "cache_read": 0.348
       },
+      "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "Deepseek V4 Pro",
       "type": "chat"
     },
@@ -1647,17 +1675,17 @@
     },
     {
       "id": "e5-large-v2",
+      "type": "embedding",
       "name": "E5 Large v2",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "text-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2023-05-19",
-      "last_updated": "2026-04-30",
+      "release_date": "2023-05",
+      "last_updated": "2023-05",
       "modalities": {
         "input": [
           "text"
@@ -1675,11 +1703,12 @@
         "input": 0.02,
         "output": 0
       },
-      "display_name": "E5 Large v2",
-      "type": "other"
+      "canonical_model_id": "intfloat/e5-large-v2",
+      "display_name": "E5 Large v2"
     },
     {
       "id": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "type": "speech",
       "name": "ElevenLabs Multilingual TTS v2",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "elevenlabs",
@@ -1690,7 +1719,7 @@
       "tool_call": false,
       "temperature": false,
       "release_date": "2023-08-22",
-      "last_updated": "2026-04-16",
+      "last_updated": "2023-08-22",
       "modalities": {
         "input": [
           "text"
@@ -1704,11 +1733,12 @@
         "context": 0,
         "output": 0
       },
-      "display_name": "ElevenLabs Multilingual TTS v2",
-      "type": "speech-synthesis"
+      "canonical_model_id": "elevenlabs/eleven_multilingual_v2",
+      "display_name": "ElevenLabs Multilingual TTS v2"
     },
     {
       "id": "fal-ai/fast-sdxl",
+      "type": "image",
       "name": "Fast SDXL",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "stable-diffusion",
@@ -1733,11 +1763,11 @@
         "context": 0,
         "output": 0
       },
-      "display_name": "Fast SDXL",
-      "type": "image-generation"
+      "display_name": "Fast SDXL"
     },
     {
       "id": "fal-ai/flux/schnell",
+      "type": "image",
       "name": "FLUX.1 [schnell]",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "flux",
@@ -1762,8 +1792,7 @@
         "context": 0,
         "output": 0
       },
-      "display_name": "FLUX.1 [schnell]",
-      "type": "image-generation"
+      "display_name": "FLUX.1 [schnell]"
     },
     {
       "id": "fal-ai/stable-audio-25/text-to-audio",
@@ -1805,8 +1834,9 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-30",
+      "knowledge": "2025-01",
+      "release_date": "2026-04-02",
+      "last_updated": "2026-04-02",
       "modalities": {
         "input": [
           "text",
@@ -1827,6 +1857,7 @@
         "output": 0.5,
         "cache_read": 0.036
       },
+      "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4",
       "type": "chat"
     },
@@ -1857,8 +1888,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-02-11",
-      "last_updated": "2026-04-16",
+      "release_date": "2026-02-12",
+      "last_updated": "2026-02-12",
       "modalities": {
         "input": [
           "text"
@@ -1872,11 +1903,13 @@
         "context": 64000,
         "output": 64000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 3.2,
         "cache_read": 0.2
       },
+      "canonical_model_id": "zhipuai/glm-5",
       "display_name": "GLM 5",
       "type": "chat"
     },
@@ -1921,6 +1954,7 @@
         "context": 163840,
         "output": 163840
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.3,
         "output": 4.3,
@@ -2078,6 +2112,7 @@
     },
     {
       "id": "gte-large-en-v1.5",
+      "type": "embedding",
       "name": "GTE Large (v1.5)",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "text-embedding",
@@ -2106,8 +2141,7 @@
         "input": 0.09,
         "output": 0
       },
-      "display_name": "GTE Large (v1.5)",
-      "type": "other"
+      "display_name": "GTE Large (v1.5)"
     },
     {
       "id": "kimi-k2.5",
@@ -2137,8 +2171,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-01",
-      "last_updated": "2026-04-16",
+      "release_date": "2026-01-27",
+      "last_updated": "2026-01-27",
       "modalities": {
         "input": [
           "text",
@@ -2153,11 +2187,13 @@
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 2.7,
         "cache_read": 0.203
       },
+      "canonical_model_id": "moonshotai/kimi-k2.5",
       "display_name": "Kimi K2.5",
       "type": "chat"
     },
@@ -2189,8 +2225,8 @@
       "structured_output": true,
       "temperature": false,
       "knowledge": "2025-01",
-      "release_date": "2026-04-21",
-      "last_updated": "2026-04-21",
+      "release_date": "2026-04-20",
+      "last_updated": "2026-04-20",
       "modalities": {
         "input": [
           "text",
@@ -2210,6 +2246,7 @@
         "output": 4,
         "cache_read": 0.19
       },
+      "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "type": "chat"
     },
@@ -2278,7 +2315,7 @@
       "temperature": true,
       "knowledge": "2024-08",
       "release_date": "2025-04-05",
-      "last_updated": "2026-04-30",
+      "last_updated": "2025-04-05",
       "modalities": {
         "input": [
           "text",
@@ -2298,6 +2335,7 @@
         "output": 0.87,
         "cache_read": 0.05
       },
+      "canonical_model_id": "meta/llama-4-maverick-17b-instruct",
       "display_name": "Llama 4 Maverick",
       "type": "chat"
     },
@@ -2332,6 +2370,7 @@
         "input": 0.198,
         "output": 0.198
       },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
       "display_name": "Llama 3.1 Instruct (8B)",
       "type": "chat"
     },
@@ -2362,10 +2401,12 @@
         "context": 128000,
         "output": 4096
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.65,
         "output": 0.65
       },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 Instruct (70B)",
       "type": "chat"
     },
@@ -2475,8 +2516,8 @@
       },
       "tool_call": true,
       "temperature": true,
-      "release_date": "2025-12-15",
-      "last_updated": "2025-12-15",
+      "release_date": "2025-12-02",
+      "last_updated": "2025-12-02",
       "modalities": {
         "input": [
           "text",
@@ -2491,6 +2532,7 @@
         "context": 262144,
         "output": 262144
       },
+      "canonical_model_id": "mistral/ministral-3-8b-instruct-2512",
       "display_name": "Ministral 3 8B",
       "type": "chat"
     },
@@ -2506,8 +2548,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-12-15",
-      "last_updated": "2026-04-30",
+      "release_date": "2025-12-02",
+      "last_updated": "2025-12-02",
       "modalities": {
         "input": [
           "text"
@@ -2526,6 +2568,7 @@
         "output": 0.2,
         "cache_read": 0.04
       },
+      "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B",
       "type": "chat"
     },
@@ -2562,13 +2605,14 @@
       "id": "mistral-nemo-instruct-2407",
       "name": "Mistral Nemo Instruct",
       "description": "Legacy model retained for compatibility with older integrations",
-      "family": "mistral",
+      "family": "mistral-nemo",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2024-07",
       "release_date": "2024-07-18",
       "last_updated": "2024-07-18",
       "modalities": {
@@ -2589,22 +2633,23 @@
         "input": 0.3,
         "output": 0.3
       },
+      "canonical_model_id": "mistral/mistral-nemo",
       "display_name": "Mistral Nemo Instruct",
       "type": "chat"
     },
     {
       "id": "multi-qa-mpnet-base-dot-v1",
+      "type": "embedding",
       "name": "Multi-QA-mpnet-base-dot-v1",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "text-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2021-08-30",
-      "last_updated": "2026-04-16",
+      "release_date": "2021-08-23",
+      "last_updated": "2021-08-23",
       "modalities": {
         "input": [
           "text"
@@ -2622,8 +2667,8 @@
         "input": 0.009,
         "output": 0
       },
-      "display_name": "Multi-QA-mpnet-base-dot-v1",
-      "type": "other"
+      "canonical_model_id": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
+      "display_name": "Multi-QA-mpnet-base-dot-v1"
     },
     {
       "id": "nemotron-3-nano-30b",
@@ -2650,8 +2695,8 @@
       "tool_call": true,
       "temperature": true,
       "knowledge": "2025-06-25",
-      "release_date": "2025-04-14",
-      "last_updated": "2025-04-14",
+      "release_date": "2025-12-15",
+      "last_updated": "2025-12-15",
       "modalities": {
         "input": [
           "text"
@@ -2731,8 +2776,9 @@
       },
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2025-09",
       "release_date": "2026-06-04",
-      "last_updated": "2026-06-12",
+      "last_updated": "2026-06-04",
       "modalities": {
         "input": [
           "text"
@@ -2741,7 +2787,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 131072,
         "output": 131072
@@ -2751,6 +2797,7 @@
         "output": 1.7,
         "cache_read": 0.18
       },
+      "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "Nemotron 3 Ultra",
       "type": "chat"
     },
@@ -2778,7 +2825,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 1048576,
         "output": 1048576
@@ -2788,6 +2835,7 @@
         "output": 0.65,
         "cache_read": 0.06
       },
+      "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
       "display_name": "NVIDIA Nemotron 3.5 Super VL",
       "type": "chat"
     },
@@ -2882,6 +2930,7 @@
         "context": 1000000,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 0.65,
@@ -2925,6 +2974,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/gpt-4.1",
       "display_name": "OpenAI GPT-4.1",
       "type": "chat"
     },
@@ -2962,6 +3012,7 @@
         "output": 10,
         "cache_read": 1.25
       },
+      "canonical_model_id": "openai/gpt-4o",
       "display_name": "OpenAI GPT-4o",
       "type": "chat"
     },
@@ -3010,6 +3061,7 @@
         "output": 0.6,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-4o-mini",
       "display_name": "OpenAI GPT-4o mini",
       "type": "chat"
     },
@@ -3052,6 +3104,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3059,6 +3112,7 @@
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5",
       "display_name": "OpenAI GPT-5",
       "type": "chat"
     },
@@ -3101,6 +3155,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3108,6 +3163,7 @@
         "output": 2,
         "cache_read": 0.025
       },
+      "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "OpenAI GPT-5 Mini",
       "type": "chat"
     },
@@ -3150,6 +3206,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3157,6 +3214,7 @@
         "output": 0.4,
         "cache_read": 0.005
       },
+      "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "OpenAI GPT-5 Nano",
       "type": "chat"
     },
@@ -3199,13 +3257,16 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
         "cache_read": 0.125
       },
+      "canonical_model_id": "openai/gpt-5.1-codex-max",
       "display_name": "GPT-5.1 Codex Max",
       "type": "chat"
     },
@@ -3248,6 +3309,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3255,6 +3317,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.2",
       "display_name": "OpenAI GPT-5.2",
       "type": "chat"
     },
@@ -3296,12 +3359,14 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
         "input": 21,
         "output": 168
       },
+      "canonical_model_id": "openai/gpt-5.2-pro",
       "display_name": "OpenAI GPT-5.2 Pro",
       "type": "chat"
     },
@@ -3345,6 +3410,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3352,6 +3418,7 @@
         "output": 14,
         "cache_read": 0.175
       },
+      "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "OpenAI GPT-5.3 Codex",
       "type": "chat"
     },
@@ -3418,6 +3485,7 @@
           "cache_read": 0.5
         }
       },
+      "canonical_model_id": "openai/gpt-5.4",
       "display_name": "OpenAI GPT-5.4",
       "type": "chat"
     },
@@ -3461,6 +3529,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3468,6 +3537,7 @@
         "output": 4.5,
         "cache_read": 0.075
       },
+      "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "OpenAI GPT-5.4 Mini",
       "type": "chat"
     },
@@ -3511,6 +3581,7 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
+        "input": 272000,
         "output": 128000
       },
       "cost": {
@@ -3518,6 +3589,7 @@
         "output": 1.25,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "OpenAI GPT-5.4 Nano",
       "type": "chat"
     },
@@ -3558,6 +3630,7 @@
       "open_weights": false,
       "limit": {
         "context": 1050000,
+        "input": 922000,
         "output": 128000
       },
       "cost": {
@@ -3578,6 +3651,7 @@
           "output": 270
         }
       },
+      "canonical_model_id": "openai/gpt-5.4-pro",
       "display_name": "OpenAI GPT-5.4 Pro",
       "type": "chat"
     },
@@ -3608,7 +3682,7 @@
       "temperature": false,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
-      "last_updated": "2026-04-30",
+      "last_updated": "2026-04-23",
       "modalities": {
         "input": [
           "text",
@@ -3644,6 +3718,7 @@
           "cache_read": 1
         }
       },
+      "canonical_model_id": "openai/gpt-5.5",
       "display_name": "OpenAI GPT-5.5",
       "type": "chat"
     },
@@ -4128,6 +4203,7 @@
     },
     {
       "id": "openai-gpt-image-1",
+      "type": "image",
       "name": "GPT Image 1",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gpt-image",
@@ -4158,11 +4234,12 @@
         "output": 40,
         "cache_read": 1.25
       },
-      "display_name": "GPT Image 1",
-      "type": "image-generation"
+      "canonical_model_id": "openai/gpt-image-1",
+      "display_name": "GPT Image 1"
     },
     {
       "id": "openai-gpt-image-1.5",
+      "type": "image",
       "name": "OpenAI GPT Image 1.5",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gpt-image",
@@ -4180,8 +4257,8 @@
           "image"
         ],
         "output": [
-          "image",
-          "text"
+          "text",
+          "image"
         ]
       },
       "open_weights": false,
@@ -4194,11 +4271,12 @@
         "output": 10,
         "cache_read": 1
       },
-      "display_name": "OpenAI GPT Image 1.5",
-      "type": "image-generation"
+      "canonical_model_id": "openai/gpt-image-1.5",
+      "display_name": "OpenAI GPT Image 1.5"
     },
     {
       "id": "openai-gpt-image-2",
+      "type": "image",
       "name": "OpenAI GPT Image 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "gpt-image",
@@ -4208,8 +4286,8 @@
       },
       "tool_call": false,
       "temperature": false,
-      "release_date": "2025-04-24",
-      "last_updated": "2025-04-24",
+      "release_date": "2026-04-21",
+      "last_updated": "2026-04-21",
       "modalities": {
         "input": [
           "text",
@@ -4229,8 +4307,8 @@
         "input": 8,
         "output": 30
       },
-      "display_name": "OpenAI GPT Image 2",
-      "type": "image-generation"
+      "canonical_model_id": "openai/gpt-image-2",
+      "display_name": "OpenAI GPT Image 2"
     },
     {
       "id": "openai-gpt-oss-120b",
@@ -4260,7 +4338,7 @@
       "temperature": true,
       "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2026-04-16",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -4279,6 +4357,7 @@
         "output": 0.7,
         "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "OpenAI GPT-oss-120b",
       "type": "chat"
     },
@@ -4307,7 +4386,7 @@
       "temperature": true,
       "knowledge": "2024-06",
       "release_date": "2025-08-05",
-      "last_updated": "2026-04-16",
+      "last_updated": "2025-08-05",
       "modalities": {
         "input": [
           "text"
@@ -4326,6 +4405,7 @@
         "output": 0.45,
         "cache_read": 0.01
       },
+      "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "OpenAI GPT-oss-20b",
       "type": "chat"
     },
@@ -4374,6 +4454,7 @@
         "output": 60,
         "cache_read": 7.5
       },
+      "canonical_model_id": "openai/o1",
       "display_name": "OpenAI o1",
       "type": "chat"
     },
@@ -4422,6 +4503,7 @@
         "output": 8,
         "cache_read": 0.5
       },
+      "canonical_model_id": "openai/o3",
       "display_name": "OpenAI o3",
       "type": "chat"
     },
@@ -4470,6 +4552,7 @@
         "output": 4.4,
         "cache_read": 0.55
       },
+      "canonical_model_id": "openai/o3-mini",
       "display_name": "OpenAI o3 mini",
       "type": "chat"
     },
@@ -4516,7 +4599,7 @@
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2025-07-28",
-      "last_updated": "2026-04-30",
+      "last_updated": "2025-07-28",
       "modalities": {
         "input": [
           "text"
@@ -4525,21 +4608,24 @@
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
         "context": 262144,
         "output": 262144
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.45,
         "output": 1.7,
         "cache_read": 0.09
       },
+      "canonical_model_id": "alibaba/qwen3-coder-flash",
       "display_name": "Qwen3 Coder Flash",
       "type": "chat"
     },
     {
       "id": "qwen3-embedding-0.6b",
+      "type": "embedding",
       "name": "Qwen3 Embedding 0.6B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
       "family": "text-embedding",
@@ -4569,11 +4655,11 @@
         "input": 0.04,
         "output": 0
       },
-      "display_name": "Qwen3 Embedding 0.6B",
-      "type": "other"
+      "display_name": "Qwen3 Embedding 0.6B"
     },
     {
       "id": "qwen3-tts-voicedesign",
+      "type": "speech",
       "name": "Qwen3 TTS VoiceDesign",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
       "family": "qwen",
@@ -4598,14 +4684,13 @@
         "context": 32768,
         "output": 1
       },
-      "display_name": "Qwen3 TTS VoiceDesign",
-      "type": "speech-synthesis"
+      "display_name": "Qwen3 TTS VoiceDesign"
     },
     {
       "id": "qwen3.5-397b-a17b",
       "name": "Qwen 3.5 397B A17B",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen3.5",
+      "family": "qwen",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -4626,7 +4711,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-02-15",
-      "last_updated": "2026-04-30",
+      "last_updated": "2026-02-15",
       "modalities": {
         "input": [
           "text",
@@ -4647,6 +4732,7 @@
         "output": 3.5,
         "cache_read": 0.111
       },
+      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen 3.5 397B A17B",
       "type": "chat"
     },
@@ -4701,7 +4787,55 @@
       "type": "chat"
     },
     {
+      "id": "reflection-beam",
+      "name": "Beam",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "temperature": true,
+      "release_date": "2026-10-21",
+      "last_updated": "2026-10-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 1.2,
+        "cache_read": 0.04
+      },
+      "display_name": "Beam",
+      "type": "chat"
+    },
+    {
       "id": "stable-diffusion-3.5-large",
+      "type": "image",
       "name": "Stable Diffusion 3.5 Large",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
       "family": "stable-diffusion",
@@ -4726,15 +4860,11 @@
         "context": 256,
         "output": 1
       },
-      "cost": {
-        "input": 0.08,
-        "output": 0
-      },
-      "display_name": "Stable Diffusion 3.5 Large",
-      "type": "image-generation"
+      "display_name": "Stable Diffusion 3.5 Large"
     },
     {
       "id": "wan2-2-t2v-a14b",
+      "type": "video",
       "name": "Wan2.2-T2V-A14B",
       "description": "Video model for prompt-guided generation, editing, and motion workflows",
       "attachment": false,
@@ -4758,12 +4888,7 @@
         "context": 100,
         "output": 1
       },
-      "cost": {
-        "input": 0.6,
-        "output": 0
-      },
-      "display_name": "Wan2.2-T2V-A14B",
-      "type": "chat"
+      "display_name": "Wan2.2-T2V-A14B"
     }
   ],
   "api": "https://inference.do-ai.run/v1",

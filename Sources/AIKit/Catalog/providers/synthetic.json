@@ -29,8 +29,8 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-06-12",
-      "last_updated": "2026-06-12",
+      "release_date": "2026-06-01",
+      "last_updated": "2026-06-01",
       "modalities": {
         "input": [
           "text",
@@ -45,6 +45,7 @@
         "context": 524288,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.6,
         "output": 1.2,
@@ -97,6 +98,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.45,
         "output": 3.6,
@@ -253,6 +255,7 @@
         "context": 262144,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.95,
         "output": 4,
@@ -289,7 +292,7 @@
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-07-16",
-      "last_updated": "2026-07-27",
+      "last_updated": "2026-07-16",
       "modalities": {
         "input": [
           "text",
@@ -327,6 +330,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high"
@@ -357,7 +361,7 @@
       "cost": {
         "input": 0.3,
         "output": 1,
-        "cache_read": 0.3
+        "cache_read": 0.06
       },
       "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
       "display_name": "Nemotron 3 Super 120B A12B",
@@ -377,6 +381,7 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
             "medium",
             "high"
@@ -385,6 +390,7 @@
       ],
       "tool_call": true,
       "temperature": true,
+      "knowledge": "2024-06",
       "release_date": "2025-08-05",
       "last_updated": "2025-08-05",
       "modalities": {
@@ -398,13 +404,14 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 65536
       },
       "cost": {
         "input": 0.1,
         "output": 0.1,
-        "cache_read": 0.1
+        "cache_read": 0.02
       },
+      "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
       "type": "chat"
     },
@@ -420,7 +427,13 @@
       },
       "reasoning_options": [
         {
-          "type": "toggle"
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
         }
       ],
       "tool_call": true,
@@ -447,7 +460,7 @@
       "cost": {
         "input": 0.1,
         "output": 0.5,
-        "cache_read": 0.1
+        "cache_read": 0.02
       },
       "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM-4.7-Flash",
@@ -494,6 +507,7 @@
         "context": 524288,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.4,
         "output": 4.4,
