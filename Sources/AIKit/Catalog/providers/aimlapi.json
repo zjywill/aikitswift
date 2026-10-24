@@ -32,8 +32,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 1.10032,
-        "output": 2.20064
+        "input": 0.8464,
+        "output": 1.6928
       },
       "canonical_model_id": "aion-labs/aion-rp-llama-3.1-8b",
       "display_name": "Aion-RP 1.0 (8B)",
@@ -67,9 +67,9 @@
         "output": 8192
       },
       "cost": {
-        "input": 2.08,
-        "output": 8.32,
-        "cache_read": 0.416
+        "input": 1.6,
+        "output": 6.4,
+        "cache_read": 0.32
       },
       "canonical_model_id": "alibaba/qwen-max",
       "display_name": "Qwen Max",
@@ -105,9 +105,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.52,
-        "output": 1.56,
-        "cache_read": 0.104
+        "input": 0.4,
+        "output": 1.2,
+        "cache_read": 0.08
       },
       "canonical_model_id": "alibaba/qwen-plus",
       "display_name": "Qwen Plus",
@@ -141,9 +141,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 1.3754,
-        "output": 6.705075,
-        "cache_read": 1.3754
+        "input": 1.058,
+        "output": 5.15775,
+        "cache_read": 1.058
       },
       "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
       "display_name": "Qwen3 Coder",
@@ -177,8 +177,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.20631,
-        "output": 1.65048
+        "input": 0.1587,
+        "output": 1.2696
       },
       "canonical_model_id": "alibaba/qwen3-next-80b-a3b-instruct",
       "display_name": "Qwen3 Next 80B A3B Instruct",
@@ -225,9 +225,9 @@
         "output": 52429
       },
       "cost": {
-        "input": 3.4385,
-        "output": 8.59625,
-        "cache_read": 0.6877
+        "input": 2.645,
+        "output": 6.6125,
+        "cache_read": 0.529
       },
       "canonical_model_id": "alibaba/qwen3.8-2.4t-a95b",
       "display_name": "Qwen3.8 2.4T A95B",
@@ -276,8 +276,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.61893,
-        "output": 4.40128
+        "input": 0.4761,
+        "output": 3.3856
       },
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B",
@@ -326,9 +326,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.208,
-        "output": 0.611,
-        "cache_read": 0.0208
+        "input": 0.16,
+        "output": 0.47,
+        "cache_read": 0.016
       },
       "canonical_model_id": "alibaba/qwen3.8-flash",
       "display_name": "Qwen3.8 Flash",
@@ -377,9 +377,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 2.6,
-        "output": 7.8,
-        "cache_read": 0.325
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25
       },
       "canonical_model_id": "alibaba/qwen3.8-max",
       "display_name": "Qwen3.8 Max",
@@ -428,9 +428,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 5.5016,
-        "output": 16.5048,
-        "cache_read": 0.6877
+        "input": 4.232,
+        "output": 12.696,
+        "cache_read": 0.529
       },
       "canonical_model_id": "alibaba/qwen3.8-max-prime",
       "display_name": "Qwen3.8 Max Prime",
@@ -466,8 +466,8 @@
         "output": 5120
       },
       "cost": {
-        "input": 0.082524,
-        "output": 0.330096
+        "input": 0.06348,
+        "output": 0.25392
       },
       "canonical_model_id": "amazon/nova-lite-v1",
       "display_name": "Nova Lite 1.0",
@@ -502,8 +502,8 @@
         "output": 5120
       },
       "cost": {
-        "input": 0.048139,
-        "output": 0.192556
+        "input": 0.03703,
+        "output": 0.14812
       },
       "canonical_model_id": "amazon/nova-micro-v1",
       "display_name": "Nova Micro 1.0",
@@ -539,8 +539,8 @@
         "output": 5120
       },
       "cost": {
-        "input": 1.10032,
-        "output": 4.40128
+        "input": 0.8464,
+        "output": 3.3856
       },
       "canonical_model_id": "amazon/nova-pro-v1",
       "display_name": "Nova Pro 1.0",
@@ -574,8 +574,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 4.1262,
-        "output": 6.877
+        "input": 3.174,
+        "output": 5.29
       },
       "canonical_model_id": "anthracite-org/magnum-v4-72b",
       "display_name": "Magnum v4 72B",
@@ -627,10 +627,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 13,
-        "output": 65,
-        "cache_read": 1.3,
-        "cache_write": 16.25
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
       },
       "canonical_model_id": "anthropic/claude-fable-5",
       "display_name": "Claude Fable 5",
@@ -679,10 +679,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 13,
-        "output": 65,
-        "cache_read": 0.325,
-        "cache_write": 16.25
+        "input": 10,
+        "output": 50,
+        "cache_read": 0.25,
+        "cache_write": 12.5
       },
       "canonical_model_id": "anthropic/claude-fable-5-1",
       "display_name": "Claude Fable 5.1",
@@ -720,10 +720,10 @@
         "output": 64000
       },
       "cost": {
-        "input": 1.3754,
-        "output": 6.877,
-        "cache_read": 0.13754,
-        "cache_write": 1.71925
+        "input": 1.058,
+        "output": 5.29,
+        "cache_read": 0.1058,
+        "cache_write": 1.3225
       },
       "canonical_model_id": "anthropic/claude-haiku-4-5",
       "display_name": "Claude 4.5 Haiku",
@@ -773,10 +773,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.65,
-        "cache_read": 0.013,
-        "cache_write": 0.1625
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
       },
       "canonical_model_id": "anthropic/claude-haiku-5-5",
       "display_name": "Claude Haiku 5.5",
@@ -823,10 +823,10 @@
         "output": 64000
       },
       "cost": {
-        "input": 6.877,
-        "output": 34.385,
-        "cache_read": 0.6877,
-        "cache_write": 8.59625
+        "input": 5.29,
+        "output": 26.45,
+        "cache_read": 0.529,
+        "cache_write": 6.6125
       },
       "canonical_model_id": "anthropic/claude-opus-4-5",
       "display_name": "Claude 4.5 Opus",
@@ -876,10 +876,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.877,
-        "output": 34.385,
-        "cache_read": 0.6877,
-        "cache_write": 8.59625
+        "input": 5.29,
+        "output": 26.45,
+        "cache_read": 0.529,
+        "cache_write": 6.6125
       },
       "canonical_model_id": "anthropic/claude-opus-4-7",
       "display_name": "Claude 4.7 Opus",
@@ -929,10 +929,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.877,
-        "output": 34.385,
-        "cache_read": 0.6877,
-        "cache_write": 8.59625
+        "input": 5.29,
+        "output": 26.45,
+        "cache_read": 0.529,
+        "cache_write": 6.6125
       },
       "canonical_model_id": "anthropic/claude-opus-4-8",
       "display_name": "Claude 4.8 Opus",
@@ -981,10 +981,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.5,
-        "output": 32.5,
-        "cache_read": 0.65,
-        "cache_write": 8.125
+        "input": 5,
+        "output": 25,
+        "cache_read": 0.5,
+        "cache_write": 6.25
       },
       "canonical_model_id": "anthropic/claude-opus-5",
       "display_name": "Claude Opus 5",
@@ -1033,10 +1033,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 5.2,
-        "output": 26,
-        "cache_read": 0.26,
-        "cache_write": 6.5
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
       },
       "canonical_model_id": "anthropic/claude-opus-5-5",
       "display_name": "Claude Opus 5.5",
@@ -1074,10 +1074,10 @@
         "output": 64000
       },
       "cost": {
-        "input": 4.1262,
-        "output": 20.631,
-        "cache_read": 0.41262,
-        "cache_write": 5.15775
+        "input": 3.174,
+        "output": 15.87,
+        "cache_read": 0.3174,
+        "cache_write": 3.9675
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-5",
       "display_name": "Claude 4.5 Sonnet",
@@ -1125,10 +1125,10 @@
         "output": 64000
       },
       "cost": {
-        "input": 4.1262,
-        "output": 20.631,
-        "cache_read": 0.41262,
-        "cache_write": 5.15775
+        "input": 3.174,
+        "output": 15.87,
+        "cache_read": 0.3174,
+        "cache_write": 3.9675
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude 4.6 Sonnet",
@@ -1180,10 +1180,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.6,
-        "output": 13,
-        "cache_read": 0.26,
-        "cache_write": 3.25
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
       },
       "canonical_model_id": "anthropic/claude-sonnet-5",
       "display_name": "Claude Sonnet 5",
@@ -1232,10 +1232,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.6,
-        "output": 13,
-        "cache_read": 0.26,
-        "cache_write": 3.25
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
       },
       "canonical_model_id": "anthropic/claude-sonnet-5-5",
       "display_name": "Claude Sonnet 5.5",
@@ -1271,8 +1271,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.103155,
-        "output": 0.41262
+        "input": 0.07935,
+        "output": 0.3174
       },
       "canonical_model_id": "bytedance-seed/seed-1-6-flash",
       "display_name": "Seed 1.6 Flash",
@@ -1322,8 +1322,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.6877,
-        "output": 4.1262
+        "input": 0.529,
+        "output": 3.174
       },
       "canonical_model_id": "bytedance-seed/seed-2.0-code",
       "display_name": "Seed-2.0-Code",
@@ -1373,8 +1373,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.34385,
-        "output": 2.7508
+        "input": 0.2645,
+        "output": 2.116
       },
       "canonical_model_id": "bytedance-seed/seed-2.0-lite",
       "display_name": "Seed-2.0-Lite",
@@ -1424,8 +1424,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.13754,
-        "output": 0.55016
+        "input": 0.1058,
+        "output": 0.4232
       },
       "canonical_model_id": "bytedance-seed/seed-2.0-mini",
       "display_name": "Seed-2.0-Mini",
@@ -1460,8 +1460,8 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.27508,
-        "output": 1.23786
+        "input": 0.2116,
+        "output": 0.9522
       },
       "canonical_model_id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
       "display_name": "Venice Uncensored",
@@ -1496,8 +1496,8 @@
         "output": 256000
       },
       "cost": {
-        "input": 3.4385,
-        "output": 13.754
+        "input": 2.645,
+        "output": 10.58
       },
       "canonical_model_id": "cohere/command-a",
       "display_name": "Command A",
@@ -1531,8 +1531,8 @@
         "output": 4000
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.82524
+        "input": 0.1587,
+        "output": 0.6348
       },
       "canonical_model_id": "cohere/command-r-08-2024",
       "display_name": "Command R (08-2024)",
@@ -1566,8 +1566,8 @@
         "output": 4000
       },
       "cost": {
-        "input": 3.4385,
-        "output": 13.754
+        "input": 2.645,
+        "output": 10.58
       },
       "canonical_model_id": "cohere/command-r-plus-08-2024",
       "display_name": "Command R+ (08-2024)",
@@ -1601,8 +1601,8 @@
         "output": 4000
       },
       "cost": {
-        "input": 0.051578,
-        "output": 0.20631
+        "input": 0.039675,
+        "output": 0.1587
       },
       "canonical_model_id": "cohere/command-r7b-12-2024",
       "display_name": "Command R7B (12-2024)",
@@ -1688,9 +1688,9 @@
         "output": 124000
       },
       "cost": {
-        "input": 0.398866,
-        "output": 1.567956,
-        "cache_read": 0.192556
+        "input": 0.30682,
+        "output": 1.20612,
+        "cache_read": 0.14812
       },
       "canonical_model_id": "deepseek/deepseek-chat-v3-0324",
       "display_name": "DeepSeek V3",
@@ -1739,9 +1739,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.39,
-        "output": 1.56,
-        "cache_read": 0.0078
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash",
       "display_name": "DeepSeek V4 Flash",
@@ -1790,9 +1790,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.572,
-        "output": 1.716,
-        "cache_read": 0.0182
+        "input": 0.44,
+        "output": 1.32,
+        "cache_read": 0.014
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-vision-exp",
       "display_name": "DeepSeek V4 Flash Vision Exp",
@@ -1841,9 +1841,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 1.17,
-        "output": 3.51,
-        "cache_read": 0.039
+        "input": 0.9,
+        "output": 2.7,
+        "cache_read": 0.03
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -1891,9 +1891,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 2.393196,
-        "output": 4.786392,
-        "cache_read": 0.199433
+        "input": 1.84092,
+        "output": 3.68184,
+        "cache_read": 0.15341
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro-0813",
       "display_name": "DeepSeek V4 Pro 0813",
@@ -1939,9 +1939,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.39,
-        "output": 1.56,
-        "cache_read": 0.0078
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -1990,9 +1990,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.975,
-        "output": 4.875,
-        "cache_read": 0.0975
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       },
       "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
@@ -2045,10 +2045,10 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.34385,
-        "output": 2.0631,
-        "cache_read": 0.034385,
-        "cache_write": 0.114617
+        "input": 0.2645,
+        "output": 1.587,
+        "cache_read": 0.02645,
+        "cache_write": 0.088167
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-preview",
       "display_name": "Gemini 3.1 Flash Lite Preview",
@@ -2089,9 +2089,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 2.6,
-        "output": 15.6,
-        "cache_read": 0.65
+        "input": 2,
+        "output": 12,
+        "cache_read": 0.5
       },
       "canonical_model_id": "google/gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro Preview",
@@ -2144,10 +2144,10 @@
         "output": 65536
       },
       "cost": {
-        "input": 2.7508,
-        "output": 16.5048,
-        "cache_read": 0.27508,
-        "cache_write": 0.515775
+        "input": 2.116,
+        "output": 12.696,
+        "cache_read": 0.2116,
+        "cache_write": 0.39675
       },
       "canonical_model_id": "google/gemini-3.1-pro-preview-customtools",
       "display_name": "Gemini 3.1 Pro Preview Custom Tools",
@@ -2198,9 +2198,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 1.95,
-        "output": 9.75,
-        "cache_read": 0.195
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.15
       },
       "canonical_model_id": "google/gemini-3.6-flash",
       "display_name": "Gemini 3.6 Flash",
@@ -2250,9 +2250,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.975,
-        "output": 4.875,
-        "cache_read": 0.0975
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       },
       "canonical_model_id": "google/gemini-3.7-flash",
       "display_name": "Gemini 3.7 Flash",
@@ -2301,9 +2301,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.975,
-        "output": 4.875,
-        "cache_read": 0.0975
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
       },
       "canonical_model_id": "google/gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
@@ -2356,10 +2356,10 @@
         "output": 65536
       },
       "cost": {
-        "input": 2.0631,
-        "output": 12.3786,
-        "cache_read": 0.20631,
-        "cache_write": 0.114617
+        "input": 1.587,
+        "output": 9.522,
+        "cache_read": 0.1587,
+        "cache_write": 0.088167
       },
       "canonical_model_id": "google/gemini-flash-latest",
       "display_name": "Gemini Flash Latest",
@@ -2394,8 +2394,8 @@
         "output": 2048
       },
       "cost": {
-        "input": 0.89401,
-        "output": 0.89401
+        "input": 0.6877,
+        "output": 0.6877
       },
       "canonical_model_id": "google/gemma-2-27b-it",
       "display_name": "Gemma 2 27B",
@@ -2430,9 +2430,9 @@
         "output": 96000
       },
       "cost": {
-        "input": 0.06877,
-        "output": 0.20631,
-        "cache_read": 0.055016
+        "input": 0.0529,
+        "output": 0.1587,
+        "cache_read": 0.04232
       },
       "canonical_model_id": "google/gemma-3-12b-it",
       "display_name": "Gemma 3 12B",
@@ -2467,9 +2467,9 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.632684,
-        "cache_read": 0.103155
+        "input": 0.1587,
+        "output": 0.48668,
+        "cache_read": 0.07935
       },
       "canonical_model_id": "google/gemma-3-27b-it",
       "display_name": "Gemma 3 27B",
@@ -2504,9 +2504,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.06877,
-        "output": 0.13754,
-        "cache_read": 0.055016
+        "input": 0.0529,
+        "output": 0.1058,
+        "cache_read": 0.04232
       },
       "canonical_model_id": "google/gemma-3-4b-it",
       "display_name": "Gemma 3 4B",
@@ -2543,9 +2543,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.82524,
-        "cache_read": 0.20631
+        "input": 0.1587,
+        "output": 0.6348,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "google/gemma-4-26b-a4b-it",
       "display_name": "Gemma 4 26B A4B IT",
@@ -2583,9 +2583,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.361646,
-        "output": 2.049346,
-        "cache_read": 1.361646
+        "input": 1.04742,
+        "output": 1.57642,
+        "cache_read": 1.04742
       },
       "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "Gemma 4 31B Instruct",
@@ -2617,9 +2617,9 @@
         "output": 4096
       },
       "cost": {
-        "input": 2.578875,
-        "output": 2.578875,
-        "cache_read": 2.578875
+        "input": 1.98375,
+        "output": 1.98375,
+        "cache_read": 1.98375
       },
       "canonical_model_id": "gryphe/mythomax-l2-13b",
       "display_name": "MythoMax 13B",
@@ -2653,8 +2653,8 @@
         "output": 131000
       },
       "cost": {
-        "input": 0.023382,
-        "output": 0.154045
+        "input": 0.017986,
+        "output": 0.118496
       },
       "canonical_model_id": "ibm/granite-4-h-micro",
       "display_name": "Granite 4.0 Micro",
@@ -2699,9 +2699,9 @@
         "output": 50000
       },
       "cost": {
-        "input": 0.34385,
-        "output": 1.03155,
-        "cache_read": 0.034385
+        "input": 0.2645,
+        "output": 0.7935,
+        "cache_read": 0.02645
       },
       "canonical_model_id": "inception/mercury-2",
       "display_name": "Mercury 2",
@@ -2746,9 +2746,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.27508,
-        "output": 1.03155,
-        "cache_read": 0.027508
+        "input": 0.2116,
+        "output": 0.7935,
+        "cache_read": 0.02116
       },
       "canonical_model_id": "inception/mercury-2.5",
       "display_name": "Mercury 2.5",
@@ -2781,8 +2781,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.06877,
-        "output": 0.316342
+        "input": 0.0529,
+        "output": 0.24334
       },
       "canonical_model_id": "inference-net/schematron-v2-small",
       "display_name": "Schematron V2 Small",
@@ -2815,8 +2815,8 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.041262,
-        "output": 0.20631
+        "input": 0.03174,
+        "output": 0.1587
       },
       "canonical_model_id": "inference-net/schematron-v2-turbo",
       "display_name": "Schematron V2 Turbo",
@@ -2851,8 +2851,8 @@
         "output": 2000
       },
       "cost": {
-        "input": 1.03155,
-        "output": 1.3754
+        "input": 0.7935,
+        "output": 1.058
       },
       "canonical_model_id": "mancer/weaver",
       "display_name": "Weaver (alpha)",
@@ -2886,8 +2886,8 @@
         "output": 127000
       },
       "cost": {
-        "input": 1.352,
-        "output": 1.352
+        "input": 1.04,
+        "output": 1.04
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama 3.3 70B Instruct Turbo",
@@ -2937,9 +2937,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.48139,
-        "output": 2.0631,
-        "cache_read": 0.055016
+        "input": 0.3703,
+        "output": 1.587,
+        "cache_read": 0.04232
       },
       "canonical_model_id": "meta/muse-glimmer-30b",
       "display_name": "Muse Glimmer 30B",
@@ -2990,9 +2990,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.71925,
-        "output": 5.84545,
-        "cache_read": 0.20631
+        "input": 1.3225,
+        "output": 4.4965,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "meta/muse-spark-1.1",
       "display_name": "Muse Spark 1.1",
@@ -3044,9 +3044,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.71925,
-        "output": 5.84545,
-        "cache_read": 0.20631
+        "input": 1.3225,
+        "output": 4.4965,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "meta/muse-spark-1.2",
       "display_name": "Muse Spark 1.2",
@@ -3095,9 +3095,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.71925,
-        "output": 5.84545,
-        "cache_read": 0.20631
+        "input": 1.3225,
+        "output": 4.4965,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "meta/muse-spark-1.3",
       "display_name": "Muse Spark 1.3",
@@ -3131,9 +3131,9 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.41262,
-        "output": 1.23786,
-        "cache_read": 0.041262
+        "input": 0.3174,
+        "output": 0.9522,
+        "cache_read": 0.03174
       },
       "canonical_model_id": "mistral/codestral-2508",
       "display_name": "Codestral 2508",
@@ -3167,9 +3167,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.605176,
-        "output": 3.02588,
-        "cache_read": 0.060518
+        "input": 0.46552,
+        "output": 2.3276,
+        "cache_read": 0.046552
       },
       "canonical_model_id": "mistral/devstral-2512",
       "display_name": "Devstral 2 2512",
@@ -3204,9 +3204,9 @@
         "output": 209715
       },
       "cost": {
-        "input": 0.48139,
-        "output": 0.48139,
-        "cache_read": 0.027508
+        "input": 0.3703,
+        "output": 0.3703,
+        "cache_read": 0.02116
       },
       "canonical_model_id": "mistral/ministral-14b-2512",
       "display_name": "Ministral 3 14B 2512",
@@ -3241,9 +3241,9 @@
         "output": 104857
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.20631,
-        "cache_read": 0.013754
+        "input": 0.1587,
+        "output": 0.1587,
+        "cache_read": 0.01058
       },
       "canonical_model_id": "mistral/ministral-3b-2512",
       "display_name": "Ministral 3 3B 2512",
@@ -3278,9 +3278,9 @@
         "output": 209715
       },
       "cost": {
-        "input": 0.41262,
-        "output": 0.41262,
-        "cache_read": 0.020631
+        "input": 0.3174,
+        "output": 0.3174,
+        "cache_read": 0.01587
       },
       "canonical_model_id": "mistral/ministral-8b-2512",
       "display_name": "Ministral 3 8B 2512",
@@ -3316,9 +3316,9 @@
         "output": 102400
       },
       "cost": {
-        "input": 2.7508,
-        "output": 8.2524,
-        "cache_read": 0.27508
+        "input": 2.116,
+        "output": 6.348,
+        "cache_read": 0.2116
       },
       "canonical_model_id": "mistral/mistral-large",
       "display_name": "Large",
@@ -3354,9 +3354,9 @@
         "output": 104857
       },
       "cost": {
-        "input": 2.7508,
-        "output": 8.2524,
-        "cache_read": 0.27508
+        "input": 2.116,
+        "output": 6.348,
+        "cache_read": 0.2116
       },
       "canonical_model_id": "mistral/mistral-large-2407",
       "display_name": "Large 2407",
@@ -3393,9 +3393,9 @@
         "output": 104857
       },
       "cost": {
-        "input": 0.55016,
-        "output": 2.7508,
-        "cache_read": 0.055016
+        "input": 0.4232,
+        "output": 2.116,
+        "cache_read": 0.04232
       },
       "canonical_model_id": "mistral/mistral-medium-3",
       "display_name": "Medium 3",
@@ -3440,8 +3440,8 @@
         "output": 209715
       },
       "cost": {
-        "input": 2.0631,
-        "output": 10.3155
+        "input": 1.587,
+        "output": 7.935
       },
       "canonical_model_id": "mistral/mistral-medium-3-5",
       "display_name": "Medium 3.5",
@@ -3478,9 +3478,9 @@
         "output": 104857
       },
       "cost": {
-        "input": 0.55016,
-        "output": 2.7508,
-        "cache_read": 0.055016
+        "input": 0.4232,
+        "output": 2.116,
+        "cache_read": 0.04232
       },
       "canonical_model_id": "mistral/mistral-medium-3.1",
       "display_name": "Medium 3.1",
@@ -3514,9 +3514,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.233818,
-        "cache_read": 0.20631
+        "input": 0.1587,
+        "output": 0.17986,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "mistral/mistral-nemo",
       "display_name": "Mistral NeMo",
@@ -3552,9 +3552,9 @@
         "output": 26214
       },
       "cost": {
-        "input": 0.27508,
-        "output": 0.82524,
-        "cache_read": 0.027508
+        "input": 0.2116,
+        "output": 0.6348,
+        "cache_read": 0.02116
       },
       "canonical_model_id": "mistral/mistral-saba",
       "display_name": "Saba",
@@ -3589,8 +3589,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.06877,
-        "output": 0.110032
+        "input": 0.0529,
+        "output": 0.08464
       },
       "canonical_model_id": "mistral/mistral-small-24b-instruct-2501",
       "display_name": "Small 3",
@@ -3635,9 +3635,9 @@
         "output": 256000
       },
       "cost": {
-        "input": 0.257888,
-        "output": 1.03155,
-        "cache_read": 0.020631
+        "input": 0.198375,
+        "output": 0.7935,
+        "cache_read": 0.01587
       },
       "canonical_model_id": "mistral/mistral-small-2603",
       "display_name": "Small 4",
@@ -3673,8 +3673,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.482765,
-        "output": 0.763347
+        "input": 0.371358,
+        "output": 0.58719
       },
       "canonical_model_id": "mistral/mistral-small-3.1-24b-instruct",
       "display_name": "Small 3.1 24B",
@@ -3710,8 +3710,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.103155,
-        "output": 0.27508
+        "input": 0.07935,
+        "output": 0.2116
       },
       "canonical_model_id": "mistral/mistral-small-3.2-24b-instruct",
       "display_name": "Small 3.2 24B",
@@ -3747,9 +3747,9 @@
         "output": 52428
       },
       "cost": {
-        "input": 2.7508,
-        "output": 8.2524,
-        "cache_read": 0.27508
+        "input": 2.116,
+        "output": 6.348,
+        "cache_read": 0.2116
       },
       "canonical_model_id": "mistral/mixtral-8x22b-instruct",
       "display_name": "Mixtral 8x22B Instruct",
@@ -3783,9 +3783,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.13754,
-        "output": 0.41262,
-        "cache_read": 0.013754
+        "input": 0.1058,
+        "output": 0.3174,
+        "cache_read": 0.01058
       },
       "canonical_model_id": "mistral/voxtral-small-24b-2507",
       "display_name": "Voxtral Small 24B 2507",
@@ -3835,9 +3835,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 3.9,
-        "output": 19.5,
-        "cache_read": 0.39
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -3872,8 +3872,8 @@
         "output": 98304
       },
       "cost": {
-        "input": 0.783978,
-        "output": 3.16342
+        "input": 0.60306,
+        "output": 2.4334
       },
       "canonical_model_id": "moonshotai/kimi-k2",
       "display_name": "Kimi K2 0711",
@@ -3906,8 +3906,8 @@
         "output": 98304
       },
       "cost": {
-        "input": 1.3754,
-        "output": 4.1262
+        "input": 1.058,
+        "output": 3.174
       },
       "canonical_model_id": "moonshotai/kimi-k2-0905",
       "display_name": "Kimi K2 0905",
@@ -3943,9 +3943,9 @@
         "output": 98304
       },
       "cost": {
-        "input": 0.82524,
-        "output": 3.4385,
-        "cache_read": 0.20631
+        "input": 0.6348,
+        "output": 2.645,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "moonshotai/kimi-k2-thinking",
       "display_name": "Kimi K2 Thinking",
@@ -3979,8 +3979,8 @@
         "output": 38000
       },
       "cost": {
-        "input": 1.10032,
-        "output": 1.65048
+        "input": 0.8464,
+        "output": 1.2696
       },
       "canonical_model_id": "morph/morph-v3-fast",
       "display_name": "V3 Fast",
@@ -4014,8 +4014,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.23786,
-        "output": 2.61326
+        "input": 0.9522,
+        "output": 2.0102
       },
       "canonical_model_id": "morph/morph-v3-large",
       "display_name": "V3 Large",
@@ -4050,8 +4050,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.3754,
-        "output": 1.3754
+        "input": 1.058,
+        "output": 1.058
       },
       "canonical_model_id": "nousresearch/hermes-3-llama-3.1-405b",
       "display_name": "Hermes 3 405B Instruct",
@@ -4086,8 +4086,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.96278,
-        "output": 0.96278
+        "input": 0.7406,
+        "output": 0.7406
       },
       "canonical_model_id": "nousresearch/hermes-3-llama-3.1-70b",
       "display_name": "Hermes 3 70B Instruct",
@@ -4122,8 +4122,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.65,
-        "output": 1.95
+        "input": 0.5,
+        "output": 1.5
       },
       "canonical_model_id": "openai/gpt-3.5-turbo",
       "display_name": "GPT-3.5 Turbo",
@@ -4158,9 +4158,9 @@
         "output": 8192
       },
       "cost": {
-        "input": 39,
-        "output": 78,
-        "cache_read": 39
+        "input": 30,
+        "output": 60,
+        "cache_read": 30
       },
       "canonical_model_id": "openai/gpt-4",
       "display_name": "GPT-4",
@@ -4196,8 +4196,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 13,
-        "output": 39
+        "input": 10,
+        "output": 30
       },
       "canonical_model_id": "openai/gpt-4-turbo",
       "display_name": "GPT-4 Turbo",
@@ -4234,9 +4234,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 2.6,
-        "output": 10.4,
-        "cache_read": 0.65
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.5
       },
       "canonical_model_id": "openai/gpt-4.1",
       "display_name": "GPT-4.1",
@@ -4273,9 +4273,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.52,
-        "output": 2.08,
-        "cache_read": 0.13
+        "input": 0.4,
+        "output": 1.6,
+        "cache_read": 0.1
       },
       "canonical_model_id": "openai/gpt-4.1-mini",
       "display_name": "GPT-4.1 Mini",
@@ -4311,9 +4311,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.52,
-        "cache_read": 0.0325
+        "input": 0.1,
+        "output": 0.4,
+        "cache_read": 0.025
       },
       "canonical_model_id": "openai/gpt-4.1-nano",
       "display_name": "GPT-4.1 Nano",
@@ -4350,9 +4350,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 3.25,
-        "output": 13,
-        "cache_read": 1.625
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25
       },
       "canonical_model_id": "openai/gpt-4o",
       "display_name": "GPT-4o",
@@ -4388,8 +4388,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 6.5,
-        "output": 19.5
+        "input": 5,
+        "output": 15
       },
       "canonical_model_id": "openai/gpt-4o-2024-05-13",
       "display_name": "GPT-4o",
@@ -4425,9 +4425,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 3.25,
-        "output": 13,
-        "cache_read": 1.625
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25
       },
       "canonical_model_id": "openai/gpt-4o-2024-08-06",
       "display_name": "GPT-4o",
@@ -4463,9 +4463,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 3.25,
-        "output": 13,
-        "cache_read": 1.625
+        "input": 2.5,
+        "output": 10,
+        "cache_read": 1.25
       },
       "canonical_model_id": "openai/gpt-4o-2024-11-20",
       "display_name": "GPT-4o",
@@ -4502,9 +4502,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.195,
-        "output": 0.78,
-        "cache_read": 0.0975
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.075
       },
       "canonical_model_id": "openai/gpt-4o-mini",
       "display_name": "GPT-4o Mini",
@@ -4556,9 +4556,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 1.625,
-        "output": 13,
-        "cache_read": 0.1625
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125
       },
       "canonical_model_id": "openai/gpt-5",
       "display_name": "GPT-5",
@@ -4607,9 +4607,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 1.625,
-        "output": 13,
-        "cache_read": 0.1625
+        "input": 1.25,
+        "output": 10,
+        "cache_read": 0.125
       },
       "canonical_model_id": "openai/gpt-5.1",
       "display_name": "GPT-5.1",
@@ -4658,9 +4658,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.275,
-        "output": 18.2,
-        "cache_read": 0.2275
+        "input": 1.75,
+        "output": 14,
+        "cache_read": 0.175
       },
       "canonical_model_id": "openai/gpt-5.2",
       "display_name": "GPT-5.2",
@@ -4710,9 +4710,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 3.25,
-        "output": 19.5,
-        "cache_read": 0.325
+        "input": 2.5,
+        "output": 15,
+        "cache_read": 0.25
       },
       "canonical_model_id": "openai/gpt-5.4",
       "display_name": "GPT-5.4",
@@ -4762,9 +4762,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.5,
-        "output": 39,
-        "cache_read": 0.65
+        "input": 5,
+        "output": 30,
+        "cache_read": 0.5
       },
       "canonical_model_id": "openai/gpt-5.5",
       "display_name": "GPT-5.5",
@@ -4816,9 +4816,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.325,
-        "output": 2.6,
-        "cache_read": 0.0325
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
       },
       "canonical_model_id": "openai/gpt-5-mini",
       "display_name": "GPT-5 Mini",
@@ -4870,9 +4870,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.065,
-        "output": 0.52,
-        "cache_read": 0.0065
+        "input": 0.05,
+        "output": 0.4,
+        "cache_read": 0.005
       },
       "canonical_model_id": "openai/gpt-5-nano",
       "display_name": "GPT-5 Nano",
@@ -4921,8 +4921,8 @@
         "output": 272000
       },
       "cost": {
-        "input": 20.631,
-        "output": 165.048
+        "input": 15.87,
+        "output": 126.96
       },
       "canonical_model_id": "openai/gpt-5-pro",
       "display_name": "GPT-5 Pro",
@@ -4973,9 +4973,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 3.4385,
-        "output": 27.508,
-        "cache_read": 0.34385
+        "input": 2.645,
+        "output": 21.16,
+        "cache_read": 0.2645
       },
       "canonical_model_id": "openai/gpt-5.1-codex-max",
       "display_name": "GPT-5.1-Codex-Max",
@@ -5025,8 +5025,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 28.8834,
-        "output": 231.0672
+        "input": 22.218,
+        "output": 177.744
       },
       "canonical_model_id": "openai/gpt-5.2-pro",
       "display_name": "GPT-5.2 Pro",
@@ -5079,9 +5079,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 4.8139,
-        "output": 38.5112,
-        "cache_read": 0.48139
+        "input": 3.703,
+        "output": 29.624,
+        "cache_read": 0.3703
       },
       "canonical_model_id": "openai/gpt-5.3-codex",
       "display_name": "GPT-5.3 Codex",
@@ -5130,9 +5130,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 11.0032,
-        "output": 20.631,
-        "cache_read": 2.7508
+        "input": 8.464,
+        "output": 15.87,
+        "cache_read": 2.116
       },
       "canonical_model_id": "openai/gpt-5.4-image-2",
       "display_name": "GPT-5.4 Image 2"
@@ -5180,9 +5180,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.0631,
-        "output": 12.3786,
-        "cache_read": 0.20631
+        "input": 1.587,
+        "output": 9.522,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "openai/gpt-5.4-mini",
       "display_name": "GPT-5.4 Mini",
@@ -5231,9 +5231,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.27508,
-        "output": 1.71925,
-        "cache_read": 0.027508
+        "input": 0.2116,
+        "output": 1.3225,
+        "cache_read": 0.02116
       },
       "canonical_model_id": "openai/gpt-5.4-nano",
       "display_name": "GPT-5.4 Nano",
@@ -5283,8 +5283,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 41.262,
-        "output": 247.572
+        "input": 31.74,
+        "output": 190.44
       },
       "canonical_model_id": "openai/gpt-5.4-pro",
       "display_name": "GPT-5.4 Pro",
@@ -5335,8 +5335,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 41.262,
-        "output": 247.572
+        "input": 31.74,
+        "output": 190.44
       },
       "canonical_model_id": "openai/gpt-5.5-pro",
       "display_name": "GPT-5.5 Pro",
@@ -5386,10 +5386,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.26,
-        "output": 1.56,
-        "cache_read": 0.026,
-        "cache_write": 0.325
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25
       },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
@@ -5442,9 +5442,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.27508,
-        "output": 1.65048,
-        "cache_read": 0.027508
+        "input": 0.2116,
+        "output": 1.2696,
+        "cache_read": 0.02116
       },
       "canonical_model_id": "openai/gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna Pro",
@@ -5494,10 +5494,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 5.2,
-        "output": 26,
-        "cache_read": 0.52,
-        "cache_write": 6.5
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": 5
       },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
@@ -5550,9 +5550,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 5.5016,
-        "output": 27.508,
-        "cache_read": 0.55016
+        "input": 4.232,
+        "output": 21.16,
+        "cache_read": 0.4232
       },
       "canonical_model_id": "openai/gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol Pro",
@@ -5602,10 +5602,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.6,
-        "output": 15.6,
-        "cache_read": 0.26,
-        "cache_write": 3.25
+        "input": 2,
+        "output": 12,
+        "cache_read": 0.2,
+        "cache_write": 2.5
       },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
@@ -5658,9 +5658,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.7508,
-        "output": 16.5048,
-        "cache_read": 0.27508
+        "input": 2.116,
+        "output": 12.696,
+        "cache_read": 0.2116
       },
       "canonical_model_id": "openai/gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra Pro",
@@ -5711,10 +5711,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 13,
-        "output": 65,
-        "cache_read": 1.3,
-        "cache_write": 16.25
+        "input": 10,
+        "output": 50,
+        "cache_read": 1,
+        "cache_write": 12.5
       },
       "canonical_model_id": "openai/gpt-6-astra",
       "display_name": "GPT-6 Astra",
@@ -5764,10 +5764,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.13,
-        "output": 0.65,
-        "cache_read": 0.013,
-        "cache_write": 0.1625
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
       },
       "canonical_model_id": "openai/gpt-6-luna",
       "display_name": "GPT-6 Luna",
@@ -5817,10 +5817,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.6,
-        "output": 13,
-        "cache_read": 0.26,
-        "cache_write": 3.25
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
       },
       "canonical_model_id": "openai/gpt-6-sol",
       "display_name": "GPT-6 Sol",
@@ -5869,10 +5869,10 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.6,
-        "output": 13,
-        "cache_read": 0.13,
-        "cache_write": 3.25
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
       },
       "canonical_model_id": "openai/gpt-6.1-sol",
       "display_name": "GPT-6.1 Sol",
@@ -5921,9 +5921,9 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.48139,
-        "output": 1.30663,
-        "cache_read": 0.48139
+        "input": 0.3703,
+        "output": 1.0051,
+        "cache_read": 0.3703
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B",
@@ -5972,9 +5972,9 @@
         "output": 117964
       },
       "cost": {
-        "input": 0.103155,
-        "output": 0.41262,
-        "cache_read": 0.051578
+        "input": 0.07935,
+        "output": 0.3174,
+        "cache_read": 0.039675
       },
       "canonical_model_id": "openai/gpt-oss-20b",
       "display_name": "GPT OSS 20B",
@@ -6019,9 +6019,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.103155,
-        "output": 0.41262,
-        "cache_read": 0.051578
+        "input": 0.07935,
+        "output": 0.3174,
+        "cache_read": 0.039675
       },
       "canonical_model_id": "openai/gpt-oss-safeguard-20b",
       "display_name": "gpt-oss-safeguard-20b",
@@ -6069,9 +6069,9 @@
         "output": 100000
       },
       "cost": {
-        "input": 19.5,
-        "output": 78,
-        "cache_read": 9.75
+        "input": 15,
+        "output": 60,
+        "cache_read": 7.5
       },
       "canonical_model_id": "openai/o1",
       "display_name": "o1",
@@ -6121,8 +6121,8 @@
         "output": 100000
       },
       "cost": {
-        "input": 206.31,
-        "output": 825.24
+        "input": 158.7,
+        "output": 634.8
       },
       "canonical_model_id": "openai/o1-pro",
       "display_name": "o1-pro",
@@ -6168,9 +6168,9 @@
         "output": 100000
       },
       "cost": {
-        "input": 1.43,
-        "output": 5.72,
-        "cache_read": 0.715
+        "input": 1.1,
+        "output": 4.4,
+        "cache_read": 0.55
       },
       "canonical_model_id": "openai/o3-mini",
       "display_name": "o3 Mini",
@@ -6220,8 +6220,8 @@
         "output": 100000
       },
       "cost": {
-        "input": 27.508,
-        "output": 110.032
+        "input": 21.16,
+        "output": 84.64
       },
       "canonical_model_id": "openai/o3-pro",
       "display_name": "o3 Pro",
@@ -6255,8 +6255,8 @@
         "output": 100000
       },
       "cost": {
-        "input": 1.3,
-        "output": 1.3
+        "input": 1,
+        "output": 1
       },
       "canonical_model_id": "perplexity/sonar",
       "display_name": "Sonar",
@@ -6291,8 +6291,8 @@
         "output": 100000
       },
       "cost": {
-        "input": 3.9,
-        "output": 19.5
+        "input": 3,
+        "output": 15
       },
       "canonical_model_id": "perplexity/sonar-pro",
       "display_name": "Sonar Pro",
@@ -6328,8 +6328,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.13754,
-        "output": 0.13754
+        "input": 0.1058,
+        "output": 0.1058
       },
       "canonical_model_id": "rekaai/reka-edge",
       "display_name": "Reka Edge",
@@ -6362,8 +6362,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 1.16909,
-        "output": 1.71925
+        "input": 0.8993,
+        "output": 1.3225
       },
       "canonical_model_id": "relace/relace-apply-3",
       "display_name": "Apply 3",
@@ -6396,8 +6396,8 @@
         "output": 128000
       },
       "cost": {
-        "input": 1.3754,
-        "output": 4.1262
+        "input": 1.058,
+        "output": 3.174
       },
       "canonical_model_id": "relace/relace-search",
       "display_name": "Search",
@@ -6442,9 +6442,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 2.7508,
-        "output": 8.2524,
-        "cache_read": 0.34385
+        "input": 2.116,
+        "output": 6.348,
+        "cache_read": 0.2645
       },
       "canonical_model_id": "sakana/fugu-max",
       "display_name": "Fugu Max",
@@ -6488,9 +6488,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.877,
-        "output": 41.262,
-        "cache_read": 0.6877
+        "input": 5.29,
+        "output": 31.74,
+        "cache_read": 0.529
       },
       "canonical_model_id": "sakana/fugu-ultra",
       "display_name": "Fugu Ultra",
@@ -6536,9 +6536,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 6.877,
-        "output": 41.262,
-        "cache_read": 0.6877
+        "input": 5.29,
+        "output": 31.74,
+        "cache_read": 0.529
       },
       "canonical_model_id": "sakana/fugu-ultra-v2",
       "display_name": "Fugu Ultra v2",
@@ -6573,8 +6573,8 @@
         "output": 7372
       },
       "cost": {
-        "input": 0.06877,
-        "output": 0.06877
+        "input": 0.0529,
+        "output": 0.0529
       },
       "canonical_model_id": "sao10k/l3-lunaris-8b",
       "display_name": "Llama 3 8B Lunaris",
@@ -6609,8 +6609,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.99488,
-        "output": 1.99488
+        "input": 1.534523,
+        "output": 1.534523
       },
       "canonical_model_id": "sao10k/l3.1-euryale-70b",
       "display_name": "Llama 3.1 Euryale 70B v2.2",
@@ -6645,8 +6645,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.89401,
-        "output": 1.03155
+        "input": 0.6877,
+        "output": 0.7935
       },
       "canonical_model_id": "sao10k/l3.3-euryale-70b",
       "display_name": "Llama 3.3 Euryale 70B",
@@ -6693,9 +6693,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 1.3754,
-        "output": 3.71358,
-        "cache_read": 0.06877
+        "input": 1.058,
+        "output": 2.8566,
+        "cache_read": 0.0529
       },
       "canonical_model_id": "stepfun/step-5-preview",
       "display_name": "Step 5 Preview",
@@ -6729,8 +6729,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.060518,
-        "output": 0.243446
+        "input": 0.046552,
+        "output": 0.187266
       },
       "canonical_model_id": "tencent/hy-mt2-1.8b",
       "display_name": "Hy-MT2-1.8B",
@@ -6764,8 +6764,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.10178,
-        "output": 0.405743
+        "input": 0.078292,
+        "output": 0.31211
       },
       "canonical_model_id": "tencent/hy-mt2-30b-a3b",
       "display_name": "Hy-MT2-30B-A3B",
@@ -6799,8 +6799,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.10178,
-        "output": 0.405743
+        "input": 0.078292,
+        "output": 0.31211
       },
       "canonical_model_id": "tencent/hy-mt2-7b",
       "display_name": "Hy-MT2-7B",
@@ -6846,9 +6846,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.27508,
-        "output": 1.10032,
-        "cache_read": 0.06877
+        "input": 0.2116,
+        "output": 0.8464,
+        "cache_read": 0.0529
       },
       "canonical_model_id": "tencent/hy3",
       "display_name": "Hy3",
@@ -6894,9 +6894,9 @@
         "output": 64000
       },
       "cost": {
-        "input": 1.147084,
-        "output": 3.439875,
-        "cache_read": 0.057767
+        "input": 0.882372,
+        "output": 2.646058,
+        "cache_read": 0.044436
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
@@ -6930,9 +6930,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.41262,
-        "output": 0.6877,
-        "cache_read": 0.20631
+        "input": 0.3174,
+        "output": 0.529,
+        "cache_read": 0.1587
       },
       "canonical_model_id": "thedrummer/cydonia-24b-v4.1",
       "display_name": "Cydonia 24B V4.1",
@@ -6966,9 +6966,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.75647,
-        "output": 1.10032,
-        "cache_read": 0.34385
+        "input": 0.5819,
+        "output": 0.8464,
+        "cache_read": 0.2645
       },
       "canonical_model_id": "thedrummer/skyfall-36b-v2",
       "display_name": "Skyfall 36B V2",
@@ -7002,8 +7002,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.55016,
-        "output": 0.55016
+        "input": 0.4232,
+        "output": 0.4232
       },
       "canonical_model_id": "thedrummer/unslopnemo-12b",
       "display_name": "UnslopNemo 12B",
@@ -7052,9 +7052,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 1.3754,
-        "output": 5.57037,
-        "cache_read": 0.233818
+        "input": 1.058,
+        "output": 4.2849,
+        "cache_read": 0.17986
       },
       "canonical_model_id": "thinkingmachines/inkling",
       "display_name": "Inkling",
@@ -7103,9 +7103,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.797732,
-        "output": 1.980576,
-        "cache_read": 0.159546
+        "input": 0.61364,
+        "output": 1.52352,
+        "cache_read": 0.122728
       },
       "canonical_model_id": "thinkingmachines/inkling-small",
       "display_name": "Inkling Small",
@@ -7139,9 +7139,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 3.4385,
-        "output": 10.3155,
-        "cache_read": 0.34385
+        "input": 2.645,
+        "output": 7.935,
+        "cache_read": 0.2645
       },
       "canonical_model_id": "unbiased/pareto",
       "display_name": "Pareto",
@@ -7175,8 +7175,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.6877,
-        "output": 1.03155
+        "input": 0.529,
+        "output": 0.7935
       },
       "canonical_model_id": "undi95/remm-slerp-l2-13b",
       "display_name": "ReMM SLERP 13B",
@@ -7221,9 +7221,9 @@
         "output": 8192
       },
       "cost": {
-        "input": 0.20631,
-        "output": 0.82524,
-        "cache_read": 0.020631
+        "input": 0.1587,
+        "output": 0.6348,
+        "cache_read": 0.01587
       },
       "canonical_model_id": "upstage/solar-pro3",
       "display_name": "Solar Pro 3",
@@ -7270,9 +7270,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.041262,
-        "output": 0.165048,
-        "cache_read": 0.008252
+        "input": 0.03174,
+        "output": 0.12696,
+        "cache_read": 0.006348
       },
       "canonical_model_id": "upstage/solar-pro4",
       "display_name": "Solar Pro 4",
@@ -7308,9 +7308,9 @@
         "output": 1999000
       },
       "cost": {
-        "input": 1.625,
-        "output": 3.25,
-        "cache_read": 0.26
+        "input": 1.25,
+        "output": 2.5,
+        "cache_read": 0.2
       },
       "canonical_model_id": "xai/grok-4.20-0309-non-reasoning",
       "display_name": "Grok 4.20 Non-Reasoning",
@@ -7347,9 +7347,9 @@
         "output": 1999000
       },
       "cost": {
-        "input": 1.625,
-        "output": 3.25,
-        "cache_read": 0.26
+        "input": 1.25,
+        "output": 2.5,
+        "cache_read": 0.2
       },
       "canonical_model_id": "xai/grok-4-fast-non-reasoning",
       "display_name": "Grok 4 Fast Non-Reasoning",
@@ -7391,9 +7391,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.192556,
-        "output": 0.385112,
-        "cache_read": 0.003851
+        "input": 0.14812,
+        "output": 0.29624,
+        "cache_read": 0.002962
       },
       "canonical_model_id": "xiaomi/mimo-v2.5",
       "display_name": "MiMo V2.5",
@@ -7432,9 +7432,9 @@
         "output": 128000
       },
       "cost": {
-        "input": 0.598299,
-        "output": 1.196598,
-        "cache_read": 0.004951
+        "input": 0.46023,
+        "output": 0.92046,
+        "cache_read": 0.003809
       },
       "canonical_model_id": "xiaomi/mimo-v2.5-pro",
       "display_name": "MiMo V2.5 Pro",
@@ -7475,9 +7475,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.82524,
-        "output": 2.47572,
-        "cache_read": 0.151294
+        "input": 0.6348,
+        "output": 1.9044,
+        "cache_read": 0.11638
       },
       "canonical_model_id": "zhipuai/glm-4.5v",
       "display_name": "GLM 4.5V",
@@ -7518,9 +7518,9 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.41262,
-        "output": 1.23786,
-        "cache_read": 0.075647
+        "input": 0.3174,
+        "output": 0.9522,
+        "cache_read": 0.05819
       },
       "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM 4.6V",
@@ -7559,9 +7559,9 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.171925,
-        "output": 0.6877,
-        "cache_read": 0.013754
+        "input": 0.13225,
+        "output": 0.529,
+        "cache_read": 0.01058
       },
       "canonical_model_id": "zhipuai/glm-4.7-flash",
       "display_name": "GLM 4.7 Flash",
@@ -7597,9 +7597,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.56,
-        "output": 5.2,
-        "cache_read": 0.312
+        "input": 1.2,
+        "output": 4,
+        "cache_read": 0.24
       },
       "canonical_model_id": "zhipuai/glm-5-turbo",
       "display_name": "GLM 5 Turbo",
@@ -7650,9 +7650,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.195,
-        "output": 0.65,
-        "cache_read": 0.039
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",
       "display_name": "GLM 5.3 Flash",
@@ -7690,9 +7690,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.56,
-        "output": 5.2,
-        "cache_read": 0.312
+        "input": 1.2,
+        "output": 4,
+        "cache_read": 0.24
       },
       "canonical_model_id": "zhipuai/glm-5v-turbo",
       "display_name": "GLM 5V Turbo",
@@ -7735,9 +7735,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.82,
-        "output": 5.72,
-        "cache_read": 0.338
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2",
@@ -7781,9 +7781,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 1.82,
-        "output": 5.72,
-        "cache_read": 0.338
+        "input": 1.4,
+        "output": 4.4,
+        "cache_read": 0.26
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM 5.3",

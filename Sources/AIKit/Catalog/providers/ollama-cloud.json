@@ -49,108 +49,6 @@
       "type": "chat"
     },
     {
-      "id": "deepseek-v4-flash",
-      "name": "deepseek-v4-flash",
-      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 1048576
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "deepseek-v4-flash",
-      "type": "chat"
-    },
-    {
-      "id": "deepseek-v4-flash:0731",
-      "name": "DeepSeek V4 Flash 0731",
-      "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-07-31",
-      "last_updated": "2026-07-31",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 1048576
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.22,
-        "output": 0.66,
-        "cache_read": 0.007
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
-      "display_name": "DeepSeek V4 Flash 0731",
-      "type": "chat"
-    },
-    {
       "id": "deepseek-v4-pro",
       "name": "deepseek-v4-pro",
       "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
@@ -406,52 +304,6 @@
       "type": "chat"
     },
     {
-      "id": "glm-5.1",
-      "name": "glm-5.1",
-      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
-      "family": "glm",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-04-07",
-      "last_updated": "2026-04-07",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 202752,
-        "output": 131072
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1,
-        "output": 3.2,
-        "cache_read": 0.2
-      },
-      "canonical_model_id": "zhipuai/glm-5.1",
-      "display_name": "glm-5.1",
-      "type": "chat"
-    },
-    {
       "id": "glm-5.2",
       "name": "GLM-5.2",
       "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
@@ -703,46 +555,6 @@
       "type": "chat"
     },
     {
-      "id": "kimi-k2.5",
-      "name": "kimi-k2.5",
-      "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k2",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": false,
-      "knowledge": "2025-01",
-      "release_date": "2026-01-27",
-      "last_updated": "2026-01-27",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 262144
-      },
-      "status": "deprecated",
-      "canonical_model_id": "moonshotai/kimi-k2.5",
-      "display_name": "kimi-k2.5",
-      "type": "chat"
-    },
-    {
       "id": "kimi-k2.6",
       "name": "kimi-k2.6",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
@@ -879,41 +691,6 @@
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "kimi-k3",
-      "type": "chat"
-    },
-    {
-      "id": "minimax-m2.5",
-      "name": "minimax-m2.5",
-      "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-      "family": "minimax",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2026-02-12",
-      "last_updated": "2026-02-12",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 204800,
-        "output": 131072
-      },
-      "status": "deprecated",
-      "canonical_model_id": "minimax/MiniMax-M2.5",
-      "display_name": "minimax-m2.5",
       "type": "chat"
     },
     {
@@ -1322,52 +1099,6 @@
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
       "display_name": "nemotron-3-ultra",
-      "type": "chat"
-    },
-    {
-      "id": "qwen3.5:397b",
-      "name": "qwen3.5:397b",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_details"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-02-15",
-      "last_updated": "2026-02-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.6,
-        "output": 3.6
-      },
-      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
-      "display_name": "qwen3.5:397b",
       "type": "chat"
     }
   ],

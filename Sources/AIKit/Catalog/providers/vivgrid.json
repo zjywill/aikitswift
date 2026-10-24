@@ -452,6 +452,7 @@
         "context": 128000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -735,6 +736,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -792,6 +794,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -969,6 +972,7 @@
         "context": 1000000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -1130,6 +1134,7 @@
         "context": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -1174,6 +1179,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -1215,6 +1221,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -1255,6 +1262,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14,
@@ -1296,6 +1304,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.75,
         "output": 14,
@@ -1348,6 +1357,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -1403,6 +1413,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -1458,6 +1469,7 @@
         "input": 272000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },
@@ -1513,6 +1525,7 @@
         "input": 922000,
         "output": 128000
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/openai-compatible"
       },

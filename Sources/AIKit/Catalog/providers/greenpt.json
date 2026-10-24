@@ -1095,6 +1095,9 @@
         "context": 0,
         "output": 8192
       },
+      "provider": {
+        "api": "https://api.greenpt.ai"
+      },
       "display_name": "Green S"
     },
     {
@@ -1122,6 +1125,9 @@
       "limit": {
         "context": 0,
         "output": 8192
+      },
+      "provider": {
+        "api": "https://api.greenpt.ai"
       },
       "display_name": "Green S Pro"
     },

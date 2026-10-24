@@ -991,9 +991,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.511,
-        "output": 1.534,
-        "cache_read": 0.128
+        "input": 0.279,
+        "output": 1.114,
+        "cache_read": 0.111
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
       "display_name": "DeepSeek V4.1 Flash 1017",
@@ -2981,6 +2981,42 @@
       "type": "chat"
     },
     {
+      "id": "kolibri-1",
+      "name": "kolibri-1",
+      "description": "Kolibri-1 is Aleph Alpha’s open-weight English-German MoE language model, designed for enterprise use with efficient inference and advanced reasoning.",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-22",
+      "last_updated": "2026-10-22",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 81920
+      },
+      "cost": {
+        "input": 0.167,
+        "output": 0.613,
+        "cache_read": 0.084
+      },
+      "display_name": "kolibri-1",
+      "type": "chat"
+    },
+    {
       "id": "llama-3.3-70b-instruct",
       "name": "Llama-3.3-70B-Instruct",
       "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
@@ -3539,8 +3575,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 128000,
-        "output": 128000
+        "context": 118000,
+        "output": 118000
       },
       "cost": {
         "input": 0.145,

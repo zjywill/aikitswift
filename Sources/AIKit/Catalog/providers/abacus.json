@@ -1111,10 +1111,8 @@
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": false,
       "temperature": true,
       "knowledge": "2024-06",

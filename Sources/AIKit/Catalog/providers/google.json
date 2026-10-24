@@ -239,10 +239,8 @@
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
-        "supported": false,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": false,
       "temperature": true,
       "knowledge": "2024-06",
@@ -1193,7 +1191,7 @@
       "name": "Gemini 3.5 Live Translate Preview",
       "description": "Low-latency audio-to-audio model for real-time speech translation across 70+ languages",
       "family": "gemini-pro",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": false
       },
@@ -1868,101 +1866,6 @@
       "canonical_model_id": "google/lyria-3-pro-preview",
       "display_name": "Lyria 3 Pro Preview",
       "type": "chat"
-    },
-    {
-      "id": "veo-3.1-fast-generate-preview",
-      "type": "video",
-      "name": "Veo 3.1 fast",
-      "description": "Video model for prompt-guided generation, editing, and motion workflows",
-      "family": "veo",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2025-10-15",
-      "last_updated": "2026-01-01",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "video"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 480,
-        "output": 8192
-      },
-      "canonical_model_id": "google/veo-3.1-fast-generate-preview",
-      "display_name": "Veo 3.1 fast"
-    },
-    {
-      "id": "veo-3.1-generate-preview",
-      "type": "video",
-      "name": "Veo 3.1",
-      "description": "Video model for prompt-guided generation, editing, and motion workflows",
-      "family": "veo",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2025-10-15",
-      "last_updated": "2026-01",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "video"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 480,
-        "output": 8192
-      },
-      "status": "beta",
-      "canonical_model_id": "google/veo-3.1-generate-preview",
-      "display_name": "Veo 3.1"
-    },
-    {
-      "id": "veo-3.1-lite-generate-preview",
-      "type": "video",
-      "name": "Veo 3.1 lite",
-      "description": "Video model for prompt-guided generation, editing, and motion workflows",
-      "family": "veo",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2026-03-31",
-      "last_updated": "2026-03-31",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "video"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 480,
-        "output": 8192
-      },
-      "canonical_model_id": "google/veo-3.1-lite-generate-preview",
-      "display_name": "Veo 3.1 lite"
     }
   ],
   "api": "https://generativelanguage.googleapis.com",

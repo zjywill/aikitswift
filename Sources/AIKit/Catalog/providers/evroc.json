@@ -29,6 +29,9 @@
         "context": 448,
         "output": 448
       },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
       "display_name": "KB Whisper"
     },
     {
@@ -383,6 +386,9 @@
         "context": 32000,
         "output": 32000
       },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
       "display_name": "Voxtral Small 24B"
     },
     {
@@ -537,6 +543,9 @@
         "context": 448,
         "output": 4096
       },
+      "provider": {
+        "npm": "@ai-sdk/openai"
+      },
       "cost": {
         "input": 0.0023,
         "output": 0.0023,
@@ -571,6 +580,9 @@
       "limit": {
         "context": 448,
         "output": 448
+      },
+      "provider": {
+        "npm": "@ai-sdk/openai"
       },
       "cost": {
         "input": 0.0023,

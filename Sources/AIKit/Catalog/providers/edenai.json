@@ -1879,6 +1879,432 @@
       "type": "chat"
     },
     {
+      "id": "arkanecloud/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "name": "Qwen3 235B-A22B Instruct 2507 (Arkanecloud)",
+      "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-07-21",
+      "last_updated": "2025-07-21",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262000,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.25,
+        "output": 1,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
+      "display_name": "Qwen3 235B-A22B Instruct 2507 (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/deepseek-ai/DeepSeek-V4.1-Flash",
+      "name": "DeepSeek V4.1 Flash (Arkanecloud)",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.075
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/meta-llama/Llama-3.1-70B-Instruct",
+      "name": "Llama-3.1-70B-Instruct (Arkanecloud)",
+      "description": "Open Llama instruction model for multilingual chat, reasoning, and coding",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-07-23",
+      "last_updated": "2024-07-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.8,
+        "output": 0.8,
+        "cache_read": 0.16
+      },
+      "canonical_model_id": "meta/llama-3.1-70b-instruct",
+      "display_name": "Llama-3.1-70B-Instruct (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/meta-llama/Llama-3.1-8B-Instruct",
+      "name": "Llama-3.1-8B-Instruct (Arkanecloud)",
+      "description": "Compact open Llama model for lightweight chat, drafting, and self-hosting",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-07-23",
+      "last_updated": "2024-07-23",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.15,
+        "cache_read": 0.03
+      },
+      "canonical_model_id": "meta/llama-3.1-8b-instruct",
+      "display_name": "Llama-3.1-8B-Instruct (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/meta-llama/Llama-3.3-70B-Instruct",
+      "name": "Llama-3.3-70B-Instruct (Arkanecloud)",
+      "description": "Popular open Llama workhorse for multilingual chat, coding, and self-hosting",
+      "family": "llama",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2023-12",
+      "release_date": "2024-12-06",
+      "last_updated": "2024-12-06",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 128000,
+        "output": 4096
+      },
+      "cost": {
+        "input": 0.7,
+        "output": 0.7,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "meta/llama-3.3-70b-instruct",
+      "display_name": "Llama-3.3-70B-Instruct (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/ministral-14b",
+      "name": "Ministral 14B (Arkanecloud)",
+      "description": "Compact multimodal Mistral model for local assistants, edge agents, and efficient tool use",
+      "family": "ministral",
+      "attachment": true,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "release_date": "2025-12-02",
+      "last_updated": "2025-12-02",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 32768,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.15,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "mistral/ministral-14b",
+      "display_name": "Ministral 14B (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/nvidia/nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super 120B A12B (Arkanecloud)",
+      "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
+      "family": "nemotron",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-06",
+      "release_date": "2026-03-11",
+      "last_updated": "2026-03-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 256000,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 0.8,
+        "cache_read": 0.1
+      },
+      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
+      "display_name": "Nemotron 3 Super 120B A12B (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "Nemotron 3 Ultra 550B A55B (Arkanecloud)",
+      "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
+      "family": "nemotron",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-09",
+      "release_date": "2026-06-04",
+      "last_updated": "2026-06-04",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 512288,
+        "output": 128000
+      },
+      "cost": {
+        "input": 0.6,
+        "output": 3.5,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "display_name": "Nemotron 3 Ultra 550B A55B (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/openai/gpt-oss-120b",
+      "name": "GPT OSS 120B (Arkanecloud)",
+      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
+      "family": "gpt-oss",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2024-06",
+      "release_date": "2025-08-05",
+      "last_updated": "2025-08-05",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.1
+      },
+      "canonical_model_id": "openai/gpt-oss-120b",
+      "display_name": "GPT OSS 120B (Arkanecloud)",
+      "type": "chat"
+    },
+    {
+      "id": "arkanecloud/openai/gpt-oss-20b",
+      "name": "GPT OSS 20B (Arkanecloud)",
+      "description": "Open GPT reasoning model for self-hosted agents and controllable deployments",
+      "family": "gpt-oss",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2024-06",
+      "release_date": "2025-08-05",
+      "last_updated": "2025-08-05",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 131072,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.07,
+        "output": 0.25,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "openai/gpt-oss-20b",
+      "display_name": "GPT OSS 20B (Arkanecloud)",
+      "type": "chat"
+    },
+    {
       "id": "azure/gpt-5.1-codex",
       "name": "GPT-5.1 Codex (Azure)",
       "description": "Codex GPT for repository edits, code review, and practical software agents",
@@ -3330,7 +3756,7 @@
       "reasoning": {
         "supported": false
       },
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": true,
       "temperature": true,
       "release_date": "2023-08-10",
@@ -5907,6 +6333,56 @@
       "type": "chat"
     },
     {
+      "id": "flexai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (FlexAI)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.0225
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (FlexAI)",
+      "type": "chat"
+    },
+    {
       "id": "flexai/Muse-Glimmer-30B",
       "name": "Muse Glimmer 30B (FlexAI)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
@@ -6186,10 +6662,8 @@
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
@@ -6216,7 +6690,6 @@
       "cost": {
         "input": 0.3,
         "output": 2.5,
-        "reasoning": 2.5,
         "cache_read": 0.03,
         "cache_write": 0.083333,
         "input_audio": 1
@@ -7455,9 +7928,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.157276,
-        "output": 0.39319,
-        "cache_read": 0.044936
+        "input": 0.156702,
+        "output": 0.391755,
+        "cache_read": 0.044772
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Greenpt)",
@@ -7505,9 +7978,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.247148,
-        "output": 1.23574,
-        "cache_read": 0.012357
+        "input": 0.246246,
+        "output": 1.231229,
+        "cache_read": 0.012312
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Greenpt)",
@@ -7553,8 +8026,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.22468,
-        "output": 0.78638
+        "input": 0.22386,
+        "output": 0.78351
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Greenpt)",
@@ -7589,8 +8062,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.23574,
-        "output": 1.23574
+        "input": 1.231229,
+        "output": 1.231229
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Greenpt)",
@@ -7624,8 +8097,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 1.01106,
-        "output": 3.03318
+        "input": 1.007369,
+        "output": 3.022108
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Greenpt)",
@@ -7875,8 +8348,8 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.33702,
-        "output": 0.44936
+        "input": 0.33579,
+        "output": 0.44772
       },
       "canonical_model_id": "mistral/ministral-3-14b-instruct-2512",
       "display_name": "Ministral 3 14B (Infomaniak)",
@@ -7911,8 +8384,8 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.16851,
-        "output": 0.89872
+        "input": 0.167895,
+        "output": 0.89544
       },
       "canonical_model_id": "alibaba/qwen3-coder-next",
       "display_name": "Qwen3 Coder Next (IONOS)",
@@ -7947,8 +8420,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 0.73021,
-        "output": 0.73021
+        "input": 0.727545,
+        "output": 0.727545
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (IONOS)",
@@ -7994,8 +8467,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16851,
-        "output": 0.73021
+        "input": 0.167895,
+        "output": 0.727545
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (IONOS)",
@@ -8403,7 +8876,7 @@
       "name": "MiniMax-M3.1-Flash",
       "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
       "family": "minimax",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -8420,14 +8893,16 @@
           ]
         }
       ],
-      "tool_call": false,
+      "tool_call": true,
       "structured_output": false,
       "temperature": true,
       "release_date": "2026-10-19",
       "last_updated": "2026-10-19",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -8435,7 +8910,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1000000,
+        "context": 1048576,
         "output": 512000
       },
       "cost": {
@@ -9394,6 +9869,55 @@
       "type": "chat"
     },
     {
+      "id": "moonshot/kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro",
+      "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro",
+      "type": "chat"
+    },
+    {
       "id": "nebius/Qwen/Qwen3-235B-A22B-Instruct-2507",
       "name": "Qwen3 235B-A22B Instruct 2507 (Nebius)",
       "description": "Updated large open Qwen3 MoE instruct model for multilingual chat, coding, and tool use",
@@ -9610,6 +10134,56 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Nebius)",
+      "type": "chat"
+    },
+    {
+      "id": "nebius/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Nebius)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.3
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (Nebius)",
       "type": "chat"
     },
     {
@@ -12988,9 +13562,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.44936,
-        "output": 0.89872,
-        "cache_read": 0.089872
+        "input": 0.44772,
+        "output": 0.89544,
+        "cache_read": 0.089544
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 (Scaleway)",
@@ -13038,9 +13612,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.67404,
-        "output": 2.02212,
-        "cache_read": 0.134808
+        "input": 0.67158,
+        "output": 2.014739,
+        "cache_read": 0.134316
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Scaleway)",
@@ -13123,8 +13697,8 @@
         "output": 32768
       },
       "cost": {
-        "input": 0.16851,
-        "output": 0.67404
+        "input": 0.167895,
+        "output": 0.67158
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "GPT OSS 120B (Scaleway)",
@@ -13159,8 +13733,8 @@
         "output": 4096
       },
       "cost": {
-        "input": 1.01106,
-        "output": 1.01106
+        "input": 1.007369,
+        "output": 1.007369
       },
       "canonical_model_id": "meta/llama-3.3-70b-instruct",
       "display_name": "Llama-3.3-70B-Instruct (Scaleway)",
@@ -13194,8 +13768,8 @@
         "output": 16384
       },
       "cost": {
-        "input": 0.84255,
-        "output": 2.52765
+        "input": 0.839475,
+        "output": 2.518424
       },
       "canonical_model_id": "alibaba/qwen3-235b-a22b-instruct-2507",
       "display_name": "Qwen3 235B-A22B Instruct 2507 (Scaleway)",
@@ -13235,6 +13809,105 @@
       },
       "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen3-Coder 30B-A3B Instruct (Scaleway)",
+      "type": "chat"
+    },
+    {
+      "id": "sference/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "name": "DeepSeek V4 Flash 0731 (Sference)",
+      "description": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
+      "family": "deepseek-flash",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-07-31",
+      "last_updated": "2026-07-31",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.28,
+        "output": 0.56,
+        "cache_read": 0.07
+      },
+      "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
+      "display_name": "DeepSeek V4 Flash 0731 (Sference)",
+      "type": "chat"
+    },
+    {
+      "id": "sference/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Sference)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 384000
+      },
+      "cost": {
+        "input": 0.5,
+        "output": 1.5,
+        "cache_read": 0.05
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (Sference)",
       "type": "chat"
     },
     {
@@ -14159,10 +14832,8 @@
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
-        "supported": true,
-        "default": false
+        "supported": false
       },
-      "reasoning_options": [],
       "tool_call": false,
       "structured_output": true,
       "temperature": true,
@@ -14187,7 +14858,6 @@
       "cost": {
         "input": 0.3,
         "output": 2.5,
-        "reasoning": 2.5,
         "cache_read": 0.03,
         "cache_write": 0.083333,
         "input_audio": 1

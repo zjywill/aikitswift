@@ -103,54 +103,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-sonnet-4",
-      "name": "Claude Sonnet 4",
-      "description": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-      "family": "claude-sonnet",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "budget_tokens",
-          "min": 1024,
-          "max": 32000
-        }
-      ],
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2025-03-31",
-      "release_date": "2025-05-22",
-      "last_updated": "2025-05-22",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 64000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 3,
-        "output": 15,
-        "cache_read": 0.3,
-        "cache_write": 3.75
-      },
-      "canonical_model_id": "anthropic/claude-sonnet-4-20250514",
-      "display_name": "Claude Sonnet 4",
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-sonnet-4.6",
       "name": "Claude Sonnet 4.6",
       "description": "Claude workhorse for coding agents, careful analysis, and production cost control",
@@ -227,43 +179,6 @@
       },
       "canonical_model_id": "bytedance-seed/seedance-2.0",
       "display_name": "Seedance 2"
-    },
-    {
-      "id": "deepseek-ai/deepseek-r1-distill-llama-70b",
-      "name": "DeepSeek R1 Distill Llama 70B",
-      "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": false,
-      "temperature": true,
-      "knowledge": "2024-10",
-      "release_date": "2025-01-23",
-      "last_updated": "2025-01-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 131072
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.03,
-        "output": 0.14
-      },
-      "display_name": "DeepSeek R1 Distill Llama 70B",
-      "type": "chat"
     },
     {
       "id": "deepseek/deepseek-v4-pro",
@@ -904,42 +819,6 @@
       "type": "chat"
     },
     {
-      "id": "moonshotai/kimi-k2",
-      "name": "Kimi K2",
-      "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-      "family": "kimi-k2",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-10",
-      "release_date": "2025-07-11",
-      "last_updated": "2025-07-11",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.55,
-        "output": 2.2
-      },
-      "canonical_model_id": "moonshotai/kimi-k2",
-      "display_name": "Kimi K2",
-      "type": "chat"
-    },
-    {
       "id": "moonshotai/kimi-k2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
@@ -1566,83 +1445,6 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-realtime-1.5",
-      "type": "realtime",
-      "name": "GPT Realtime 1.5",
-      "description": "Realtime speech-to-speech model for voice agents and customer support",
-      "family": "gpt",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": false,
-      "knowledge": "2024-09-30",
-      "release_date": "2026-02-23",
-      "last_updated": "2026-02-23",
-      "modalities": {
-        "input": [
-          "text",
-          "audio",
-          "image"
-        ],
-        "output": [
-          "text",
-          "audio"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 32000,
-        "output": 4096
-      },
-      "cost": {
-        "input": 4,
-        "output": 16,
-        "cache_read": 0.4,
-        "input_audio": 32,
-        "output_audio": 64
-      },
-      "canonical_model_id": "openai/gpt-realtime-1.5",
-      "display_name": "GPT Realtime 1.5"
-    },
-    {
-      "id": "qwen/qwen3-coder",
-      "name": "Qwen3 Coder",
-      "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-07-22",
-      "last_updated": "2025-07-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.3,
-        "output": 1.2
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
-      "display_name": "Qwen3 Coder",
-      "type": "chat"
-    },
-    {
       "id": "sarvam/sarvam-105b",
       "name": "Sarvam 105B",
       "description": "Flagship Indian-language reasoning model for enterprise multilingual applications",
@@ -1677,43 +1479,6 @@
       },
       "canonical_model_id": "sarvam/sarvam-105b",
       "display_name": "Sarvam 105B",
-      "type": "chat"
-    },
-    {
-      "id": "sarvam/sarvam-30b",
-      "name": "Sarvam 30B",
-      "description": "Efficient Indian-language reasoning model for chat, coding, and multilingual work",
-      "family": "sarvam",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "temperature": true,
-      "release_date": "2026-02-18",
-      "last_updated": "2026-02-18",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 128000,
-        "output": 128000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.02,
-        "output": 0.1
-      },
-      "canonical_model_id": "sarvam/sarvam-30b",
-      "display_name": "Sarvam 30B",
       "type": "chat"
     },
     {

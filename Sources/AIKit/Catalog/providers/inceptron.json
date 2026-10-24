@@ -89,9 +89,9 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.4946,
+        "input": 0.6026,
         "output": 3.2,
-        "cache_read": 0.1509,
+        "cache_read": 0.169,
         "cache_write": 0
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
@@ -135,7 +135,7 @@
       "cost": {
         "input": 0.6712,
         "output": 3.35,
-        "cache_read": 0.18,
+        "cache_read": 0.15,
         "cache_write": 0
       },
       "canonical_model_id": "moonshotai/kimi-k2.7-code",
@@ -183,9 +183,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.69,
-        "output": 2.52,
-        "cache_read": 0.14,
+        "input": 0.99,
+        "output": 1.188,
+        "cache_read": 0.16,
         "cache_write": 0
       },
       "canonical_model_id": "zhipuai/glm-5.2",
@@ -234,9 +234,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.55,
-        "output": 1.96,
-        "cache_read": 0.18,
+        "input": 0.6,
+        "output": 2.8,
+        "cache_read": 0.12,
         "cache_write": 0
       },
       "canonical_model_id": "zhipuai/glm-5.3",
@@ -285,8 +285,8 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.15,
-        "output": 0.69,
+        "input": 0.2,
+        "output": 0.75,
         "cache_read": 0.075,
         "cache_write": 0
       },

@@ -242,10 +242,14 @@
       "cost": {
         "input": 0.05,
         "output": 0.4,
+        "cache_read": 0.01,
+        "cache_write": 0.0625,
         "tiers": [
           {
             "input": 0.25,
             "output": 2,
+            "cache_read": 0.05,
+            "cache_write": 0.3125,
             "tier": {
               "type": "context",
               "size": 256000
@@ -254,7 +258,9 @@
         ],
         "context_over_200k": {
           "input": 0.25,
-          "output": 2
+          "output": 2,
+          "cache_read": 0.05,
+          "cache_write": 0.3125
         }
       },
       "display_name": "Qwen Flash",
@@ -437,6 +443,9 @@
         "output": 2048
       },
       "status": "deprecated",
+      "provider": {
+        "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+      },
       "cost": {
         "input": 0.27,
         "output": 1.07,
@@ -486,11 +495,15 @@
         "input": 0.4,
         "output": 1.2,
         "reasoning": 4,
+        "cache_read": 0.08,
+        "cache_write": 0.5,
         "tiers": [
           {
             "input": 1.2,
             "output": 3.6,
             "reasoning": 12,
+            "cache_read": 0.24,
+            "cache_write": 1.5,
             "tier": {
               "type": "context",
               "size": 256000
@@ -500,7 +513,9 @@
         "context_over_200k": {
           "input": 1.2,
           "output": 3.6,
-          "reasoning": 12
+          "reasoning": 12,
+          "cache_read": 0.24,
+          "cache_write": 1.5
         }
       },
       "display_name": "Qwen Plus",
@@ -693,146 +708,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen2-5-14b-instruct",
-      "name": "Qwen2.5 14B Instruct",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.35,
-        "output": 1.4
-      },
-      "display_name": "Qwen2.5 14B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen2-5-32b-instruct",
-      "name": "Qwen2.5 32B Instruct",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.7,
-        "output": 2.8
-      },
-      "display_name": "Qwen2.5 32B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen2-5-72b-instruct",
-      "name": "Qwen2.5 72B Instruct",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1.4,
-        "output": 5.6
-      },
-      "display_name": "Qwen2.5 72B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen2-5-7b-instruct",
-      "name": "Qwen2.5 7B Instruct",
-      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.175,
-        "output": 0.7
-      },
-      "display_name": "Qwen2.5 7B Instruct",
-      "type": "chat"
-    },
-    {
       "id": "qwen2-5-omni-7b",
       "name": "Qwen2.5-Omni 7B",
       "description": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
@@ -870,78 +745,6 @@
         "input_audio": 6.76
       },
       "display_name": "Qwen2.5-Omni 7B",
-      "type": "chat"
-    },
-    {
-      "id": "qwen2-5-vl-72b-instruct",
-      "name": "Qwen2.5-VL 72B Instruct",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 2.8,
-        "output": 8.4
-      },
-      "display_name": "Qwen2.5-VL 72B Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "qwen2-5-vl-7b-instruct",
-      "name": "Qwen2.5-VL 7B Instruct",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2024-09",
-      "last_updated": "2024-09",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.35,
-        "output": 1.05
-      },
-      "display_name": "Qwen2.5-VL 7B Instruct",
       "type": "chat"
     },
     {
@@ -1291,10 +1094,14 @@
       "cost": {
         "input": 0.3,
         "output": 1.5,
+        "cache_read": 0.06,
+        "cache_write": 0.375,
         "tiers": [
           {
             "input": 0.5,
             "output": 2.5,
+            "cache_read": 0.1,
+            "cache_write": 0.625,
             "tier": {
               "type": "context",
               "size": 32000
@@ -1303,6 +1110,8 @@
           {
             "input": 0.8,
             "output": 4,
+            "cache_read": 0.16,
+            "cache_write": 1,
             "tier": {
               "type": "context",
               "size": 128000
@@ -1311,6 +1120,8 @@
           {
             "input": 1.6,
             "output": 9.6,
+            "cache_read": 0.32,
+            "cache_write": 2,
             "tier": {
               "type": "context",
               "size": 256000
@@ -1389,6 +1200,9 @@
         "output": 4096
       },
       "status": "deprecated",
+      "provider": {
+        "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+      },
       "cost": {
         "input": 10,
         "output": 10,
@@ -1587,6 +1401,9 @@
         "output": 16384
       },
       "status": "deprecated",
+      "provider": {
+        "api": "wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime"
+      },
       "cost": {
         "input": 0.52,
         "output": 1.99,
@@ -1724,10 +1541,14 @@
       "cost": {
         "input": 0.2,
         "output": 1.6,
+        "cache_read": 0.04,
+        "cache_write": 0.25,
         "tiers": [
           {
             "input": 0.3,
             "output": 2.4,
+            "cache_read": 0.06,
+            "cache_write": 0.375,
             "tier": {
               "type": "context",
               "size": 32000
@@ -1736,6 +1557,8 @@
           {
             "input": 0.6,
             "output": 4.8,
+            "cache_read": 0.12,
+            "cache_write": 0.75,
             "tier": {
               "type": "context",
               "size": 128000
@@ -2352,13 +2175,13 @@
       "cost": {
         "input": 0.03,
         "output": 0.13,
-        "cache_read": 0.003,
+        "cache_read": 0.006,
         "cache_write": 0.0375,
         "tiers": [
           {
             "input": 0.1,
             "output": 0.4,
-            "cache_read": 0.01,
+            "cache_read": 0.02,
             "cache_write": 0.125,
             "tier": {
               "type": "context",
@@ -2368,7 +2191,7 @@
           {
             "input": 0.2,
             "output": 0.8,
-            "cache_read": 0.02,
+            "cache_read": 0.04,
             "cache_write": 0.25,
             "tier": {
               "type": "context",
@@ -2471,13 +2294,13 @@
       "cost": {
         "input": 0.4,
         "output": 1.6,
-        "cache_read": 0.04,
+        "cache_read": 0.08,
         "cache_write": 0.5,
         "tiers": [
           {
             "input": 1.2,
             "output": 4.8,
-            "cache_read": 0.12,
+            "cache_read": 0.24,
             "cache_write": 1.5,
             "tier": {
               "type": "context",
@@ -2488,7 +2311,7 @@
         "context_over_200k": {
           "input": 1.2,
           "output": 4.8,
-          "cache_read": 0.12,
+          "cache_read": 0.24,
           "cache_write": 1.5
         }
       },

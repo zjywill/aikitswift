@@ -63,7 +63,7 @@
       "name": "DeepSeek V4.1 Flash",
       "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
       "family": "deepseek-flash",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -92,8 +92,7 @@
       "last_updated": "2026-09-10",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -106,9 +105,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.08,
-        "cache_read": 0.008
+        "input": 0.03,
+        "output": 0.12,
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -119,7 +118,7 @@
       "name": "DeepSeek V4.1 Flash 1017",
       "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
       "family": "deepseek-flash",
-      "attachment": true,
+      "attachment": false,
       "reasoning": {
         "supported": true,
         "default": false
@@ -148,8 +147,7 @@
       "last_updated": "2026-10-17",
       "modalities": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -162,9 +160,9 @@
         "output": 65536
       },
       "cost": {
-        "input": 0.04,
-        "output": 0.08,
-        "cache_read": 0.008
+        "input": 0.03,
+        "output": 0.12,
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
       "display_name": "DeepSeek V4.1 Flash 1017",

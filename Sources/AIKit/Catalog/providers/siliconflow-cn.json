@@ -71,45 +71,6 @@
       "type": "chat"
     },
     {
-      "id": "Pro/MiniMaxAI/MiniMax-M2.5",
-      "name": "Pro/MiniMaxAI/MiniMax-M2.5",
-      "description": "Frontier MiniMax model for engineering, office tasks, and agentic reasoning",
-      "family": "minimax",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-02-12",
-      "last_updated": "2026-02-12",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 192000,
-        "output": 131000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.3,
-        "output": 1.22
-      },
-      "canonical_model_id": "minimax/MiniMax-M2.5",
-      "display_name": "Pro/MiniMaxAI/MiniMax-M2.5",
-      "type": "chat"
-    },
-    {
       "id": "Pro/deepseek-ai/DeepSeek-R1",
       "name": "Pro/deepseek-ai/DeepSeek-R1",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
@@ -574,50 +535,6 @@
       "type": "chat"
     },
     {
-      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-      "name": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-      "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "budget_tokens",
-          "min": 128,
-          "max": 32768
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2025-07-25",
-      "last_updated": "2025-07-25",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262000,
-        "output": 262000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.13,
-        "output": 0.6
-      },
-      "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507",
-      "display_name": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-      "type": "chat"
-    },
-    {
       "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
       "name": "Qwen/Qwen3-30B-A3B-Instruct-2507",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
@@ -779,43 +696,6 @@
       },
       "canonical_model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
       "display_name": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-      "type": "chat"
-    },
-    {
-      "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-      "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
-      "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-07-22",
-      "last_updated": "2025-07-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262000,
-        "output": 262000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.25,
-        "output": 1
-      },
-      "canonical_model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
-      "display_name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "type": "chat"
     },
     {
@@ -1187,55 +1067,6 @@
       },
       "canonical_model_id": "alibaba/qwen3.5-35b-a3b",
       "display_name": "Qwen/Qwen3.5-35B-A3B",
-      "type": "chat"
-    },
-    {
-      "id": "Qwen/Qwen3.5-397B-A17B",
-      "name": "Qwen/Qwen3.5-397B-A17B",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "budget_tokens",
-          "min": 128,
-          "max": 32768
-        }
-      ],
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2026-02-15",
-      "last_updated": "2026-02-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.29,
-        "output": 1.74
-      },
-      "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
-      "display_name": "Qwen/Qwen3.5-397B-A17B",
       "type": "chat"
     },
     {

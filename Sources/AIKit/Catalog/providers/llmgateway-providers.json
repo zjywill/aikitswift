@@ -7904,59 +7904,6 @@
       "type": "chat"
     },
     {
-      "id": "deepinfra/inkling",
-      "name": "Inkling (DeepInfra)",
-      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
-      "family": "ling",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-07-15",
-      "last_updated": "2026-07-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 262144
-      },
-      "cost": {
-        "input": 0.95,
-        "output": 4.05,
-        "cache_read": 0.16
-      },
-      "canonical_model_id": "thinkingmachines/inkling",
-      "display_name": "Inkling (DeepInfra)",
-      "type": "chat"
-    },
-    {
       "id": "deepinfra/ling-3.0-flash",
       "name": "InclusionAI Ling 3.0 Flash (DeepInfra)",
       "description": "Hybrid-linear MoE reasoning model with 124B total and 5.1B active parameters for efficient agents",
@@ -12269,6 +12216,104 @@
       "type": "chat"
     },
     {
+      "id": "moonshot/kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro (Moonshot AI)",
+      "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2
+      },
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro (Moonshot AI)",
+      "type": "chat"
+    },
+    {
+      "id": "moonshot/kimi-k3.1-pro-highspeed",
+      "name": "Kimi K3.1 Pro Highspeed (Moonshot AI)",
+      "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 4
+      },
+      "display_name": "Kimi K3.1 Pro Highspeed (Moonshot AI)",
+      "type": "chat"
+    },
+    {
       "id": "novita/deepseek-v3.2",
       "name": "DeepSeek V3.2 (NovitaAI)",
       "description": "Hybrid-reasoning DeepSeek model with thinking and non-thinking modes, sparse attention, and tool-use",
@@ -13489,146 +13534,6 @@
       "type": "chat"
     },
     {
-      "id": "novita/mimo-v2.5",
-      "name": "MiMo V2.5 (NovitaAI)",
-      "description": "Open MiMo model for multimodal coding agents and long-context automation",
-      "family": "mimo",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.168,
-        "output": 0.336,
-        "cache_read": 0.0034,
-        "tiers": [
-          {
-            "input": 0.8,
-            "output": 4,
-            "cache_read": 0.16,
-            "tier": {
-              "type": "context",
-              "size": 256000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 0.8,
-          "output": 4,
-          "cache_read": 0.16
-        }
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5",
-      "display_name": "MiMo V2.5 (NovitaAI)",
-      "type": "chat"
-    },
-    {
-      "id": "novita/mimo-v2.5-pro",
-      "name": "MiMo V2.5 Pro (NovitaAI)",
-      "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2024-12",
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.522,
-        "output": 1.044,
-        "cache_read": 0.0043,
-        "tiers": [
-          {
-            "input": 2,
-            "output": 6,
-            "cache_read": 0.4,
-            "tier": {
-              "type": "context",
-              "size": 256000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 2,
-          "output": 6,
-          "cache_read": 0.4
-        }
-      },
-      "canonical_model_id": "xiaomi/mimo-v2.5-pro",
-      "display_name": "MiMo V2.5 Pro (NovitaAI)",
-      "type": "chat"
-    },
-    {
       "id": "novita/minimax-m2.1",
       "name": "MiniMax M2.1 (NovitaAI)",
       "description": "Earlier MiniMax agent model for practical coding and productivity tasks",
@@ -14591,118 +14496,6 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-3.5-turbo",
-      "name": "GPT-3.5 Turbo (OpenAI)",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2021-09-01",
-      "release_date": "2023-03-01",
-      "last_updated": "2023-11-06",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 16385,
-        "output": 4096
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.5,
-        "output": 1.5
-      },
-      "canonical_model_id": "openai/gpt-3.5-turbo",
-      "display_name": "GPT-3.5 Turbo (OpenAI)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-4",
-      "name": "GPT-4 (OpenAI)",
-      "description": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-      "family": "gpt",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "knowledge": "2023-11",
-      "release_date": "2023-11-06",
-      "last_updated": "2024-04-09",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 8192,
-        "output": 8192
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 30,
-        "output": 60
-      },
-      "canonical_model_id": "openai/gpt-4",
-      "display_name": "GPT-4 (OpenAI)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-4-turbo",
-      "name": "GPT-4 Turbo (OpenAI)",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2023-12",
-      "release_date": "2023-11-06",
-      "last_updated": "2024-04-09",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 128000,
-        "output": 4096
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 10,
-        "output": 30
-      },
-      "canonical_model_id": "openai/gpt-4-turbo",
-      "display_name": "GPT-4 Turbo (OpenAI)",
-      "type": "chat"
-    },
-    {
       "id": "openai/gpt-4.1",
       "name": "GPT-4.1 (OpenAI)",
       "description": "Long-lived GPT workhorse for coding, instruction following, and production apps",
@@ -14778,45 +14571,6 @@
       },
       "canonical_model_id": "openai/gpt-4.1-mini",
       "display_name": "GPT-4.1 Mini (OpenAI)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-4.1-nano",
-      "name": "GPT-4.1 Nano (OpenAI)",
-      "description": "Tiny GPT-4.1 option for classification, routing, and very high-volume tasks",
-      "family": "gpt-nano",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-04",
-      "release_date": "2025-04-14",
-      "last_updated": "2025-04-14",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1000000,
-        "output": 32768
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.1,
-        "output": 0.4,
-        "cache_read": 0.025
-      },
-      "canonical_model_id": "openai/gpt-4.1-nano",
-      "display_name": "GPT-4.1 Nano (OpenAI)",
       "type": "chat"
     },
     {
@@ -16169,57 +15923,6 @@
       "display_name": "GPT Transcribe (OpenAI)"
     },
     {
-      "id": "openai/o1",
-      "name": "o1 (OpenAI)",
-      "description": "O-series reasoning model for hard analysis, math, coding, and planning",
-      "family": "o",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2023-09",
-      "release_date": "2024-12-05",
-      "last_updated": "2024-12-05",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 15,
-        "output": 60,
-        "cache_read": 7.5
-      },
-      "canonical_model_id": "openai/o1",
-      "display_name": "o1 (OpenAI)",
-      "type": "chat"
-    },
-    {
       "id": "openai/o3",
       "name": "o3 (OpenAI)",
       "description": "Deliberate o-series reasoner for hard math, coding, and multi-step analysis",
@@ -16256,94 +15959,6 @@
       },
       "canonical_model_id": "openai/o3",
       "display_name": "o3 (OpenAI)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/o3-mini",
-      "name": "o3 Mini (OpenAI)",
-      "description": "Smaller o-series reasoner for economical coding, math, and planning tasks",
-      "family": "o-mini",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2024-05",
-      "release_date": "2024-12-20",
-      "last_updated": "2025-01-29",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1.1,
-        "output": 4.4,
-        "cache_read": 0.55
-      },
-      "canonical_model_id": "openai/o3-mini",
-      "display_name": "o3 Mini (OpenAI)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/o4-mini",
-      "name": "o4 Mini (OpenAI)",
-      "description": "Fast o-series model for compact reasoning, coding, and tool use",
-      "family": "o-mini",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2024-05",
-      "release_date": "2025-04-16",
-      "last_updated": "2025-04-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 200000,
-        "output": 100000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1.1,
-        "output": 4.4,
-        "cache_read": 0.275
-      },
-      "canonical_model_id": "openai/o4-mini",
-      "display_name": "o4 Mini (OpenAI)",
       "type": "chat"
     },
     {
@@ -16559,6 +16174,112 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro (reka-ai)",
+      "type": "chat"
+    },
+    {
+      "id": "reka-ai/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (reka-ai)",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash (reka-ai)",
+      "type": "chat"
+    },
+    {
+      "id": "reka-ai/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (reka-ai)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (reka-ai)",
       "type": "chat"
     },
     {
@@ -16907,6 +16628,57 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash (Runware)",
+      "type": "chat"
+    },
+    {
+      "id": "runware/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (runware)",
+      "description": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-10-17",
+      "last_updated": "2026-10-17",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.01
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
+      "display_name": "DeepSeek V4.1 Flash 1017 (runware)",
       "type": "chat"
     },
     {
@@ -17414,57 +17186,6 @@
       },
       "canonical_model_id": "sakana/fugu-ultra-v2",
       "display_name": "Fugu Ultra v2.0 (Sakana AI)",
-      "type": "chat"
-    },
-    {
-      "id": "sciforium/deepseek-v4.1-flash",
-      "name": "DeepSeek V4.1 Flash (sciforium)",
-      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
-      "family": "deepseek-flash",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-09-10",
-      "last_updated": "2026-09-10",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 384000
-      },
-      "cost": {
-        "input": 0.246,
-        "output": 0.944,
-        "cache_read": 0.012
-      },
-      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
-      "display_name": "DeepSeek V4.1 Flash (sciforium)",
       "type": "chat"
     },
     {
@@ -18856,57 +18577,6 @@
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax M3 (Tencent Cloud)",
-      "type": "chat"
-    },
-    {
-      "id": "together-ai/deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash (Together AI)",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 163840,
-        "output": 163840
-      },
-      "cost": {
-        "input": 0.14,
-        "output": 0.28,
-        "cache_read": 0.03
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "DeepSeek V4 Flash (Together AI)",
       "type": "chat"
     },
     {

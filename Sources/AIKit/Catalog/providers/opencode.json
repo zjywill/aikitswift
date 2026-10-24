@@ -4923,7 +4923,8 @@
       "cost": {
         "input": 3,
         "output": 15,
-        "cache_read": 0.3
+        "cache_read": 0.3,
+        "cache_write": 3
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
@@ -5340,6 +5341,7 @@
         "context": 1000000,
         "output": 131072
       },
+      "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
       },
@@ -5945,6 +5947,7 @@
         "context": 1000000,
         "output": 512000
       },
+      "status": "deprecated",
       "provider": {
         "api": "https://opencode.ai/inference/openai/v1"
       },
