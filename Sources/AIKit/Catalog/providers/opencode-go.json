@@ -294,6 +294,63 @@
       "type": "chat"
     },
     {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "provider": {
+        "npm": "@ai-sdk/google",
+        "api": "https://opencode.ai/inference/go/google/v1beta"
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      },
+      "canonical_model_id": "google/gemini-4-argon",
+      "display_name": "Gemini 4 Argon",
+      "type": "chat"
+    },
+    {
       "id": "gemini-4-argon-contributor",
       "name": "Gemini 4 Argon Contributor",
       "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
@@ -336,6 +393,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "provider": {
         "npm": "@ai-sdk/google",
         "api": "https://opencode.ai/inference/go/google/v1beta"
@@ -487,8 +545,7 @@
         "input": [
           "text",
           "image",
-          "video",
-          "pdf"
+          "video"
         ],
         "output": [
           "text"
@@ -832,6 +889,43 @@
       },
       "canonical_model_id": "tencent/hy4-preview",
       "display_name": "Hy4 preview",
+      "type": "chat"
+    },
+    {
+      "id": "iceman-contributor-free",
+      "name": "Iceman Contributor Free",
+      "description": "Stealth model, free for a limited time",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "release_date": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 262144,
+        "output": 131072
+      },
+      "provider": {
+        "api": "https://opencode.ai/inference/go/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
+      },
+      "display_name": "Iceman Contributor Free",
       "type": "chat"
     },
     {

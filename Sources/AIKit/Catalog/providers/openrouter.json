@@ -2470,9 +2470,9 @@
         "output": 384000
       },
       "cost": {
-        "input": 0.672336,
-        "output": 1.344672,
-        "cache_read": 0.056028
+        "input": 0.2088,
+        "output": 0.4176,
+        "cache_read": 0.0174
       },
       "canonical_model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
@@ -4828,6 +4828,43 @@
       "type": "chat"
     },
     {
+      "id": "liquid/lfm-2.5-2.6b",
+      "name": "LFM2.5-2.6B",
+      "description": "Reasoning model for deliberate analysis, multi-step problem solving, and tool use",
+      "family": "liquid",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.35,
+        "output": 0.5,
+        "cache_read": 0.04
+      },
+      "display_name": "LFM2.5-2.6B",
+      "type": "chat"
+    },
+    {
       "id": "liquid/lfm-2.5-2.6b:free",
       "name": "LFM2.5-2.6B (free)",
       "description": "Free provider route for experiments, demos, and cost-sensitive chat workloads",
@@ -5948,11 +5985,11 @@
       "open_weights": true,
       "limit": {
         "context": 204800,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
-        "input": 0.27,
-        "output": 0.95,
+        "input": 0.3,
+        "output": 1.2,
         "cache_read": 0.03
       },
       "canonical_model_id": "minimax/MiniMax-M2.5",
@@ -8128,42 +8165,6 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-3.5-turbo",
-      "name": "GPT-3.5-turbo",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2021-09-01",
-      "release_date": "2023-03-01",
-      "last_updated": "2023-11-06",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 16385,
-        "output": 4096
-      },
-      "cost": {
-        "input": 0.5,
-        "output": 1.5
-      },
-      "canonical_model_id": "openai/gpt-3.5-turbo",
-      "display_name": "GPT-3.5-turbo",
-      "type": "chat"
-    },
-    {
       "id": "openai/gpt-3.5-turbo-0613",
       "name": "GPT-3.5 Turbo (older v0613)",
       "description": "Compact GPT model for low-latency assistance and high-volume workloads",
@@ -8231,41 +8232,6 @@
         "output": 4
       },
       "display_name": "GPT-3.5 Turbo 16k",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-instruct",
-      "name": "GPT-3.5 Turbo Instruct",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2021-09-30",
-      "release_date": "2023-09-28",
-      "last_updated": "2023-09-28",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 4095,
-        "output": 3685
-      },
-      "cost": {
-        "input": 1.5,
-        "output": 2
-      },
-      "display_name": "GPT-3.5 Turbo Instruct",
       "type": "chat"
     },
     {
@@ -16896,9 +16862,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.079,
-        "output": 1.4,
-        "cache_read": 0.078
+        "input": 0.0908,
+        "output": 1.61,
+        "cache_read": 0.0897
       },
       "canonical_model_id": "zhipuai/glm-5.3",
       "display_name": "GLM-5.3",
@@ -17445,7 +17411,7 @@
       },
       "cost": {
         "input": 0.0422,
-        "output": 0.1729,
+        "output": 0.1763,
         "cache_read": 0.027
       },
       "display_name": "DeepSeek V4 Flash Latest",
@@ -17617,9 +17583,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.238,
-        "output": 24,
-        "cache_read": 0.228
+        "input": 0.19,
+        "output": 8.5258,
+        "cache_read": 0.19
       },
       "display_name": "Kimi Latest",
       "type": "chat"
@@ -18097,8 +18063,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0304,
-        "output": 0.122,
+        "input": 0.0502,
+        "output": 0.0819,
         "cache_read": 0.03
       },
       "display_name": "GLM Flash Latest",
@@ -18140,12 +18106,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.079,
-        "output": 1.4,
-        "cache_read": 0.078
+        "input": 0.075,
+        "output": 4.295,
+        "cache_read": 0.075
       },
       "display_name": "GLM Latest",
       "type": "chat"

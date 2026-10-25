@@ -4,55 +4,6 @@
   "adapter": "openai",
   "models": [
     {
-      "id": "deepseek-ai/DeepSeek-V3.2",
-      "name": "DeepSeek V3.2",
-      "description": "Hybrid-reasoning DeepSeek model with thinking and non-thinking modes, sparse attention, and tool-use",
-      "family": "deepseek",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "budget_tokens"
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2024-07",
-      "release_date": "2025-12-01",
-      "last_updated": "2025-12-01",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 163840,
-        "output": 64000
-      },
-      "cost": {
-        "input": 0.5,
-        "output": 1.5,
-        "cache_read": 0.25
-      },
-      "canonical_model_id": "deepseek/deepseek-v3.2",
-      "display_name": "DeepSeek V3.2",
-      "type": "chat"
-    },
-    {
       "id": "google/gemma-4-31B-it",
       "name": "Gemma 4 31B IT",
       "description": "Largest Gemma 4 instruction model for open, self-hosted chat and reasoning",

@@ -4852,6 +4852,50 @@
       "type": "chat"
     },
     {
+      "id": "liquid/lfm-2.5-2.6b",
+      "name": "LiquidAI: LFM2.5-2.6B",
+      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+      "family": "liquid",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-11",
+      "last_updated": "2026-08-11",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.35,
+        "output": 0.5,
+        "cache_read": 0.04
+      },
+      "display_name": "LiquidAI: LFM2.5-2.6B",
+      "type": "chat"
+    },
+    {
       "id": "liquid/lfm-2.5-2.6b:free",
       "name": "LiquidAI: LFM2.5-2.6B (free)",
       "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
@@ -5999,8 +6043,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 198000,
-        "output": 32768
+        "context": 204800,
+        "output": 131072
       },
       "cost": {
         "input": 0.27,
@@ -6147,8 +6191,8 @@
         "output": 524288
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.55,
+        "input": 0.09,
+        "output": 0.5,
         "cache_read": 0.01
       },
       "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
@@ -8178,9 +8222,9 @@
         "output": 235929
       },
       "cost": {
-        "input": 0.1,
-        "output": 0.4,
-        "cache_read": 0.08
+        "input": 0.06,
+        "output": 0.35,
+        "cache_read": 0.01
       },
       "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
       "display_name": "NVIDIA: Nemotron 3.5 Super VL",
@@ -8231,43 +8275,6 @@
       },
       "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
       "display_name": "NVIDIA: Nemotron 3.5 Super VL (free)",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-3.5-turbo",
-      "name": "GPT-3.5-turbo",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2021-09-01",
-      "release_date": "2023-03-01",
-      "last_updated": "2023-11-06",
-      "modalities": {
-        "input": [
-          "text",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 16385,
-        "output": 4096
-      },
-      "cost": {
-        "input": 0.5,
-        "output": 1.5
-      },
-      "canonical_model_id": "openai/gpt-3.5-turbo",
-      "display_name": "GPT-3.5-turbo",
       "type": "chat"
     },
     {
@@ -8338,41 +8345,6 @@
         "output": 4
       },
       "display_name": "OpenAI: GPT-3.5 Turbo 16k",
-      "type": "chat"
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-instruct",
-      "name": "OpenAI: GPT-3.5 Turbo Instruct",
-      "description": "Compact GPT model for low-latency assistance and high-volume workloads",
-      "family": "gpt",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2023-09-28",
-      "last_updated": "2023-09-28",
-      "modalities": {
-        "input": [
-          "text",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 4095,
-        "output": 3685
-      },
-      "cost": {
-        "input": 1.5,
-        "output": 2
-      },
-      "display_name": "OpenAI: GPT-3.5 Turbo Instruct",
       "type": "chat"
     },
     {
@@ -17441,7 +17413,7 @@
       },
       "cost": {
         "input": 0.0422,
-        "output": 0.1729,
+        "output": 0.1763,
         "cache_read": 0.027
       },
       "display_name": "DeepSeek: DeepSeek V4 Flash Latest",
@@ -17593,9 +17565,9 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.238,
-        "output": 24,
-        "cache_read": 0.228
+        "input": 0.19,
+        "output": 8.5258,
+        "cache_read": 0.19
       },
       "display_name": "MoonshotAI: Kimi Latest",
       "type": "chat"
@@ -17981,9 +17953,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0199,
-        "output": 0.122,
-        "cache_read": 0.0199
+        "input": 0.0502,
+        "output": 0.0819,
+        "cache_read": 0.03
       },
       "display_name": "Z.ai: GLM Flash Latest",
       "type": "chat"
@@ -18024,12 +17996,12 @@
       "open_weights": false,
       "limit": {
         "context": 1048576,
-        "output": 943718
+        "output": 131072
       },
       "cost": {
-        "input": 0.079,
-        "output": 1.4,
-        "cache_read": 0.078
+        "input": 0.075,
+        "output": 4.295,
+        "cache_read": 0.075
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

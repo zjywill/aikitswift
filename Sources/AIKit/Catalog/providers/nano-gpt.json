@@ -7707,6 +7707,100 @@
       "type": "chat"
     },
     {
+      "id": "deepseek/deepseek-v4.1-flash-uncensored",
+      "name": "DeepSeek V4.1 Flash Uncensored",
+      "description": "A lower-refusal finetune of DeepSeek V4.1 Flash with text input, optional reasoning, and tool calling. Supports a context window of up to 1M tokens.",
+      "family": "deepseek",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.33,
+        "output": 1.32,
+        "cache_read": 0.00825
+      },
+      "display_name": "DeepSeek V4.1 Flash Uncensored",
+      "type": "chat"
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-uncensored:thinking",
+      "name": "DeepSeek V4.1 Flash Uncensored Thinking",
+      "description": "A lower-refusal finetune of DeepSeek V4.1 Flash with text input, optional reasoning, and tool calling. Supports a context window of up to 1M tokens.",
+      "family": "deepseek",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": false,
+      "release_date": "2026-10-01",
+      "last_updated": "2026-10-01",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.33,
+        "output": 1.32,
+        "cache_read": 0.00825
+      },
+      "display_name": "DeepSeek V4.1 Flash Uncensored Thinking",
+      "type": "chat"
+    },
+    {
       "id": "deepseek/deepseek-v4.1-flash:thinking",
       "name": "DeepSeek V4.1 Flash Thinking",
       "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
@@ -11494,8 +11588,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
-        "input": 1048576,
+        "context": 524288,
+        "input": 524288,
         "output": 235929
       },
       "cost": {
@@ -15249,6 +15343,106 @@
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3",
+      "type": "chat"
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro",
+      "description": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2
+      },
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro",
+      "type": "chat"
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "name": "Kimi K3.1 Pro Highspeed",
+      "description": "Kimi K3.1 Pro Highspeed is the faster variant of K3.1 Pro, a multimodal reasoning model for coding, 3D creation, document analysis and multi-step tool use. It supports a 1M-token context window and text, image and video inputs. Reasoning is always enabled, with low, high and max effort levels.",
+      "family": "kimi-k3",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "input": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 4
+      },
+      "display_name": "Kimi K3.1 Pro Highspeed",
       "type": "chat"
     },
     {
@@ -21090,8 +21284,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 262144,
+        "context": 1048576,
+        "input": 1048576,
         "output": 16384
       },
       "cost": {
@@ -21131,8 +21325,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
-        "input": 262144,
+        "context": 1048576,
+        "input": 1048576,
         "output": 16384
       },
       "cost": {
@@ -21589,8 +21783,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1001536,
-        "input": 1001536,
+        "context": 1048576,
+        "input": 1048576,
         "output": 32768
       },
       "cost": {
@@ -22157,9 +22351,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1010000,
-        "input": 1010000,
-        "output": 32768
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
       },
       "cost": {
         "input": 1,
@@ -22195,9 +22389,9 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1010000,
-        "input": 1010000,
-        "output": 32768
+        "context": 1048576,
+        "input": 1048576,
+        "output": 65536
       },
       "cost": {
         "input": 1,
@@ -22235,8 +22429,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 1001536,
-        "input": 1001536,
+        "context": 1048576,
+        "input": 1048576,
         "output": 32768
       },
       "cost": {
@@ -24915,6 +25109,56 @@
       },
       "canonical_model_id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "display_name": "MiMo V2.6 Pro UltraSpeed",
+      "type": "chat"
+    },
+    {
+      "id": "xingchen-agi/xing4.0-29b-a4b",
+      "name": "Xing 4.0 29B A4B",
+      "description": "China Telecom’s Xing 4.0 is an Apache 2.0 open-weight mixture-of-experts model with 29B total and 4B active parameters, designed for coding, reasoning and tool use. Supports text input, structured output and a shared 262,144-token input/output context. This route does not use a TEE.",
+      "family": "agi",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "release_date": "2026-10-24",
+      "last_updated": "2026-10-24",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "input": 262144,
+        "output": 262144
+      },
+      "cost": {
+        "input": 0.22,
+        "output": 0.9,
+        "cache_read": 0.011
+      },
+      "display_name": "Xing 4.0 29B A4B",
       "type": "chat"
     },
     {
