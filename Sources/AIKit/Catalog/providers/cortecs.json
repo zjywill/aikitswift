@@ -991,9 +991,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.279,
-        "output": 1.114,
-        "cache_read": 0.111
+        "input": 0.203,
+        "output": 0.609,
+        "cache_read": 0.006
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash-1017",
       "display_name": "DeepSeek V4.1 Flash 1017",
@@ -2989,12 +2989,23 @@
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": false,
-      "release_date": "2026-10-22",
-      "last_updated": "2026-10-22",
+      "knowledge": "2026-06-18",
+      "release_date": "2026-10-03",
+      "last_updated": "2026-10-03",
       "modalities": {
         "input": [
           "text"
@@ -3003,7 +3014,7 @@
           "text"
         ]
       },
-      "open_weights": false,
+      "open_weights": true,
       "limit": {
         "context": 262144,
         "output": 81920
@@ -3013,6 +3024,7 @@
         "output": 0.613,
         "cache_read": 0.084
       },
+      "canonical_model_id": "aleph-alpha/kolibri-1",
       "display_name": "kolibri-1",
       "type": "chat"
     },
@@ -3243,6 +3255,56 @@
       },
       "canonical_model_id": "minimax/MiniMax-M3",
       "display_name": "MiniMax-M3",
+      "type": "chat"
+    },
+    {
+      "id": "minimax-m3.1-flash",
+      "name": "MiniMax-M3.1-Flash",
+      "description": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "family": "minimax",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-19",
+      "last_updated": "2026-10-19",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 64000
+      },
+      "cost": {
+        "input": 0.304,
+        "output": 1.219,
+        "cache_read": 0.076
+      },
+      "canonical_model_id": "minimax/MiniMax-M3.1-Flash",
+      "display_name": "MiniMax-M3.1-Flash",
       "type": "chat"
     },
     {

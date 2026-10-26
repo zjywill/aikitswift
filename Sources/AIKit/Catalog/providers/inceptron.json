@@ -235,7 +235,7 @@
       },
       "cost": {
         "input": 0.6,
-        "output": 3.22,
+        "output": 2.8,
         "cache_read": 0.12,
         "cache_write": 0
       },
@@ -285,9 +285,9 @@
         "output": 1048576
       },
       "cost": {
-        "input": 0.2,
-        "output": 0.75,
-        "cache_read": 0.075,
+        "input": 0.15,
+        "output": 0.55,
+        "cache_read": 0.05,
         "cache_write": 0
       },
       "canonical_model_id": "zhipuai/glm-5.3-flash",

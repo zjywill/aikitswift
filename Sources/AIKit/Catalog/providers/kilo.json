@@ -5197,8 +5197,8 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 80000,
-        "output": 72000
+        "context": 131072,
+        "output": 117964
       },
       "cost": {
         "input": 0.05,
@@ -13165,7 +13165,7 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 81920
       },
       "cost": {
         "input": 0.45,
@@ -16549,7 +16549,7 @@
       "cost": {
         "input": 0.3,
         "output": 0.9,
-        "cache_read": 0.055
+        "cache_read": 0.05
       },
       "canonical_model_id": "zhipuai/glm-4.6v",
       "display_name": "GLM-4.6V",
@@ -17565,8 +17565,8 @@
         "output": 943718
       },
       "cost": {
-        "input": 0.19,
-        "output": 8.5258,
+        "input": 0.1919,
+        "output": 8.1113,
         "cache_read": 0.19
       },
       "display_name": "MoonshotAI: Kimi Latest",
@@ -17953,8 +17953,8 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.0502,
-        "output": 0.0819,
+        "input": 0.0513,
+        "output": 0.0701,
         "cache_read": 0.03
       },
       "display_name": "Z.ai: GLM Flash Latest",
@@ -17999,9 +17999,9 @@
         "output": 131072
       },
       "cost": {
-        "input": 0.075,
-        "output": 4.295,
-        "cache_read": 0.075
+        "input": 0.0703,
+        "output": 4.3843,
+        "cache_read": 0.0703
       },
       "display_name": "Z.ai: GLM Latest",
       "type": "chat"

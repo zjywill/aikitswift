@@ -6228,6 +6228,55 @@
       "type": "chat"
     },
     {
+      "id": "perceptron/perceptron-mk1.5",
+      "name": "Mk1.5",
+      "description": "Image, video, and audio understanding with visual grounding, reasoning, and function calling",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-09-25",
+      "last_updated": "2026-09-25",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 36864,
+        "output": 8192
+      },
+      "cost": {
+        "input": 0.1587,
+        "output": 1.587
+      },
+      "canonical_model_id": "perceptron/perceptron-mk1.5",
+      "display_name": "Mk1.5",
+      "type": "chat"
+    },
+    {
       "id": "perplexity/sonar",
       "name": "Sonar",
       "description": "Fast web-grounded Sonar for current answers, citations, and lightweight retrieval",

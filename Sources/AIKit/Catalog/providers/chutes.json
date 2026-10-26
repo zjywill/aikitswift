@@ -250,6 +250,35 @@
       "type": "chat"
     },
     {
+      "id": "Qwen/Qwen3.8-Max-0902",
+      "name": "Qwen3.8 Max 0902",
+      "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
+      "family": "qwen3.8-max",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "temperature": true,
+      "release_date": "2026-10-20",
+      "last_updated": "2026-10-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 0,
+        "output": 0
+      },
+      "display_name": "Qwen3.8 Max 0902",
+      "type": "chat"
+    },
+    {
       "id": "deepseek-ai/DeepSeek-V3.2-TEE",
       "name": "DeepSeek V3.2 TEE",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
@@ -336,6 +365,35 @@
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 TEE",
+      "type": "chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "name": "DeepSeek V4 Pro 0813",
+      "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
+      "family": "deepseek",
+      "attachment": false,
+      "reasoning": {
+        "supported": false
+      },
+      "tool_call": false,
+      "temperature": true,
+      "release_date": "2026-10-20",
+      "last_updated": "2026-10-25",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 0,
+        "output": 0
+      },
+      "display_name": "DeepSeek V4 Pro 0813",
       "type": "chat"
     },
     {
