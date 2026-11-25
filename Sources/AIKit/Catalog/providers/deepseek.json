@@ -177,7 +177,7 @@
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,

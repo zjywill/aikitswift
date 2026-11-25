@@ -4,61 +4,9 @@
   "adapter": "openai",
   "models": [
     {
-      "id": "hf:MiniMaxAI/MiniMax-M3",
-      "name": "MiniMax-M3",
-      "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
-      "family": "minimax",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-06-01",
-      "last_updated": "2026-06-01",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.6,
-        "output": 1.2,
-        "cache_read": 0.6
-      },
-      "canonical_model_id": "minimax/MiniMax-M3",
-      "display_name": "MiniMax-M3",
-      "type": "chat"
-    },
-    {
-      "id": "hf:Qwen/Qwen3.6-27B",
-      "name": "Qwen3.6 27B",
-      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "id": "hf:Qwen/Qwen3.8-27B",
+      "name": "Qwen3.8 27B",
+      "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
       "family": "qwen",
       "attachment": true,
       "reasoning": {
@@ -77,13 +25,10 @@
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-04-22",
-      "last_updated": "2026-04-22",
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
       "modalities": {
         "input": [
           "text",
@@ -96,68 +41,15 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 65536
+        "output": 32768
       },
-      "status": "deprecated",
       "cost": {
         "input": 0.45,
         "output": 3.6,
         "cache_read": 0.45
       },
-      "canonical_model_id": "alibaba/qwen3.6-27b",
-      "display_name": "Qwen3.6 27B",
-      "type": "chat"
-    },
-    {
-      "id": "hf:deepseek-ai/DeepSeek-V4.1-Flash",
-      "name": "DeepSeek V4.1 Flash",
-      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
-      "family": "deepseek-flash",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "low",
-            "high",
-            "xhigh",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-09-10",
-      "last_updated": "2026-09-10",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.6,
-        "output": 1.2,
-        "cache_read": 0.03
-      },
-      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
-      "display_name": "DeepSeek V4.1 Flash",
+      "canonical_model_id": "alibaba/qwen3.8-27b",
+      "display_name": "Qwen3.8 27B",
       "type": "chat"
     },
     {
@@ -213,63 +105,10 @@
       "type": "chat"
     },
     {
-      "id": "hf:moonshotai/Kimi-K2.7-Code",
-      "name": "Kimi K2.7 Code",
-      "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": false,
-      "knowledge": "2025-01",
-      "release_date": "2026-06-12",
-      "last_updated": "2026-06-12",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 262144,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.95,
-        "output": 4,
-        "cache_read": 0.95
-      },
-      "canonical_model_id": "moonshotai/kimi-k2.7-code",
-      "display_name": "Kimi K2.7 Code",
-      "type": "chat"
-    },
-    {
       "id": "hf:moonshotai/Kimi-K3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -286,9 +125,6 @@
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-07-16",
@@ -317,11 +153,11 @@
       "type": "chat"
     },
     {
-      "id": "hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
-      "name": "Nemotron 3 Super 120B A12B",
-      "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
-      "family": "nemotron",
-      "attachment": false,
+      "id": "hf:moonshotai/Kimi-K3.1-Pro",
+      "name": "Kimi K3.1 Pro",
+      "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+      "family": "kimi-pro",
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
@@ -330,24 +166,21 @@
         {
           "type": "effort",
           "values": [
-            "none",
             "low",
-            "medium",
-            "high"
+            "high",
+            "max"
           ]
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
+      "structured_output": true,
       "temperature": true,
-      "knowledge": "2025-06",
-      "release_date": "2026-03-11",
-      "last_updated": "2026-03-11",
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -355,16 +188,16 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 262144,
+        "context": 524288,
         "output": 65536
       },
       "cost": {
-        "input": 0.3,
-        "output": 1,
-        "cache_read": 0.06
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2
       },
-      "canonical_model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "display_name": "Nemotron 3 Super 120B A12B",
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro",
       "type": "chat"
     },
     {
@@ -437,9 +270,6 @@
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "temperature": true,
       "knowledge": "2025-04",
       "release_date": "2026-01-19",
@@ -467,57 +297,6 @@
       "type": "chat"
     },
     {
-      "id": "hf:zai-org/GLM-5.2",
-      "name": "GLM-5.2",
-      "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
-      "family": "glm",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "high",
-            "xhigh"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-06-13",
-      "last_updated": "2026-06-13",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 524288,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1.4,
-        "output": 4.4,
-        "cache_read": 1.4
-      },
-      "canonical_model_id": "zhipuai/glm-5.2",
-      "display_name": "GLM-5.2",
-      "type": "chat"
-    },
-    {
       "id": "hf:zai-org/GLM-5.3",
       "name": "GLM-5.3",
       "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
@@ -538,9 +317,6 @@
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-14",
@@ -588,9 +364,6 @@
         }
       ],
       "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
       "structured_output": true,
       "temperature": true,
       "release_date": "2026-08-26",

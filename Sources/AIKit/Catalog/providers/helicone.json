@@ -644,7 +644,7 @@
       "id": "deepseek-r1-distill-llama-70b",
       "name": "DeepSeek R1 Distill Llama 70B",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -680,7 +680,7 @@
       "id": "deepseek-reasoner",
       "name": "DeepSeek Reasoner",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek",
       "attachment": false,
       "reasoning": {
         "supported": false,
@@ -718,7 +718,7 @@
       "id": "deepseek-tng-r1t2-chimera",
       "name": "DeepSeek TNG R1T2 Chimera",
       "description": "DeepSeek chat model for instruction following, coding, and analysis",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -739,7 +739,7 @@
       "open_weights": false,
       "limit": {
         "context": 130000,
-        "output": 163840
+        "output": 130000
       },
       "cost": {
         "input": 0.3,
@@ -1489,7 +1489,6 @@
       "open_weights": false,
       "limit": {
         "context": 128000,
-        "input": 272000,
         "output": 16384
       },
       "cost": {
@@ -1683,7 +1682,6 @@
       "open_weights": false,
       "limit": {
         "context": 128000,
-        "input": 272000,
         "output": 32768
       },
       "cost": {
@@ -1833,7 +1831,7 @@
       "id": "gpt-5.1-codex-mini",
       "name": "OpenAI: GPT-5.1 Codex Mini",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "family": "gpt-codex",
+      "family": "gpt-codex-mini",
       "attachment": true,
       "reasoning": {
         "supported": false,
@@ -2232,7 +2230,7 @@
       "id": "grok-code-fast-1",
       "name": "xAI Grok Code Fast 1",
       "description": "Fast Grok model for responsive chat, reasoning, and tool-assisted work",
-      "family": "grok",
+      "family": "grok-code",
       "attachment": false,
       "reasoning": {
         "supported": false,
@@ -2305,7 +2303,7 @@
       "id": "kimi-k2-0711",
       "name": "Kimi K2 (07/11)",
       "description": "Kimi model for long-context chat, coding, and agentic reasoning",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -2340,7 +2338,7 @@
       "id": "kimi-k2-0905",
       "name": "Kimi K2 (09/05)",
       "description": "September 2025 Kimi K2 instruction update with a 256K context and improved agentic coding",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -2376,7 +2374,7 @@
       "id": "kimi-k2-thinking",
       "name": "Kimi K2 Thinking",
       "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
-      "family": "kimi-thinking",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": false,
@@ -2399,7 +2397,7 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 262144
+        "output": 256000
       },
       "cost": {
         "input": 0.48,
@@ -2660,7 +2658,7 @@
       "id": "llama-guard-4",
       "name": "Meta Llama Guard 4 12B",
       "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
-      "family": "llama",
+      "family": "llama-guard",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -2695,7 +2693,7 @@
       "id": "llama-prompt-guard-2-22m",
       "name": "Meta Llama Prompt Guard 2 22M",
       "description": "22M-parameter (DeBERTa-xsmall) English classifier that detects prompt injection and jailbreak attempts",
-      "family": "llama",
+      "family": "llama-prompt-guard",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -2730,7 +2728,7 @@
       "id": "llama-prompt-guard-2-86m",
       "name": "Meta Llama Prompt Guard 2 86M",
       "description": "86M-parameter (mDeBERTa-base) multilingual classifier that detects prompt injection and jailbreak attempts",
-      "family": "llama",
+      "family": "llama-prompt-guard",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -3145,7 +3143,7 @@
       "id": "qwen2.5-coder-7b-fast",
       "name": "Qwen2.5 Coder 7B fast",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -3288,7 +3286,7 @@
       "id": "qwen3-coder",
       "name": "Qwen3 Coder 480B A35B Instruct Turbo",
       "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -3323,7 +3321,7 @@
       "id": "qwen3-coder-30b-a3b-instruct",
       "name": "Qwen3 Coder 30B A3B Instruct",
       "description": "Smaller Qwen coder for efficient local agents and repo-level fixes",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -3393,7 +3391,7 @@
       "id": "qwen3-vl-235b-a22b-instruct",
       "name": "Qwen3 VL 235B A22B Instruct",
       "description": "Qwen vision-language instruct model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -3465,7 +3463,7 @@
       "id": "sonar-deep-research",
       "name": "Perplexity Sonar Deep Research",
       "description": "Sonar search model for autonomous research and citation-backed long-form reports",
-      "family": "sonar",
+      "family": "sonar-deep-research",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -3583,7 +3581,7 @@
       "id": "sonar-reasoning-pro",
       "name": "Perplexity Sonar Reasoning Pro",
       "description": "Web-grounded Sonar for multi-step research questions that need cited reasoning",
-      "family": "sonar-reasoning",
+      "family": "sonar-reasoning-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,

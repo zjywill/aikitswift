@@ -45,7 +45,7 @@
       "id": "DeepSeek-V4-Pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -161,7 +161,7 @@
       "id": "Kimi-K2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -201,7 +201,7 @@
       "id": "MiniMax-M2.1",
       "name": "MiniMax-M2.1",
       "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -238,7 +238,7 @@
       "id": "MiniMax-M2.7",
       "name": "MiniMax-M2.7",
       "description": "Open MiniMax flagship for coding agents, office automation, and complex environments",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -274,7 +274,7 @@
       "id": "Qwen3.6-Flash",
       "name": "Qwen3.6 Flash",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen3.6",
+      "family": "qwen-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -350,8 +350,8 @@
     {
       "id": "kimi-k3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -376,7 +376,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 1048576
       },
       "cost": {
         "input": 3,

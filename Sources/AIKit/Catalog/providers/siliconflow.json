@@ -7,7 +7,7 @@
       "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
       "name": "ByteDance-Seed/Seed-OSS-36B-Instruct",
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
-      "family": "seed",
+      "family": "seed-oss",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -41,7 +41,7 @@
       "id": "MiniMaxAI/MiniMax-M2.5",
       "name": "MiniMaxAI/MiniMax-M2.5",
       "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -78,7 +78,7 @@
       "id": "MiniMaxAI/MiniMax-M3",
       "name": "MiniMax-M3",
       "description": "MiniMax multimodal model for long-context coding, perception, and agent planning",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -367,7 +367,7 @@
       "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "name": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -403,7 +403,7 @@
       "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -439,7 +439,7 @@
       "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
       "name": "Qwen/Qwen3-VL-30B-A3B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -475,7 +475,7 @@
       "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
       "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -518,7 +518,7 @@
       "id": "Qwen/Qwen3-VL-32B-Instruct",
       "name": "Qwen/Qwen3-VL-32B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -553,7 +553,7 @@
       "id": "Qwen/Qwen3-VL-32B-Thinking",
       "name": "Qwen/Qwen3-VL-32B-Thinking",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -596,7 +596,7 @@
       "id": "Qwen/Qwen3-VL-8B-Instruct",
       "name": "Qwen/Qwen3-VL-8B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -929,7 +929,7 @@
       "id": "deepseek-ai/DeepSeek-R1",
       "name": "deepseek-ai/DeepSeek-R1",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1335,7 +1335,7 @@
       "id": "deepseek-ai/DeepSeek-V4-Pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1383,7 +1383,7 @@
       "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1541,7 +1541,7 @@
       "id": "inclusionAI/Ling-flash-2.0",
       "name": "inclusionAI/Ling-flash-2.0",
       "description": "Efficient model for low-latency assistance, extraction, and routine automation",
-      "family": "ling",
+      "family": "ling-flash",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1621,7 +1621,7 @@
       "id": "moonshotai/Kimi-K2.5",
       "name": "moonshotai/Kimi-K2.5",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1670,7 +1670,7 @@
       "id": "moonshotai/Kimi-K2.6",
       "name": "moonshotai/Kimi-K2.6",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1719,7 +1719,7 @@
       "id": "moonshotai/Kimi-K2.7-Code",
       "name": "Kimi K2.7 Code",
       "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
+      "family": "kimi-code",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1767,8 +1767,8 @@
     {
       "id": "moonshotai/Kimi-K3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1816,6 +1816,7 @@
       "id": "nex-agi/Nex-N2-Pro",
       "name": "Nex-N2-Pro",
       "description": "Open agentic MoE model (397B total, 17B active) for coding, tool use, and research workflows",
+      "family": "nex-n-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1944,7 +1945,7 @@
       "id": "stepfun-ai/Step-3.5-Flash",
       "name": "stepfun-ai/Step-3.5-Flash",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
-      "family": "step",
+      "family": "step-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2027,7 +2028,7 @@
       "id": "tencent/Hy3",
       "name": "Hy3",
       "description": "Tencent Hy reasoning model for coding, instruction following, and agent tasks",
-      "family": "Hy",
+      "family": "hy",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2355,7 +2356,7 @@
       "id": "zai-org/GLM-5V-Turbo",
       "name": "zai-org/GLM-5V-Turbo",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
-      "family": "glm",
+      "family": "glmv-turbo",
       "attachment": true,
       "reasoning": {
         "supported": true,

@@ -160,7 +160,7 @@
       "id": "moonshotai/Kimi-K2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -207,7 +207,7 @@
       "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
       "name": "Nemotron 3 Nano 30B A3B",
       "description": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
-      "family": "nemotron",
+      "family": "nemotron-nano",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -249,7 +249,7 @@
       "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
       "name": "Nemotron 3 Super 120B A12B",
       "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
-      "family": "nemotron",
+      "family": "nemotron-super",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -291,7 +291,7 @@
       "id": "nvidia/Nemotron-3-Nano-Omni-Reasoning-30B-A3B",
       "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
       "description": "Open Nemotron omni model combining reasoning with text, vision, and audio",
-      "family": "nemotron",
+      "family": "nemotron-nano",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -371,7 +371,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
         "input": 0.05,

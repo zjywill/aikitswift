@@ -48,7 +48,7 @@
       "id": "DeepSeek-V4-Pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -129,7 +129,7 @@
       "id": "Kimi-K2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": true,

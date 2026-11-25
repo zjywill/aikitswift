@@ -579,7 +579,7 @@
       "open_weights": false,
       "limit": {
         "context": 200000,
-        "output": 64000
+        "output": 128000
       },
       "cost": {
         "input": 3,
@@ -1088,7 +1088,7 @@
       "id": "moonshot-ai/kimi-k2.7-code",
       "name": "Kimi K2.7 Code",
       "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
+      "family": "kimi-code",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1129,8 +1129,8 @@
     {
       "id": "moonshot-ai/kimi-k3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1167,7 +1167,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 1048576
       },
       "status": "deprecated",
       "cost": {
@@ -1183,7 +1183,7 @@
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "name": "Nemotron 3 Super 120B",
       "description": "Nemotron middle tier for collaborative agents and high-volume reasoning workloads",
-      "family": "nemotron",
+      "family": "nemotron-super",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1459,7 +1459,7 @@
         }
       ],
       "tool_call": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",
@@ -1512,7 +1512,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -1582,7 +1582,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -1652,7 +1652,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -1792,7 +1792,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-05-18",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -1862,7 +1862,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-04-20",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -1982,7 +1982,7 @@
       "id": "perplexity/deepseek-v4-pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2124,8 +2124,8 @@
     {
       "id": "perplexity/kimi-k3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2161,7 +2161,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 1048576
       },
       "cost": {
         "input": 3,
@@ -2176,7 +2176,7 @@
       "id": "perplexity/nemotron-3.5-super-120b-a12b",
       "name": "Nemotron 3.5 Super 120B A12B",
       "description": "NVIDIA Nemotron 3.5 Super reasoning model (120B total, 12B active) served with text-only input",
-      "family": "nemotron",
+      "family": "nemotron-super",
       "attachment": false,
       "reasoning": {
         "supported": true,

@@ -7,6 +7,7 @@
       "id": "aleph-alpha/kolibri-1",
       "name": "Kolibri 1",
       "description": "Aleph Alpha's German and English mixture-of-experts reasoning model (78B total, 3.46B active) for chat, RAG and agents",
+      "family": "kolibri",
       "attachment": false,
       "reasoning": {
         "supported": true,

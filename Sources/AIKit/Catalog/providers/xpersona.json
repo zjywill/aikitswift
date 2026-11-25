@@ -411,7 +411,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",
@@ -466,7 +466,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -521,7 +521,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -576,7 +576,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -681,7 +681,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-30",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",

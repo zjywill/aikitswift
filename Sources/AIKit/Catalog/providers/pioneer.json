@@ -703,7 +703,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",
@@ -761,7 +761,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -820,7 +820,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -879,7 +879,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -913,8 +913,8 @@
     {
       "id": "moonshotai/Kimi-K3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -951,7 +951,7 @@
       "open_weights": true,
       "limit": {
         "context": 1000000,
-        "output": 131072
+        "output": 1000000
       },
       "status": "deprecated",
       "cost": {
@@ -967,8 +967,8 @@
     {
       "id": "moonshotai/Kimi-K3-Fast",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1005,7 +1005,7 @@
       "open_weights": true,
       "limit": {
         "context": 1000000,
-        "output": 131072
+        "output": 1000000
       },
       "status": "deprecated",
       "cost": {
@@ -1022,7 +1022,7 @@
       "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
       "name": "Nemotron 3.5 Lightning 30B A3B",
       "description": "Fast NVIDIA Nemotron MoE for reliable agentic tasks across enterprise workloads",
-      "family": "nemotron",
+      "family": "nemotron-lightning",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1075,7 +1075,7 @@
       "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
       "name": "Nemotron 3.5 Super VL 120B A12B",
       "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
-      "family": "nemotron",
+      "family": "nemotron-super",
       "attachment": true,
       "reasoning": {
         "supported": true,

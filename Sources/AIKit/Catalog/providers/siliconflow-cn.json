@@ -7,7 +7,7 @@
       "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
       "name": "ByteDance-Seed/Seed-OSS-36B-Instruct",
       "description": "Tool-capable chat model for instruction following and agentic application workflows",
-      "family": "seed",
+      "family": "seed-oss",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -74,7 +74,7 @@
       "id": "Pro/deepseek-ai/DeepSeek-R1",
       "name": "Pro/deepseek-ai/DeepSeek-R1",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -238,7 +238,7 @@
       "id": "Pro/moonshotai/Kimi-K2.5",
       "name": "Pro/moonshotai/Kimi-K2.5",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -282,7 +282,7 @@
       "id": "Pro/moonshotai/Kimi-K2.6",
       "name": "Pro/moonshotai/Kimi-K2.6",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -666,7 +666,7 @@
       "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "name": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -702,7 +702,7 @@
       "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
       "name": "Qwen/Qwen3-VL-30B-A3B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -739,7 +739,7 @@
       "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
       "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -783,7 +783,7 @@
       "id": "Qwen/Qwen3-VL-32B-Instruct",
       "name": "Qwen/Qwen3-VL-32B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -819,7 +819,7 @@
       "id": "Qwen/Qwen3-VL-32B-Thinking",
       "name": "Qwen/Qwen3-VL-32B-Thinking",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -863,7 +863,7 @@
       "id": "Qwen/Qwen3-VL-8B-Instruct",
       "name": "Qwen/Qwen3-VL-8B-Instruct",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1176,6 +1176,53 @@
       "type": "chat"
     },
     {
+      "id": "Qwen/Qwen3.6-27B",
+      "name": "Qwen3.6 27B",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "budget_tokens",
+          "min": 128,
+          "max": 32768
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-04-22",
+      "last_updated": "2026-04-22",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 65536
+      },
+      "cost": {
+        "input": 0.44980438,
+        "output": 2.69882628
+      },
+      "canonical_model_id": "alibaba/qwen3.6-27b",
+      "display_name": "Qwen3.6 27B",
+      "type": "chat"
+    },
+    {
       "id": "Qwen/Qwen3.6-35B-A3B",
       "name": "Qwen/Qwen3.6-35B-A3B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -1210,6 +1257,61 @@
       },
       "canonical_model_id": "alibaba/qwen3.6-35b-a3b",
       "display_name": "Qwen/Qwen3.6-35B-A3B",
+      "type": "chat"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "name": "Qwen3.8 27B",
+      "description": "Dense 27B vision-language model for coding, agent tasks, and image and video understanding",
+      "family": "qwen",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        },
+        {
+          "type": "budget_tokens",
+          "min": 128,
+          "max": 32768
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 32768
+      },
+      "cost": {
+        "input": 0.44980438,
+        "output": 1.79921752
+      },
+      "canonical_model_id": "alibaba/qwen3.8-27b",
+      "display_name": "Qwen3.8 27B",
       "type": "chat"
     },
     {
@@ -1250,7 +1352,7 @@
       "id": "deepseek-ai/DeepSeek-R1",
       "name": "deepseek-ai/DeepSeek-R1",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1464,7 +1566,7 @@
       "id": "deepseek-ai/DeepSeek-V4-Pro",
       "name": "deepseek-ai/DeepSeek-V4-Pro",
       "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1508,10 +1610,58 @@
       "type": "chat"
     },
     {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "name": "DeepSeek V4.1 Flash",
+      "description": "DeepSeek V4.1 Flash model for reasoning and agentic coding",
+      "family": "deepseek-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        },
+        {
+          "type": "effort",
+          "values": [
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "knowledge": "2025-05",
+      "release_date": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 384000
+      },
+      "canonical_model_id": "deepseek/deepseek-v4.1-flash",
+      "display_name": "DeepSeek V4.1 Flash",
+      "type": "chat"
+    },
+    {
       "id": "inclusionAI/Ling-flash-2.0",
       "name": "inclusionAI/Ling-flash-2.0",
       "description": "Efficient model for low-latency assistance, extraction, and routine automation",
-      "family": "ling",
+      "family": "ling-flash",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1545,7 +1695,7 @@
       "id": "stepfun-ai/Step-3.5-Flash",
       "name": "stepfun-ai/Step-3.5-Flash",
       "description": "StepFun flash model for efficient multimodal reasoning, coding, and tool use",
-      "family": "step",
+      "family": "step-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1656,6 +1806,51 @@
       "type": "chat"
     },
     {
+      "id": "zai-org/GLM-4.5V",
+      "name": "GLM-4.5V",
+      "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
+      "family": "glmv",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "knowledge": "2025-04",
+      "release_date": "2025-08-11",
+      "last_updated": "2025-08-11",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 65536,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.14993479,
+        "output": 0.89960876
+      },
+      "canonical_model_id": "zhipuai/glm-4.5v",
+      "display_name": "GLM-4.5V",
+      "type": "chat"
+    },
+    {
       "id": "zai-org/GLM-5.2",
       "name": "GLM-5.2",
       "description": "Open flagship GLM for long-horizon coding agents and million-token context work",
@@ -1703,6 +1898,107 @@
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM-5.2",
+      "type": "chat"
+    },
+    {
+      "id": "zai-org/GLM-5.3",
+      "name": "GLM-5.3",
+      "description": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-14",
+      "last_updated": "2026-08-14",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.19947835,
+        "output": 4.19817421,
+        "cache_read": 0.29986959
+      },
+      "canonical_model_id": "zhipuai/glm-5.3",
+      "display_name": "GLM-5.3",
+      "type": "chat"
+    },
+    {
+      "id": "zai-org/GLM-5.3-Flash",
+      "name": "GLM-5.3-Flash",
+      "description": "Native multimodal GLM model for efficient coding and long-horizon agent tasks",
+      "family": "glm-flash",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-08-26",
+      "last_updated": "2026-08-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.11994783,
+        "output": 0.41981742,
+        "cache_read": 0.034485
+      },
+      "canonical_model_id": "zhipuai/glm-5.3-flash",
+      "display_name": "GLM-5.3-Flash",
       "type": "chat"
     }
   ],

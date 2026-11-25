@@ -687,7 +687,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 64000
+        "output": 128000
       },
       "cost": {
         "input": 3,
@@ -1294,6 +1294,58 @@
       },
       "canonical_model_id": "google/gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash Preview",
+      "type": "chat"
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "description": "Google's flagship reasoning model for complex software engineering, deep math and science, and long-horizon autonomous agents",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": false,
+      "knowledge": "2026-03",
+      "release_date": "2026-10-13",
+      "last_updated": "2026-10-13",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "google/gemini-4-argon",
+      "display_name": "Gemini 4 Argon",
       "type": "chat"
     },
     {
@@ -1920,7 +1972,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",
@@ -2064,7 +2116,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -2142,7 +2194,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -2220,7 +2272,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -2562,7 +2614,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-05-18",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -2639,7 +2691,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-04-20",
       "release_date": "2026-09-22",
       "last_updated": "2026-09-22",
@@ -2825,7 +2877,7 @@
       "open_weights": false,
       "limit": {
         "context": 500000,
-        "output": 524288
+        "output": 500000
       },
       "provider": {
         "npm": "@ai-sdk/openai",
@@ -2896,66 +2948,10 @@
       "type": "chat"
     },
     {
-      "id": "inkling",
-      "name": "Inkling",
-      "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
-      "family": "ling",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": false,
-      "temperature": true,
-      "release_date": "2026-07-15",
-      "last_updated": "2026-07-15",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 1,
-        "output": 4.05,
-        "cache_read": 0.17
-      },
-      "canonical_model_id": "thinkingmachines/inkling",
-      "display_name": "Inkling",
-      "type": "chat"
-    },
-    {
       "id": "kimi-k3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,

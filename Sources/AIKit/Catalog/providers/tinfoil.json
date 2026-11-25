@@ -18,9 +18,7 @@
           "type": "effort",
           "values": [
             "none",
-            "minimal",
             "low",
-            "medium",
             "high",
             "xhigh",
             "max"
@@ -49,9 +47,9 @@
       },
       "status": "beta",
       "cost": {
-        "input": 0.65,
+        "input": 0.6,
         "output": 1.45,
-        "cache_read": 0.13
+        "cache_read": 0.01
       },
       "canonical_model_id": "deepseek/deepseek-v4.1-flash",
       "display_name": "DeepSeek V4.1 Flash",
@@ -193,7 +191,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
         "input": 0.15,
@@ -207,11 +205,22 @@
       "id": "gpt-oss-safeguard-120b",
       "name": "gpt-oss-safeguard-120b",
       "description": "Safety model for policy screening, moderation, and risk-aware routing workflows",
-      "family": "gpt-oss",
+      "family": "gpt-oss-safeguard",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
@@ -229,7 +238,7 @@
       "open_weights": true,
       "limit": {
         "context": 131072,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
         "input": 0.15,
@@ -240,10 +249,62 @@
       "type": "chat"
     },
     {
-      "id": "kimi-k3",
-      "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "id": "inkling-2-small",
+      "name": "Inkling 2 Small",
+      "description": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
+      "family": "inkling-small",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-11-05",
+      "last_updated": "2026-11-12",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 524288,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.3,
+        "output": 1,
+        "cache_read": 0.03
+      },
+      "canonical_model_id": "thinkingmachines/inkling-2-small",
+      "display_name": "Inkling 2 Small",
+      "type": "chat"
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+      "family": "kimi-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -262,13 +323,12 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": false,
-      "release_date": "2026-07-16",
-      "last_updated": "2026-07-16",
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
       "modalities": {
         "input": [
           "text",
-          "image",
-          "video"
+          "image"
         ],
         "output": [
           "text"
@@ -277,15 +337,15 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 131072
+        "output": 262144
       },
       "cost": {
         "input": 4,
         "output": 20,
-        "cache_read": 0.8
+        "cache_read": 0.4
       },
-      "canonical_model_id": "moonshotai/kimi-k3",
-      "display_name": "Kimi K3",
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro",
       "type": "chat"
     },
     {
@@ -350,7 +410,7 @@
         "output": 768
       },
       "cost": {
-        "input": 0.05,
+        "input": 0.016,
         "output": 0
       },
       "display_name": "Nomic Embed Text v1.5",

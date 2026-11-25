@@ -39,7 +39,7 @@
       "type": "embedding",
       "name": "Qwen3 Embedding 8B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -73,7 +73,7 @@
       "type": "reranking",
       "name": "Qwen3 Reranker 4B",
       "description": "Reranking model for improving retrieval quality in search and recommendation systems",
-      "family": "qwen",
+      "family": "qwen-reranker",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -335,8 +335,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-04-29",
-      "last_updated": "2026-04-29",
+      "release_date": "2026-04-28",
+      "last_updated": "2026-04-28",
       "modalities": {
         "input": [
           "text",
@@ -364,7 +364,7 @@
       "type": "transcription",
       "name": "Voxtral Small 24B",
       "description": "Efficient Mistral model for fast chat, extraction, and production assistants",
-      "family": "voxtral",
+      "family": "voxtral-transcribe",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -395,7 +395,7 @@
       "id": "moonshotai/Kimi-K2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -541,7 +541,7 @@
       "open_weights": true,
       "limit": {
         "context": 448,
-        "output": 4096
+        "output": 448
       },
       "provider": {
         "npm": "@ai-sdk/openai"

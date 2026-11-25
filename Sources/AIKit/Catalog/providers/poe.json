@@ -908,7 +908,7 @@
       "type": "speech",
       "name": "ElevenLabs-v2.5-Turbo",
       "description": "Low-latency multilingual text-to-speech model, superseded by Flash v2.5",
-      "family": "elevenlabs",
+      "family": "elevenlabs-turbo",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1005,7 +1005,7 @@
       "id": "empiriolabs/deepseek-v4-pro-el",
       "name": "DeepSeek-V4-Pro-EL",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1043,7 +1043,7 @@
       "id": "fireworks-ai/kimi-k2.5-fw",
       "name": "Kimi-K2.5-FW",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1746,7 +1746,7 @@
       "type": "video",
       "name": "Gemini-Omni-1.1-Flash",
       "description": "Video generation and editing model for scene extension, frame interpolation, and reference-guided multimodal control",
-      "family": "gemini",
+      "family": "gemini-omni-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1997,7 +1997,7 @@
       "type": "image",
       "name": "Nano-Banana",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
-      "family": "gemini-flash",
+      "family": "nano-banana",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -2036,7 +2036,7 @@
       "type": "image",
       "name": "Nano-Banana-Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
-      "family": "gemini-pro",
+      "family": "nano-banana-pro",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -2453,7 +2453,7 @@
       "id": "novita/glm-4.6v",
       "name": "glm-4.6v",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
-      "family": "glm",
+      "family": "glmv",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2644,7 +2644,7 @@
       "id": "novita/kimi-k2-thinking",
       "name": "kimi-k2-thinking",
       "description": "Thinking Kimi model for slower research passes, planning, and hard technical questions",
-      "family": "kimi-thinking",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2682,7 +2682,7 @@
       "id": "novita/kimi-k2.5",
       "name": "Kimi-K2.5",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2711,7 +2711,7 @@
       "open_weights": true,
       "limit": {
         "context": 128000,
-        "output": 262144
+        "output": 128000
       },
       "status": "deprecated",
       "cost": {
@@ -2727,7 +2727,7 @@
       "id": "novita/kimi-k2.6",
       "name": "Kimi-K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2772,7 +2772,7 @@
       "id": "novita/minimax-m2.1",
       "name": "minimax-m2.1",
       "description": "Earlier MiniMax agent model for practical coding and productivity tasks",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -3381,7 +3381,6 @@
       "open_weights": false,
       "limit": {
         "context": 128000,
-        "input": 272000,
         "output": 16384
       },
       "status": "deprecated",
@@ -3737,7 +3736,7 @@
       "id": "openai/gpt-5.1-codex-mini",
       "name": "GPT-5.1-Codex-Mini",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "family": "gpt-codex",
+      "family": "gpt-codex-mini",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -4367,7 +4366,7 @@
       ],
       "tool_call": true,
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2025-12-01",
       "release_date": "2026-04-23",
       "last_updated": "2026-04-23",
@@ -4384,7 +4383,6 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
-        "input": 922000,
         "output": 128000
       },
       "cost": {
@@ -4435,7 +4433,6 @@
       "open_weights": false,
       "limit": {
         "context": 400000,
-        "input": 922000,
         "output": 128000
       },
       "cost": {
@@ -4483,7 +4480,7 @@
       "type": "image",
       "name": "GPT-Image-1-Mini",
       "description": "Cost-efficient GPT Image 1 variant for image generation and editing",
-      "family": "gpt-image",
+      "family": "gpt-image-mini",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -4724,7 +4721,7 @@
       "id": "openai/o3-deep-research",
       "name": "o3-deep-research",
       "description": "Research model for long-horizon investigation, synthesis, and analytical reports",
-      "family": "o",
+      "family": "o-deep-research",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -4946,7 +4943,7 @@
       "id": "openai/o4-mini-deep-research",
       "name": "o4-mini-deep-research",
       "description": "Research model for long-horizon investigation, synthesis, and analytical reports",
-      "family": "o-mini",
+      "family": "o-deep-research-mini",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -5124,7 +5121,7 @@
       "type": "video",
       "name": "Runway-Gen-4-Turbo",
       "description": "Video model for prompt-guided generation, editing, and motion workflows",
-      "family": "runway",
+      "family": "runway-gen",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -5546,7 +5543,7 @@
       "id": "xai/grok-code-fast-1",
       "name": "Grok Code Fast 1",
       "description": "Fast Grok model for responsive chat, reasoning, and tool-assisted work",
-      "family": "grok",
+      "family": "grok-code",
       "attachment": false,
       "reasoning": {
         "supported": true,

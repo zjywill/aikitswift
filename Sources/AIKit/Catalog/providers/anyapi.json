@@ -292,7 +292,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 64000
+        "output": 128000
       },
       "canonical_model_id": "anthropic/claude-sonnet-4-6",
       "display_name": "Claude Sonnet 4.6",
@@ -302,7 +302,7 @@
       "id": "cohere/command-r-plus-08-2024",
       "name": "Command R+",
       "description": "Cohere's RAG workhorse for long-context enterprise search and tool use",
-      "family": "command-r",
+      "family": "command-r-plus",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -364,7 +364,7 @@
       "id": "deepseek/deepseek-r1",
       "name": "DeepSeek Reasoner",
       "description": "DeepSeek reasoning model for multi-step analysis, math, coding, and tools",
-      "family": "deepseek-thinking",
+      "family": "deepseek",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -437,7 +437,7 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -703,7 +703,7 @@
       },
       "tool_call": true,
       "temperature": true,
-      "knowledge": "2024-11",
+      "knowledge": "2023-10",
       "release_date": "2025-12-02",
       "last_updated": "2025-12-02",
       "modalities": {
@@ -1202,7 +1202,7 @@
       "id": "perplexity/sonar-reasoning-pro",
       "name": "Sonar Reasoning Pro",
       "description": "Web-grounded Sonar for multi-step research questions that need cited reasoning",
-      "family": "sonar-reasoning",
+      "family": "sonar-reasoning-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,

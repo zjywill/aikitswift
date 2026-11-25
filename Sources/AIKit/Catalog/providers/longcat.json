@@ -48,9 +48,9 @@
       "type": "chat"
     },
     {
-      "id": "LongCat-2.5-Preview",
-      "name": "LongCat-2.5-Preview",
-      "description": "Meituan's multimodal reasoning model for coding and agent tasks, with image understanding and a 1M-token context window",
+      "id": "LongCat-2.5",
+      "name": "LongCat-2.5",
+      "description": "Meituan's multimodal reasoning model for long-horizon coding and agent tasks, with visual understanding and a 1M-token context window",
       "family": "longcat",
       "attachment": true,
       "reasoning": {
@@ -67,12 +67,13 @@
         "field": "reasoning_content"
       },
       "temperature": false,
-      "release_date": "2026-09-25",
-      "last_updated": "2026-09-25",
+      "release_date": "2026-11-02",
+      "last_updated": "2026-11-02",
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -88,8 +89,8 @@
         "output": 1.2,
         "cache_read": 0.006
       },
-      "canonical_model_id": "meituan/longcat-2.5-preview",
-      "display_name": "LongCat-2.5-Preview",
+      "canonical_model_id": "meituan/longcat-2.5",
+      "display_name": "LongCat-2.5",
       "type": "chat"
     }
   ],

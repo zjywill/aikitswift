@@ -252,7 +252,7 @@
       "id": "MiMo-V2.6-Flash",
       "name": "MiMo-V2.6-Flash",
       "description": "MiMo Flash model for multimodal coding agents and long-context automation",
-      "family": "mimo",
+      "family": "mimo-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -291,6 +291,7 @@
       "id": "MiniCPM-V-4.7-1B",
       "name": "MiniCPM-V 4.7 1B",
       "description": "Compact MiniCPM-V model for single-image, multi-image and video understanding",
+      "family": "minicpm-v",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -329,6 +330,7 @@
       "id": "MiniCPM-V-4.7-35B-A3B",
       "name": "MiniCPM-V 4.7 35B-A3B",
       "description": "First MoE MiniCPM-V model for single-image, multi-image and video understanding",
+      "family": "minicpm-v",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -367,6 +369,7 @@
       "id": "MiniCPM5-2B",
       "name": "MiniCPM5-2B",
       "description": "Dense 2B-class open-source model for on-device and resource-constrained use, with native long-context support, tool calling, and agentic tasks",
+      "family": "minicpm",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -451,7 +454,7 @@
       "id": "Qwen3.8-Flash-Next",
       "name": "Qwen3.8 Flash Next",
       "description": "Open-weight experimental preview of the Qwen4 architecture: hybrid-attention MoE (125B total, 6B active) with vision encoder for coding, agent tasks, and image and video understanding",
-      "family": "qwen",
+      "family": "qwen-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,

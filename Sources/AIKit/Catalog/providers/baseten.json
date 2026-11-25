@@ -59,7 +59,7 @@
       "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -147,7 +147,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 32768
+        "output": 262144
       },
       "cost": {
         "input": 0.3,
@@ -174,8 +174,8 @@
           "values": [
             "none",
             "low",
-            "medium",
             "high",
+            "xhigh",
             "max"
           ]
         }
@@ -228,8 +228,8 @@
           "values": [
             "none",
             "low",
-            "medium",
             "high",
+            "xhigh",
             "max"
           ]
         }
@@ -307,7 +307,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 32768
+        "output": 131072
       },
       "cost": {
         "input": 0.6,
@@ -319,10 +319,62 @@
       "type": "chat"
     },
     {
+      "id": "meta-models/muse-spark-open",
+      "name": "Muse Spark Open",
+      "description": "Muse Spark Open is an 816B total / 42B active open-weight multimodal reasoning model from Meta for coding and long-horizon agentic work, with 1M-token context.",
+      "family": "muse-spark",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "temperature": true,
+      "knowledge": "2026-01-04",
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 1.25,
+        "output": 4.25,
+        "cache_read": 0.15
+      },
+      "canonical_model_id": "meta/muse-spark-open",
+      "display_name": "Muse Spark Open",
+      "type": "chat"
+    },
+    {
       "id": "moonshotai/Kimi-K3",
       "name": "Kimi K3",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k3",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -371,10 +423,63 @@
       "type": "chat"
     },
     {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "name": "Kimi K3.1 Pro",
+      "description": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+      "family": "kimi-pro",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-23",
+      "last_updated": "2026-10-23",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2
+      },
+      "canonical_model_id": "moonshotai/kimi-k3.1-pro",
+      "display_name": "Kimi K3.1 Pro",
+      "type": "chat"
+    },
+    {
       "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
-      "name": "Nemotron Ultra",
+      "name": "Nemotron 3 Ultra",
       "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
-      "family": "nemotron",
+      "family": "nemotron-ultra",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -417,7 +522,53 @@
         "cache_read": 0.12
       },
       "canonical_model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "display_name": "Nemotron Ultra",
+      "display_name": "Nemotron 3 Ultra",
+      "type": "chat"
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+      "name": "Nemotron 3.5 Super VL",
+      "description": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
+      "family": "nemotron-super",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-15",
+      "last_updated": "2026-10-15",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 1048576
+      },
+      "cost": {
+        "input": 0.2,
+        "output": 0.5,
+        "cache_read": 0.04
+      },
+      "canonical_model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "display_name": "Nemotron 3.5 Super VL",
       "type": "chat"
     },
     {
@@ -473,6 +624,60 @@
       },
       "canonical_model_id": "openai/gpt-oss-120b",
       "display_name": "OpenAI GPT 120B",
+      "type": "chat"
+    },
+    {
+      "id": "reflection/Beam-1.0",
+      "name": "Beam",
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.4,
+        "output": 1.2,
+        "cache_read": 0.04
+      },
+      "canonical_model_id": "reflection/beam-1.0-501b-a23b",
+      "display_name": "Beam",
       "type": "chat"
     },
     {

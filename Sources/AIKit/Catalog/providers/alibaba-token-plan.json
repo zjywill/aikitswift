@@ -7,7 +7,7 @@
       "id": "MiniMax-M2.5",
       "name": "MiniMax-M2.5",
       "description": "Prior MiniMax coding model for agent workflows, office edits, and automation",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -43,103 +43,6 @@
       },
       "canonical_model_id": "minimax/MiniMax-M2.5",
       "display_name": "MiniMax-M2.5",
-      "type": "chat"
-    },
-    {
-      "id": "deepseek-v3.2",
-      "name": "DeepSeek V3.2",
-      "description": "DeepSeek chat model for instruction following, coding, and analysis",
-      "family": "deepseek",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2025-12-03",
-      "last_updated": "2025-12-05",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0,
-        "output": 0
-      },
-      "display_name": "DeepSeek V3.2",
-      "type": "chat"
-    },
-    {
-      "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash",
-      "description": "Fast DeepSeek V4 lane for economical reasoning, coding, and long-context work",
-      "family": "deepseek-flash",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        },
-        {
-          "type": "effort",
-          "values": [
-            "high",
-            "max"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "interleaved": {
-        "field": "reasoning_content"
-      },
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-05",
-      "release_date": "2026-04-24",
-      "last_updated": "2026-04-24",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 1000000,
-        "output": 384000
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cache_read": 0,
-        "cache_write": 0
-      },
-      "canonical_model_id": "deepseek/deepseek-v4-flash",
-      "display_name": "DeepSeek V4 Flash",
       "type": "chat"
     },
     {
@@ -200,7 +103,7 @@
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -254,7 +157,7 @@
       "id": "deepseek-v4-pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -722,7 +625,7 @@
       "id": "kimi-k2.5",
       "name": "Kimi K2.5",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -774,7 +677,7 @@
       "id": "kimi-k2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -826,7 +729,7 @@
       "id": "kimi-k2.7-code",
       "name": "Kimi K2.7 Code",
       "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
+      "family": "kimi-code",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -862,7 +765,8 @@
       "open_weights": true,
       "limit": {
         "context": 262144,
-        "output": 262144
+        "input": 229376,
+        "output": 16384
       },
       "cost": {
         "input": 0,
@@ -879,7 +783,7 @@
       "type": "image",
       "name": "Qwen Image 2.0",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "qwen",
+      "family": "qwen-image",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -915,7 +819,7 @@
       "type": "image",
       "name": "Qwen Image 2.0 Pro",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "qwen",
+      "family": "qwen-image-pro",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -950,7 +854,7 @@
       "id": "qwen3.6-flash",
       "name": "Qwen3.6 Flash",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen3.6",
+      "family": "qwen-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1002,7 +906,7 @@
       "id": "qwen3.6-plus",
       "name": "Qwen3.6 Plus",
       "description": "Earlier Qwen multimodal workhorse for million-token agent and document tasks",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1055,7 +959,7 @@
       "id": "qwen3.7-max",
       "name": "Qwen3.7 Max",
       "description": "Qwen frontier model tuned for agent frameworks, coding assistants, and long tasks",
-      "family": "qwen",
+      "family": "qwen-max",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1105,7 +1009,7 @@
       "id": "qwen3.7-plus",
       "name": "Qwen3.7 Plus",
       "description": "Multimodal Qwen workhorse for long-context agents, visual inputs, and coding",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1158,7 +1062,7 @@
       "id": "qwen3.8-flash",
       "name": "Qwen3.8 Flash",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1218,7 +1122,7 @@
       "id": "qwen3.8-max",
       "name": "Qwen3.8 Max",
       "description": "2.4-trillion-parameter MoE flagship for coding, professional work, multimodal understanding, and long-horizon agentic workflows",
-      "family": "qwen",
+      "family": "qwen-max",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1277,10 +1181,10 @@
       "type": "chat"
     },
     {
-      "id": "qwen3.8-max-preview",
-      "name": "Qwen3.8 Max Preview",
-      "description": "Preview Qwen flagship for million-token multimodal reasoning and long-horizon agentic workflows",
-      "family": "qwen",
+      "id": "qwen4-max",
+      "name": "Qwen4 Max",
+      "description": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
+      "family": "qwen-max",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1290,14 +1194,15 @@
         {
           "type": "effort",
           "values": [
+            "none",
             "low",
-            "medium",
+            "high",
             "xhigh"
           ]
         },
         {
           "type": "budget_tokens",
-          "min": 0,
+          "min": 1,
           "max": 262144
         }
       ],
@@ -1307,13 +1212,14 @@
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2026-07-19",
-      "last_updated": "2026-07-19",
+      "release_date": "2026-11-16",
+      "last_updated": "2026-11-16",
       "modalities": {
         "input": [
           "text",
           "image",
-          "video"
+          "video",
+          "pdf"
         ],
         "output": [
           "text"
@@ -1322,17 +1228,14 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 131072
+        "output": 262144
       },
-      "status": "deprecated",
       "cost": {
         "input": 0,
-        "output": 0,
-        "cache_read": 0,
-        "cache_write": 0
+        "output": 0
       },
-      "canonical_model_id": "alibaba/qwen3.8-max-preview",
-      "display_name": "Qwen3.8 Max Preview",
+      "canonical_model_id": "alibaba/qwen4-max",
+      "display_name": "Qwen4 Max",
       "type": "chat"
     },
     {

@@ -292,7 +292,7 @@
       "type": "embedding",
       "name": "Qwen 3 Embedding 4B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false

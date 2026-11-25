@@ -113,7 +113,7 @@
       "id": "Qwen3-Coder-Next-FP8",
       "name": "Qwen3 Coder Next FP8",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -149,7 +149,7 @@
       "id": "Qwen3-Coder-Next-FP8-no-thinking",
       "name": "Qwen3-Coder-Next-FP8-no-thinking",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -186,7 +186,7 @@
       "type": "embedding",
       "name": "Qwen3-Embedding-8B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false

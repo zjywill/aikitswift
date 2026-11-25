@@ -58,7 +58,7 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -109,7 +109,7 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -262,8 +262,8 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "Kimi K3",
-      "description": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
-      "family": "kimi-k3",
+      "description": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -298,7 +298,7 @@
       "open_weights": true,
       "limit": {
         "context": 1048576,
-        "output": 131072
+        "output": 1048576
       },
       "status": "beta",
       "cost": {
@@ -314,7 +314,7 @@
       "id": "thinkingmachines/inkling-small",
       "name": "Inkling Small",
       "description": "Multimodal MoE reasoning model (276B total, 12B active) for text, image, and audio",
-      "family": "ling",
+      "family": "inkling-small",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -355,7 +355,7 @@
       "id": "trinity-large-thinking",
       "name": "Trinity Large Thinking",
       "description": "Reasoning-optimized 398B MoE agent model with extended thinking for long-horizon and multi-turn tool use",
-      "family": "trinity",
+      "family": "trinity-large",
       "attachment": false,
       "reasoning": {
         "supported": true,

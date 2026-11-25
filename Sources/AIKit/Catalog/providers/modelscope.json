@@ -150,7 +150,7 @@
       "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
       "name": "Qwen3 Coder 30B A3B Instruct",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false

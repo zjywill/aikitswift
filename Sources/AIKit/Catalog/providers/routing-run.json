@@ -77,7 +77,7 @@
       "open_weights": false,
       "limit": {
         "context": 1000000,
-        "output": 64000
+        "output": 128000
       },
       "cost": {
         "input": 3,
@@ -132,7 +132,7 @@
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "Open MoE flagship with million-token context for coding and long agent runs",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -265,7 +265,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -309,7 +309,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -353,7 +353,7 @@
         "field": "reasoning_content"
       },
       "structured_output": true,
-      "temperature": false,
+      "temperature": true,
       "knowledge": "2026-02-16",
       "release_date": "2026-07-09",
       "last_updated": "2026-07-09",
@@ -385,7 +385,7 @@
       "id": "kimi-k2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -428,7 +428,7 @@
       "id": "kimi-k2.6-nitro",
       "name": "Kimi K2.6 Nitro",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -471,7 +471,7 @@
       "id": "kimi-k2.7-code",
       "name": "Kimi K2.7 Code",
       "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
+      "family": "kimi-code",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -514,7 +514,7 @@
       "id": "kimi-k2.7-code-nitro",
       "name": "Kimi K2.7 Code Nitro",
       "description": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "family": "kimi-k2",
+      "family": "kimi-code",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -557,7 +557,7 @@
       "id": "nemotron-3-ultra",
       "name": "Nemotron 3 Ultra 550B A55B",
       "description": "Largest Nemotron 3 model for maximum open-weight reasoning and agent accuracy",
-      "family": "nemotron",
+      "family": "nemotron-ultra",
       "attachment": false,
       "reasoning": {
         "supported": true,

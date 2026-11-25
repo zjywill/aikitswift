@@ -150,7 +150,7 @@
       "id": "mercury-edit-2",
       "name": "Mercury Edit 2",
       "description": "Code editing dLLM for autocomplete (FIM) and next-edit suggestions",
-      "family": "mercury",
+      "family": "mercury-edit",
       "attachment": false,
       "reasoning": {
         "supported": false

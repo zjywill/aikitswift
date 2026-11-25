@@ -7,7 +7,7 @@
       "id": "jamba-large",
       "name": "Jamba Large",
       "description": "AI21's hybrid SSM-Transformer long-context model for enterprise agents and grounded generation",
-      "family": "jamba",
+      "family": "jamba-large",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -43,7 +43,7 @@
       "id": "jamba-mini",
       "name": "Jamba Mini",
       "description": "AI21's efficient, lightweight hybrid SSM-Transformer model for a wide range of tasks",
-      "family": "jamba",
+      "family": "jamba-mini",
       "attachment": false,
       "reasoning": {
         "supported": false

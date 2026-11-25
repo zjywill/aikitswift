@@ -435,7 +435,7 @@
       "id": "deepseek/deepseek-r1-0528",
       "name": "DeepSeek R1 0528",
       "description": "May 2025 DeepSeek R1 update with improved mathematics, coding, and reasoning",
-      "family": "deepseek-thinking",
+      "family": "deepseek-r",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -858,7 +858,7 @@
       "id": "gemini-2.5-pro-preview-06-05",
       "name": "gemini-2.5-pro-preview-06-05",
       "description": "Advanced Gemini model for complex reasoning, coding, and multimodal analysis",
-      "family": "gemini",
+      "family": "gemini-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1402,7 +1402,7 @@
       "id": "gpt-5.1-codex-mini",
       "name": "gpt-5.1-codex-mini",
       "description": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "family": "gpt-codex",
+      "family": "gpt-codex-mini",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1789,7 +1789,7 @@
       "id": "grok-code-fast-1",
       "name": "grok-code-fast-1",
       "description": "Fast Grok model for responsive chat, reasoning, and tool-assisted work",
-      "family": "grok",
+      "family": "grok-code",
       "attachment": false,
       "reasoning": {
         "supported": false,
@@ -1827,7 +1827,7 @@
       "id": "minimax/minimax-m2.1",
       "name": "Minimax M2.1",
       "description": "Earlier MiniMax agent model for practical coding and productivity tasks",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1865,7 +1865,7 @@
       "id": "minimaxai/minimax-m1-80k",
       "name": "MiniMax M1",
       "description": "Open hybrid-attention MoE reasoning model with a million-token context and an 80K thinking budget",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -1902,7 +1902,7 @@
       "id": "moonshotai/kimi-k2-0905",
       "name": "Kimi K2 0905",
       "description": "September 2025 Kimi K2 instruction update with a 256K context and improved agentic coding",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1937,7 +1937,7 @@
       "id": "moonshotai/kimi-k2-instruct",
       "name": "Kimi K2 Instruct",
       "description": "Non-thinking Kimi K2 MoE instruction model for coding and tool-using agents",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1972,7 +1972,7 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "Kimi K2.5",
       "description": "Earlier Kimi frontier model for long-context agents, coding, and multimodal work",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -2344,7 +2344,7 @@
       "id": "qwen/qwen3-coder-480b-a35b-instruct",
       "name": "Qwen3 Coder 480B A35B Instruct",
       "description": "Open Qwen coding heavyweight for repository reasoning and agentic engineering",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -2380,7 +2380,7 @@
       "id": "qwen/qwen3-coder-next",
       "name": "qwen/qwen3-coder-next",
       "description": "Open-weight Qwen coding model for agents, repository edits, and multi-turn tool use",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -2490,7 +2490,7 @@
       "id": "xiaomimimo/mimo-v2-flash",
       "name": "XiaomiMiMo/MiMo-V2-Flash",
       "description": "MiMo flash model for fast multimodal assistance and agent workflows",
-      "family": "mimo",
+      "family": "mimo-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -2571,7 +2571,7 @@
       "id": "zai-org/glm-4.5v",
       "name": "GLM 4.5V",
       "description": "GLM vision model for visual reasoning, documents, and multimodal agents",
-      "family": "glm",
+      "family": "glmv",
       "attachment": true,
       "reasoning": {
         "supported": true,

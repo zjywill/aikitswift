@@ -7,6 +7,7 @@
       "id": "apertus-70b",
       "name": "Apertus 70B",
       "description": "Fully open 70B multilingual LLM supporting 1800+ languages with 65K context. Trained on 15T tokens of compliant open data. Apache 2.0, EU AI Act compliant.",
+      "family": "apertus",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -109,6 +110,7 @@
       "id": "deepseek-ocr-2",
       "name": "DeepSeek OCR 2",
       "description": "High-accuracy OCR model for extracting text from documents, screenshots, receipts, and natural scenes",
+      "family": "deepseek-ocr",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -164,7 +166,7 @@
       "open_weights": true,
       "limit": {
         "context": 448,
-        "output": 4096
+        "output": 448
       },
       "cost": {
         "input": 0,
@@ -432,7 +434,7 @@
       "type": "image",
       "name": "Qwen-Image",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "qwen",
+      "family": "qwen-image",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -464,7 +466,7 @@
       "id": "qwen3-coder-next",
       "name": "Qwen3-Coder-Next",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -503,7 +505,7 @@
       "type": "embedding",
       "name": "Qwen3-Embedding-8B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -537,7 +539,7 @@
       "type": "reranking",
       "name": "Qwen3-Reranker-4B",
       "description": "Reranking model for improving retrieval quality in search and recommendation systems",
-      "family": "qwen",
+      "family": "qwen-reranker",
       "attachment": false,
       "reasoning": {
         "supported": false

@@ -7,7 +7,7 @@
       "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
       "name": "Qwen3-VL 235B",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -45,7 +45,7 @@
       "type": "embedding",
       "name": "Qwen3-VL Embedding 8B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": true,
       "reasoning": {
         "supported": false

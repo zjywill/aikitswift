@@ -4,61 +4,32 @@
   "adapter": "openai",
   "models": [
     {
-      "id": "Nemotron-3-Nano-Omni-30B-TEE",
-      "name": "Nemotron 3 Nano Omni 30B TEE",
-      "description": "Omni-modal model for text, vision, audio, and multimodal agent tasks",
-      "family": "nemotron",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": true,
-      "release_date": "2026-07-23",
-      "last_updated": "2026-07-23",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 0
-      },
-      "cost": {
-        "input": 0.0245,
-        "output": 0.0978,
-        "cache_read": 0.0024499999999999995
-      },
-      "display_name": "Nemotron 3 Nano Omni 30B TEE",
-      "type": "chat"
-    },
-    {
-      "id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
-      "name": "Qwen3 235B A22B Thinking 2507 TEE",
-      "description": "Qwen reasoning model for deliberate problem solving, math, and coding",
+      "id": "Qwen/Qwen3.5-27B-TEE",
+      "name": "Qwen3.5 27B TEE",
+      "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "family": "qwen",
-      "attachment": false,
+      "attachment": true,
       "reasoning": {
         "supported": true,
         "default": false
       },
-      "reasoning_options": [],
+      "reasoning_options": [
+        {
+          "type": "toggle"
+        }
+      ],
       "tool_call": true,
       "interleaved": {
         "field": "reasoning_content"
       },
       "structured_output": true,
       "temperature": true,
-      "release_date": "2025-07-25",
-      "last_updated": "2025-07-25",
+      "release_date": "2026-02-23",
+      "last_updated": "2026-02-23",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
@@ -70,55 +41,12 @@
         "output": 262144
       },
       "cost": {
-        "input": 0.2989,
-        "output": 1.1957,
-        "cache_read": 0.029889999999999993
+        "input": 0.2,
+        "output": 1.75,
+        "cache_read": 0.02
       },
-      "canonical_model_id": "alibaba/qwen3-235b-a22b-thinking-2507",
-      "display_name": "Qwen3 235B A22B Thinking 2507 TEE",
-      "type": "chat"
-    },
-    {
-      "id": "Qwen/Qwen3-32B-TEE",
-      "name": "Qwen3 32B TEE",
-      "description": "Dense open Qwen model for self-hosted chat, reasoning, and coding",
-      "family": "qwen",
-      "attachment": false,
-      "reasoning": {
-        "supported": true,
-        "default": false
-      },
-      "reasoning_options": [
-        {
-          "type": "toggle"
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-04",
-      "release_date": "2025-04-28",
-      "last_updated": "2025-04-28",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 40960,
-        "output": 40960
-      },
-      "cost": {
-        "input": 0.104,
-        "output": 0.416,
-        "cache_read": 0.010399999999999998
-      },
-      "canonical_model_id": "alibaba/qwen3-32b",
-      "display_name": "Qwen3 32B TEE",
+      "canonical_model_id": "alibaba/qwen3.5-27b",
+      "display_name": "Qwen3.5 27B TEE",
       "type": "chat"
     },
     {
@@ -161,7 +89,7 @@
       "cost": {
         "input": 0.45,
         "output": 3,
-        "cache_read": 0.04499999999999999
+        "cache_read": 0.045
       },
       "canonical_model_id": "alibaba/qwen3.5-397b-a17b",
       "display_name": "Qwen3.5 397B A17B TEE",
@@ -204,10 +132,47 @@
       "cost": {
         "input": 0.25,
         "output": 2,
-        "cache_read": 0.024999999999999994
+        "cache_read": 0.025
       },
       "canonical_model_id": "alibaba/qwen3.6-27b",
       "display_name": "Qwen3.6 27B TEE",
+      "type": "chat"
+    },
+    {
+      "id": "Qwen/Qwen3.8-2.4T-A95B",
+      "name": "Qwen3.8 2.4T A95B",
+      "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
+      "family": "qwen",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-26",
+      "last_updated": "2026-10-26",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25
+      },
+      "display_name": "Qwen3.8 2.4T A95B",
       "type": "chat"
     },
     {
@@ -243,7 +208,7 @@
       "cost": {
         "input": 0.039,
         "output": 1.25,
-        "cache_read": 0.003899999999999999
+        "cache_read": 0.0039
       },
       "canonical_model_id": "alibaba/qwen3.8-27b",
       "display_name": "Qwen3.8 27B TEE",
@@ -252,30 +217,81 @@
     {
       "id": "Qwen/Qwen3.8-Max-0902",
       "name": "Qwen3.8 Max 0902",
-      "description": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
-      "family": "qwen3.8-max",
-      "attachment": false,
+      "description": "2026-09-02 upgraded snapshot of Qwen3.8 Max with stronger coding, collaborative agents, and multimodal document understanding",
+      "family": "qwen-max",
+      "attachment": true,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
-      "tool_call": false,
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
       "temperature": true,
-      "release_date": "2026-10-20",
-      "last_updated": "2026-10-25",
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
-      "open_weights": true,
+      "open_weights": false,
       "limit": {
-        "context": 0,
-        "output": 0
+        "context": 1000000,
+        "output": 131072
       },
+      "cost": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25
+      },
+      "canonical_model_id": "alibaba/qwen3.8-max-0902",
       "display_name": "Qwen3.8 Max 0902",
+      "type": "chat"
+    },
+    {
+      "id": "Qwen/Qwen4-Max",
+      "name": "Qwen4 Max",
+      "description": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
+      "family": "qwen-max",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-11-16",
+      "last_updated": "2026-11-16",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1000000,
+        "output": 131072
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 4.5,
+        "cache_read": 0.075
+      },
+      "canonical_model_id": "alibaba/qwen4-max",
+      "display_name": "Qwen4 Max",
       "type": "chat"
     },
     {
@@ -318,7 +334,7 @@
       "cost": {
         "input": 1,
         "output": 1,
-        "cache_read": 0.09999999999999998
+        "cache_read": 0.1
       },
       "canonical_model_id": "deepseek/deepseek-v3.2",
       "display_name": "DeepSeek V3.2 TEE",
@@ -361,7 +377,7 @@
       "cost": {
         "input": 0.44,
         "output": 1.32,
-        "cache_read": 0.04399999999999999
+        "cache_read": 0.044
       },
       "canonical_model_id": "deepseek/deepseek-v4-flash-0731",
       "display_name": "DeepSeek V4 Flash 0731 TEE",
@@ -371,12 +387,15 @@
       "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "name": "DeepSeek V4 Pro 0813",
       "description": "Flagship DeepSeek model for coding, reasoning, and agentic work",
-      "family": "deepseek",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
-        "supported": false
+        "supported": false,
+        "default": false
       },
-      "tool_call": false,
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
       "temperature": true,
       "release_date": "2026-10-20",
       "last_updated": "2026-10-25",
@@ -390,10 +409,53 @@
       },
       "open_weights": true,
       "limit": {
-        "context": 0,
-        "output": 0
+        "context": 1000000,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.85,
+        "output": 2.65,
+        "cache_read": 0.15
       },
       "display_name": "DeepSeek V4 Pro 0813",
+      "type": "chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "description": "Fast DeepSeek model for efficient chat, coding help, and agent loops",
+      "family": "deepseek",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-26",
+      "last_updated": "2026-10-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1000000,
+        "output": 393216
+      },
+      "cost": {
+        "input": 0.195,
+        "output": 0.78,
+        "cache_read": 0.02
+      },
+      "display_name": "DeepSeek V4.1 Flash 1017",
       "type": "chat"
     },
     {
@@ -434,7 +496,7 @@
       "cost": {
         "input": 0.12,
         "output": 0.37,
-        "cache_read": 0.011999999999999997
+        "cache_read": 0.012
       },
       "canonical_model_id": "google/gemma-4-31b-it",
       "display_name": "gemma 4 31B turbo TEE",
@@ -444,7 +506,7 @@
       "id": "moonshotai/Kimi-K2.6-TEE",
       "name": "Kimi K2.6 TEE",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -480,19 +542,58 @@
         "output": 65535
       },
       "cost": {
-        "input": 0.45,
-        "output": 1.95,
-        "cache_read": 0.04499999999999999
+        "input": 0.39,
+        "output": 1.8,
+        "cache_read": 0.039
       },
       "canonical_model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6 TEE",
       "type": "chat"
     },
     {
+      "id": "moonshotai/Kimi-K2.7-Code",
+      "name": "Kimi K2.7 Code",
+      "description": "Kimi coding model for software agents, refactors, and repository reasoning",
+      "family": "kimi-code",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-26",
+      "last_updated": "2026-10-26",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 262144,
+        "output": 16384
+      },
+      "cost": {
+        "input": 0.832,
+        "output": 3.5,
+        "cache_read": 0.167
+      },
+      "display_name": "Kimi K2.7 Code",
+      "type": "chat"
+    },
+    {
       "id": "moonshotai/Kimi-K3-TEE",
       "name": "Kimi K3 TEE",
       "description": "Kimi multimodal agent model for visual understanding, coding, and planning",
-      "family": "kimi-k3",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -526,46 +627,10 @@
       "cost": {
         "input": 1.85,
         "output": 9.5,
-        "cache_read": 0.18499999999999997
+        "cache_read": 0.185
       },
       "canonical_model_id": "moonshotai/kimi-k3",
       "display_name": "Kimi K3 TEE",
-      "type": "chat"
-    },
-    {
-      "id": "unsloth/Mistral-Nemo-Instruct-2407-TEE",
-      "name": "Mistral Nemo Instruct 2407 TEE",
-      "description": "Efficient Mistral-NVIDIA open model for multilingual chat and local deployment",
-      "family": "mistral-nemo",
-      "attachment": false,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": true,
-      "knowledge": "2024-07",
-      "release_date": "2024-07-18",
-      "last_updated": "2024-07-18",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": true,
-      "limit": {
-        "context": 131072,
-        "output": 131072
-      },
-      "cost": {
-        "input": 0.0245,
-        "output": 0.0978,
-        "cache_read": 0.0024499999999999995
-      },
-      "canonical_model_id": "mistral/mistral-nemo",
-      "display_name": "Mistral Nemo Instruct 2407 TEE",
       "type": "chat"
     },
     {
@@ -605,12 +670,49 @@
         "output": 65535
       },
       "cost": {
-        "input": 0.98,
-        "output": 3.08,
-        "cache_read": 0.09799999999999998
+        "input": 0.9,
+        "output": 2.9,
+        "cache_read": 0.09
       },
       "canonical_model_id": "zhipuai/glm-5.1",
       "display_name": "GLM 5.1 TEE",
+      "type": "chat"
+    },
+    {
+      "id": "zai-org/GLM-5.2-Fast",
+      "name": "GLM 5.2 Fast",
+      "description": "Efficient GLM model for fast reasoning, coding, and agent workflows",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-26",
+      "last_updated": "2026-10-26",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 2.45,
+        "output": 7.7,
+        "cache_read": 0.49
+      },
+      "display_name": "GLM 5.2 Fast",
       "type": "chat"
     },
     {
@@ -652,10 +754,47 @@
       "cost": {
         "input": 1.25,
         "output": 3.95,
-        "cache_read": 0.12499999999999997
+        "cache_read": 0.125
       },
       "canonical_model_id": "zhipuai/glm-5.2",
       "display_name": "GLM 5.2 TEE",
+      "type": "chat"
+    },
+    {
+      "id": "zai-org/GLM-5.3",
+      "name": "GLM 5.3",
+      "description": "Flagship GLM model for hybrid reasoning, coding, and agentic engineering",
+      "family": "glm",
+      "attachment": false,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "release_date": "2026-10-26",
+      "last_updated": "2026-10-26",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "cost": {
+        "input": 0.8,
+        "output": 2.5,
+        "cache_read": 0.16
+      },
+      "display_name": "GLM 5.3",
       "type": "chat"
     }
   ],

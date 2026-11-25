@@ -7,6 +7,7 @@
       "id": "deepseek-ocr-2",
       "name": "DeepSeek OCR 2",
       "description": "High-accuracy OCR model for extracting text from documents, screenshots, receipts, and natural scenes",
+      "family": "deepseek-ocr",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -266,7 +267,7 @@
       "open_weights": true,
       "limit": {
         "context": 128000,
-        "output": 32768
+        "output": 128000
       },
       "cost": {
         "input": 0.2311,
@@ -281,7 +282,7 @@
       "id": "kimi-k2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -310,7 +311,7 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 262144
+        "output": 256000
       },
       "status": "deprecated",
       "cost": {
@@ -326,7 +327,7 @@
       "id": "kimi-latest",
       "name": "Kimi (latest)",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -355,7 +356,7 @@
       "open_weights": true,
       "limit": {
         "context": 256000,
-        "output": 262144
+        "output": 256000
       },
       "status": "deprecated",
       "cost": {
@@ -372,7 +373,7 @@
       "type": "embedding",
       "name": "Qwen3-Embedding 4B",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "qwen",
+      "family": "qwen-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -408,7 +409,7 @@
       "type": "transcription",
       "name": "Voxtral Mini 3B",
       "description": "Speech-to-text model for audio transcription, translation, and audio understanding",
-      "family": "voxtral",
+      "family": "voxtral-mini",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -466,7 +467,7 @@
       "open_weights": true,
       "limit": {
         "context": 448,
-        "output": 4096
+        "output": 448
       },
       "provider": {
         "npm": "@ai-sdk/openai"

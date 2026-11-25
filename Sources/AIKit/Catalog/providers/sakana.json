@@ -52,7 +52,7 @@
       "id": "fugu-ultra",
       "name": "Fugu Ultra",
       "description": "Quality-first multi-agent model for hard research, analysis, and competitions",
-      "family": "fugu",
+      "family": "fugu-ultra",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -118,7 +118,7 @@
       "id": "fugu-ultra-20260615",
       "name": "Fugu Ultra",
       "description": "Quality-first multi-agent model for hard research, analysis, and competitions",
-      "family": "fugu",
+      "family": "fugu-ultra",
       "attachment": true,
       "reasoning": {
         "supported": true,

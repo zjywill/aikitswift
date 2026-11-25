@@ -7,7 +7,7 @@
       "id": "arcee_ai/AFM/models/trinity-mini",
       "name": "Trinity Mini",
       "description": "Reasoning-tuned 26B MoE model with 3B active parameters for agents, tools, and multi-step workloads",
-      "family": "trinity",
+      "family": "trinity-mini",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -113,7 +113,7 @@
       "id": "minimaxai/chat-completion/models/MiniMax-M2_5-high-throughput",
       "name": "MiniMax-M2.5 High Throughput",
       "description": "MiniMax model for chat, coding, office work, and agentic tasks",
-      "family": "minimax",
+      "family": "minimax-m",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -222,7 +222,7 @@
       "id": "moonshotai/chat-completion/models/Kimi-K2_6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -356,7 +356,7 @@
       "id": "qwen/qwenCoder/models/Qwen3-Coder-30B-A3B-Instruct",
       "name": "Qwen3 Coder 30B A3B Instruct",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder",
       "attachment": false,
       "reasoning": {
         "supported": false

@@ -443,66 +443,11 @@
       "type": "chat"
     },
     {
-      "id": "grok-build-0.1",
-      "name": "Grok Build 0.1",
-      "description": "Fast Grok coding model tuned for agentic engineering and iterative edits",
-      "family": "grok-build",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "release_date": "2026-04-16",
-      "last_updated": "2026-04-16",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 256000,
-        "output": 256000
-      },
-      "cost": {
-        "input": 1,
-        "output": 2,
-        "cache_read": 0.2,
-        "tiers": [
-          {
-            "input": 2,
-            "output": 4,
-            "cache_read": 0.4,
-            "tier": {
-              "type": "context",
-              "size": 200000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 2,
-          "output": 4,
-          "cache_read": 0.4
-        }
-      },
-      "display_name": "Grok Build 0.1",
-      "type": "chat"
-    },
-    {
       "id": "grok-imagine-image",
       "type": "image",
       "name": "Grok Imagine Image",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "grok",
+      "family": "grok-imagine-image",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -529,43 +474,11 @@
       "display_name": "Grok Imagine Image"
     },
     {
-      "id": "grok-imagine-image-quality",
-      "type": "image",
-      "name": "Grok Imagine Image Quality",
-      "description": "Higher-fidelity Grok Imagine image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "grok",
-      "attachment": true,
-      "reasoning": {
-        "supported": false
-      },
-      "tool_call": false,
-      "temperature": false,
-      "release_date": "2026-04-03",
-      "last_updated": "2026-04-03",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "image"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 16000,
-        "output": 0
-      },
-      "status": "deprecated",
-      "canonical_model_id": "xai/grok-imagine-image-quality",
-      "display_name": "Grok Imagine Image Quality"
-    },
-    {
       "id": "grok-imagine-video",
       "type": "video",
       "name": "Grok Imagine Video",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "grok",
+      "family": "grok-imagine-video",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -596,7 +509,7 @@
       "type": "video",
       "name": "Grok Imagine Video 1.5",
       "description": "Video model for text-to-video, image-to-video, and reference-to-video generation with optional voice references",
-      "family": "grok",
+      "family": "grok-imagine-video",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -628,7 +541,7 @@
       "type": "video",
       "name": "Grok Imagine Video 1.5 Lite",
       "description": "Cost-efficient video model for text-to-video and image-to-video generation",
-      "family": "grok",
+      "family": "grok-imagine-video-lite",
       "attachment": true,
       "reasoning": {
         "supported": false

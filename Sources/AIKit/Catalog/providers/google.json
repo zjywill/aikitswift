@@ -7,7 +7,7 @@
       "id": "deep-research-max-preview-04-2026",
       "name": "Deep Research Max Preview (Apr-21-2026)",
       "description": "Maximum-comprehensiveness agentic researcher for multi-step investigation, synthesis, and cited reports",
-      "family": "gemini-pro",
+      "family": "gemini-deep-research-max",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -34,7 +34,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
+        "context": 1048576,
         "output": 65536
       },
       "cost": {
@@ -66,7 +66,7 @@
       "id": "deep-research-preview-04-2026",
       "name": "Deep Research Preview (Apr-21-2026)",
       "description": "Agentic model for autonomous multi-step research, synthesis, and cited reports",
-      "family": "gemini-pro",
+      "family": "gemini-deep-research",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -93,7 +93,7 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 131072,
+        "context": 1048576,
         "output": 65536
       },
       "cost": {
@@ -119,58 +119,6 @@
       },
       "canonical_model_id": "google/deep-research-preview-04-2026",
       "display_name": "Deep Research Preview (Apr-21-2026)",
-      "type": "chat"
-    },
-    {
-      "id": "gemini-2.5-computer-use-preview-10-2025",
-      "name": "Gemini 2.5 Computer Use Preview 10-2025",
-      "description": "Specialized Gemini 2.5 model for browser-control agents that automate UI tasks",
-      "family": "gemini-pro",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [],
-      "tool_call": true,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2025-10-07",
-      "last_updated": "2025-10-07",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 128000,
-        "output": 64000
-      },
-      "cost": {
-        "input": 1.25,
-        "output": 10,
-        "tiers": [
-          {
-            "input": 2.5,
-            "output": 15,
-            "tier": {
-              "type": "context",
-              "size": 200000
-            }
-          }
-        ],
-        "context_over_200k": {
-          "input": 2.5,
-          "output": 15
-        }
-      },
-      "canonical_model_id": "google/gemini-2.5-computer-use-preview-10-2025",
-      "display_name": "Gemini 2.5 Computer Use Preview 10-2025",
       "type": "chat"
     },
     {
@@ -221,6 +169,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
         "output": 2.5,
@@ -236,7 +185,7 @@
       "type": "image",
       "name": "Nano Banana",
       "description": "Nano Banana image model for fast generation, edits, and character-consistent assets",
-      "family": "gemini-flash",
+      "family": "nano-banana",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -258,12 +207,13 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 32768,
+        "context": 65536,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.3,
-        "output": 30,
+        "output": 2.5,
         "cache_read": 0.075
       },
       "canonical_model_id": "google/gemini-2.5-flash-image",
@@ -331,7 +281,7 @@
       "type": "speech",
       "name": "Gemini 2.5 Flash Preview TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
-      "family": "gemini-flash",
+      "family": "gemini-tts-flash",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -354,6 +304,7 @@
         "context": 8192,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
         "output": 10
@@ -405,6 +356,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.25,
         "output": 10,
@@ -435,7 +387,7 @@
       "type": "speech",
       "name": "Gemini 2.5 Pro Preview TTS",
       "description": "Speech generation model for controllable voice, narration, and audio delivery",
-      "family": "gemini-flash",
+      "family": "gemini-tts-pro",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -458,6 +410,7 @@
         "context": 8192,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 20
@@ -522,7 +475,7 @@
       "type": "image",
       "name": "Nano Banana Pro",
       "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
-      "family": "gemini-pro",
+      "family": "nano-banana-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -559,48 +512,9 @@
       },
       "cost": {
         "input": 2,
-        "output": 120
+        "output": 12
       },
       "canonical_model_id": "google/gemini-3-pro-image",
-      "display_name": "Nano Banana Pro"
-    },
-    {
-      "id": "gemini-3-pro-image-preview",
-      "type": "image",
-      "name": "Nano Banana Pro",
-      "description": "Nano Banana Pro for higher-fidelity image generation and design-heavy edits",
-      "family": "gemini-pro",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [],
-      "tool_call": false,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2025-11-20",
-      "last_updated": "2025-11-20",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text",
-          "image"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 131072,
-        "output": 32768
-      },
-      "cost": {
-        "input": 2,
-        "output": 120
-      },
-      "canonical_model_id": "google/gemini-3-pro-image-preview",
       "display_name": "Nano Banana Pro"
     },
     {
@@ -608,7 +522,7 @@
       "type": "image",
       "name": "Nano Banana 2",
       "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "gemini-flash",
+      "family": "nano-banana",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -645,58 +559,12 @@
         "context": 131072,
         "output": 32768
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.5,
-        "output": 60
+        "output": 3
       },
       "canonical_model_id": "google/gemini-3.1-flash-image",
-      "display_name": "Nano Banana 2"
-    },
-    {
-      "id": "gemini-3.1-flash-image-preview",
-      "type": "image",
-      "name": "Nano Banana 2",
-      "description": "Image model for prompt-driven generation, editing, and visual design workflows",
-      "family": "gemini-flash",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "minimal",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": false,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2026-02-26",
-      "last_updated": "2026-02-26",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text",
-          "image"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 65536,
-        "output": 65536
-      },
-      "cost": {
-        "input": 0.5,
-        "output": 60
-      },
       "display_name": "Nano Banana 2"
     },
     {
@@ -743,6 +611,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.25,
         "output": 1.5,
@@ -757,7 +626,7 @@
       "type": "image",
       "name": "Nano Banana 2 Lite",
       "description": "Fastest, most cost-efficient Gemini image model for high-volume 1K generation and editing",
-      "family": "gemini-flash-lite",
+      "family": "nano-banana-lite",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -781,7 +650,9 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video",
+          "pdf"
         ],
         "output": [
           "text",
@@ -795,71 +666,17 @@
       },
       "cost": {
         "input": 0.25,
-        "output": 30
+        "output": 1.5
       },
       "canonical_model_id": "google/gemini-3.1-flash-lite-image",
       "display_name": "Nano Banana 2 Lite"
-    },
-    {
-      "id": "gemini-3.1-flash-lite-preview",
-      "name": "Gemini 3.1 Flash Lite Preview",
-      "description": "Legacy model retained for compatibility with older integrations",
-      "family": "gemini-flash-lite",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [
-        {
-          "type": "effort",
-          "values": [
-            "minimal",
-            "low",
-            "medium",
-            "high"
-          ]
-        }
-      ],
-      "tool_call": true,
-      "structured_output": true,
-      "temperature": true,
-      "knowledge": "2025-01",
-      "release_date": "2026-03-03",
-      "last_updated": "2026-03-03",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video",
-          "audio",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 1048576,
-        "output": 65536
-      },
-      "status": "deprecated",
-      "cost": {
-        "input": 0.25,
-        "output": 1.5,
-        "cache_read": 0.025,
-        "input_audio": 0.5
-      },
-      "display_name": "Gemini 3.1 Flash Lite Preview",
-      "type": "chat"
     },
     {
       "id": "gemini-3.1-flash-live-preview",
       "type": "realtime",
       "name": "Gemini 3.1 Flash Live Preview",
       "description": "High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications",
-      "family": "gemini-flash",
+      "family": "gemini-live",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -913,7 +730,7 @@
       "type": "speech",
       "name": "Gemini 3.1 Flash TTS Preview",
       "description": "Low-latency speech generation with steerable prompts and expressive audio tags",
-      "family": "gemini-flash",
+      "family": "gemini-tts-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -938,6 +755,7 @@
         "context": 8192,
         "output": 16384
       },
+      "status": "deprecated",
       "cost": {
         "input": 1,
         "output": 20
@@ -1123,6 +941,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 1.5,
         "output": 9,
@@ -1179,7 +998,8 @@
       "cost": {
         "input": 0.3,
         "output": 2.5,
-        "cache_read": 0.03
+        "cache_read": 0.03,
+        "input_audio": 0.3
       },
       "canonical_model_id": "google/gemini-3.5-flash-lite",
       "display_name": "Gemini 3.5 Flash Lite",
@@ -1190,7 +1010,7 @@
       "type": "realtime",
       "name": "Gemini 3.5 Live Translate Preview",
       "description": "Low-latency audio-to-audio model for real-time speech translation across 70+ languages",
-      "family": "gemini-pro",
+      "family": "gemini-live-translate",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1212,7 +1032,7 @@
       "open_weights": false,
       "limit": {
         "context": 16384,
-        "output": 32768
+        "output": 16384
       },
       "cost": {
         "input": 3.5,
@@ -1320,6 +1140,7 @@
         "context": 1048576,
         "output": 65536
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.75,
         "output": 3.75,
@@ -1436,11 +1257,172 @@
       "type": "chat"
     },
     {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "description": "Google's most capable reasoning model for complex software engineering, deep math and science, high factual accuracy, and long-horizon autonomous agents",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-11-10",
+      "last_updated": "2026-11-10",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 32768
+      },
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      },
+      "canonical_model_id": "google/gemini-4-carbon",
+      "display_name": "Gemini 4 Carbon",
+      "type": "chat"
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "description": "Google's Gemini 4 model for everyday coding and agentic workflows, with four thinking levels and a 1M-token context window",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-11-12",
+      "last_updated": "2026-11-12",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.075,
+        "input_audio": 1.5
+      },
+      "canonical_model_id": "google/gemini-4-hydrogen",
+      "display_name": "Gemini 4 Hydrogen",
+      "type": "chat"
+    },
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "description": "Google's Gemini 4 model for fast, frontier-level coding, knowledge work and science workflows, with four thinking levels and a 1M-token context window",
+      "family": "gemini",
+      "attachment": true,
+      "reasoning": {
+        "supported": true,
+        "default": false
+      },
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-03",
+      "release_date": "2026-11-18",
+      "last_updated": "2026-11-18",
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": false,
+      "limit": {
+        "context": 1048576,
+        "output": 65536
+      },
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.15,
+        "input_audio": 3
+      },
+      "canonical_model_id": "google/gemini-4-neon",
+      "display_name": "Gemini 4 Neon",
+      "type": "chat"
+    },
+    {
       "id": "gemini-embedding-001",
       "type": "embedding",
       "name": "Gemini Embedding 001",
       "description": "Embedding model for semantic search, retrieval, clustering, and ranking pipelines",
-      "family": "gemini",
+      "family": "gemini-embedding",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -1463,6 +1445,7 @@
         "context": 2048,
         "output": 1
       },
+      "status": "deprecated",
       "cost": {
         "input": 0.15,
         "output": 0
@@ -1474,7 +1457,7 @@
       "type": "embedding",
       "name": "Gemini Embedding 2",
       "description": "Multimodal embedding model mapping text, images, video, audio, and PDFs into a unified embedding space",
-      "family": "gemini",
+      "family": "gemini-embedding",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1512,7 +1495,7 @@
     {
       "id": "gemini-flash-latest",
       "name": "Gemini Flash Latest",
-      "description": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "description": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
       "family": "gemini-flash",
       "attachment": true,
       "reasoning": {
@@ -1532,9 +1515,8 @@
       "tool_call": true,
       "structured_output": true,
       "temperature": true,
-      "knowledge": "2026-03",
-      "release_date": "2026-08-13",
-      "last_updated": "2026-08-13",
+      "release_date": "2026-09-02",
+      "last_updated": "2026-09-02",
       "modalities": {
         "input": [
           "text",
@@ -1608,48 +1590,11 @@
       "cost": {
         "input": 0.3,
         "output": 2.5,
-        "cache_read": 0.03
+        "cache_read": 0.03,
+        "input_audio": 0.3
       },
       "display_name": "Gemini Flash-Lite Latest",
       "type": "chat"
-    },
-    {
-      "id": "gemini-omni-flash-preview",
-      "type": "video",
-      "name": "Gemini Omni Flash Preview",
-      "description": "Video generation and editing model for fast, conversational text- and image-to-video workflows",
-      "family": "gemini",
-      "attachment": true,
-      "reasoning": {
-        "supported": true,
-        "default": true
-      },
-      "reasoning_options": [],
-      "tool_call": false,
-      "temperature": true,
-      "release_date": "2026-06-30",
-      "last_updated": "2026-06-30",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "video"
-        ]
-      },
-      "open_weights": false,
-      "limit": {
-        "context": 131072,
-        "output": 65536
-      },
-      "cost": {
-        "input": 1.5,
-        "output": 17.5
-      },
-      "canonical_model_id": "google/gemini-omni-flash-preview",
-      "display_name": "Gemini Omni Flash Preview"
     },
     {
       "id": "gemini-pro-latest",
@@ -1753,6 +1698,10 @@
         "context": 262144,
         "output": 32768
       },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
       "display_name": "Gemma 4 26B A4B IT",
       "type": "chat"
     },
@@ -1790,6 +1739,10 @@
         "context": 262144,
         "output": 32768
       },
+      "cost": {
+        "input": 0,
+        "output": 0
+      },
       "display_name": "Gemma 4 31B IT",
       "type": "chat"
     },
@@ -1797,7 +1750,7 @@
       "id": "lyria-3-clip-preview",
       "name": "Lyria 3 Clip Preview",
       "description": "Music generation model for short 30-second clips, loops, and previews from text or image prompts",
-      "family": "lyria",
+      "family": "lyria-clip",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1819,12 +1772,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
+        "context": 131072,
         "output": 65536
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
       },
       "canonical_model_id": "google/lyria-3-clip-preview",
       "display_name": "Lyria 3 Clip Preview",
@@ -1834,7 +1783,7 @@
       "id": "lyria-3-pro-preview",
       "name": "Lyria 3 Pro Preview",
       "description": "Music generation model for full-length songs from text or images with vocals and structure",
-      "family": "lyria",
+      "family": "lyria-pro",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -1856,12 +1805,8 @@
       },
       "open_weights": false,
       "limit": {
-        "context": 1048576,
+        "context": 131072,
         "output": 65536
-      },
-      "cost": {
-        "input": 0,
-        "output": 0
       },
       "canonical_model_id": "google/lyria-3-pro-preview",
       "display_name": "Lyria 3 Pro Preview",

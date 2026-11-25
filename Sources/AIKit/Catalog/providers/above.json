@@ -64,7 +64,7 @@
       "id": "deepseek-v4-pro",
       "name": "DeepSeek V4 Pro",
       "description": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "family": "deepseek-thinking",
+      "family": "deepseek-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -323,7 +323,7 @@
       "id": "mimo-v2.6-flash",
       "name": "MiMo V2.6 Flash",
       "description": "MiMo Flash model for multimodal coding agents and long-context automation",
-      "family": "mimo",
+      "family": "mimo-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -370,7 +370,7 @@
       "id": "mimo-v2.6-pro",
       "name": "MiMo V2.6 Pro",
       "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
+      "family": "mimo-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -417,7 +417,7 @@
       "id": "mimo-v2.6-pro-ultraspeed",
       "name": "MiMo V2.6 Pro UltraSpeed",
       "description": "MiMo pro model for strong multimodal reasoning and agent execution",
-      "family": "mimo",
+      "family": "mimo-pro",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -433,8 +433,8 @@
         "field": "reasoning_content"
       },
       "temperature": true,
-      "release_date": "2026-09-21",
-      "last_updated": "2026-09-21",
+      "release_date": "2026-09-22",
+      "last_updated": "2026-09-22",
       "modalities": {
         "input": [
           "text",
@@ -464,7 +464,7 @@
       "id": "qwen3.8-max",
       "name": "Qwen 3.8 Max",
       "description": "2.4-trillion-parameter MoE flagship for coding, professional work, multimodal understanding, and long-horizon agentic workflows",
-      "family": "qwen",
+      "family": "qwen-max",
       "attachment": true,
       "reasoning": {
         "supported": true,

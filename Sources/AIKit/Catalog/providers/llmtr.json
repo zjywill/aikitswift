@@ -160,7 +160,7 @@
       "id": "meta/muse-spark-1.2-contributor",
       "name": "Muse Spark 1.2 Contributor",
       "description": "Muse Spark 1.2 is a coding-focused update to Muse Spark 1.1 with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows.",
-      "family": "muse",
+      "family": "muse-spark",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -254,7 +254,7 @@
       "id": "mimo/mimo-v2.5-pro",
       "name": "MiMo-V2.5-Pro",
       "description": "Stronger MiMo Pro tier for multimodal reasoning and coding-agent execution",
-      "family": "mimo",
+      "family": "mimo-pro",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -292,7 +292,7 @@
       "id": "mistral/voxtral-small-latest",
       "name": "Voxtral Small (latest)",
       "description": "Instruct model with native audio input for speech understanding and tool use",
-      "family": "voxtral",
+      "family": "voxtral-small",
       "attachment": true,
       "reasoning": {
         "supported": false
@@ -327,7 +327,7 @@
       "id": "muse-glimmer-30b-tr",
       "name": "Muse Glimmer 30B (TR)",
       "description": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
-      "family": "muse",
+      "family": "muse-glimmer",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -367,7 +367,7 @@
       "id": "perplexity/sonar-deep-research",
       "name": "Sonar Deep Research",
       "description": "Sonar search model for autonomous research and citation-backed long-form reports",
-      "family": "sonar",
+      "family": "sonar-deep-research",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -405,7 +405,7 @@
       "id": "poolside/laguna-xs-2.1",
       "name": "Laguna XS 2.1",
       "description": "Agentic coding model from Poolside in the XS size class for local deployment",
-      "family": "laguna",
+      "family": "laguna-xs",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -446,6 +446,7 @@
       "id": "publicai/apertus-70b-instruct",
       "name": "Apertus 70B Instruct",
       "description": "Fully open 70B multilingual LLM supporting 1800+ languages with 65K context. Trained on 15T tokens of compliant open data. Apache 2.0, EU AI Act compliant.",
+      "family": "apertus",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -480,6 +481,7 @@
       "id": "publicai/apertus-8b-instruct",
       "name": "Apertus 8B Instruct",
       "description": "Fully open 8B multilingual LLM supporting 1800+ languages with 65K context. Trained on compliant open data. Apache 2.0, EU AI Act compliant.",
+      "family": "apertus",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -514,7 +516,7 @@
       "id": "qwen/qwen-flash",
       "name": "Qwen Flash",
       "description": "Efficient Qwen model for fast chat, extraction, and high-volume workloads",
-      "family": "qwen",
+      "family": "qwen-flash",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -559,7 +561,7 @@
       "id": "qwen/qwen-plus",
       "name": "Qwen Plus",
       "description": "Qwen instruction model for multilingual chat, reasoning, and tool use",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -604,7 +606,7 @@
       "id": "qwen/qwen3-coder-flash",
       "name": "Qwen3 Coder Flash",
       "description": "Qwen coding model for software agents, repository edits, and code reasoning",
-      "family": "qwen",
+      "family": "qwen-coder-flash",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -640,7 +642,7 @@
       "id": "qwen/qwen3-coder-plus",
       "name": "Qwen3 Coder Plus",
       "description": "Hosted Qwen coder for software agents, repo edits, and long-context code",
-      "family": "qwen",
+      "family": "qwen-coder-plus",
       "attachment": false,
       "reasoning": {
         "supported": false
@@ -676,7 +678,7 @@
       "id": "qwen/qwen3-max",
       "name": "Qwen3 Max",
       "description": "Flagship Qwen3 model for coding agents, complex reasoning, and tool use",
-      "family": "qwen",
+      "family": "qwen-max",
       "attachment": false,
       "reasoning": {
         "supported": true,
@@ -721,7 +723,7 @@
       "id": "qwen/qwen3-vl-plus",
       "name": "Qwen3-VL Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-vl-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -743,7 +745,8 @@
       "modalities": {
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
@@ -813,7 +816,7 @@
       "id": "qwen/qwen3.5-plus",
       "name": "Qwen3.5 Plus",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -859,7 +862,7 @@
       "id": "qwen/qwen3.6-flash",
       "name": "Qwen3.6 Flash",
       "description": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "family": "qwen3.6",
+      "family": "qwen-flash",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -905,7 +908,7 @@
       "id": "qwen/qwen3.6-plus",
       "name": "Qwen3.6 Plus",
       "description": "Earlier Qwen multimodal workhorse for million-token agent and document tasks",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -951,7 +954,7 @@
       "id": "qwen/qwen3.7-plus",
       "name": "Qwen3.7 Plus",
       "description": "Multimodal Qwen workhorse for long-context agents, visual inputs, and coding",
-      "family": "qwen",
+      "family": "qwen-plus",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1041,7 +1044,7 @@
       "id": "sakana/fugu-ultra",
       "name": "Fugu Ultra",
       "description": "Quality-first multi-agent model for hard research, analysis, and competitions",
-      "family": "fugu",
+      "family": "fugu-ultra",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1088,7 +1091,7 @@
       "id": "thinkingmachines/inkling",
       "name": "Inkling",
       "description": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
-      "family": "ling",
+      "family": "inkling",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1139,7 +1142,7 @@
       "id": "thinkingmachines/inkling-small",
       "name": "Inkling Small",
       "description": "Multimodal MoE reasoning model (276B total, 12B active) for text, image, and audio",
-      "family": "ling",
+      "family": "inkling-small",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -1190,7 +1193,7 @@
       "id": "trendyol-asure-12b",
       "name": "Trendyol Asure 12B",
       "description": "Turkish-language multimodal instruct model built on Gemma 3 12B for e-commerce text, chat, and image-text tasks",
-      "family": "gemma",
+      "family": "asure",
       "attachment": true,
       "reasoning": {
         "supported": false

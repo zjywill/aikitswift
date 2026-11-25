@@ -7,6 +7,7 @@
       "id": "vispark/vision-large",
       "name": "Vision Large",
       "description": "Most capable Vision model for complex reasoning, detailed media analysis, and structured output over a 1M-token context window.",
+      "family": "vispark-vision-large",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -47,6 +48,7 @@
       "id": "vispark/vision-medium",
       "name": "Vision Medium",
       "description": "Balanced multimodal model pairing a 1M-token context window with deeper reasoning for analysis, content creation, and tool use across text, image, audio, video, and PDF inputs.",
+      "family": "vispark-vision-medium",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -87,6 +89,7 @@
       "id": "vispark/vision-small",
       "name": "Vision Small",
       "description": "Fast, low-cost multimodal model for understanding text, images, audio, video, and PDFs, with tool calling and a 1M-token context window.",
+      "family": "vispark-vision-small",
       "attachment": true,
       "reasoning": {
         "supported": true,

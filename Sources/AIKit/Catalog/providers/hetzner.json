@@ -84,6 +84,6 @@
       "type": "chat"
     }
   ],
-  "api": "https://inference.hetzner.com/api/v1",
+  "api": "https://inference.hetzner.com/v1",
   "doc": "https://experiments.hetzner.com/docs/inference"
 }

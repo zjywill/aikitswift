@@ -283,7 +283,7 @@
       "id": "moonshotai/Kimi-K2.6",
       "name": "Kimi K2.6",
       "description": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "family": "kimi-k2",
+      "family": "kimi",
       "attachment": true,
       "reasoning": {
         "supported": true,
@@ -329,7 +329,7 @@
       "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
       "name": "Nemotron 3 Nano 30B A3B FP8",
       "description": "Small Nemotron 3 MoE for efficient coding, math, and long-context agents",
-      "family": "nemotron",
+      "family": "nemotron-nano",
       "attachment": false,
       "reasoning": {
         "supported": true,
